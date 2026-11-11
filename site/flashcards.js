@@ -21,24 +21,9 @@
     try { localStorage.setItem(storageKey, JSON.stringify({version: 1, flags})); }
     catch (error) { tell('This browser cannot save progress. Export a backup to keep your revisit list.'); }
   }
-  function option(value, label) {
-    const element = document.createElement('option');
-    element.value = value; element.textContent = label;
-    return element;
-  }
-  for (let week = 1; week <= 13; week++) {
-    $('fc-week').append(option(String(week), 'Week ' + week + (week >= 12 ? ' (no assigned topics)' : '')));
-  }
-  function topicOptions() {
-    const previous = $('fc-topic').value;
-    $('fc-topic').replaceChildren(option('', 'All topics'));
-    const week = $('fc-week').value;
-    const topics = [...new Set(cards.filter(card => !week || card.week === Number(week)).map(card => card.topic))];
-    for (const topic of topics) $('fc-topic').append(option(topic, topic));
-    if (topics.includes(previous)) $('fc-topic').value = previous;
-  }
+  const navigation = CourseNavigation.mount($('fc-navigation'), cards, restart);
   function pool() {
-    return rules.filtered(cards, $('fc-week').value, $('fc-topic').value, $('fc-revisit').checked, flags);
+    return cards.filter(card => navigation.matches(card) && (!$('fc-revisit').checked || flags[card.id]));
   }
   function stats() {
     const matching = pool();
@@ -88,8 +73,6 @@
     stats();
   }
   function restart() { seen = new Set(); next(); }
-  $('fc-week').addEventListener('change', () => { topicOptions(); restart(); });
-  $('fc-topic').addEventListener('change', restart);
   $('fc-revisit').addEventListener('change', restart);
   $('fc-repeats').addEventListener('change', () => { if (!current) next(); else stats(); });
   $('fc-card').addEventListener('click', () => { if (current) flip(!revealed); });
@@ -137,5 +120,5 @@
     try { flags = event.newValue ? rules.restore(event.newValue, knownIds) : Object.create(null); restart(); tell('Revisit list updated from another tab.'); }
     catch (error) { tell('An invalid progress update was ignored.'); }
   });
-  topicOptions(); next();
+  next();
 })();

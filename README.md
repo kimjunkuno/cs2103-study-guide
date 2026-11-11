@@ -52,3 +52,7 @@ Open Practise flashcards for random questions with reveal, week/topic filters, o
 Click the card to reveal, then choose Got it right or Got it wrong. Skip & save and wrong answers enter the browser-local revisit list; correct removes the flag. Revisit only filters to saved questions. Uncheck random repeats for one appearance per question per session. Repeat this card explicitly retries the current card. Changing filters restarts the session but retains saved flags. Export/import moves the revisit list between browsers. Guide confidence is independent.
 
 Run flashcard tests with `node --test tests/flashcards.test.cjs`. Both test suites run before deployment.
+
+## Textbook navigation
+
+Browse by Textbook to select category, chapter and topic in the online book's order, or by Week to show week/topic controls. Revisited topics share a selector entry with their original week IDs. IDs and saved progress are unchanged. The guide also provides a collapsible chapter sidebar on larger screens. Existing Git course links are grouped under Supplementary; no external lesson content is imported.
