@@ -76,3 +76,5 @@ Flashcards show Skip before reveal and Correct/Wrong/Next afterwards. Repeat, re
 Browser viewport checks cover 320px phones, 390px phones, 768px tablets, 1024px tablets and landscape. These checks use the local browser, not physical iOS/Android devices. Feature branches do not deploy; only validated changes on main deploy to Pages.
 
 Guide confidence selectors, progress summaries, filters and backups have been removed. The Guide no longer reads or writes progress storage. Existing browser data is left untouched; saved/skipped practice cards remain available in their separate revisit lists.
+
+The Guide keeps topic search visible while scrolling. A floating back-to-top button appears after scrolling down and returns to the heading immediately. Search keeps keyboard focus while filtered results come into view. Sticky offsets follow the phone/tablet header height, and these controls are omitted from print output.
