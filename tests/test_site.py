@@ -22,7 +22,7 @@ class SiteTests(unittest.TestCase):
    if tag in {'img','script','link'}:
     attr='href' if tag=='link' else 'src';url=a.get(attr,'')
     self.assertTrue(url.startswith('./'),url);self.assertTrue((SITE/url[2:]).is_file(),url)
-   if tag=='a' and 'href' in a:self.assertRegex(a['href'],r'^(https?://|mailto:|#|\./(?:index|flashcards)\.html(?:#|$))')
+   if tag=='a' and 'href' in a:self.assertRegex(a['href'],r'^(https?://|mailto:|#|\./(?:index|flashcards|diagrams)\.html(?:#|$))')
   html=(SITE/'index.html').read_text();self.assertIn('Content-Security-Policy',html)
   self.assertNotIn('unsafe-eval',html);self.assertNotIn('unsafe-inline',html)
  def test_no_runtime_endpoints_or_secrets(self):
