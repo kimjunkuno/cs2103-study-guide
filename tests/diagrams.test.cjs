@@ -1,58 +1,55 @@
-const {test}=require('node:test'),assert=require('node:assert/strict'),{readFileSync}=require('node:fs');
-const core=require('../site/diagrams-core.js');
+const {test}=require('node:test'),assert=require('node:assert/strict'),{readFileSync,existsSync}=require('node:fs'),{createHash}=require('node:crypto');
 const data=JSON.parse(readFileSync('site/diagrams-data.js','utf8').replace('globalThis.DIAGRAM_QUESTIONS = ','').replace(/;\s*$/,''));
-const cases=data.cases,deck=core.createDeck(cases);
-test('24 exercises cover the six required diagram families only',()=>{
- assert.equal(cases.length,24);assert.equal(new Set(cases.map(q=>q.id)).size,24);
- const families=['class','object','conceptual','sequence','activity','architecture'];
- assert.deepEqual([...new Set(cases.map(q=>q.family))].sort(),families.sort());
- for(const family of families)assert.equal(cases.filter(q=>q.family===family).length,4);
- for(const q of cases){assert.equal(q.optional,false);assert.ok(!q.topicId.startsWith('W11.'));assert.ok(q.context&&q.rule&&q.explanation);assert.doesNotMatch(q.context,/\b(?:find the|tap|incorrect|wrong|mistake|error|notation)\b/i);assert.match(q.source,/^https:\/\/nus-cs2103-ay2627-s1.github.io\/website\/schedule\/week[469]\/topics.html#/);}
+const cards=data.cards,sources=JSON.parse(readFileSync('DIAGRAM_SOURCES.json','utf8')).assets;
+const flash=require('../site/flashcards-core.js');
+test('36 course-image cards cover required families with correct and incorrect examples',()=>{
+ assert.equal(cards.length,36);assert.equal(new Set(cards.map(c=>c.id)).size,cards.length);
+ assert.deepEqual([...new Set(cards.map(c=>c.family))].sort(),['activity','architecture','class','conceptual','object','sequence']);
+ for(const family of new Set(cards.map(c=>c.family))){const subset=cards.filter(c=>c.family===family);assert.ok(subset.some(c=>c.isCorrect));assert.ok(subset.some(c=>!c.isCorrect));}
+ for(const c of cards){assert.equal(c.optional,false);assert.match(c.topicId,/^W[469]\./);assert.ok(c.answer.startsWith(c.isCorrect?'Correct.':'Incorrect.'));assert.doesNotMatch(c.context,/\b(wrong|incorrect|error|mistake|arrow|guard|rectangle)\b/i);}
 });
-test('48 neutral cards include correct and incorrect examples in every family',()=>{
- assert.equal(deck.length,48);assert.equal(new Set(deck.map(q=>q.id)).size,48);
- for(const family of new Set(cases.map(q=>q.family))){
-  const cards=deck.filter(q=>q.family===family);
-  assert.equal(cards.length,8);assert.equal(cards.filter(q=>q.isCorrect).length,4);
+test('every displayed panel has a local original course asset and valid bounds',()=>{
+ for(const c of cards){
+  assert.match(c.source,/^https:\/\/nus-cs2103-ay2627-s1.github.io\/website\/schedule\/week[469]\/topics.html#/);
+  assert.match(c.bookSource,/^https:\/\/nus-cs2103-ay2627-s1.github.io\/website\/book\//);
+  for(const image of [c.image,c.reference].filter(Boolean)){
+   assert.match(image.asset,/^\.\/(?:diagram-assets\/[a-f0-9]{24}\.png|assets\/[a-f0-9]{24}\.svg)$/);
+   assert.ok(existsSync('site/'+image.asset.slice(2)));
+   assert.ok(image.alt);assert.doesNotMatch(image.alt,/incorrect|mistake|wrong|error|correct/i);
+   const source=sources.find(s=>s.asset===image.asset);assert.ok(source);assert.equal(source.source,image.source);
+   assert.equal(image.width,source.width);assert.equal(image.height,source.height);
+   const [x,y,w,h]=image.view;assert.ok(image.view.every(Number.isInteger));assert.ok(x>=0&&y>=0&&w>0&&h>0&&x+w<=image.width&&y+h<=image.height);
+  }
  }
- for(const q of cases){
-  const wrong=deck.find(c=>c.id===q.id),right=deck.find(c=>c.id===q.id+'-correct');
-  assert.equal(wrong.context,right.context);assert.equal(wrong.context,q.context);
-  assert.equal(wrong.isCorrect,false);assert.equal(right.isCorrect,true);
-  assert.deepEqual(wrong.scene,q.scene);assert.deepEqual(right.scene,core.correctedScene(q));
-  assert.match(wrong.answer,/^Incorrect\. /);assert.match(right.answer,/^Correct\. /);
- }
+ for(const source of sources){const bytes=readFileSync('site/'+source.asset.slice(2));assert.equal(createHash('sha256').update(bytes).digest('hex'),source.sha256);}
 });
-test('saved mistake IDs survive the new deck and correct cards can be saved',()=>{
- const flash=require('../site/flashcards-core.js');
- const known=new Set(deck.map(q=>q.id));
- const restored=flash.restore(JSON.stringify({version:1,flags:{'class-inheritance':'incorrect','class-inheritance-correct':'skipped','unknown':'incorrect'}}),known);
- assert.deepEqual({...restored},{'class-inheritance':'incorrect','class-inheritance-correct':'skipped'});
+test('course exercise classifications retain the published answers',()=>{
+ const expected={class:[false,false,true,true,true],linear:[true,false,false,true,false],alternate:[true,true,true,false,true,false],parallel:[true,false,false,true]};
+ for(const [group,values] of Object.entries(expected))values.forEach((value,i)=>{
+  const id=group==='class'?'course-class-compartments-'+(i+1):'course-activity-'+group+'-'+(i+1);
+  assert.equal(cards.find(c=>c.id===id).isCorrect,value,id);
+ });
+ assert.equal(cards.find(c=>c.id==='course-conceptual-player-turn').isCorrect,false);
+ assert.equal(cards.find(c=>c.id==='course-architecture-2').isCorrect,false);
 });
-test('diagram page exposes type-only browsing and self-assessment instead of hotspots',()=>{
+test('no-repeat selection exhausts the source deck without recycling',()=>{
+ const seen=new Set();for(let i=0;i<cards.length;i++){const c=flash.pick(cards,seen,false,null,()=>0);assert.ok(c);assert.ok(!seen.has(c.id));seen.add(c.id);}assert.equal(flash.pick(cards,seen,false,null),null);
+});
+test('course revisit imports cannot attach old exercises or unknown IDs to new cards',()=>{
+ const flags=flash.restore(JSON.stringify({version:1,flags:{'course-activity-linear-1':'incorrect','class-inheritance':'incorrect','unknown':'skipped'}}),new Set(cards.map(c=>c.id)));
+ assert.deepEqual({...flags},{'course-activity-linear-1':'incorrect'});
+});
+test('passive course images replace the generated diagram model',()=>{
  const html=readFileSync('site/diagrams.html','utf8'),renderer=readFileSync('site/diagrams-render.js','utf8');
  assert.ok(html.includes('id="dg-family"'));assert.ok(html.includes('Is this diagram correct?'));
- assert.doesNotMatch(html,/navigation\.js|course-topics\.js|dg-navigation|Element buttons|Tap the incorrect/);
+ assert.doesNotMatch(html,/diagrams-core\.js|navigation\.js|course-topics\.js|dg-navigation|Element buttons/);
  assert.doesNotMatch(renderer,/addEventListener|role.*button|tabindex|identified|label-hit/);
+ assert.ok(renderer.includes("createElementNS(ns, 'image')"));
  for(const id of ['dg-answer','dg-source-wrap','dg-correct','dg-incorrect','dg-next'])assert.match(html,new RegExp('hidden id="'+id+'"'));
 });
-test('corrections are nonempty, deterministic and do not mutate the original',()=>{
- for(const q of cases){const before=JSON.stringify(q.scene),fixed=core.correctedScene(q);assert.notDeepEqual(fixed,q.scene);assert.equal(JSON.stringify(q.scene),before);assert.deepEqual(fixed,core.correctedScene(q));}
-});
-test('specific fixes preserve the source rule and scenario',()=>{
- const corrected=id=>core.correctedScene(cases.find(q=>q.id===id));
- assert.equal(corrected('class-inheritance').edges[0].direction,'right');
- assert.equal(corrected('class-composition').edges[0].direction,'left');
- assert.equal(corrected('class-multiplicity').edges[0].multiplicity[1].text,'1..*');
- assert.equal(corrected('object-owner').edges[1].hidden,true);
- assert.equal(corrected('ccd-navigability').edges[0].direction,'none');
- assert.equal(corrected('sequence-order').edges[2].label,'find()');
- assert.equal(corrected('sequence-deletion').edges[2].hidden,true);
- assert.equal(corrected('activity-join').shapes[4].type,'bar');
- assert.equal(corrected('activity-swimlane').shapes[2].x,600);
- assert.equal(corrected('architecture-name').nodes[1].title,'Storage');
-});
-test('correction paths cannot access prototypes or create unknown fields',()=>{
- for(const path of ['nodes.0.__proto__.polluted','nodes.0.constructor.prototype','nodes.0.unknown','bogus.0.x'])assert.throws(()=>core.correctedScene({...cases[0],fixes:[{path,value:true}]}));
- assert.equal({}.polluted,undefined);
+test('outcome classes provide green/red answer and self-assessment states',()=>{
+ const css=readFileSync('site/diagrams.css','utf8'),script=readFileSync('site/diagrams.js','utf8');
+ assert.match(css,/#dg-correct\{background:#235c47/);assert.match(css,/#dg-incorrect\{background:#b42318/);
+ assert.match(css,/#dg-answer\.is-correct/);assert.match(css,/#dg-answer\.is-incorrect/);
+ assert.ok(script.includes("classList.toggle('is-correct', current.isCorrect)"));assert.ok(script.includes("classList.toggle('is-incorrect', !current.isCorrect)"));
 });

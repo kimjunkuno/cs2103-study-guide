@@ -9,3 +9,5 @@ Quoted works, referenced code and illustrations retain their respective third-pa
 The two unavailable external illustrative photos are linked instead of embedded. SVG metadata and executable or external references are removed from locally served image copies.
 
 This independent educational study aid is not affiliated with or endorsed by NUS. Source wording and credits should remain attached to redistributed excerpts. Report attribution corrections with the source topic and evidence, without private information.
+
+Diagram practice reuses images from the course website’s assigned textbook topics. DIAGRAM_SOURCES.json records each image URL and checksum. Metadata is removed from PNG copies without changing decoded pixels; SVG viewports may focus a worksheet panel. Images are not redrawn. Practice prompts and explanations are adapted from the source examples and notation rules. Existing textbook attribution and MIT notice remain applicable; third-party material retains its own rights.

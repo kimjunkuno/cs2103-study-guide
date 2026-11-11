@@ -5,3 +5,9 @@ dialog{border:1px solid var(--line);border-radius:12px;width:96vw;max-width:1200
 
 .pan-hint{display:none;font:11px system-ui,sans-serif;color:var(--muted)}
 @media(max-width:700px){.diagram-card:has(.diagram-svg:not(.narrow)) .pan-hint{display:block}}
+
+#dg-correct{background:#235c47;border-color:#235c47;color:#fff}
+#dg-incorrect{background:#b42318;border-color:#b42318;color:#fff}
+#dg-answer.is-correct{background:#e8f5e9;color:#14532d;border-left:3px solid #235c47}
+#dg-answer.is-incorrect{background:#fff0ee;color:#991b1b;border-left:3px solid #b42318}
+.dg-top{flex-wrap:wrap}.source-diagram{background:#fff}.diagram-svg.source-diagram.narrow{max-width:380px}

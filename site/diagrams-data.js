@@ -1,1815 +1,1112 @@
 globalThis.DIAGRAM_QUESTIONS = {
-  "version": 2,
-  "cases": [
+  "version": 3,
+  "snapshot": "2026-11-11",
+  "cards": [
     {
-      "id": "class-inheritance",
-      "family": "class",
-      "topicId": "W4.3c",
-      "week": 4,
-      "context": "Cat extends Animal.",
-      "scene": {
-        "nodes": [
-          {
-            "id": "cat",
-            "title": "Cat",
-            "x": 60,
-            "y": 110,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": false,
-            "hidden": false
-          },
-          {
-            "id": "animal",
-            "title": "Animal",
-            "x": 510,
-            "y": 110,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": false,
-            "hidden": false
-          }
-        ],
-        "edges": [
-          {
-            "id": "relation",
-            "x1": 280,
-            "y1": 145,
-            "x2": 510,
-            "y2": 145,
-            "direction": "left",
-            "kind": "inheritance",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          }
-        ],
-        "shapes": [],
-        "texts": []
-      },
-      "fixes": [
-        {
-          "path": "edges.0.direction",
-          "value": "right"
-        }
-      ],
-      "explanation": "The hollow triangle must point to the superclass, Animal.",
-      "rule": "Generalization points from the subclass to the superclass.",
-      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#design-modelling-modelling-structure-class-diagrams-intermediate",
-      "optional": false
-    },
-    {
-      "id": "class-composition",
-      "family": "class",
-      "topicId": "W4.3c",
-      "week": 4,
-      "context": "A House owns its Rooms; rooms are not shared.",
-      "scene": {
-        "nodes": [
-          {
-            "id": "house",
-            "title": "House",
-            "x": 60,
-            "y": 110,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": false,
-            "hidden": false
-          },
-          {
-            "id": "room",
-            "title": "Room",
-            "x": 510,
-            "y": 110,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": false,
-            "hidden": false
-          }
-        ],
-        "edges": [
-          {
-            "id": "relation",
-            "x1": 280,
-            "y1": 145,
-            "x2": 510,
-            "y2": 145,
-            "direction": "right",
-            "kind": "composition",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          }
-        ],
-        "shapes": [],
-        "texts": []
-      },
-      "fixes": [
-        {
-          "path": "edges.0.direction",
-          "value": "left"
-        }
-      ],
-      "explanation": "Put the filled diamond at House, the whole that owns the parts.",
-      "rule": "Composition uses a filled diamond at the whole end.",
-      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#design-modelling-modelling-structure-class-diagrams-intermediate",
-      "optional": false
-    },
-    {
-      "id": "class-multiplicity",
+      "id": "course-class-compartments-1",
       "family": "class",
       "topicId": "W4.2b",
-      "week": 4,
-      "context": "Each Team has at least one Member. Each Member belongs to one Team.",
-      "scene": {
-        "nodes": [
-          {
-            "id": "team",
-            "title": "Team",
-            "x": 60,
-            "y": 110,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": false,
-            "hidden": false
-          },
-          {
-            "id": "member",
-            "title": "Member",
-            "x": 510,
-            "y": 110,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": false,
-            "hidden": false
-          }
-        ],
-        "edges": [
-          {
-            "id": "relation",
-            "x1": 280,
-            "y1": 145,
-            "x2": 510,
-            "y2": 145,
-            "direction": "none",
-            "kind": "solid",
-            "label": "",
-            "hidden": false,
-            "multiplicity": [
-              {
-                "id": "team-count",
-                "text": "1",
-                "x": 315,
-                "y": 120
-              },
-              {
-                "id": "member-count",
-                "text": "0..1",
-                "x": 465,
-                "y": 120
-              }
-            ]
-          }
-        ],
-        "shapes": [],
-        "texts": []
-      },
-      "fixes": [
-        {
-          "path": "edges.0.multiplicity.1.text",
-          "value": "1..*"
-        }
-      ],
-      "explanation": "The Member end needs 1..*: one or more members per team.",
-      "rule": "Multiplicity at an end counts instances at that end for one instance at the other end.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#design-modelling-modelling-structure-class-diagrams-basic",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/classDiagrams/classes/what/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/b7cfad22661466f593a622b1.png",
+        "width": 477,
+        "height": 122,
+        "view": [
+          0,
+          0,
+          110,
+          122
+        ],
+        "alt": "Book diagram, example 1",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/classDiagrams/classes/what/images/chooseNotation.jpg"
+      },
+      "isCorrect": false,
+      "answer": "Incorrect. The attributes compartment belongs above the operations compartment.",
+      "rule": "The attributes compartment belongs above the operations compartment.",
+      "context": "",
+      "reference": {
+        "asset": "./diagram-assets/b7cfad22661466f593a622b1.png",
+        "width": 477,
+        "height": 122,
+        "view": [
+          216,
+          0,
+          104,
+          122
+        ],
+        "alt": "Book diagram, example 3",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/classDiagrams/classes/what/images/chooseNotation.jpg"
+      },
       "optional": false
     },
     {
-      "id": "class-static",
+      "id": "course-class-compartments-2",
       "family": "class",
       "topicId": "W4.2b",
-      "week": 4,
-      "context": "Counter.total is shared by all Counter instances.",
-      "scene": {
-        "nodes": [
-          {
-            "id": "counter",
-            "title": "Counter",
-            "x": 290,
-            "y": 140,
-            "w": 220,
-            "h": 130,
-            "rows": [
-              {
-                "id": "total",
-                "text": "total: int",
-                "underlined": false,
-                "hidden": false
-              }
-            ],
-            "object": false,
-            "hidden": false
-          }
-        ],
-        "edges": [],
-        "shapes": [],
-        "texts": []
-      },
-      "fixes": [
-        {
-          "path": "nodes.0.rows.0.underlined",
-          "value": true
-        }
-      ],
-      "explanation": "Underline total: int to show that it is a class-level member.",
-      "rule": "UML class-level members are underlined.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#design-modelling-modelling-structure-class-diagrams-basic",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/classDiagrams/classes/what/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/b7cfad22661466f593a622b1.png",
+        "width": 477,
+        "height": 122,
+        "view": [
+          110,
+          0,
+          106,
+          122
+        ],
+        "alt": "Book diagram, example 2",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/classDiagrams/classes/what/images/chooseNotation.jpg"
+      },
+      "isCorrect": false,
+      "answer": "Incorrect. All attributes belong in the same compartment.",
+      "rule": "All attributes belong in the same compartment.",
+      "context": "",
+      "reference": {
+        "asset": "./diagram-assets/b7cfad22661466f593a622b1.png",
+        "width": 477,
+        "height": 122,
+        "view": [
+          216,
+          0,
+          104,
+          122
+        ],
+        "alt": "Book diagram, example 3",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/classDiagrams/classes/what/images/chooseNotation.jpg"
+      },
       "optional": false
     },
     {
-      "id": "object-name",
+      "id": "course-class-compartments-3",
+      "family": "class",
+      "topicId": "W4.2b",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#design-modelling-modelling-structure-class-diagrams-basic",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/classDiagrams/classes/what/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/b7cfad22661466f593a622b1.png",
+        "width": 477,
+        "height": 122,
+        "view": [
+          216,
+          0,
+          104,
+          122
+        ],
+        "alt": "Book diagram, example 3",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/classDiagrams/classes/what/images/chooseNotation.jpg"
+      },
+      "isCorrect": true,
+      "answer": "Correct. Attributes appear above operations, with members grouped in their compartments.",
+      "rule": "Attributes appear above operations, with members grouped in their compartments.",
+      "context": "",
+      "reference": null,
+      "optional": false
+    },
+    {
+      "id": "course-class-compartments-4",
+      "family": "class",
+      "topicId": "W4.2b",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#design-modelling-modelling-structure-class-diagrams-basic",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/classDiagrams/classes/what/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/b7cfad22661466f593a622b1.png",
+        "width": 477,
+        "height": 122,
+        "view": [
+          320,
+          0,
+          75,
+          122
+        ],
+        "alt": "Book diagram, example 4",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/classDiagrams/classes/what/images/chooseNotation.jpg"
+      },
+      "isCorrect": true,
+      "answer": "Correct. The attributes and operations compartments may both be omitted.",
+      "rule": "The attributes and operations compartments may both be omitted.",
+      "context": "",
+      "reference": null,
+      "optional": false
+    },
+    {
+      "id": "course-class-compartments-5",
+      "family": "class",
+      "topicId": "W4.2b",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#design-modelling-modelling-structure-class-diagrams-basic",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/classDiagrams/classes/what/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/b7cfad22661466f593a622b1.png",
+        "width": 477,
+        "height": 122,
+        "view": [
+          395,
+          0,
+          82,
+          122
+        ],
+        "alt": "Book diagram, example 5",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/classDiagrams/classes/what/images/chooseNotation.jpg"
+      },
+      "isCorrect": true,
+      "answer": "Correct. The attributes and operations compartments may be empty.",
+      "rule": "The attributes and operations compartments may be empty.",
+      "context": "",
+      "reference": null,
+      "optional": false
+    },
+    {
+      "id": "course-class-classInheritance",
+      "family": "class",
+      "topicId": "W4.3c",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#design-modelling-modelling-structure-class-diagrams-intermediate",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/classDiagrams/classInheritance/what/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/9ede928e0116ce22324bb142.png",
+        "width": 353,
+        "height": 265,
+        "view": [
+          0,
+          0,
+          353,
+          265
+        ],
+        "alt": "Class relationship example from the course",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/classDiagrams/classInheritance/what/images/notation.png"
+      },
+      "isCorrect": true,
+      "answer": "Correct. The hollow triangle points to the superclass.",
+      "rule": "The hollow triangle points to the superclass.",
+      "context": "",
+      "reference": null,
+      "optional": false
+    },
+    {
+      "id": "course-class-composition",
+      "family": "class",
+      "topicId": "W4.3c",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#design-modelling-modelling-structure-class-diagrams-intermediate",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/classDiagrams/composition/what/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/07bf17ca5804860b19d73979.png",
+        "width": 578,
+        "height": 96,
+        "view": [
+          0,
+          0,
+          578,
+          96
+        ],
+        "alt": "Class relationship example from the course",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/classDiagrams/composition/what/images/bookChapter.png"
+      },
+      "isCorrect": true,
+      "answer": "Correct. The filled diamond is at the whole end of the composition.",
+      "rule": "The filled diamond is at the whole end of the composition.",
+      "context": "",
+      "reference": null,
+      "optional": false
+    },
+    {
+      "id": "course-object-1",
       "family": "object",
       "topicId": "W4.2c",
-      "week": 4,
-      "context": "A snapshot of a Person object.",
-      "scene": {
-        "nodes": [
-          {
-            "id": "alice",
-            "title": "alice:Person",
-            "x": 60,
-            "y": 120,
-            "w": 220,
-            "h": 130,
-            "rows": [
-              {
-                "id": "age",
-                "text": "age = 20",
-                "underlined": false,
-                "hidden": false
-              }
-            ],
-            "object": true,
-            "hidden": false,
-            "underlineTitle": false
-          },
-          {
-            "id": "bob",
-            "title": "bob:Person",
-            "x": 510,
-            "y": 120,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": true,
-            "hidden": false
-          }
-        ],
-        "edges": [],
-        "shapes": [],
-        "texts": []
-      },
-      "fixes": [
-        {
-          "path": "nodes.0.underlineTitle",
-          "value": true
-        }
-      ],
-      "explanation": "Underline alice:Person to mark an object rather than a class.",
-      "rule": "An object heading is underlined and may show instanceName:ClassName.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#design-modelling-modelling-structure-object-diagrams",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/objectDiagrams/objects/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/c1d57ba69aa7c9beadd58fc6.png",
+        "width": 1329,
+        "height": 155,
+        "view": [
+          0,
+          0,
+          350,
+          155
+        ],
+        "alt": "Object snapshot example 1",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/objectDiagrams/objects/images/professorStudent.png"
+      },
+      "isCorrect": true,
+      "answer": "Correct. The object heading is underlined and its slot shows an attribute value.",
+      "rule": "The object heading is underlined and its slot shows an attribute value.",
+      "context": "View: object snapshot.",
+      "reference": null,
       "optional": false
     },
     {
-      "id": "object-value",
+      "id": "course-object-2",
       "family": "object",
       "topicId": "W4.2c",
-      "week": 4,
-      "context": "Alice is 20 years old.",
-      "scene": {
-        "nodes": [
-          {
-            "id": "alice",
-            "title": "alice:Person",
-            "x": 290,
-            "y": 130,
-            "w": 220,
-            "h": 130,
-            "rows": [
-              {
-                "id": "age",
-                "text": "age: int",
-                "underlined": false,
-                "hidden": false
-              }
-            ],
-            "object": true,
-            "hidden": false
-          }
-        ],
-        "edges": [],
-        "shapes": [],
-        "texts": []
-      },
-      "fixes": [
-        {
-          "path": "nodes.0.rows.0.text",
-          "value": "age = 20"
-        }
-      ],
-      "explanation": "Show the current value, age = 20, rather than a class-level type declaration.",
-      "rule": "Object slots show attribute values for a particular instance.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#design-modelling-modelling-structure-object-diagrams",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/objectDiagrams/objects/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/c1d57ba69aa7c9beadd58fc6.png",
+        "width": 1329,
+        "height": 155,
+        "view": [
+          360,
+          0,
+          280,
+          155
+        ],
+        "alt": "Object snapshot example 2",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/objectDiagrams/objects/images/professorStudent.png"
+      },
+      "isCorrect": true,
+      "answer": "Correct. An object may omit its attributes compartment when the values are not relevant.",
+      "rule": "An object may omit its attributes compartment when the values are not relevant.",
+      "context": "View: object snapshot.",
+      "reference": null,
       "optional": false
     },
     {
-      "id": "object-link",
+      "id": "course-object-3",
       "family": "object",
       "topicId": "W4.2c",
-      "week": 4,
-      "context": "Alice owns Fido.",
-      "scene": {
-        "nodes": [
-          {
-            "id": "alice",
-            "title": "alice:Person",
-            "x": 60,
-            "y": 120,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": true,
-            "hidden": false
-          },
-          {
-            "id": "fido",
-            "title": "fido:Dog",
-            "x": 510,
-            "y": 120,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": true,
-            "hidden": false
-          }
-        ],
-        "edges": [
-          {
-            "id": "link",
-            "x1": 280,
-            "y1": 155,
-            "x2": 510,
-            "y2": 155,
-            "direction": "none",
-            "kind": "dashed",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          }
-        ],
-        "shapes": [],
-        "texts": []
-      },
-      "fixes": [
-        {
-          "path": "edges.0.kind",
-          "value": "solid"
-        }
-      ],
-      "explanation": "Use a solid link between the two objects.",
-      "rule": "An object link instantiates an association and is drawn as a solid line.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#design-modelling-modelling-structure-object-diagrams",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/objectDiagrams/objects/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/c1d57ba69aa7c9beadd58fc6.png",
+        "width": 1329,
+        "height": 155,
+        "view": [
+          670,
+          0,
+          300,
+          155
+        ],
+        "alt": "Object snapshot example 3",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/objectDiagrams/objects/images/professorStudent.png"
+      },
+      "isCorrect": true,
+      "answer": "Correct. A named object can be shown with an underlined instanceName:ClassName heading.",
+      "rule": "A named object can be shown with an underlined instanceName:ClassName heading.",
+      "context": "View: object snapshot.",
+      "reference": null,
       "optional": false
     },
     {
-      "id": "object-owner",
+      "id": "course-object-4",
       "family": "object",
       "topicId": "W4.2c",
-      "week": 4,
-      "context": "Each Dog has exactly one owner. Fido belongs to Alice.",
-      "scene": {
-        "nodes": [
-          {
-            "id": "alice",
-            "title": "alice:Person",
-            "x": 40,
-            "y": 70,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": true,
-            "hidden": false
-          },
-          {
-            "id": "bob",
-            "title": "bob:Person",
-            "x": 530,
-            "y": 70,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": true,
-            "hidden": false
-          },
-          {
-            "id": "fido",
-            "title": "fido:Dog",
-            "x": 285,
-            "y": 340,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": true,
-            "hidden": false
-          }
-        ],
-        "edges": [
-          {
-            "id": "alice-link",
-            "x1": 150,
-            "y1": 140,
-            "x2": 340,
-            "y2": 340,
-            "direction": "none",
-            "kind": "solid",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          },
-          {
-            "id": "bob-link",
-            "x1": 640,
-            "y1": 140,
-            "x2": 450,
-            "y2": 340,
-            "direction": "none",
-            "kind": "solid",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          }
-        ],
-        "shapes": [],
-        "texts": []
-      },
-      "fixes": [
-        {
-          "path": "edges.1.hidden",
-          "value": true
-        }
-      ],
-      "explanation": "Remove Bob’s link. The snapshot must respect the one-owner constraint.",
-      "rule": "Object snapshots must be consistent with association multiplicities and the stated scenario.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#design-modelling-modelling-structure-object-diagrams",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/objectDiagrams/objects/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/c1d57ba69aa7c9beadd58fc6.png",
+        "width": 1329,
+        "height": 155,
+        "view": [
+          990,
+          0,
+          339,
+          155
+        ],
+        "alt": "Object snapshot example 4",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/objectDiagrams/objects/images/professorStudent.png"
+      },
+      "isCorrect": true,
+      "answer": "Correct. An unnamed object can use :ClassName, with attribute values in its slots.",
+      "rule": "An unnamed object can use :ClassName, with attribute values in its slots.",
+      "context": "View: object snapshot.",
+      "reference": null,
       "optional": false
     },
     {
-      "id": "ccd-database",
+      "id": "course-object-class-notation-3",
+      "family": "object",
+      "topicId": "W4.2c",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#design-modelling-modelling-structure-object-diagrams",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/objectDiagrams/objects/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/b7cfad22661466f593a622b1.png",
+        "width": 477,
+        "height": 122,
+        "view": [
+          216,
+          0,
+          104,
+          122
+        ],
+        "alt": "Book diagram, example 3",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/classDiagrams/classes/what/images/chooseNotation.jpg"
+      },
+      "isCorrect": false,
+      "answer": "Incorrect. An object heading must be underlined. Object slots show attribute values, and an object snapshot omits operations.",
+      "rule": "An object heading must be underlined. Object slots show attribute values, and an object snapshot omits operations.",
+      "context": "View: object snapshot.",
+      "reference": {
+        "asset": "./diagram-assets/c1d57ba69aa7c9beadd58fc6.png",
+        "width": 1329,
+        "height": 155,
+        "view": [
+          0,
+          0,
+          350,
+          155
+        ],
+        "alt": "Object snapshot example 1",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/objectDiagrams/objects/images/professorStudent.png"
+      },
+      "optional": false
+    },
+    {
+      "id": "course-object-class-notation-4",
+      "family": "object",
+      "topicId": "W4.2c",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#design-modelling-modelling-structure-object-diagrams",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/objectDiagrams/objects/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/b7cfad22661466f593a622b1.png",
+        "width": 477,
+        "height": 122,
+        "view": [
+          320,
+          0,
+          75,
+          122
+        ],
+        "alt": "Book diagram, example 4",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/classDiagrams/classes/what/images/chooseNotation.jpg"
+      },
+      "isCorrect": false,
+      "answer": "Incorrect. An object heading must be underlined; this class box does not identify an object snapshot.",
+      "rule": "An object heading must be underlined; this class box does not identify an object snapshot.",
+      "context": "View: object snapshot.",
+      "reference": {
+        "asset": "./diagram-assets/c1d57ba69aa7c9beadd58fc6.png",
+        "width": 1329,
+        "height": 155,
+        "view": [
+          0,
+          0,
+          350,
+          155
+        ],
+        "alt": "Object snapshot example 1",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/objectDiagrams/objects/images/professorStudent.png"
+      },
+      "optional": false
+    },
+    {
+      "id": "course-conceptual-domain",
       "family": "conceptual",
       "topicId": "W9.1a",
-      "week": 9,
-      "context": "A conceptual model of a library domain.",
-      "scene": {
-        "nodes": [
-          {
-            "id": "library",
-            "title": "Library",
-            "x": 60,
-            "y": 110,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": false,
-            "hidden": false
-          },
-          {
-            "id": "book",
-            "title": "Book",
-            "x": 510,
-            "y": 110,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": false,
-            "hidden": false
-          },
-          {
-            "id": "database",
-            "title": "DatabaseConnection",
-            "x": 285,
-            "y": 330,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": false,
-            "hidden": false
-          }
-        ],
-        "edges": [
-          {
-            "id": "association",
-            "x1": 280,
-            "y1": 145,
-            "x2": 510,
-            "y2": 145,
-            "direction": "none",
-            "kind": "solid",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          }
-        ],
-        "shapes": [],
-        "texts": []
-      },
-      "fixes": [
-        {
-          "path": "nodes.2.hidden",
-          "value": true
-        }
-      ],
-      "explanation": "DatabaseConnection is a software implementation detail, not a library-domain entity.",
-      "rule": "Conceptual class diagrams exclude solution-specific classes.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-modelling-modelling-structure-conceptual-class-diagrams-aka-oodms",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingStructures/objectOrientedDomainModels/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/6c531aad2c86bad19bb37371.png",
+        "width": 1266,
+        "height": 987,
+        "view": [
+          0,
+          0,
+          1266,
+          987
+        ],
+        "alt": "Snakes and Ladders conceptual class diagram",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingStructures/objectOrientedDomainModels/images/diagram.png"
+      },
+      "isCorrect": true,
+      "answer": "Correct. This models the problem-domain classes without operations or navigability.",
+      "rule": "This models the problem-domain classes without operations or navigability.",
+      "context": "View: conceptual class diagram.",
+      "reference": null,
       "optional": false
     },
     {
-      "id": "ccd-method",
+      "id": "course-conceptual-player-turn",
       "family": "conceptual",
       "topicId": "W9.1a",
-      "week": 9,
-      "context": "A conceptual model of a library domain.",
-      "scene": {
-        "nodes": [
-          {
-            "id": "book",
-            "title": "Book",
-            "x": 60,
-            "y": 110,
-            "w": 220,
-            "h": 130,
-            "rows": [
-              {
-                "id": "checkout",
-                "text": "+ checkout()",
-                "underlined": false,
-                "hidden": false
-              }
-            ],
-            "object": false,
-            "hidden": false
-          },
-          {
-            "id": "member",
-            "title": "Member",
-            "x": 510,
-            "y": 110,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": false,
-            "hidden": false
-          }
-        ],
-        "edges": [
-          {
-            "id": "association",
-            "x1": 280,
-            "y1": 145,
-            "x2": 510,
-            "y2": 145,
-            "direction": "none",
-            "kind": "solid",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          }
-        ],
-        "shapes": [],
-        "texts": []
-      },
-      "fixes": [
-        {
-          "path": "nodes.0.rows.0.hidden",
-          "value": true
-        }
-      ],
-      "explanation": "Omit operations such as checkout() from the conceptual class diagram.",
-      "rule": "The course’s conceptual class notation omits methods.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-modelling-modelling-structure-conceptual-class-diagrams-aka-oodms",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingStructures/objectOrientedDomainModels/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/20ec3c1037b0383a96c6ed00.png",
+        "width": 335,
+        "height": 67,
+        "view": [
+          0,
+          0,
+          335,
+          67
+        ],
+        "alt": "Player and Turn association",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingStructures/objectOrientedDomainModels/images/playerTurn.png"
+      },
+      "isCorrect": false,
+      "answer": "Incorrect. The association shows navigability, which the course’s conceptual class notation omits.",
+      "rule": "The association shows navigability, which the course’s conceptual class notation omits.",
+      "context": "View: conceptual class diagram.",
+      "reference": {
+        "asset": "./diagram-assets/6c531aad2c86bad19bb37371.png",
+        "width": 1266,
+        "height": 987,
+        "view": [
+          0,
+          0,
+          1266,
+          987
+        ],
+        "alt": "Snakes and Ladders conceptual class diagram",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingStructures/objectOrientedDomainModels/images/diagram.png"
+      },
       "optional": false
     },
     {
-      "id": "ccd-navigability",
-      "family": "conceptual",
-      "topicId": "W9.1a",
-      "week": 9,
-      "context": "A conceptual model of a library domain.",
-      "scene": {
-        "nodes": [
-          {
-            "id": "member",
-            "title": "Member",
-            "x": 60,
-            "y": 110,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": false,
-            "hidden": false
-          },
-          {
-            "id": "book",
-            "title": "Book",
-            "x": 510,
-            "y": 110,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": false,
-            "hidden": false
-          }
-        ],
-        "edges": [
-          {
-            "id": "association",
-            "x1": 280,
-            "y1": 145,
-            "x2": 510,
-            "y2": 145,
-            "direction": "right",
-            "kind": "solid",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          }
-        ],
-        "shapes": [],
-        "texts": []
-      },
-      "fixes": [
-        {
-          "path": "edges.0.direction",
-          "value": "none"
-        }
-      ],
-      "explanation": "Remove the navigability arrow from the association.",
-      "rule": "The course’s conceptual class notation omits navigability.",
-      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-modelling-modelling-structure-conceptual-class-diagrams-aka-oodms",
-      "optional": false
-    },
-    {
-      "id": "ccd-controller",
-      "family": "conceptual",
-      "topicId": "W9.1a",
-      "week": 9,
-      "context": "A conceptual model of a library domain.",
-      "scene": {
-        "nodes": [
-          {
-            "id": "book",
-            "title": "Book",
-            "x": 60,
-            "y": 110,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": false,
-            "hidden": false
-          },
-          {
-            "id": "member",
-            "title": "Member",
-            "x": 510,
-            "y": 110,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": false,
-            "hidden": false
-          },
-          {
-            "id": "dialog",
-            "title": "CheckoutDialog",
-            "x": 285,
-            "y": 330,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": false,
-            "hidden": false
-          }
-        ],
-        "edges": [
-          {
-            "id": "association",
-            "x1": 280,
-            "y1": 145,
-            "x2": 510,
-            "y2": 145,
-            "direction": "none",
-            "kind": "solid",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          }
-        ],
-        "shapes": [],
-        "texts": []
-      },
-      "fixes": [
-        {
-          "path": "nodes.2.hidden",
-          "value": true
-        }
-      ],
-      "explanation": "CheckoutDialog belongs to the software solution, not the library’s problem domain.",
-      "rule": "Conceptual class diagrams describe domain entities, not UI or infrastructure classes.",
-      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-modelling-modelling-structure-conceptual-class-diagrams-aka-oodms",
-      "optional": false
-    },
-    {
-      "id": "sequence-direction",
+      "id": "course-sequence-basic",
       "family": "sequence",
       "topicId": "W6.1a",
-      "week": 6,
-      "context": "Client calls Service.find().",
-      "scene": {
-        "nodes": [
-          {
-            "id": "client",
-            "title": "client:Client",
-            "x": 50,
-            "y": 40,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": true,
-            "hidden": false
-          },
-          {
-            "id": "service",
-            "title": "service:Service",
-            "x": 510,
-            "y": 40,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": true,
-            "hidden": false
-          }
-        ],
-        "edges": [
-          {
-            "id": "client-life",
-            "x1": 160,
-            "y1": 110,
-            "x2": 160,
-            "y2": 430,
-            "direction": "none",
-            "kind": "lifeline",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          },
-          {
-            "id": "service-life",
-            "x1": 620,
-            "y1": 110,
-            "x2": 620,
-            "y2": 430,
-            "direction": "none",
-            "kind": "lifeline",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          },
-          {
-            "id": "call",
-            "x1": 160,
-            "y1": 210,
-            "x2": 620,
-            "y2": 210,
-            "direction": "left",
-            "kind": "solid",
-            "label": "find()",
-            "hidden": false,
-            "multiplicity": []
-          }
-        ],
-        "shapes": [],
-        "texts": []
-      },
-      "fixes": [
-        {
-          "path": "edges.2.direction",
-          "value": "right"
-        }
-      ],
-      "explanation": "The call must travel from Client to Service.",
-      "rule": "A message arrow points from the sender to the receiver.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week6/topics.html#design-modelling-modelling-behaviors-sequence-diagrams-basic",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/sequenceDiagrams/basic/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/bd0a9a9dfb4e92fb07c54a52.png",
+        "width": 637,
+        "height": 672,
+        "view": [
+          0,
+          0,
+          637,
+          672
+        ],
+        "alt": "Sequence diagram from the course",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/sequenceDiagrams/basic/images/playerText.png"
+      },
+      "isCorrect": true,
+      "answer": "Correct. Calls are solid arrows, returns are dashed, and activation bars follow the interactions.",
+      "rule": "Calls are solid arrows, returns are dashed, and activation bars follow the interactions.",
+      "context": "",
+      "reference": null,
       "optional": false
     },
     {
-      "id": "sequence-order",
+      "id": "course-sequence-optional",
+      "family": "sequence",
+      "topicId": "W6.1b",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week6/topics.html#design-modelling-modelling-behaviors-sequence-diagrams-intermediate",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/sequenceDiagrams/optionalPaths/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/19e6d4141e172090c8f3d83b.png",
+        "width": 879,
+        "height": 487,
+        "view": [
+          0,
+          0,
+          879,
+          487
+        ],
+        "alt": "Sequence diagram from the course",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/sequenceDiagrams/optionalPaths/images/logicTimer.png"
+      },
+      "isCorrect": true,
+      "answer": "Correct. The opt frame encloses the interaction that runs only when its guard is true.",
+      "rule": "The opt frame encloses the interaction that runs only when its guard is true.",
+      "context": "",
+      "reference": null,
+      "optional": false
+    },
+    {
+      "id": "course-sequence-self",
+      "family": "sequence",
+      "topicId": "W6.1b",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week6/topics.html#design-modelling-modelling-behaviors-sequence-diagrams-intermediate",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/sequenceDiagrams/selfInvocation/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/871503fb829a530e8bbae299.png",
+        "width": 1076,
+        "height": 385,
+        "view": [
+          0,
+          0,
+          1076,
+          385
+        ],
+        "alt": "Sequence diagram from the course",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/sequenceDiagrams/selfInvocation/images/logic.png"
+      },
+      "isCorrect": true,
+      "answer": "Correct. A self-invocation returns to the same object and uses a nested activation bar.",
+      "rule": "A self-invocation returns to the same object and uses a nested activation bar.",
+      "context": "",
+      "reference": null,
+      "optional": false
+    },
+    {
+      "id": "course-sequence-notation",
       "family": "sequence",
       "topicId": "W6.1a",
-      "week": 6,
-      "context": "Client calls find(), then save().",
-      "scene": {
-        "nodes": [
-          {
-            "id": "client",
-            "title": "client:Client",
-            "x": 50,
-            "y": 40,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": true,
-            "hidden": false
-          },
-          {
-            "id": "service",
-            "title": "service:Service",
-            "x": 510,
-            "y": 40,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": true,
-            "hidden": false
-          }
-        ],
-        "edges": [
-          {
-            "id": "client-life",
-            "x1": 160,
-            "y1": 110,
-            "x2": 160,
-            "y2": 430,
-            "direction": "none",
-            "kind": "lifeline",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          },
-          {
-            "id": "service-life",
-            "x1": 620,
-            "y1": 110,
-            "x2": 620,
-            "y2": 430,
-            "direction": "none",
-            "kind": "lifeline",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          },
-          {
-            "id": "first",
-            "x1": 160,
-            "y1": 190,
-            "x2": 620,
-            "y2": 190,
-            "direction": "right",
-            "kind": "solid",
-            "label": "save()",
-            "hidden": false,
-            "multiplicity": []
-          },
-          {
-            "id": "second",
-            "x1": 160,
-            "y1": 300,
-            "x2": 620,
-            "y2": 300,
-            "direction": "right",
-            "kind": "solid",
-            "label": "find()",
-            "hidden": false,
-            "multiplicity": []
-          }
-        ],
-        "shapes": [],
-        "texts": []
-      },
-      "fixes": [
-        {
-          "path": "edges.2.label",
-          "value": "find()"
-        },
-        {
-          "path": "edges.3.label",
-          "value": "save()"
-        }
-      ],
-      "explanation": "Put find() above save(): time progresses down the diagram.",
-      "rule": "Messages lower in a sequence diagram occur later in the scenario.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week6/topics.html#design-modelling-modelling-behaviors-sequence-diagrams-basic",
-      "optional": false
-    },
-    {
-      "id": "sequence-deletion",
-      "family": "sequence",
-      "topicId": "W6.1b",
-      "week": 6,
-      "context": "Service is destroyed at the X.",
-      "scene": {
-        "nodes": [
-          {
-            "id": "client",
-            "title": "client:Client",
-            "x": 50,
-            "y": 40,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": true,
-            "hidden": false
-          },
-          {
-            "id": "service",
-            "title": "service:Service",
-            "x": 510,
-            "y": 40,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": true,
-            "hidden": false
-          }
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingBehaviors/sequenceDiagramsBasic/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/943446466807293184242bdc.png",
+        "width": 1162,
+        "height": 649,
+        "view": [
+          0,
+          0,
+          1162,
+          649
         ],
-        "edges": [
-          {
-            "id": "client-life",
-            "x1": 160,
-            "y1": 110,
-            "x2": 160,
-            "y2": 430,
-            "direction": "none",
-            "kind": "lifeline",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          },
-          {
-            "id": "service-life",
-            "x1": 620,
-            "y1": 110,
-            "x2": 620,
-            "y2": 280,
-            "direction": "none",
-            "kind": "lifeline",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          },
-          {
-            "id": "after-delete",
-            "x1": 620,
-            "y1": 280,
-            "x2": 620,
-            "y2": 430,
-            "direction": "none",
-            "kind": "lifeline",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          }
-        ],
-        "shapes": [
-          {
-            "id": "destroy",
-            "type": "cross",
-            "x": 620,
-            "y": 280,
-            "label": "",
-            "w": 36,
-            "h": 36,
-            "hidden": false
-          }
-        ],
-        "texts": []
+        "alt": "Sequence diagram involving Foo, Bar and Gee",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingBehaviors/sequenceDiagramsBasic/images/notationMistakes.png"
       },
-      "fixes": [
-        {
-          "path": "edges.2.hidden",
-          "value": true
-        }
-      ],
-      "explanation": "End the lifeline at the destruction mark.",
-      "rule": "An object’s lifeline ends when the object is deleted.",
-      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week6/topics.html#design-modelling-modelling-behaviors-sequence-diagrams-intermediate",
-      "optional": false
-    },
-    {
-      "id": "sequence-guard",
-      "family": "sequence",
-      "topicId": "W6.1b",
-      "week": 6,
-      "context": "send() runs only when hasEmail is true.",
-      "scene": {
-        "nodes": [
-          {
-            "id": "client",
-            "title": "client:Client",
-            "x": 50,
-            "y": 40,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": true,
-            "hidden": false
-          },
-          {
-            "id": "service",
-            "title": "service:Service",
-            "x": 510,
-            "y": 40,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": true,
-            "hidden": false
-          }
+      "isCorrect": false,
+      "answer": "Incorrect. The iteration frame should use loop rather than while, and return messages should be dashed rather than solid.",
+      "rule": "The iteration frame should use loop rather than while, and return messages should be dashed rather than solid.",
+      "context": "",
+      "reference": {
+        "asset": "./diagram-assets/bd0a9a9dfb4e92fb07c54a52.png",
+        "width": 637,
+        "height": 672,
+        "view": [
+          0,
+          0,
+          637,
+          672
         ],
-        "edges": [
-          {
-            "id": "client-life",
-            "x1": 160,
-            "y1": 110,
-            "x2": 160,
-            "y2": 430,
-            "direction": "none",
-            "kind": "lifeline",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          },
-          {
-            "id": "service-life",
-            "x1": 620,
-            "y1": 110,
-            "x2": 620,
-            "y2": 430,
-            "direction": "none",
-            "kind": "lifeline",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          },
-          {
-            "id": "send",
-            "x1": 160,
-            "y1": 260,
-            "x2": 620,
-            "y2": 260,
-            "direction": "right",
-            "kind": "solid",
-            "label": "send()",
-            "hidden": false,
-            "multiplicity": []
-          }
-        ],
-        "shapes": [
-          {
-            "id": "guard",
-            "type": "frame",
-            "x": 90,
-            "y": 170,
-            "label": "opt [!hasEmail]",
-            "w": 620,
-            "h": 160,
-            "hidden": false
-          }
-        ],
-        "texts": []
+        "alt": "Sequence diagram from the course",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/sequenceDiagrams/basic/images/playerText.png"
       },
-      "fixes": [
-        {
-          "path": "shapes.0.label",
-          "value": "opt [hasEmail]"
-        }
-      ],
-      "explanation": "Use [hasEmail], not its negation, for the optional interaction.",
-      "rule": "A guarded interaction must match the condition in the scenario.",
-      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week6/topics.html#design-modelling-modelling-behaviors-sequence-diagrams-intermediate",
       "optional": false
     },
     {
-      "id": "activity-decision",
+      "id": "course-activity-linear-1",
       "family": "activity",
       "topicId": "W9.2a",
-      "week": 9,
-      "context": "Approve if valid; otherwise Reject.",
-      "scene": {
-        "nodes": [],
-        "edges": [
-          {
-            "id": "start-flow",
-            "x1": 400,
-            "y1": 38,
-            "x2": 400,
-            "y2": 95,
-            "direction": "right",
-            "kind": "solid",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          },
-          {
-            "id": "left-flow",
-            "x1": 360,
-            "y1": 140,
-            "x2": 190,
-            "y2": 205,
-            "direction": "right",
-            "kind": "solid",
-            "label": "[valid]",
-            "hidden": false,
-            "multiplicity": []
-          },
-          {
-            "id": "right-flow",
-            "x1": 440,
-            "y1": 140,
-            "x2": 610,
-            "y2": 205,
-            "direction": "right",
-            "kind": "solid",
-            "label": "[else]",
-            "hidden": false,
-            "multiplicity": []
-          }
-        ],
-        "shapes": [
-          {
-            "id": "start",
-            "type": "initial",
-            "x": 400,
-            "y": 25,
-            "label": "",
-            "w": 24,
-            "h": 24,
-            "hidden": false
-          },
-          {
-            "id": "branch",
-            "type": "bar",
-            "x": 400,
-            "y": 120,
-            "label": "",
-            "w": 130,
-            "h": 40,
-            "hidden": false
-          },
-          {
-            "id": "left",
-            "type": "action",
-            "x": 190,
-            "y": 240,
-            "label": "Approve",
-            "w": 190,
-            "h": 65,
-            "hidden": false
-          },
-          {
-            "id": "right",
-            "type": "action",
-            "x": 610,
-            "y": 240,
-            "label": "Reject",
-            "w": 190,
-            "h": 65,
-            "hidden": false
-          }
-        ],
-        "texts": []
-      },
-      "fixes": [
-        {
-          "path": "shapes.1.type",
-          "value": "decision"
-        }
-      ],
-      "explanation": "Use a decision diamond to choose between alternative paths.",
-      "rule": "Decision nodes model alternatives; forks model parallel paths.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-modelling-modelling-behaviors-activity-diagrams-basic",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/linearPaths/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/429f8f1d190e7411c913cf35.png",
+        "width": 1471,
+        "height": 866,
+        "view": [
+          20,
+          0,
+          1110,
+          145
+        ],
+        "alt": "Activity diagram, linear-path exercise 1",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/linearPaths/images/q-correctNotation.png"
+      },
+      "isCorrect": true,
+      "answer": "Correct. The control flows, rounded action boxes, start node and end node use valid notation. The arrowhead style is acceptable.",
+      "rule": "The control flows, rounded action boxes, start node and end node use valid notation. The arrowhead style is acceptable.",
+      "context": "",
+      "reference": null,
       "optional": false
     },
     {
-      "id": "activity-fork",
+      "id": "course-activity-linear-2",
       "family": "activity",
       "topicId": "W9.2a",
-      "week": 9,
-      "context": "Prepare food and Prepare drink start in parallel.",
-      "scene": {
-        "nodes": [],
-        "edges": [
-          {
-            "id": "start-flow",
-            "x1": 400,
-            "y1": 38,
-            "x2": 400,
-            "y2": 95,
-            "direction": "right",
-            "kind": "solid",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          },
-          {
-            "id": "left-flow",
-            "x1": 360,
-            "y1": 140,
-            "x2": 190,
-            "y2": 205,
-            "direction": "right",
-            "kind": "solid",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          },
-          {
-            "id": "right-flow",
-            "x1": 440,
-            "y1": 140,
-            "x2": 610,
-            "y2": 205,
-            "direction": "right",
-            "kind": "solid",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          }
-        ],
-        "shapes": [
-          {
-            "id": "start",
-            "type": "initial",
-            "x": 400,
-            "y": 25,
-            "label": "",
-            "w": 24,
-            "h": 24,
-            "hidden": false
-          },
-          {
-            "id": "branch",
-            "type": "decision",
-            "x": 400,
-            "y": 120,
-            "label": "",
-            "w": 130,
-            "h": 40,
-            "hidden": false
-          },
-          {
-            "id": "left",
-            "type": "action",
-            "x": 190,
-            "y": 240,
-            "label": "Prepare food",
-            "w": 190,
-            "h": 65,
-            "hidden": false
-          },
-          {
-            "id": "right",
-            "type": "action",
-            "x": 610,
-            "y": 240,
-            "label": "Prepare drink",
-            "w": 190,
-            "h": 65,
-            "hidden": false
-          }
-        ],
-        "texts": []
-      },
-      "fixes": [
-        {
-          "path": "shapes.1.type",
-          "value": "bar"
-        }
-      ],
-      "explanation": "Use a fork bar to start both parallel paths.",
-      "rule": "Forks split a flow into parallel paths.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-modelling-modelling-behaviors-activity-diagrams-basic",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/linearPaths/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/429f8f1d190e7411c913cf35.png",
+        "width": 1471,
+        "height": 866,
+        "view": [
+          20,
+          165,
+          1110,
+          150
+        ],
+        "alt": "Activity diagram, linear-path exercise 2",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/linearPaths/images/q-correctNotation.png"
+      },
+      "isCorrect": false,
+      "answer": "Incorrect. The start and end node symbols are swapped.",
+      "rule": "The start and end node symbols are swapped.",
+      "context": "",
+      "reference": {
+        "asset": "./diagram-assets/429f8f1d190e7411c913cf35.png",
+        "width": 1471,
+        "height": 866,
+        "view": [
+          20,
+          0,
+          1110,
+          145
+        ],
+        "alt": "Activity diagram, linear-path exercise 1",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/linearPaths/images/q-correctNotation.png"
+      },
       "optional": false
     },
     {
-      "id": "activity-join",
+      "id": "course-activity-linear-3",
       "family": "activity",
       "topicId": "W9.2a",
-      "week": 9,
-      "context": "Deliver waits for both Pack and Charge.",
-      "scene": {
-        "nodes": [],
-        "edges": [
-          {
-            "id": "start-flow",
-            "x1": 400,
-            "y1": 38,
-            "x2": 400,
-            "y2": 95,
-            "direction": "right",
-            "kind": "solid",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          },
-          {
-            "id": "left-flow",
-            "x1": 360,
-            "y1": 140,
-            "x2": 190,
-            "y2": 205,
-            "direction": "right",
-            "kind": "solid",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          },
-          {
-            "id": "right-flow",
-            "x1": 440,
-            "y1": 140,
-            "x2": 610,
-            "y2": 205,
-            "direction": "right",
-            "kind": "solid",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          },
-          {
-            "id": "pack-flow",
-            "x1": 190,
-            "y1": 273,
-            "x2": 365,
-            "y2": 335,
-            "direction": "right",
-            "kind": "solid",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          },
-          {
-            "id": "charge-flow",
-            "x1": 610,
-            "y1": 273,
-            "x2": 435,
-            "y2": 335,
-            "direction": "right",
-            "kind": "solid",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          },
-          {
-            "id": "deliver-flow",
-            "x1": 400,
-            "y1": 375,
-            "x2": 400,
-            "y2": 425,
-            "direction": "right",
-            "kind": "solid",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          }
-        ],
-        "shapes": [
-          {
-            "id": "start",
-            "type": "initial",
-            "x": 400,
-            "y": 25,
-            "label": "",
-            "w": 24,
-            "h": 24,
-            "hidden": false
-          },
-          {
-            "id": "branch",
-            "type": "bar",
-            "x": 400,
-            "y": 120,
-            "label": "",
-            "w": 130,
-            "h": 40,
-            "hidden": false
-          },
-          {
-            "id": "left",
-            "type": "action",
-            "x": 190,
-            "y": 240,
-            "label": "Pack",
-            "w": 190,
-            "h": 65,
-            "hidden": false
-          },
-          {
-            "id": "right",
-            "type": "action",
-            "x": 610,
-            "y": 240,
-            "label": "Charge",
-            "w": 190,
-            "h": 65,
-            "hidden": false
-          },
-          {
-            "id": "join",
-            "type": "decision",
-            "x": 400,
-            "y": 355,
-            "label": "",
-            "w": 130,
-            "h": 40,
-            "hidden": false
-          },
-          {
-            "id": "deliver",
-            "type": "action",
-            "x": 400,
-            "y": 455,
-            "label": "Deliver",
-            "w": 190,
-            "h": 60,
-            "hidden": false
-          }
-        ],
-        "texts": []
-      },
-      "fixes": [
-        {
-          "path": "shapes.4.type",
-          "value": "bar"
-        }
-      ],
-      "explanation": "Use a join bar to wait for both parallel branches.",
-      "rule": "Parallel paths synchronize at a join before the following action proceeds.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-modelling-modelling-behaviors-activity-diagrams-basic",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/linearPaths/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/429f8f1d190e7411c913cf35.png",
+        "width": 1471,
+        "height": 866,
+        "view": [
+          20,
+          370,
+          470,
+          475
+        ],
+        "alt": "Activity diagram, linear-path exercise 3",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/linearPaths/images/q-correctNotation.png"
+      },
+      "isCorrect": false,
+      "answer": "Incorrect. Action boxes should have rounded corners.",
+      "rule": "Action boxes should have rounded corners.",
+      "context": "",
+      "reference": {
+        "asset": "./diagram-assets/429f8f1d190e7411c913cf35.png",
+        "width": 1471,
+        "height": 866,
+        "view": [
+          20,
+          0,
+          1110,
+          145
+        ],
+        "alt": "Activity diagram, linear-path exercise 1",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/linearPaths/images/q-correctNotation.png"
+      },
       "optional": false
     },
     {
-      "id": "activity-swimlane",
+      "id": "course-activity-linear-4",
       "family": "activity",
-      "topicId": "W9.2b",
-      "week": 9,
-      "context": "The Manager approves refunds.",
-      "scene": {
-        "nodes": [],
-        "edges": [],
-        "shapes": [
-          {
-            "id": "cashier-lane",
-            "type": "lane",
-            "x": 200,
-            "y": 245,
-            "label": "Cashier",
-            "w": 330,
-            "h": 420,
-            "hidden": false
-          },
-          {
-            "id": "manager-lane",
-            "type": "lane",
-            "x": 600,
-            "y": 245,
-            "label": "Manager",
-            "w": 330,
-            "h": 420,
-            "hidden": false
-          },
-          {
-            "id": "refund",
-            "type": "action",
-            "x": 200,
-            "y": 230,
-            "label": "Approve refund",
-            "w": 230,
-            "h": 65,
-            "hidden": false
-          }
+      "topicId": "W9.2a",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-modelling-modelling-behaviors-activity-diagrams-basic",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/linearPaths/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/429f8f1d190e7411c913cf35.png",
+        "width": 1471,
+        "height": 866,
+        "view": [
+          500,
+          320,
+          480,
+          205
         ],
-        "texts": [
-          {
-            "x": 400,
-            "y": 485,
-            "text": "Workflow fragment: responsibility assignment"
-          }
-        ]
+        "alt": "Activity diagram, linear-path exercise 4",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/linearPaths/images/q-correctNotation.png"
       },
-      "fixes": [
-        {
-          "path": "shapes.2.x",
-          "value": 600
-        }
-      ],
-      "explanation": "Move Approve refund into the Manager lane.",
-      "rule": "Swimlanes group actions by the participant responsible for them.",
-      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-modelling-modelling-behaviors-activity-diagrams-intermediate",
+      "isCorrect": true,
+      "answer": "Correct. An activity may contain only one action.",
+      "rule": "An activity may contain only one action.",
+      "context": "",
+      "reference": null,
       "optional": false
     },
     {
-      "id": "architecture-direction",
-      "family": "architecture",
-      "topicId": "W9.4a",
-      "week": 9,
-      "context": "UI depends on Logic. Logic does not depend on UI.",
-      "scene": {
-        "nodes": [
-          {
-            "id": "ui",
-            "title": "UI",
-            "x": 60,
-            "y": 110,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": false,
-            "hidden": false
-          },
-          {
-            "id": "logic",
-            "title": "Logic",
-            "x": 510,
-            "y": 110,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": false,
-            "hidden": false
-          }
+      "id": "course-activity-linear-5",
+      "family": "activity",
+      "topicId": "W9.2a",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-modelling-modelling-behaviors-activity-diagrams-basic",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/linearPaths/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/429f8f1d190e7411c913cf35.png",
+        "width": 1471,
+        "height": 866,
+        "view": [
+          500,
+          565,
+          971,
+          301
         ],
-        "edges": [
-          {
-            "id": "dependency",
-            "x1": 280,
-            "y1": 145,
-            "x2": 510,
-            "y2": 145,
-            "direction": "left",
-            "kind": "solid",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          }
-        ],
-        "shapes": [],
-        "texts": [
-          {
-            "x": 400,
-            "y": 330,
-            "text": "Legend: A → B means A depends on B"
-          }
-        ]
+        "alt": "Activity diagram, linear-path exercise 5",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/linearPaths/images/q-correctNotation.png"
       },
-      "fixes": [
-        {
-          "path": "edges.0.direction",
-          "value": "right"
-        }
-      ],
-      "explanation": "Point the dependency from UI toward Logic, following the legend.",
-      "rule": "Architecture arrow directions must express the dependency stated by their legend.",
-      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-architecture-architecture-diagrams-drawing",
+      "isCorrect": false,
+      "answer": "Incorrect. Activity control flows cannot use double-headed arrows.",
+      "rule": "Activity control flows cannot use double-headed arrows.",
+      "context": "",
+      "reference": {
+        "asset": "./diagram-assets/429f8f1d190e7411c913cf35.png",
+        "width": 1471,
+        "height": 866,
+        "view": [
+          20,
+          0,
+          1110,
+          145
+        ],
+        "alt": "Activity diagram, linear-path exercise 1",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/linearPaths/images/q-correctNotation.png"
+      },
       "optional": false
     },
     {
-      "id": "architecture-both",
-      "family": "architecture",
-      "topicId": "W9.4a",
-      "week": 9,
-      "context": "UI depends on Logic. Logic does not depend on UI.",
-      "scene": {
-        "nodes": [
-          {
-            "id": "ui",
-            "title": "UI",
-            "x": 60,
-            "y": 110,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": false,
-            "hidden": false
-          },
-          {
-            "id": "logic",
-            "title": "Logic",
-            "x": 510,
-            "y": 110,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": false,
-            "hidden": false
-          }
+      "id": "course-activity-alternate-1",
+      "family": "activity",
+      "topicId": "W9.2a",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-modelling-modelling-behaviors-activity-diagrams-basic",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/alternatePaths/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/2481fad0f7d9a5d2b7242c85.png",
+        "width": 1363,
+        "height": 1032,
+        "view": [
+          0,
+          0,
+          1363,
+          350
         ],
-        "edges": [
-          {
-            "id": "dependency",
-            "x1": 280,
-            "y1": 145,
-            "x2": 510,
-            "y2": 145,
-            "direction": "both",
-            "kind": "solid",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          }
-        ],
-        "shapes": [],
-        "texts": [
-          {
-            "x": 400,
-            "y": 330,
-            "text": "Legend: A → B means A depends on B"
-          }
-        ]
+        "alt": "Activity diagram, alternate-path exercise 1",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/alternatePaths/images/q-correctNotation1.png"
       },
-      "fixes": [
-        {
-          "path": "edges.0.direction",
-          "value": "right"
-        }
-      ],
-      "explanation": "Use a single-headed arrow for this one-way dependency.",
-      "rule": "Do not use double-headed arrows indiscriminately for one-way dependencies.",
-      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-architecture-architecture-diagrams-drawing",
+      "isCorrect": true,
+      "answer": "Correct. A branch may have more than two alternate paths.",
+      "rule": "A branch may have more than two alternate paths.",
+      "context": "",
+      "reference": null,
       "optional": false
     },
     {
-      "id": "architecture-name",
-      "family": "architecture",
-      "topicId": "W9.4a",
-      "week": 9,
-      "context": "Components are named by responsibility. Storage may use JSON files or a database.",
-      "scene": {
-        "nodes": [
-          {
-            "id": "ui",
-            "title": "Logic",
-            "x": 60,
-            "y": 110,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": false,
-            "hidden": false
-          },
-          {
-            "id": "logic",
-            "title": "JsonFileHandler",
-            "x": 510,
-            "y": 110,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": false,
-            "hidden": false
-          }
+      "id": "course-activity-alternate-2",
+      "family": "activity",
+      "topicId": "W9.2a",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-modelling-modelling-behaviors-activity-diagrams-basic",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/alternatePaths/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/2481fad0f7d9a5d2b7242c85.png",
+        "width": 1363,
+        "height": 1032,
+        "view": [
+          0,
+          355,
+          1363,
+          370
         ],
-        "edges": [
-          {
-            "id": "dependency",
-            "x1": 280,
-            "y1": 145,
-            "x2": 510,
-            "y2": 145,
-            "direction": "right",
-            "kind": "solid",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          }
-        ],
-        "shapes": [],
-        "texts": [
-          {
-            "x": 400,
-            "y": 330,
-            "text": "Legend: A → B means A depends on B"
-          }
-        ]
+        "alt": "Activity diagram, alternate-path exercise 2",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/alternatePaths/images/q-correctNotation1.png"
       },
-      "fixes": [
-        {
-          "path": "nodes.1.title",
-          "value": "Storage"
-        }
-      ],
-      "explanation": "Use Storage so the component name survives a change in implementation.",
-      "rule": "Architecture component names should describe responsibility, not the current implementation.",
-      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-architecture-architecture-diagrams-drawing",
+      "isCorrect": true,
+      "answer": "Correct. An alternate path may divide into further branches.",
+      "rule": "An alternate path may divide into further branches.",
+      "context": "",
+      "reference": null,
       "optional": false
     },
     {
-      "id": "architecture-legend",
+      "id": "course-activity-alternate-3",
+      "family": "activity",
+      "topicId": "W9.2a",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-modelling-modelling-behaviors-activity-diagrams-basic",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/alternatePaths/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/2481fad0f7d9a5d2b7242c85.png",
+        "width": 1363,
+        "height": 1032,
+        "view": [
+          0,
+          730,
+          1363,
+          302
+        ],
+        "alt": "Activity diagram, alternate-path exercise 3",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/alternatePaths/images/q-correctNotation1.png"
+      },
+      "isCorrect": true,
+      "answer": "Correct. A branch may join another branch.",
+      "rule": "A branch may join another branch.",
+      "context": "",
+      "reference": null,
+      "optional": false
+    },
+    {
+      "id": "course-activity-alternate-4",
+      "family": "activity",
+      "topicId": "W9.2a",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-modelling-modelling-behaviors-activity-diagrams-basic",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/alternatePaths/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/c35d5d46af07307e0d4e4e37.png",
+        "width": 1326,
+        "height": 435,
+        "view": [
+          0,
+          0,
+          450,
+          435
+        ],
+        "alt": "Activity diagram, alternate-path exercise 4",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/alternatePaths/images/q-correctNotation2.png"
+      },
+      "isCorrect": false,
+      "answer": "Incorrect. At x = 5 both outgoing guard conditions are true; exactly one should be true.",
+      "rule": "At x = 5 both outgoing guard conditions are true; exactly one should be true.",
+      "context": "",
+      "reference": {
+        "asset": "./diagram-assets/2481fad0f7d9a5d2b7242c85.png",
+        "width": 1363,
+        "height": 1032,
+        "view": [
+          0,
+          0,
+          1363,
+          350
+        ],
+        "alt": "Activity diagram, alternate-path exercise 1",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/alternatePaths/images/q-correctNotation1.png"
+      },
+      "optional": false
+    },
+    {
+      "id": "course-activity-alternate-5",
+      "family": "activity",
+      "topicId": "W9.2a",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-modelling-modelling-behaviors-activity-diagrams-basic",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/alternatePaths/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/c35d5d46af07307e0d4e4e37.png",
+        "width": 1326,
+        "height": 435,
+        "view": [
+          450,
+          0,
+          450,
+          435
+        ],
+        "alt": "Activity diagram, alternate-path exercise 5",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/alternatePaths/images/q-correctNotation2.png"
+      },
+      "isCorrect": true,
+      "answer": "Correct. An alternate path may form a loop by returning to the branch node.",
+      "rule": "An alternate path may form a loop by returning to the branch node.",
+      "context": "",
+      "reference": null,
+      "optional": false
+    },
+    {
+      "id": "course-activity-alternate-6",
+      "family": "activity",
+      "topicId": "W9.2a",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-modelling-modelling-behaviors-activity-diagrams-basic",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/alternatePaths/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/c35d5d46af07307e0d4e4e37.png",
+        "width": 1326,
+        "height": 435,
+        "view": [
+          940,
+          0,
+          386,
+          435
+        ],
+        "alt": "Activity diagram, alternate-path exercise 6",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/alternatePaths/images/q-correctNotation2.png"
+      },
+      "isCorrect": false,
+      "answer": "Incorrect. Guard conditions must be enclosed in square brackets.",
+      "rule": "Guard conditions must be enclosed in square brackets.",
+      "context": "",
+      "reference": {
+        "asset": "./diagram-assets/2481fad0f7d9a5d2b7242c85.png",
+        "width": 1363,
+        "height": 1032,
+        "view": [
+          0,
+          0,
+          1363,
+          350
+        ],
+        "alt": "Activity diagram, alternate-path exercise 1",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/alternatePaths/images/q-correctNotation1.png"
+      },
+      "optional": false
+    },
+    {
+      "id": "course-activity-parallel-1",
+      "family": "activity",
+      "topicId": "W9.2a",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-modelling-modelling-behaviors-activity-diagrams-basic",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/parallelPaths/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/2877b77eed53aacf5c888f8c.png",
+        "width": 1289,
+        "height": 914,
+        "view": [
+          0,
+          0,
+          1289,
+          914
+        ],
+        "alt": "Four labelled activity diagrams with parallel paths",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/parallelPaths/images/q-correctNotation.png"
+      },
+      "isCorrect": true,
+      "answer": "Correct. A fork may start more than two parallel paths.",
+      "rule": "A fork may start more than two parallel paths.",
+      "context": "Review diagram i.",
+      "reference": null,
+      "optional": false
+    },
+    {
+      "id": "course-activity-parallel-2",
+      "family": "activity",
+      "topicId": "W9.2a",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-modelling-modelling-behaviors-activity-diagrams-basic",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/parallelPaths/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/2877b77eed53aacf5c888f8c.png",
+        "width": 1289,
+        "height": 914,
+        "view": [
+          0,
+          0,
+          1289,
+          914
+        ],
+        "alt": "Four labelled activity diagrams with parallel paths",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/parallelPaths/images/q-correctNotation.png"
+      },
+      "isCorrect": false,
+      "answer": "Incorrect. All parallel paths started by a fork must finish at the same join node.",
+      "rule": "All parallel paths started by a fork must finish at the same join node.",
+      "context": "Review diagram ii.",
+      "reference": {
+        "asset": "./diagram-assets/2877b77eed53aacf5c888f8c.png",
+        "width": 1289,
+        "height": 914,
+        "view": [
+          0,
+          0,
+          1289,
+          914
+        ],
+        "alt": "Four labelled activity diagrams with parallel paths",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/parallelPaths/images/q-correctNotation.png",
+        "caption": "Course reference: diagram i uses a fork and a matching join."
+      },
+      "optional": false
+    },
+    {
+      "id": "course-activity-parallel-3",
+      "family": "activity",
+      "topicId": "W9.2a",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-modelling-modelling-behaviors-activity-diagrams-basic",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/parallelPaths/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/2877b77eed53aacf5c888f8c.png",
+        "width": 1289,
+        "height": 914,
+        "view": [
+          0,
+          0,
+          1289,
+          914
+        ],
+        "alt": "Four labelled activity diagrams with parallel paths",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/parallelPaths/images/q-correctNotation.png"
+      },
+      "isCorrect": false,
+      "answer": "Incorrect. Parallel paths must end with a join node.",
+      "rule": "Parallel paths must end with a join node.",
+      "context": "Review diagram iii.",
+      "reference": {
+        "asset": "./diagram-assets/2877b77eed53aacf5c888f8c.png",
+        "width": 1289,
+        "height": 914,
+        "view": [
+          0,
+          0,
+          1289,
+          914
+        ],
+        "alt": "Four labelled activity diagrams with parallel paths",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/parallelPaths/images/q-correctNotation.png",
+        "caption": "Course reference: diagram i uses a fork and a matching join."
+      },
+      "optional": false
+    },
+    {
+      "id": "course-activity-parallel-4",
+      "family": "activity",
+      "topicId": "W9.2a",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-modelling-modelling-behaviors-activity-diagrams-basic",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/parallelPaths/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./diagram-assets/2877b77eed53aacf5c888f8c.png",
+        "width": 1289,
+        "height": 914,
+        "view": [
+          0,
+          0,
+          1289,
+          914
+        ],
+        "alt": "Four labelled activity diagrams with parallel paths",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/parallelPaths/images/q-correctNotation.png"
+      },
+      "isCorrect": true,
+      "answer": "Correct. A parallel path may contain multiple actions.",
+      "rule": "A parallel path may contain multiple actions.",
+      "context": "Review diagram iv.",
+      "reference": null,
+      "optional": false
+    },
+    {
+      "id": "course-architecture-1",
       "family": "architecture",
       "topicId": "W9.4a",
-      "week": 9,
-      "context": "Solid arrows represent dependencies; dashed arrows represent data flow.",
-      "scene": {
-        "nodes": [
-          {
-            "id": "ui",
-            "title": "UI",
-            "x": 40,
-            "y": 80,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": false,
-            "hidden": false
-          },
-          {
-            "id": "logic",
-            "title": "Logic",
-            "x": 510,
-            "y": 80,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": false,
-            "hidden": false
-          },
-          {
-            "id": "storage",
-            "title": "Storage",
-            "x": 510,
-            "y": 300,
-            "w": 220,
-            "h": 70,
-            "rows": [],
-            "object": false,
-            "hidden": false
-          }
-        ],
-        "edges": [
-          {
-            "id": "dependency",
-            "x1": 260,
-            "y1": 115,
-            "x2": 510,
-            "y2": 115,
-            "direction": "right",
-            "kind": "solid",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          },
-          {
-            "id": "data-flow",
-            "x1": 620,
-            "y1": 150,
-            "x2": 620,
-            "y2": 300,
-            "direction": "right",
-            "kind": "dashed",
-            "label": "",
-            "hidden": false,
-            "multiplicity": []
-          }
-        ],
-        "shapes": [
-          {
-            "id": "legend",
-            "type": "legend",
-            "x": 220,
-            "y": 350,
-            "label": "Solid → dependency",
-            "w": 340,
-            "h": 100,
-            "hidden": false
-          }
-        ],
-        "texts": []
-      },
-      "fixes": [
-        {
-          "path": "shapes.0.label",
-          "value": "Solid → dependency\nDashed → data flow"
-        }
-      ],
-      "explanation": "The legend must explain both arrow styles.",
-      "rule": "Explain unfamiliar symbols and distinguish each kind of arrow in the legend.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-architecture-architecture-diagrams-drawing",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/architecture/architectureDiagrams/drawing/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./assets/6c3c4f30879558d5eb8971ba.svg",
+        "width": 670,
+        "height": 301,
+        "view": [
+          0,
+          0,
+          670,
+          301
+        ],
+        "alt": "Two labelled architecture diagrams and their dependency legend",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/architecture/architectureDiagrams/drawing/images/tip.svg"
+      },
+      "isCorrect": true,
+      "answer": "Correct. The diagram distinguishes one-way dependencies from the bidirectional GUI–Logic dependency.",
+      "rule": "The diagram distinguishes one-way dependencies from the bidirectional GUI–Logic dependency.",
+      "context": "Review Diagram 1.",
+      "reference": null,
+      "optional": false
+    },
+    {
+      "id": "course-architecture-2",
+      "family": "architecture",
+      "topicId": "W9.4a",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-architecture-architecture-diagrams-drawing",
+      "bookSource": "https://nus-cs2103-ay2627-s1.github.io/website/book/architecture/architectureDiagrams/drawing/unit-inElsewhere-asFlat._include_.html",
+      "image": {
+        "asset": "./assets/6c3c4f30879558d5eb8971ba.svg",
+        "width": 670,
+        "height": 301,
+        "view": [
+          0,
+          0,
+          670,
+          301
+        ],
+        "alt": "Two labelled architecture diagrams and their dependency legend",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/architecture/architectureDiagrams/drawing/images/tip.svg"
+      },
+      "isCorrect": false,
+      "answer": "Incorrect. Double-headed arrows everywhere hide which dependencies are one-way and which are genuinely bidirectional.",
+      "rule": "Double-headed arrows everywhere hide which dependencies are one-way and which are genuinely bidirectional.",
+      "context": "Review Diagram 2.",
+      "reference": {
+        "asset": "./assets/6c3c4f30879558d5eb8971ba.svg",
+        "width": 670,
+        "height": 301,
+        "view": [
+          0,
+          0,
+          670,
+          301
+        ],
+        "alt": "Two labelled architecture diagrams and their dependency legend",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/architecture/architectureDiagrams/drawing/images/tip.svg",
+        "caption": "Course reference: Diagram 1 distinguishes the dependency directions."
+      },
       "optional": false
     }
   ]
