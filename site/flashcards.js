@@ -53,6 +53,7 @@
     revealed = show;
     $('fc-answer').hidden = !show;
     $('fc-passage-wrap').hidden = !show;
+    if (!show) $('fc-passage-wrap').open = false;
     $('fc-face-label').textContent = show ? 'ANSWER' : 'FILL IN THE BLANK';
     $('fc-hint').textContent = show ? 'Click the card to hide the answer' : 'Click the card to reveal the answer';
     $('fc-card').setAttribute('aria-expanded', String(show));

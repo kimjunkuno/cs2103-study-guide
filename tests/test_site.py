@@ -72,7 +72,10 @@ class QuestionTests(unittest.TestCase):
    self.assertIn(card['passage'],norm(' '.join(parser.words[card['topicId']])),card['id'])
    self.assertIn(card['answer'],norm(' '.join(parser.bold_words[card['topicId']])),card['id'])
  def test_unique_ids_and_week_coverage(self):
-  self.assertGreater(len(self.bank),500)
+  coverage=json.loads((SITE.parent/'FLASHCARD_COVERAGE.json').read_text())
+  self.assertEqual(len(self.bank),coverage['questionCount'])
+  self.assertGreater(len(self.bank),0)
+  self.assertLess(len(self.bank),coverage['previousCount'])
   self.assertEqual(len(self.bank),len({c['id'] for c in self.bank}))
   self.assertEqual({c['week'] for c in self.bank},set(range(1,12)))
   for c in self.bank:self.assertRegex(c['source'],r'^https://nus-cs2103-ay2627-s1.github.io/website/schedule/week\d+/topics.html#')
@@ -81,3 +84,23 @@ class QuestionTests(unittest.TestCase):
    self.assertFalse(any(k.startswith('on') for k in a))
    if tag in {'script','link'}:
     url=a.get('src') if tag=='script' else a.get('href');self.assertTrue(url.startswith('./'));self.assertTrue((SITE/url[2:]).is_file())
+
+ def test_questions_use_only_short_core_emphasis(self):
+  core=json.loads((SITE.parent/'CORE_STATEMENTS.json').read_text())['topics']
+  for card in self.bank:
+   self.assertIn(card['passage'],core[card['topicId']],card['id'])
+   self.assertLessEqual(len(card['passage'].split()),35,card['id'])
+   self.assertLessEqual(len(card['passage']),260,card['id'])
+  # This extra definition was in a supplementary panel, not the main point.
+  abstraction=[c['passage'] for c in self.bank if c['topicId']=='W1.1c']
+  self.assertFalse(any('Abstraction is a technique' in x for x in abstraction))
+  # Dimmed examples and plain explanatory follow-up must not enter prompts.
+  oop=[c['passage'] for c in self.bank if c['topicId']=='W1.1a']
+  self.assertFalse(any('Java is primarily' in x for x in oop))
+  debugging=[c['passage'] for c in self.bank if c['topicId']=='W6.4a']
+  self.assertTrue(any('infection' in x for x in debugging))
+  self.assertFalse(any('Infections can spread' in x for x in debugging))
+ def test_source_evidence_is_collapsed_by_default(self):
+  attrs=next(a for tag,a in Scan((SITE/'flashcards.html').read_text()).tags if a.get('id')=='fc-passage-wrap')
+  self.assertNotIn('open',attrs)
+  self.assertTrue(any(tag=='details' and a.get('id')=='fc-passage-wrap' for tag,a in Scan((SITE/'flashcards.html').read_text()).tags))

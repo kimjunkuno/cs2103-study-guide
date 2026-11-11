@@ -9,7 +9,8 @@ Stage 1: Replicate and publish the existing study guide.
 - Create the public repository, enable Pages, deploy and verify its live URL.
 
 Stage 2: Add simple flashcards after the first successful Pages deployment.
-- Generate a fixed question pool from meaningful bolded theory in the snapshot.
+- Generate a fixed question pool from short bold/highlighted core statements only.
+- Exclude dimmed text, examples and nested supplementary panels. Keep source evidence collapsed.
 - Use cloze questions with exact source-backed answers; no runtime AI or external theory.
 - Select a random card; click/Enter/Space to reveal its answer.
 - Filter by week and topic. Allow/disallow repeated cards in a session.

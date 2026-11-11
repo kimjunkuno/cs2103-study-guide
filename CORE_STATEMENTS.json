@@ -1,0 +1,1805 @@
+{
+  "snapshot": "2026-11-11",
+  "scope": "Original top-level topic body emphasis after removing dimmed text, examples, nested panels, quotations, headings and exercises.",
+  "topics": {
+    "W1.1a": [
+      "Object-Oriented Programming (OOP) is a programming paradigm .",
+      "Some programming languages support multiple paradigms."
+    ],
+    "W1.1b": [
+      "An object in Object-Oriented Programming (OOP) has state and behavior , similar to objects in the real world.",
+      "OOP views the world as a network of interacting objects .",
+      "OOP solutions try to create a similar object network inside the computer’s memory",
+      "so that a similar result can be achieved programmatically.",
+      "OOP does not demand that the virtual world object network follow the real world exactly .",
+      "Every object has both state (data) and behavior (operations on data).",
+      "Every object has an interface and an implementation .",
+      "Objects interact by sending messages."
+    ],
+    "W1.1c": [
+      "Objects in OOP is an abstraction mechanism because it allows us to abstract away lower-level details and work with larger units.",
+      "Abstraction"
+    ],
+    "W1.1d": [
+      "An object is an encapsulation of some data and related behavior in terms of two aspects:",
+      "1. The packaging aspect:",
+      "2. The information hiding aspect:"
+    ],
+    "W1.1e": [
+      "Writing an OOP program is essentially writing instructions that the computer will use to,",
+      "create the virtual world of the object network, and",
+      "provide it with the inputs to produce the outcome you want.",
+      "A class contains instructions for creating a specific kind of object",
+      "instantiate"
+    ],
+    "W1.1f": [
+      "The Java convention is to use PascalCase format for class names",
+      "The this keyword is a reference variable in Java that refers to the current object .",
+      "shadow",
+      "this can be used to refer to a constructor of a class within the same class too.",
+      "You can add methods to a class; these methods can then be called on objects of that class."
+    ],
+    "W1.1g": [
+      "you can provide methods to access attributes",
+      "you can provide setter methods to modify attributes"
+    ],
+    "W1.1h": [
+      "variables whose value is shared by all instances of a class are called class-level attributes",
+      "methods that are called using the class instead of a specific instance are called class-level methods",
+      "Class-level attributes and methods are collectively called class-level members",
+      "They are to be accessed using the class name rather than an instance of the class"
+    ],
+    "W1.1i": [
+      "Sometimes, you want to have variables that are common to all objects. This is accomplished with the static modifier.",
+      "Class variables are referenced by the class name itself",
+      "The static modifier, in combination with the final modifier, is also used to define constants.",
+      "System.out.println(...)"
+    ],
+    "W1.1j": [
+      "An Enumeration is a fixed set of values that can be considered as a data type."
+    ],
+    "W1.1k": [
+      "You can define an enum type by using the enum keyword.",
+      "Java enumerations can have behaviors too"
+    ],
+    "W1.2a": [
+      "The OOP concept Inheritance allows you to define a new class based on an existing class.",
+      "A superclass is said to be more general than the subclass.",
+      "Applying inheritance to a group of similar classes can result in the common parts of those classes being extracted into more general classes.",
+      "Inheritance implies that the derived class can be considered a subtype of the base class (and the base class is a supertype of the derived class), resulting in an is-a relationship.",
+      "Inheritance relationships through a chain of classes can result in inheritance hierarchies (aka inheritance trees ).",
+      "Multiple Inheritance is when a class inherits directly from multiple classes."
+    ],
+    "W1.2b": [
+      "Method overloading is when there are multiple methods with the same name but different type signatures .",
+      "Type signature"
+    ],
+    "W1.2c": [
+      "Method overriding is when a subclass changes the behavior inherited from the parent class"
+    ],
+    "W1.2d": [
+      "A class that is derived from another class is called a subclass",
+      "A subclass inherits all the members",
+      "Every class has one and only one direct superclass ( single inheritance )",
+      "The java.lang.Object class defines and implements behavior common to all classes",
+      "The keyword extends indicates that one class inherits from another.",
+      "A subclass inherits all the fields and methods of the superclass.",
+      "If your method overrides one of its superclass's methods, you can invoke the overridden method through the use of the keyword super .",
+      "A subclass constructor can invoke the superclass constructor.",
+      "Access level modifiers determine whether other classes can use a particular field or invoke a particular method.",
+      "assuming you have not yet started placing your classes in different packages",
+      "At the class level",
+      "public",
+      "no modifier",
+      "At the member level",
+      "protected",
+      "private"
+    ],
+    "W1.3a": [
+      "Polymorphism",
+      "Polymorphism allows you to write code targeting superclass objects, use that code on subclass objects, and achieve possibly different results based on the actual class of the object."
+    ],
+    "W1.3b": [
+      "Java is a strongly-typed language which means the code works with only the object types that it targets.",
+      "strong-typing can lead to unnecessary verbosity",
+      "take advantage of polymorphism to write code that targets a superclass so that it works with any subclass objects.",
+      "Polymorphic code is better",
+      "shorter",
+      "simpler",
+      "flexible"
+    ],
+    "W1.3c": [
+      "Abstract class",
+      "You can declare a class as an abstract class when it is merely a representation of commonalities among its subclasses",
+      "Abstract method",
+      "A class that has an abstract method becomes an abstract class"
+    ],
+    "W1.3d": [
+      "an abstract method is declared with the keyword abstract and given without an implementation",
+      "An abstract class is declared with the keyword abstract . Abstract classes can be used as reference types but cannot be instantiated.",
+      "a class that does not have any abstract methods can be declared as an abstract class.",
+      "When an abstract class is subclassed, the subclass should provide implementations for all of the abstract methods in its superclass or else the subclass must also be declared abstract."
+    ],
+    "W1.3e": [
+      "An interface is a behavior specification",
+      "A class implementing an interface results in an is-a relationship"
+    ],
+    "W1.3f": [
+      "an interface is a reference type, similar to a class, mainly containing method signatures.",
+      "Interfaces cannot be instantiated—they can only be implemented by classes",
+      "An interface can be used as a type",
+      "Interfaces can inherit from other interfaces",
+      "Java allows multiple inheritance among interfaces.",
+      "A Java class can implement multiple interfaces",
+      "Interfaces can also contain constants and static methods"
+    ],
+    "W1.3g": [
+      "Every instance of a subclass is an instance of the superclass, but not vice versa.",
+      "substitutability"
+    ],
+    "W1.3h": [
+      "Dynamic binding",
+      "Overridden methods are resolved using dynamic binding , and therefore resolve to the implementation in the object's actual type.",
+      "Method overriding is when a subclass changes the behavior inherited from the parent class",
+      "Static binding",
+      "In contrast, overloaded methods are resolved using static binding .",
+      "Method overloading is when there are multiple methods with the same name but different type signatures .",
+      "Type signature"
+    ],
+    "W1.3i": [
+      "Three concepts combine to achieve polymorphism: substitutability, operation overriding, and dynamic binding .",
+      "Substitutability:",
+      "Overriding:",
+      "Dynamic binding"
+    ],
+    "W1.4a": [
+      "A collection — sometimes called a container — is simply an object that groups multiple elements into a single unit.",
+      "The collections framework is a unified architecture for representing and manipulating collections.",
+      "Interfaces",
+      "Implementations",
+      "Algorithms",
+      "A well-known example of collections frameworks is the C++ Standard Template Library (STL)",
+      "Collection",
+      "Set",
+      "List",
+      "Queue",
+      "Map"
+    ],
+    "W1.4b": [],
+    "W1.4c": [],
+    "W1.5a": [],
+    "W1.5b": [
+      "Exceptions are used to deal with 'unusual' but not entirely unexpected situations",
+      "Exception"
+    ],
+    "W1.5c": [
+      "There are three basic categories of exceptions in Java:",
+      "Checked exceptions : exceptional conditions that a well-written application should anticipate and recover from.",
+      "Errors : exceptional conditions that are external to the application, and that the application usually cannot anticipate or recover from.",
+      "Runtime exceptions : conditions that are internal to the application, and that the application usually cannot anticipate or recover from.",
+      "Errors and runtime exceptions are collectively known as unchecked exceptions ."
+    ],
+    "W1.5d": [
+      "Most languages allow code that encountered an \"exceptional\" situation to encapsulate details of the situation in an Exception object and throw or raise that object so that another piece of code can catch it and deal with it.",
+      "When an error occurs at some point in the execution, the code being executed creates an exception object and hands it off to the runtime system.",
+      "After a method throws an exception, the runtime system attempts to find something to handle it in the call stack .",
+      "exception handler",
+      "The exception handler chosen is said to catch the exception."
+    ],
+    "W1.5e": [
+      "A program can catch exceptions by using a combination of try and catch blocks.",
+      "use a finally block to specify code that is guaranteed to execute whether or not an exception occurs.",
+      "You can use the throw statement to throw an exception.",
+      "Checked exceptions are subject to the Catch or Specify Requirement",
+      "Java comes with a collection of built-in exception classes",
+      "it is possible to create your own exception classes"
+    ],
+    "W1.5f": [],
+    "W1.6a": [
+      "Software engineering",
+      "Simply put, software engineering turns human needs into dependable software while dealing with real-world limits.",
+      "The term software engineering became well known during the software crisis of the late 1960s.",
+      "The joys of software engineering still attract people to the field.",
+      "The woes of software engineering also remain.",
+      "In 1986, Brooks made a famous prediction: no single breakthrough -- no silver bullet -- would transform software development within ten years.",
+      "Accidental complexity",
+      "Essential complexity",
+      "Then large language models learned to write code.",
+      "Software engineering covers the whole life of a system, not only writing its code.",
+      "AI now helps with nearly all of these activities.",
+      "However, generating code faster does not automatically produce better software.",
+      "The clearest finding so far is that AI amplifies both the strengths and weaknesses of the engineering process around it.",
+      "AI makes software engineering fundamentals more important, not less.",
+      "Engineers are also building more software that uses AI as part of the system.",
+      "Developers are giving AI larger pieces of work: first lines of code, then whole tasks, and perhaps soon larger parts of a project.",
+      "One possible next step is AI-native software engineering : designing the workflow for ongoing collaboration between humans and AI.",
+      "AI-assisted software engineering",
+      "agentic software engineering",
+      "Experts disagree about how far this change will go, so evaluate their predictions carefully.",
+      "As it becomes easier to give implementation work to AI, deciding, designing, checking, and taking responsibility become more valuable.",
+      "Engineers must understand the work before they can direct, evaluate, or fix it. Therefore, software engineering foundations matter more than ever.",
+      "Software engineering may now be going through its biggest change since 1968, but its future is still unclear.",
+      "📖 The Mythical Man-Month: Essays on Software Engineering"
+    ],
+    "W1.7a": [],
+    "W2.1a": [
+      "The simplest way to build software is to start coding and keep fixing what breaks, with no explicit stages at all.",
+      "code-and-fix",
+      "It stops working as the software and the team grow.",
+      "Software development goes through different stages such as requirements, analysis, design, implementation, and testing . These stages are collectively known as the software development lifecycle (SDLC).",
+      "software development lifecycle models",
+      "Reaching users is not the end of the lifecycle. Deployment , operation , and maintenance are commonly counted as lifecycle activities too",
+      "What happens during that time feeds back into development"
+    ],
+    "W2.1b": [
+      "The sequential model , also called the waterfall model, views software development as a linear process",
+      "When one stage of the process is completed, it produces some artifacts to be used in the next stage",
+      "A strict sequential model project moves only in the forward direction",
+      "In practice the model is often relaxed",
+      "This model can work well for a project that solves a well-understood problem",
+      "However, real-world projects often tackle problems that are not well-understood at the beginning",
+      "A second weakness is that feedback arrives late."
+    ],
+    "W2.1c": [
+      "The iterative model advocates producing the software by going through several iterations .",
+      "Each iteration produces a new version of the product",
+      "The two models divide a project along different lines.",
+      "A sequential project is divided by activity",
+      "An iterative project is divided into bounded cycles instead",
+      "The iterative model can use a breadth-first or depth-first approach.",
+      "In the breadth-first approach, an iteration evolves all major components and all functionality areas in parallel, producing a working product at the end of each iteration",
+      "In the depth-first approach, an iteration focuses on fleshing out only some components or some functionality area.",
+      "Iterating and incrementing are two different things, and most projects do both.",
+      "What an iteration delivers is called an increment",
+      "Ideally, an iteration should produce not only progress but also new knowledge.",
+      "A project can be done as a mixture of breadth-first and depth-first iterations",
+      "An early iteration is a chance to find out you were wrong while changing course is still cheap."
+    ],
+    "W2.2a": [],
+    "W2.2b": [],
+    "W2.3a": [],
+    "W2.3b": [],
+    "W2.4a": [
+      "Professional software engineers often write code using Integrated Development Environments (IDEs) . IDEs support most development-related work within the same tool"
+    ],
+    "W2.4b": [
+      "VS Code:"
+    ],
+    "W2.5a": [
+      "Testing",
+      "When testing, you execute a set of test cases .",
+      "software under test (SUT)",
+      "Test cases can be determined based on the specification, reviewing similar existing systems, or comparing to the past behavior of the SUT.",
+      "A test case failure is a mismatch between the expected behavior and the actual behavior. A failure indicates a potential defect (or a bug)"
+    ],
+    "W2.5b": [
+      "When you modify a system, the modification may result in some unintended and undesirable effects on the system. Such an effect is called a regression .",
+      "Regression testing is the re-testing of the software to detect regressions.",
+      "regression testing is more practical when it is automated"
+    ],
+    "W2.5c": [
+      "An automated test case can be run programmatically and the result of the test case (pass or fail) is determined programmatically."
+    ],
+    "W2.5d": [
+      "A simple way to semi-automate testing of a CLI (Command Line Interface) app is by using input/output re-direction."
+    ],
+    "W3.1a": [],
+    "W3.1b": [],
+    "W3.1c": [],
+    "W3.2a": [],
+    "W3.3a": [
+      "Combining parts of a software product to form a whole is called integration"
+    ],
+    "W3.3b": [
+      "Build automation tools automate the steps of the build process, usually by means of build scripts.",
+      "Some build tools also serve as dependency management tools"
+    ],
+    "W3.3c": [
+      "An extreme application of build automation is called continuous integration (CI) in which integration, building, and testing happen automatically after each code change.",
+      "A natural extension of CI is continuous deployment (CD) , where the changes are not only integrated continuously but also deployed to end users at the same time."
+    ],
+    "W3.4a": [
+      "JavaDoc is a tool for generating API documentation in HTML format from comments in the source code."
+    ],
+    "W3.4b": [
+      "A minimal JavaDoc comment example for methods:",
+      "A minimal JavaDoc comment example for classes:"
+    ],
+    "W3.4c": [
+      "You can use the java.io.File class to represent a file object",
+      "relative to the current working directory",
+      "You can read from a file using a Scanner object that uses a File object as the source of data.",
+      "You can use a java.io.FileWriter object to write to a file.",
+      "need to call the close() method",
+      "You can create a FileWriter object that appends to the file",
+      "The java.nio.file.Files is a utility class that provides several useful file operations.",
+      "it is also possible to perform file I/O operations using other classes"
+    ],
+    "W3.4d": [
+      "You can organize your types (i.e., classes, interfaces, enumerations, etc.) into packages",
+      "To create a package, you put a package statement at the very top of every source file in that package.",
+      "the package of a type should match the folder path of the source file.",
+      "Package names are written in all lower case",
+      "To use a public package member from outside its package, you must do one of the following:",
+      "Use the fully qualified name",
+      "Import",
+      "Importing a package does not import its sub-packages",
+      "If you do not use a package statement, your type doesn't have a package",
+      "Optionally, a static import can be used to import static members of a type",
+      "When using the command line to compile/run Java, you should take the package into account."
+    ],
+    "W3.4e": [
+      "Access level modifiers determine whether other classes can use a particular field or invoke a particular method.",
+      "At the class level",
+      "public",
+      "no modifier (the default, also known as package-private )",
+      "At the member level",
+      "no modifier ( package-private )",
+      "private",
+      "protected"
+    ],
+    "W3.4f": [
+      "Java applications are typically delivered as JAR (short for Java Archive ) files."
+    ],
+    "W3.5a": [
+      "Production code needs to be of high quality"
+    ],
+    "W3.5b": [
+      "One essential way to improve code quality is to follow a consistent style. That is why software engineers usually follow a strict coding standard (aka style guide ).",
+      "The aim of a coding standard is to make the entire codebase look like it was written by one person"
+    ],
+    "W3.6a": [
+      "Developer testing is the testing done by the developers themselves"
+    ],
+    "W3.6b": [
+      "Delaying testing until the full product is complete has a number of disadvantages:",
+      "Locating the cause of a test case failure is difficult due to the larger search space;",
+      "Fixing a bug found during such testing could result in major rework",
+      "One bug might 'hide' other bugs",
+      "The delivery may have to be delayed",
+      "Therefore, it is better to do early testing"
+    ],
+    "W3.7a": [
+      "A test driver is the code that ‘drives’ the SUT for the purpose of testing"
+    ],
+    "W3.7b": [
+      "JUnit is a tool for automated testing of Java programs."
+    ],
+    "W3.7c": [
+      "Unit testing",
+      "unit tests"
+    ],
+    "W3.7d": [
+      "What to test for when writing tests?",
+      "Recommended:"
+    ],
+    "W3.7e": [
+      "A proper unit test requires the unit to be tested in isolation",
+      "Stubs can isolate the SUT from its dependencies",
+      "Stub"
+    ],
+    "W3.7f": [
+      "Annotations:",
+      "Pre/post-test tasks:",
+      "Conditional test execution:",
+      "Assumptions:",
+      "Tagging tests:",
+      "Test execution order:",
+      "Test hierarchies",
+      "Repeated tests:",
+      "Parameterized tests",
+      "Dynamic tests",
+      "Timeouts:",
+      "Parallel execution:",
+      "Extensions:"
+    ],
+    "W4.1a": [
+      "A model is a representation of something else.",
+      "A model provides a simpler view of a complex entity because a model captures only a selected aspect.",
+      "Abstraction",
+      "The guiding principle of abstraction is that only details that are relevant to the current perspective or the task at hand need to be considered.",
+      "Data abstraction : abstracting away the lower level data items and thinking in terms of bigger entities",
+      "Control abstraction : abstracting away details of the actual control flow to focus on tasks at a higher level",
+      "Abstraction can be applied repeatedly to obtain progressively higher levels of abstraction .",
+      "Abstraction is a general concept that is not limited to just data or control abstractions.",
+      "Multiple models of the same entity may be needed to capture it fully."
+    ],
+    "W4.1b": [
+      "In software development, models are useful in several ways:",
+      "a) To analyze a complex entity related to software development",
+      "problem domain",
+      "b) To communicate information among stakeholders.",
+      "c) As a blueprint for creating software."
+    ],
+    "W4.1c": [],
+    "W4.2a": [
+      "it is useful to be able to model how the relevant objects are 'networked' together",
+      "object structures within the same software can change over time",
+      "rules that object structures need to follow can be illustrated as a class structure",
+      "UML Object Diagrams model object structures. UML Class Diagrams model class structures."
+    ],
+    "W4.2b": [
+      "Classes form the basis of class diagrams.",
+      "Associations are the main connections among the classes in a class diagram.",
+      "associations can show additional decorations such as association labels , association roles , multiplicity and navigability"
+    ],
+    "W4.2c": [],
+    "W4.2d": [
+      "multiple object diagrams can correspond to a single class diagram",
+      "the object diagram should show either an object of the parent class or the child class, but not both",
+      "Association labels/roles can be omitted unless they add value"
+    ],
+    "W4.3a": [
+      "UML notes can augment UML diagrams with additional information."
+    ],
+    "W4.3b": [
+      "A constraint can be given inside a note, within curly braces"
+    ],
+    "W4.3c": [
+      "A class diagram can also show different types of relationships between classes: inheritance, compositions, aggregations, dependencies.",
+      "A class diagram can also show different types of class-like entities:"
+    ],
+    "W4.3d": [
+      "An association class represents additional information about an association."
+    ],
+    "W4.3e": [],
+    "W4.3f": [
+      "UML stereotypes are a lightweight extension mechanism for adding domain-specific meaning to existing UML elements",
+      "The same << >> notation is also used to denote built-in classifier kinds <<interface>> and <<enumeration>> ."
+    ],
+    "W4.4a": [],
+    "W4.5a": [],
+    "W4.6a": [],
+    "W4.6b": [
+      "Use nouns for classes/variables and verbs for methods/functions.",
+      "Distinguish clearly between single-valued and multi-valued variables."
+    ],
+    "W4.6c": [
+      "Avoid foreign language words, slang, and names that are only meaningful within specific contexts/times"
+    ],
+    "W4.6d": [
+      "A name is not just for differentiation; it should explain the named entity to the reader accurately and at a sufficient level of detail.",
+      "If a name has multiple words, they should be in a sensible order."
+    ],
+    "W4.6e": [],
+    "W4.6f": [
+      "Related things should be named similarly, while unrelated things should NOT."
+    ],
+    "W4.7a": [
+      "Static analysis",
+      "Static analysis of code can find useful information such as unused variables",
+      "In contrast, dynamic analysis requires the code to be executed to gather additional information about the code",
+      "Higher-end static analysis tools ( static analyzers ) can perform more complex analysis such as locating potential bugs, memory leaks, and inefficient code structures.",
+      "Linters are a subset of static analyzers"
+    ],
+    "W4.8a": [
+      "Code review is the systematic examination of code with the intention of finding where the code can be improved.",
+      "Pull Request reviews",
+      "In pair programming",
+      "Pair programming",
+      "Formal inspections"
+    ],
+    "W4.9a": [],
+    "W5.1a": [
+      "A software requirement specifies a need to be fulfilled by the software product.",
+      "A software project may be one of two types:",
+      "a brownfield project",
+      "a greenfield project",
+      "Requirements come from stakeholders .",
+      "Stakeholder",
+      "Identifying requirements is often not easy."
+    ],
+    "W5.1b": [
+      "Functional requirements specify what the system should do.",
+      "Non-functional requirements specify the constraints under which the system is developed and operated.",
+      "NFRs are easier to miss.",
+      "NFRs are critical to the success of the software."
+    ],
+    "W5.1c": [
+      "Requirements can be prioritized based on the importance and urgency",
+      "Some requirements can be discarded if they are considered ‘out of scope ’."
+    ],
+    "W5.1d": [
+      "Atomic",
+      "A requirement that is unambiguous and testable can specify an observable result which can determine whether it has been met."
+    ],
+    "W5.1e": [
+      "Requirements are not settled once and then left alone; they keep changing while the product is being built.",
+      "Stakeholders work out what they want by seeing something concrete.",
+      "The world the product lives in changes.",
+      "The team learns what things actually cost.",
+      "A specification that is not kept up to date becomes misleading",
+      "Every change is also a decision about what will not be built."
+    ],
+    "W5.2a": [
+      "Brainstorming",
+      "In a brainstorming session there are no \"bad\" ideas. The aim is to generate ideas, not to validate them."
+    ],
+    "W5.2b": [
+      "Studying existing products can unearth shortcomings that a new product can address."
+    ],
+    "W5.2c": [
+      "Observing users in their natural work environment can uncover product requirements."
+    ],
+    "W5.2d": [
+      "Surveys can be used to solicit responses and opinions from a large number of stakeholders"
+    ],
+    "W5.2e": [
+      "Interviewing stakeholders and domain experts can produce useful information about project requirements.",
+      "Find out what the person is responsible for before you meet them",
+      "Open with something concrete rather than an abstract question.",
+      "Ask what goes wrong today and what they do instead.",
+      "Play the answer back in your own words before moving on.",
+      "Confirm your written notes with the interviewee afterward.",
+      "Treat what you hear as claims to be checked, rather than requirements to be recorded."
+    ],
+    "W5.2f": [
+      "Focus groups are a kind of informal interview within an interactive group setting."
+    ],
+    "W5.2g": [
+      "Prototype",
+      "Prototyping can uncover requirements, in particular, those related to how users interact with the system .",
+      "mock-ups",
+      "wireframe"
+    ],
+    "W5.2h": [
+      "Gathering requirements tells you what people said; validating requirements tells you whether what you noted down is what they meant.",
+      "State the requirement back to the stakeholder in words they would use.",
+      "Put something in front of a user instead of describing it.",
+      "State the observable result of the requirement."
+    ],
+    "W5.3a": [
+      "A textual description (i.e., prose ) can be used to describe requirements."
+    ],
+    "W5.3b": [
+      "Feature list"
+    ],
+    "W5.3c": [
+      "User story",
+      "user stories",
+      "User story format",
+      "You can write user stories using a physical medium or a digital tool"
+    ],
+    "W5.3d": [
+      "The {benefit} can be omitted",
+      "You can write user stories at various levels",
+      "epics",
+      "You can add conditions of satisfaction to a user story",
+      "These are more widely known as acceptance criteria .",
+      "Other useful information that can be added to a user story"
+    ],
+    "W5.3e": [
+      "User stories capture user requirements in a way that is convenient for scoping , estimation , and scheduling .",
+      "User stories differ from traditional requirements specifications mainly in the level of detail.",
+      "User stories can capture non-functional requirements too",
+      "Functional requirements specify what the system should do.",
+      "Non-functional requirements specify the constraints under which the system is developed and operated.",
+      "NFRs are easier to miss.",
+      "NFRs are critical to the success of the software.",
+      "user stories are quite handy for recording requirements during early stages of requirements gathering",
+      "Step 0:",
+      "Clear your mind of preconceived product ideas",
+      "Step 1:",
+      "Define the target user as a persona :",
+      "persona",
+      "Step 2:",
+      "Define the problem scope :",
+      "Step 3:",
+      "List scenarios to form a narrative (aka user journey ):",
+      "stages",
+      "Together, the scenarios form a user journey : a chronological narrative of a persona's interaction with the product.",
+      "Step 4:",
+      "List the user stories to support the scenarios:",
+      "Do not 'evaluate' the value of user stories while brainstorming",
+      "Other tips:",
+      "Don't be too hasty to discard 'unusual' user stories:",
+      "Don't go into too much detail:",
+      "Don't discuss implementation details or whether you are actually going to implement it:"
+    ],
+    "W5.3f": [
+      "Glossary",
+      "glossary"
+    ],
+    "W5.3g": [
+      "A supplementary requirements section can be used to capture requirements that do not fit elsewhere",
+      "Functional requirements specify what the system should do.",
+      "Non-functional requirements specify the constraints under which the system is developed and operated.",
+      "NFRs are easier to miss.",
+      "NFRs are critical to the success of the software."
+    ],
+    "W5.4a": [
+      "Among various dimensions of code quality, such as run-time efficiency, security, and robustness, one of the most important is readability"
+    ],
+    "W5.4b": [
+      "Avoid long methods"
+    ],
+    "W5.4c": [
+      "Avoid deep nesting",
+      "In particular, avoid arrowhead style code ."
+    ],
+    "W5.4d": [
+      "Avoid complicated expressions, especially those having many negations and nested parentheses."
+    ],
+    "W5.4e": [
+      "Avoid magic numbers",
+      "named constant",
+      "Avoid any magic literals"
+    ],
+    "W5.4f": [
+      "Make the code as explicit as possible, even if the language syntax allows it to be implicit."
+    ],
+    "W5.4g": [
+      "Lay out the code so that it adheres to the logical structure."
+    ],
+    "W5.4h": [
+      "Avoid things that would make the reader go ‘huh?’"
+    ],
+    "W5.4i": [
+      "Do not try to write ‘clever’ code. “Keep it simple, stupid” ( KISS )"
+    ],
+    "W5.4j": [
+      "Optimizing code prematurely has several drawbacks",
+      "You may not know which parts are the real performance bottlenecks",
+      "Optimizing can complicate the code",
+      "Hand-optimized code can be harder for the compiler to optimize",
+      "Make it work, make it right, make it fast",
+      "Of course, there are cases in which optimizing takes priority over other things"
+    ],
+    "W5.4k": [
+      "Avoid having multiple levels of abstraction within a code fragment.",
+      "Single Level of Abstraction Principle",
+      "Abstraction",
+      "The guiding principle of abstraction is that only details that are relevant to the current perspective or the task at hand need to be considered.",
+      "Data abstraction : abstracting away the lower level data items and thinking in terms of bigger entities",
+      "Control abstraction : abstracting away details of the actual control flow to focus on tasks at a higher level",
+      "Abstraction can be applied repeatedly to obtain progressively higher levels of abstraction .",
+      "Abstraction is a general concept that is not limited to just data or control abstractions.",
+      "Also ensure that the code is written at the highest level of abstraction possible",
+      "That said, it is sometimes possible to pack two levels of abstraction into the code"
+    ],
+    "W5.4l": [
+      "The happy path should be clear and prominent in your code."
+    ],
+    "W5.4m": [
+      "It is safer to use language constructs in the way they are meant to be used"
+    ],
+    "W5.4n": [
+      "Always include a default branch in case statements.",
+      "Furthermore, use the default branch for the intended default action and not just to execute the last option."
+    ],
+    "W5.4o": [
+      "Use one variable for one purpose.",
+      "Do not reuse formal parameters as local variables"
+    ],
+    "W5.4p": [
+      "Avoid empty catch statements"
+    ],
+    "W5.4q": [
+      "Get rid of unused code the moment it becomes redundant."
+    ],
+    "W5.4r": [
+      "Minimize global variables",
+      "Define variables in the least possible scope"
+    ],
+    "W5.4s": [
+      "Code duplication, especially when you copy-paste-modify code, often indicates a poor quality implementation.",
+      "DRY Principle",
+      "DRY (Don't Repeat Yourself) principle"
+    ],
+    "W5.4t": [],
+    "W5.4u": [
+      "Do not repeat in comments information that is already obvious from the code."
+    ],
+    "W5.4v": [
+      "Write comments targeting other programmers reading the code.",
+      "header comment"
+    ],
+    "W5.4w": [
+      "Comments should explain the WHAT and WHY aspects of the code, rather than the HOW aspect.",
+      "WHAT: The specification of what the code is supposed to do.",
+      "WHY: The rationale for the current implementation.",
+      "HOW: The explanation for how the code works."
+    ],
+    "W5.5a": [
+      "The process of restructuring code in small steps without modifying its external behavior is called refactoring .",
+      "Refactoring is not rewriting",
+      "Refactoring is not bug fixing",
+      "Refactoring code can have many secondary benefits",
+      "Refactoring Catalogs",
+      "Consolidate Duplicate Conditional Fragments",
+      "Extract Method"
+    ],
+    "W5.5b": [],
+    "W5.5c": [
+      "There are refactoring catalogs",
+      "Refactoring Catalog"
+    ],
+    "W5.5d": [
+      "One way to identify refactoring opportunities is by code smells .",
+      "Periodic refactoring is a good way to pay off the technical debt",
+      "It is too much refactoring when the benefits no longer justify the cost."
+    ],
+    "W5.6a": [
+      "Assertions are used to define assumptions about the program state so that the runtime can verify them.",
+      "If the runtime detects an assertion failure , it typically takes some drastic action"
+    ],
+    "W5.6b": [
+      "Assertions can be disabled without modifying the code.",
+      "Java disables assertions by default.",
+      "Java assert vs JUnit assertions: Both check for a given condition but JUnit assertions are more powerful and customized for testing.",
+      "Tutorials",
+      "Best practices"
+    ],
+    "W5.6c": [
+      "It is recommended that assertions be used liberally in the code.",
+      "Do not use assertions to do work",
+      "Assertions are suitable for verifying assumptions about Internal Invariants , Control-Flow Invariants , Preconditions , Postconditions , and Class Invariants .",
+      "Exceptions and assertions are two complementary ways of handling errors in software but they serve different purposes."
+    ],
+    "W5.7a": [
+      "Java 8 introduced a number of new features (e.g., Lambdas, Streams)",
+      "Tutorials",
+      "Tutorials from Oracle"
+    ],
+    "W5.8a": [],
+    "W6.1a": [
+      "Sequence diagrams model the interactions between various entities in a system, in a specific scenario."
+    ],
+    "W6.1b": [],
+    "W6.1c": [],
+    "W6.2a": [
+      "When you write a small program by yourself, you can hold its structure in your head.",
+      "That becomes much harder as the software and its team grow.",
+      "Software architecture is the set of significant decisions about a system's overall organization.",
+      "An architecture description deliberately leaves out most of what is inside each part.",
+      "Architecture and detailed design differ in how far a decision reaches, not merely in how big it is.",
+      "The boundary is not absolute.",
+      "Every software system has an architecture, even when nobody designed one deliberately.",
+      "The value of deciding an architecture on purpose is that the team shares one, understands it, and can reason about it.",
+      "An architecture is a shared and evolving technical understanding.",
+      "An architecture is also more than a diagram."
+    ],
+    "W6.2b": [
+      "A useful architecture limits how far many changes spread through the system.",
+      "Architecture does not restrain the spread of every change.",
+      "Architecture also shapes the system's quality attributes",
+      "Modifiability",
+      "Performance",
+      "Reliability",
+      "Security",
+      "Deployability",
+      "Quality attributes often conflict, and that is the central difficulty of architecture.",
+      "There is no architecture that is best on every attribute"
+    ],
+    "W6.2c": [
+      "Three concepts appear frequently in architecture descriptions: components, interfaces, dependencies.",
+      "A component is a major part of the system with one coherent responsibility.",
+      "An interface is the agreement stating how the rest of the system may use a component.",
+      "A dependency exists when one component relies on another to do its job.",
+      "A component is not a special programming construct.",
+      "A dependency arrow describes reliance, not necessarily a method call."
+    ],
+    "W6.2d": [
+      "Architecture diagrams can differ in what they show and how much detail they show.",
+      "A logical view shows the major parts and which parts depend on which.",
+      "A deployment view shows where the parts actually run.",
+      "Keeping the views separate prevents a common confusion.",
+      "The 4+1 view model extends the idea above by describing a system using five standard views.",
+      "the design of a small system can be shown at a single level of detail.",
+      "The design of a bigger system needs to be created and shown at multiple levels",
+      "The C4 model is a specific form of multi-level design views.",
+      "A system context diagram shows the system, its users, and the other systems it interacts with.",
+      "A container diagram zooms in to show the system's applications and data stores.",
+      "A component diagram zooms into one container to show its main components and their relationships.",
+      "A code diagram zooms into one component to show how it is implemented.",
+      "Neither 4+1 nor C4 is a new diagram notation.",
+      "Both models are meant for large systems"
+    ],
+    "W6.2e": [
+      "Architecture diagrams have no universally adopted notation.",
+      "Read an architecture diagram by asking four questions in order:",
+      "What view is this?",
+      "What are the major parts?",
+      "What is each part responsible for?",
+      "What do the relationships mean?"
+    ],
+    "W6.3a": [
+      "Logging is the deliberate recording of certain information during a program execution for future reference.",
+      "Logging can be useful for troubleshooting problems",
+      "A log file is like the black box of an airplane"
+    ],
+    "W6.3b": [
+      "Most programming environments come with logging systems that allow sophisticated forms of logging.",
+      "Tutorials",
+      "Best Practices"
+    ],
+    "W6.4a": [
+      "Debugging is the process of finding the cause of a known problem in a program, and fixing it.",
+      "A mistake is the human (or AI) act that started it all.",
+      "A defect is the resulting error in the software.",
+      "An infection is the resulting error in the program state at run time.",
+      "A failure is the externally visible wrong behavior.",
+      "These four form a chain, and each link can be far from the next:",
+      "Some factors that make debugging hard are:",
+      "The distance between defect and failure",
+      "You cannot inspect everything",
+      "Wrong assumptions that caused the bug can hamper debugging as well",
+      "Bad",
+      "Stare and hope",
+      "Shotgun debugging",
+      "Fixing the symptom instead of the cause.",
+      "Keeping no record of what you tried.",
+      "What these have in common is that they produce activity without producing useful information.",
+      "Adding temporary print statements is not necessarily bad."
+    ],
+    "W6.4b": [
+      "Systematic debugging involves following tasks, whose first letters make up the mnemonic TRAFFIC",
+      "rack",
+      "eproduce",
+      "utomate and simplify",
+      "ind origins",
+      "ocus",
+      "solate",
+      "orrect",
+      "TRAFFIC is a map rather than a mandatory sequence.",
+      "The most common mistake is jumping straight to C .",
+      "Know when to stop for the day:",
+      "The first step of debugging should be stating what the correct behavior is, and why.",
+      "Sometimes the fault is in the test",
+      "A reliable reproduction makes every experiment cheap",
+      "When you cannot reproduce a failure you can still investigate it",
+      "Automate the reproduction as a test case as early as you can.",
+      "Why simplify? The smaller the failing case, the smaller the search space",
+      "Shrink the input space",
+      "Simplify the code path",
+      "An origin is a place where the state could first have gone wrong",
+      "Reason backwards from the wrong value.",
+      "backward slicing",
+      "Explain the code to someone, line by line",
+      "rubber duck debugging",
+      "Read the evidence you already have",
+      "Candidate origins are not equally likely, and the order you check them in decides how long the search takes.",
+      "Prefer recently changed code to long-stable code, your code to library code, and library code to the compiler or the operating system.",
+      "Turn the chosen origin into a prediction before you check it.",
+      "Isolating means running one check, discarding the part of the search space it rules out, and repeating",
+      "Binary search over the execution can be used to find when the state gets infected",
+      "Binary search over versions can be used to find when the code used to work.",
+      "Swap a suspect component for one you trust.",
+      "Change one thing at a time",
+      "Record the conclusion, then start the next turn of the loop",
+      "The cheapest bug to debug is the one that announces itself",
+      "Fail fast.",
+      "Keep scopes small.",
+      "Prefer immutability.",
+      "Develop incrementally, testing as you go.",
+      "Use the static checks you already have",
+      "Log at component boundaries"
+    ],
+    "W6.4c": [
+      "Every way of looking inside a running program is a probe",
+      "Print statements are the cheap to start with and expensive to iterate with.",
+      "Logging is the disciplined, permanent form of printing.",
+      "Assertions are probes that check themselves.",
+      "A debugger is a tool that can attach itself to an executing program and can ask questions interactively",
+      "A debugger is a tool that lets you pause a running program, then inspect and control it from the inside, without modifying its code.",
+      "A debugger works from outside your program, which is what makes it different in kind from printing.",
+      "Breakpoints determine where the program pauses.",
+      "line breakpoint",
+      "conditional breakpoint",
+      "exception breakpoint",
+      "field watchpoint",
+      "Stepping commands determine how execution advances.",
+      "Step over",
+      "Step into",
+      "Step out",
+      "Run to cursor",
+      "Resume",
+      "Inspection views let you examine details of the state the program is currently paused at.",
+      "The call stack shows how execution reached this point",
+      "The variables view shows the values currently in scope",
+      "evaluate expression runs arbitrary code at the paused point",
+      "AI assistants are useful for some parts of debugging and unreliable for others.",
+      "A stack trace is a precise report of where a program failed and the call path that led there",
+      "The exception type and message",
+      "The topmost frame in your code",
+      "The chain of callers below it"
+    ],
+    "W6.4d": [
+      "Do not settle on a fix until you can explain the whole failure.",
+      "Fix the cause, not the infection and not the failure.",
+      "Which change counts as 'the fix' is sometimes a genuine choice.",
+      "Once you have a candidate fix, finish the job:",
+      "Look for the defect's relatives",
+      "Verify against the reproduction, then run the full test suite.",
+      "Add a regression test",
+      "Remove your temporary probes",
+      "Commit the fix on its own"
+    ],
+    "W6.4e": [
+      "Delta debugging automates the simplification of the failing case",
+      "The idea of a single boundary where the state first goes wrong describes the simple, deterministic case.",
+      "Two further debugger commands are worth knowing once the basics are comfortable.",
+      "force step into",
+      "reset frame",
+      "drop frame",
+      "Tracing records the execution automatically",
+      "Some defects resist all of the above. They form recognizable categories, each with its own approach.",
+      "A Heisenbug changes or vanishes when you try to observe it.",
+      "Concurrency bugs are timing- and schedule-dependent.",
+      "Some failures occur only in production",
+      "Performance problems are bugs too",
+      "Bugs in code you did not write are usually bugs in your use of it."
+    ],
+    "W6.5a": [],
+    "W6.5b": [],
+    "W7.1a": [
+      "Use case",
+      "A use case describes an interaction between the user and the system for a specific functionality of the system.",
+      "UML includes a diagram type called use case diagrams that can illustrate use cases of a system visually",
+      "Unified Modeling Language (UML)",
+      "Use cases capture the functional requirements of a system."
+    ],
+    "W7.1b": [
+      "actors",
+      "Actors in Use Cases",
+      "Actor",
+      "A use case can involve multiple actors.",
+      "An actor can be involved in many use cases.",
+      "A single person/system can play many roles.",
+      "Many persons/systems can play a single role.",
+      "Use cases can be specified at various levels of detail ."
+    ],
+    "W7.1c": [
+      "Writing use case steps",
+      "The main body of the use case is a sequence of steps that describes the interaction between the system and the actors.",
+      "A use case describes only the externally visible behavior, not the internal details, of a system.",
+      "A step gives the intention of the actor (not the mechanics).",
+      "A use case description can show loops too",
+      "The Main Success Scenario (MSS) describes the most straightforward interaction for a given use case, which assumes that nothing goes wrong.",
+      "Extensions are \"add-ons\" to the MSS that describe exceptional/alternative flows of events .",
+      "MSS should be self-contained",
+      "A use case can include another use case.",
+      "Preconditions specify the state you expect the system to be in before the use case starts.",
+      "Guarantees specify what the use case promises to give us at the end of its operation.",
+      "Guarantees do for a use case what acceptance criteria do for a user story:"
+    ],
+    "W7.1d": [
+      "You can use actor generalization in use case diagrams",
+      "Some use ‘System’ as an actor to indicate that something is done by the system itself without being initiated by a user or an external system.",
+      "UML is not very specific about the text contents of a use case.",
+      "There are some advantages of documenting system requirements as use cases:",
+      "One of the main disadvantages of use cases is that they are not good for capturing requirements that do not involve a user interacting with the system."
+    ],
+    "W7.2a": [
+      "Requirements are documented in different formats, each suited to a different purpose.",
+      "Some teams document requirements in a single document while others may keep different requirements formats in different places",
+      "Where there is a single document, there are two common variants:",
+      "Product-led teams usually call it a product requirements document (PRD), or a product brief .",
+      "A software requirements specification (SRS) is its more formal counterpart",
+      "A requirements document explains the problem and the required outcomes, whereas a software specification defines the system's behavior precisely enough to implement and verify it.",
+      "Some teams put both their requirements and their software specification in one document",
+      "Specification-driven development describes an approach that relies heavily on a detailed specification to direct the implementation and to judge the work delivered."
+    ],
+    "W7.3a": [
+      "Software design has two main aspects:",
+      "Product/external design : designing the external behavior of the product to meet the users' requirements.",
+      "Implementation/internal design : designing how the product will be implemented to meet the required external behavior."
+    ],
+    "W7.3b": [
+      "Multi-level design can be done in a top-down manner, bottom-up manner, or as a mix.",
+      "Top-down",
+      "Bottom-up"
+    ],
+    "W7.3c": [
+      "Agile design can be contrasted with full upfront design as follows"
+    ],
+    "W7.4a": [
+      "Abstraction",
+      "The guiding principle of abstraction is that only details that are relevant to the current perspective or the task at hand need to be considered.",
+      "Data abstraction : abstracting away the lower level data items and thinking in terms of bigger entities",
+      "Control abstraction : abstracting away details of the actual control flow to focus on tasks at a higher level",
+      "Abstraction can be applied repeatedly to obtain progressively higher levels of abstraction .",
+      "Abstraction is a general concept that is not limited to just data or control abstractions."
+    ],
+    "W7.4b": [
+      "Coupling is a measure of the degree of dependence",
+      "High coupling (aka tight coupling or strong coupling) is discouraged",
+      "Maintenance is harder",
+      "Integration is harder",
+      "Testing and reuse of the module are harder"
+    ],
+    "W7.4c": [
+      "X is coupled to Y if X depends on Y such that some changes to Y may require corresponding changes in X"
+    ],
+    "W7.4d": [
+      "Content coupling",
+      "Common/Global coupling",
+      "Control coupling",
+      "Data coupling",
+      "External coupling",
+      "Subclass coupling",
+      "Temporal coupling"
+    ],
+    "W7.4e": [
+      "Cohesion is a measure of how strongly related and focused the various responsibilities of a component are.",
+      "Higher cohesion is better."
+    ],
+    "W7.4f": [
+      "Cohesion can be present in many forms"
+    ],
+    "W7.5a": [],
+    "W7.6a": [
+      "In terms of timing and frequency, there are two general approaches to integration: late and one-time , and early and frequent .",
+      "Late and one-time : wait until all components are completed and integrate all finished components near the end of the project.",
+      "Early and frequent : integrate early and evolve each part in parallel, in small steps, re-integrating frequently."
+    ],
+    "W7.6b": [
+      "Big-bang integration : integrate all (or too many) components at the same time.",
+      "Incremental integration : integrate a few components at a time."
+    ],
+    "W7.6c": [
+      "Based on the order in which components are integrated, incremental integration can be done in three ways.",
+      "Top-down integration: higher-level components are integrated before bringing in the lower-level components.",
+      "stubs",
+      "Bottom-up integration: the reverse of top-down integration.",
+      "drivers",
+      "Sandwich integration: a mix of the top-down and bottom-up approaches."
+    ],
+    "W7.7a": [
+      "A milestone marks significant progress, often at the end of a stage."
+    ],
+    "W7.7b": [
+      "A buffer is time set aside to absorb any unforeseen delays.",
+      "do not inflate task estimates to create hidden buffers"
+    ],
+    "W7.7c": [
+      "Kanban boards provide a simple visual way to track task status.",
+      "Issue trackers (sometimes called bug trackers) are commonly used to track task assignment and progress."
+    ],
+    "W7.7d": [
+      "A Work Breakdown Structure (WBS) is a hierarchical decomposition of the project’s total scope into smaller, manageable pieces of work.",
+      "The effort is traditionally measured in person hour/day/month",
+      "All tasks should be well-defined."
+    ],
+    "W7.7e": [
+      "A Gantt chart is a 2-D bar-chart, drawn as time vs tasks"
+    ],
+    "W7.7f": [
+      "A PERT (Program Evaluation Review Technique) chart uses a graphical technique to show the order/sequence of tasks.",
+      "Critical Path"
+    ],
+    "W7.7g": [
+      "Egoless team",
+      "every team member is equal in terms of responsibility and accountability",
+      "Chief programmer team",
+      "there is a single authoritative figure, the chief programmer",
+      "Strict hierarchy team",
+      "a strictly defined organization among the team members"
+    ],
+    "W7.8a": [],
+    "W8.1a": [
+      "Classes form the basis of class diagrams.",
+      "Associations are the main connections among the classes in a class diagram.",
+      "associations can show additional decorations such as association labels , association roles , multiplicity and navigability"
+    ],
+    "W8.1b": [],
+    "W8.1c": [
+      "multiple object diagrams can correspond to a single class diagram",
+      "the object diagram should show either an object of the parent class or the child class, but not both",
+      "Association labels/roles can be omitted unless they add value"
+    ],
+    "W8.2a": [
+      "UML notes can augment UML diagrams with additional information."
+    ],
+    "W8.2b": [
+      "A constraint can be given inside a note, within curly braces"
+    ],
+    "W8.2c": [
+      "An association can be shown as an attribute instead of a line.",
+      "either an attribute or a line but not both"
+    ],
+    "W8.2d": [
+      "A class diagram can also show different types of relationships between classes: inheritance, compositions, aggregations, dependencies.",
+      "A class diagram can also show different types of class-like entities:"
+    ],
+    "W8.2e": [
+      "An association class represents additional information about an association."
+    ],
+    "W8.3a": [
+      "Sequence diagrams model the interactions between various entities in a system, in a specific scenario."
+    ],
+    "W8.3b": [],
+    "W8.3c": [
+      "UML uses a ref frame to allow a segment of the interaction to be omitted and shown as a separate sequence diagram."
+    ],
+    "W8.3d": [
+      "UML uses par frames to indicate parallel paths."
+    ],
+    "W8.4a": [
+      "Integration testing : testing whether different parts of the software work together (i.e., integrate) as expected."
+    ],
+    "W8.4b": [
+      "Integration testing is not simply a case of repeating the unit test cases using the actual dependencies",
+      "In practice, developers often use a hybrid of unit+integration tests to minimize the need for stubs."
+    ],
+    "W8.4c": [
+      "System testing : take the whole system and test it against the system specification .",
+      "System testing",
+      "System test cases are based on the specified external behavior of the system.",
+      "System testing includes testing against non-functional requirements too.",
+      "Performance testing",
+      "Load testing",
+      "Security testing",
+      "Compatibility testing",
+      "Usability testing",
+      "Portability testing"
+    ],
+    "W8.4d": [
+      "testing a GUI is harder than testing a CLI or an API",
+      "Moving as much logic as possible out of the GUI can make GUI testing easier.",
+      "There are testing tools that can automate GUI testing."
+    ],
+    "W8.4e": [
+      "Acceptance testing (aka User Acceptance Testing (UAT) ): test the system to ensure it meets the user requirements.",
+      "Acceptance tests"
+    ],
+    "W8.4f": [
+      "SIDEBAR: Requirement specification versus system specification",
+      "in many cases one document serves as both a requirement specification and a system specification.",
+      "Passing system tests does not necessarily mean passing acceptance testing."
+    ],
+    "W8.4g": [
+      "Alpha testing is performed by the users, under controlled conditions set by the software development team.",
+      "Beta testing is performed by a selected subset of target users of the system in their natural work setting.",
+      "open beta release"
+    ],
+    "W8.4h": [
+      "Dogfooding is when creators use their own product"
+    ],
+    "W8.4i": [
+      "Here are two alternative approaches to testing software: Scripted testing and Exploratory testing.",
+      "Scripted testing :",
+      "Exploratory testing :",
+      "Other names for exploratory testing: reactive testing , error guessing technique, attack-based testing , bug hunting ."
+    ],
+    "W8.4j": [
+      "scripted or exploratory? A mix is better.",
+      "The success of exploratory testing depends on the tester’s prior experience and intuition.",
+      "Scripted testing is more systematic, and hence, likely to discover more bugs given sufficient time"
+    ],
+    "W8.5a": [
+      "Dependency injection is the process of 'injecting' objects to replace current dependencies with a different object.",
+      "A proper unit test requires the unit to be tested in isolation",
+      "Stubs can isolate the SUT from its dependencies",
+      "Stub"
+    ],
+    "W8.5b": [
+      "Polymorphism can be used to implement dependency injection",
+      "A proper unit test requires the unit to be tested in isolation",
+      "Stubs can isolate the SUT from its dependencies",
+      "Stub"
+    ],
+    "W8.5c": [
+      "Testability is an indication of how easy it is to test an SUT."
+    ],
+    "W8.5d": [
+      "Test coverage is a metric used to measure the extent to which testing exercises the code",
+      "Function/method coverage",
+      "Statement coverage",
+      "Decision/branch coverage",
+      "Condition coverage",
+      "Path coverage",
+      "Control Flow Graph (CFG)",
+      "Entry/exit coverage"
+    ],
+    "W8.5e": [
+      "Measuring coverage is often done using coverage analysis tools .",
+      "Coverage analysis can be useful in improving the quality of testing",
+      "watch from 4 minutes 50 seconds mark"
+    ],
+    "W8.5f": [
+      "Test-Driven Development (TDD) advocates writing the tests before writing the SUT, while evolving functionality and tests in small increments"
+    ],
+    "W8.5g": [],
+    "W9.1a": [
+      "Sidebar: Domain Modeling",
+      "Domain modeling is modeling the problem domain",
+      "Domain modeling can be done using:",
+      "a domain-specific modeling notation",
+      "or a general-purpose modeling notation",
+      "or even other general-purpose notations",
+      "The UML models that capture class structures in the problem domain are called conceptual class diagrams .",
+      "CCDs do not contain solution-specific classes",
+      "CCDs represent the class structure of the problem domain",
+      "CCD notation is a subset of the class diagram notation (omits methods and navigability)."
+    ],
+    "W9.2a": [
+      "Software projects often involve workflows ."
+    ],
+    "W9.2b": [],
+    "W9.3a": [
+      "You can use models to analyze and design software before you start coding."
+    ],
+    "W9.3b": [
+      "You can use models to analyze and design software before you start coding."
+    ],
+    "W9.3c": [],
+    "W9.4a": [
+      "Name each component by its responsibility, not its current implementation.",
+      "Show only what is architecturally relevant.",
+      "Use familiar symbols, and explain them in a legend.",
+      "Avoid the indiscriminate use of double-headed arrows"
+    ],
+    "W9.5a": [
+      "Separation of concerns principle (SoC)",
+      "concern",
+      "Applying SoC reduces functional overlaps among code sections and also limits the ripple effect when changes are introduced to a specific part of the system.",
+      "This principle can be applied at the class level, as well as at higher levels.",
+      "This principle should lead to higher cohesion and lower coupling .",
+      "Coupling is a measure of the degree of dependence",
+      "High coupling (aka tight coupling or strong coupling) is discouraged",
+      "Maintenance is harder",
+      "Integration is harder",
+      "Testing and reuse of the module are harder",
+      "Cohesion is a measure of how strongly related and focused the various responsibilities of a component are.",
+      "Higher cohesion is better."
+    ],
+    "W9.5b": [
+      "Single responsibility principle (SRP)"
+    ],
+    "W9.5c": [
+      "Liskov substitution principle (LSP)",
+      "LSP implies that a subclass should not be more restrictive than the behavior specified by the superclass.",
+      "Every instance of a subclass is an instance of the superclass, but not vice versa.",
+      "substitutability"
+    ],
+    "W9.5d": [
+      "The Open-Closed Principle aims to make a code entity easy to adapt and reuse without needing to modify the code entity itself.",
+      "Open-closed principle (OCP)"
+    ],
+    "W9.5e": [
+      "Law of Demeter (LoD)",
+      "LoD aims to prevent objects from navigating the internal structures of other objects."
+    ],
+    "W9.5f": [
+      "Interface segregation principle (ISP)"
+    ],
+    "W9.5g": [
+      "Dependency inversion principle (DIP)"
+    ],
+    "W9.5h": [
+      "SOLID Principles"
+    ],
+    "W9.5i": [
+      "YAGNI (You Aren't Gonna Need It!) Principle"
+    ],
+    "W9.5j": [
+      "DRY (Don't Repeat Yourself) principle"
+    ],
+    "W9.5k": [
+      "Brooks' law"
+    ],
+    "W9.6a": [
+      "The simplest way to build software is to start coding and keep fixing what breaks, with no explicit stages at all.",
+      "code-and-fix",
+      "It stops working as the software and the team grow.",
+      "Software development goes through different stages such as requirements, analysis, design, implementation, and testing . These stages are collectively known as the software development lifecycle (SDLC).",
+      "software development lifecycle models",
+      "Reaching users is not the end of the lifecycle. Deployment , operation , and maintenance are commonly counted as lifecycle activities too",
+      "What happens during that time feeds back into development"
+    ],
+    "W9.6b": [
+      "The sequential model , also called the waterfall model, views software development as a linear process",
+      "When one stage of the process is completed, it produces some artifacts to be used in the next stage",
+      "A strict sequential model project moves only in the forward direction",
+      "In practice the model is often relaxed",
+      "This model can work well for a project that solves a well-understood problem",
+      "However, real-world projects often tackle problems that are not well-understood at the beginning",
+      "A second weakness is that feedback arrives late."
+    ],
+    "W9.6c": [
+      "The iterative model advocates producing the software by going through several iterations .",
+      "Each iteration produces a new version of the product",
+      "The two models divide a project along different lines.",
+      "A sequential project is divided by activity",
+      "An iterative project is divided into bounded cycles instead",
+      "The iterative model can use a breadth-first or depth-first approach.",
+      "In the breadth-first approach, an iteration evolves all major components and all functionality areas in parallel, producing a working product at the end of each iteration",
+      "In the depth-first approach, an iteration focuses on fleshing out only some components or some functionality area.",
+      "Iterating and incrementing are two different things, and most projects do both.",
+      "What an iteration delivers is called an increment",
+      "Ideally, an iteration should produce not only progress but also new knowledge.",
+      "A project can be done as a mixture of breadth-first and depth-first iterations",
+      "An early iteration is a chance to find out you were wrong while changing course is still cheap."
+    ],
+    "W9.7a": [
+      "The agile approaches grew out of lightweight methods that were already in use.",
+      "agile manifesto",
+      "The methods represented at that meeting, and later approaches built on the same values, are collectively called agile processes .",
+      "Requirements are prioritized by user need",
+      "Planning and design stay light and keep evolving.",
+      "The team shares responsibility for delivering the product",
+      "Several agile processes are in use today. Extreme Programming (XP) and Scrum are two well-known ones.",
+      "Agile approaches depend on conditions that are not always present"
+    ],
+    "W9.7b": [
+      "Scrum is a lightweight agile framework rather than a complete process.",
+      "A Scrum team has three accountabilities:",
+      "The Product Owner",
+      "The Scrum Master",
+      "The Developers",
+      "A Scrum project is divided into short iterations called Sprints .",
+      "A Sprint contains all the work done in it, together with all its events.",
+      "Sprint Goal",
+      "Sprint Review",
+      "Sprint Retrospective",
+      "During each Sprint, the team creates a potentially deliverable Increment",
+      "Product Backlog",
+      "Sprint Backlog",
+      "Within a Sprint the Sprint Goal stays fixed, but the plan for reaching it does not.",
+      "Scrum enables self-organizing teams",
+      "Scrum assumes that customers will change their minds about what they want",
+      "and that unforeseen problems cannot be planned for in advance.",
+      "The Daily Scrum is a short daily meeting in which the Developers synchronize their plans, surface whatever is blocking them, and decide what needs to be taken up separately."
+    ],
+    "W9.7c": [
+      "Extreme Programming (XP) stresses customer satisfaction.",
+      "XP aims to empower developers to confidently respond to changing customer requirements",
+      "XP emphasizes teamwork.",
+      "XP aims to improve a software project in five essential ways: communication, simplicity, feedback, respect, and courage.",
+      "What makes XP 'extreme' is not the practices it uses but how often it uses them.",
+      "continuous integration",
+      "test-driven development",
+      "pair programming"
+    ],
+    "W9.7d": [
+      "The unified process was developed by the Three Amigos",
+      "The unified process consists of four phases: inception, elaboration, construction, and transition .",
+      "Phases and iterations are two different things, which is why a project can be phased and iterative at the same time",
+      "The unified process is a customizable framework rather than a single fixed process."
+    ],
+    "W9.7e": [
+      "No approach is best for every project; the choice depends on the project.",
+      "How well is the problem understood at the start?",
+      "How stable are the requirements likely to be?",
+      "How costly is a late change?",
+      "Are users available to give feedback during development?",
+      "Does anything outside the project demand signed-off documents?",
+      "How large and how experienced is the team?"
+    ],
+    "W9.7f": [
+      "A team's process is itself something that can be assessed and deliberately improved, rather than chosen once and left alone.",
+      "CMMI (Capability Maturity Model Integration), defined by the Software Engineering Institute at Carnegie Mellon University, is the best known of them.",
+      "maturity levels"
+    ],
+    "W9.7g": [],
+    "W9.8a": [
+      "Developer-to-developer documentation can be in one of two forms:",
+      "Documentation for developer-as-user",
+      "Documentation for developer-as-maintainer",
+      "Software documentation (applies to both user-facing and developer-facing) is best kept in a text format",
+      "A writer-friendly source format is also desirable"
+    ],
+    "W9.8b": [
+      "it is not enough for the documentation to be accurate and comprehensive; it should also be comprehensible",
+      "Use plenty of diagrams",
+      "Use plenty of examples",
+      "Use simple and direct explanations",
+      "Get rid of statements that do not add value",
+      "It is not a good idea to have separate sections for each type of artifact"
+    ],
+    "W9.8c": [
+      "When writing project documents, a top-down breadth-first explanation is easier to understand than a bottom-up one.",
+      "A top-down document is structured like an upside-down tree, with its root at the top, so readers can follow the path that interests them to the component they want to study in depth."
+    ],
+    "W9.8d": [
+      "Aim for 'just enough' developer documentation.",
+      "focus on providing higher-level information that is not readily visible in the code or comments",
+      "describe the similarities in one place and emphasize only the differences in other places."
+    ],
+    "W10.1a": [
+      "Design pattern",
+      "design patterns",
+      "a term popularized by the seminal book"
+    ],
+    "W10.1b": [
+      "Context",
+      "Problem",
+      "Solution",
+      "Anti-patterns",
+      "Consequences",
+      "Other useful information"
+    ],
+    "W10.1c": [
+      "Context",
+      "singletons",
+      "Problem",
+      "Solution"
+    ],
+    "W10.1d": [],
+    "W10.1e": [
+      "Pros:",
+      "Cons:"
+    ],
+    "W10.1f": [
+      "Context",
+      "Problem",
+      "Solution",
+      "Façade"
+    ],
+    "W10.1g": [
+      "Context",
+      "Problem",
+      "Solution"
+    ],
+    "W10.1h": [
+      "Context",
+      "Problem",
+      "Anti-pattern",
+      "Solution"
+    ],
+    "W10.2a": [
+      "A defensive programmer codes under the assumption \"if you leave room for things to go wrong, they will go wrong\"."
+    ],
+    "W10.2b": [],
+    "W10.2c": [],
+    "W10.2d": [],
+    "W10.2e": [
+      "It is not necessary to be 100% defensive all the time."
+    ],
+    "W10.2f": [
+      "Design by contract (DbC) is an approach for designing software that requires defining formal, precise, and verifiable interface specifications for software components."
+    ],
+    "W10.3a": [
+      "Except for trivial SUTs , exhaustive testing is not practical",
+      "Every test case adds to the cost of testing.",
+      "test cases need to be designed to make the best use of testing resources.",
+      "Testing should be effective",
+      "Testing should be efficient",
+      "For testing to be E&E , each new test you add should be targeting a potential fault that is not already targeted by existing test cases."
+    ],
+    "W10.3b": [
+      "A positive test case is when the test is designed to produce an expected/valid behavior. On the other hand, a negative test case is designed to produce a behavior that indicates an invalid/unexpected situation, such as an error message."
+    ],
+    "W10.3c": [
+      "Test case design can be of three types, based on how much of the SUT’s internal details are considered when designing test cases:",
+      "Black-box (aka specification-based or responsibility-based ) approach",
+      "White-box (aka glass-box or structured or implementation-based ) approach",
+      "Gray-box approach"
+    ],
+    "W10.3d": [
+      "Use cases can be used for system testing and acceptance testing",
+      "Every test case adds to the cost of testing.",
+      "test cases need to be designed to make the best use of testing resources.",
+      "Testing should be effective",
+      "Testing should be efficient",
+      "For testing to be E&E , each new test you add should be targeting a potential fault that is not already targeted by existing test cases.",
+      "Here are two alternative approaches to testing software: Scripted testing and Exploratory testing.",
+      "Scripted testing :",
+      "Exploratory testing :",
+      "Other names for exploratory testing: reactive testing , error guessing technique, attack-based testing , bug hunting ."
+    ],
+    "W10.4a": [
+      "most SUTs do not treat each input in a unique way. Instead, they process all possible inputs in a small number of distinct ways.",
+      "Equivalence partitioning (EP) is a test case design technique that uses the above observation to improve the E&E of testing.",
+      "Equivalence partition (aka equivalence class)",
+      "By dividing possible inputs into equivalence partitions you can,",
+      "avoid testing too many inputs from one partition.",
+      "ensure all partitions are tested."
+    ],
+    "W10.4b": [
+      "Equivalence partitions (EPs) are usually derived from the specifications of the SUT."
+    ],
+    "W10.4c": [],
+    "W10.5a": [
+      "Boundary Value Analysis (BVA) is a test case design heuristic that is based on the observation that bugs often result from incorrect handling of boundaries of equivalence partitions.",
+      "BVA suggests that when picking test inputs from an equivalence partition, values near boundaries (i.e., boundary values ) are more likely to find bugs."
+    ],
+    "W10.5b": [
+      "You should try to test both boundary values and non-boundary values."
+    ],
+    "W11.1a": [
+      "Context",
+      "Problem",
+      "Solution",
+      "Model",
+      "View",
+      "Controller"
+    ],
+    "W11.1b": [
+      "Context",
+      "Problem",
+      "Solution"
+    ],
+    "W11.1c": [
+      "The most famous source of design patterns is the \"Gang of Four\" (GoF) book which contains 23 design patterns divided into three categories",
+      "Creational",
+      "Structural",
+      "Behavioral"
+    ],
+    "W11.1d": [
+      "Design patterns are usually embedded in a larger design and sometimes applied in combination with other design patterns."
+    ],
+    "W11.1e": [
+      "Design patterns provide a high-level vocabulary to talk about design.",
+      "Knowing more patterns is a way to become more ‘experienced’.",
+      "Some patterns are domain-specific",
+      "some are created in-house",
+      "some can be self-created",
+      "Be careful not to overuse patterns."
+    ],
+    "W11.1f": [
+      "Design principles have varying degrees of formality – rules, opinions, rules of thumb, observations, and axioms.",
+      "more general",
+      "wider applicability",
+      "greater overlap"
+    ],
+    "W11.1g": [],
+    "W11.2a": [
+      "An architectural style is a reusable way of organizing the major parts of a system",
+      "Different styles describe different aspects of a system, which is why one system can use several at once."
+    ],
+    "W11.2b": [
+      "This style focuses on how the code inside a program is organized.",
+      "In the layered style, the software is divided into layers whose dependencies all point downward.",
+      "Layered designs differ in how strictly they enforce the separation.",
+      "Layers are not tiers."
+    ],
+    "W11.2c": [
+      "This style focuses on how the system is packaged and deployed.",
+      "A monolith is a system deployed as a single unit.",
+      "Being one deployable unit does not mean one running process.",
+      "A modular monolith is a single deployable unit organized internally into well-defined components.",
+      "\"Monolith\" is not a synonym for \"badly structured.\"",
+      "The modular monolith is usually the sensible starting point for one team building one product."
+    ],
+    "W11.2d": [
+      "This style focuses on what triggers work, and how notifications flow.",
+      "In the event-driven style, work is triggered by events rather than by direct calls.",
+      "emitter",
+      "consumers",
+      "dispatcher",
+      "If you have written a graphical user interface, you have written event-driven code.",
+      "Event delivery has two separate dimensions:",
+      "Local or distributed.",
+      "Synchronous or asynchronous.",
+      "Distributed event-driven systems often use the publish-subscribe pattern for event dispatching.",
+      "message broker",
+      "Event-driven architecture reduces coupling but at the cost of reduced traceability."
+    ],
+    "W11.2e": [
+      "This style focuses on which parts request capabilities and which parts provide them.",
+      "In the client-server style, a server provides a capability or data, and one or more clients use it.",
+      "Adding a server changes more than the location of data storage",
+      "A good interface limits the impact of moving to a client-server architecture but does not avoid it entirely.",
+      "This is also where tiers appear.",
+      "tier",
+      "A network boundary adds costs that local calls never had:",
+      "Requests take far longer, and less predictably.",
+      "Failures can be partial.",
+      "Versions must stay compatible.",
+      "Security becomes prominent."
+    ],
+    "W11.2f": [
+      "This style focuses on exposing and composing capabilities through published network interfaces.",
+      "A service exposes a published interface that other software can use over a network.",
+      "The service-oriented architecture (SOA) style organizes a system around such network-accessible services",
+      "Early SOA was strongly associated with XML web services and the SOAP standard; modern services usually exchange much simpler messages, most often JSON over ordinary HTTP.",
+      "The microservice style builds one product as a collection of independently deployable services",
+      "Microservices are best understood by contrast with the modular monolith.",
+      "Microservices trade operational simplicity for team and deployment independence.",
+      "Related deployment terms:",
+      "A container packages a program with the runtime, libraries, and configuration it needs",
+      "Serverless computing lets you deploy code without provisioning or managing the servers that run it."
+    ],
+    "W11.2g": [
+      "Most real applications combine several styles at once",
+      "Every style trades benefits for costs.",
+      "For one team building one product, a modular monolith is a strong default."
+    ],
+    "W11.2h": [
+      "Several other styles are worth recognizing by name, even if a first project will not need them.",
+      "\"Transaction\" means two different things."
+    ],
+    "W11.3a": [
+      "An SUT can take multiple inputs.",
+      "Testing all possible combinations is effective but not efficient.",
+      "you need smarter ways to combine test inputs that are both effective and efficient."
+    ],
+    "W11.3b": [
+      "The all combinations strategy generates test cases for each unique combination of test inputs.",
+      "The at least once strategy includes each test input at least once.",
+      "The all pairs strategy creates test cases so that for any given pair of inputs, all combinations between them are tested.",
+      "The random strategy generates test cases using one of the other strategies and then picks a subset randomly",
+      "There are other strategies that can be used too."
+    ],
+    "W11.3c": [
+      "Selected values for",
+      "each valid input must appear at least once in a positive test case"
+    ],
+    "W11.3d": [
+      "To verify the SUT is handling a certain invalid input correctly, it is better to test that invalid input without combining it with other invalid inputs.",
+      "Extract from Quality Assurance → Test Case Design → Combining Test Inputs → Heuristic: each valid input at least once in a positive test case",
+      "This is not to say never have more than one invalid input in a test case",
+      "Test invalid inputs individually before combining them"
+    ],
+    "W11.3e": [
+      "Test cases for calculateGrade V1",
+      "Test cases for calculateGrade V2",
+      "Test cases for calculateGrade V3",
+      "Test cases for calculateGrade V4"
+    ],
+    "W11.4a": [
+      "Software Quality Assurance (QA) is the process of ensuring that the software being built has the required levels of quality."
+    ],
+    "W11.4b": [
+      "Quality Assurance = Validation + Verification",
+      "Validation",
+      "Verification"
+    ],
+    "W11.4c": [
+      "Formal verification uses mathematical techniques to prove the correctness of a program.",
+      "Formal verification can be used to prove the absence of errors",
+      "formal verification is more commonly used in safety-critical software such as flight control systems"
+    ],
+    "W11.5a": [
+      "Security is therefore part of software engineering, not a specialist activity added after the software is finished; this approach is called secure by design .",
+      "Software security is the protection of a system and its stakeholders from misuse and harm, whether deliberate or accidental.",
+      "Security analysis assumes that deliberate case",
+      "Accidental causes still need attention of their own",
+      "The security mindset means questioning assumptions and considering how a feature could be deliberately misused.",
+      "The security mindset is not the belief that every user is malicious.",
+      "Security is broader than secrecy.",
+      "Three of these are security properties , together called the CIA triad .",
+      "C",
+      "Confidentiality asks whether information has been disclosed only to those permitted to see it.",
+      "I",
+      "Integrity asks whether information and behavior have remained correct, complete, and free from improper change or destruction.",
+      "A",
+      "Availability asks whether authorized users can obtain the service when they need it.",
+      "Asset : something worth protecting.",
+      "Stakeholder : a person or group that can benefit or suffer from the system's security decisions.",
+      "Threat : a possible way an asset could be harmed.",
+      "Vulnerability : a weakness that allows a threat to be realized.",
+      "Attack : an attempt to exploit a vulnerability.",
+      "Control or Mitigation : something that reduces the likelihood or impact of a threat.",
+      "Authentication : establishing which identity is making a request.",
+      "Authorization : deciding whether that identity may perform a specific action on a specific resource.",
+      "Risk : the likelihood of a threat combined with the seriousness of its impact.",
+      "Privacy is related to, but distinct from, security.",
+      "Data that is never collected cannot later be leaked by that system.",
+      "Perfect security is not achievable; secure engineering is risk management.",
+      "Security also has costs.",
+      "Broken access control allows someone to perform an action or access data they are not authorized to use.",
+      "Injection occurs when a system interprets untrusted data as code or commands.",
+      "Cross-site scripting (XSS) occurs when a web application causes untrusted content to execute as a script in another user's browser.",
+      "Vulnerable or outdated components expose a system to known weaknesses in reused software."
+    ],
+    "W11.5b": [
+      "Secure software results from combining threat modeling, secure design, careful implementation, and verification.",
+      "Threat modeling is a structured way to ask what needs protection, what could go wrong, and what should be done about it.",
+      "A concise statement can connect an asset, security goal, adversary, and assumption",
+      "The last two steps carry most of the work, so the rest of this topic expands them.",
+      "Untrusted data creates three separate responsibilities:",
+      "Validation checks whether data is acceptable for its intended purpose.",
+      "Validation that protects server-side assets must also occur on the trusted side of the boundary.",
+      "Do not construct executable commands by concatenating untrusted strings.",
+      "Before placing untrusted data into structured output, encode it for that specific destination context.",
+      "The attack this prevents is cross-site scripting (XSS):",
+      "When a feature genuinely requires user-authored markup, neither plain encoding nor raw output will do:",
+      "Input validation does not replace output encoding.",
+      "Derive identity from an authentication mechanism the trusted part of the system can verify.",
+      "After identifying the requester, authorize the particular action on the particular resource.",
+      "Apply the same authorization rule to every path to the action.",
+      "A secret should be available only to the people and components that need it.",
+      "Keep a secret in a store built for the purpose, and let the deployment supply it to the process that needs it.",
+      "Do not collect or return sensitive data merely because it is convenient.",
+      "Passwords require specialized handling.",
+      "Such facilities are deliberately expensive to compute, and they salt each password separately",
+      "Errors should help legitimate users without teaching an attacker about the system.",
+      "Reused code runs with the permissions of your software and therefore becomes part of its security.",
+      "Commit the ecosystem's lock file",
+      "Check those resolved versions against published advisories using a maintained scanner",
+      "Security verification needs both tools and human reasoning.",
+      "Turn important threat statements into negative tests and misuse cases.",
+      "A clean scan does not prove that software is secure."
+    ],
+    "W11.5c": [
+      "Security work should accompany every stage of development because a late safeguard cannot reliably repair an insecure assumption made earlier.",
+      "State security needs as testable properties rather than vague wishes.",
+      "Revisit the security analysis whenever an important assumption changes.",
+      "What to do first depends on whose system it is.",
+      "Stop exploring once you believe you have found a real problem.",
+      "Preserve what someone will need in order to understand the problem:",
+      "Report through a private channel rather than a public one.",
+      "Withholding details until the people responsible have had a reasonable chance to act is called coordinated disclosure"
+    ],
+    "W11.5d": [
+      "Responsibility for AI-assisted code remains with the engineer and team that accept and deploy it.",
+      "AI-generated code must earn its place in the codebase through understanding, review, and verification.",
+      "Do not use fluency, speed, compilation, or generated tests as evidence of security.",
+      "Do not give a coding tool information it is not authorized to receive.",
+      "The more an AI tool can act, the more important least privilege and explicit approval become.",
+      "Treat instructions found in source files, web pages, dependency documentation, issue text, and generated output as untrusted data.",
+      "Do not execute a generated command or install a generated dependency until you understand why it is needed and what it can affect.",
+      "Constrain the task.",
+      "Inspect the entire change.",
+      "Trace untrusted data and protected actions.",
+      "Test adversarial cases.",
+      "Use independent checks.",
+      "Accept responsibility.",
+      "Code that is cheap to generate is not necessarily cheap to verify.",
+      "An AI assistant can help generate questions, but it cannot establish that its own answer is complete or correct."
+    ],
+    "W11.5e": [],
+    "W11.6a": [
+      "By reusing tried-and-tested components, the robustness of a new software system can be enhanced while reducing the manpower and time required."
+    ],
+    "W11.6b": [
+      "there are costs associated with reuse",
+      "may be overkill",
+      "may not be mature/stable enough",
+      "risk of dying off",
+      "restricts how you can use or develop your software",
+      "might have bugs, missing features, or security vulnerabilities",
+      "Malicious code can sneak into your product"
+    ],
+    "W11.6c": [
+      "An Application Programming Interface (API) specifies the interface through which other programs can interact with a software component."
+    ],
+    "W11.6d": [],
+    "W11.6e": [
+      "library"
+    ],
+    "W11.6f": [],
+    "W11.6g": [
+      "The overall structure and execution flow of a specific category of software systems can be very similar. This similarity is an opportunity for large-scale reuse.",
+      "A software framework is a reusable implementation of software (or part thereof) that provides generic functionality that can be selectively customized to produce a specific application.",
+      "Some frameworks provide a complete implementation of a default behavior, which makes them immediately usable.",
+      "A framework facilitates the adaptation and customization of some desired functionality."
+    ],
+    "W11.6h": [
+      "Libraries are meant to be used ‘as is’, while frameworks are meant to be customized/extended.",
+      "Your code calls the library code while the framework code calls your code.",
+      "Frameworks use a technique called inversion of control , also known as the “Hollywood principle”"
+    ],
+    "W11.6i": [
+      "A platform provides a runtime environment for applications.",
+      "Enterprise Applications",
+      "Enterprise application"
+    ],
+    "W11.7a": [
+      "Cloud computing is the delivery of computing as a service over the network"
+    ],
+    "W11.7b": [
+      "Infrastructure as a service (IaaS) delivers computer infrastructure as a service.",
+      "Platform as a service (PaaS) provides a platform on which developers can build applications.",
+      "Software as a service (SaaS) allows applications to be accessed over the network"
+    ],
+    "W11.8a": [
+      "Communication diagrams are like sequence diagrams but emphasize the data links between the various participants in the interaction rather than the sequence of interactions."
+    ],
+    "W11.8b": [
+      "A State Machine Diagram models state-dependent behavior.",
+      "state-dependent behavior"
+    ],
+    "W11.8c": [
+      "A deployment diagram shows a system's physical layout, revealing which pieces of software run on which pieces of hardware."
+    ],
+    "W11.8d": [
+      "A component diagram is used to show how a system is divided into components and how they are connected to each other through interfaces."
+    ],
+    "W11.8e": [
+      "A package diagram shows packages and their dependencies."
+    ],
+    "W11.8f": [
+      "A composite structure diagram hierarchically decomposes a class into its internal structure."
+    ],
+    "W11.8g": [
+      "A timing diagram focuses on timing constraints."
+    ],
+    "W11.8h": [
+      "Interaction overview diagrams are a combination of activity diagrams and sequence diagrams"
+    ]
+  }
+}
