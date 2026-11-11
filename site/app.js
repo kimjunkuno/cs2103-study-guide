@@ -74,7 +74,7 @@
   }
   function setMode(value) {
     mode = value; document.body.classList.toggle('recall', mode === 'recall'); document.body.classList.toggle('full-mode', mode === 'full');
-    for (const card of cards) { card.querySelector('.full').open = mode === 'full'; card.classList.remove('revealed'); card.querySelector('.reveal').textContent = 'Reveal answer'; }
+    for (const card of cards) { card.querySelector('.full').open = mode === 'full'; card.querySelectorAll('.point-context').forEach(details => { details.open = false; }); card.classList.remove('revealed'); card.querySelector('.reveal').textContent = 'Reveal answer'; }
     document.querySelectorAll('[data-mode]').forEach(button => { const active = button.dataset.mode === mode; button.classList.toggle('active', active); button.setAttribute('aria-pressed', String(active)); });
   }
   document.querySelectorAll('[data-mode]').forEach(button => button.addEventListener('click', () => setMode(button.dataset.mode)));

@@ -74,20 +74,22 @@ class QuestionTests(unittest.TestCase):
  def test_guide_key_theory_is_exactly_the_core_emphasis(self):
   class Core(HTMLParser):
    def __init__(self):
-    super().__init__();self.topic=None;self.quick=False;self.depth=0;self.bold=False;self.current=[];self.items={}
+    super().__init__();self.topic=None;self.quick=False;self.depth=0;self.bold=False;self.current=[];self.items={};self.context=False;self.context_depth=0
    def handle_starttag(self,tag,attrs):
     a=dict(attrs)
     if tag=='article':self.topic=a['id'];self.items[self.topic]=[]
     if tag=='div' and a.get('class')=='quick':self.quick=True;self.depth=1
     elif self.quick and tag=='div':self.depth+=1
+    if self.quick and a.get('class')=='context-content':self.context=True;self.context_depth=self.depth
     if self.quick and tag=='strong':self.bold=True;self.current=[]
    def handle_data(self,text):
     if self.quick and self.bold:self.current.append(text)
     elif self.quick and text.strip():
-     assert text=='See Full text for this topic.',text
+     assert self.context or text=='See Full text for this topic.',text
    def handle_endtag(self,tag):
     if self.quick and tag=='strong':self.items[self.topic].append(''.join(self.current));self.bold=False
     if self.quick and tag=='div':
+     if self.depth==self.context_depth:self.context=False
      self.depth-=1
      if not self.depth:self.quick=False
   parser=Core();parser.feed((SITE/'index.html').read_text())
@@ -95,6 +97,30 @@ class QuestionTests(unittest.TestCase):
   css=(SITE/'ui.css').read_text()
   self.assertIn('.topic .full{display:none}',css)
   self.assertIn('.full-mode .topic .full{display:block}',css)
+ def test_key_theory_context_is_collapsed_and_source_backed(self):
+  class Plain(HTMLParser):
+   def __init__(self,text):super().__init__();self.words=[];self.feed(text)
+   def handle_data(self,text):
+    if text.strip():self.words.append(text.strip())
+   def text(self):return re.sub(r'\s+',' ',' '.join(self.words)).strip()
+  html=(SITE/'index.html').read_text()
+  disclosures=[a for tag,a in Scan(html).tags if tag=='details' and a.get('class')=='point-context']
+  self.assertTrue(disclosures)
+  self.assertTrue(all('open' not in item for item in disclosures))
+  for article in re.findall(r'<article class="topic"[\s\S]*?</article>',html):
+   source=Plain(article.split('<div class="source-content">',1)[1].rsplit('</details>',1)[0]).text()
+   for context in re.findall(r'<div class="context-content">([\s\S]*?)</div>',article):
+    text=Plain(context).text()
+    self.assertTrue(text)
+    self.assertIn(text,source)
+  encapsulation=re.search(r'<article class="topic"[^>]+id="W1.1d"[\s\S]*?</article>',html)[0]
+  contexts=re.findall(r'<details class="point-context">[\s\S]*?</details>',encapsulation)
+  self.assertEqual(len(contexts),2)
+  self.assertIn('<summary><strong>1. The packaging aspect:</strong></summary>',contexts[0])
+  self.assertIn('An object packages data and related behavior together into one self-contained unit.',contexts[0])
+  oop=re.search(r'<article class="topic"[^>]+id="W1.1a"[\s\S]*?</article>',html)[0].split('<details class="full">')[0]
+  self.assertNotIn('Java is primarily',oop)
+  self.assertIn('<li><strong>Some programming languages support multiple paradigms.</strong></li>',oop)
  def test_unique_ids_and_week_coverage(self):
   coverage=json.loads((SITE.parent/'FLASHCARD_COVERAGE.json').read_text())
   self.assertEqual(len(self.bank),coverage['questionCount'])

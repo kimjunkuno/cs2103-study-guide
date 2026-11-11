@@ -4,7 +4,7 @@
 
 An independent study aid for NUS CS2103/T AY 2026/27 Semester 1. It is not an official NUS website.
 
-Key theory shows only the main content’s bold or highlighted fragments. Explanations, examples and diagrams appear only in Full text. Topics without core emphasis point to Full text.
+Key theory keeps the main content’s bold or highlighted fragments visible. A small chevron beside a point reveals nearby source context; these disclosures start collapsed and support touch, Enter and Space. Points without additional context remain plain bold text. Switching reading modes closes context disclosures. The source wording is unchanged apart from whitespace normalization. Examples, dimmed material, supplementary panels and diagrams remain in Full text. Topics without core emphasis point to Full text.
 
 The guide contains 321 topic cards from the weekly Topics pages, with the course's wording, search, week/section filters, examples, diagrams, recall and printing. Weeks 12–13 have no assigned topics.
 
