@@ -964,17 +964,18 @@ globalThis.DIAGRAM_QUESTIONS = {
       "rule": "All parallel paths started by a fork must finish at the same join node.",
       "context": "Review diagram ii.",
       "reference": {
-        "asset": "./diagram-assets/429f8f1d190e7411c913cf35.png",
-        "width": 1471,
-        "height": 866,
+        "asset": "./diagram-assets/2877b77eed53aacf5c888f8c.png",
+        "width": 1289,
+        "height": 914,
         "view": [
-          20,
           0,
-          1110,
-          145
+          0,
+          1289,
+          914
         ],
-        "alt": "Activity diagram, linear-path exercise 1",
-        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/linearPaths/images/q-correctNotation.png"
+        "alt": "Four labelled activity diagrams with parallel paths",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/parallelPaths/images/q-correctNotation.png",
+        "caption": "Course reference: diagram i uses a fork and a matching join."
       },
       "optional": false
     },
@@ -1002,17 +1003,18 @@ globalThis.DIAGRAM_QUESTIONS = {
       "rule": "Parallel paths must end with a join node.",
       "context": "Review diagram iii.",
       "reference": {
-        "asset": "./diagram-assets/429f8f1d190e7411c913cf35.png",
-        "width": 1471,
-        "height": 866,
+        "asset": "./diagram-assets/2877b77eed53aacf5c888f8c.png",
+        "width": 1289,
+        "height": 914,
         "view": [
-          20,
           0,
-          1110,
-          145
+          0,
+          1289,
+          914
         ],
-        "alt": "Activity diagram, linear-path exercise 1",
-        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/linearPaths/images/q-correctNotation.png"
+        "alt": "Four labelled activity diagrams with parallel paths",
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/parallelPaths/images/q-correctNotation.png",
+        "caption": "Course reference: diagram i uses a fork and a matching join."
       },
       "optional": false
     },
@@ -1102,7 +1104,8 @@ globalThis.DIAGRAM_QUESTIONS = {
           301
         ],
         "alt": "Two labelled architecture diagrams and their dependency legend",
-        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/architecture/architectureDiagrams/drawing/images/tip.svg"
+        "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/architecture/architectureDiagrams/drawing/images/tip.svg",
+        "caption": "Course reference: Diagram 1 distinguishes the dependency directions."
       },
       "optional": false
     }

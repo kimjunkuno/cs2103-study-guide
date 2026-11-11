@@ -47,6 +47,7 @@
       $('dg-answer').classList.toggle('is-incorrect', !current.isCorrect);
       $('dg-canvas').replaceChildren(DiagramRenderer.render(current.image).svg);
       $('dg-correction').hidden = !current.reference;
+      $('dg-reference-caption').textContent = current.reference?.caption || 'Course reference example';
       // Render the reference only when its disclosure is opened.
       $('dg-fixed-canvas').replaceChildren();
       $('dg-rule').textContent = current.rule;
