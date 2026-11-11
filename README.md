@@ -1,5 +1,7 @@
 # CS2103/T study guide
 
+[Open study guide](https://kimjunkuno.github.io/cs2103-study-guide/) · [Practise flashcards](https://kimjunkuno.github.io/cs2103-study-guide/flashcards.html)
+
 An independent study aid for NUS CS2103/T AY 2026/27 Semester 1. It is not an official NUS website.
 
 The guide contains 321 topic cards from the weekly Topics pages, with the course's wording, search, week/section filters, examples, diagrams, recall and printing. Weeks 12–13 have no assigned topics.
@@ -42,3 +44,11 @@ To report a security issue, provide a minimal reproduction without secrets or pe
 ## Implementation stages
 
 See `PLAN.txt`. Stage 1 publishes the guide. Stage 2 adds random source-backed flashcards with reveal, filters and a local revisit list; no scheduling or automatic grading.
+
+## Flashcards
+
+Open Practise flashcards for random questions with reveal, week/topic filters, optional random repeats and a saved revisit list. The first release contains 721 questions. The committed question pool is generated from suitable bolded passages in the reviewed snapshot. Each cloze question hides a term or phrase; its answer restores the original passage, normalising whitespace only. No live generation, scraping or AI service is used. FLASHCARD_COVERAGE.json records per-topic question counts and exclusions. This is a practice pool, not a guarantee of exam coverage or exhaustive theory coverage.
+
+Click the card to reveal, then choose Got it right or Got it wrong. Skip & save and wrong answers enter the browser-local revisit list; correct removes the flag. Revisit only filters to saved questions. Uncheck random repeats for one appearance per question per session. Repeat this card explicitly retries the current card. Changing filters restarts the session but retains saved flags. Export/import moves the revisit list between browsers. Guide confidence is independent.
+
+Run flashcard tests with `node --test tests/flashcards.test.cjs`. Both test suites run before deployment.

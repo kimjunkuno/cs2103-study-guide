@@ -17,7 +17,8 @@ jobs:
         with:
           persist-credentials: false
       - run: python3 -m unittest discover -s tests -v
-      - run: node --check site/app.js
+      - run: for file in site/*.js; do node --check "$file"; done
+      - run: node --test tests/flashcards.test.cjs
   deploy:
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     needs: validate

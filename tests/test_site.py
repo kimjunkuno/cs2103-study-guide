@@ -22,7 +22,7 @@ class SiteTests(unittest.TestCase):
    if tag in {'img','script','link'}:
     attr='href' if tag=='link' else 'src';url=a.get(attr,'')
     self.assertTrue(url.startswith('./'),url);self.assertTrue((SITE/url[2:]).is_file(),url)
-   if tag=='a' and 'href' in a:self.assertRegex(a['href'],r'^(https?://|mailto:|#)')
+   if tag=='a' and 'href' in a:self.assertRegex(a['href'],r'^(https?://|mailto:|#|\./(?:index|flashcards)\.html(?:#|$))')
   html=(SITE/'index.html').read_text();self.assertIn('Content-Security-Policy',html)
   self.assertNotIn('unsafe-eval',html);self.assertNotIn('unsafe-inline',html)
  def test_no_runtime_endpoints_or_secrets(self):
@@ -39,3 +39,45 @@ class SiteTests(unittest.TestCase):
  def test_recovered_terms(self):
   text=(SITE/'index.html').read_text();self.assertIn('PascalCase',text);self.assertIn('current object',text)
 if __name__=='__main__':unittest.main()
+
+class QuestionTests(unittest.TestCase):
+ @classmethod
+ def setUpClass(cls):
+  prefix='globalThis.COURSE_FLASHCARDS = '
+  text=(SITE/'flashcards-data.js').read_text()
+  assert text.startswith(prefix) and text.endswith(';\n')
+  cls.bank=json.loads(text[len(prefix):-2])['cards']
+ def test_every_question_is_source_backed(self):
+  class Text(HTMLParser):
+   def __init__(self):
+    super().__init__();self.stack=[];self.article=None;self.quick=False;self.bold=False;self.words={};self.bold_words={}
+   def handle_starttag(self,tag,attrs):
+    a=dict(attrs)
+    if tag not in {'img','br','hr','input','meta','link'}:self.stack.append((tag,self.article,self.quick,self.bold))
+    if tag=='article':self.article=a.get('id');self.words[self.article]=[];self.bold_words[self.article]=[]
+    if 'quick' in a.get('class','').split():self.quick=True
+    if tag in {'strong','b'}:self.bold=True
+   def handle_endtag(self,tag):
+    for i in range(len(self.stack)-1,-1,-1):
+     if self.stack[i][0]==tag:
+      _,self.article,self.quick,self.bold=self.stack[i];self.stack=self.stack[:i];break
+   def handle_data(self,text):
+    if self.quick and self.article and text.strip():
+     self.words[self.article].append(text.strip())
+     if self.bold:self.bold_words[self.article].append(text.strip())
+  parser=Text();parser.feed((SITE/'index.html').read_text())
+  norm=lambda text:re.sub(r'\s+',' ',text).strip()
+  for card in self.bank:
+   self.assertEqual(card['prompt'].replace('_____',card['answer']),card['passage'],card['id'])
+   self.assertIn(card['passage'],norm(' '.join(parser.words[card['topicId']])),card['id'])
+   self.assertIn(card['answer'],norm(' '.join(parser.bold_words[card['topicId']])),card['id'])
+ def test_unique_ids_and_week_coverage(self):
+  self.assertGreater(len(self.bank),500)
+  self.assertEqual(len(self.bank),len({c['id'] for c in self.bank}))
+  self.assertEqual({c['week'] for c in self.bank},set(range(1,12)))
+  for c in self.bank:self.assertRegex(c['source'],r'^https://nus-cs2103-ay2627-s1.github.io/website/schedule/week\d+/topics.html#')
+ def test_flashcard_page_uses_local_scripts_and_no_handlers(self):
+  for tag,a in Scan((SITE/'flashcards.html').read_text()).tags:
+   self.assertFalse(any(k.startswith('on') for k in a))
+   if tag in {'script','link'}:
+    url=a.get('src') if tag=='script' else a.get('href');self.assertTrue(url.startswith('./'));self.assertTrue((SITE/url[2:]).is_file())

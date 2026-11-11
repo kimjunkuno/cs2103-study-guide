@@ -1,0 +1,1932 @@
+{
+  "version": 1,
+  "questionCount": 721,
+  "coverage": [
+    {
+      "topicId": "W1.1a",
+      "eligiblePassages": 2,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W1.1b",
+      "eligiblePassages": 6,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W1.1c",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W1.1d",
+      "eligiblePassages": 3,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W1.1e",
+      "eligiblePassages": 4,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W1.1f",
+      "eligiblePassages": 5,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W1.1g",
+      "eligiblePassages": 2,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W1.1h",
+      "eligiblePassages": 3,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W1.1i",
+      "eligiblePassages": 3,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W1.1j",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W1.1k",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W1.2a",
+      "eligiblePassages": 6,
+      "questions": 5,
+      "note": ""
+    },
+    {
+      "topicId": "W1.2b",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W1.2c",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W1.2d",
+      "eligiblePassages": 10,
+      "questions": 10,
+      "note": ""
+    },
+    {
+      "topicId": "W1.3a",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W1.3b",
+      "eligiblePassages": 3,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W1.3c",
+      "eligiblePassages": 4,
+      "questions": 4,
+      "note": ""
+    },
+    {
+      "topicId": "W1.3d",
+      "eligiblePassages": 4,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W1.3e",
+      "eligiblePassages": 2,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W1.3f",
+      "eligiblePassages": 6,
+      "questions": 6,
+      "note": ""
+    },
+    {
+      "topicId": "W1.3g",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W1.3h",
+      "eligiblePassages": 7,
+      "questions": 7,
+      "note": ""
+    },
+    {
+      "topicId": "W1.3i",
+      "eligiblePassages": 4,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W1.4a",
+      "eligiblePassages": 11,
+      "questions": 11,
+      "note": ""
+    },
+    {
+      "topicId": "W1.4b",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W1.4c",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W1.5a",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W1.5b",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W1.5c",
+      "eligiblePassages": 5,
+      "questions": 4,
+      "note": ""
+    },
+    {
+      "topicId": "W1.5d",
+      "eligiblePassages": 4,
+      "questions": 4,
+      "note": ""
+    },
+    {
+      "topicId": "W1.5e",
+      "eligiblePassages": 5,
+      "questions": 4,
+      "note": ""
+    },
+    {
+      "topicId": "W1.5f",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W1.6a",
+      "eligiblePassages": 15,
+      "questions": 5,
+      "note": ""
+    },
+    {
+      "topicId": "W1.7a",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W2.1a",
+      "eligiblePassages": 3,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W2.1b",
+      "eligiblePassages": 6,
+      "questions": 4,
+      "note": ""
+    },
+    {
+      "topicId": "W2.1c",
+      "eligiblePassages": 13,
+      "questions": 11,
+      "note": ""
+    },
+    {
+      "topicId": "W2.2a",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W2.2b",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W2.3a",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W2.3b",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W2.4a",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W2.4b",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W2.5a",
+      "eligiblePassages": 4,
+      "questions": 4,
+      "note": ""
+    },
+    {
+      "topicId": "W2.5b",
+      "eligiblePassages": 3,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W2.5c",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W2.5d",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W3.1a",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W3.1b",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W3.1c",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W3.2a",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W3.3a",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W3.3b",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W3.3c",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W3.4a",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W3.4b",
+      "eligiblePassages": 2,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W3.4c",
+      "eligiblePassages": 6,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W3.4d",
+      "eligiblePassages": 10,
+      "questions": 5,
+      "note": ""
+    },
+    {
+      "topicId": "W3.4e",
+      "eligiblePassages": 6,
+      "questions": 5,
+      "note": ""
+    },
+    {
+      "topicId": "W3.4f",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W3.5a",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W3.5b",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W3.6a",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W3.6b",
+      "eligiblePassages": 5,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W3.7a",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W3.7b",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W3.7c",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W3.7d",
+      "eligiblePassages": 2,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W3.7e",
+      "eligiblePassages": 3,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W3.7f",
+      "eligiblePassages": 13,
+      "questions": 13,
+      "note": ""
+    },
+    {
+      "topicId": "W4.1a",
+      "eligiblePassages": 9,
+      "questions": 8,
+      "note": ""
+    },
+    {
+      "topicId": "W4.1b",
+      "eligiblePassages": 4,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W4.1c",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W4.2a",
+      "eligiblePassages": 4,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W4.2b",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W4.2c",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W4.2d",
+      "eligiblePassages": 3,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W4.3a",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W4.3b",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W4.3c",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W4.3d",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W4.3e",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W4.3f",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W4.4a",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W4.5a",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W4.6a",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W4.6b",
+      "eligiblePassages": 2,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W4.6c",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W4.6d",
+      "eligiblePassages": 2,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W4.6e",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W4.6f",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W4.7a",
+      "eligiblePassages": 5,
+      "questions": 5,
+      "note": ""
+    },
+    {
+      "topicId": "W4.8a",
+      "eligiblePassages": 2,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W4.9a",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W5.1a",
+      "eligiblePassages": 4,
+      "questions": 4,
+      "note": ""
+    },
+    {
+      "topicId": "W5.1b",
+      "eligiblePassages": 3,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W5.1c",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W5.1d",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W5.1e",
+      "eligiblePassages": 4,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W5.2a",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W5.2b",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W5.2c",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W5.2d",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W5.2e",
+      "eligiblePassages": 7,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W5.2f",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W5.2g",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W5.2h",
+      "eligiblePassages": 4,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W5.3a",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W5.3b",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W5.3c",
+      "eligiblePassages": 3,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W5.3d",
+      "eligiblePassages": 5,
+      "questions": 4,
+      "note": ""
+    },
+    {
+      "topicId": "W5.3e",
+      "eligiblePassages": 16,
+      "questions": 12,
+      "note": ""
+    },
+    {
+      "topicId": "W5.3f",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W5.3g",
+      "eligiblePassages": 4,
+      "questions": 4,
+      "note": ""
+    },
+    {
+      "topicId": "W5.4a",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W5.4b",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W5.4c",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W5.4d",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W5.4e",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W5.4f",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W5.4g",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W5.4h",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W5.4i",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W5.4j",
+      "eligiblePassages": 6,
+      "questions": 4,
+      "note": ""
+    },
+    {
+      "topicId": "W5.4k",
+      "eligiblePassages": 9,
+      "questions": 8,
+      "note": ""
+    },
+    {
+      "topicId": "W5.4l",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W5.4m",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W5.4n",
+      "eligiblePassages": 2,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W5.4o",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W5.4p",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W5.4q",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W5.4r",
+      "eligiblePassages": 3,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W5.4s",
+      "eligiblePassages": 2,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W5.4t",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W5.4u",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W5.4v",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W5.4w",
+      "eligiblePassages": 4,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W5.5a",
+      "eligiblePassages": 5,
+      "questions": 4,
+      "note": ""
+    },
+    {
+      "topicId": "W5.5b",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W5.5c",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W5.5d",
+      "eligiblePassages": 4,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W5.6a",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W5.6b",
+      "eligiblePassages": 5,
+      "questions": 4,
+      "note": ""
+    },
+    {
+      "topicId": "W5.6c",
+      "eligiblePassages": 4,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W5.7a",
+      "eligiblePassages": 2,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W5.8a",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W6.1a",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W6.1b",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W6.1c",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W6.2a",
+      "eligiblePassages": 8,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W6.2b",
+      "eligiblePassages": 8,
+      "questions": 6,
+      "note": ""
+    },
+    {
+      "topicId": "W6.2c",
+      "eligiblePassages": 6,
+      "questions": 4,
+      "note": ""
+    },
+    {
+      "topicId": "W6.2d",
+      "eligiblePassages": 16,
+      "questions": 8,
+      "note": ""
+    },
+    {
+      "topicId": "W6.2e",
+      "eligiblePassages": 6,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W6.3a",
+      "eligiblePassages": 3,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W6.3b",
+      "eligiblePassages": 5,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W6.4a",
+      "eligiblePassages": 15,
+      "questions": 13,
+      "note": ""
+    },
+    {
+      "topicId": "W6.4b",
+      "eligiblePassages": 39,
+      "questions": 28,
+      "note": ""
+    },
+    {
+      "topicId": "W6.4c",
+      "eligiblePassages": 27,
+      "questions": 25,
+      "note": ""
+    },
+    {
+      "topicId": "W6.4d",
+      "eligiblePassages": 9,
+      "questions": 5,
+      "note": ""
+    },
+    {
+      "topicId": "W6.4e",
+      "eligiblePassages": 10,
+      "questions": 7,
+      "note": ""
+    },
+    {
+      "topicId": "W6.5a",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W6.5b",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W7.1a",
+      "eligiblePassages": 5,
+      "questions": 4,
+      "note": ""
+    },
+    {
+      "topicId": "W7.1b",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W7.1c",
+      "eligiblePassages": 11,
+      "questions": 8,
+      "note": ""
+    },
+    {
+      "topicId": "W7.1d",
+      "eligiblePassages": 5,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W7.2a",
+      "eligiblePassages": 8,
+      "questions": 5,
+      "note": ""
+    },
+    {
+      "topicId": "W7.3a",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W7.3b",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W7.3c",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W7.4a",
+      "eligiblePassages": 6,
+      "questions": 6,
+      "note": ""
+    },
+    {
+      "topicId": "W7.4b",
+      "eligiblePassages": 4,
+      "questions": 4,
+      "note": ""
+    },
+    {
+      "topicId": "W7.4c",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W7.4d",
+      "eligiblePassages": 7,
+      "questions": 7,
+      "note": ""
+    },
+    {
+      "topicId": "W7.4e",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W7.4f",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W7.5a",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W7.6a",
+      "eligiblePassages": 3,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W7.6b",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W7.6c",
+      "eligiblePassages": 4,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W7.7a",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W7.7b",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W7.7c",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W7.7d",
+      "eligiblePassages": 3,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W7.7e",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W7.7f",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W7.7g",
+      "eligiblePassages": 3,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W7.8a",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W8.1a",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W8.1b",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W8.1c",
+      "eligiblePassages": 3,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W8.2a",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W8.2b",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W8.2c",
+      "eligiblePassages": 2,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W8.2d",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W8.2e",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W8.3a",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W8.3b",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W8.3c",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W8.3d",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W8.4a",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W8.4b",
+      "eligiblePassages": 2,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W8.4c",
+      "eligiblePassages": 3,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W8.4d",
+      "eligiblePassages": 3,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W8.4e",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W8.4f",
+      "eligiblePassages": 3,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W8.4g",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W8.4h",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W8.4i",
+      "eligiblePassages": 5,
+      "questions": 4,
+      "note": ""
+    },
+    {
+      "topicId": "W8.4j",
+      "eligiblePassages": 4,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W8.5a",
+      "eligiblePassages": 4,
+      "questions": 4,
+      "note": ""
+    },
+    {
+      "topicId": "W8.5b",
+      "eligiblePassages": 3,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W8.5c",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W8.5d",
+      "eligiblePassages": 7,
+      "questions": 7,
+      "note": ""
+    },
+    {
+      "topicId": "W8.5e",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W8.5f",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W8.5g",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W9.1a",
+      "eligiblePassages": 8,
+      "questions": 8,
+      "note": ""
+    },
+    {
+      "topicId": "W9.2a",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W9.2b",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W9.3a",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W9.3b",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W9.3c",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W9.4a",
+      "eligiblePassages": 4,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W9.5a",
+      "eligiblePassages": 10,
+      "questions": 8,
+      "note": ""
+    },
+    {
+      "topicId": "W9.5b",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W9.5c",
+      "eligiblePassages": 3,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W9.5d",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W9.5e",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W9.5f",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W9.5g",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W9.5h",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W9.5i",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W9.5j",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W9.5k",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W9.6a",
+      "eligiblePassages": 3,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W9.6b",
+      "eligiblePassages": 6,
+      "questions": 4,
+      "note": ""
+    },
+    {
+      "topicId": "W9.6c",
+      "eligiblePassages": 13,
+      "questions": 11,
+      "note": ""
+    },
+    {
+      "topicId": "W9.7a",
+      "eligiblePassages": 10,
+      "questions": 4,
+      "note": ""
+    },
+    {
+      "topicId": "W9.7b",
+      "eligiblePassages": 11,
+      "questions": 8,
+      "note": ""
+    },
+    {
+      "topicId": "W9.7c",
+      "eligiblePassages": 5,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W9.7d",
+      "eligiblePassages": 3,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W9.7e",
+      "eligiblePassages": 7,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W9.7f",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W9.7g",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W9.8a",
+      "eligiblePassages": 4,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W9.8b",
+      "eligiblePassages": 6,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W9.8c",
+      "eligiblePassages": 2,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W9.8d",
+      "eligiblePassages": 3,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W10.1a",
+      "eligiblePassages": 2,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W10.1b",
+      "eligiblePassages": 6,
+      "questions": 6,
+      "note": ""
+    },
+    {
+      "topicId": "W10.1c",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W10.1d",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W10.1e",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W10.1f",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W10.1g",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W10.1h",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W10.2a",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W10.2b",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W10.2c",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W10.2d",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W10.2e",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W10.2f",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W10.3a",
+      "eligiblePassages": 5,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W10.3b",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W10.3c",
+      "eligiblePassages": 4,
+      "questions": 4,
+      "note": ""
+    },
+    {
+      "topicId": "W10.3d",
+      "eligiblePassages": 11,
+      "questions": 7,
+      "note": ""
+    },
+    {
+      "topicId": "W10.4a",
+      "eligiblePassages": 5,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W10.4b",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W10.4c",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W10.5a",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W10.5b",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W11.1a",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W11.1b",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W11.1c",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W11.1d",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W11.1e",
+      "eligiblePassages": 4,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W11.1f",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W11.1g",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W11.2a",
+      "eligiblePassages": 2,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W11.2b",
+      "eligiblePassages": 4,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W11.2c",
+      "eligiblePassages": 6,
+      "questions": 4,
+      "note": ""
+    },
+    {
+      "topicId": "W11.2d",
+      "eligiblePassages": 7,
+      "questions": 4,
+      "note": ""
+    },
+    {
+      "topicId": "W11.2e",
+      "eligiblePassages": 10,
+      "questions": 5,
+      "note": ""
+    },
+    {
+      "topicId": "W11.2f",
+      "eligiblePassages": 10,
+      "questions": 7,
+      "note": ""
+    },
+    {
+      "topicId": "W11.2g",
+      "eligiblePassages": 3,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W11.2h",
+      "eligiblePassages": 5,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W11.3a",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W11.3b",
+      "eligiblePassages": 5,
+      "questions": 4,
+      "note": ""
+    },
+    {
+      "topicId": "W11.3c",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W11.3d",
+      "eligiblePassages": 3,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W11.3e",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W11.4a",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W11.4b",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W11.4c",
+      "eligiblePassages": 3,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W11.5a",
+      "eligiblePassages": 25,
+      "questions": 25,
+      "note": ""
+    },
+    {
+      "topicId": "W11.5b",
+      "eligiblePassages": 25,
+      "questions": 11,
+      "note": ""
+    },
+    {
+      "topicId": "W11.5c",
+      "eligiblePassages": 8,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W11.5d",
+      "eligiblePassages": 15,
+      "questions": 10,
+      "note": ""
+    },
+    {
+      "topicId": "W11.5e",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W11.6a",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W11.6b",
+      "eligiblePassages": 7,
+      "questions": 6,
+      "note": ""
+    },
+    {
+      "topicId": "W11.6c",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W11.6d",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W11.6e",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W11.6f",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W11.6g",
+      "eligiblePassages": 4,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W11.6h",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W11.6i",
+      "eligiblePassages": 2,
+      "questions": 2,
+      "note": ""
+    },
+    {
+      "topicId": "W11.7a",
+      "eligiblePassages": 0,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W11.7b",
+      "eligiblePassages": 3,
+      "questions": 3,
+      "note": ""
+    },
+    {
+      "topicId": "W11.8a",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W11.8b",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W11.8c",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W11.8d",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W11.8e",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W11.8f",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    },
+    {
+      "topicId": "W11.8g",
+      "eligiblePassages": 1,
+      "questions": 0,
+      "note": "Linked/interactive-only topics and passages without a concise meaningful blank are excluded; duplicate questions are kept once within each topic; revisited weeks retain their assigned material."
+    },
+    {
+      "topicId": "W11.8h",
+      "eligiblePassages": 1,
+      "questions": 1,
+      "note": ""
+    }
+  ]
+}
