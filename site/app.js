@@ -10,7 +10,7 @@
   const navigation = CourseNavigation.mount($('guide-navigation'), cards.map(card => ({id: card.id})), filter);
   CourseNavigation.chapterTree($('guide-chapters'), navigation);
   const textIndex = new Map(cards.map(card => [card, (card.dataset.group + ' ' + card.id + ' '
-    + card.querySelector('h3').textContent + ' ' + card.querySelector('.source-content').textContent).toLowerCase()]));
+    + navigation.metadata(card.id).title + ' ' + navigation.metadata(card.id).chapter + ' ' + card.querySelector('.source-content').textContent).toLowerCase()]));
   for (const card of cards) {
     const select = card.querySelector('.progress');
     select.value = ['0', '1', '2'].includes(String(saved[card.id])) ? String(saved[card.id]) : '0';
@@ -60,7 +60,7 @@
       item.hidden = !(state.mode === 'week' && state.week === item.dataset.week && !words.length && !progress && !state.topic);
       if (!item.hidden) empties++;
     }
-    $('results').textContent = count + ' of ' + cards.length + ' topic cards';
+    $('results').textContent = count === cards.length ? count + ' topics' : count + ' / ' + cards.length + ' topics';
     $('scope').textContent = state.mode === 'week' ? (state.week ? 'Week ' + state.week : 'All weeks') : state.chapter || state.category || 'Textbook';
     $('no-results').hidden = Boolean(count || empties);
     $('week-nav').hidden = state.mode !== 'week'; $('guide-chapters').hidden = state.mode !== 'textbook';

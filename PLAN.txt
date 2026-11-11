@@ -30,3 +30,13 @@ Release conditions:
 - Pin Actions to commit SHAs, use least privilege, deploy trusted main commits only.
 - Keep the original standalone offline HTML available separately; hosted offline use is not promised.
 - Recover a failed release by reverting the relevant commit and redeploying.
+
+NEXT ITERATION — THREE REVIEWABLE PRS
+1. feat/textbook-navigation: category/chapter/topic browsing, dynamic week mode,
+   original IDs and saved progress preserved.
+2. feat/diagram-practice: 24 source-backed required-course exercises only;
+   no optional diagram types; one error per case, correction and revisit list.
+3. feat/responsive-interface: compact headings, progressive filters, More menus,
+   phone/tablet/landscape layouts, touch and keyboard controls.
+Merge in the listed order. Keep the PRs open for review; deployment follows a
+merge to main. Original course text and existing confidence records remain intact.

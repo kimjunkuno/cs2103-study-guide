@@ -62,3 +62,11 @@ Browse by Textbook to select category, chapter and topic in the online book's or
 `diagrams.html` provides 24 original, source-linked exercises: four each for class diagrams/compartments, object diagrams/value slots, conceptual class diagrams, sequence diagrams, activity diagrams and architecture diagrams. Optional diagram types are excluded. Each case has one defined error; some show a relevant diagram fragment rather than a complete system.
 
 Tap an element or choose its equivalent button, then inspect the correction and course rule. Wrong answers, revealed answers and skips enter a separate local revisit list. A later first-try correct answer clears the flag; retries within the same exercise keep it saved. Enlarge opens a keyboard-accessible dialog. Diagrams use native SVG with generous touch targets, no external rendering service, scripts in assets or personal image metadata. Source content is not executed.
+
+## Compact phone and tablet layout
+
+All three pages share compact headings and navigation. Textbook controls reveal chapter and topic choices progressively; Week mode shows the week selector. Compatible selected topics survive switching browse modes. The chapter sidebar is used on desktop, while phones and tablets use the main dropdowns.
+
+Flashcards show Skip before reveal and Correct/Wrong/Next afterwards. Repeat, restart and backup actions are under More. Source details and help remain available but collapsed. Diagrams have internal scrolling, large invisible hit areas, equivalent element buttons and an enlarged dialog; browser zoom remains enabled. Small single-box diagrams and empty vertical canvas space are fitted without changing model geometry.
+
+Browser viewport checks cover 320px phones, 390px phones, 768px tablets, 1024px tablets and landscape. These checks use the local browser, not physical iOS/Android devices. Feature branches do not deploy; the stacked navigation, diagram and interface PRs should be merged in that order.

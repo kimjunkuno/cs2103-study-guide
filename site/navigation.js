@@ -15,6 +15,13 @@
     const ids = new Set(records.map(record => record.topicId || record.id));
     return catalog.topics.filter(topic => ids.has(topic.id));
   }
+  function switchMode(state, mode, topics) {
+    const selected = topics.filter(topic => state.topic && topic.topicKey === state.topic);
+    const first = selected.find(topic => topic.week === Number(state.week)) || selected[0];
+    return {mode, category: mode === 'textbook' && first ? first.category : '',
+      chapter: mode === 'textbook' && first ? first.chapter : '', topic: first ? first.topicKey : '',
+      week: mode === 'week' && first ? String(first.week) : state.week || ''};
+  }
   function mount(container, records, onChange, catalog = root.COURSE_TOPICS) {
     const topics = available(catalog, records);
     const byId = new Map(topics.map(topic => [topic.id, topic]));
@@ -26,13 +33,13 @@
       const label = document.createElement('label');
       label.append(document.createTextNode(title));
       const select = document.createElement('select');
-      select.setAttribute('aria-label', 'Browse by ' + title.toLowerCase());
+      select.setAttribute('aria-label', key === 'mode' ? 'Browse mode' : 'Browse by ' + title.toLowerCase());
       select.dataset.navigation = key;
       label.append(select); container.append(label);
       controls[key] = select; labels[key] = label;
       select.addEventListener('change', () => {
-        state[key] = select.value;
-        if (key === 'mode') { state.week = ''; state.category = ''; state.chapter = ''; state.topic = ''; }
+        if (key === 'mode') Object.assign(state, switchMode(state, select.value, topics));
+        else state[key] = select.value;
         if (key === 'category') { state.chapter = ''; state.topic = ''; }
         if (key === 'chapter' || key === 'week') state.topic = '';
         update(); onChange();
@@ -52,7 +59,9 @@
     function update() {
       options('mode', [['textbook', 'Textbook'], ['week', 'Week']]);
       labels.week.hidden = state.mode !== 'week';
-      labels.category.hidden = labels.chapter.hidden = state.mode !== 'textbook';
+      labels.category.hidden = state.mode !== 'textbook';
+      labels.chapter.hidden = state.mode !== 'textbook' || !state.category;
+      labels.topic.hidden = state.mode === 'textbook' ? !state.chapter : !state.week && !state.topic;
       options('category', [['', 'All categories'], ...catalog.categories
         .filter(category => topics.some(topic => topic.category === category.label))
         .map(category => [category.label, category.label])]);
@@ -105,7 +114,7 @@
       container.append(details);
     }
   }
-  const api = {compareIds, matches, available, mount, chapterTree};
+  const api = {compareIds, matches, available, switchMode, mount, chapterTree};
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else root.CourseNavigation = api;
 })(globalThis);

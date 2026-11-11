@@ -28,11 +28,11 @@
   function stats() {
     const matching = pool();
     const remaining = matching.filter(card => !seen.has(card.id)).length;
-    $('fc-pool').textContent = matching.length + (matching.length === 1 ? ' question matches · ' : ' questions match · ')
-      + ($('fc-repeats').checked ? 'Repeats allowed' : remaining + ' unseen this session');
+    $('fc-pool').textContent = matching.length + (matching.length === 1 ? ' card · ' : ' cards · ')
+      + ($('fc-repeats').checked ? 'Repeats on' : remaining + ' left');
     const skipped = Object.values(flags).filter(value => value === 'skipped').length;
     const incorrect = Object.values(flags).filter(value => value === 'incorrect').length;
-    $('fc-saved').textContent = skipped + ' skipped · ' + incorrect + ' incorrect saved for later';
+    $('fc-saved').textContent = (skipped+incorrect) + ' saved';
   }
   function flip(show) {
     revealed = show;
@@ -40,10 +40,14 @@
     $('fc-passage-wrap').hidden = !show;
     if (!show) $('fc-passage-wrap').open = false;
     $('fc-face-label').textContent = show ? 'ANSWER' : 'FILL IN THE BLANK';
-    $('fc-hint').textContent = show ? 'Click the card to hide the answer' : 'Click the card to reveal the answer';
+    $('fc-hint').textContent = show ? 'Tap to hide' : 'Tap to reveal';
     $('fc-card').setAttribute('aria-expanded', String(show));
     $('fc-card').setAttribute('aria-label', show ? 'Hide flashcard answer' : 'Reveal flashcard answer');
     $('fc-correct').disabled = !show;
+    $('fc-correct').hidden = !show;
+    $('fc-incorrect').hidden = !show;
+    $('fc-next').hidden = !show;
+    $('fc-skip').hidden = show;
     $('fc-incorrect').disabled = !show;
   }
   function next() {
@@ -51,6 +55,7 @@
     current = rules.pick(pool(), seen, $('fc-repeats').checked, previousId);
     const present = Boolean(current);
     $('fc-study').hidden = !present;
+    $('fc-repeat').disabled = !present;
     $('fc-empty').hidden = present;
     if (!present) {
       $('fc-empty-title').textContent = pool().length ? 'You’ve seen every card in this selection.' : 'No questions in this selection.';
@@ -67,7 +72,7 @@
       $('fc-source').href = current.source;
       $('fc-guide').href = './index.html#' + encodeURIComponent(current.topicId);
       $('fc-card-status').textContent = flags[current.id] === 'incorrect' ? 'Saved: incorrect'
-        : flags[current.id] === 'skipped' ? 'Saved: skipped' : current.optional ? 'Optional course topic' : 'Source-backed study question';
+        : flags[current.id] === 'skipped' ? 'Saved: skipped' : current.optional ? 'Optional course topic' : 'Core theory';
       flip(false);
     }
     stats();
@@ -83,16 +88,16 @@
     if (!current) return;
     // Skipping an already incorrect card must not erase its incorrect status.
     if (flags[current.id] !== 'incorrect') flags[current.id] = 'skipped';
-    tell('Saved for later. Use Revisit only to return to skipped and incorrect cards.');
+    tell('Skipped and saved.');
     persist(); next();
   });
   $('fc-incorrect').addEventListener('click', () => {
     if (!current || !revealed) return;
-    flags[current.id] = 'incorrect'; tell('Marked incorrect and saved for later.'); persist(); next();
+    flags[current.id] = 'incorrect'; tell('Saved for later.'); persist(); next();
   });
   $('fc-correct').addEventListener('click', () => {
     if (!current || !revealed) return;
-    delete flags[current.id]; tell('Marked correct and removed from your revisit list.'); persist(); next();
+    delete flags[current.id]; tell('Correct. Removed from saved.'); persist(); next();
   });
   $('fc-export').addEventListener('click', () => {
     const blob = new Blob([JSON.stringify({version: 1, flags}, null, 2)], {type: 'application/json'});

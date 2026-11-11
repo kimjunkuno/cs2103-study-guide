@@ -12,20 +12,20 @@
 <script defer="" src="./flashcards-data.js"></script>
 <script defer="" src="./flashcards-core.js"></script>
 <script defer="True" src="./course-topics.js"></script><script defer="True" src="./navigation.js"></script><script defer="" src="./flashcards.js"></script>
-<link href="./navigation.css" rel="stylesheet"/></head>
+<link href="./navigation.css" rel="stylesheet"/><link href="./ui.css" rel="stylesheet"/></head>
 <body>
 <div class="layout">
 <aside class="sidebar">
 <div class="brand">CS2103/T<small>THEORY STUDY GUIDE</small></div>
-<nav aria-label="Study pages" class="page-links"><a href="./index.html">← Study guide</a><a aria-current="page" href="./flashcards.html">Flashcards</a><a href="./diagrams.html">Spot the mistake</a></nav>
+<nav aria-label="Study pages" class="page-links"><a href="./index.html">Guide</a><a aria-current="page" href="./flashcards.html">Flashcards</a><a href="./diagrams.html">Spot the mistake</a></nav>
 <div class="side-foot">Short cards from bold or highlighted core theory.<br/>Snapshot · 11 November 2026<br/><a href="./index.html#guide-notes">Sources &amp; licence</a></div>
 </aside>
 <main class="flash-main">
-<header class="hero"><span class="eyebrow">A LITTLE PRACTICE · ONE QUESTION AT A TIME</span><h1>Think it through.<br/>Then turn the card.</h1><p>Short questions from bold or highlighted core theory. Click to reveal the answer, then save tricky cards for later.</p></header>
+<header class="hero"><div><h1>Flashcards</h1><p class="page-subtitle">Tap a card to reveal.</p></div></header>
 <section aria-label="Flashcard filters" class="fc-filters"><div class="fc-navigation-host" id="fc-navigation"></div>
 <div class="fc-toggles"><label><input id="fc-repeats" type="checkbox"/> Allow random repeats</label><label><input id="fc-revisit" type="checkbox"/> Revisit only</label></div>
 </section>
-<div class="fc-stats"><p id="fc-pool" role="status"></p><button id="fc-restart">Restart session</button></div>
+<div class="fc-stats"><p id="fc-pool" role="status"></p><details class="more-menu"><summary>More</summary><div class="more-actions"><button id="fc-repeat">Repeat</button><button id="fc-restart">Restart</button><button id="fc-export">Export saved</button><button id="fc-import">Import saved</button><button id="fc-reset">Clear saved</button></div></details></div>
 <section aria-label="Current flashcard" id="fc-study">
 <div class="fc-card-top"><span id="fc-card-status"></span><a href="./index.html" id="fc-guide">Read topic ↗</a></div>
 <p class="fc-context" id="fc-context"></p>
@@ -36,17 +36,17 @@
 <span class="fc-hint" id="fc-hint">Click the card to reveal the answer</span>
 </button>
 <details class="fc-evidence" hidden="" id="fc-passage-wrap"><summary>Source wording &amp; link</summary><p id="fc-passage"></p><a href="https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html" id="fc-source" rel="noopener noreferrer" target="_blank">View original source ↗</a></details>
-<div class="fc-actions"><button disabled="" id="fc-correct">Got it right</button><button disabled="" id="fc-incorrect">Got it wrong</button><button id="fc-skip">Skip &amp; save</button><button id="fc-repeat">Repeat this card</button><button id="fc-next">Next random →</button></div>
+<div class="fc-actions"><button disabled="" id="fc-correct">Correct</button><button disabled="" id="fc-incorrect">Wrong</button><button id="fc-skip">Skip</button><button id="fc-next">Next →</button></div>
 </section>
 <section class="empty-week" hidden="" id="fc-empty"><h2 id="fc-empty-title"></h2><p id="fc-empty-text"></p></section>
 <p class="fc-saved" id="fc-saved"></p>
 <p aria-live="polite" class="fc-message" id="fc-message" role="status"></p>
-<details class="help"><summary>How it works · saved cards &amp; backups</summary>
+<details class="help"><summary>Help &amp; privacy</summary>
 <p>Each card tests one short bold or highlighted statement from the main topic content. Dimmed text, examples and supplementary panels are excluded. Source statements are at most 35 words; longer points are left in the study guide rather than cut mid-explanation. Source wording is available in the collapsed section after reveal. These are study questions, not official exam questions. Linked external lessons are not copied. Revisited weeks retain their assigned material.</p>
 <p><strong>Allow random repeats</strong> lets random selection reuse seen cards; with it off, each question appears once per session. <strong>Repeat this card</strong> explicitly hides the current answer so you can try it again. Changing week, topic or Revisit only starts a fresh session without clearing your saved cards.</p>
 <p><strong>Skip &amp; save</strong> and <strong>Got it wrong</strong> save questions for later. <strong>Got it right</strong> removes a question from the revisit list. Revealing or choosing Next does not grade the answer. Use <strong>Revisit only</strong> to practise saved questions. No automatic grading or review schedule is used.</p>
 <p>Saved flags stay in this browser. Private browsing, clearing storage or changing browsers can lose them. Export a backup to keep them. Import replaces the list after validation; unknown question IDs are ignored. Study-guide confidence and flashcard flags are separate. Existing flags are retained for matching cards; cards removed from this core-only deck no longer appear in the revisit list.</p>
-<div class="foot-actions"><button id="fc-export">Export revisit list</button><button id="fc-import">Import revisit list</button><button id="fc-reset">Clear revisit list</button><input accept="application/json" hidden="" id="fc-file" type="file"/></div>
+<div class="foot-actions"><input accept="application/json" hidden="" id="fc-file" type="file"/></div>
 <p>Independent study aid, not affiliated with NUS. No application analytics, accounts or API calls. GitHub Pages may log IP addresses for hosting security. <a href="./index.html#guide-notes">Source credits and licence</a>.</p>
 </details>
 </main>
