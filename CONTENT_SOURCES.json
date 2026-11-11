@@ -1,0 +1,3357 @@
+{
+  "snapshot": "2026-11-11",
+  "topics": [
+    {
+      "id": "W1.1a",
+      "week": 1,
+      "group": "[W1.1] OOP: Classes & Objects",
+      "title": "Paradigms → OOP → Introduction → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#paradigms-oop-introduction-what",
+      "external_lesson": false,
+      "words": 496
+    },
+    {
+      "id": "W1.1b",
+      "week": 1,
+      "group": "[W1.1] OOP: Classes & Objects",
+      "title": "Paradigms → OOP → Objects → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#paradigms-oop-objects-what",
+      "external_lesson": false,
+      "words": 1186
+    },
+    {
+      "id": "W1.1c",
+      "week": 1,
+      "group": "[W1.1] OOP: Classes & Objects",
+      "title": "Paradigms → OOP → Objects → Objects as abstractions",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#paradigms-oop-objects-objects-as-abstractions",
+      "external_lesson": false,
+      "words": 125
+    },
+    {
+      "id": "W1.1d",
+      "week": 1,
+      "group": "[W1.1] OOP: Classes & Objects",
+      "title": "Paradigms → OOP → Objects → Encapsulation of objects",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#paradigms-oop-objects-encapsulation-of-objects",
+      "external_lesson": false,
+      "words": 148
+    },
+    {
+      "id": "W1.1e",
+      "week": 1,
+      "group": "[W1.1] OOP: Classes & Objects",
+      "title": "Paradigms → OOP → Classes → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#paradigms-oop-classes-what",
+      "external_lesson": false,
+      "words": 442
+    },
+    {
+      "id": "W1.1f",
+      "week": 1,
+      "group": "[W1.1] OOP: Classes & Objects",
+      "title": "C++ to Java → Classes → Defining classes",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#c-to-java-classes-defining-classes",
+      "external_lesson": false,
+      "words": 902
+    },
+    {
+      "id": "W1.1g",
+      "week": 1,
+      "group": "[W1.1] OOP: Classes & Objects",
+      "title": "C++ to Java → Classes → Getters and setters",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#c-to-java-classes-getters-and-setters",
+      "external_lesson": false,
+      "words": 321
+    },
+    {
+      "id": "W1.1h",
+      "week": 1,
+      "group": "[W1.1] OOP: Classes & Objects",
+      "title": "Paradigms → OOP → Classes → Class-level members",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#paradigms-oop-classes-class-level-members",
+      "external_lesson": false,
+      "words": 387
+    },
+    {
+      "id": "W1.1i",
+      "week": 1,
+      "group": "[W1.1] OOP: Classes & Objects",
+      "title": "C++ to Java → Classes → Class-level members",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#c-to-java-classes-class-level-members",
+      "external_lesson": false,
+      "words": 834
+    },
+    {
+      "id": "W1.1j",
+      "week": 1,
+      "group": "[W1.1] OOP: Classes & Objects",
+      "title": "Paradigms → OOP → Classes → Enumerations",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#paradigms-oop-classes-enumerations",
+      "external_lesson": false,
+      "words": 149
+    },
+    {
+      "id": "W1.1k",
+      "week": 1,
+      "group": "[W1.1] OOP: Classes & Objects",
+      "title": "C++ to Java → Miscellaneous Topics → Enumerations",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#c-to-java-miscellaneous-topics-enumerations",
+      "external_lesson": false,
+      "words": 241
+    },
+    {
+      "id": "W1.2a",
+      "week": 1,
+      "group": "[W1.2] OOP Inheritance",
+      "title": "Paradigms → OOP → Inheritance → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#paradigms-oop-inheritance-what",
+      "external_lesson": false,
+      "words": 483
+    },
+    {
+      "id": "W1.2b",
+      "week": 1,
+      "group": "[W1.2] OOP Inheritance",
+      "title": "Paradigms → OOP → Inheritance → Overloading",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#paradigms-oop-inheritance-overloading",
+      "external_lesson": false,
+      "words": 126
+    },
+    {
+      "id": "W1.2c",
+      "week": 1,
+      "group": "[W1.2] OOP Inheritance",
+      "title": "Paradigms → OOP → Inheritance → Overriding",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#paradigms-oop-inheritance-overriding",
+      "external_lesson": false,
+      "words": 265
+    },
+    {
+      "id": "W1.2d",
+      "week": 1,
+      "group": "[W1.2] OOP Inheritance",
+      "title": "C++ to Java → Inheritance → Inheritance (basics)",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#c-to-java-inheritance-inheritance-basics",
+      "external_lesson": false,
+      "words": 1242
+    },
+    {
+      "id": "W1.3a",
+      "week": 1,
+      "group": "[W1.3] OOP: Polymorphism",
+      "title": "Paradigms → OOP → Polymorphism → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#paradigms-oop-polymorphism-what",
+      "external_lesson": false,
+      "words": 223
+    },
+    {
+      "id": "W1.3b",
+      "week": 1,
+      "group": "[W1.3] OOP: Polymorphism",
+      "title": "C++ to Java → Inheritance → Polymorphism",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#c-to-java-inheritance-polymorphism",
+      "external_lesson": false,
+      "words": 788
+    },
+    {
+      "id": "W1.3c",
+      "week": 1,
+      "group": "[W1.3] OOP: Polymorphism",
+      "title": "Paradigms → OOP → Inheritance → Abstract classes and methods",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#paradigms-oop-inheritance-abstract-classes-and-methods",
+      "external_lesson": false,
+      "words": 177
+    },
+    {
+      "id": "W1.3d",
+      "week": 1,
+      "group": "[W1.3] OOP: Polymorphism",
+      "title": "C++ to Java → Inheritance → Abstract classes and methods",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#c-to-java-inheritance-abstract-classes-and-methods",
+      "external_lesson": false,
+      "words": 678
+    },
+    {
+      "id": "W1.3e",
+      "week": 1,
+      "group": "[W1.3] OOP: Polymorphism",
+      "title": "Paradigms → OOP → Inheritance → Interfaces",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#paradigms-oop-inheritance-interfaces",
+      "external_lesson": false,
+      "words": 175
+    },
+    {
+      "id": "W1.3f",
+      "week": 1,
+      "group": "[W1.3] OOP: Polymorphism",
+      "title": "C++ to Java → Inheritance → Interfaces",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#c-to-java-inheritance-interfaces",
+      "external_lesson": false,
+      "words": 793
+    },
+    {
+      "id": "W1.3g",
+      "week": 1,
+      "group": "[W1.3] OOP: Polymorphism",
+      "title": "Paradigms → OOP → Inheritance → Substitutability",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#paradigms-oop-inheritance-substitutability",
+      "external_lesson": false,
+      "words": 150
+    },
+    {
+      "id": "W1.3h",
+      "week": 1,
+      "group": "[W1.3] OOP: Polymorphism",
+      "title": "Paradigms → OOP → Inheritance → Dynamic and static binding",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#paradigms-oop-inheritance-dynamic-and-static-binding",
+      "external_lesson": false,
+      "words": 509
+    },
+    {
+      "id": "W1.3i",
+      "week": 1,
+      "group": "[W1.3] OOP: Polymorphism",
+      "title": "Paradigms → OOP → Polymorphism → How",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#paradigms-oop-polymorphism-how",
+      "external_lesson": false,
+      "words": 176
+    },
+    {
+      "id": "W1.4a",
+      "week": 1,
+      "group": "[W1.4] Java: Collections",
+      "title": "C++ to Java → Collections → The collections framework",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#c-to-java-collections-the-collections-framework",
+      "external_lesson": false,
+      "words": 527
+    },
+    {
+      "id": "W1.4b",
+      "week": 1,
+      "group": "[W1.4] Java: Collections",
+      "title": "C++ to Java → Collections → The ArrayList class",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#c-to-java-collections-the-arraylist-class",
+      "external_lesson": false,
+      "words": 412
+    },
+    {
+      "id": "W1.4c",
+      "week": 1,
+      "group": "[W1.4] Java: Collections",
+      "title": "C++ to Java → Collections → The HashMap class",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#c-to-java-collections-the-hashmap-class",
+      "external_lesson": false,
+      "words": 450
+    },
+    {
+      "id": "W1.5a",
+      "week": 1,
+      "group": "[W1.5] Exception Handling",
+      "title": "Implementation → Error Handling → Introduction → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#implementation-error-handling-introduction-what",
+      "external_lesson": false,
+      "words": 53
+    },
+    {
+      "id": "W1.5b",
+      "week": 1,
+      "group": "[W1.5] Exception Handling",
+      "title": "Implementation → Error Handling → Exceptions → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#implementation-error-handling-exceptions-what",
+      "external_lesson": false,
+      "words": 98
+    },
+    {
+      "id": "W1.5c",
+      "week": 1,
+      "group": "[W1.5] Exception Handling",
+      "title": "C++ to Java → Exceptions → What are exceptions?",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#c-to-java-exceptions-what-are-exceptions",
+      "external_lesson": false,
+      "words": 337
+    },
+    {
+      "id": "W1.5d",
+      "week": 1,
+      "group": "[W1.5] Exception Handling",
+      "title": "Implementation → Error Handling → Exceptions → How",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#implementation-error-handling-exceptions-how",
+      "external_lesson": false,
+      "words": 389
+    },
+    {
+      "id": "W1.5e",
+      "week": 1,
+      "group": "[W1.5] Exception Handling",
+      "title": "C++ to Java → Exceptions → How to use exceptions",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#c-to-java-exceptions-how-to-use-exceptions",
+      "external_lesson": false,
+      "words": 822
+    },
+    {
+      "id": "W1.5f",
+      "week": 1,
+      "group": "[W1.5] Exception Handling",
+      "title": "Implementation → Error Handling → Exceptions → When",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#implementation-error-handling-exceptions-when",
+      "external_lesson": false,
+      "words": 23
+    },
+    {
+      "id": "W1.6a",
+      "week": 1,
+      "group": "[W1.6] SE: Intro",
+      "title": "Software Engineering → Introduction → Software Engineering: Then, Now, and Next",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#software-engineering-introduction-software-engineering-then-now-and-next",
+      "external_lesson": false,
+      "words": 1504
+    },
+    {
+      "id": "W1.7a",
+      "week": 1,
+      "group": "[W1.7] RCS: Getting Started with Git",
+      "title": "Git-Mastery → Tour 1: Recording the History of a Folder",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html#git-mastery-tour-1-recording-the-history-of-a-folder",
+      "external_lesson": true,
+      "words": 11
+    },
+    {
+      "id": "W2.1a",
+      "week": 2,
+      "group": "[W2.1] SDLC Process Models: Basics",
+      "title": "Project Management → SDLC Process Models → Introduction → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week2/topics.html#project-management-sdlc-process-models-introduction-what",
+      "external_lesson": false,
+      "words": 274
+    },
+    {
+      "id": "W2.1b",
+      "week": 2,
+      "group": "[W2.1] SDLC Process Models: Basics",
+      "title": "Project Management → SDLC Process Models → Introduction → Sequential models",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week2/topics.html#project-management-sdlc-process-models-introduction-sequential-models",
+      "external_lesson": false,
+      "words": 324
+    },
+    {
+      "id": "W2.1c",
+      "week": 2,
+      "group": "[W2.1] SDLC Process Models: Basics",
+      "title": "Project Management → SDLC Process Models → Introduction → Iterative models",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week2/topics.html#project-management-sdlc-process-models-introduction-iterative-models",
+      "external_lesson": false,
+      "words": 594
+    },
+    {
+      "id": "W2.2a",
+      "week": 2,
+      "group": "[W2.2] RCS: Getting Started with GitHub",
+      "title": "Git-Mastery → Tour 2: Backing up a Repo on the Cloud",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week2/topics.html#git-mastery-tour-2-backing-up-a-repo-on-the-cloud",
+      "external_lesson": true,
+      "words": 12
+    },
+    {
+      "id": "W2.2b",
+      "week": 2,
+      "group": "[W2.2] RCS: Getting Started with GitHub",
+      "title": "Git-Mastery → Tour 3: Working Off a Remote Repo",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week2/topics.html#git-mastery-tour-3-working-off-a-remote-repo",
+      "external_lesson": true,
+      "words": 10
+    },
+    {
+      "id": "W2.3a",
+      "week": 2,
+      "group": "[W2.3] RCS: Doing More with Revision History",
+      "title": "Git-Mastery → Tour 4: Using the Revision History of a Repo",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week2/topics.html#git-mastery-tour-4-using-the-revision-history-of-a-repo",
+      "external_lesson": true,
+      "words": 12
+    },
+    {
+      "id": "W2.3b",
+      "week": 2,
+      "group": "[W2.3] RCS: Doing More with Revision History",
+      "title": "Git-Mastery → Tour 5: Fine-Tuning the Revision History",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week2/topics.html#git-mastery-tour-5-fine-tuning-the-revision-history",
+      "external_lesson": true,
+      "words": 9
+    },
+    {
+      "id": "W2.4a",
+      "week": 2,
+      "group": "[W2.4] IDEs: Basic Features",
+      "title": "Implementation → IDEs → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week2/topics.html#implementation-ides-what",
+      "external_lesson": false,
+      "words": 318
+    },
+    {
+      "id": "W2.4b",
+      "week": 2,
+      "group": "[W2.4] IDEs: Basic Features",
+      "title": "Tools → IDEs → Project setup",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week2/topics.html#tools-ides-project-setup",
+      "external_lesson": false,
+      "words": 19
+    },
+    {
+      "id": "W2.5a",
+      "week": 2,
+      "group": "[W2.5] Intro to Automated Testing",
+      "title": "Quality Assurance → Testing → Introduction → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week2/topics.html#quality-assurance-testing-introduction-what",
+      "external_lesson": false,
+      "words": 449
+    },
+    {
+      "id": "W2.5b",
+      "week": 2,
+      "group": "[W2.5] Intro to Automated Testing",
+      "title": "Quality Assurance → Testing → Regression Testing → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week2/topics.html#quality-assurance-testing-regression-testing-what",
+      "external_lesson": false,
+      "words": 140
+    },
+    {
+      "id": "W2.5c",
+      "week": 2,
+      "group": "[W2.5] Intro to Automated Testing",
+      "title": "Quality Assurance → Testing → Test Automation → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week2/topics.html#quality-assurance-testing-test-automation-what",
+      "external_lesson": false,
+      "words": 72
+    },
+    {
+      "id": "W2.5d",
+      "week": 2,
+      "group": "[W2.5] Intro to Automated Testing",
+      "title": "Quality Assurance → Testing → Test Automation → Automated testing of CLI applications",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week2/topics.html#quality-assurance-testing-test-automation-automated-testing-of-cli-applications",
+      "external_lesson": false,
+      "words": 480
+    },
+    {
+      "id": "W3.1a",
+      "week": 3,
+      "group": "[W3.1] RCS: Branching",
+      "title": "Git-Mastery → Tour 6: Branching Locally",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week3/topics.html#git-mastery-tour-6-branching-locally",
+      "external_lesson": true,
+      "words": 7
+    },
+    {
+      "id": "W3.1b",
+      "week": 3,
+      "group": "[W3.1] RCS: Branching",
+      "title": "Git-Mastery → Tour 7: Keeping Branches in Sync",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week3/topics.html#git-mastery-tour-7-keeping-branches-in-sync",
+      "external_lesson": true,
+      "words": 9
+    },
+    {
+      "id": "W3.1c",
+      "week": 3,
+      "group": "[W3.1] RCS: Branching",
+      "title": "Git-Mastery → Tour 8: Working with Remote Branches",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week3/topics.html#git-mastery-tour-8-working-with-remote-branches",
+      "external_lesson": true,
+      "words": 9
+    },
+    {
+      "id": "W3.2a",
+      "week": 3,
+      "group": "[W3.2] RCS: Creating Pull Requests",
+      "title": "Tools → Revision Control (Using Git and GitHub) → T9L1. Creating Pull Requests",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week3/topics.html#tools-revision-control-using-git-and-github-t9l1-creating-pull-requests",
+      "external_lesson": true,
+      "words": 8
+    },
+    {
+      "id": "W3.3a",
+      "week": 3,
+      "group": "[W3.3] Automating the Build Process",
+      "title": "Implementation → Integration → Introduction → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week3/topics.html#implementation-integration-introduction-what",
+      "external_lesson": false,
+      "words": 27
+    },
+    {
+      "id": "W3.3b",
+      "week": 3,
+      "group": "[W3.3] Automating the Build Process",
+      "title": "Implementation → Integration → Build Automation → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week3/topics.html#implementation-integration-build-automation-what",
+      "external_lesson": false,
+      "words": 280
+    },
+    {
+      "id": "W3.3c",
+      "week": 3,
+      "group": "[W3.3] Automating the Build Process",
+      "title": "Implementation → Integration → Build Automation → Continuous integration and continuous deployment",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week3/topics.html#implementation-integration-build-automation-continuous-integration-and-continuous-deployment",
+      "external_lesson": false,
+      "words": 60
+    },
+    {
+      "id": "W3.4a",
+      "week": 3,
+      "group": "[W3.4] Java: JavaDoc, file I/O, packages, JARs",
+      "title": "Implementation → Documentation → Tools → JavaDoc → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week3/topics.html#implementation-documentation-tools-javadoc-what",
+      "external_lesson": false,
+      "words": 199
+    },
+    {
+      "id": "W3.4b",
+      "week": 3,
+      "group": "[W3.4] Java: JavaDoc, file I/O, packages, JARs",
+      "title": "Implementation → Documentation → Tools → JavaDoc → How",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week3/topics.html#implementation-documentation-tools-javadoc-how",
+      "external_lesson": false,
+      "words": 160
+    },
+    {
+      "id": "W3.4c",
+      "week": 3,
+      "group": "[W3.4] Java: JavaDoc, file I/O, packages, JARs",
+      "title": "C++ to Java → Miscellaneous Topics → File access",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week3/topics.html#c-to-java-miscellaneous-topics-file-access",
+      "external_lesson": false,
+      "words": 541
+    },
+    {
+      "id": "W3.4d",
+      "week": 3,
+      "group": "[W3.4] Java: JavaDoc, file I/O, packages, JARs",
+      "title": "C++ to Java → Miscellaneous Topics → Packages",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week3/topics.html#c-to-java-miscellaneous-topics-packages",
+      "external_lesson": false,
+      "words": 598
+    },
+    {
+      "id": "W3.4e",
+      "week": 3,
+      "group": "[W3.4] Java: JavaDoc, file I/O, packages, JARs",
+      "title": "C++ to Java → Miscellaneous Topics → Access modifiers",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week3/topics.html#c-to-java-miscellaneous-topics-access-modifiers",
+      "external_lesson": false,
+      "words": 189
+    },
+    {
+      "id": "W3.4f",
+      "week": 3,
+      "group": "[W3.4] Java: JavaDoc, file I/O, packages, JARs",
+      "title": "C++ to Java → Miscellaneous Topics → Using JAR files",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week3/topics.html#c-to-java-miscellaneous-topics-using-jar-files",
+      "external_lesson": false,
+      "words": 80
+    },
+    {
+      "id": "W3.5a",
+      "week": 3,
+      "group": "[W3.5] Code Quality: Coding Standards",
+      "title": "Implementation → Code Quality → Introduction → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week3/topics.html#implementation-code-quality-introduction-what",
+      "external_lesson": false,
+      "words": 65
+    },
+    {
+      "id": "W3.5b",
+      "week": 3,
+      "group": "[W3.5] Code Quality: Coding Standards",
+      "title": "Implementation → Code Quality → Style → Introduction",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week3/topics.html#implementation-code-quality-style-introduction",
+      "external_lesson": false,
+      "words": 247
+    },
+    {
+      "id": "W3.6a",
+      "week": 3,
+      "group": "[W3.6] Developer Testing",
+      "title": "Quality Assurance → Testing → Developer Testing → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week3/topics.html#quality-assurance-testing-developer-testing-what",
+      "external_lesson": false,
+      "words": 17
+    },
+    {
+      "id": "W3.6b",
+      "week": 3,
+      "group": "[W3.6] Developer Testing",
+      "title": "Quality Assurance → Testing → Developer Testing → Why",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week3/topics.html#quality-assurance-testing-developer-testing-why",
+      "external_lesson": false,
+      "words": 399
+    },
+    {
+      "id": "W3.7a",
+      "week": 3,
+      "group": "[W3.7] Unit Testing",
+      "title": "Quality Assurance → Testing → Test Automation → Test automation using test drivers",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week3/topics.html#quality-assurance-testing-test-automation-test-automation-using-test-drivers",
+      "external_lesson": false,
+      "words": 119
+    },
+    {
+      "id": "W3.7b",
+      "week": 3,
+      "group": "[W3.7] Unit Testing",
+      "title": "Quality Assurance → Testing → Test Automation → Test automation tools",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week3/topics.html#quality-assurance-testing-test-automation-test-automation-tools",
+      "external_lesson": false,
+      "words": 96
+    },
+    {
+      "id": "W3.7c",
+      "week": 3,
+      "group": "[W3.7] Unit Testing",
+      "title": "Quality Assurance → Testing → Unit Testing → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week3/topics.html#quality-assurance-testing-unit-testing-what",
+      "external_lesson": false,
+      "words": 179
+    },
+    {
+      "id": "W3.7d",
+      "week": 3,
+      "group": "[W3.7] Unit Testing",
+      "title": "C++ to Java → JUnit → JUnit: Basic",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week3/topics.html#c-to-java-junit-junit-basic",
+      "external_lesson": false,
+      "words": 578
+    },
+    {
+      "id": "W3.7e",
+      "week": 3,
+      "group": "[W3.7] Unit Testing",
+      "title": "Quality Assurance → Testing → Unit Testing → Stubs",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week3/topics.html#quality-assurance-testing-unit-testing-stubs",
+      "external_lesson": false,
+      "words": 493
+    },
+    {
+      "id": "W3.7f",
+      "week": 3,
+      "group": "[W3.7] Unit Testing",
+      "title": "C++ to Java → JUnit → JUnit: Intermediate",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week3/topics.html#c-to-java-junit-junit-intermediate",
+      "external_lesson": false,
+      "words": 469
+    },
+    {
+      "id": "W4.1a",
+      "week": 4,
+      "group": "[W4.1] Design: Models",
+      "title": "Design → Modelling → Introduction → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#design-modelling-introduction-what",
+      "external_lesson": false,
+      "words": 463
+    },
+    {
+      "id": "W4.1b",
+      "week": 4,
+      "group": "[W4.1] Design: Models",
+      "title": "Design → Modelling → Introduction → How",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#design-modelling-introduction-how",
+      "external_lesson": false,
+      "words": 543
+    },
+    {
+      "id": "W4.1c",
+      "week": 4,
+      "group": "[W4.1] Design: Models",
+      "title": "Design → Modelling → Introduction → UML models",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#design-modelling-introduction-uml-models",
+      "external_lesson": false,
+      "words": 88
+    },
+    {
+      "id": "W4.2a",
+      "week": 4,
+      "group": "[W4.2] Class/Object Diagrams: Basics",
+      "title": "Design → Modelling → Modelling Structure → OO structures",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#design-modelling-modelling-structure-oo-structures",
+      "external_lesson": false,
+      "words": 217
+    },
+    {
+      "id": "W4.2b",
+      "week": 4,
+      "group": "[W4.2] Class/Object Diagrams: Basics",
+      "title": "Design → Modelling → Modelling Structure → Class diagrams - basic",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#design-modelling-modelling-structure-class-diagrams-basic",
+      "external_lesson": false,
+      "words": 405
+    },
+    {
+      "id": "W4.2c",
+      "week": 4,
+      "group": "[W4.2] Class/Object Diagrams: Basics",
+      "title": "Design → Modelling → Modelling Structure → Object diagrams",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#design-modelling-modelling-structure-object-diagrams",
+      "external_lesson": false,
+      "words": 177
+    },
+    {
+      "id": "W4.2d",
+      "week": 4,
+      "group": "[W4.2] Class/Object Diagrams: Basics",
+      "title": "Tools → UML → Object versus class diagrams",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#tools-uml-object-versus-class-diagrams",
+      "external_lesson": false,
+      "words": 365
+    },
+    {
+      "id": "W4.3a",
+      "week": 4,
+      "group": "[W4.3] Class Diagrams: Beyond Basics",
+      "title": "Tools → UML → Notes",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#tools-uml-notes",
+      "external_lesson": false,
+      "words": 37
+    },
+    {
+      "id": "W4.3b",
+      "week": 4,
+      "group": "[W4.3] Class Diagrams: Beyond Basics",
+      "title": "Tools → UML → Constraints",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#tools-uml-constraints",
+      "external_lesson": false,
+      "words": 30
+    },
+    {
+      "id": "W4.3c",
+      "week": 4,
+      "group": "[W4.3] Class Diagrams: Beyond Basics",
+      "title": "Design → Modelling → Modelling Structure → Class diagrams - intermediate",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#design-modelling-modelling-structure-class-diagrams-intermediate",
+      "external_lesson": false,
+      "words": 603
+    },
+    {
+      "id": "W4.3d",
+      "week": 4,
+      "group": "[W4.3] Class Diagrams: Beyond Basics",
+      "title": "Paradigms → OOP → Associations → Association classes",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#paradigms-oop-associations-association-classes",
+      "external_lesson": false,
+      "words": 267
+    },
+    {
+      "id": "W4.3e",
+      "week": 4,
+      "group": "[W4.3] Class Diagrams: Beyond Basics",
+      "title": "Tools → UML → Class Diagrams → Association Classes → Association classes",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#tools-uml-class-diagrams-association-classes-association-classes",
+      "external_lesson": false,
+      "words": 40
+    },
+    {
+      "id": "W4.3f",
+      "week": 4,
+      "group": "[W4.3] Class Diagrams: Beyond Basics",
+      "title": "Tools → UML → Stereotypes",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#tools-uml-stereotypes",
+      "external_lesson": false,
+      "words": 163
+    },
+    {
+      "id": "W4.4a",
+      "week": 4,
+      "group": "[W4.4] Java: JavaFX",
+      "title": "C++ to Java → Miscellaneous Topics → JavaFX",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#c-to-java-miscellaneous-topics-javafx",
+      "external_lesson": false,
+      "words": 45
+    },
+    {
+      "id": "W4.5a",
+      "week": 4,
+      "group": "[W4.5] Java: varargs",
+      "title": "C++ to Java → Miscellaneous Topics → Varargs",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#c-to-java-miscellaneous-topics-varargs",
+      "external_lesson": false,
+      "words": 52
+    },
+    {
+      "id": "W4.6a",
+      "week": 4,
+      "group": "[W4.6] Code Quality: Naming",
+      "title": "Implementation → Code Quality → Naming → Introduction",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#implementation-code-quality-naming-introduction",
+      "external_lesson": false,
+      "words": 40
+    },
+    {
+      "id": "W4.6b",
+      "week": 4,
+      "group": "[W4.6] Code Quality: Naming",
+      "title": "Implementation → Code Quality → Naming → Basic → Use nouns for things and verbs for actions",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#implementation-code-quality-naming-basic-use-nouns-for-things-and-verbs-for-actions",
+      "external_lesson": false,
+      "words": 92
+    },
+    {
+      "id": "W4.6c",
+      "week": 4,
+      "group": "[W4.6] Code Quality: Naming",
+      "title": "Implementation → Code Quality → Naming → Basic → Use standard words",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#implementation-code-quality-naming-basic-use-standard-words",
+      "external_lesson": false,
+      "words": 35
+    },
+    {
+      "id": "W4.6d",
+      "week": 4,
+      "group": "[W4.6] Code Quality: Naming",
+      "title": "Implementation → Code Quality → Naming → Intermediate → Use name to explain",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#implementation-code-quality-naming-intermediate-use-name-to-explain",
+      "external_lesson": false,
+      "words": 104
+    },
+    {
+      "id": "W4.6e",
+      "week": 4,
+      "group": "[W4.6] Code Quality: Naming",
+      "title": "Implementation → Code Quality → Naming → Intermediate → Not too long, not too short",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#implementation-code-quality-naming-intermediate-not-too-long-not-too-short",
+      "external_lesson": false,
+      "words": 35
+    },
+    {
+      "id": "W4.6f",
+      "week": 4,
+      "group": "[W4.6] Code Quality: Naming",
+      "title": "Implementation → Code Quality → Naming → Intermediate → Avoid misleading names",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#implementation-code-quality-naming-intermediate-avoid-misleading-names",
+      "external_lesson": false,
+      "words": 194
+    },
+    {
+      "id": "W4.7a",
+      "week": 4,
+      "group": "[W4.7] Static Analysis",
+      "title": "Quality Assurance → Quality Assurance → Static Analysis → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#quality-assurance-quality-assurance-static-analysis-what",
+      "external_lesson": false,
+      "words": 158
+    },
+    {
+      "id": "W4.8a",
+      "week": 4,
+      "group": "[W4.8] Code Reviews",
+      "title": "Quality Assurance → Quality Assurance → Code Reviews → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#quality-assurance-quality-assurance-code-reviews-what",
+      "external_lesson": false,
+      "words": 304
+    },
+    {
+      "id": "W4.9a",
+      "week": 4,
+      "group": "[W4.9] RCS: Managing Pull Requests I",
+      "title": "Tools → Revision Control (Using Git and GitHub) → T9L2. Reviewing Pull Requests",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#tools-revision-control-using-git-and-github-t9l2-reviewing-pull-requests",
+      "external_lesson": false,
+      "words": 18
+    },
+    {
+      "id": "W5.1a",
+      "week": 5,
+      "group": "[W5.1] Requirements: Intro",
+      "title": "Requirements → Requirements → Introduction",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#requirements-requirements-introduction",
+      "external_lesson": false,
+      "words": 263
+    },
+    {
+      "id": "W5.1b",
+      "week": 5,
+      "group": "[W5.1] Requirements: Intro",
+      "title": "Requirements → Requirements → Non-functional requirements",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#requirements-requirements-non-functional-requirements",
+      "external_lesson": false,
+      "words": 401
+    },
+    {
+      "id": "W5.1c",
+      "week": 5,
+      "group": "[W5.1] Requirements: Intro",
+      "title": "Requirements → Requirements → Prioritizing requirements",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#requirements-requirements-prioritizing-requirements",
+      "external_lesson": false,
+      "words": 178
+    },
+    {
+      "id": "W5.1d",
+      "week": 5,
+      "group": "[W5.1] Requirements: Intro",
+      "title": "Requirements → Requirements → Quality of requirements",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#requirements-requirements-quality-of-requirements",
+      "external_lesson": false,
+      "words": 308
+    },
+    {
+      "id": "W5.1e",
+      "week": 5,
+      "group": "[W5.1] Requirements: Intro",
+      "title": "Requirements → Requirements → Changing requirements",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#requirements-requirements-changing-requirements",
+      "external_lesson": false,
+      "words": 191
+    },
+    {
+      "id": "W5.2a",
+      "week": 5,
+      "group": "[W5.2] Requirements: Gathering",
+      "title": "Requirements → Gathering Requirements → Brainstorming",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#requirements-gathering-requirements-brainstorming",
+      "external_lesson": false,
+      "words": 111
+    },
+    {
+      "id": "W5.2b",
+      "week": 5,
+      "group": "[W5.2] Requirements: Gathering",
+      "title": "Requirements → Gathering Requirements → Product surveys",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#requirements-gathering-requirements-product-surveys",
+      "external_lesson": false,
+      "words": 57
+    },
+    {
+      "id": "W5.2c",
+      "week": 5,
+      "group": "[W5.2] Requirements: Gathering",
+      "title": "Requirements → Gathering Requirements → Observation",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#requirements-gathering-requirements-observation",
+      "external_lesson": false,
+      "words": 51
+    },
+    {
+      "id": "W5.2d",
+      "week": 5,
+      "group": "[W5.2] Requirements: Gathering",
+      "title": "Requirements → Gathering Requirements → User surveys",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#requirements-gathering-requirements-user-surveys",
+      "external_lesson": false,
+      "words": 23
+    },
+    {
+      "id": "W5.2e",
+      "week": 5,
+      "group": "[W5.2] Requirements: Gathering",
+      "title": "Requirements → Gathering Requirements → Interviews",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#requirements-gathering-requirements-interviews",
+      "external_lesson": false,
+      "words": 385
+    },
+    {
+      "id": "W5.2f",
+      "week": 5,
+      "group": "[W5.2] Requirements: Gathering",
+      "title": "Requirements → Gathering Requirements → Focus groups",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#requirements-gathering-requirements-focus-groups",
+      "external_lesson": false,
+      "words": 61
+    },
+    {
+      "id": "W5.2g",
+      "week": 5,
+      "group": "[W5.2] Requirements: Gathering",
+      "title": "Requirements → Gathering Requirements → Prototyping",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#requirements-gathering-requirements-prototyping",
+      "external_lesson": false,
+      "words": 127
+    },
+    {
+      "id": "W5.2h",
+      "week": 5,
+      "group": "[W5.2] Requirements: Gathering",
+      "title": "Requirements → Gathering Requirements → Validating requirements",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#requirements-gathering-requirements-validating-requirements",
+      "external_lesson": false,
+      "words": 228
+    },
+    {
+      "id": "W5.3a",
+      "week": 5,
+      "group": "[W5.3] Requirements: Specifying",
+      "title": "Requirements → Specifying Requirements → Prose → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#requirements-specifying-requirements-prose-what",
+      "external_lesson": false,
+      "words": 104
+    },
+    {
+      "id": "W5.3b",
+      "week": 5,
+      "group": "[W5.3] Requirements: Specifying",
+      "title": "Requirements → Specifying Requirements → Feature Lists → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#requirements-specifying-requirements-feature-lists-what",
+      "external_lesson": false,
+      "words": 74
+    },
+    {
+      "id": "W5.3c",
+      "week": 5,
+      "group": "[W5.3] Requirements: Specifying",
+      "title": "Requirements → Specifying Requirements → User Stories → Introduction",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#requirements-specifying-requirements-user-stories-introduction",
+      "external_lesson": false,
+      "words": 465
+    },
+    {
+      "id": "W5.3d",
+      "week": 5,
+      "group": "[W5.3] Requirements: Specifying",
+      "title": "Requirements → Specifying Requirements → User Stories → Details",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#requirements-specifying-requirements-user-stories-details",
+      "external_lesson": false,
+      "words": 687
+    },
+    {
+      "id": "W5.3e",
+      "week": 5,
+      "group": "[W5.3] Requirements: Specifying",
+      "title": "Requirements → Specifying Requirements → User Stories → Usage",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#requirements-specifying-requirements-user-stories-usage",
+      "external_lesson": false,
+      "words": 1805
+    },
+    {
+      "id": "W5.3f",
+      "week": 5,
+      "group": "[W5.3] Requirements: Specifying",
+      "title": "Requirements → Specifying Requirements → Glossary → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#requirements-specifying-requirements-glossary-what",
+      "external_lesson": false,
+      "words": 135
+    },
+    {
+      "id": "W5.3g",
+      "week": 5,
+      "group": "[W5.3] Requirements: Specifying",
+      "title": "Requirements → Specifying Requirements → Supplementary Requirements → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#requirements-specifying-requirements-supplementary-requirements-what",
+      "external_lesson": false,
+      "words": 434
+    },
+    {
+      "id": "W5.4a",
+      "week": 5,
+      "group": "[W5.4] Code Quality: Readability, Unsafe Practices, Code Comments",
+      "title": "Implementation → Code Quality → Readability → Introduction",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#implementation-code-quality-readability-introduction",
+      "external_lesson": false,
+      "words": 85
+    },
+    {
+      "id": "W5.4b",
+      "week": 5,
+      "group": "[W5.4] Code Quality: Readability, Unsafe Practices, Code Comments",
+      "title": "Implementation → Code Quality → Readability → Basic → Avoid long methods",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#implementation-code-quality-readability-basic-avoid-long-methods",
+      "external_lesson": false,
+      "words": 42
+    },
+    {
+      "id": "W5.4c",
+      "week": 5,
+      "group": "[W5.4] Code Quality: Readability, Unsafe Practices, Code Comments",
+      "title": "Implementation → Code Quality → Readability → Basic → Avoid deep nesting",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#implementation-code-quality-readability-basic-avoid-deep-nesting",
+      "external_lesson": false,
+      "words": 182
+    },
+    {
+      "id": "W5.4d",
+      "week": 5,
+      "group": "[W5.4] Code Quality: Readability, Unsafe Practices, Code Comments",
+      "title": "Implementation → Code Quality → Readability → Basic → Avoid complicated expressions",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#implementation-code-quality-readability-basic-avoid-complicated-expressions",
+      "external_lesson": false,
+      "words": 161
+    },
+    {
+      "id": "W5.4e",
+      "week": 5,
+      "group": "[W5.4] Code Quality: Readability, Unsafe Practices, Code Comments",
+      "title": "Implementation → Code Quality → Readability → Basic → Avoid magic numbers",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#implementation-code-quality-readability-basic-avoid-magic-numbers",
+      "external_lesson": false,
+      "words": 180
+    },
+    {
+      "id": "W5.4f",
+      "week": 5,
+      "group": "[W5.4] Code Quality: Readability, Unsafe Practices, Code Comments",
+      "title": "Implementation → Code Quality → Readability → Basic → Make the code obvious",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#implementation-code-quality-readability-basic-make-the-code-obvious",
+      "external_lesson": false,
+      "words": 115
+    },
+    {
+      "id": "W5.4g",
+      "week": 5,
+      "group": "[W5.4] Code Quality: Readability, Unsafe Practices, Code Comments",
+      "title": "Implementation → Code Quality → Readability → Intermediate → Structure code logically",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#implementation-code-quality-readability-intermediate-structure-code-logically",
+      "external_lesson": false,
+      "words": 146
+    },
+    {
+      "id": "W5.4h",
+      "week": 5,
+      "group": "[W5.4] Code Quality: Readability, Unsafe Practices, Code Comments",
+      "title": "Implementation → Code Quality → Readability → Intermediate → Do not 'trip up' reader",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#implementation-code-quality-readability-intermediate-do-not-trip-up-reader",
+      "external_lesson": false,
+      "words": 51
+    },
+    {
+      "id": "W5.4i",
+      "week": 5,
+      "group": "[W5.4] Code Quality: Readability, Unsafe Practices, Code Comments",
+      "title": "Implementation → Code Quality → Readability → Intermediate → Practice KISSing",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#implementation-code-quality-readability-intermediate-practice-kissing",
+      "external_lesson": false,
+      "words": 104
+    },
+    {
+      "id": "W5.4j",
+      "week": 5,
+      "group": "[W5.4] Code Quality: Readability, Unsafe Practices, Code Comments",
+      "title": "Implementation → Code Quality → Readability → Intermediate → Avoid premature optimizations",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#implementation-code-quality-readability-intermediate-avoid-premature-optimizations",
+      "external_lesson": false,
+      "words": 214
+    },
+    {
+      "id": "W5.4k",
+      "week": 5,
+      "group": "[W5.4] Code Quality: Readability, Unsafe Practices, Code Comments",
+      "title": "Implementation → Code Quality → Readability → Intermediate → SLAP hard",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#implementation-code-quality-readability-intermediate-slap-hard",
+      "external_lesson": false,
+      "words": 624
+    },
+    {
+      "id": "W5.4l",
+      "week": 5,
+      "group": "[W5.4] Code Quality: Readability, Unsafe Practices, Code Comments",
+      "title": "Implementation → Code Quality → Readability → Advanced → Make the happy path prominent",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#implementation-code-quality-readability-advanced-make-the-happy-path-prominent",
+      "external_lesson": false,
+      "words": 231
+    },
+    {
+      "id": "W5.4m",
+      "week": 5,
+      "group": "[W5.4] Code Quality: Readability, Unsafe Practices, Code Comments",
+      "title": "Implementation → Code Quality → Error-Prone Practices → Introduction",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#implementation-code-quality-error-prone-practices-introduction",
+      "external_lesson": false,
+      "words": 35
+    },
+    {
+      "id": "W5.4n",
+      "week": 5,
+      "group": "[W5.4] Code Quality: Readability, Unsafe Practices, Code Comments",
+      "title": "Implementation → Code Quality → Error-Prone Practices → Basic → Use the default branch",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#implementation-code-quality-error-prone-practices-basic-use-the-default-branch",
+      "external_lesson": false,
+      "words": 144
+    },
+    {
+      "id": "W5.4o",
+      "week": 5,
+      "group": "[W5.4] Code Quality: Readability, Unsafe Practices, Code Comments",
+      "title": "Implementation → Code Quality → Error-Prone Practices → Basic → Don't recycle variables or parameters",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#implementation-code-quality-error-prone-practices-basic-don-t-recycle-variables-or-parameters",
+      "external_lesson": false,
+      "words": 108
+    },
+    {
+      "id": "W5.4p",
+      "week": 5,
+      "group": "[W5.4] Code Quality: Readability, Unsafe Practices, Code Comments",
+      "title": "Implementation → Code Quality → Error-Prone Practices → Basic → Avoid empty catch blocks",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#implementation-code-quality-error-prone-practices-basic-avoid-empty-catch-blocks",
+      "external_lesson": false,
+      "words": 39
+    },
+    {
+      "id": "W5.4q",
+      "week": 5,
+      "group": "[W5.4] Code Quality: Readability, Unsafe Practices, Code Comments",
+      "title": "Implementation → Code Quality → Error-Prone Practices → Basic → Delete dead code",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#implementation-code-quality-error-prone-practices-basic-delete-dead-code",
+      "external_lesson": false,
+      "words": 84
+    },
+    {
+      "id": "W5.4r",
+      "week": 5,
+      "group": "[W5.4] Code Quality: Readability, Unsafe Practices, Code Comments",
+      "title": "Implementation → Code Quality → Error-Prone Practices → Intermediate → Minimize scope of variables",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#implementation-code-quality-error-prone-practices-intermediate-minimize-scope-of-variables",
+      "external_lesson": false,
+      "words": 98
+    },
+    {
+      "id": "W5.4s",
+      "week": 5,
+      "group": "[W5.4] Code Quality: Readability, Unsafe Practices, Code Comments",
+      "title": "Implementation → Code Quality → Error-Prone Practices → Intermediate → Minimize code duplication",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#implementation-code-quality-error-prone-practices-intermediate-minimize-code-duplication",
+      "external_lesson": false,
+      "words": 125
+    },
+    {
+      "id": "W5.4t",
+      "week": 5,
+      "group": "[W5.4] Code Quality: Readability, Unsafe Practices, Code Comments",
+      "title": "Implementation → Code Quality → Comments → Introduction",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#implementation-code-quality-comments-introduction",
+      "external_lesson": false,
+      "words": 73
+    },
+    {
+      "id": "W5.4u",
+      "week": 5,
+      "group": "[W5.4] Code Quality: Readability, Unsafe Practices, Code Comments",
+      "title": "Implementation → Code Quality → Comments → Basic → Do not repeat the obvious",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#implementation-code-quality-comments-basic-do-not-repeat-the-obvious",
+      "external_lesson": false,
+      "words": 53
+    },
+    {
+      "id": "W5.4v",
+      "week": 5,
+      "group": "[W5.4] Code Quality: Readability, Unsafe Practices, Code Comments",
+      "title": "Implementation → Code Quality → Comments → Basic → Write to the reader",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#implementation-code-quality-comments-basic-write-to-the-reader",
+      "external_lesson": false,
+      "words": 150
+    },
+    {
+      "id": "W5.4w",
+      "week": 5,
+      "group": "[W5.4] Code Quality: Readability, Unsafe Practices, Code Comments",
+      "title": "Implementation → Code Quality → Comments → Intermediate → Explain WHAT and WHY, not HOW",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#implementation-code-quality-comments-intermediate-explain-what-and-why-not-how",
+      "external_lesson": false,
+      "words": 223
+    },
+    {
+      "id": "W5.5a",
+      "week": 5,
+      "group": "[W5.5] Refactoring",
+      "title": "Implementation → Refactoring → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#implementation-refactoring-what",
+      "external_lesson": false,
+      "words": 626
+    },
+    {
+      "id": "W5.5b",
+      "week": 5,
+      "group": "[W5.5] Refactoring",
+      "title": "Tools → IDEs → Refactoring",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#tools-ides-refactoring",
+      "external_lesson": false,
+      "words": 8
+    },
+    {
+      "id": "W5.5c",
+      "week": 5,
+      "group": "[W5.5] Refactoring",
+      "title": "Implementation → Refactoring → How",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#implementation-refactoring-how",
+      "external_lesson": false,
+      "words": 89
+    },
+    {
+      "id": "W5.5d",
+      "week": 5,
+      "group": "[W5.5] Refactoring",
+      "title": "Implementation → Refactoring → When",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#implementation-refactoring-when",
+      "external_lesson": false,
+      "words": 296
+    },
+    {
+      "id": "W5.6a",
+      "week": 5,
+      "group": "[W5.6] Assertions",
+      "title": "Implementation → Error Handling → Assertions → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#implementation-error-handling-assertions-what",
+      "external_lesson": false,
+      "words": 205
+    },
+    {
+      "id": "W5.6b",
+      "week": 5,
+      "group": "[W5.6] Assertions",
+      "title": "Implementation → Error Handling → Assertions → How",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#implementation-error-handling-assertions-how",
+      "external_lesson": false,
+      "words": 229
+    },
+    {
+      "id": "W5.6c",
+      "week": 5,
+      "group": "[W5.6] Assertions",
+      "title": "Implementation → Error Handling → Assertions → When",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#implementation-error-handling-assertions-when",
+      "external_lesson": false,
+      "words": 368
+    },
+    {
+      "id": "W5.7a",
+      "week": 5,
+      "group": "[W5.7] Java: Streams",
+      "title": "C++ to Java → Miscellaneous Topics → Streams: Basic",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#c-to-java-miscellaneous-topics-streams-basic",
+      "external_lesson": false,
+      "words": 72
+    },
+    {
+      "id": "W5.8a",
+      "week": 5,
+      "group": "[W5.8] RCS: Managing Pull Requests II",
+      "title": "Tools → Revision Control (Using Git and GitHub) → T9L3. Merging Pull Requests",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week5/topics.html#tools-revision-control-using-git-and-github-t9l3-merging-pull-requests",
+      "external_lesson": true,
+      "words": 8
+    },
+    {
+      "id": "W6.1a",
+      "week": 6,
+      "group": "[W6.1] Modeling: Sequence Diagrams",
+      "title": "Design → Modelling → Modelling Behaviors → Sequence diagrams - basic",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week6/topics.html#design-modelling-modelling-behaviors-sequence-diagrams-basic",
+      "external_lesson": false,
+      "words": 280
+    },
+    {
+      "id": "W6.1b",
+      "week": 6,
+      "group": "[W6.1] Modeling: Sequence Diagrams",
+      "title": "Design → Modelling → Modelling Behaviors → Sequence diagrams - intermediate",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week6/topics.html#design-modelling-modelling-behaviors-sequence-diagrams-intermediate",
+      "external_lesson": false,
+      "words": 259
+    },
+    {
+      "id": "W6.1c",
+      "week": 6,
+      "group": "[W6.1] Modeling: Sequence Diagrams",
+      "title": "Design → Modelling → Modelling Behaviors → Sequence diagrams - advanced",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week6/topics.html#design-modelling-modelling-behaviors-sequence-diagrams-advanced",
+      "external_lesson": false,
+      "words": 28
+    },
+    {
+      "id": "W6.2a",
+      "week": 6,
+      "group": "[W6.2] Architecture Diagrams",
+      "title": "Design → Architecture → Introduction → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week6/topics.html#design-architecture-introduction-what",
+      "external_lesson": false,
+      "words": 795
+    },
+    {
+      "id": "W6.2b",
+      "week": 6,
+      "group": "[W6.2] Architecture Diagrams",
+      "title": "Design → Architecture → Introduction → Why",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week6/topics.html#design-architecture-introduction-why",
+      "external_lesson": false,
+      "words": 294
+    },
+    {
+      "id": "W6.2c",
+      "week": 6,
+      "group": "[W6.2] Architecture Diagrams",
+      "title": "Design → Architecture → Introduction → Components, interfaces, and dependencies",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week6/topics.html#design-architecture-introduction-components-interfaces-and-dependencies",
+      "external_lesson": false,
+      "words": 510
+    },
+    {
+      "id": "W6.2d",
+      "week": 6,
+      "group": "[W6.2] Architecture Diagrams",
+      "title": "Design → Architecture → Architecture Diagrams → Different diagrams of one system",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week6/topics.html#design-architecture-architecture-diagrams-different-diagrams-of-one-system",
+      "external_lesson": false,
+      "words": 604
+    },
+    {
+      "id": "W6.2e",
+      "week": 6,
+      "group": "[W6.2] Architecture Diagrams",
+      "title": "Design → Architecture → Architecture Diagrams → Reading",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week6/topics.html#design-architecture-architecture-diagrams-reading",
+      "external_lesson": false,
+      "words": 131
+    },
+    {
+      "id": "W6.3a",
+      "week": 6,
+      "group": "[W6.3] Logging",
+      "title": "Implementation → Error Handling → Logging → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week6/topics.html#implementation-error-handling-logging-what",
+      "external_lesson": false,
+      "words": 188
+    },
+    {
+      "id": "W6.3b",
+      "week": 6,
+      "group": "[W6.3] Logging",
+      "title": "Implementation → Error Handling → Logging → How",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week6/topics.html#implementation-error-handling-logging-how",
+      "external_lesson": false,
+      "words": 202
+    },
+    {
+      "id": "W6.4a",
+      "week": 6,
+      "group": "[W6.4] Debugging",
+      "title": "Implementation → Debugging → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week6/topics.html#implementation-debugging-what",
+      "external_lesson": false,
+      "words": 790
+    },
+    {
+      "id": "W6.4b",
+      "week": 6,
+      "group": "[W6.4] Debugging",
+      "title": "Implementation → Debugging → How",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week6/topics.html#implementation-debugging-how",
+      "external_lesson": false,
+      "words": 1785
+    },
+    {
+      "id": "W6.4c",
+      "week": 6,
+      "group": "[W6.4] Debugging",
+      "title": "Implementation → Debugging → Tools",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week6/topics.html#implementation-debugging-tools",
+      "external_lesson": false,
+      "words": 1817
+    },
+    {
+      "id": "W6.4d",
+      "week": 6,
+      "group": "[W6.4] Debugging",
+      "title": "Implementation → Debugging → Fixing",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week6/topics.html#implementation-debugging-fixing",
+      "external_lesson": false,
+      "words": 507
+    },
+    {
+      "id": "W6.4e",
+      "week": 6,
+      "group": "[W6.4] Debugging",
+      "title": "Implementation → Debugging → Advanced",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week6/topics.html#implementation-debugging-advanced",
+      "external_lesson": false,
+      "words": 558
+    },
+    {
+      "id": "W6.5a",
+      "week": 6,
+      "group": "[W6.5] IDEs: Intermediate Features",
+      "title": "Tools → IDEs → Debugging",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week6/topics.html#tools-ides-debugging",
+      "external_lesson": false,
+      "words": 11
+    },
+    {
+      "id": "W6.5b",
+      "week": 6,
+      "group": "[W6.5] IDEs: Intermediate Features",
+      "title": "Tools → IDEs → Code navigation",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week6/topics.html#tools-ides-code-navigation",
+      "external_lesson": false,
+      "words": 13
+    },
+    {
+      "id": "W7.1a",
+      "week": 7,
+      "group": "[W7.1] Requirements: Use Cases",
+      "title": "Requirements → Specifying Requirements → Use Cases → Introduction",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#requirements-specifying-requirements-use-cases-introduction",
+      "external_lesson": false,
+      "words": 317
+    },
+    {
+      "id": "W7.1b",
+      "week": 7,
+      "group": "[W7.1] Requirements: Use Cases",
+      "title": "Requirements → Specifying Requirements → Use Cases → Identifying",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#requirements-specifying-requirements-use-cases-identifying",
+      "external_lesson": false,
+      "words": 908
+    },
+    {
+      "id": "W7.1c",
+      "week": 7,
+      "group": "[W7.1] Requirements: Use Cases",
+      "title": "Requirements → Specifying Requirements → Use Cases → Details",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#requirements-specifying-requirements-use-cases-details",
+      "external_lesson": false,
+      "words": 1877
+    },
+    {
+      "id": "W7.1d",
+      "week": 7,
+      "group": "[W7.1] Requirements: Use Cases",
+      "title": "Requirements → Specifying Requirements → Use Cases → Usage",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#requirements-specifying-requirements-use-cases-usage",
+      "external_lesson": false,
+      "words": 594
+    },
+    {
+      "id": "W7.2a",
+      "week": 7,
+      "group": "[W7.2] Requirements Documents",
+      "title": "Requirements → Specifying Requirements → Requirements documents → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#requirements-specifying-requirements-requirements-documents-what",
+      "external_lesson": false,
+      "words": 571
+    },
+    {
+      "id": "W7.3a",
+      "week": 7,
+      "group": "[W7.3] Design: High-Level View",
+      "title": "Design → Introduction → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#design-introduction-what",
+      "external_lesson": false,
+      "words": 93
+    },
+    {
+      "id": "W7.3b",
+      "week": 7,
+      "group": "[W7.3] Design: High-Level View",
+      "title": "Design → Design Approaches → Top-down and bottom-up design",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#design-design-approaches-top-down-and-bottom-up-design",
+      "external_lesson": false,
+      "words": 160
+    },
+    {
+      "id": "W7.3c",
+      "week": 7,
+      "group": "[W7.3] Design: High-Level View",
+      "title": "Design Approaches → Agile Design → Agile design",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#design-approaches-agile-design-agile-design",
+      "external_lesson": false,
+      "words": 149
+    },
+    {
+      "id": "W7.4a",
+      "week": 7,
+      "group": "[W7.4] Design: Fundamentals",
+      "title": "Design → Design Fundamentals → Abstraction → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#design-design-fundamentals-abstraction-what",
+      "external_lesson": false,
+      "words": 328
+    },
+    {
+      "id": "W7.4b",
+      "week": 7,
+      "group": "[W7.4] Design: Fundamentals",
+      "title": "Design → Design Fundamentals → Coupling → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#design-design-fundamentals-coupling-what",
+      "external_lesson": false,
+      "words": 380
+    },
+    {
+      "id": "W7.4c",
+      "week": 7,
+      "group": "[W7.4] Design: Fundamentals",
+      "title": "Design → Design Fundamentals → Coupling → How",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#design-design-fundamentals-coupling-how",
+      "external_lesson": false,
+      "words": 300
+    },
+    {
+      "id": "W7.4d",
+      "week": 7,
+      "group": "[W7.4] Design: Fundamentals",
+      "title": "Design → Design Fundamentals → Coupling → Types of coupling",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#design-design-fundamentals-coupling-types-of-coupling",
+      "external_lesson": false,
+      "words": 146
+    },
+    {
+      "id": "W7.4e",
+      "week": 7,
+      "group": "[W7.4] Design: Fundamentals",
+      "title": "Design → Design Fundamentals → Cohesion → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#design-design-fundamentals-cohesion-what",
+      "external_lesson": false,
+      "words": 122
+    },
+    {
+      "id": "W7.4f",
+      "week": 7,
+      "group": "[W7.4] Design: Fundamentals",
+      "title": "Design → Design Fundamentals → Cohesion → How",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#design-design-fundamentals-cohesion-how",
+      "external_lesson": false,
+      "words": 333
+    },
+    {
+      "id": "W7.5a",
+      "week": 7,
+      "group": "[W7.5] IDEs: Advanced Features : OPTIONAL",
+      "title": "Tools → IDEs → Productivity shortcuts",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#tools-ides-productivity-shortcuts",
+      "external_lesson": false,
+      "words": 9
+    },
+    {
+      "id": "W7.6a",
+      "week": 7,
+      "group": "[W7.6] Integration Approaches",
+      "title": "Implementation → Integration → Approaches → Late and one-time versus early and frequent",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#implementation-integration-approaches-late-and-one-time-versus-early-and-frequent",
+      "external_lesson": false,
+      "words": 151
+    },
+    {
+      "id": "W7.6b",
+      "week": 7,
+      "group": "[W7.6] Integration Approaches",
+      "title": "Implementation → Integration → Approaches → Big-bang versus incremental integration",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#implementation-integration-approaches-big-bang-versus-incremental-integration",
+      "external_lesson": false,
+      "words": 196
+    },
+    {
+      "id": "W7.6c",
+      "week": 7,
+      "group": "[W7.6] Integration Approaches",
+      "title": "Implementation → Integration → Approaches → Top-down versus bottom-up integration",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#implementation-integration-approaches-top-down-versus-bottom-up-integration",
+      "external_lesson": false,
+      "words": 495
+    },
+    {
+      "id": "W7.7a",
+      "week": 7,
+      "group": "[W7.7] Project Mgt: Scheduling and Tracking",
+      "title": "Project Management → Project Planning → Milestones",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#project-management-project-planning-milestones",
+      "external_lesson": false,
+      "words": 115
+    },
+    {
+      "id": "W7.7b",
+      "week": 7,
+      "group": "[W7.7] Project Mgt: Scheduling and Tracking",
+      "title": "Project Management → Project Planning → Buffers",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#project-management-project-planning-buffers",
+      "external_lesson": false,
+      "words": 68
+    },
+    {
+      "id": "W7.7c",
+      "week": 7,
+      "group": "[W7.7] Project Mgt: Scheduling and Tracking",
+      "title": "Project Management → Project Planning → Issue trackers",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#project-management-project-planning-issue-trackers",
+      "external_lesson": false,
+      "words": 208
+    },
+    {
+      "id": "W7.7d",
+      "week": 7,
+      "group": "[W7.7] Project Mgt: Scheduling and Tracking",
+      "title": "Project Management → Project Planning → Work breakdown structure",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#project-management-project-planning-work-breakdown-structure",
+      "external_lesson": false,
+      "words": 365
+    },
+    {
+      "id": "W7.7e",
+      "week": 7,
+      "group": "[W7.7] Project Mgt: Scheduling and Tracking",
+      "title": "Project Management → Project Planning → Gantt charts",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#project-management-project-planning-gantt-charts",
+      "external_lesson": false,
+      "words": 52
+    },
+    {
+      "id": "W7.7f",
+      "week": 7,
+      "group": "[W7.7] Project Mgt: Scheduling and Tracking",
+      "title": "Project Management → Project Planning → PERT charts",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#project-management-project-planning-pert-charts",
+      "external_lesson": false,
+      "words": 292
+    },
+    {
+      "id": "W7.7g",
+      "week": 7,
+      "group": "[W7.7] Project Mgt: Scheduling and Tracking",
+      "title": "Project Management → Teamwork → Team structures",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#project-management-teamwork-team-structures",
+      "external_lesson": false,
+      "words": 442
+    },
+    {
+      "id": "W7.8a",
+      "week": 7,
+      "group": "[W7.8] Project Mgt: Workflows for Git-Based Projects",
+      "title": "Git-Mastery → Tour 10: Managing Git-Based Projects",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#git-mastery-tour-10-managing-git-based-projects",
+      "external_lesson": true,
+      "words": 8
+    },
+    {
+      "id": "W8.1a",
+      "week": 8,
+      "group": "[W8.1] [Revisiting] Drawing Class/Object Diagrams - Basics",
+      "title": "Design → Modelling → Modelling Structure → Class diagrams - basic",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#design-modelling-modelling-structure-class-diagrams-basic",
+      "external_lesson": false,
+      "words": 405
+    },
+    {
+      "id": "W8.1b",
+      "week": 8,
+      "group": "[W8.1] [Revisiting] Drawing Class/Object Diagrams - Basics",
+      "title": "Design → Modelling → Modelling Structure → Object diagrams",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#design-modelling-modelling-structure-object-diagrams",
+      "external_lesson": false,
+      "words": 177
+    },
+    {
+      "id": "W8.1c",
+      "week": 8,
+      "group": "[W8.1] [Revisiting] Drawing Class/Object Diagrams - Basics",
+      "title": "Tools → UML → Object versus class diagrams",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#tools-uml-object-versus-class-diagrams",
+      "external_lesson": false,
+      "words": 365
+    },
+    {
+      "id": "W8.2a",
+      "week": 8,
+      "group": "[W8.2] [Revisiting] Drawing Class/Object Diagrams - Intermediate",
+      "title": "Tools → UML → Notes",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#tools-uml-notes",
+      "external_lesson": false,
+      "words": 37
+    },
+    {
+      "id": "W8.2b",
+      "week": 8,
+      "group": "[W8.2] [Revisiting] Drawing Class/Object Diagrams - Intermediate",
+      "title": "Tools → UML → Constraints",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#tools-uml-constraints",
+      "external_lesson": false,
+      "words": 30
+    },
+    {
+      "id": "W8.2c",
+      "week": 8,
+      "group": "[W8.2] [Revisiting] Drawing Class/Object Diagrams - Intermediate",
+      "title": "Tools → UML → Class Diagrams → Associations as attributes",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#tools-uml-class-diagrams-associations-as-attributes",
+      "external_lesson": false,
+      "words": 229
+    },
+    {
+      "id": "W8.2d",
+      "week": 8,
+      "group": "[W8.2] [Revisiting] Drawing Class/Object Diagrams - Intermediate",
+      "title": "Design → Modelling → Modelling Structure → Class diagrams - intermediate",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#design-modelling-modelling-structure-class-diagrams-intermediate",
+      "external_lesson": false,
+      "words": 603
+    },
+    {
+      "id": "W8.2e",
+      "week": 8,
+      "group": "[W8.2] [Revisiting] Drawing Class/Object Diagrams - Intermediate",
+      "title": "Paradigms → OOP → Associations → Association classes",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#paradigms-oop-associations-association-classes",
+      "external_lesson": false,
+      "words": 267
+    },
+    {
+      "id": "W8.3a",
+      "week": 8,
+      "group": "[W8.3] [Revisiting] Drawing Sequence Diagrams",
+      "title": "Design → Modelling → Modelling Behaviors → Sequence diagrams - basic",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#design-modelling-modelling-behaviors-sequence-diagrams-basic",
+      "external_lesson": false,
+      "words": 279
+    },
+    {
+      "id": "W8.3b",
+      "week": 8,
+      "group": "[W8.3] [Revisiting] Drawing Sequence Diagrams",
+      "title": "Design → Modelling → Modelling Behaviors → Sequence diagrams - intermediate",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#design-modelling-modelling-behaviors-sequence-diagrams-intermediate",
+      "external_lesson": false,
+      "words": 258
+    },
+    {
+      "id": "W8.3c",
+      "week": 8,
+      "group": "[W8.3] [Revisiting] Drawing Sequence Diagrams",
+      "title": "Tools → UML → Sequence Diagrams → Reference frames",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#tools-uml-sequence-diagrams-reference-frames",
+      "external_lesson": false,
+      "words": 71
+    },
+    {
+      "id": "W8.3d",
+      "week": 8,
+      "group": "[W8.3] [Revisiting] Drawing Sequence Diagrams",
+      "title": "Tools → UML → Sequence Diagrams → Parallel paths",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#tools-uml-sequence-diagrams-parallel-paths",
+      "external_lesson": false,
+      "words": 49
+    },
+    {
+      "id": "W8.4a",
+      "week": 8,
+      "group": "[W8.4] Testing: Types",
+      "title": "Quality Assurance → Testing → Integration Testing → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#quality-assurance-testing-integration-testing-what",
+      "external_lesson": false,
+      "words": 117
+    },
+    {
+      "id": "W8.4b",
+      "week": 8,
+      "group": "[W8.4] Testing: Types",
+      "title": "Quality Assurance → Testing → Integration Testing → How",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#quality-assurance-testing-integration-testing-how",
+      "external_lesson": false,
+      "words": 311
+    },
+    {
+      "id": "W8.4c",
+      "week": 8,
+      "group": "[W8.4] Testing: Types",
+      "title": "Quality Assurance → Testing → System Testing → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#quality-assurance-testing-system-testing-what",
+      "external_lesson": false,
+      "words": 247
+    },
+    {
+      "id": "W8.4d",
+      "week": 8,
+      "group": "[W8.4] Testing: Types",
+      "title": "Quality Assurance → Testing → Test Automation → Automated testing of GUIs",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#quality-assurance-testing-test-automation-automated-testing-of-guis",
+      "external_lesson": false,
+      "words": 304
+    },
+    {
+      "id": "W8.4e",
+      "week": 8,
+      "group": "[W8.4] Testing: Types",
+      "title": "Quality Assurance → Testing → Acceptance Testing → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#quality-assurance-testing-acceptance-testing-what",
+      "external_lesson": false,
+      "words": 66
+    },
+    {
+      "id": "W8.4f",
+      "week": 8,
+      "group": "[W8.4] Testing: Types",
+      "title": "Quality Assurance → Testing → Acceptance Testing → Acceptance versus system testing",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#quality-assurance-testing-acceptance-testing-acceptance-versus-system-testing",
+      "external_lesson": false,
+      "words": 478
+    },
+    {
+      "id": "W8.4g",
+      "week": 8,
+      "group": "[W8.4] Testing: Types",
+      "title": "Quality Assurance → Testing → Alpha/Beta Testing → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#quality-assurance-testing-alpha-beta-testing-what",
+      "external_lesson": false,
+      "words": 65
+    },
+    {
+      "id": "W8.4h",
+      "week": 8,
+      "group": "[W8.4] Testing: Types",
+      "title": "Quality Assurance → Testing → Dogfooding → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#quality-assurance-testing-dogfooding-what",
+      "external_lesson": false,
+      "words": 164
+    },
+    {
+      "id": "W8.4i",
+      "week": 8,
+      "group": "[W8.4] Testing: Types",
+      "title": "Quality Assurance → Testing → Exploratory and Scripted Testing → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#quality-assurance-testing-exploratory-and-scripted-testing-what",
+      "external_lesson": false,
+      "words": 370
+    },
+    {
+      "id": "W8.4j",
+      "week": 8,
+      "group": "[W8.4] Testing: Types",
+      "title": "Quality Assurance → Testing → Exploratory and Scripted Testing → When",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#quality-assurance-testing-exploratory-and-scripted-testing-when",
+      "external_lesson": false,
+      "words": 203
+    },
+    {
+      "id": "W8.5a",
+      "week": 8,
+      "group": "[W8.5] Testing: Intermediate Concepts",
+      "title": "Quality Assurance → Testing → Dependency Injection → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#quality-assurance-testing-dependency-injection-what",
+      "external_lesson": false,
+      "words": 582
+    },
+    {
+      "id": "W8.5b",
+      "week": 8,
+      "group": "[W8.5] Testing: Intermediate Concepts",
+      "title": "Quality Assurance → Testing → Dependency Injection → How",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#quality-assurance-testing-dependency-injection-how",
+      "external_lesson": false,
+      "words": 862
+    },
+    {
+      "id": "W8.5c",
+      "week": 8,
+      "group": "[W8.5] Testing: Intermediate Concepts",
+      "title": "Quality Assurance → Testing → Introduction → Testability",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#quality-assurance-testing-introduction-testability",
+      "external_lesson": false,
+      "words": 133
+    },
+    {
+      "id": "W8.5d",
+      "week": 8,
+      "group": "[W8.5] Testing: Intermediate Concepts",
+      "title": "Quality Assurance → Testing → Test Coverage → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#quality-assurance-testing-test-coverage-what",
+      "external_lesson": false,
+      "words": 695
+    },
+    {
+      "id": "W8.5e",
+      "week": 8,
+      "group": "[W8.5] Testing: Intermediate Concepts",
+      "title": "Quality Assurance → Testing → Test Coverage → How",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#quality-assurance-testing-test-coverage-how",
+      "external_lesson": false,
+      "words": 80
+    },
+    {
+      "id": "W8.5f",
+      "week": 8,
+      "group": "[W8.5] Testing: Intermediate Concepts",
+      "title": "Quality Assurance → Testing → Test-Driven Development → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#quality-assurance-testing-test-driven-development-what",
+      "external_lesson": false,
+      "words": 161
+    },
+    {
+      "id": "W8.5g",
+      "week": 8,
+      "group": "[W8.5] Testing: Intermediate Concepts",
+      "title": "Quality Assurance → Testing → Test-Driven Development → How",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#quality-assurance-testing-test-driven-development-how",
+      "external_lesson": false,
+      "words": 211
+    },
+    {
+      "id": "W9.1a",
+      "week": 9,
+      "group": "[W9.1] Conceptual Class Diagrams (aka OODMs)",
+      "title": "Design → Modelling → Modelling Structure → Conceptual class diagrams (aka OODMs)",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-modelling-modelling-structure-conceptual-class-diagrams-aka-oodms",
+      "external_lesson": false,
+      "words": 631
+    },
+    {
+      "id": "W9.2a",
+      "week": 9,
+      "group": "[W9.2] Activity Diagrams",
+      "title": "Design → Modelling → Modelling Behaviors → Activity diagrams - basic",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-modelling-modelling-behaviors-activity-diagrams-basic",
+      "external_lesson": false,
+      "words": 506
+    },
+    {
+      "id": "W9.2b",
+      "week": 9,
+      "group": "[W9.2] Activity Diagrams",
+      "title": "Design → Modelling → Modelling Behaviors → Activity diagrams - intermediate",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-modelling-modelling-behaviors-activity-diagrams-intermediate",
+      "external_lesson": false,
+      "words": 35
+    },
+    {
+      "id": "W9.3a",
+      "week": 9,
+      "group": "[W9.3] Conceptualizing a Design",
+      "title": "Design → Modeling → Modeling a Solution → Introduction",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-modeling-modeling-a-solution-introduction",
+      "external_lesson": false,
+      "words": 98
+    },
+    {
+      "id": "W9.3b",
+      "week": 9,
+      "group": "[W9.3] Conceptualizing a Design",
+      "title": "Design → Modeling → Modeling a Solution → Basic",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-modeling-modeling-a-solution-basic",
+      "external_lesson": false,
+      "words": 387
+    },
+    {
+      "id": "W9.3c",
+      "week": 9,
+      "group": "[W9.3] Conceptualizing a Design",
+      "title": "Design → Modeling → Modeling a Solution → Intermediate",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-modeling-modeling-a-solution-intermediate",
+      "external_lesson": false,
+      "words": 685
+    },
+    {
+      "id": "W9.4a",
+      "week": 9,
+      "group": "[W9.4] Architecture Diagrams: Drawing",
+      "title": "Design → Architecture → Architecture Diagrams → Drawing",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-architecture-architecture-diagrams-drawing",
+      "external_lesson": false,
+      "words": 282
+    },
+    {
+      "id": "W9.5a",
+      "week": 9,
+      "group": "[W9.5] Design Principles",
+      "title": "Principles → Separation of concerns principle",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#principles-separation-of-concerns-principle",
+      "external_lesson": false,
+      "words": 813
+    },
+    {
+      "id": "W9.5b",
+      "week": 9,
+      "group": "[W9.5] Design Principles",
+      "title": "Principles → Single responsibility principle",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#principles-single-responsibility-principle",
+      "external_lesson": false,
+      "words": 158
+    },
+    {
+      "id": "W9.5c",
+      "week": 9,
+      "group": "[W9.5] Design Principles",
+      "title": "Principles → Liskov substitution principle",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#principles-liskov-substitution-principle",
+      "external_lesson": false,
+      "words": 567
+    },
+    {
+      "id": "W9.5d",
+      "week": 9,
+      "group": "[W9.5] Design Principles",
+      "title": "Principles → Open-closed principle",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#principles-open-closed-principle",
+      "external_lesson": false,
+      "words": 316
+    },
+    {
+      "id": "W9.5e",
+      "week": 9,
+      "group": "[W9.5] Design Principles",
+      "title": "Principles → Law of Demeter",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#principles-law-of-demeter",
+      "external_lesson": false,
+      "words": 451
+    },
+    {
+      "id": "W9.5f",
+      "week": 9,
+      "group": "[W9.5] Design Principles",
+      "title": "Principles → Interface segregation principle",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#principles-interface-segregation-principle",
+      "external_lesson": false,
+      "words": 78
+    },
+    {
+      "id": "W9.5g",
+      "week": 9,
+      "group": "[W9.5] Design Principles",
+      "title": "Principles → Dependency inversion principle",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#principles-dependency-inversion-principle",
+      "external_lesson": false,
+      "words": 207
+    },
+    {
+      "id": "W9.5h",
+      "week": 9,
+      "group": "[W9.5] Design Principles",
+      "title": "Principles → SOLID principles",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#principles-solid-principles",
+      "external_lesson": false,
+      "words": 1203
+    },
+    {
+      "id": "W9.5i",
+      "week": 9,
+      "group": "[W9.5] Design Principles",
+      "title": "Principles → YAGNI principle",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#principles-yagni-principle",
+      "external_lesson": false,
+      "words": 99
+    },
+    {
+      "id": "W9.5j",
+      "week": 9,
+      "group": "[W9.5] Design Principles",
+      "title": "Principles → DRY principle",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#principles-dry-principle",
+      "external_lesson": false,
+      "words": 74
+    },
+    {
+      "id": "W9.5k",
+      "week": 9,
+      "group": "[W9.5] Design Principles",
+      "title": "Principles → Brooks' law",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#principles-brooks-law",
+      "external_lesson": false,
+      "words": 202
+    },
+    {
+      "id": "W9.6a",
+      "week": 9,
+      "group": "[W9.6] [Revisiting] SDLC Process Models",
+      "title": "Project Management → SDLC Process Models → Introduction → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#project-management-sdlc-process-models-introduction-what",
+      "external_lesson": false,
+      "words": 274
+    },
+    {
+      "id": "W9.6b",
+      "week": 9,
+      "group": "[W9.6] [Revisiting] SDLC Process Models",
+      "title": "Project Management → SDLC Process Models → Introduction → Sequential models",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#project-management-sdlc-process-models-introduction-sequential-models",
+      "external_lesson": false,
+      "words": 324
+    },
+    {
+      "id": "W9.6c",
+      "week": 9,
+      "group": "[W9.6] [Revisiting] SDLC Process Models",
+      "title": "Project Management → SDLC Process Models → Introduction → Iterative models",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#project-management-sdlc-process-models-introduction-iterative-models",
+      "external_lesson": false,
+      "words": 594
+    },
+    {
+      "id": "W9.7a",
+      "week": 9,
+      "group": "[W9.7] SDLC Process Models (continued)",
+      "title": "Project Management → SDLC Process Models → Introduction → Agile models",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#project-management-sdlc-process-models-introduction-agile-models",
+      "external_lesson": false,
+      "words": 367
+    },
+    {
+      "id": "W9.7b",
+      "week": 9,
+      "group": "[W9.7] SDLC Process Models (continued)",
+      "title": "Project Management → SDLC Process Models → Scrum",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#project-management-sdlc-process-models-scrum",
+      "external_lesson": false,
+      "words": 494
+    },
+    {
+      "id": "W9.7c",
+      "week": 9,
+      "group": "[W9.7] SDLC Process Models (continued)",
+      "title": "Project Management → SDLC Process Models → XP",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#project-management-sdlc-process-models-xp",
+      "external_lesson": false,
+      "words": 260
+    },
+    {
+      "id": "W9.7d",
+      "week": 9,
+      "group": "[W9.7] SDLC Process Models (continued)",
+      "title": "Project Management → SDLC Process Models → Unified process",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#project-management-sdlc-process-models-unified-process",
+      "external_lesson": false,
+      "words": 413
+    },
+    {
+      "id": "W9.7e",
+      "week": 9,
+      "group": "[W9.7] SDLC Process Models (continued)",
+      "title": "Project Management → SDLC Process Models → Choosing a model",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#project-management-sdlc-process-models-choosing-a-model",
+      "external_lesson": false,
+      "words": 301
+    },
+    {
+      "id": "W9.7f",
+      "week": 9,
+      "group": "[W9.7] SDLC Process Models (continued)",
+      "title": "Project Management → SDLC Process Models → CMMI",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#project-management-sdlc-process-models-cmmi",
+      "external_lesson": false,
+      "words": 90
+    },
+    {
+      "id": "W9.7g",
+      "week": 9,
+      "group": "[W9.7] SDLC Process Models (continued)",
+      "title": "Project Management → SDLC Process Models → Recap",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#project-management-sdlc-process-models-recap",
+      "external_lesson": false,
+      "words": 1193
+    },
+    {
+      "id": "W9.8a",
+      "week": 9,
+      "group": "[W9.8] Writing Developer Documents",
+      "title": "Implementation → Documentation → Introduction → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#implementation-documentation-introduction-what",
+      "external_lesson": false,
+      "words": 474
+    },
+    {
+      "id": "W9.8b",
+      "week": 9,
+      "group": "[W9.8] Writing Developer Documents",
+      "title": "Implementation → Documentation → Guidelines → Aim for Comprehensibility → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#implementation-documentation-guidelines-aim-for-comprehensibility-what",
+      "external_lesson": false,
+      "words": 199
+    },
+    {
+      "id": "W9.8c",
+      "week": 9,
+      "group": "[W9.8] Writing Developer Documents",
+      "title": "Implementation → Documentation → Guidelines → Describe Top-Down → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#implementation-documentation-guidelines-describe-top-down-what",
+      "external_lesson": false,
+      "words": 258
+    },
+    {
+      "id": "W9.8d",
+      "week": 9,
+      "group": "[W9.8] Writing Developer Documents",
+      "title": "Implementation → Documentation → Guidelines → Minimal but Sufficient → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#implementation-documentation-guidelines-minimal-but-sufficient-what",
+      "external_lesson": false,
+      "words": 133
+    },
+    {
+      "id": "W10.1a",
+      "week": 10,
+      "group": "[W10.1] Design Patterns",
+      "title": "Design → Design Patterns → Introduction → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week10/topics.html#design-design-patterns-introduction-what",
+      "external_lesson": false,
+      "words": 197
+    },
+    {
+      "id": "W10.1b",
+      "week": 10,
+      "group": "[W10.1] Design Patterns",
+      "title": "Design → Design Patterns → Introduction → Format",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week10/topics.html#design-design-patterns-introduction-format",
+      "external_lesson": false,
+      "words": 133
+    },
+    {
+      "id": "W10.1c",
+      "week": 10,
+      "group": "[W10.1] Design Patterns",
+      "title": "Design → Design Patterns → Singleton → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week10/topics.html#design-design-patterns-singleton-what",
+      "external_lesson": false,
+      "words": 187
+    },
+    {
+      "id": "W10.1d",
+      "week": 10,
+      "group": "[W10.1] Design Patterns",
+      "title": "Design → Design Patterns → Singleton → Implementation",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week10/topics.html#design-design-patterns-singleton-implementation",
+      "external_lesson": false,
+      "words": 156
+    },
+    {
+      "id": "W10.1e",
+      "week": 10,
+      "group": "[W10.1] Design Patterns",
+      "title": "Design → Design Patterns → Singleton → Evaluation",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week10/topics.html#design-design-patterns-singleton-evaluation",
+      "external_lesson": false,
+      "words": 127
+    },
+    {
+      "id": "W10.1f",
+      "week": 10,
+      "group": "[W10.1] Design Patterns",
+      "title": "Design → Design Patterns → Facade Pattern → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week10/topics.html#design-design-patterns-facade-pattern-what",
+      "external_lesson": false,
+      "words": 143
+    },
+    {
+      "id": "W10.1g",
+      "week": 10,
+      "group": "[W10.1] Design Patterns",
+      "title": "Design → Design Patterns → Command Pattern → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week10/topics.html#design-design-patterns-command-pattern-what",
+      "external_lesson": false,
+      "words": 274
+    },
+    {
+      "id": "W10.1h",
+      "week": 10,
+      "group": "[W10.1] Design Patterns",
+      "title": "Design → Design Patterns → Abstraction Occurrence Pattern → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week10/topics.html#design-design-patterns-abstraction-occurrence-pattern-what",
+      "external_lesson": false,
+      "words": 793
+    },
+    {
+      "id": "W10.2a",
+      "week": 10,
+      "group": "[W10.2] Defensive Programming",
+      "title": "Implementation → Error Handling → Defensive Programming → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week10/topics.html#implementation-error-handling-defensive-programming-what",
+      "external_lesson": false,
+      "words": 145
+    },
+    {
+      "id": "W10.2b",
+      "week": 10,
+      "group": "[W10.2] Defensive Programming",
+      "title": "Implementation → Error Handling → Defensive Programming → Enforcing compulsory associations",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week10/topics.html#implementation-error-handling-defensive-programming-enforcing-compulsory-associations",
+      "external_lesson": false,
+      "words": 607
+    },
+    {
+      "id": "W10.2c",
+      "week": 10,
+      "group": "[W10.2] Defensive Programming",
+      "title": "Implementation → Error Handling → Defensive Programming → Enforcing 1-to-1 associations",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week10/topics.html#implementation-error-handling-defensive-programming-enforcing-1-to-1-associations",
+      "external_lesson": false,
+      "words": 131
+    },
+    {
+      "id": "W10.2d",
+      "week": 10,
+      "group": "[W10.2] Defensive Programming",
+      "title": "Implementation → Error Handling → Defensive Programming → Enforcing referential integrity",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week10/topics.html#implementation-error-handling-defensive-programming-enforcing-referential-integrity",
+      "external_lesson": false,
+      "words": 1301
+    },
+    {
+      "id": "W10.2e",
+      "week": 10,
+      "group": "[W10.2] Defensive Programming",
+      "title": "Implementation → Error Handling → Defensive Programming → When",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week10/topics.html#implementation-error-handling-defensive-programming-when",
+      "external_lesson": false,
+      "words": 144
+    },
+    {
+      "id": "W10.2f",
+      "week": 10,
+      "group": "[W10.2] Defensive Programming",
+      "title": "Implementation → Error Handling → Design by Contract → Design by contract",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week10/topics.html#implementation-error-handling-design-by-contract-design-by-contract",
+      "external_lesson": false,
+      "words": 239
+    },
+    {
+      "id": "W10.3a",
+      "week": 10,
+      "group": "[W10.3] Test Cases: Intro",
+      "title": "Quality Assurance → Test Case Design → Introduction → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week10/topics.html#quality-assurance-test-case-design-introduction-what",
+      "external_lesson": false,
+      "words": 718
+    },
+    {
+      "id": "W10.3b",
+      "week": 10,
+      "group": "[W10.3] Test Cases: Intro",
+      "title": "Quality Assurance → Test Case Design → Introduction → Positive versus negative test cases",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week10/topics.html#quality-assurance-test-case-design-introduction-positive-versus-negative-test-cases",
+      "external_lesson": false,
+      "words": 69
+    },
+    {
+      "id": "W10.3c",
+      "week": 10,
+      "group": "[W10.3] Test Cases: Intro",
+      "title": "Quality Assurance → Test Case Design → Introduction → Black box versus glass box",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week10/topics.html#quality-assurance-test-case-design-introduction-black-box-versus-glass-box",
+      "external_lesson": false,
+      "words": 170
+    },
+    {
+      "id": "W10.3d",
+      "week": 10,
+      "group": "[W10.3] Test Cases: Intro",
+      "title": "Quality Assurance → Test Case Design → Testing based on use cases",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week10/topics.html#quality-assurance-test-case-design-testing-based-on-use-cases",
+      "external_lesson": false,
+      "words": 691
+    },
+    {
+      "id": "W10.4a",
+      "week": 10,
+      "group": "[W10.4] Test Cases: Equivalence Partitioning",
+      "title": "Quality Assurance → Test Case Design → Equivalence Partitions → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week10/topics.html#quality-assurance-test-case-design-equivalence-partitions-what",
+      "external_lesson": false,
+      "words": 236
+    },
+    {
+      "id": "W10.4b",
+      "week": 10,
+      "group": "[W10.4] Test Cases: Equivalence Partitioning",
+      "title": "Quality Assurance → Test Case Design → Equivalence Partitions → Basic",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week10/topics.html#quality-assurance-test-case-design-equivalence-partitions-basic",
+      "external_lesson": false,
+      "words": 564
+    },
+    {
+      "id": "W10.4c",
+      "week": 10,
+      "group": "[W10.4] Test Cases: Equivalence Partitioning",
+      "title": "Quality Assurance → Test Case Design → Equivalence Partitions → Intermediate",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week10/topics.html#quality-assurance-test-case-design-equivalence-partitions-intermediate",
+      "external_lesson": false,
+      "words": 365
+    },
+    {
+      "id": "W10.5a",
+      "week": 10,
+      "group": "[W10.5] Test Cases: Boundary Value Analysis",
+      "title": "Quality Assurance → Test Case Design → Boundary Value Analysis → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week10/topics.html#quality-assurance-test-case-design-boundary-value-analysis-what",
+      "external_lesson": false,
+      "words": 169
+    },
+    {
+      "id": "W10.5b",
+      "week": 10,
+      "group": "[W10.5] Test Cases: Boundary Value Analysis",
+      "title": "Quality Assurance → Test Case Design → Boundary Value Analysis → How",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week10/topics.html#quality-assurance-test-case-design-boundary-value-analysis-how",
+      "external_lesson": false,
+      "words": 160
+    },
+    {
+      "id": "W11.1a",
+      "week": 11,
+      "group": "[W11.1] More Design Patterns",
+      "title": "Design → Design Patterns → MVC Pattern → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-design-patterns-mvc-pattern-what",
+      "external_lesson": false,
+      "words": 295
+    },
+    {
+      "id": "W11.1b",
+      "week": 11,
+      "group": "[W11.1] More Design Patterns",
+      "title": "Design → Design Patterns → Observer Pattern → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-design-patterns-observer-pattern-what",
+      "external_lesson": false,
+      "words": 656
+    },
+    {
+      "id": "W11.1c",
+      "week": 11,
+      "group": "[W11.1] More Design Patterns",
+      "title": "Design → Design Patterns → Other design patterns",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-design-patterns-other-design-patterns",
+      "external_lesson": false,
+      "words": 96
+    },
+    {
+      "id": "W11.1d",
+      "week": 11,
+      "group": "[W11.1] More Design Patterns",
+      "title": "Design → Design Patterns → Combining design patterns",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-design-patterns-combining-design-patterns",
+      "external_lesson": false,
+      "words": 355
+    },
+    {
+      "id": "W11.1e",
+      "week": 11,
+      "group": "[W11.1] More Design Patterns",
+      "title": "Design → Design Patterns → Using design patterns",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-design-patterns-using-design-patterns",
+      "external_lesson": false,
+      "words": 168
+    },
+    {
+      "id": "W11.1f",
+      "week": 11,
+      "group": "[W11.1] More Design Patterns",
+      "title": "Design → Design Patterns → Design patterns versus design principles",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-design-patterns-design-patterns-versus-design-principles",
+      "external_lesson": false,
+      "words": 33
+    },
+    {
+      "id": "W11.1g",
+      "week": 11,
+      "group": "[W11.1] More Design Patterns",
+      "title": "Design → Design Patterns → Other types of patterns",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-design-patterns-other-types-of-patterns",
+      "external_lesson": false,
+      "words": 360
+    },
+    {
+      "id": "W11.2a",
+      "week": 11,
+      "group": "[W11.2] Architectural Styles",
+      "title": "Design → Architecture → Styles → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-architecture-styles-what",
+      "external_lesson": false,
+      "words": 66
+    },
+    {
+      "id": "W11.2b",
+      "week": 11,
+      "group": "[W11.2] Architectural Styles",
+      "title": "Design → Architecture → Styles → Layered Style → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-architecture-styles-layered-style-what",
+      "external_lesson": false,
+      "words": 258
+    },
+    {
+      "id": "W11.2c",
+      "week": 11,
+      "group": "[W11.2] Architectural Styles",
+      "title": "Design → Architecture → Styles → Monolithic Style → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-architecture-styles-monolithic-style-what",
+      "external_lesson": false,
+      "words": 246
+    },
+    {
+      "id": "W11.2d",
+      "week": 11,
+      "group": "[W11.2] Architectural Styles",
+      "title": "Design → Architecture → Styles → Event-Driven Style → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-architecture-styles-event-driven-style-what",
+      "external_lesson": false,
+      "words": 392
+    },
+    {
+      "id": "W11.2e",
+      "week": 11,
+      "group": "[W11.2] Architectural Styles",
+      "title": "Design → Architecture → Styles → Client-Server Style → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-architecture-styles-client-server-style-what",
+      "external_lesson": false,
+      "words": 450
+    },
+    {
+      "id": "W11.2f",
+      "week": 11,
+      "group": "[W11.2] Architectural Styles",
+      "title": "Design → Architecture → Styles → Services and Microservices → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-architecture-styles-services-and-microservices-what",
+      "external_lesson": false,
+      "words": 929
+    },
+    {
+      "id": "W11.2g",
+      "week": 11,
+      "group": "[W11.2] Architectural Styles",
+      "title": "Design → Architecture → Styles → Combining and choosing styles",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-architecture-styles-combining-and-choosing-styles",
+      "external_lesson": false,
+      "words": 443
+    },
+    {
+      "id": "W11.2h",
+      "week": 11,
+      "group": "[W11.2] Architectural Styles",
+      "title": "Design → Architecture → Styles → Other styles",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-architecture-styles-other-styles",
+      "external_lesson": false,
+      "words": 224
+    },
+    {
+      "id": "W11.3a",
+      "week": 11,
+      "group": "[W11.3] Test Cases: Combining Multiple Inputs",
+      "title": "Quality Assurance → Test Case Design → Combining Test Inputs → Why",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#quality-assurance-test-case-design-combining-test-inputs-why",
+      "external_lesson": false,
+      "words": 142
+    },
+    {
+      "id": "W11.3b",
+      "week": 11,
+      "group": "[W11.3] Test Cases: Combining Multiple Inputs",
+      "title": "Quality Assurance → Test Case Design → Combining Test Inputs → Test input combination strategies",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#quality-assurance-test-case-design-combining-test-inputs-test-input-combination-strategies",
+      "external_lesson": false,
+      "words": 449
+    },
+    {
+      "id": "W11.3c",
+      "week": 11,
+      "group": "[W11.3] Test Cases: Combining Multiple Inputs",
+      "title": "Quality Assurance → Test Case Design → Combining Test Inputs → Heuristic: Each valid input at least once in a positive test case",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#quality-assurance-test-case-design-combining-test-inputs-heuristic-each-valid-input-at-least-once-in-a-positive-test-case",
+      "external_lesson": false,
+      "words": 286
+    },
+    {
+      "id": "W11.3d",
+      "week": 11,
+      "group": "[W11.3] Test Cases: Combining Multiple Inputs",
+      "title": "Quality Assurance → Test Case Design → Combining Test Inputs → Heuristic: Test invalid inputs individually before combining them",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#quality-assurance-test-case-design-combining-test-inputs-heuristic-test-invalid-inputs-individually-before-combining-them",
+      "external_lesson": false,
+      "words": 502
+    },
+    {
+      "id": "W11.3e",
+      "week": 11,
+      "group": "[W11.3] Test Cases: Combining Multiple Inputs",
+      "title": "Quality Assurance → Test Case Design → Combining Test Inputs → Mix",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#quality-assurance-test-case-design-combining-test-inputs-mix",
+      "external_lesson": false,
+      "words": 654
+    },
+    {
+      "id": "W11.4a",
+      "week": 11,
+      "group": "[W11.4] Other QA Techniques",
+      "title": "Quality Assurance → Quality Assurance → Introduction → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#quality-assurance-quality-assurance-introduction-what",
+      "external_lesson": false,
+      "words": 44
+    },
+    {
+      "id": "W11.4b",
+      "week": 11,
+      "group": "[W11.4] Other QA Techniques",
+      "title": "Quality Assurance → Quality Assurance → Introduction → Validation versus verification",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#quality-assurance-quality-assurance-introduction-validation-versus-verification",
+      "external_lesson": false,
+      "words": 255
+    },
+    {
+      "id": "W11.4c",
+      "week": 11,
+      "group": "[W11.4] Other QA Techniques",
+      "title": "Quality Assurance → Quality Assurance → Formal Verification → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#quality-assurance-quality-assurance-formal-verification-what",
+      "external_lesson": false,
+      "words": 180
+    },
+    {
+      "id": "W11.5a",
+      "week": 11,
+      "group": "[W11.5] Secure Software Engineering",
+      "title": "Quality Assurance → Secure Software Engineering → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#quality-assurance-secure-software-engineering-what",
+      "external_lesson": false,
+      "words": 1238
+    },
+    {
+      "id": "W11.5b",
+      "week": 11,
+      "group": "[W11.5] Secure Software Engineering",
+      "title": "Quality Assurance → Secure Software Engineering → How",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#quality-assurance-secure-software-engineering-how",
+      "external_lesson": false,
+      "words": 3548
+    },
+    {
+      "id": "W11.5c",
+      "week": 11,
+      "group": "[W11.5] Secure Software Engineering",
+      "title": "Quality Assurance → Secure Software Engineering → When",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#quality-assurance-secure-software-engineering-when",
+      "external_lesson": false,
+      "words": 591
+    },
+    {
+      "id": "W11.5d",
+      "week": 11,
+      "group": "[W11.5] Secure Software Engineering",
+      "title": "Quality Assurance → Secure Software Engineering → Securing AI-assisted code",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#quality-assurance-secure-software-engineering-securing-ai-assisted-code",
+      "external_lesson": false,
+      "words": 1013
+    },
+    {
+      "id": "W11.5e",
+      "week": 11,
+      "group": "[W11.5] Secure Software Engineering",
+      "title": "Quality Assurance → Secure Software Engineering → Wrap-up",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#quality-assurance-secure-software-engineering-wrap-up",
+      "external_lesson": false,
+      "words": 116
+    },
+    {
+      "id": "W11.6a",
+      "week": 11,
+      "group": "[W11.6] Reuse",
+      "title": "Implementation → Reuse → Introduction → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#implementation-reuse-introduction-what",
+      "external_lesson": false,
+      "words": 52
+    },
+    {
+      "id": "W11.6b",
+      "week": 11,
+      "group": "[W11.6] Reuse",
+      "title": "Implementation → Reuse → Introduction → When",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#implementation-reuse-introduction-when",
+      "external_lesson": false,
+      "words": 303
+    },
+    {
+      "id": "W11.6c",
+      "week": 11,
+      "group": "[W11.6] Reuse",
+      "title": "Implementation → Reuse → APIs → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#implementation-reuse-apis-what",
+      "external_lesson": false,
+      "words": 258
+    },
+    {
+      "id": "W11.6d",
+      "week": 11,
+      "group": "[W11.6] Reuse",
+      "title": "Implementation → Reuse → APIs → Designing APIs",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#implementation-reuse-apis-designing-apis",
+      "external_lesson": false,
+      "words": 302
+    },
+    {
+      "id": "W11.6e",
+      "week": 11,
+      "group": "[W11.6] Reuse",
+      "title": "Implementation → Reuse → Libraries → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#implementation-reuse-libraries-what",
+      "external_lesson": false,
+      "words": 123
+    },
+    {
+      "id": "W11.6f",
+      "week": 11,
+      "group": "[W11.6] Reuse",
+      "title": "Implementation → Reuse → Libraries → How",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#implementation-reuse-libraries-how",
+      "external_lesson": false,
+      "words": 85
+    },
+    {
+      "id": "W11.6g",
+      "week": 11,
+      "group": "[W11.6] Reuse",
+      "title": "Implementation → Reuse → Frameworks → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#implementation-reuse-frameworks-what",
+      "external_lesson": false,
+      "words": 214
+    },
+    {
+      "id": "W11.6h",
+      "week": 11,
+      "group": "[W11.6] Reuse",
+      "title": "Implementation → Reuse → Frameworks → Frameworks versus libraries",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#implementation-reuse-frameworks-frameworks-versus-libraries",
+      "external_lesson": false,
+      "words": 267
+    },
+    {
+      "id": "W11.6i",
+      "week": 11,
+      "group": "[W11.6] Reuse",
+      "title": "Implementation → Reuse → Platforms → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#implementation-reuse-platforms-what",
+      "external_lesson": false,
+      "words": 233
+    },
+    {
+      "id": "W11.7a",
+      "week": 11,
+      "group": "[W11.7] Cloud Computing : OPTIONAL",
+      "title": "Implementation → Reuse → Cloud Computing → What",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#implementation-reuse-cloud-computing-what",
+      "external_lesson": false,
+      "words": 151
+    },
+    {
+      "id": "W11.7b",
+      "week": 11,
+      "group": "[W11.7] Cloud Computing : OPTIONAL",
+      "title": "Implementation → Reuse → Cloud Computing → IaaS, PaaS, and SaaS",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#implementation-reuse-cloud-computing-iaas-paas-and-saas",
+      "external_lesson": false,
+      "words": 273
+    },
+    {
+      "id": "W11.8a",
+      "week": 11,
+      "group": "[W11.8] Other UML Models : OPTIONAL",
+      "title": "Design → Modelling → Modelling Behaviors → Communication diagrams",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-modelling-modelling-behaviors-communication-diagrams",
+      "external_lesson": false,
+      "words": 39
+    },
+    {
+      "id": "W11.8b",
+      "week": 11,
+      "group": "[W11.8] Other UML Models : OPTIONAL",
+      "title": "Design → Modelling → Modelling Behaviors → State machine diagrams",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-modelling-modelling-behaviors-state-machine-diagrams",
+      "external_lesson": false,
+      "words": 343
+    },
+    {
+      "id": "W11.8c",
+      "week": 11,
+      "group": "[W11.8] Other UML Models : OPTIONAL",
+      "title": "Design → Modelling → Modelling Structure → Deployment diagrams",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-modelling-modelling-structure-deployment-diagrams",
+      "external_lesson": false,
+      "words": 31
+    },
+    {
+      "id": "W11.8d",
+      "week": 11,
+      "group": "[W11.8] Other UML Models : OPTIONAL",
+      "title": "Design → Modelling → Modelling Structure → Component diagrams",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-modelling-modelling-structure-component-diagrams",
+      "external_lesson": false,
+      "words": 33
+    },
+    {
+      "id": "W11.8e",
+      "week": 11,
+      "group": "[W11.8] Other UML Models : OPTIONAL",
+      "title": "Design → Modelling → Modelling Structure → Package diagrams",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-modelling-modelling-structure-package-diagrams",
+      "external_lesson": false,
+      "words": 31
+    },
+    {
+      "id": "W11.8f",
+      "week": 11,
+      "group": "[W11.8] Other UML Models : OPTIONAL",
+      "title": "Design → Modelling → Modelling Structure → Composite structure diagrams",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-modelling-modelling-structure-composite-structure-diagrams",
+      "external_lesson": false,
+      "words": 21
+    },
+    {
+      "id": "W11.8g",
+      "week": 11,
+      "group": "[W11.8] Other UML Models : OPTIONAL",
+      "title": "Design → Modelling → Modelling Behaviors → Timing diagrams",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-modelling-modelling-behaviors-timing-diagrams",
+      "external_lesson": false,
+      "words": 25
+    },
+    {
+      "id": "W11.8h",
+      "week": 11,
+      "group": "[W11.8] Other UML Models : OPTIONAL",
+      "title": "Design → Modelling → Modelling Behaviors → Interaction overview diagrams",
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-modelling-modelling-behaviors-interaction-overview-diagrams",
+      "external_lesson": false,
+      "words": 24
+    }
+  ],
+  "originalImageLocations": [
+    "https://inspectapedia.com/exterior/ArchitectureStyles.jpg",
+    "https://media.defense.gov/2012/Apr/11/2000162334/670/394/0/120403-F-PR861-011.JPG",
+    "https://nus-cs2103-ay2627-s1.github.io/website/02efa8074d6808ed35a398656ab974b5.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/280e50c63f08262dcbd5aefbd99f7081.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/architecture/architecturalStyles/clientServer/what/images/clientServer.svg",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/architecture/architecturalStyles/clientServer/what/images/clientServerExamples.svg",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/architecture/architecturalStyles/clientServer/what/images/clientServerViews.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/architecture/architecturalStyles/eventDriven/what/images/eventDriven.svg",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/architecture/architecturalStyles/eventDriven/what/images/eventDrivenExamples.svg",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/architecture/architecturalStyles/layered/what/images/layered.svg",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/architecture/architecturalStyles/layered/what/images/layeredExamples.svg",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/architecture/architecturalStyles/monolith/what/images/monolithVsModularMonolith.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/architecture/architecturalStyles/more/usingStyles/images/architectureProgression.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/architecture/architecturalStyles/more/usingStyles/images/minesweeperExample.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/architecture/architecturalStyles/serviceOriented/what/images/composingServices.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/architecture/architecturalStyles/serviceOriented/what/images/monolithVsMicroservices.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/architecture/architectureDiagrams/drawing/images/tip.svg",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/architecture/architectureDiagrams/views/images/c4Levels.svg",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/architecture/architectureDiagrams/views/images/fourPlusOne.svg",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/architecture/architectureDiagrams/views/images/twoViews.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/architecture/introduction/what/images/architecture.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/architecture/introduction/what/images/minesweeper.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/codeQuality/maximizeReadability/basic/avoidDeepNesting/images/arrowheadStyle.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/debugging/what/images/infectionChain.svg",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/designFundamentals/coupling/what/images/alternativeDesigns.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/designFundamentals/coupling/what/images/playerPuzzleManager.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/designPatterns/abstractionOccurrence/what/images/abstractionOccurrence.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/designPatterns/abstractionOccurrence/what/images/beforeAfter.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/designPatterns/abstractionOccurrence/what/images/book.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/designPatterns/abstractionOccurrence/what/images/bookFriends.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/designPatterns/abstractionOccurrence/what/images/bookTitleBookCopy.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/designPatterns/command/what/images/clientInvoker.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/designPatterns/command/what/images/commandCreator.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/designPatterns/facade/what/images/textBook.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/designPatterns/facade/what/images/textLibraryBook.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/designPatterns/facade/what/images/textStorage.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/designPatterns/modelViewController/what/images/classDiagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/designPatterns/modelViewController/what/images/sequenceDiagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/designPatterns/more/combiningDesignPatterns/images/alternativeOne.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/designPatterns/more/combiningDesignPatterns/images/alternativeThree.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/designPatterns/more/combiningDesignPatterns/images/alternativeTwo.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/designPatterns/more/combiningDesignPatterns/images/stockItem.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/designPatterns/more/combiningDesignPatterns/images/stockItemListObjectDiagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/designPatterns/more/combiningDesignPatterns/images/withFacade.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/designPatterns/more/combiningDesignPatterns/images/withMVC.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/designPatterns/more/combiningDesignPatterns/images/withObserver.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/designPatterns/observer/what/images/observableInterfaceDiagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/designPatterns/observer/what/images/observableInterfaceNotation.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/designPatterns/observer/what/images/sequenceDiagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/designPatterns/observer/what/images/studentListObserver.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/designPatterns/observer/what/images/studentListStudentListObserver.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/designPatterns/observer/what/images/studentListUI.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/designPatterns/singleton/what/images/singleton.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/documentation/tools/javaDoc/what/images/generatedHtml.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/documentation/tools/javaDoc/what/images/intellijTooltip.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/errorHandling/defensiveProgramming/1to1Associations/images/minedCell.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantor.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantorImmutable.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/countryCity.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/manMarriageWoman.jpg",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/managerAccount.jpg",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/bankAccount.jpg",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/clubMember.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/manWoman.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/manWomanAssoc.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/playerRegion.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/teacherStudent.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/woman.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/gatheringRequirements/prototyping/images/wireframeExample.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/integration/approaches/topDownVsBottomUp/images/aAnswer.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/integration/approaches/topDownVsBottomUp/images/abc.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/integration/approaches/topDownVsBottomUp/images/approaches.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/integration/approaches/topDownVsBottomUp/images/bAnswer.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/integration/approaches/topDownVsBottomUp/images/cAnswer.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/integration/approaches/topDownVsBottomUp/images/hospital.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/integration/approaches/topDownVsBottomUp/images/hospitalIntegration.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingASolution/basic/images/logicMinefield.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingASolution/basic/images/playerText.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingASolution/basic/images/playerTextLogic.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingASolution/basic/images/playerTextLoop.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingASolution/basic/images/textLogicMinefieldCell.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingASolution/intermediate/images/fullClassDiagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingASolution/intermediate/images/logicConfigGenerator.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingASolution/intermediate/images/logicMinefieldFunctions.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingASolution/intermediate/images/logicMinefieldGetGameState.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingASolution/intermediate/images/logicMinefieldNewGame.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingASolution/intermediate/images/logicMinefieldReset.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingASolution/intermediate/images/logicMinefieldUpdateState.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingASolution/intermediate/images/logicTimerOpt.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingASolution/intermediate/images/minefieldCellAlt.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingASolution/intermediate/images/playerTextLogicRef.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingASolution/intermediate/images/textLogicMinefieldCell.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingASolution/intermediate/images/textLogicMinefieldCellConfigGenerator.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingASolution/intermediate/images/textLogicSd.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingBehaviors/activityDiagrams/images/sequence.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingBehaviors/communicationDiagrams/images/diagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingBehaviors/interactionOverviewDiagrams/images/diagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingBehaviors/sequenceDiagramsBasic/images/notationMistakes.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/exerciseDiagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/parserFactory.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingBehaviors/stateMachineDiagrams/images/minesweeper.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingBehaviors/timingDiagrams/images/diagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingStructures/classDiagramsBasic/images/ageListCalculatorPerson.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingStructures/classDiagramsBasic/images/ageListCalculatorPersonMinimal.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingStructures/classDiagramsIntermediate/images/professorStudent.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingStructures/classDiagramsIntermediate/images/snakes-board-piece.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingStructures/componentDiagrams/images/diagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingStructures/compositeStructureDiagrams/images/diagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingStructures/deploymentDiagrams/images/diagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingStructures/objectOrientedDomainModels/images/diagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingStructures/objectOrientedDomainModels/images/playerTurn.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingStructures/ooStructures/images/classDiagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingStructures/ooStructures/images/classesAdHoc.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingStructures/ooStructures/images/objectDiagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingStructures/ooStructures/images/objectsAdHoc.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingStructures/ooStructures/images/objectsAdHoc2.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingStructures/packageDiagrams/images/diagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/oop/associations/associationClasses/images/exerciseDiagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/oop/inheritance/interfaces/images/studentStaff.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/oop/inheritance/overriding/images/overriding.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/oop/inheritance/what/images/inheritanceTreesExamples.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/oop/inheritance/what/images/multipleInheritanceExamples.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/principles/dependencyInversionPrinciple/images/payrollEmployee.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/principles/interfaceSegregationPrinciple/images/payroll.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/principles/liskovSubstitutionPrinciple/images/payroll.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/principles/liskovSubstitutionPrinciple/images/rectangleSquare.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/principles/openClosedPrinciple/images/commandQueue.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/processModels/exampleProcessModels/scrum/images/diagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/processModels/exampleProcessModels/unifiedProcess/images/diagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/processModels/exampleProcessModels/xp/images/diagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/processModels/introduction/iterativeModels/images/diagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/processModels/introduction/sequentialModels/images/diagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/processModels/more/cmmi/images/diagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/projectPlanning/buffers/images/schedule.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/projectPlanning/ganttCharts/images/gantt.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/projectPlanning/issueTrackers/images/kanbanBoard.svg",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/projectPlanning/issueTrackers/images/xjira.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/projectPlanning/pertCharts/images/pert.svg",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/reuse/apis/designingAPIs/images/textLogic.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/softwareEngineering/introduction/prosAndCons/images/aiSeModes.svg",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/specifyingRequirements/useCases/details/images/extension.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/specifyingRequirements/useCases/details/images/inclusion.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/specifyingRequirements/useCases/identifying/images/qaSystem.jpg",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/specifyingRequirements/useCases/identifying/images/ticketMachine.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/specifyingRequirements/useCases/introduction/images/ticketMachine.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/specifyingRequirements/useCases/usage/images/actorGeneralisation.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/specifyingRequirements/useCases/usage/images/systemAsActor.jpg",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/specifyingRequirements/userStories/introduction/images/userStoriesOnTable.jpg",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/specifyingRequirements/userStories/introduction/images/userStoriesWithSoftware.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/specifyingRequirements/userStories/introduction/images/workingWithStories.jpg",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/specifyingRequirements/userStories/usage/images/userJourney.svg",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/specifyingRequirements/userStories/usage/images/userStoriesInGitHubProjectBoards.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/specifyingRequirements/userStories/usage/images/userStoriesInGoogleSheets.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/specifyingRequirements/userStories/usage/images/userStoriesInTrello.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/specifyingRequirements/userStories/usage/images/userStoryAsGitHubIssue.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/teamwork/teamStructures/images/diagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/testing/dependencyInjection/what/images/diagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/testing/introduction/what/images/diagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/testing/testAutomation/testingGuis/images/diagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/testing/testAutomation/tools/images/junit.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/testing/testingTypes/developerTesting/why/images/diagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/classDiagrams/associationClasses/what/images/bookLoan.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/classDiagrams/associationClasses/what/images/notation.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/classDiagrams/associationsAsAttributes/what/images/board.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/classDiagrams/associationsAsAttributes/what/images/cd-BookAuthor1.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/classDiagrams/associationsAsAttributes/what/images/cd-BookAuthor2.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/classDiagrams/associationsAsAttributes/what/images/cd-BookAuthor3.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/classDiagrams/associationsAsAttributes/what/images/squareMultiplicity.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/miscellaneous/objectVsClassDiagrams/images/cd-ParentAndChild.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/miscellaneous/objectVsClassDiagrams/images/cd-StudentDegree.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/miscellaneous/objectVsClassDiagrams/images/exerciseDiagram.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/miscellaneous/objectVsClassDiagrams/images/od-ChildOnly.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/miscellaneous/objectVsClassDiagrams/images/od-ParentAndChild.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/miscellaneous/objectVsClassDiagrams/images/od-ParentOnly.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/miscellaneous/objectVsClassDiagrams/images/od-StudentDegree.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/miscellaneous/objectVsClassDiagrams/images/professorStudent.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/miscellaneous/objectVsClassDiagrams/images/professorStudentAdmin.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/notes/constraints/images/playerTurn.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/notes/notes/images/adminProfessor.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/sequenceDiagrams/introduction/images/machine.svg",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/sequenceDiagrams/parallelPaths/images/logicServerData.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/sequenceDiagrams/parallelPaths/images/notation.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/sequenceDiagrams/referenceFrames/images/notation.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/sequenceDiagrams/referenceFrames/images/playerTextLogic.png",
+    "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/sequenceDiagrams/referenceFrames/images/textLogic.png",
+    "https://se-edu.github.io/addressbook-level3/images/LogicClassDiagram.png",
+    "https://se-edu.github.io/addressbook-level3/images/StorageClassDiagram.png",
+    "https://se-edu.github.io/addressbook-level3/images/UiClassDiagram.png",
+    "https://se-education.org/addressbook-level2/images/mainClassDiagram.png",
+    "https://se-education.org/addressbook-level3/images/ArchitectureDiagram.png",
+    "https://upload.wikimedia.org/wikipedia/commons/5/5b/Flight_data_recorder_displayed_at_HAL_Museum_7893.JPG",
+    "https://upload.wikimedia.org/wikipedia/commons/a/af/Pair_programming_1.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/b/b5/Cloud_computing.svg",
+    "https://upload.wikimedia.org/wikipedia/commons/e/e7/Activity_conducting.svg",
+    "https://upload.wikimedia.org/wikipedia/commons/e/ed/UML_diagrams_overview.svg",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Fred_Brooks.jpg/800px-Fred_Brooks.jpg",
+    "https://upload.wikimedia.org/wikipedia/en/f/fd/Mythical_man-month_%28book_cover%29.jpg"
+  ],
+  "attributions": [
+    {
+      "topic": "W1.1a",
+      "attribution": "-- Object-Oriented Programming with Objective-C , Apple",
+      "links": [
+        "https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OOP_ObjC/"
+      ]
+    },
+    {
+      "topic": "W1.1b",
+      "attribution": "-- Object-Oriented Programming with Objective-C , Apple",
+      "links": [
+        "https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OOP_ObjC/"
+      ]
+    },
+    {
+      "topic": "W1.1d",
+      "attribution": "-- Object-Oriented Programming with Objective-C , Apple",
+      "links": [
+        "https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OOP_ObjC/"
+      ]
+    },
+    {
+      "topic": "W1.3a",
+      "attribution": "-- Object-Oriented Programming with Objective-C , Apple",
+      "links": [
+        "https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OOP_ObjC/"
+      ]
+    },
+    {
+      "topic": "W1.3e",
+      "attribution": "-- Oracle Docs on Java",
+      "links": [
+        "https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html"
+      ]
+    },
+    {
+      "topic": "W1.5a",
+      "attribution": "Microsoft",
+      "links": [
+        "https://docs.microsoft.com/en-my/windows/win32/debug/error-handling"
+      ]
+    },
+    {
+      "topic": "W1.6a",
+      "attribution": "[ Text and book cover source: Wikipedia ]",
+      "links": [
+        "https://en.wikipedia.org/wiki/The_Mythical_Man-Month"
+      ]
+    },
+    {
+      "topic": "W1.6a",
+      "attribution": "[ Fred Brooks photo source ]",
+      "links": [
+        "https://commons.wikimedia.org/wiki/File:Fred_Brooks.jpg"
+      ]
+    },
+    {
+      "topic": "W2.5a",
+      "attribution": "-- source: Software Engineering Book of Knowledge V3",
+      "links": [
+        "https://www.computer.org/web/swebok/v3"
+      ]
+    },
+    {
+      "topic": "W4.1c",
+      "attribution": "source: https://en.wikipedia.org/",
+      "links": [
+        "https://en.wikipedia.org/wiki/Unified_Modeling_Language"
+      ]
+    },
+    {
+      "topic": "W4.8a",
+      "attribution": "[ source: Wikipedia ]",
+      "links": [
+        "https://en.wikipedia.org/wiki/Pair_programming"
+      ]
+    },
+    {
+      "topic": "W4.8a",
+      "attribution": "[ image credit: Wikipedia ]",
+      "links": [
+        "https://en.wikipedia.org/wiki/Pair_programming"
+      ]
+    },
+    {
+      "topic": "W5.2f",
+      "attribution": "[ source ]",
+      "links": [
+        "http://www.hanscom.af.mil/News/Article-Display/Article/380048/caring-for-people-forum-identifies-issues/"
+      ]
+    },
+    {
+      "topic": "W5.3c",
+      "attribution": "[ Mike Cohn ]",
+      "links": [
+        "https://www.mountaingoatsoftware.com/agile/user-stories"
+      ]
+    },
+    {
+      "topic": "W5.3c",
+      "attribution": "[ Mike Cohn ]",
+      "links": [
+        "https://www.mountaingoatsoftware.com/agile/user-stories"
+      ]
+    },
+    {
+      "topic": "W5.3e",
+      "attribution": "[Mike Cohn, MountainGoat Software 🔗 ]",
+      "links": [
+        "https://www.mountaingoatsoftware.com/agile/user-stories"
+      ]
+    },
+    {
+      "topic": "W5.4a",
+      "attribution": "-- Niklaus Wirth",
+      "links": [
+        "https://en.wikipedia.org/wiki/Niklaus_Wirth"
+      ]
+    },
+    {
+      "topic": "W5.4j",
+      "attribution": "-- Donald Knuth",
+      "links": [
+        "https://en.wikipedia.org/wiki/Donald_Knuth"
+      ]
+    },
+    {
+      "topic": "W5.4t",
+      "attribution": "-- Steve McConnell , Author of Code Complete",
+      "links": [
+        "https://en.wikipedia.org/wiki/Steve_McConnell"
+      ]
+    },
+    {
+      "topic": "W6.3a",
+      "attribution": "source: https://commons.wikimedia.org",
+      "links": [
+        "https://upload.wikimedia.org/wikipedia/commons/5/5b/Flight_data_recorder_displayed_at_HAL_Museum_7893.JPG"
+      ]
+    },
+    {
+      "topic": "W7.3c",
+      "attribution": "-- adapted from agilemodeling.com",
+      "links": [
+        "http://agilemodeling.com/essays/agileDesign.htm"
+      ]
+    },
+    {
+      "topic": "W9.1a",
+      "attribution": "-- Ian Sommerville, in the book Software Engineering",
+      "links": [
+        "http://www.software-engin.com/"
+      ]
+    },
+    {
+      "topic": "W9.2a",
+      "attribution": "[ source:wikipeida ]",
+      "links": [
+        "https://en.wikipedia.org/wiki/Activity_diagram"
+      ]
+    },
+    {
+      "topic": "W9.2a",
+      "attribution": "[ source:wikipeida ]",
+      "links": [
+        "https://en.wikipedia.org/wiki/Activity_diagram"
+      ]
+    },
+    {
+      "topic": "W9.5c",
+      "attribution": "-- proposed by Barbara Liskov",
+      "links": [
+        "https://en.wikipedia.org/wiki/Barbara_Liskov"
+      ]
+    },
+    {
+      "topic": "W9.5d",
+      "attribution": "-- proposed by Bertrand Meyer",
+      "links": [
+        "https://en.wikipedia.org/wiki/Bertrand_Meyer"
+      ]
+    },
+    {
+      "topic": "W9.5h",
+      "attribution": "-- proposed by Bertrand Meyer",
+      "links": [
+        "https://en.wikipedia.org/wiki/Bertrand_Meyer"
+      ]
+    },
+    {
+      "topic": "W9.5h",
+      "attribution": "-- proposed by Barbara Liskov",
+      "links": [
+        "https://en.wikipedia.org/wiki/Barbara_Liskov"
+      ]
+    },
+    {
+      "topic": "W9.7a",
+      "attribution": "-- Extract from the Agile Manifesto",
+      "links": [
+        "http://agilemanifesto.org/"
+      ]
+    },
+    {
+      "topic": "W10.3c",
+      "attribution": "Note: these videos are from the Udacity course Software Development Process by Georgia Tech",
+      "links": [
+        "https://www.udacity.com/course/software-development-process--ud805"
+      ]
+    },
+    {
+      "topic": "W11.2a",
+      "attribution": "source: https://inspectapedia.com",
+      "links": [
+        "https://inspectapedia.com"
+      ]
+    },
+    {
+      "topic": "W11.7b",
+      "attribution": "source: https://commons.wikimedia.org",
+      "links": [
+        "https://en.wikipedia.org/wiki/Cloud_computing"
+      ]
+    },
+    {
+      "topic": "W11.8c",
+      "attribution": "source: https://commons.wikimedia.org",
+      "links": [
+        "https://en.wikipedia.org/wiki/Deployment_diagram"
+      ]
+    },
+    {
+      "topic": "W11.8d",
+      "attribution": "source: https://commons.wikimedia.org",
+      "links": [
+        "https://en.wikipedia.org/wiki/Component_diagram"
+      ]
+    },
+    {
+      "topic": "W11.8e",
+      "attribution": "source: https://commons.wikimedia.org",
+      "links": [
+        "https://en.wikipedia.org/wiki/Package_diagram"
+      ]
+    },
+    {
+      "topic": "W11.8f",
+      "attribution": "source: https://commons.wikimedia.org",
+      "links": [
+        "https://en.wikipedia.org/wiki/Composite_structure_diagram"
+      ]
+    },
+    {
+      "topic": "W11.8h",
+      "attribution": "source: https://commons.wikimedia.org",
+      "links": [
+        "https://en.wikipedia.org/wiki/Interaction_overview_diagram"
+      ]
+    }
+  ]
+}

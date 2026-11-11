@@ -1,0 +1,31 @@
+IMPLEMENTATION PLAN — SIMPLIFIED, 11 NOVEMBER 2026
+
+Stage 1: Replicate and publish the existing study guide.
+- Keep 321 topic cards, original text, week/topic search, recall, print and progress.
+- Freeze the current website-only snapshot. Keep source links and credits.
+- Separate local CSS/JS and deduplicated images; deploy site/ only.
+- Sanitize source markup/images, validate progress imports, enforce a CSP.
+- Commit reviewed project files only, with no credentials, temporary files or personal paths.
+- Create the public repository, enable Pages, deploy and verify its live URL.
+
+Stage 2: Add simple flashcards after the first successful Pages deployment.
+- Generate a fixed question pool from meaningful bolded theory in the snapshot.
+- Use cloze questions with exact source-backed answers; no runtime AI or external theory.
+- Select a random card; click/Enter/Space to reveal its answer.
+- Filter by week and topic. Allow/disallow repeated cards in a session.
+- Skip moves on and saves the card for later. Incorrect saves it for later.
+- Correct clears that card's revisit flag. Next and Repeat support simple practice.
+- A Revisit filter shows skipped and incorrect cards; flags persist in the browser.
+- Keep progress local, provide a validated backup/reset path, and handle empty decks.
+- No spaced repetition, scheduling, accounts, backend, analytics or automatic grading.
+- Test filters, reveal, repeat/no-repeat, skip, incorrect/correct and reload persistence.
+- Deploy the second stage, then verify it on the public Pages site.
+
+Release conditions:
+- All existing topics accounted for. Every generated answer matches a source passage.
+- No secret/private application endpoint or source-script execution in the project.
+- Tests pass; mobile/keyboard, diagrams, printing and deployed subpath work.
+- Source snapshot, third-party attribution and hosting privacy limits documented.
+- Pin Actions to commit SHAs, use least privilege, deploy trusted main commits only.
+- Keep the original standalone offline HTML available separately; hosted offline use is not promised.
+- Recover a failed release by reverting the relevant commit and redeploying.

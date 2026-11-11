@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="808" height="450" id="svg2" version="1.1">
+  <ns0:defs id="defs134" />
+  <ns0:title id="title4">UML Diagrammhierarchie</ns0:title>
+  <ns0:g id="g3484" transform="translate(-47.454453,-10.960641)">
+    <ns0:rect id="rect6" style="fill:#ffffff;stroke:#000000;stroke-width:1" height="50" width="100" y="20" x="415" />
+    <ns0:text id="text8" style="font-style:italic;font-size:14px;font-family:Arial, sans-serif;text-anchor:middle;fill:#000000" y="49" x="465">Diagram</ns0:text>
+  </ns0:g>
+  <ns0:path d="m 149.42532,105.63821 0,-15.236117 439.07288,0 0,15.236117 m -178.00251,-15.236117 0,-15.236115 -7.12011,0 7.12011,-15.236117 7.1201,15.236117 -7.1201,0" style="fill:none;stroke:#000000;stroke-width:1.09789038" id="path10" />
+  <ns0:path d="m 412.16322,276.52956 0,-90.03028 279.4427,0 0,15.00504 0,-15.00504 55.88855,0 0,90.03028 m -279.44271,-75.02524 0,-15.00504 m 55.88853,90.03028 0,-90.03028 m 111.77708,90.03028 0,-90.03028 m -55.88854,15.00504 0,-30.0101 -5.58885,0 5.58885,-15.00505 5.58885,15.00505 -5.58885,0" style="fill:none;stroke:#000000;stroke-width:0.96529227" id="path24" />
+  <ns0:path d="m 88.09468,201.50914 0,-15 180,0 0,90 m -60,-75 0,-15 m -60,90 0,-105 -6,0 6,-15 6,15 -6,0" style="fill:none;stroke:#000000;stroke-width:1" id="path26" />
+  <ns0:g id="g3532" transform="translate(-12,0)">
+    <ns0:rect id="rect28" style="fill:#ffffff;stroke:#000000;stroke-width:0.91521251" height="50.084789" width="83.619591" y="201.46674" x="440.01443" />
+    <ns0:text transform="scale(1.0082404,0.99182697)" id="text30" style="font-size:14.11308479px;font-family:Arial, sans-serif;text-anchor:middle;fill:#000000" y="224.34334" x="477.06976">Class<ns0:tspan id="tspan32" y="241.48067" x="477.06976">Diagram</ns0:tspan>
+</ns0:text>
+  </ns0:g>
+  <ns0:g id="g3540" transform="translate(-20,0)">
+    <ns0:rect id="rect34" style="fill:#ffffff;stroke:#000000;stroke-width:0.95005733" height="50.049942" width="90.170822" y="201.48418" x="557.91559" />
+    <ns0:text id="text36" style="font-size:14px;font-family:Arial, sans-serif;text-anchor:middle;fill:#000000" y="222.50914" x="602.17773">Component<ns0:tspan id="tspan38" y="239.50914" x="602.17773">Diagram</ns0:tspan>
+</ns0:text>
+  </ns0:g>
+  <ns0:g id="g3548" transform="translate(-28,0)">
+    <ns0:rect id="rect40" style="fill:#ffffff;stroke:#000000;stroke-width:0.91076106" height="50.089241" width="82.800781" y="201.46452" x="682.01221" />
+    <ns0:text id="text42" style="font-size:14px;font-family:Arial, sans-serif;text-anchor:middle;fill:#000000" y="222.50914" x="722.17773">Object<ns0:tspan id="tspan44" y="239.50914" x="722.17773">Diagram</ns0:tspan>
+</ns0:text>
+  </ns0:g>
+  <ns0:g id="g3469" transform="translate(-11.642652,-9.3141213)">
+    <ns0:rect id="rect46" style="fill:#ffffff;stroke:#000000;stroke-width:1" height="50" width="100" y="210.82324" x="49.737339" />
+    <ns0:text id="text48" style="font-size:14px;font-family:Arial, sans-serif;text-anchor:middle;fill:#000000" y="231.82324" x="99.737335">Activity<ns0:tspan id="tspan50" y="248.82326" x="99.737335">Diagram</ns0:tspan>
+</ns0:text>
+  </ns0:g>
+  <ns0:g id="g3474" transform="translate(47.632051,66.425779)">
+    <ns0:rect id="rect52" style="fill:#ffffff;stroke:#000000;stroke-width:1" height="50" width="100" y="210.82324" x="169.73735" />
+    <ns0:text id="text54" style="font-size:14px;font-family:Arial, sans-serif;text-anchor:middle;fill:#000000" y="231.82324" x="219.73732">Use Case<ns0:tspan id="tspan56" y="248.82326" x="219.73732">Diagram</ns0:tspan>
+</ns0:text>
+  </ns0:g>
+  <ns0:g id="g3572" transform="translate(-34,0)">
+    <ns0:rect id="rect58" style="fill:#ffffff;stroke:#000000;stroke-width:0.88816178" height="50.111839" width="78.707085" y="277.27649" x="741.7655" />
+    <ns0:text id="text60" style="font-size:14px;font-family:Arial, sans-serif;text-anchor:middle;fill:#000000" y="298.3324" x="781.11902">Profile<ns0:tspan id="tspan62" y="315.3324" x="781.11902">Diagram</ns0:tspan>
+</ns0:text>
+  </ns0:g>
+  <ns0:g id="g3513" transform="translate(-144.30836,-9.3141213)">
+    <ns0:rect id="rect64" style="fill:#ffffff;stroke:#000000;stroke-width:1" height="60" width="100" y="285.82327" x="503.82037" />
+    <ns0:text id="text66" style="font-size:14px;font-family:Arial, sans-serif;text-anchor:middle;fill:#000000" y="304.82327" x="553.82037">Composite<ns0:tspan id="tspan68" y="320.82327" x="553.82037">Structure</ns0:tspan>
+<ns0:tspan id="tspan70" y="336.82327" x="553.82037">Diagram</ns0:tspan>
+</ns0:text>
+  </ns0:g>
+  <ns0:g id="g3556" transform="translate(-18,0)">
+    <ns0:rect id="rect72" style="fill:#ffffff;stroke:#000000;stroke-width:0.95856619" height="50.041431" width="91.808838" y="276.48843" x="496.90063" />
+    <ns0:text id="text74" style="font-size:14px;font-family:Arial, sans-serif;text-anchor:middle;fill:#000000" y="297.50916" x="541.98181">Deployment<ns0:tspan id="tspan76" y="314.50916" x="541.98181">Diagram</ns0:tspan>
+</ns0:text>
+  </ns0:g>
+  <ns0:g id="g3564" transform="translate(-18,0)">
+    <ns0:rect id="rect78" style="fill:#ffffff;stroke:#000000;stroke-width:0.91521245" height="50.084789" width="83.619591" y="276.46677" x="620.17206" />
+    <ns0:text id="text80" style="font-size:14px;font-family:Arial, sans-serif;text-anchor:middle;fill:#000000" y="297.50916" x="661.98181">Package<ns0:tspan id="tspan82" y="314.50916" x="661.98181">Diagram</ns0:tspan>
+</ns0:text>
+  </ns0:g>
+  <ns0:g id="g3464" transform="translate(-11.642652,-9.3141213)">
+    <ns0:rect id="rect84" style="fill:#ffffff;stroke:#000000;stroke-width:1" height="50" width="100" y="285.82327" x="109.73734" />
+    <ns0:text id="text86" style="font-style:italic;font-size:14px;font-family:Arial, sans-serif;text-anchor:middle;fill:#000000" y="306.82327" x="159.73734">Interaction<ns0:tspan id="tspan88" y="323.82327" x="159.73734">Diagram</ns0:tspan>
+</ns0:text>
+  </ns0:g>
+  <ns0:g id="g3458" transform="translate(-70.917357,-83.407502)">
+    <ns0:g id="g3577">
+      <ns0:rect x="229.73732" y="285.82327" width="100" height="60" style="fill:#ffffff;stroke:#000000;stroke-width:1" id="rect90" />
+      <ns0:text x="279.73734" y="304.82327" style="font-size:14px;font-family:Arial, sans-serif;text-anchor:middle;fill:#000000" id="text92">State<ns0:tspan x="279.73734" y="320.82327" id="tspan94">Machine</ns0:tspan>
+<ns0:tspan x="279.73734" y="336.82327" id="tspan96">Diagram</ns0:tspan>
+</ns0:text>
+    </ns0:g>
+  </ns0:g>
+  <ns0:path d="m 409.75882,372.32352 0,-14.99425 -334.866806,0 0,14.99425 m 221.527276,0 0,-14.99425 m -113.33954,14.99425 0,-29.9885 6.18216,0 -6.18216,-14.99425 -6.18216,14.99425 6.18216,0" style="fill:none;stroke:#000000;stroke-width:1.01487172" id="path98" />
+  <ns0:g id="g3453" transform="translate(-72.9036,-10.960641)">
+    <ns0:rect id="rect100" style="fill:#ffffff;stroke:#000000;stroke-width:1" height="50" width="100" y="382.46979" x="321.94873" />
+    <ns0:text id="text102" style="font-size:14px;font-family:Arial, sans-serif;text-anchor:middle;fill:#000000" y="401.82324" x="368.6557">Sequence<ns0:tspan id="tspan104" y="418.82324" x="368.6557">Diagram</ns0:tspan>
+</ns0:text>
+  </ns0:g>
+  <ns0:g id="g3437" transform="translate(28.357348,-9.3141213)">
+    <ns0:rect id="rect106" style="fill:#ffffff;stroke:#000000;stroke-width:1" height="50" width="110" y="381.64651" x="-5.2626619" />
+    <ns0:text id="text108" style="font-size:14px;font-family:Arial, sans-serif;text-anchor:middle;fill:#000000" y="402.64651" x="49.737339">Communication<ns0:tspan id="tspan110" y="419.64651" x="49.737339">Diagram</ns0:tspan>
+</ns0:text>
+  </ns0:g>
+  <ns0:g id="g3442" transform="translate(28.357348,-9.3141213)">
+    <ns0:rect id="rect112" style="fill:#ffffff;stroke:#000000;stroke-width:1" height="60" width="100" y="381.64651" x="109.73734" />
+    <ns0:text id="text114" style="font-size:14px;font-family:Arial, sans-serif;text-anchor:middle;fill:#000000" y="400.64651" x="159.73734">Interaction<ns0:tspan id="tspan116" y="416.64651" x="159.73734">Overview</ns0:tspan>
+<ns0:tspan id="tspan118" y="432.64651" x="159.73734">Diagram</ns0:tspan>
+</ns0:text>
+  </ns0:g>
+  <ns0:g id="g3448" transform="translate(144.43698,-9.3141213)">
+    <ns0:rect id="rect120" style="fill:#ffffff;stroke:#000000;stroke-width:1" height="50" width="100" y="381.64651" x="214.73732" />
+    <ns0:text id="text122" style="font-size:14px;font-family:Arial, sans-serif;text-anchor:middle;fill:#000000" y="402.64651" x="264.73734">Timing<ns0:tspan id="tspan124" y="419.64651" x="264.73734">Diagram</ns0:tspan>
+</ns0:text>
+  </ns0:g>
+  <ns0:g id="g3432" transform="translate(3.7666869,-0.3745623)">
+    <ns0:polygon transform="translate(672.60325,-6.5860783)" id="polygon126" style="fill:#ffffff;stroke:#000000;stroke-width:1" points="98,407 110,407 110,430 15,430 15,430 15,395 98,395 " />
+    <ns0:polygon transform="translate(672.60325,-6.5860783)" id="polygon128" style="fill:#ffffff;stroke:#000000;stroke-width:1" points="110,407 98,395 98,395 98,407 " />
+    <ns0:text id="text130" style="font-style:italic;font-size:12px;font-family:Arial, sans-serif;text-anchor:middle;fill:#000000" y="411.41391" x="732.60327">Notation: UML</ns0:text>
+  </ns0:g>
+  <ns0:g id="g3479" transform="translate(-11.642652,-9.3141213)">
+    <ns0:rect id="rect12" style="fill:#ffffff;stroke:#000000;stroke-width:1" height="50" width="100" y="115" x="110.20424" />
+    <ns0:text id="text20" style="font-style:italic;font-size:14px;font-family:Arial, sans-serif;text-anchor:middle;fill:#000000" y="134.68916" x="157.16353">Behaviour<ns0:tspan id="tspan22" y="151.68916" x="157.16353">Diagram</ns0:tspan>
+</ns0:text>
+  </ns0:g>
+  <ns0:g id="g3488" transform="translate(-25.758951,-9.3141213)">
+    <ns0:rect id="rect18" style="fill:#ffffff;stroke:#000000;stroke-width:1" height="50" width="100" y="115" x="565" />
+    <ns0:text id="text14" style="font-style:italic;font-size:14px;font-family:Arial, sans-serif;text-anchor:middle;fill:#000000" y="133.95135" x="613.83392">Structure<ns0:tspan id="tspan16" y="150.95135" x="613.83392">Diagram</ns0:tspan>
+</ns0:text>
+  </ns0:g>
+</ns0:svg>

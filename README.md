@@ -1,0 +1,44 @@
+# CS2103/T study guide
+
+An independent study aid for NUS CS2103/T AY 2026/27 Semester 1. It is not an official NUS website.
+
+The guide contains 321 topic cards from the weekly Topics pages, with the course's wording, search, week/section filters, examples, diagrams, recall and printing. Weeks 12–13 have no assigned topics.
+
+## Run locally
+
+No installation or build is required:
+
+```sh
+python3 -m http.server 8000 --directory site
+```
+
+Open `http://localhost:8000/`. Run validation with:
+
+```sh
+python3 -m unittest discover -s tests -v
+node --check site/app.js
+```
+
+## Publishing
+
+GitHub Pages deploys only `site/` after checks pass on `main`. In repository Settings → Pages, select GitHub Actions. Enable HTTPS. Relative paths support a project URL under the repository name. Failed releases can be rolled back by reverting the relevant commit and rerunning deployment.
+
+## Content and attribution
+
+The frozen snapshot was retrieved on 11 November 2026 from the [course Topics pages](https://nus-cs2103-ay2627-s1.github.io/website/schedule/week1/topics.html). Source links and attribution appear in each topic and the guide notes. See `CONTENT_SOURCES.json` and `THIRD_PARTY_NOTICES.md`.
+
+The underlying textbook declares an MIT licence. Third-party works retain their own rights and attributions; this project does not claim ownership or relicence them. Formatting is adapted. External lessons, interactive quizzes and tooltip explanations may still require the original site. Two unavailable illustrative photos remain source links.
+
+This is a snapshot, not an automatic content mirror. No remote course scripts are executed in this repository or deployment workflow. Content updates must be reviewed against the original site and committed deliberately.
+
+## Privacy and security
+
+The application has no accounts, backend, API keys, runtime AI, analytics or outbound API calls. Only public static assets and source links are included. Progress stays in browser local storage; exports are downloaded locally. Do not place sensitive information in backups. GitHub Pages logs visitor IP addresses for hosting security; see [GitHub's documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection).
+
+A restrictive meta Content Security Policy and safe rendering limit executable content. Header-only protections such as CSP `frame-ancestors` are not claimed. Browser storage is not an authentication or confidentiality boundary. Clearing storage or switching browsers can lose progress; export backups first. The original offline guide and hosted site use separate storage.
+
+To report a security issue, provide a minimal reproduction without secrets or personal data. Never post credentials in issues. Public repository files and commit metadata are public.
+
+## Implementation stages
+
+See `PLAN.txt`. Stage 1 publishes the guide. Stage 2 adds random source-backed flashcards with reveal, filters and a local revisit list; no scheduling or automatic grading.
