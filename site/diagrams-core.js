@@ -15,15 +15,20 @@
     }
     return scene;
   }
-  function partIds(scene) {
-    return [...scene.nodes.flatMap(node => [node.id, ...node.rows.map(row => row.id)]),
-      ...scene.edges.flatMap(edge => [edge.id, ...edge.multiplicity.map(item => item.id)]), ...scene.shapes.map(shape => shape.id)];
+  // Keep original mistake IDs so saved exercises and old backups still work.
+  function createDeck(cases) {
+    return cases.flatMap(question => {
+      const base = {id: question.id, family: question.family, context: question.context,
+        topicId: question.topicId, source: question.source, rule: question.rule};
+      return [
+        {...base, scene: question.scene, isCorrect: false,
+          answer: 'Incorrect. ' + question.explanation},
+        {...base, id: question.id + '-correct', scene: correctedScene(question),
+          isCorrect: true, answer: 'Correct. ' + question.rule}
+      ];
+    });
   }
-  function assess(question, choice) {
-    if (!partIds(question.scene).includes(choice)) throw new Error('Unknown diagram element');
-    return question.answerIds.includes(choice);
-  }
-  const api = {correctedScene, partIds, assess};
+  const api = {correctedScene, createDeck};
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else root.DiagramCore = api;
 })(globalThis);

@@ -7,8 +7,8 @@
     if (text !== undefined) node.textContent = text;
     return node;
   }
-  function render(scene, choose, enabled = true, identified = []) {
-    const svg = el('svg', {viewBox: '0 0 800 520', class: 'diagram-svg', role: 'group', 'aria-label': 'Practice diagram. Select an element or use the element buttons below.'});
+  function render(scene) {
+    const svg = el('svg', {viewBox: '0 0 800 520', class: 'diagram-svg', role: 'group', 'aria-label': 'Diagram example'});
     // Trim empty vertical canvas space without moving any diagram element.
     const bounds=[];
     scene.nodes.filter(item=>!item.hidden).forEach(item=>bounds.push(item.y-10,item.y+item.h+10));
@@ -20,15 +20,8 @@
     const only=scene.nodes.find(item=>!item.hidden);
     svg.setAttribute('viewBox',`${narrow?only.x-40:0} ${top} ${narrow?only.w+80:800} ${bottom-top}`);
     if(narrow)svg.classList.add('narrow');
-    const labels = [];
     function part(id, label, description = label) {
-      const group = el('g', {class: 'diagram-part' + (identified.includes(id) ? ' identified' : ''), 'data-part': id});
-      labels.push({id, label, description});
-      if (enabled) {
-        group.setAttribute('role', 'button'); group.setAttribute('tabindex', '0'); group.setAttribute('aria-label', description);
-        group.addEventListener('click', () => choose(id));
-        group.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); choose(id); } });
-      }
+      const group = el('g', {'data-part': id, role: 'img', 'aria-label': description});
       svg.append(group); return group;
     }
     function text(group, x, y, value, classes = '') {
@@ -69,8 +62,6 @@
         edge.kind==='lifeline'?'dashed lifeline':(edge.kind==='dashed'?'dashed line':'solid line')+(edge.direction==='none'?', no arrowhead':edge.direction==='both'?', arrowheads at both ends':', arrowhead at '+target);
       const label=edge.label?'Message: '+edge.label:'Connection '+(edgeIndex+1);
       const group=part(edge.id,label,label+', from '+from+' to '+to+', '+notation);
-      const angle=Math.atan2(edge.y2-edge.y1,edge.x2-edge.x1)*180/Math.PI;
-      group.append(el('rect', {x:edge.x1,y:edge.y1-28,width:Math.hypot(edge.x2-edge.x1,edge.y2-edge.y1),height:56,transform:`rotate(${angle} ${edge.x1} ${edge.y1})`,class:'label-hit'}));
       group.append(el('line', {x1: edge.x1, y1: edge.y1, x2: edge.x2, y2: edge.y2,
         class: 'diagram-line' + (['dashed','lifeline'].includes(edge.kind) ? ' dashed' : '')}));
       if (edge.direction === 'right' || edge.direction === 'both') arrow(group, edge.x2, edge.y2, edge.x1, edge.y1, edge.kind);
@@ -78,7 +69,6 @@
       if (edge.label) text(group, (edge.x1 + edge.x2) / 2, (edge.y1 + edge.y2) / 2 - 14, edge.label, 'edge-label');
       for (const count of edge.multiplicity) {
         const countGroup = part(count.id, 'Multiplicity: ' + count.text);
-        countGroup.append(el('rect', {x: count.x-37, y:count.y-31, width:74, height:56, class:'label-hit'}));
         text(countGroup, count.x, count.y, count.text);
       }
     }
@@ -86,12 +76,10 @@
       svg.append(el('rect', {x: node.x, y: node.y, width: node.w, height: node.h, class: 'diagram-box'}));
       const underline = node.underlineTitle === undefined ? node.object : node.underlineTitle;
       const header = part(node.id, 'Heading: ' + node.title, 'Heading '+node.title+(underline?', underlined':', not underlined'));
-      header.append(el('rect', {x:node.x, y:node.y, width:node.w, height:56, class:'label-hit'}));
       text(header, node.x + node.w/2, node.y + 36, node.title, underline ? 'underlined' : '');
       if (node.rows.some(row => !row.hidden)) svg.append(el('line', {x1:node.x, x2:node.x+node.w, y1:node.y+55, y2:node.y+55, class:'diagram-line'}));
       node.rows.filter(row => !row.hidden).forEach((row, index) => {
         const group = part(row.id, 'Slot or member: ' + row.text, row.text+(row.underlined?', underlined':', not underlined'));
-        group.append(el('rect', {x:node.x, y:node.y+56+index*58, width:node.w, height:58, class:'label-hit'}));
         text(group, node.x+node.w/2, node.y+90+index*58, row.text, row.underlined ? 'underlined' : '');
       });
     }
@@ -106,7 +94,6 @@
         group.append(el('line',{x1:x-16,y1:y+16,x2:x+16,y2:y-16,class:'diagram-line'}));
       } else if (shape.type==='frame') {
         svg.append(el('rect',{x,y,width:w,height:h,class:'frame-box'}));
-        group.append(el('rect',{x,y,width:w,height:56,class:'label-hit'}));
         text(group,x+w/2,y+30,shape.label);
       } else if (shape.type==='lane') {
         group.append(el('rect',{x:x-w/2,y:y-h/2,width:w,height:h,class:'lane-box'}));
@@ -115,10 +102,9 @@
         group.append(el('rect',{x:x-w/2,y:y-h/2,width:w,height:h,rx:shape.type==='action'?12:0,class:'diagram-box'}));
         text(group,x,y+(shape.label.includes('\n')?-8:6),shape.label);
       }
-      if (['decision','bar','initial','cross'].includes(shape.type)) group.append(el('rect',{x:x-Math.max(w,64)/2,y:y-32,width:Math.max(w,64),height:64,class:'label-hit'}));
     }
     for (const item of scene.texts) text(svg,item.x,item.y,item.text,'legend-text');
-    return {svg, labels};
+    return {svg};
   }
   root.DiagramRenderer = {render};
 })(globalThis);
