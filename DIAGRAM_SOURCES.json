@@ -1,0 +1,140 @@
+{
+  "snapshot": "2026-11-11",
+  "scope": "Required course diagram topics only. Original image pixels are preserved; viewports focus individual worksheet panels. PNG metadata is removed without changing decoded pixels. Questions and explanations are adapted from the course examples and rules.",
+  "assets": [
+    {
+      "asset": "./diagram-assets/b7cfad22661466f593a622b1.png",
+      "width": 477,
+      "height": 122,
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/classDiagrams/classes/what/images/chooseNotation.jpg",
+      "upstreamSha256": "d072adca68f390b60bc98f7a713c8831bb3656929b9057629ad6444fb4e9478c",
+      "pixelSha256": "b7cfad22661466f593a622b1d9fea411312afca35aa417ba59bfcad05098b820",
+      "sha256": "f55d88b3c1aeda2a0d044ad80918a2bc82b85f91b0711f916ca6e1f5861a5f0b"
+    },
+    {
+      "asset": "./diagram-assets/9ede928e0116ce22324bb142.png",
+      "width": 353,
+      "height": 265,
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/classDiagrams/classInheritance/what/images/notation.png",
+      "upstreamSha256": "573699525c09d5b3dcc0bd9fd1d80c974135e8f0460101de0ea2f3fda11860ff",
+      "pixelSha256": "9ede928e0116ce22324bb1426b8d20c7c82e06c03b7569a21bf40d1cbcb48393",
+      "sha256": "8e15f8baf71ada026e81c1de0cb5cb359b4a8779929c56c7c63590f4cc71b8b0"
+    },
+    {
+      "asset": "./diagram-assets/07bf17ca5804860b19d73979.png",
+      "width": 578,
+      "height": 96,
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/classDiagrams/composition/what/images/bookChapter.png",
+      "upstreamSha256": "ca46344f652cdd1af9d603b9f9a0817d375fe4832a8b439908aeca9696533718",
+      "pixelSha256": "07bf17ca5804860b19d73979509d4dc0ce862c7d693256a3bfd8fe3867b321c2",
+      "sha256": "05245f34e87349c8c83ba74c14ffe223bac2e0c4d7d49ec877a6bbbe41cdfe21"
+    },
+    {
+      "asset": "./diagram-assets/c1d57ba69aa7c9beadd58fc6.png",
+      "width": 1329,
+      "height": 155,
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/objectDiagrams/objects/images/professorStudent.png",
+      "upstreamSha256": "b6b4da090555373d079c9f6f8740a5293709a36b4037b38c0e6b10b2b29764d6",
+      "pixelSha256": "c1d57ba69aa7c9beadd58fc699f112bc83e0a7b649e6dbec3993fdb0f8010d01",
+      "sha256": "71edcac099f937649823c88f2e1f7a9661106b165a6e130b0115921e4e35bbea"
+    },
+    {
+      "asset": "./diagram-assets/6c531aad2c86bad19bb37371.png",
+      "width": 1266,
+      "height": 987,
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingStructures/objectOrientedDomainModels/images/diagram.png",
+      "upstreamSha256": "53027d447e05f7be65e97474efbfd211b54d94317662f5b18c0a4391cc7b79d8",
+      "pixelSha256": "6c531aad2c86bad19bb37371ac89d8f7d34e704a7b65d1f7f76ef590be498630",
+      "sha256": "faf6692c5d6eccab6f0b1f52d300b8c18dcb63c671d702dc00d20f5263b5543b"
+    },
+    {
+      "asset": "./diagram-assets/20ec3c1037b0383a96c6ed00.png",
+      "width": 335,
+      "height": 67,
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingStructures/objectOrientedDomainModels/images/playerTurn.png",
+      "upstreamSha256": "97a31523ff72fd5edbcf13ae0a1eddd7a2b3b0f3ed5f2ff00aa2c1ebb2ef19b3",
+      "pixelSha256": "20ec3c1037b0383a96c6ed0010c909fcd6d9b7c67beb4fff198010671ebb46a5",
+      "sha256": "598ee834a8b2c29753ae2c72e80376f28f429c32b670eaccb234b873301eba8a"
+    },
+    {
+      "asset": "./diagram-assets/bd0a9a9dfb4e92fb07c54a52.png",
+      "width": 637,
+      "height": 672,
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/sequenceDiagrams/basic/images/playerText.png",
+      "upstreamSha256": "4c10bedfc22aa51fe9d128ac20d408c449c71bcd4c2541c017ca4f76012021e2",
+      "pixelSha256": "bd0a9a9dfb4e92fb07c54a5294a0bf22108342b861043cba847fc67b9a458ef6",
+      "sha256": "e7a64a83c67f1c011e26cd4b1789adb66c7e55d70ede92855706c2894b0f98f2"
+    },
+    {
+      "asset": "./diagram-assets/19e6d4141e172090c8f3d83b.png",
+      "width": 879,
+      "height": 487,
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/sequenceDiagrams/optionalPaths/images/logicTimer.png",
+      "upstreamSha256": "565fc5c34165d0063355d44604ef2958d5cf6b29dcac9e2754255ae48e266c1e",
+      "pixelSha256": "19e6d4141e172090c8f3d83b2984283f8cacf0302771cdcfa53086cd43bf6e1a",
+      "sha256": "2154df6c7f538a3b817886bc652bd3d62a64d80eff148918e52b9da349fd9bcf"
+    },
+    {
+      "asset": "./diagram-assets/871503fb829a530e8bbae299.png",
+      "width": 1076,
+      "height": 385,
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/sequenceDiagrams/selfInvocation/images/logic.png",
+      "upstreamSha256": "91f716a73f3972050dac36354c09481f538b014ffb9aeb4e8d6d44c3d4500eca",
+      "pixelSha256": "871503fb829a530e8bbae2993c9152b6400494833ff6bcd73a6767aa74162e8d",
+      "sha256": "6463a8d54dcfcc30f34d643e02c75ff5aad6592c44b474f32b4008d410c52988"
+    },
+    {
+      "asset": "./diagram-assets/943446466807293184242bdc.png",
+      "width": 1162,
+      "height": 649,
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/modeling/modelingBehaviors/sequenceDiagramsBasic/images/notationMistakes.png",
+      "upstreamSha256": "0ed47b7c24a82508d396e0d9cd3ca259b85c4dcbf917a8ba3725eb8486957205",
+      "pixelSha256": "943446466807293184242bdcf5045342d775a27a5e750fc9149b13b49971772e",
+      "sha256": "d505ff629fa79136f9c0e56e5e586bab222a8834136bccad3f1ce6cb4808dc77"
+    },
+    {
+      "asset": "./diagram-assets/429f8f1d190e7411c913cf35.png",
+      "width": 1471,
+      "height": 866,
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/linearPaths/images/q-correctNotation.png",
+      "upstreamSha256": "15fee36f3736f86b83e904fc997d5219b9a36c648f1f07dfd986ab1bf1f9a578",
+      "pixelSha256": "429f8f1d190e7411c913cf3503516507e6678c4691825cee22d62d7f0e9e0812",
+      "sha256": "3dd50386117be65b7edac5066f95b938bae634f52e2e5df7ff593f5e6d051946"
+    },
+    {
+      "asset": "./diagram-assets/2481fad0f7d9a5d2b7242c85.png",
+      "width": 1363,
+      "height": 1032,
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/alternatePaths/images/q-correctNotation1.png",
+      "upstreamSha256": "512ecf2b8a22cbd1370efa8ec4fe6b375e7dbf158c11e4e822fc9646ea0e4b79",
+      "pixelSha256": "2481fad0f7d9a5d2b7242c85520f8d18a4af86f3d4b0eee0e5209b808dd99921",
+      "sha256": "af3cae7206e4e7bc756f692680834f622f1f026fa6b4477ae3f94201f89fe317"
+    },
+    {
+      "asset": "./diagram-assets/c35d5d46af07307e0d4e4e37.png",
+      "width": 1326,
+      "height": 435,
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/alternatePaths/images/q-correctNotation2.png",
+      "upstreamSha256": "357510267cf85ef3e61e170528c753de8134c9b75e3a2076ded80fe120e15bb8",
+      "pixelSha256": "c35d5d46af07307e0d4e4e37afc88f8443106b44aaf98228b6de119eb900ca19",
+      "sha256": "7cdc0b9ce833c5354b7a42af0551e490eee5ed49f52ccd2fba97e3972bece241"
+    },
+    {
+      "asset": "./diagram-assets/2877b77eed53aacf5c888f8c.png",
+      "width": 1289,
+      "height": 914,
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/uml/activityDiagrams/basicNotations/parallelPaths/images/q-correctNotation.png",
+      "upstreamSha256": "cc59c76a8ca42c59e8552b3ff6957b0f064b0677e7613bb955b1ebf2f603be4e",
+      "pixelSha256": "2877b77eed53aacf5c888f8c22275ba4ce9f176523680ca3569d423f8222fce3",
+      "sha256": "b1bac968e96c1511a0ebfedc71d7492b37b7e5f7072b77291eb92ab4bfcc9dfb"
+    },
+    {
+      "asset": "./assets/6c3c4f30879558d5eb8971ba.svg",
+      "width": 670,
+      "height": 301,
+      "source": "https://nus-cs2103-ay2627-s1.github.io/website/book/architecture/architectureDiagrams/drawing/images/tip.svg",
+      "sha256": "6c3c4f30879558d5eb8971ba97a6583861ba16c4d58ecf1065fa39db6628d646",
+      "sanitization": "Existing sanitized course SVG; executable content, external references and metadata removed."
+    }
+  ]
+}

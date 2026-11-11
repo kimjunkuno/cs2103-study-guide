@@ -36,6 +36,18 @@ class SiteTests(unittest.TestCase):
     for k,v in e.attrib.items():
      self.assertFalse(k.lower().startswith('on'))
      if 'href' in k.lower():self.assertRegex(v,r'^(#|data:image/(png|jpeg|gif|webp);base64,)')
+ def test_course_diagram_pngs_have_no_embedded_metadata(self):
+  import struct,zlib
+  files=list((SITE/'diagram-assets').glob('*.png'))
+  self.assertTrue(files)
+  for path in files:
+   raw=path.read_bytes();self.assertEqual(raw[:8],b'\x89PNG\r\n\x1a\n');offset=8
+   while offset<len(raw):
+    size=struct.unpack('>I',raw[offset:offset+4])[0];kind=raw[offset+4:offset+8];payload=raw[offset+8:offset+8+size]
+    self.assertIn(kind,{b'IHDR',b'IDAT',b'IEND',b'PLTE',b'tRNS'})
+    self.assertEqual(zlib.crc32(kind+payload)&0xffffffff,struct.unpack('>I',raw[offset+8+size:offset+12+size])[0])
+    offset+=size+12
+   self.assertEqual(offset,len(raw))
  def test_recovered_terms(self):
   text=(SITE/'index.html').read_text();self.assertIn('PascalCase',text);self.assertIn('current object',text)
 if __name__=='__main__':unittest.main()

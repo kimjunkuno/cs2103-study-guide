@@ -61,11 +61,13 @@ Browse by Textbook to select category, chapter and topic in the online book's or
 
 ## Spot the mistake
 
-`diagrams.html` provides 48 original, source-linked cards: correct and incorrect examples for class diagrams/compartments, object diagrams/value slots, conceptual class diagrams, sequence diagrams, activity diagrams and architecture diagrams. Each type has four mistake examples and four corrected examples. Optional diagram types are excluded. Some cards show a relevant fragment rather than a complete system.
+`diagrams.html` provides 36 cards built from the course website’s own diagrams across the six required diagram types. Original image pixels are preserved. A viewport focuses individual panels in some worksheets; full multi-panel figures name the diagram to inspect. DIAGRAM_SOURCES.json records source URLs, hashes and dimensions. PNG copies contain no embedded metadata. The course’s activity examples retain their rounded action rectangles, control nodes and full flows.
 
-Filter by diagram type, decide whether the example matches its scenario, then tap to reveal. Prompts give the scenario without naming the error. Got it wrong and Skip & save enter the separate local revisit list; Got it right removes the flag. Next leaves saved status unchanged. Revealing alone does not mark an answer wrong. Existing saved mistake IDs and backups are retained. With repeats off, each card appears once per selection; More provides Repeat card, Restart and backups.
+Filter by diagram type, decide whether the notation fits the stated view, then tap to reveal. Correct diagram answers are green and incorrect ones red; self-assessment buttons use green for Got it right and red for Got it wrong. Source links, the original figure and reference examples are available after reveal. A reference illustrates the rule and is not necessarily a corrected copy of the same scenario.
 
-Explanations, corrected examples and course links are available after reveal. Enlarge opens a keyboard-accessible dialog. Diagrams are passive native SVG without hotspots or external rendering services. The card supports keyboard reveal; wide diagrams scroll within the card without changing the answer. Source content is not executed.
+Got it wrong and Skip & save enter a browser-local revisit list; Got it right removes the flag. Next leaves saved status unchanged. Revealing alone does not grade an answer. With repeats off, each card appears once per selection. More provides Repeat card, Restart and backups. This replacement course-image deck uses its own storage key; the previous drawn-diagram data is left untouched rather than applied to different questions.
+
+Diagrams use passive local image assets inside SVG viewports. No generated diagram geometry or external rendering service remains. Enlarge supports detailed inspection, and card reveal supports touch and keyboard. Original course images can have limited resolution; no missing detail is invented.
 
 ## Compact phone and tablet layout
 

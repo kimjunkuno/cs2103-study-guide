@@ -1,9 +1,8 @@
 (function () {
   'use strict';
   const $ = id => document.getElementById(id);
-  const cases = DIAGRAM_QUESTIONS.cases, cards = DiagramCore.createDeck(cases);
-  const originals = new Map(cases.map(item => [item.id, item]));
-  const known = new Set(cards.map(item => item.id)), storageName = 'cs2103-diagrams-v1';
+  const cards = DIAGRAM_QUESTIONS.cards;
+  const known = new Set(cards.map(item => item.id)), storageName = 'cs2103-course-diagrams-v1';
   const families = {class: 'Class', object: 'Object / value tables', conceptual: 'Conceptual class', sequence: 'Sequence', activity: 'Activity', architecture: 'Architecture'};
   let flags = Object.create(null), seen = new Set(), current = null, revealed = false, pointerStart = null;
   try {
@@ -44,12 +43,16 @@
       $('dg-type').textContent = families[current.family];
       $('dg-context').textContent = current.context;
       $('dg-answer').textContent = current.answer;
-      $('dg-canvas').replaceChildren(DiagramRenderer.render(current.scene).svg);
-      $('dg-correction').hidden = current.isCorrect;
-      // Render the correction only when its disclosure is opened.
+      $('dg-answer').classList.toggle('is-correct', current.isCorrect);
+      $('dg-answer').classList.toggle('is-incorrect', !current.isCorrect);
+      $('dg-canvas').replaceChildren(DiagramRenderer.render(current.image).svg);
+      $('dg-correction').hidden = !current.reference;
+      // Render the reference only when its disclosure is opened.
       $('dg-fixed-canvas').replaceChildren();
       $('dg-rule').textContent = current.rule;
       $('dg-source').href = current.source;
+      $('dg-book-source').href = current.bookSource;
+      $('dg-image-source').href = current.image.source;
       $('dg-guide').href = './index.html#' + encodeURIComponent(current.topicId);
       flip(false);
     } else {
@@ -92,14 +95,14 @@
     if (current) $('dg-card').focus({preventScroll: true});
   });
   $('dg-source-wrap').addEventListener('toggle', () => {
-    if (current && revealed && $('dg-source-wrap').open && !current.isCorrect) {
-      $('dg-fixed-canvas').replaceChildren(DiagramRenderer.render(DiagramCore.correctedScene(originals.get(current.id))).svg);
+    if (current && revealed && $('dg-source-wrap').open && current.reference) {
+      $('dg-fixed-canvas').replaceChildren(DiagramRenderer.render(current.reference).svg);
     }
   });
   $('dg-enlarge').addEventListener('click', () => {
     if (!current) return;
     $('dg-dialog-context').textContent = current.context;
-    $('dg-dialog-canvas').replaceChildren(DiagramRenderer.render(current.scene).svg);
+    $('dg-dialog-canvas').replaceChildren(DiagramRenderer.render(current.image).svg);
     $('dg-dialog').showModal();
   });
   $('dg-close').addEventListener('click', () => $('dg-dialog').close());
