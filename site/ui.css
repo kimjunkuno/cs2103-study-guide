@@ -6,3 +6,8 @@ main{padding:26px 34px 55px;max-width:1200px}.hero{display:flex;align-items:cent
 
 .diagram-svg.narrow{min-width:0;max-width:480px;margin:auto}dialog .diagram-svg:not(.narrow){min-width:800px}
 button{min-height:44px}.full>summary,.fc-evidence>summary{min-height:44px;align-content:center}.topic-meta a,.fc-card-top a,.dg-top a{min-height:44px;display:inline-flex;align-items:center;padding-inline:5px}
+
+/* Key theory contains emphasis only; source explanations belong to Full text. */
+.topic .full{display:none}.full-mode .topic .full{display:block}
+.core-points{margin:0;padding-left:1.2em}.core-points li{margin:0 0 .65em}.core-points li:last-child{margin-bottom:0}.no-core{color:var(--muted);font-size:14px}
+@media print{.print-full .topic .full{display:block}}
