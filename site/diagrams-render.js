@@ -9,6 +9,17 @@
   }
   function render(scene, choose, enabled = true, identified = []) {
     const svg = el('svg', {viewBox: '0 0 800 520', class: 'diagram-svg', role: 'group', 'aria-label': 'Practice diagram. Select an element or use the element buttons below.'});
+    // Trim empty vertical canvas space without moving any diagram element.
+    const bounds=[];
+    scene.nodes.filter(item=>!item.hidden).forEach(item=>bounds.push(item.y-10,item.y+item.h+10));
+    scene.edges.filter(item=>!item.hidden).forEach(item=>bounds.push(Math.min(item.y1,item.y2)-35,Math.max(item.y1,item.y2)+30));
+    scene.shapes.filter(item=>!item.hidden).forEach(item=>bounds.push(item.type==='frame'?item.y-10:item.y-Math.max(item.h/2,35),item.type==='frame'?item.y+item.h+10:item.y+Math.max(item.h/2,35)));
+    scene.texts.forEach(item=>bounds.push(item.y-25,item.y+15));
+    const top=Math.max(0,Math.min(...bounds)-20),bottom=Math.max(...bounds)+20;
+    const narrow=scene.nodes.filter(item=>!item.hidden).length===1&&!scene.edges.some(item=>!item.hidden)&&!scene.shapes.some(item=>!item.hidden);
+    const only=scene.nodes.find(item=>!item.hidden);
+    svg.setAttribute('viewBox',`${narrow?only.x-40:0} ${top} ${narrow?only.w+80:800} ${bottom-top}`);
+    if(narrow)svg.classList.add('narrow');
     const labels = [];
     function part(id, label, description = label) {
       const group = el('g', {class: 'diagram-part' + (identified.includes(id) ? ' identified' : ''), 'data-part': id});

@@ -27,3 +27,10 @@ test('practice selectors expose only topics with available questions',()=>{
  assert.deepEqual(available.map(t=>t.id),['W6.1a']);
  assert.ok(!nav.matches(available[0],{mode:'week',week:'12'}));
 });
+test('switching browse modes keeps a compatible selected topic and week',()=>{
+ const topic=data.topics.find(t=>t.id==='W8.1a');
+ const book=nav.switchMode({mode:'week',week:'8',topic:topic.topicKey},'textbook',data.topics);
+ assert.equal(book.category,'Design');assert.equal(book.chapter,'Modeling (Using UML)');
+ const week=nav.switchMode(book,'week',data.topics);assert.equal(week.week,'8');assert.equal(week.topic,topic.topicKey);
+ const empty=nav.switchMode({mode:'week',week:'12',topic:''},'textbook',data.topics);assert.equal(empty.topic,'');
+});
