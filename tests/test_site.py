@@ -71,6 +71,30 @@ class QuestionTests(unittest.TestCase):
    self.assertEqual(card['prompt'].replace('_____',card['answer']),card['passage'],card['id'])
    self.assertIn(card['passage'],norm(' '.join(parser.words[card['topicId']])),card['id'])
    self.assertIn(card['answer'],norm(' '.join(parser.bold_words[card['topicId']])),card['id'])
+ def test_guide_key_theory_is_exactly_the_core_emphasis(self):
+  class Core(HTMLParser):
+   def __init__(self):
+    super().__init__();self.topic=None;self.quick=False;self.depth=0;self.bold=False;self.current=[];self.items={}
+   def handle_starttag(self,tag,attrs):
+    a=dict(attrs)
+    if tag=='article':self.topic=a['id'];self.items[self.topic]=[]
+    if tag=='div' and a.get('class')=='quick':self.quick=True;self.depth=1
+    elif self.quick and tag=='div':self.depth+=1
+    if self.quick and tag=='strong':self.bold=True;self.current=[]
+   def handle_data(self,text):
+    if self.quick and self.bold:self.current.append(text)
+    elif self.quick and text.strip():
+     assert text=='See Full text for this topic.',text
+   def handle_endtag(self,tag):
+    if self.quick and tag=='strong':self.items[self.topic].append(''.join(self.current));self.bold=False
+    if self.quick and tag=='div':
+     self.depth-=1
+     if not self.depth:self.quick=False
+  parser=Core();parser.feed((SITE/'index.html').read_text())
+  self.assertEqual(parser.items,json.loads((SITE.parent/'CORE_STATEMENTS.json').read_text())['topics'])
+  css=(SITE/'ui.css').read_text()
+  self.assertIn('.topic .full{display:none}',css)
+  self.assertIn('.full-mode .topic .full{display:block}',css)
  def test_unique_ids_and_week_coverage(self):
   coverage=json.loads((SITE.parent/'FLASHCARD_COVERAGE.json').read_text())
   self.assertEqual(len(self.bank),coverage['questionCount'])

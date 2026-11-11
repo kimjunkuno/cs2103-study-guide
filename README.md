@@ -4,6 +4,8 @@
 
 An independent study aid for NUS CS2103/T AY 2026/27 Semester 1. It is not an official NUS website.
 
+Key theory shows only the main content’s bold or highlighted fragments. Explanations, examples and diagrams appear only in Full text. Topics without core emphasis point to Full text.
+
 The guide contains 321 topic cards from the weekly Topics pages, with the course's wording, search, week/section filters, examples, diagrams, recall and printing. Weeks 12–13 have no assigned topics.
 
 ## Run locally
