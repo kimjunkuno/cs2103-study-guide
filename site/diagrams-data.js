@@ -1,12 +1,12 @@
 globalThis.DIAGRAM_QUESTIONS = {
-  "version": 1,
+  "version": 2,
   "cases": [
     {
       "id": "class-inheritance",
       "family": "class",
       "topicId": "W4.3c",
       "week": 4,
-      "context": "Cat extends Animal. Find the incorrect relationship.",
+      "context": "Cat extends Animal.",
       "scene": {
         "nodes": [
           {
@@ -49,9 +49,6 @@ globalThis.DIAGRAM_QUESTIONS = {
         "shapes": [],
         "texts": []
       },
-      "answerIds": [
-        "relation"
-      ],
       "fixes": [
         {
           "path": "edges.0.direction",
@@ -68,7 +65,7 @@ globalThis.DIAGRAM_QUESTIONS = {
       "family": "class",
       "topicId": "W4.3c",
       "week": 4,
-      "context": "A House owns its Rooms; rooms are not shared. Find the composition error.",
+      "context": "A House owns its Rooms; rooms are not shared.",
       "scene": {
         "nodes": [
           {
@@ -111,9 +108,6 @@ globalThis.DIAGRAM_QUESTIONS = {
         "shapes": [],
         "texts": []
       },
-      "answerIds": [
-        "relation"
-      ],
       "fixes": [
         {
           "path": "edges.0.direction",
@@ -186,9 +180,6 @@ globalThis.DIAGRAM_QUESTIONS = {
         "shapes": [],
         "texts": []
       },
-      "answerIds": [
-        "member-count"
-      ],
       "fixes": [
         {
           "path": "edges.0.multiplicity.1.text",
@@ -205,7 +196,7 @@ globalThis.DIAGRAM_QUESTIONS = {
       "family": "class",
       "topicId": "W4.2b",
       "week": 4,
-      "context": "Counter.total is shared by all Counter instances. Tap the notation mistake.",
+      "context": "Counter.total is shared by all Counter instances.",
       "scene": {
         "nodes": [
           {
@@ -231,9 +222,6 @@ globalThis.DIAGRAM_QUESTIONS = {
         "shapes": [],
         "texts": []
       },
-      "answerIds": [
-        "total"
-      ],
       "fixes": [
         {
           "path": "nodes.0.rows.0.underlined",
@@ -250,7 +238,7 @@ globalThis.DIAGRAM_QUESTIONS = {
       "family": "object",
       "topicId": "W4.2c",
       "week": 4,
-      "context": "This is an object snapshot. Tap the incorrectly written object heading.",
+      "context": "A snapshot of a Person object.",
       "scene": {
         "nodes": [
           {
@@ -288,9 +276,6 @@ globalThis.DIAGRAM_QUESTIONS = {
         "shapes": [],
         "texts": []
       },
-      "answerIds": [
-        "alice"
-      ],
       "fixes": [
         {
           "path": "nodes.0.underlineTitle",
@@ -307,7 +292,7 @@ globalThis.DIAGRAM_QUESTIONS = {
       "family": "object",
       "topicId": "W4.2c",
       "week": 4,
-      "context": "Alice is 20 years old. Find the incorrect slot in this object snapshot.",
+      "context": "Alice is 20 years old.",
       "scene": {
         "nodes": [
           {
@@ -333,9 +318,6 @@ globalThis.DIAGRAM_QUESTIONS = {
         "shapes": [],
         "texts": []
       },
-      "answerIds": [
-        "age"
-      ],
       "fixes": [
         {
           "path": "nodes.0.rows.0.text",
@@ -352,7 +334,7 @@ globalThis.DIAGRAM_QUESTIONS = {
       "family": "object",
       "topicId": "W4.2c",
       "week": 4,
-      "context": "Alice owns Fido. The line represents that object link.",
+      "context": "Alice owns Fido.",
       "scene": {
         "nodes": [
           {
@@ -395,9 +377,6 @@ globalThis.DIAGRAM_QUESTIONS = {
         "shapes": [],
         "texts": []
       },
-      "answerIds": [
-        "link"
-      ],
       "fixes": [
         {
           "path": "edges.0.kind",
@@ -414,7 +393,7 @@ globalThis.DIAGRAM_QUESTIONS = {
       "family": "object",
       "topicId": "W4.2c",
       "week": 4,
-      "context": "Each Dog has exactly one owner. Fido belongs to Alice, not Bob.",
+      "context": "Each Dog has exactly one owner. Fido belongs to Alice.",
       "scene": {
         "nodes": [
           {
@@ -480,9 +459,6 @@ globalThis.DIAGRAM_QUESTIONS = {
         "shapes": [],
         "texts": []
       },
-      "answerIds": [
-        "bob-link"
-      ],
       "fixes": [
         {
           "path": "edges.1.hidden",
@@ -499,7 +475,7 @@ globalThis.DIAGRAM_QUESTIONS = {
       "family": "conceptual",
       "topicId": "W9.1a",
       "week": 9,
-      "context": "Model the library domain: Library and Book. Find the solution-specific class.",
+      "context": "A conceptual model of a library domain.",
       "scene": {
         "nodes": [
           {
@@ -553,9 +529,6 @@ globalThis.DIAGRAM_QUESTIONS = {
         "shapes": [],
         "texts": []
       },
-      "answerIds": [
-        "database"
-      ],
       "fixes": [
         {
           "path": "nodes.2.hidden",
@@ -572,7 +545,7 @@ globalThis.DIAGRAM_QUESTIONS = {
       "family": "conceptual",
       "topicId": "W9.1a",
       "week": 9,
-      "context": "This is a conceptual class diagram of library entities. Find the notation that does not belong.",
+      "context": "A conceptual model of a library domain.",
       "scene": {
         "nodes": [
           {
@@ -622,9 +595,6 @@ globalThis.DIAGRAM_QUESTIONS = {
         "shapes": [],
         "texts": []
       },
-      "answerIds": [
-        "checkout"
-      ],
       "fixes": [
         {
           "path": "nodes.0.rows.0.hidden",
@@ -641,7 +611,7 @@ globalThis.DIAGRAM_QUESTIONS = {
       "family": "conceptual",
       "topicId": "W9.1a",
       "week": 9,
-      "context": "This is a conceptual class diagram, not an implementation class diagram.",
+      "context": "A conceptual model of a library domain.",
       "scene": {
         "nodes": [
           {
@@ -684,9 +654,6 @@ globalThis.DIAGRAM_QUESTIONS = {
         "shapes": [],
         "texts": []
       },
-      "answerIds": [
-        "association"
-      ],
       "fixes": [
         {
           "path": "edges.0.direction",
@@ -703,7 +670,7 @@ globalThis.DIAGRAM_QUESTIONS = {
       "family": "conceptual",
       "topicId": "W9.1a",
       "week": 9,
-      "context": "Model the problem domain of a library. Find the class that represents the user interface.",
+      "context": "A conceptual model of a library domain.",
       "scene": {
         "nodes": [
           {
@@ -757,9 +724,6 @@ globalThis.DIAGRAM_QUESTIONS = {
         "shapes": [],
         "texts": []
       },
-      "answerIds": [
-        "dialog"
-      ],
       "fixes": [
         {
           "path": "nodes.2.hidden",
@@ -776,7 +740,7 @@ globalThis.DIAGRAM_QUESTIONS = {
       "family": "sequence",
       "topicId": "W6.1a",
       "week": 6,
-      "context": "Client calls Service.find(). Tap the incorrect message.",
+      "context": "Client calls Service.find().",
       "scene": {
         "nodes": [
           {
@@ -843,9 +807,6 @@ globalThis.DIAGRAM_QUESTIONS = {
         "shapes": [],
         "texts": []
       },
-      "answerIds": [
-        "call"
-      ],
       "fixes": [
         {
           "path": "edges.2.direction",
@@ -862,7 +823,7 @@ globalThis.DIAGRAM_QUESTIONS = {
       "family": "sequence",
       "topicId": "W6.1a",
       "week": 6,
-      "context": "Client must call find() before save(). Tap either message involved in the ordering error.",
+      "context": "Client calls find(), then save().",
       "scene": {
         "nodes": [
           {
@@ -941,10 +902,6 @@ globalThis.DIAGRAM_QUESTIONS = {
         "shapes": [],
         "texts": []
       },
-      "answerIds": [
-        "first",
-        "second"
-      ],
       "fixes": [
         {
           "path": "edges.2.label",
@@ -965,7 +922,7 @@ globalThis.DIAGRAM_QUESTIONS = {
       "family": "sequence",
       "topicId": "W6.1b",
       "week": 6,
-      "context": "Service is destroyed at the X. Find what incorrectly continues afterwards.",
+      "context": "Service is destroyed at the X.",
       "scene": {
         "nodes": [
           {
@@ -1043,9 +1000,6 @@ globalThis.DIAGRAM_QUESTIONS = {
         ],
         "texts": []
       },
-      "answerIds": [
-        "after-delete"
-      ],
       "fixes": [
         {
           "path": "edges.2.hidden",
@@ -1062,7 +1016,7 @@ globalThis.DIAGRAM_QUESTIONS = {
       "family": "sequence",
       "topicId": "W6.1b",
       "week": 6,
-      "context": "send() should run only when hasEmail is true. Find the incorrect condition.",
+      "context": "send() runs only when hasEmail is true.",
       "scene": {
         "nodes": [
           {
@@ -1140,9 +1094,6 @@ globalThis.DIAGRAM_QUESTIONS = {
         ],
         "texts": []
       },
-      "answerIds": [
-        "guard"
-      ],
       "fixes": [
         {
           "path": "shapes.0.label",
@@ -1159,7 +1110,7 @@ globalThis.DIAGRAM_QUESTIONS = {
       "family": "activity",
       "topicId": "W9.2a",
       "week": 9,
-      "context": "Take exactly one path: Approve if valid, otherwise Reject. Find the wrong control node.",
+      "context": "Approve if valid; otherwise Reject.",
       "scene": {
         "nodes": [],
         "edges": [
@@ -1244,9 +1195,6 @@ globalThis.DIAGRAM_QUESTIONS = {
         ],
         "texts": []
       },
-      "answerIds": [
-        "branch"
-      ],
       "fixes": [
         {
           "path": "shapes.1.type",
@@ -1263,7 +1211,7 @@ globalThis.DIAGRAM_QUESTIONS = {
       "family": "activity",
       "topicId": "W9.2a",
       "week": 9,
-      "context": "Prepare food and Prepare drink must both start in parallel. Find the wrong control node.",
+      "context": "Prepare food and Prepare drink start in parallel.",
       "scene": {
         "nodes": [],
         "edges": [
@@ -1348,9 +1296,6 @@ globalThis.DIAGRAM_QUESTIONS = {
         ],
         "texts": []
       },
-      "answerIds": [
-        "branch"
-      ],
       "fixes": [
         {
           "path": "shapes.1.type",
@@ -1367,7 +1312,7 @@ globalThis.DIAGRAM_QUESTIONS = {
       "family": "activity",
       "topicId": "W9.2a",
       "week": 9,
-      "context": "Deliver must wait for both Pack and Charge. Find the incorrect synchronization node.",
+      "context": "Deliver waits for both Pack and Charge.",
       "scene": {
         "nodes": [],
         "edges": [
@@ -1508,9 +1453,6 @@ globalThis.DIAGRAM_QUESTIONS = {
         ],
         "texts": []
       },
-      "answerIds": [
-        "join"
-      ],
       "fixes": [
         {
           "path": "shapes.4.type",
@@ -1527,7 +1469,7 @@ globalThis.DIAGRAM_QUESTIONS = {
       "family": "activity",
       "topicId": "W9.2b",
       "week": 9,
-      "context": "Only the Manager approves refunds. Tap the action in the wrong swimlane.",
+      "context": "The Manager approves refunds.",
       "scene": {
         "nodes": [],
         "edges": [],
@@ -1571,9 +1513,6 @@ globalThis.DIAGRAM_QUESTIONS = {
           }
         ]
       },
-      "answerIds": [
-        "refund"
-      ],
       "fixes": [
         {
           "path": "shapes.2.x",
@@ -1590,7 +1529,7 @@ globalThis.DIAGRAM_QUESTIONS = {
       "family": "architecture",
       "topicId": "W9.4a",
       "week": 9,
-      "context": "UI depends on Logic. Logic does not depend on UI. Find the incorrect arrow.",
+      "context": "UI depends on Logic. Logic does not depend on UI.",
       "scene": {
         "nodes": [
           {
@@ -1639,9 +1578,6 @@ globalThis.DIAGRAM_QUESTIONS = {
           }
         ]
       },
-      "answerIds": [
-        "dependency"
-      ],
       "fixes": [
         {
           "path": "edges.0.direction",
@@ -1658,7 +1594,7 @@ globalThis.DIAGRAM_QUESTIONS = {
       "family": "architecture",
       "topicId": "W9.4a",
       "week": 9,
-      "context": "UI depends on Logic, but not the reverse. Find the misleading arrow.",
+      "context": "UI depends on Logic. Logic does not depend on UI.",
       "scene": {
         "nodes": [
           {
@@ -1707,9 +1643,6 @@ globalThis.DIAGRAM_QUESTIONS = {
           }
         ]
       },
-      "answerIds": [
-        "dependency"
-      ],
       "fixes": [
         {
           "path": "edges.0.direction",
@@ -1726,7 +1659,7 @@ globalThis.DIAGRAM_QUESTIONS = {
       "family": "architecture",
       "topicId": "W9.4a",
       "week": 9,
-      "context": "Name components by responsibility; storage may change from JSON files to a database.",
+      "context": "Components are named by responsibility. Storage may use JSON files or a database.",
       "scene": {
         "nodes": [
           {
@@ -1775,9 +1708,6 @@ globalThis.DIAGRAM_QUESTIONS = {
           }
         ]
       },
-      "answerIds": [
-        "logic"
-      ],
       "fixes": [
         {
           "path": "nodes.1.title",
@@ -1794,7 +1724,7 @@ globalThis.DIAGRAM_QUESTIONS = {
       "family": "architecture",
       "topicId": "W9.4a",
       "week": 9,
-      "context": "Solid arrows show dependencies; dashed arrows show data flow. Find the incomplete explanation.",
+      "context": "Solid arrows represent dependencies; dashed arrows represent data flow.",
       "scene": {
         "nodes": [
           {
@@ -1871,9 +1801,6 @@ globalThis.DIAGRAM_QUESTIONS = {
         ],
         "texts": []
       },
-      "answerIds": [
-        "legend"
-      ],
       "fixes": [
         {
           "path": "shapes.0.label",
