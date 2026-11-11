@@ -56,3 +56,9 @@ Run flashcard tests with `node --test tests/flashcards.test.cjs`. Both test suit
 ## Textbook navigation
 
 Browse by Textbook to select category, chapter and topic in the online book's order, or by Week to show week/topic controls. Revisited topics share a selector entry with their original week IDs. IDs and saved progress are unchanged. The guide also provides a collapsible chapter sidebar on larger screens. Existing Git course links are grouped under Supplementary; no external lesson content is imported.
+
+## Spot the mistake
+
+`diagrams.html` provides 24 original, source-linked exercises: four each for class diagrams/compartments, object diagrams/value slots, conceptual class diagrams, sequence diagrams, activity diagrams and architecture diagrams. Optional diagram types are excluded. Each case has one defined error; some show a relevant diagram fragment rather than a complete system.
+
+Tap an element or choose its equivalent button, then inspect the correction and course rule. Wrong answers, revealed answers and skips enter a separate local revisit list. A later first-try correct answer clears the flag; retries within the same exercise keep it saved. Enlarge opens a keyboard-accessible dialog. Diagrams use native SVG with generous touch targets, no external rendering service, scripts in assets or personal image metadata. Source content is not executed.
