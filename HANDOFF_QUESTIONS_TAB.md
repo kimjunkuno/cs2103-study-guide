@@ -75,7 +75,7 @@ Details the parser must handle:
 
 - Heading: `### <ID> · <MCQ|MRQ>` with an optional trailing ` · AB3`. IDs are `W<week>.<n>-<nn>`, unique, 540 in total.
 - Metadata line: fields separated by ` · `. `**Source:**` is one or more Guide topic IDs separated by `, `. `**Basis:**` is `bold`, `body` or `panel`. AB3 questions add ` · **AB3:** ` followed by backticked repo-relative paths separated by `, `. Topic names can contain `&`, `:` and `/`, so split on the bold field labels, not on punctuation.
-- Stem: starts after `**Question:** ` and runs to the blank line before the first `- A. `. It may contain inline `` `code` `` and, in about 15 questions, a fenced ``` block on the following lines.
+- Stem: starts after `**Question:** ` and runs to the blank line before the first `- A. `. It may contain inline `` `code` `` and, in about 10 questions, a fenced ``` block on the following lines.
 - Options: `- A. ` to `- E. `. MCQ has exactly four with one correct. MRQ has three to five with at least two correct. A correct option ends with ` ✅`; strip it. Option text may contain backticks and punctuation.
 - `**Answer:**` repeats the correct letters (`A` or `A, C, D`). Check it against the ✅ marks and fail the build on a mismatch.
 - Explanations never mention option letters, so shuffling is safe. Keep it that way (add a test).
