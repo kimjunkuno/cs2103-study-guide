@@ -2,11 +2,11 @@
 
 Draft MCQ and MRQ questions for the Questions tab (`site/questions.html`). After editing, run `python3 tools/build_questions.py` to regenerate `site/questions-data.js`; it refuses to write if a question is malformed or the counts below are out of step. The design is in `QUESTIONS_TAB_PLAN.md`.
 
-- **540 questions**: 422 MCQ (four options, one correct) and 118 MRQ (three to five options, two or more correct).
+- **1422 questions**: 1256 MCQ (four options, one correct) and 166 MRQ (three to five options, two or more correct).
 - **84 questions apply a topic to the AddressBook-Level3 (AB3) code base** (`se-edu/addressbook-level3` at commit `56d1ffb`); each names the files it relies on.
 - Content snapshot: course Topics pages, 11 November 2026 (the same snapshot as the Guide). Weeks 12–13 have no topics.
 - **Basis** says what the answer rests on: `bold` = bold/highlighted core theory, `body` = non-bold main text, `panel` = example, exercise or supplementary panel.
-  Of the 540 questions, 454 rest on bold text, 69 on body text and 17 on panels.
+  Of the 1422 questions, 692 rest on bold text, 618 on body text and 112 on panels.
 - **Source** lists the Guide topic IDs that back the answer.
 - Correct options are marked ✅ and repeated on the **Answer** line. Explanations never refer to option letters, so options can be shuffled when shown.
 - These are study questions written for this guide, not official exam questions.
@@ -15,82 +15,82 @@ Draft MCQ and MRQ questions for the Questions tab (`site/questions.html`). After
 
 | Week | Topic | MCQ | MRQ | of which AB3 | Total |
 |---|---|---:|---:|---:|---:|
-| 1 | [W1.1] OOP: Classes & Objects | 12 | 6 | 2 | 18 |
-| 1 | [W1.2] OOP Inheritance | 7 | 2 | 2 | 9 |
-| 1 | [W1.3] OOP: Polymorphism | 10 | 3 | 3 | 13 |
-| 1 | [W1.4] Java: Collections | 7 | 1 | 2 | 8 |
-| 1 | [W1.5] Exception Handling | 8 | 2 | 2 | 10 |
-| 1 | [W1.6] SE: Intro | 6 | 1 | 0 | 7 |
+| 1 | [W1.1] OOP: Classes & Objects | 37 | 6 | 2 | 43 |
+| 1 | [W1.2] OOP Inheritance | 20 | 2 | 2 | 22 |
+| 1 | [W1.3] OOP: Polymorphism | 31 | 4 | 3 | 35 |
+| 1 | [W1.4] Java: Collections | 15 | 1 | 2 | 16 |
+| 1 | [W1.5] Exception Handling | 22 | 2 | 2 | 24 |
+| 1 | [W1.6] SE: Intro | 14 | 3 | 0 | 17 |
 | 1 | [W1.7] RCS: Getting Started with Git | – | – | – | none |
-| 2 | [W2.1] SDLC Process Models: Basics | 6 | 2 | 0 | 8 |
+| 2 | [W2.1] SDLC Process Models: Basics | 12 | 3 | 0 | 15 |
 | 2 | [W2.2] RCS: Getting Started with GitHub | – | – | – | none |
 | 2 | [W2.3] RCS: Doing More with Revision History | – | – | – | none |
-| 2 | [W2.4] IDEs: Basic Features | 1 | 1 | 0 | 2 |
-| 2 | [W2.5] Intro to Automated Testing | 6 | 1 | 0 | 7 |
+| 2 | [W2.4] IDEs: Basic Features | 4 | 1 | 0 | 5 |
+| 2 | [W2.5] Intro to Automated Testing | 14 | 1 | 0 | 15 |
 | 3 | [W3.1] RCS: Branching | – | – | – | none |
 | 3 | [W3.2] RCS: Creating Pull Requests | – | – | – | none |
-| 3 | [W3.3] Automating the Build Process | 4 | 1 | 2 | 5 |
-| 3 | [W3.4] Java: JavaDoc, file I/O, packages, JARs | 9 | 2 | 2 | 11 |
-| 3 | [W3.5] Code Quality: Coding Standards | 3 | 0 | 1 | 3 |
-| 3 | [W3.6] Developer Testing | 2 | 1 | 0 | 3 |
-| 3 | [W3.7] Unit Testing | 8 | 1 | 2 | 9 |
-| 4 | [W4.1] Design: Models | 4 | 2 | 1 | 6 |
-| 4 | [W4.2] Class/Object Diagrams: Basics | 6 | 2 | 2 | 8 |
-| 4 | [W4.3] Class Diagrams: Beyond Basics | 6 | 2 | 2 | 8 |
-| 4 | [W4.4] Java: JavaFX | 2 | 0 | 1 | 2 |
-| 4 | [W4.5] Java: varargs | 2 | 0 | 1 | 2 |
-| 4 | [W4.6] Code Quality: Naming | 6 | 1 | 1 | 7 |
-| 4 | [W4.7] Static Analysis | 3 | 1 | 1 | 4 |
-| 4 | [W4.8] Code Reviews | 2 | 2 | 0 | 4 |
+| 3 | [W3.3] Automating the Build Process | 10 | 3 | 2 | 13 |
+| 3 | [W3.4] Java: JavaDoc, file I/O, packages, JARs | 24 | 2 | 2 | 26 |
+| 3 | [W3.5] Code Quality: Coding Standards | 7 | 0 | 1 | 7 |
+| 3 | [W3.6] Developer Testing | 5 | 1 | 0 | 6 |
+| 3 | [W3.7] Unit Testing | 24 | 3 | 2 | 27 |
+| 4 | [W4.1] Design: Models | 9 | 2 | 1 | 11 |
+| 4 | [W4.2] Class/Object Diagrams: Basics | 36 | 4 | 2 | 40 |
+| 4 | [W4.3] Class Diagrams: Beyond Basics | 30 | 3 | 2 | 33 |
+| 4 | [W4.4] Java: JavaFX | 3 | 0 | 1 | 3 |
+| 4 | [W4.5] Java: varargs | 3 | 0 | 1 | 3 |
+| 4 | [W4.6] Code Quality: Naming | 13 | 1 | 1 | 14 |
+| 4 | [W4.7] Static Analysis | 6 | 2 | 1 | 8 |
+| 4 | [W4.8] Code Reviews | 6 | 2 | 0 | 8 |
 | 4 | [W4.9] RCS: Managing Pull Requests I | – | – | – | none |
-| 5 | [W5.1] Requirements: Intro | 6 | 3 | 1 | 9 |
-| 5 | [W5.2] Requirements: Gathering | 7 | 2 | 0 | 9 |
-| 5 | [W5.3] Requirements: Specifying | 7 | 3 | 1 | 10 |
-| 5 | [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments | 16 | 5 | 3 | 21 |
-| 5 | [W5.5] Refactoring | 6 | 1 | 1 | 7 |
-| 5 | [W5.6] Assertions | 7 | 2 | 2 | 9 |
+| 5 | [W5.1] Requirements: Intro | 16 | 5 | 1 | 21 |
+| 5 | [W5.2] Requirements: Gathering | 17 | 3 | 0 | 20 |
+| 5 | [W5.3] Requirements: Specifying | 24 | 5 | 1 | 29 |
+| 5 | [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments | 45 | 5 | 3 | 50 |
+| 5 | [W5.5] Refactoring | 16 | 3 | 1 | 19 |
+| 5 | [W5.6] Assertions | 13 | 2 | 2 | 15 |
 | 5 | [W5.7] Java: Streams | – | – | – | none |
 | 5 | [W5.8] RCS: Managing Pull Requests II | – | – | – | none |
-| 6 | [W6.1] Modeling: Sequence Diagrams | 3 | 1 | 1 | 4 |
-| 6 | [W6.2] Architecture Diagrams | 10 | 3 | 2 | 13 |
-| 6 | [W6.3] Logging | 4 | 0 | 1 | 4 |
-| 6 | [W6.4] Debugging | 17 | 5 | 0 | 22 |
+| 6 | [W6.1] Modeling: Sequence Diagrams | 15 | 1 | 1 | 16 |
+| 6 | [W6.2] Architecture Diagrams | 34 | 5 | 2 | 39 |
+| 6 | [W6.3] Logging | 8 | 0 | 1 | 8 |
+| 6 | [W6.4] Debugging | 87 | 7 | 0 | 94 |
 | 6 | [W6.5] IDEs: Intermediate Features | – | – | – | none |
-| 7 | [W7.1] Requirements: Use Cases | 11 | 3 | 2 | 14 |
-| 7 | [W7.2] Requirements Documents | 4 | 1 | 1 | 5 |
-| 7 | [W7.3] Design: High-Level View | 3 | 1 | 1 | 4 |
-| 7 | [W7.4] Design: Fundamentals | 11 | 3 | 4 | 14 |
+| 7 | [W7.1] Requirements: Use Cases | 27 | 4 | 2 | 31 |
+| 7 | [W7.2] Requirements Documents | 9 | 1 | 1 | 10 |
+| 7 | [W7.3] Design: High-Level View | 8 | 1 | 1 | 9 |
+| 7 | [W7.4] Design: Fundamentals | 22 | 5 | 4 | 27 |
 | 7 | [W7.5] IDEs: Advanced Features : OPTIONAL | – | – | – | none |
-| 7 | [W7.6] Integration Approaches | 6 | 0 | 1 | 6 |
-| 7 | [W7.7] Project Mgt: Scheduling and Tracking | 8 | 1 | 0 | 9 |
+| 7 | [W7.6] Integration Approaches | 13 | 0 | 1 | 13 |
+| 7 | [W7.7] Project Mgt: Scheduling and Tracking | 31 | 2 | 0 | 33 |
 | 7 | [W7.8] Project Mgt: Workflows for Git-Based Projects | – | – | – | none |
-| 8 | [W8.1] [Revisiting] Drawing Class/Object Diagrams - Basics | 5 | 0 | 1 | 5 |
-| 8 | [W8.2] [Revisiting] Drawing Class/Object Diagrams - Intermediate | 5 | 1 | 1 | 6 |
-| 8 | [W8.3] [Revisiting] Drawing Sequence Diagrams | 4 | 0 | 1 | 4 |
-| 8 | [W8.4] Testing: Types | 12 | 4 | 2 | 16 |
-| 8 | [W8.5] Testing: Intermediate Concepts | 9 | 2 | 2 | 11 |
-| 9 | [W9.1] Conceptual Class Diagrams (aka OODMs) | 3 | 1 | 1 | 4 |
-| 9 | [W9.2] Activity Diagrams | 3 | 0 | 1 | 3 |
-| 9 | [W9.3] Conceptualizing a Design | 3 | 0 | 0 | 3 |
-| 9 | [W9.4] Architecture Diagrams: Drawing | 3 | 1 | 1 | 4 |
-| 9 | [W9.5] Design Principles | 14 | 2 | 4 | 16 |
-| 9 | [W9.6] [Revisiting] SDLC Process Models | 4 | 1 | 0 | 5 |
-| 9 | [W9.7] SDLC Process Models (continued) | 10 | 6 | 1 | 16 |
-| 9 | [W9.8] Writing Developer Documents | 5 | 3 | 2 | 8 |
-| 10 | [W10.1] Design Patterns | 9 | 4 | 3 | 13 |
-| 10 | [W10.2] Defensive Programming | 8 | 2 | 3 | 10 |
-| 10 | [W10.3] Test Cases: Intro | 7 | 1 | 1 | 8 |
-| 10 | [W10.4] Test Cases: Equivalence Partitioning | 5 | 2 | 1 | 7 |
-| 10 | [W10.5] Test Cases: Boundary Value Analysis | 5 | 0 | 1 | 5 |
-| 11 | [W11.1] More Design Patterns | 8 | 3 | 1 | 11 |
-| 11 | [W11.2] Architectural Styles | 13 | 4 | 3 | 17 |
-| 11 | [W11.3] Test Cases: Combining Multiple Inputs | 9 | 1 | 1 | 10 |
-| 11 | [W11.4] Other QA Techniques | 3 | 2 | 1 | 5 |
-| 11 | [W11.5] Secure Software Engineering | 18 | 7 | 2 | 25 |
-| 11 | [W11.6] Reuse | 8 | 2 | 2 | 10 |
-| 11 | [W11.7] Cloud Computing : OPTIONAL | 2 | 0 | 0 | 2 |
-| 11 | [W11.8] Other UML Models : OPTIONAL | 1 | 1 | 0 | 2 |
-| | **Total** | **422** | **118** | **84** | **540** |
+| 8 | [W8.1] [Revisiting] Drawing Class/Object Diagrams - Basics | 8 | 0 | 1 | 8 |
+| 8 | [W8.2] [Revisiting] Drawing Class/Object Diagrams - Intermediate | 8 | 1 | 1 | 9 |
+| 8 | [W8.3] [Revisiting] Drawing Sequence Diagrams | 7 | 0 | 1 | 7 |
+| 8 | [W8.4] Testing: Types | 32 | 6 | 2 | 38 |
+| 8 | [W8.5] Testing: Intermediate Concepts | 23 | 3 | 2 | 26 |
+| 9 | [W9.1] Conceptual Class Diagrams (aka OODMs) | 5 | 2 | 1 | 7 |
+| 9 | [W9.2] Activity Diagrams | 10 | 2 | 1 | 12 |
+| 9 | [W9.3] Conceptualizing a Design | 6 | 0 | 0 | 6 |
+| 9 | [W9.4] Architecture Diagrams: Drawing | 5 | 1 | 1 | 6 |
+| 9 | [W9.5] Design Principles | 29 | 4 | 4 | 33 |
+| 9 | [W9.6] [Revisiting] SDLC Process Models | 12 | 1 | 0 | 13 |
+| 9 | [W9.7] SDLC Process Models (continued) | 42 | 6 | 1 | 48 |
+| 9 | [W9.8] Writing Developer Documents | 19 | 3 | 2 | 22 |
+| 10 | [W10.1] Design Patterns | 30 | 5 | 3 | 35 |
+| 10 | [W10.2] Defensive Programming | 18 | 3 | 3 | 21 |
+| 10 | [W10.3] Test Cases: Intro | 14 | 1 | 1 | 15 |
+| 10 | [W10.4] Test Cases: Equivalence Partitioning | 17 | 2 | 1 | 19 |
+| 10 | [W10.5] Test Cases: Boundary Value Analysis | 12 | 0 | 1 | 12 |
+| 11 | [W11.1] More Design Patterns | 29 | 4 | 1 | 33 |
+| 11 | [W11.2] Architectural Styles | 44 | 5 | 3 | 49 |
+| 11 | [W11.3] Test Cases: Combining Multiple Inputs | 22 | 1 | 1 | 23 |
+| 11 | [W11.4] Other QA Techniques | 5 | 4 | 1 | 9 |
+| 11 | [W11.5] Secure Software Engineering | 87 | 12 | 2 | 99 |
+| 11 | [W11.6] Reuse | 27 | 4 | 2 | 31 |
+| 11 | [W11.7] Cloud Computing : OPTIONAL | 6 | 0 | 0 | 6 |
+| 11 | [W11.8] Other UML Models : OPTIONAL | 9 | 1 | 0 | 10 |
+| | **Total** | **1256** | **166** | **84** | **1422** |
 
 ## Topics without questions
 
@@ -384,6 +384,437 @@ These topics are only links to external lessons (Git-Mastery tours, IDE guides, 
 
 **Explanation:** Private fields with getters hide the data behind the interface, and returning an unmodifiable view stops callers from changing the internal set directly.
 
+### W1.1-19 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.1] OOP: Classes & Objects · **Subtopic:** Procedural vs OOP design · **Source:** W1.1a · **Basis:** body
+
+**Question:** A developer moving from C to Java asks what changes in how a solution is designed. Which contrast matches the course?
+
+- A. In C, classes and inheritance are the basic elements of design; in OOP, functions and modules are
+- B. In C, functions and data structures are the basic elements of design; in OOP, objects and object interactions are ✅
+- C. In C, data and operations are combined into units; in OOP, data and operations are kept strictly separate
+- D. In C, objects are the basic elements of design; in OOP, functions with no lasting state are
+
+**Answer:** B
+
+**Explanation:** With a procedural language like C, functions and data structures are the basic elements of design. OOP restructures this at a higher level: it groups operations and data into objects and combines them into networks, so objects and object interactions become the basic elements of design.
+
+### W1.1-20 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.1] OOP: Classes & Objects · **Subtopic:** Java and paradigms · **Source:** W1.1a · **Basis:** body
+
+**Question:** Which statement about Java and programming paradigms matches the course?
+
+- A. Java supports only the OOP paradigm; functional and procedural code cannot be written in it
+- B. Java is primarily a functional language that also supports OOP as a secondary paradigm
+- C. Primarily OOP; supports limited functional programming; procedural code is possible but not recommended ✅
+- D. Java supports functional, procedural and logic programming equally, with OOP added as an option
+
+**Answer:** C
+
+**Explanation:** Some languages support multiple paradigms. Java is primarily an OOP language, but it supports limited forms of functional programming and can be used to write procedural code, although writing procedural code in it is not recommended.
+
+### W1.1-21 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.1] OOP: Classes & Objects · **Subtopic:** Virtual object network · **Source:** W1.1b · **Basis:** bold
+
+**Question:** In the real-world "average age" scenario you use a `Pen` and `Paper` to note down ages. In the OOP program, these are replaced by an `AgeList` object, and your role is played by a `Main` object. What does this illustrate?
+
+- A. OOP does not demand that the virtual object network follow the real world exactly ✅
+- B. Every real-world object must have exactly one matching object in the program
+- C. Objects that have no state in the real world cannot appear in an OOP program
+- D. The virtual world must leave out any object that represents a person
+
+**Answer:** A
+
+**Explanation:** OOP solutions try to create a similar object network in memory, but OOP does not demand that the virtual network follow the real world exactly. As no physical writing is involved, `Pen` and `Paper` can be replaced by an `AgeList`, and `Main` can represent your role.
+
+### W1.1-22 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.1] OOP: Classes & Objects · **Subtopic:** Objects sending messages · **Source:** W1.1b · **Basis:** body
+
+**Question:** You send the message "What is your name?" to Adam and get "Adam"; you send the same message to Beth and get "Beth". What does this illustrate about object interactions?
+
+- A. A message always changes the state of the receiver
+- B. Each receiver must be sent a differently worded message
+- C. The sender's own state decides the response, not the receiver's
+- D. The result can vary by receiver even when the message is identical ✅
+
+**Answer:** D
+
+**Explanation:** Objects interact by sending messages, and the result can vary based on which object receives the message even when the message is identical. Here neither receiver's state changes; each simply responds in its own way.
+
+### W1.1-23 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.1] OOP: Classes & Objects · **Subtopic:** Message results · **Source:** W1.1b · **Basis:** body
+
+**Question:** `Main` sends the message `add(23)` to a `Calculator` object whose current total is 50. What happens, and what does it show about messages in general?
+
+- A. `Main` receives 73 and the calculator's total becomes 73; a message can result in a response to the sender and/or a change in the receiver's state ✅
+- B. `Main` receives 23 and the total stays 50; a message can only return the data it carried
+- C. `Main` receives nothing and the total becomes 73; a message can change the receiver's state but never return a response
+- D. `Main` receives 73 and the total stays 50; a message can return a response but never change the receiver's state
+
+**Answer:** A
+
+**Explanation:** In the course's example, the calculator responds with 73 and its state changes to total = total + 23. A message can result in the sender receiving a response and/or the receiver's state being changed.
+
+### W1.1-24 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.1] OOP: Classes & Objects · **Subtopic:** Interface vs implementation · **Source:** W1.1b · **Basis:** body
+
+**Question:** The `Adam` object offers a method `getAge(Date asAt)`. The way it actually works out the age from Adam's date of birth is not visible to other objects. Which description is correct?
+
+- A. `getAge(Date asAt)` is part of its state; the age calculation is part of its behavior only
+- B. `getAge(Date asAt)` is part of its interface; how the age is computed is part of its implementation ✅
+- C. `getAge(Date asAt)` is part of its implementation; how the age is computed is part of its interface
+- D. Both are part of its interface, because other objects can call `getAge`
+
+**Answer:** B
+
+**Explanation:** Every object has an interface through which others interact with it and an implementation that supports the interface but may not be accessible to other objects. The `getAge(Date asAt)` method is in the interface; the method's implementation is not visible to other objects.
+
+### W1.1-25 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.1] OOP: Classes & Objects · **Subtopic:** Objects as abstractions · **Source:** W1.1c · **Basis:** bold
+
+**Question:** A program queries a `Person` object for Adam's age instead of handling Adam's date of birth, the format it is stored in, and the algorithm that turns it into an age. Why does the course call objects an abstraction mechanism?
+
+- A. Because objects hide all of their data from every other object, even through their interface
+- B. Because objects let the same class be used to create many similar objects
+- C. Because they let us ignore lower-level details such as data formats and work with larger units ✅
+- D. Because objects let a subclass inherit data and behavior from a superclass
+
+**Answer:** C
+
+**Explanation:** Objects are an abstraction mechanism because they let us ignore lower-level details such as data formats and method implementations and work at the level of objects. Asking a `Person` object for an age, without dealing with how the date of birth is stored or processed, is an example.
+
+### W1.1-26 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.1] OOP: Classes & Objects · **Subtopic:** Encapsulation: packaging · **Source:** W1.1d · **Basis:** body
+
+**Question:** In a refactoring, a loose `balance` variable and the separate functions `deposit` and `withdraw` that use it are moved into a single `Account` object. Which aspect of encapsulation does this mainly show?
+
+- A. The information hiding aspect
+- B. The abstraction aspect
+- C. The inheritance aspect
+- D. The packaging aspect ✅
+
+**Answer:** D
+
+**Explanation:** The packaging aspect of encapsulation is that an object packages data and related behavior together into one self-contained unit. Information hiding, the other aspect, is about the data being accessible only through the object's interface.
+
+### W1.1-27 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.1] OOP: Classes & Objects · **Subtopic:** Writing an OOP program · **Source:** W1.1e · **Basis:** bold
+
+**Question:** According to the course, writing an OOP program is essentially writing instructions that the computer will use to do which two things?
+
+- A. Create the virtual object network, and give it inputs to produce the desired outcome ✅
+- B. Define the data structures, and write the global functions that operate on them
+- C. Draw the class diagram, and generate code from it
+- D. Hide all data inside objects, and expose every method publicly
+
+**Answer:** A
+
+**Explanation:** Writing an OOP program is essentially writing instructions to create the virtual world of the object network and to provide it with the inputs needed to produce the outcome you want.
+
+### W1.1-28 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.1] OOP: Classes & Objects · **Subtopic:** Classes and objects · **Source:** W1.1e · **Basis:** body
+
+**Question:** An OOP program calculates the average age of Adam, Beth, Charlie and Daisy using classes `Person`, `AgeList`, `Calculator` and `Main`. Which class is instantiated more than once?
+
+- A. `AgeList`, one object per age recorded
+- B. `Calculator`, one object per calculation
+- C. `Person`, one object for each of the four people ✅
+- D. `Main`, one object per person asked
+
+**Answer:** C
+
+**Explanation:** Adam, Beth, Charlie and Daisy are all the same kind of thing, so one `Person` class is used to instantiate four objects. The `AgeList`, `Calculator` and `Main` classes are each used to instantiate one object.
+
+### W1.1-29 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.1] OOP: Classes & Objects · **Subtopic:** Class-level methods · **Source:** W1.1h · **Basis:** bold
+
+**Question:** Why should `getTotalPersons()` be a class-level method of `Person` rather than a message sent to a particular `Person` object?
+
+- A. Because class-level methods run faster than instance methods
+- B. Because no single `Person` object should have to know how many `Person` objects exist ✅
+- C. Because the result of `getTotalPersons()` differs for each individual `Person` object
+- D. Because only class-level methods are allowed to return numbers
+
+**Answer:** B
+
+**Explanation:** Class-level methods are related to a class but are not suitable for sending to a specific object. A specific `Person` should not have to know how many `Person` objects exist, so `getTotalPersons()` is called using the class instead of an instance.
+
+### W1.1-30 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.1] OOP: Classes & Objects · **Subtopic:** Static members · **Source:** W1.1h · **Basis:** body
+
+**Question:** Why are class-level members sometimes called "static members"?
+
+- A. Because their values can never change once the program starts
+- B. Because they are stored in a separate static file
+- C. Because they cannot be accessed from outside the class
+- D. Because some programming languages use the keyword `static` to identify them ✅
+
+**Answer:** D
+
+**Explanation:** Class-level attributes and methods are collectively called class-level members; they are sometimes called static members because some languages use the keyword `static` to identify them. They are accessed using the class name rather than an instance.
+
+### W1.1-31 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.1] OOP: Classes & Objects · **Subtopic:** Instance vs class-level attributes · **Source:** W1.1h · **Basis:** body
+
+**Question:** Every `Person` object has a `name` attribute, and the `Person` class also has a class-level attribute `totalPersons`. Which statement is correct?
+
+- A. All `Person` objects share a single `name` value, and each object keeps its own copy of `totalPersons`
+- B. All `Person` objects share a single `name` value and a single `totalPersons` value
+- C. Each object has its own copy of the `name` value, while one `totalPersons` value is shared by all ✅
+- D. Each `Person` object has its own copy of both `name` and `totalPersons`
+
+**Answer:** C
+
+**Explanation:** All objects of a class have the same attributes, but each object has its own copy of the attribute value, so `name` varies between objects. A class-level attribute such as `totalPersons` is maintained centrally and shared by all instances.
+
+### W1.1-32 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.1] OOP: Classes & Objects · **Subtopic:** Java class file naming · **Source:** W1.1f · **Basis:** body
+
+**Question:** A developer writes `public class Time { ... }` with the attributes `hour`, `minute` and `second`. According to the Java conventions in the course, which file should this code be placed in?
+
+- A. `Main.java`
+- B. `Time.class`
+- C. `Time.java` ✅
+- D. `TimeClass.java`
+
+**Answer:** C
+
+**Explanation:** Code for a class is placed in a file whose name matches the class, so the `Time` class goes in `Time.java`. Class names follow the same capitalization as the file, and `.class` files are what the compiler produces.
+
+### W1.1-33 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.1] OOP: Classes & Objects · **Subtopic:** Invoking new · **Source:** W1.1f · **Basis:** body
+
+**Question:** What happens when the statement `Time time = new Time();` is executed?
+
+- A. Java creates the object, runs the constructor to initialize it, then returns a reference to it ✅
+- B. Java calls the constructor, which must end with `return this;` to hand back the object
+- C. Java copies an existing `Time` object and assigns the copy to `time`
+- D. Java declares the variable `time` but creates the object only when a method is first called
+
+**Answer:** A
+
+**Explanation:** When you invoke `new`, Java creates the object and calls your constructor to initialize the instance variables. When the constructor is done, it returns a reference to the new object; a constructor does not return anything explicitly.
+
+### W1.1-34 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.1] OOP: Classes & Objects · **Subtopic:** Calling instance methods · **Source:** W1.1f · **Basis:** body
+
+**Question:** The `Time` class has the constructor `Time(int hour, int minute, int second)` and the method below. What does `t.secondsSinceMidnight()` return?
+
+```java
+public int secondsSinceMidnight() {
+    return hour*60*60 + minute*60 + second;
+}
+
+// elsewhere
+Time t = new Time(0, 2, 5);
+```
+
+- A. 7
+- B. 205
+- C. 7325
+- D. 125 ✅
+
+**Answer:** D
+
+**Explanation:** The object is created with hour 0, minute 2 and second 5, so the method computes 0 + 2*60 + 5 = 125. Instance methods like this can access the attributes of the object they are called on.
+
+### W1.1-35 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.1] OOP: Classes & Objects · **Subtopic:** The this keyword · **Source:** W1.1f · **Basis:** bold
+
+**Question:** Inside an instance method of `Time`, which of these uses of `this` is NOT allowed?
+
+- A. Reading an instance variable with `this.hour`
+- B. Writing an instance variable with `this.minute = 0;`
+- C. Assigning a new object to it, as in `this = new Time();` ✅
+- D. Passing it as an argument, as in `printer.print(this);`
+
+**Answer:** C
+
+**Explanation:** You can use `this` like the name of any other object: read and write its instance variables and pass it as an argument to other methods. But you do not declare `this`, and you cannot make an assignment to it.
+
+### W1.1-36 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.1] OOP: Classes & Objects · **Subtopic:** Instance methods · **Source:** W1.1f · **Basis:** body
+
+**Question:** The method `public int secondsSinceMidnight()` in class `Time` has no `static` keyword in its signature. What does this indicate?
+
+- A. It can only be called using the class name, as in `Time.secondsSinceMidnight()`
+- B. It is an instance method, called on an object and able to access its attributes ✅
+- C. It cannot access the attributes `hour`, `minute` and `second`
+- D. It is a constructor of the `Time` class
+
+**Answer:** B
+
+**Explanation:** Methods added to a class can be called on objects of that class. These instance methods do not have the `static` keyword in their signature, and they can access the attributes of the class.
+
+### W1.1-37 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.1] OOP: Classes & Objects · **Subtopic:** Getter naming · **Source:** W1.1g · **Basis:** bold
+
+**Question:** The `Time` class keeps `private int minute;`. Another class needs to read this value. What does the course suggest, and what is the conventional name for it?
+
+- A. Make `minute` public and name it `Minute`
+- B. Add a method called `minute()` that changes the value
+- C. Add an accessor (getter) method named `getMinute()` ✅
+- D. Add a setter method named `setMinute()` that returns the current value
+
+**Answer:** C
+
+**Explanation:** As private instance variables can be accessed only from within the class, you can provide methods to access them. Such methods are formally called accessors but more commonly getters, and by convention the method that gets a variable named `something` is called `getSomething`.
+
+### W1.1-38 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.1] OOP: Classes & Objects · **Subtopic:** Setters enforcing validity · **Source:** W1.1g · **Basis:** body
+
+**Question:** The `Circle` class has the setter below and a getter `getRadius()` that returns `radius`. What is printed?
+
+```java
+public void setRadius(double radius) {
+    this.radius = Math.max(radius, 0);
+}
+
+// elsewhere
+Circle c = new Circle(1, 2, 5);
+c.setRadius(-5);
+System.out.println(c.getRadius());
+```
+
+- A. `0.0` ✅
+- B. `-5.0`
+- C. `5.0`
+- D. A runtime error, because the radius is negative
+
+**Answer:** A
+
+**Explanation:** `Math.max(-5, 0)` is 0, so the setter stores 0 and `getRadius()` returns `0.0`. This is the course's Circle exercise, where setters automatically set a negative radius to 0, showing that a setter can control how an attribute is modified.
+
+### W1.1-39 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.1] OOP: Classes & Objects · **Subtopic:** Choosing a static field · **Source:** W1.1i · **Basis:** body
+
+**Question:** Each `Bicycle` gets a serial number `id`, starting from 1, and the class must track how many bicycles have been created so far in `numberOfBicycles`. Which field should be declared `static`, and why?
+
+- A. `id`, because every bicycle object has one
+- B. Both, because both are integers
+- C. Neither, because static fields can never be changed once they are created
+- D. `numberOfBicycles`, because it relates to the class as a whole ✅
+
+**Answer:** D
+
+**Explanation:** The ID is unique to each object, so it is an instance variable. The count of bicycles created is not related to any individual object but to the class as a whole, so it should be a class variable, declared with the `static` modifier and shared by every instance.
+
+### W1.1-40 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.1] OOP: Classes & Objects · **Subtopic:** Tracing class variables · **Source:** W1.1i · **Basis:** body
+
+**Question:** Given the `Bicycle` class below, three bicycles are created in order: `first`, `second` and `third`. What do `third.getID()` and `Bicycle.getNumberOfBicycles()` return?
+
+```java
+public class Bicycle {
+    private int gear;
+    private int speed;
+    private int id;
+    private static int numberOfBicycles = 0;
+
+    public Bicycle(int startSpeed, int startGear) {
+        gear = startGear;
+        speed = startSpeed;
+        numberOfBicycles++;
+        id = numberOfBicycles;
+    }
+
+    public int getID() {
+        return id;
+    }
+
+    public static int getNumberOfBicycles() {
+        return numberOfBicycles;
+    }
+}
+```
+
+- A. 1 and 1
+- B. 3 and 3 ✅
+- C. 1 and 3
+- D. 3 and 1
+
+**Answer:** B
+
+**Explanation:** `numberOfBicycles` is a class variable shared by all instances, so each constructor call increments the same counter. The third bicycle is assigned id 3, and the shared count is also 3.
+
+### W1.1-41 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.1] OOP: Classes & Objects · **Subtopic:** Invoking static methods · **Source:** W1.1i · **Basis:** body
+
+**Question:** How should the static method `getNumberOfBicycles()` of class `Bicycle` be invoked?
+
+- A. `new Bicycle(0, 0).getNumberOfBicycles()`, as an instance is required
+- B. `this.getNumberOfBicycles()` from any class
+- C. `Bicycle.getNumberOfBicycles()`, using the class name, without needing an instance ✅
+- D. `getNumberOfBicycles(Bicycle)`, passing the class as an argument
+
+**Answer:** C
+
+**Explanation:** Static methods should be invoked with the class name, without the need for creating an instance of the class, as in `ClassName.methodName(args)`.
+
+### W1.1-42 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.1] OOP: Classes & Objects · **Subtopic:** Switching on an enum · **Source:** W1.1k · **Basis:** body
+
+**Question:** Given the `Day` enum with values `SUNDAY` to `SATURDAY`, what does the code below print?
+
+```java
+Day today = Day.MONDAY;
+switch (today) {
+case SATURDAY:
+case SUNDAY:
+    System.out.println("It's the weekend");
+    break;
+default:
+    System.out.println("It's a week day");
+}
+```
+
+- A. `It's the weekend`
+- B. `It's the weekend` followed by `It's a week day`
+- C. Nothing, because `MONDAY` has no matching `case`
+- D. `It's a week day` ✅
+
+**Answer:** D
+
+**Explanation:** `MONDAY` matches neither the `SATURDAY` nor the `SUNDAY` case, so execution goes to the `default` branch and prints `It's a week day`.
+
+### W1.1-43 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.1] OOP: Classes & Objects · **Subtopic:** Defining and using enums · **Source:** W1.1k · **Basis:** body
+
+**Question:** A developer defines `public enum Day { SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY }`. Where does this code go, and how is one of its values referenced elsewhere?
+
+- A. In `Day.java`; a value is referenced as `Day.SATURDAY` ✅
+- B. In `Main.java`; a value is referenced as `"SATURDAY"`
+- C. In `Day.java`; a value is referenced as `Day.saturday()`
+- D. In `Enums.java`; a value is referenced as `SATURDAY.Day`
+
+**Answer:** A
+
+**Explanation:** The course puts the `Day` enumeration in the file `Day.java`, and uses values such as `Day.MONDAY` and `Day.SATURDAY`. Enum field names are in uppercase by convention because they are constants.
+
 ## [W1.2] OOP Inheritance
 
 ### W1.2-01 · MCQ
@@ -521,6 +952,223 @@ These topics are only links to external lessons (Git-Mastery tours, IDE guides, 
 **Answer:** C
 
 **Explanation:** A subclass inherits fields and methods but not constructors; it can invoke a superclass constructor with `super(parameters)`.
+
+### W1.2-10 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.2] OOP Inheritance · **Subtopic:** Inheritance terminology · **Source:** W1.2a · **Basis:** body
+
+**Question:** `EvaluationReport` inherits from `Report`. Which term is NOT one of the names the course gives for `EvaluationReport`'s role?
+
+- A. Child class
+- B. Subclass
+- C. Extended class
+- D. Superclass ✅
+
+**Answer:** D
+
+**Explanation:** Other names for a derived class are child class, subclass and extended class. Superclass, like parent class, is another name for the base class, which here is `Report`.
+
+### W1.2-11 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.2] OOP Inheritance · **Subtopic:** Extracting common parts · **Source:** W1.2a · **Basis:** bold
+
+**Question:** `Man` and `Woman` behave the same way for certain things, but the program still needs to distinguish between them for other things. How does the course suggest applying inheritance?
+
+- A. Replace both classes with a single `Person` class
+- B. Make `Woman` a subclass of `Man` so that it can reuse all of `Man`'s code
+- C. Add a `Person` superclass with the common code, inherited by `Man` and `Woman` ✅
+- D. Copy the shared code into both classes so they stay independent
+
+**Answer:** C
+
+**Explanation:** Applying inheritance to a group of similar classes can extract their common parts into a more general class. Since `Man` and `Woman` must stay distinct for some things, a `Person` superclass holds the common code and both classes inherit from it.
+
+### W1.2-12 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.2] OOP Inheritance · **Subtopic:** Inheritance and subtyping · **Source:** W1.2a · **Basis:** body
+
+**Question:** Does inheritance always mean that a subtype relationship exists between the two classes?
+
+- A. Yes; inheritance and subtyping are the same thing by definition
+- B. Not necessarily, although the two often go hand in hand ✅
+- C. No; inheritance never creates a subtype relationship, which only interfaces can create
+- D. Only when the subclass overrides every single method of its superclass
+
+**Answer:** B
+
+**Explanation:** Inheritance implies that the derived class can be considered a subtype of the base class, giving an is-a relationship. However, inheritance does not necessarily mean a subtype relationship exists; the two often go hand in hand, and the course assumes for simplicity that they do.
+
+### W1.2-13 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.2] OOP Inheritance · **Subtopic:** Overriding requirements · **Source:** W1.2c · **Basis:** bold
+
+**Question:** `Report` has a method `print(): void`. For a method in subclass `EvaluationReport` to override it, which conditions must hold?
+
+- A. Same name and same number of parameters; parameter types may differ
+- B. Same name, same type signature, and the same return type or a subtype of it ✅
+- C. Same name and a different type signature, so that the two can be told apart
+- D. Same type signature only; the name may differ as long as the class is a subclass
+
+**Answer:** B
+
+**Explanation:** Method overriding is when a subclass re-implements an inherited method. Overridden methods have the same name, the same type signature, and the same (or a subtype of the) return type. Same name with a different type signature is overloading instead.
+
+### W1.2-14 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.2] OOP Inheritance · **Subtopic:** Type signatures · **Source:** W1.2b · **Basis:** bold
+
+**Question:** Do `int add(int X, int Y)` and `void add(int A, int B)` have the same type signature?
+
+- A. No, because the return types differ
+- B. No, because the parameter names differ
+- C. No, because both the return types and the parameter names differ
+- D. Yes, both have the type signature `(int, int)` ✅
+
+**Answer:** D
+
+**Explanation:** The type signature of an operation is the type sequence of its parameters. The return type and parameter names are not part of it, although parameter order is significant, so both methods have the signature `(int, int)`.
+
+### W1.2-15 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.2] OOP Inheritance · **Subtopic:** Purpose of overloading · **Source:** W1.2b · **Basis:** body
+
+**Question:** A class has `calculate(String): void` and `calculate(int): void`. What is overloading like this used to indicate?
+
+- A. That a subclass has changed the behavior inherited from its parent
+- B. That multiple operations do similar things but take different parameters ✅
+- C. That one of the two methods is abstract and the other is concrete
+- D. That the two methods must return different types
+
+**Answer:** B
+
+**Explanation:** Method overloading is having multiple methods with the same name but different type signatures. It is used to indicate that multiple operations do similar things but take different parameters. Changing inherited behavior in a subclass is overriding.
+
+### W1.2-16 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.2] OOP Inheritance · **Subtopic:** What subclasses inherit · **Source:** W1.2d · **Basis:** bold
+
+**Question:** `MountainBike extends Bicycle`. Which of these does `MountainBike` NOT inherit from `Bicycle`?
+
+- A. The fields `gear` and `speed`
+- B. The method `setGear(int)`
+- C. Any nested classes declared in `Bicycle`
+- D. The constructor `Bicycle(int, int)` ✅
+
+**Answer:** D
+
+**Explanation:** A subclass inherits all the members (fields, methods and nested classes) of its superclass. Constructors are not members, so they are not inherited, although the superclass constructor can be invoked from the subclass.
+
+### W1.2-17 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.2] OOP Inheritance · **Subtopic:** The Object class · **Source:** W1.2d · **Basis:** body
+
+**Question:** A developer writes `public class Task { ... }` with no `extends` clause. What is the superclass of `Task`?
+
+- A. It has no superclass, as only `Object` has none
+- B. `java.lang.Object`, implicitly ✅
+- C. Whichever class is declared first in the same package
+- D. `java.lang.Class`, which every class extends implicitly
+
+**Answer:** B
+
+**Explanation:** In the absence of any other explicit superclass, every class is implicitly a subclass of `Object`. Only `Object` has no superclass, and `java.lang.Object` defines and implements behavior common to all classes.
+
+### W1.2-18 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.2] OOP Inheritance · **Subtopic:** Calling an overridden method · **Source:** W1.2d · **Basis:** body
+
+**Question:** Given the classes below, what does `new Subclass().printMethod()` print?
+
+```java
+public class Superclass {
+    public void printMethod() {
+        System.out.println("Printed in Superclass.");
+    }
+}
+
+public class Subclass extends Superclass {
+    public void printMethod() {
+        super.printMethod();
+        System.out.println("Printed in Subclass");
+    }
+}
+```
+
+- A. `Printed in Superclass.` then `Printed in Subclass` ✅
+- B. `Printed in Subclass` only
+- C. `Printed in Subclass` then `Printed in Superclass.`
+- D. Nothing; the call recurses until the program crashes
+
+**Answer:** A
+
+**Explanation:** `super.printMethod()` invokes the overridden version inherited from `Superclass`, which prints first; then the subclass's own line is printed. Without `super`, the simple name `printMethod()` would refer to the version declared in `Subclass`.
+
+### W1.2-19 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.2] OOP Inheritance · **Subtopic:** super() vs super(parameters) · **Source:** W1.2d · **Basis:** body
+
+**Question:** In a subclass constructor, what is the difference between `super()` and `super(parameters)`?
+
+- A. `super()` calls the superclass's overridden methods; `super(parameters)` calls its constructors
+- B. `super()` creates a new superclass object; `super(parameters)` copies the current object
+- C. `super()` calls the no-argument superclass constructor; `super(parameters)` calls the matching one ✅
+- D. There is no difference; the parameters are ignored
+
+**Answer:** C
+
+**Explanation:** The syntax for calling a superclass constructor is `super()`, which invokes the no-argument constructor of the superclass, or `super(parameters)`, which invokes the superclass constructor with a matching parameter list.
+
+### W1.2-20 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.2] OOP Inheritance · **Subtopic:** Subclass constructors · **Source:** W1.2d · **Basis:** body
+
+**Question:** `Bicycle` has fields `gear` and `speed` and the constructor `Bicycle(int startSpeed, int startGear)`. Its subclass `MountainBike` adds `seatHeight`. In the constructor below, which fields are initialized by the `super` call?
+
+```java
+public MountainBike(int startHeight, int startSpeed, int startGear) {
+    super(startSpeed, startGear);
+    seatHeight = startHeight;
+}
+```
+
+- A. Only `seatHeight`
+- B. `speed` and `gear`; `seatHeight` is set afterwards by `MountainBike` ✅
+- C. `speed`, `gear` and `seatHeight`, all three by the `Bicycle` constructor
+- D. None; `super(...)` only checks that the arguments are valid
+
+**Answer:** B
+
+**Explanation:** `super(startSpeed, startGear)` invokes the `Bicycle` constructor, which sets `speed` and `gear`. The `MountainBike` constructor then adds its own initialization code, `seatHeight = startHeight;`.
+
+### W1.2-21 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.2] OOP Inheritance · **Subtopic:** Simplified access modifiers · **Source:** W1.2d · **Basis:** body
+
+**Question:** Assume all classes are placed at the root level (no packages), as in the course's simplified view of access modifiers. Which member-level modifier makes a field invisible to other classes?
+
+- A. `protected`
+- B. No modifier
+- C. `public`
+- D. `private` ✅
+
+**Answer:** D
+
+**Explanation:** In the simplified view, a `private` member is not visible to other classes but can be accessed in its own class. A `protected` member and a member with no modifier behave the same as `public` when all classes are at the root level.
+
+### W1.2-22 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.2] OOP Inheritance · **Subtopic:** Inherited methods in a chain · **Source:** W1.2d · **Basis:** body
+
+**Question:** `Task` has `getDescription()`. `Todo extends Task` adds `isDone()` and `setDone(boolean)`. `Deadline extends Todo` adds `getBy()` and `setBy(String)`. Which methods can be called on a `Deadline` object?
+
+- A. Only `getBy()` and `setBy(String)`
+- B. `getBy()`, `setBy(String)`, `isDone()` and `setDone(boolean)`, but not `getDescription()`
+- C. `getDescription()`, `isDone()`, `setDone(boolean)`, `getBy()` and `setBy(String)` ✅
+- D. Only `getDescription()`, `getBy()` and `setBy(String)`
+
+**Answer:** C
+
+**Explanation:** A subclass inherits all the fields and methods of its superclass, and classes can be derived from classes that are themselves derived. `Deadline` therefore has the methods of `Todo` and `Task` in addition to its own.
 
 ## [W1.3] OOP: Polymorphism
 
@@ -725,6 +1373,389 @@ commandResult = command.execute(model);
 
 **Explanation:** Interfaces cannot be instantiated, but they can be used as reference types; an object of a class that implements the interface can be assigned to such a reference.
 
+### W1.3-14 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.3] OOP: Polymorphism · **Subtopic:** Meaning of polymorphism · **Source:** W1.3a · **Basis:** body
+
+**Question:** Polymorphism literally means "ability to take many forms". Which description of it, quoted in the course, fits this meaning?
+
+- A. The ability of an object to hide its data from the outside world
+- B. The ability of a class to inherit from several classes at once
+- C. The ability of one class to have several methods sharing the same name
+- D. The ability of different objects to respond in their own way to identical messages ✅
+
+**Answer:** D
+
+**Explanation:** The course quotes polymorphism as the ability of different objects to respond, each in its own way, to identical messages. Hiding data is encapsulation, and same-named methods in one class is overloading.
+
+### W1.3-15 · MRQ
+
+**Type:** MRQ · **Topic:** [W1.3] OOP: Polymorphism · **Subtopic:** Examples of polymorphism · **Source:** W1.3a · **Basis:** body
+
+**Question:** `Cat` and `Dog` are subclasses of `Animal`. Which of these are examples of polymorphism as described in the course? (Select all that apply.)
+
+- A. Declaring an array of type `Animal` and storing both `Dog` and `Cat` objects in it ✅
+- B. Defining a method that takes an `Animal` parameter and passing a `Dog` object to it ✅
+- C. Calling `speak()` on an `Animal` variable and getting `"Meow"` for a `Cat` and `"Woof"` for a `Dog` ✅
+- D. Defining two `speak` methods with different parameter lists inside `Cat`
+
+**Answer:** A, B, C
+
+**Explanation:** Polymorphism lets you write code targeting superclass objects, use it on subclass objects, and get possibly different results based on the actual class: storing subclass objects in an `Animal` array, passing them to an `Animal` parameter, and calling `speak()` without knowing the actual class. Two same-named methods with different parameters in one class is overloading.
+
+### W1.3-16 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.3] OOP: Polymorphism · **Subtopic:** When to use abstract classes · **Source:** W1.3c · **Basis:** bold
+
+**Question:** An `Animal` class exists only as a generalization of `Cat`, `Dog`, `Horse` and `Tiger`. When should it be declared abstract?
+
+- A. When it merely represents what its subclasses have in common ✅
+- B. When it has more than one subclass
+- C. When all of its methods are already fully implemented
+- D. When it needs to be instantiated more often than any of its subclasses
+
+**Answer:** A
+
+**Explanation:** A class can be declared abstract when it is merely a representation of commonalities among its subclasses, in which case it does not make sense to instantiate it. It does not make sense to create a plain `Animal` object.
+
+### W1.3-17 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.3] OOP: Polymorphism · **Subtopic:** Abstract methods · **Source:** W1.3c · **Basis:** bold
+
+**Question:** Why is the `move` method of the `Animal` class likely to be an abstract method?
+
+- A. Because `move` is called more often than other methods
+- B. Because each animal type moves differently, so no `Animal`-level body fits all ✅
+- C. Because abstract methods are private and `move` should be hidden from all other classes
+- D. Because `move` has the same implementation in every subclass, so it only needs to be written once
+
+**Answer:** B
+
+**Explanation:** An abstract method is a method signature without a method implementation. A `move` method cannot be implemented at the `Animal` level to fit all subclasses because each animal type can move in a different way.
+
+### W1.3-18 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.3] OOP: Polymorphism · **Subtopic:** Implementing an interface · **Source:** W1.3e · **Basis:** body
+
+**Question:** `SalariedStaff` is an interface containing `setSalary(int)` and `getSalary()`. `AcademicStaff` declares that it implements `SalariedStaff`. What does this require of `AcademicStaff`?
+
+- A. It must implement only one of the two methods, of its own choice
+- B. It must inherit the implementations of both methods from `SalariedStaff`
+- C. It must implement both `setSalary(int)` and `getSalary()` ✅
+- D. It must not declare any methods other than those in the interface
+
+**Answer:** C
+
+**Explanation:** An interface is a behavior specification. A class that declares it implements `SalariedStaff` must implement all the methods the interface specifies, and as a result an `AcademicStaff` is a `SalariedStaff`.
+
+### W1.3-19 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.3] OOP: Polymorphism · **Subtopic:** Interfaces as contracts · **Source:** W1.3e · **Basis:** body
+
+**Question:** Two teams agree on an interface describing how their components interact. According to the Oracle description quoted in the course, what does treating the interface as a "contract" let the teams do?
+
+- A. Share one implementation of every method between both teams
+- B. Write their code without knowing how the other group's code is written ✅
+- C. Avoid ever testing their code against the other team's code
+- D. Change the interface freely without telling the other team
+
+**Answer:** B
+
+**Explanation:** Disparate groups of programmers often need to agree to a "contract" that spells out how their software interacts, so that each group can write their code without any knowledge of how the other group's code is written. Interfaces are such contracts.
+
+### W1.3-20 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.3] OOP: Polymorphism · **Subtopic:** Substitutability direction · **Source:** W1.3g · **Basis:** body
+
+**Question:** `AcademicStaff` is a subclass of `Staff`. Why is the last line below not valid?
+
+```java
+Staff staff;
+...
+AcademicStaff academicStaff = staff;
+```
+
+- A. Because a variable of a subclass type can never hold any object at all
+- B. Because a `Staff` variable may hold an object that is not an `AcademicStaff` ✅
+- C. Because `staff` must first be assigned to a variable of type `Object`
+- D. Because `AcademicStaff` is an interface and cannot be used as a variable type
+
+**Answer:** B
+
+**Explanation:** Every instance of a subclass is an instance of the superclass, but not vice versa. A `Staff` variable may hold an object that is not an `AcademicStaff`, so it cannot be assigned to a variable that expects `AcademicStaff`.
+
+### W1.3-21 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.3] OOP: Polymorphism · **Subtopic:** Binding terminology · **Source:** W1.3h · **Basis:** bold
+
+**Question:** What are the other names for dynamic binding and static binding?
+
+- A. Dynamic binding is also called late binding; static binding is also called early binding ✅
+- B. Dynamic binding is also called early binding; static binding is also called late binding
+- C. Dynamic binding is also called overloading; static binding is also called overriding
+- D. Dynamic binding is also called compile-time binding; static binding is also called runtime binding
+
+**Answer:** A
+
+**Explanation:** Dynamic (late) binding resolves method calls at runtime, and static (early) binding resolves them at compile time. Overridden methods use dynamic binding; overloaded methods use static binding.
+
+### W1.3-22 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.3] OOP: Polymorphism · **Subtopic:** Dynamic binding fallback · **Source:** W1.3h · **Basis:** body
+
+**Question:** In the code below, `staff` holds objects of various subclasses of `Staff`. One of those subclasses does not override `adjustSalary(int)`. For an object of that subclass, which implementation runs?
+
+```java
+void adjustSalary(int byPercent) {
+    for (Staff s : staff) {
+        s.adjustSalary(byPercent);
+    }
+}
+```
+
+- A. None; the call causes a compile error because the subclass lacks the method
+- B. The implementation in the first subclass of `Staff` that does override it
+- C. The implementation defined in the superclass, `Staff` ✅
+- D. None; the call is silently skipped at runtime
+
+**Answer:** C
+
+**Explanation:** At runtime `s` can hold an object of any `Staff` subclass, and the actual subclass's `adjustSalary(int)` is called. If that subclass does not override the operation, the one defined in the superclass `Staff` is called.
+
+### W1.3-23 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.3] OOP: Polymorphism · **Subtopic:** Static binding of overloads · **Source:** W1.3h · **Basis:** body
+
+**Question:** A class has the two methods below. When and to which method is the call `calculateGrade("A1213232")` bound?
+
+```java
+void calculateGrade(int[] averages) { ... }
+void calculateGrade(String matric) { ... }
+```
+
+- A. At runtime, to whichever method was declared first
+- B. At runtime, to the `int[]` version, after converting the string
+- C. At compile time, to the `int[]` version
+- D. At compile time, to the `String` version ✅
+
+**Answer:** D
+
+**Explanation:** Overloaded methods are resolved using static (early) binding. The call `calculateGrade("A1213232")` is bound at compile time to the implementation whose signature is `(String)`.
+
+### W1.3-24 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.3] OOP: Polymorphism · **Subtopic:** Role of substitutability · **Source:** W1.3i · **Basis:** bold
+
+**Question:** A method `feed(Animal a)` is written once and used with `Cat`, `Dog` and `Horse` objects. Of the three concepts that combine to achieve polymorphism, which one is what lets this code treat objects of different types as one type?
+
+- A. Overriding
+- B. Substitutability ✅
+- C. Dynamic binding
+- D. Overloading
+
+**Answer:** B
+
+**Explanation:** Because of substitutability, code that expects objects of a parent class can be used with objects of child classes; that is how polymorphism treats objects of different types as one type. Overloading is not one of the three concepts.
+
+### W1.3-25 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.3] OOP: Polymorphism · **Subtopic:** Role of overriding · **Source:** W1.3i · **Basis:** bold
+
+**Question:** Calling `speak()` on different `Animal` objects returns `"Meow"` from a `Cat` and `"Woof"` from a `Dog`. Of the three concepts behind polymorphism, which one is what allows objects of different subclasses to display different behaviors in response to the same method call?
+
+- A. Substitutability
+- B. Encapsulation
+- C. Static binding
+- D. Overriding ✅
+
+**Answer:** D
+
+**Explanation:** To get polymorphic behavior from an operation, the superclass operation must be overridden in each subclass; that is how overriding lets objects of different subclasses display different behaviors in response to the same call. Dynamic binding then picks the right implementation at runtime.
+
+### W1.3-26 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.3] OOP: Polymorphism · **Subtopic:** Interface syntax · **Source:** W1.3f · **Basis:** body
+
+**Question:** Which of these correctly defines a Java interface with one method?
+
+- A. `public interface DrivableVehicle { void turn(Direction direction); }` ✅
+- B. `public class interface DrivableVehicle { void turn(Direction direction) {} }`
+- C. `public interface DrivableVehicle { void turn(Direction direction) { } }`
+- D. `public implements DrivableVehicle { void turn(Direction direction); }`
+
+**Answer:** A
+
+**Explanation:** Defining an interface is like creating a class but uses the keyword `interface` in place of `class`. Its method signatures have no braces and are terminated with a semicolon; classes then use `implements` to provide the method bodies.
+
+### W1.3-27 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.3] OOP: Polymorphism · **Subtopic:** Multiple interface inheritance · **Source:** W1.3f · **Basis:** body
+
+**Question:** The `Staff` interface extends the interfaces `TaxPayer` and `Citizen`. The class `TA` implements both `Student` and `Staff`. Which statement is correct?
+
+- A. Java does not allow `Staff` to extend two interfaces
+- B. `TA` must also implement the methods of `TaxPayer` and `Citizen` ✅
+- C. `TA` only needs to implement the methods declared directly in `Staff`
+- D. `TA` is a `Staff` and a `Student`, but not a `TaxPayer` or a `Citizen`
+
+**Answer:** B
+
+**Explanation:** Java allows multiple inheritance among interfaces, and a class can implement multiple interfaces. Since `Staff` inherits `TaxPayer` and `Citizen`, `TA` has to implement their methods too, and a `TA` is a `Staff`, a `TaxPayer` and a `Citizen`.
+
+### W1.3-28 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.3] OOP: Polymorphism · **Subtopic:** Interface members · **Source:** W1.3f · **Basis:** bold
+
+**Question:** Besides method signatures, which pair of members does the course show being added to the `DrivableVehicle` interface?
+
+```java
+public interface DrivableVehicle {
+    int MAX_SPEED = 150;
+    static boolean isSpeedAllowed(int speed) {
+        return speed <= MAX_SPEED;
+    }
+    void turn(Direction direction);
+}
+```
+
+- A. An instance variable and a constructor
+- B. A nested class and a `main` method
+- C. A private field and a getter for it
+- D. A constant and a static method ✅
+
+**Answer:** D
+
+**Explanation:** Interfaces can also contain constants and static methods, such as the constant `MAX_SPEED` and the static method `isSpeedAllowed`. Interfaces cannot be instantiated, so they have no constructors.
+
+### W1.3-29 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.3] OOP: Polymorphism · **Subtopic:** Interfaces extending interfaces · **Source:** W1.3f · **Basis:** body
+
+**Question:** Which keyword fills the blank so that `SelfDrivableVehicle` inherits from the interface `DrivableVehicle`?
+
+```java
+public interface SelfDrivableVehicle ____ DrivableVehicle {
+    void goToAutoPilotMode();
+}
+```
+
+- A. `implements`
+- B. `extends` ✅
+- C. `inherits`
+- D. `super`
+
+**Answer:** B
+
+**Explanation:** Interfaces can inherit from other interfaces using the `extends` keyword, similar to a class inheriting from another class. The keyword `implements` is used by a class that implements an interface.
+
+### W1.3-30 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.3] OOP: Polymorphism · **Subtopic:** Java constants · **Source:** W1.3f · **Basis:** body
+
+**Question:** Class `Account` declares `public static final double MAX_BALANCE = 1000000.0;`. Which statement about it is correct?
+
+- A. It is accessed as `Account.MAX_BALANCE` and its value cannot change ✅
+- B. It must be accessed through an object, as in `new Account().MAX_BALANCE` only
+- C. `final` makes it shared by all objects and `static` makes it unchangeable
+- D. Its name should be written as `maxBalance` according to the Java convention
+
+**Answer:** A
+
+**Explanation:** Java uses a `static final` variable where a constant is needed: `static` makes it available without instantiating an object and `final` makes it unchangeable. Constants are named in ALL CAPS separated by underscores and accessed like `Account.MAX_BALANCE`.
+
+### W1.3-31 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.3] OOP: Polymorphism · **Subtopic:** Strong typing · **Source:** W1.3b · **Basis:** bold
+
+**Question:** A `PetShelter` keeps a `Cat[]` and loops over it calling `speak()`. To also handle dogs, a second `Dog[]` array and a second loop are added. Which property of Java causes this, and what is its drawback?
+
+- A. Java is weakly typed, so the code accepts any object and may crash at runtime
+- B. Java is strongly typed, which can lead to repetitive similar code ✅
+- C. Java is dynamically bound, so every type needs its own copy of the method
+- D. Java forbids arrays of objects, so each type needs its own separate list
+
+**Answer:** B
+
+**Explanation:** Java is strongly typed: code works with only the object types it targets, so the `Cat` loop cannot handle `Dog` objects. This can lead to unnecessary verbosity, which polymorphic code targeting a superclass avoids.
+
+### W1.3-32 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.3] OOP: Polymorphism · **Subtopic:** Polymorphic loop output · **Source:** W1.3b · **Basis:** body
+
+**Question:** `Cat` and `Dog` inherit from `Animal`, and each overrides `speak()` to return its name followed by `: Meow` or `: Woof`. What does this code print?
+
+```java
+Animal[] animals = new Animal[]{
+    new Cat("Mittens"),
+    new Dog("Spot")};
+for (Animal a : animals) {
+    System.out.println(a.speak());
+}
+```
+
+- A. A compile error, because a `Cat` cannot be stored in an `Animal` array
+- B. `Mittens: Meow` and `Spot: Meow`, because both use the first object's method
+- C. `Mittens: Meow` then `Spot: Woof` ✅
+- D. The output of the `Animal` class's `speak()` for both objects
+
+**Answer:** C
+
+**Explanation:** Because Java supports polymorphism, `Cat` and `Dog` objects can be stored in an `Animal` array, and calling `speak()` on each `Animal` gives each object's own behavior.
+
+### W1.3-33 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.3] OOP: Polymorphism · **Subtopic:** Instantiating abstract classes · **Source:** W1.3d · **Basis:** body
+
+**Question:** Given the class below, which statement compiles?
+
+```java
+public abstract class Account {
+    int number;
+    void close() {
+        //...
+    }
+}
+```
+
+- A. `Account a = new Account();`
+- B. Neither, because `Account` has no abstract methods and so cannot be declared abstract
+- C. `new Account().close();`
+- D. `Account a;` ✅
+
+**Answer:** D
+
+**Explanation:** Abstract classes can be used as reference types but cannot be instantiated, so declaring `Account a;` is fine while `new Account()` is a compile error. A class can be declared abstract even if it has no abstract methods.
+
+### W1.3-34 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.3] OOP: Polymorphism · **Subtopic:** Subclassing abstract classes · **Source:** W1.3d · **Basis:** bold
+
+**Question:** `Animal` is abstract with the abstract method `speak()`. `Feline extends Animal` but does not implement `speak()`. What must be true of `Feline`?
+
+- A. It must be declared abstract ✅
+- B. It must be declared `final`
+- C. It inherits a default empty `speak()`, so nothing is required
+- D. It must implement `speak()` by calling `super.speak()`
+
+**Answer:** A
+
+**Explanation:** When an abstract class is subclassed, the subclass should implement all the abstract methods of its superclass, or else it must also be declared abstract. A subclass such as `DomesticCat` that implements `speak()` need not be abstract.
+
+### W1.3-35 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.3] OOP: Polymorphism · **Subtopic:** Abstract method syntax · **Source:** W1.3d · **Basis:** body
+
+**Question:** Which is a correctly written abstract method in the abstract class `Animal`?
+
+- A. `public abstract String speak() { }`
+- B. `public String speak();`
+- C. `public abstract String speak();` ✅
+- D. `abstract public String speak() { return ""; }`
+
+**Answer:** C
+
+**Explanation:** An abstract method is declared with the keyword `abstract` and given without an implementation: the signature ends with a semicolon and there is no method body.
+
 ## [W1.4] Java: Collections
 
 ### W1.4-01 · MRQ
@@ -846,6 +1877,142 @@ commandResult = command.execute(model);
 **Answer:** D
 
 **Explanation:** Interfaces allow collections to be manipulated independently of the details of their representation; `HashMap<K, V>` is an implementation of `Map<K, V>`.
+
+### W1.4-09 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.4] Java: Collections · **Subtopic:** What a collection is · **Source:** W1.4a · **Basis:** bold
+
+**Question:** A mail folder holds many letters and a poker hand holds many cards. In Java terms, what is a collection?
+
+- A. A class that has more than one constructor
+- B. An object grouping many elements into one unit ✅
+- C. A package that groups related classes
+- D. A method that returns more than one value
+
+**Answer:** B
+
+**Explanation:** A collection, sometimes called a container, is simply an object that groups multiple elements into a single unit. Collections are used to store, retrieve, manipulate and communicate aggregate data.
+
+### W1.4-10 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.4] Java: Collections · **Subtopic:** Polymorphic algorithms · **Source:** W1.4a · **Basis:** body
+
+**Question:** Why are the algorithms in the collections framework, such as `sort(List<E>)`, said to be polymorphic?
+
+- A. Because they change their behavior depending on the time they are called
+- B. Because each collection class has its own copy of the algorithm
+- C. Because the same method can be used on many implementations of the collection interface ✅
+- D. Because they can sort any object, including those that are not collections
+
+**Answer:** C
+
+**Explanation:** The algorithms are said to be polymorphic: the same method can be used on many different implementations of the appropriate interface. For example, `sort(List<E>)` can sort any collection that implements `List<E>`.
+
+### W1.4-11 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.4] Java: Collections · **Subtopic:** List vs Queue · **Source:** W1.4a · **Basis:** body
+
+**Question:** A program needs an ordered sequence of song titles that may contain duplicates and whose items are accessed by position. Which core collection interface fits best?
+
+- A. `Queue`, which holds elements prior to processing
+- B. `Set`, which cannot contain duplicates
+- C. `Map`, which maps keys to values
+- D. `List`, an ordered collection accessed by integer index ✅
+
+**Answer:** D
+
+**Explanation:** A `List` is an ordered collection (a sequence) that can contain duplicates, and its elements can be accessed by their integer index. A `Queue` is used to hold multiple elements prior to processing.
+
+### W1.4-12 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.4] Java: Collections · **Subtopic:** Root of the hierarchy · **Source:** W1.4a · **Basis:** body
+
+**Question:** Which interface is the root of the Java collection hierarchy, and does the Java platform provide direct implementations of it?
+
+- A. `List`; yes, such as `ArrayList`
+- B. `Collection`; no, only of its subinterfaces ✅
+- C. `Object`; yes, every class implements it
+- D. `Map`; no, only of its subinterface `SortedMap`
+
+**Answer:** B
+
+**Explanation:** `Collection` is the root of the collection hierarchy and the least common denominator that all collections implement. The Java platform does not provide direct implementations of it, but of more specific subinterfaces such as `Set` and `List`.
+
+### W1.4-13 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.4] Java: Collections · **Subtopic:** Collections frameworks elsewhere · **Source:** W1.4a · **Basis:** body
+
+**Question:** Which is given in the course as a well-known example of a collections framework from another language?
+
+- A. The C++ Standard Template Library (STL) ✅
+- B. The Python Package Index (PyPI)
+- C. The JavaScript Document Object Model (DOM)
+- D. The C Standard I/O library (stdio)
+
+**Answer:** A
+
+**Explanation:** A well-known example of a collections framework is the C++ Standard Template Library. Although its syntax looks similar to Java's, there are important philosophical and implementation differences between the two.
+
+### W1.4-14 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.4] Java: Collections · **Subtopic:** ArrayList operations · **Source:** W1.4b · **Basis:** body
+
+**Question:** What does `items` contain after the code below runs?
+
+```java
+ArrayList<String> items = new ArrayList<>();
+items.add("Apple");
+items.add("Box");
+items.add("Cup");
+items.add("Dart");
+items.remove("Box");
+items.add(1, "Banana");
+```
+
+- A. `[Banana, Apple, Cup, Dart]`
+- B. `[Apple, Box, Banana, Cup, Dart]`
+- C. `[Apple, Cup, Dart, Banana]`
+- D. `[Apple, Banana, Cup, Dart]` ✅
+
+**Answer:** D
+
+**Explanation:** Removing "Box" leaves `[Apple, Cup, Dart]`. Then `add(1, "Banana")` inserts at index 1, the second position, giving `[Apple, Banana, Cup, Dart]`.
+
+### W1.4-15 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.4] Java: Collections · **Subtopic:** ArrayList vs array · **Source:** W1.4b · **Basis:** body
+
+**Question:** A program does not know in advance how many items the user will enter. Why does an `ArrayList` suit this better than a normal array?
+
+- A. An `ArrayList` can only hold `String` objects
+- B. An `ArrayList` grows in size as items are added ✅
+- C. An `ArrayList` cannot contain duplicates
+- D. An `ArrayList` keeps its items sorted automatically
+
+**Answer:** B
+
+**Explanation:** `ArrayList` is a resizable-array implementation of the `List` interface. Unlike a normal array, an `ArrayList` can grow in size as you add more items to it.
+
+### W1.4-16 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.4] Java: Collections · **Subtopic:** HashMap get and containsKey · **Source:** W1.4c · **Basis:** body
+
+**Question:** Given the code below, which pair of calls retrieves the point for key `"x1"` and checks whether the key `"y1"` exists?
+
+```java
+HashMap<String, Point> points = new HashMap<>();
+points.put("x1", new Point(0, 0));
+points.put("x2", new Point(0, 5));
+```
+
+- A. `points.find("x1")` and `points.has("y1")`
+- B. `points.get(0)` and `points.contains("y1")`
+- C. `points.get("x1")` and `points.containsKey("y1")` ✅
+- D. `points.put("x1")` and `points.containsValue("y1")`
+
+**Answer:** C
+
+**Explanation:** The course's example retrieves a value for a key using `get`, as in `points.get("x1")`, and checks whether a key exists using `containsKey`, which returns `false` for `"y1"`. `containsValue` checks for a value, not a key.
 
 ## [W1.5] Exception Handling
 
@@ -1010,6 +2177,234 @@ System.out.println("D");
 
 **Explanation:** Code that encounters an exceptional situation can encapsulate the details in an exception object and throw it so that another piece of code — here in the UI — can catch it and deal with it.
 
+### W1.5-11 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.5] Exception Handling · **Subtopic:** Runtime exceptions · **Source:** W1.5c · **Basis:** bold
+
+**Question:** Due to a logic error, a program passes `null` to the `FileReader` constructor, which throws a `NullPointerException`. What does this kind of exception usually indicate, and what is the better response?
+
+- A. A hardware failure; print a stack trace and exit
+- B. A missing file; prompt the user for another file name
+- C. A programming bug; eliminate the bug instead of catching it ✅
+- D. A normal condition; catch it and continue silently
+
+**Answer:** C
+
+**Explanation:** Runtime exceptions are internal to the application and usually indicate programming bugs, such as logic errors or improper use of an API. The application can catch the `NullPointerException`, but it probably makes more sense to eliminate the bug that caused it.
+
+### W1.5-12 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.5] Exception Handling · **Subtopic:** Errors · **Source:** W1.5c · **Basis:** bold
+
+**Question:** A program opens a file successfully but cannot read it because of a hardware malfunction, and `java.io.IOError` is thrown. Which category is this?
+
+- A. A checked exception: a condition the application should anticipate and recover from
+- B. An error: a condition external to the application that it usually cannot anticipate or recover from ✅
+- C. A runtime exception: a condition caused by a logic error in the program
+- D. A compile error: a condition detected before the program runs
+
+**Answer:** B
+
+**Explanation:** Errors are exceptional conditions external to the application that it usually cannot anticipate or recover from, indicated by `Error` and its subclasses. The program may catch it to notify the user, or print a stack trace and exit.
+
+### W1.5-13 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.5] Exception Handling · **Subtopic:** Identifying checked exceptions · **Source:** W1.5c · **Basis:** body
+
+**Question:** Which rule identifies the checked exceptions in Java?
+
+- A. Only exceptions whose names end in `CheckedException` are checked
+- B. Only `Error` and its subclasses are checked
+- C. Only `RuntimeException` and its subclasses are checked
+- D. All except `Error`, `RuntimeException` and their subclasses ✅
+
+**Answer:** D
+
+**Explanation:** All exceptions are checked exceptions except those indicated by `Error`, `RuntimeException` and their subclasses. Errors and runtime exceptions are collectively known as unchecked exceptions.
+
+### W1.5-14 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.5] Exception Handling · **Subtopic:** Tracing finally · **Source:** W1.5e · **Basis:** body
+
+**Question:** In the method below, `process()` throws an `IndexOutOfBoundsException`. What is printed, in order?
+
+```java
+public void run() {
+    print("start run");
+    try {
+        print("start task");
+        process();
+        print("end task");
+    } catch (IndexOutOfBoundsException e) {
+        print("caught IOOBE");
+    } catch (IOException e) {
+        print("caught IOE");
+    } finally {
+        print("cleanup");
+    }
+    print("end run");
+}
+```
+
+- A. `start run`, `start task`, `caught IOOBE`, `cleanup`, `end run` ✅
+- B. `start run`, `start task`, `end task`, `caught IOOBE`, `end run`
+- C. `start run`, `start task`, `caught IOOBE`, `end run`, `cleanup`
+- D. `start run`, `start task`, `caught IOOBE`, `caught IOE`, `cleanup`
+
+**Answer:** A
+
+**Explanation:** When `process()` throws, the rest of the `try` block is skipped and the matching `catch` handler runs. The `finally` block is guaranteed to run whether or not an exception occurs, and then execution continues after the construct.
+
+### W1.5-15 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.5] Exception Handling · **Subtopic:** Purpose of finally · **Source:** W1.5e · **Basis:** bold
+
+**Question:** A method opens a file in a `try` block and must always close it, whether or not an exception is thrown. Where should the code that closes the file go?
+
+- A. In the last `catch` block
+- B. In a `finally` block ✅
+- C. After the `throw` statement
+- D. In the method's `throws` clause
+
+**Answer:** B
+
+**Explanation:** A `finally` block specifies code that is guaranteed to execute whether or not an exception occurs. It is the right place to close files, recover resources, and otherwise clean up after the code in the `try` block.
+
+### W1.5-16 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.5] Exception Handling · **Subtopic:** try statement structure · **Source:** W1.5e · **Basis:** body
+
+**Question:** Which statement about the structure of a `try` statement is correct?
+
+- A. It must have exactly one `catch` block
+- B. It must always have both a `catch` block and a `finally` block
+- C. It cannot have more than one `catch` block
+- D. It must have at least one `catch` block or a `finally` block ✅
+
+**Answer:** D
+
+**Explanation:** The `try` statement should contain at least one `catch` block or a `finally` block, and it may have multiple `catch` blocks, one per type of exception to handle.
+
+### W1.5-17 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.5] Exception Handling · **Subtopic:** Unchecked and Catch or Specify · **Source:** W1.5e · **Basis:** body
+
+**Question:** A method may throw an `IllegalArgumentException`, which is a `RuntimeException`. Must the code follow the Catch or Specify Requirement for it?
+
+- A. Yes; every exception must be caught or listed in a `throws` clause
+- B. No, though you can still apply the requirement to it ✅
+- C. No, and listing it in a `throws` clause is a compile error
+- D. Yes, but only if the method is `public`
+
+**Answer:** B
+
+**Explanation:** Checked exceptions are subject to the Catch or Specify Requirement. Unchecked exceptions are not required to follow it, but you can apply the requirement to them too.
+
+### W1.5-18 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.5] Exception Handling · **Subtopic:** Custom exception classes · **Source:** W1.5e · **Basis:** bold
+
+**Question:** A team finds that none of Java's built-in exception classes describes the error conditions of their application well. What does the course say they can do?
+
+- A. Throw a `String` describing the error instead
+- B. Return `-1` from every method to signal errors
+- C. Create their own exception classes ✅
+- D. Modify the built-in exception classes in `java.lang`
+
+**Answer:** C
+
+**Explanation:** Java comes with a collection of built-in exception classes. When they are not enough, it is possible to create your own exception classes.
+
+### W1.5-19 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.5] Exception Handling · **Subtopic:** Error handling · **Source:** W1.5a · **Basis:** body
+
+**Question:** According to the Microsoft description quoted by the course, what does error-handling code allow a well-written application to do when an unexpected error occurs?
+
+- A. Prevent any error from ever occurring at runtime by checking every input
+- B. Recover gracefully, e.g. by asking the user to intervene or by recovering on its own ✅
+- C. Always continue running silently without informing the user or anyone else
+- D. Automatically rewrite the faulty code and restart the application
+
+**Answer:** B
+
+**Explanation:** Well-written applications include error-handling code that lets them recover gracefully from unexpected errors. The application may request user intervention or recover on its own; in extreme cases it may log the user off or shut down the system.
+
+### W1.5-20 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.5] Exception Handling · **Subtopic:** Exception examples · **Source:** W1.5b · **Basis:** body
+
+**Question:** Which situation is given as an example of an event that might cause a program to raise an exception?
+
+- A. A loop that runs exactly the expected number of times
+- B. A user clicking a button that the program handles normally
+- C. A network connection timing out because of a slow server ✅
+- D. A method returning a value its caller expected
+
+**Answer:** C
+
+**Explanation:** An exception is an event during program execution that disrupts the normal flow of the program's instructions. Examples include a network connection timing out due to a slow server, or a file on disk being corrupted and unreadable.
+
+### W1.5-21 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.5] Exception Handling · **Subtopic:** Throwing an exception · **Source:** W1.5d · **Basis:** bold
+
+**Question:** In Java exception handling, what is meant by "throwing an exception"?
+
+- A. Ignoring an error so that the program continues normally
+- B. Printing an error message and terminating the program
+- C. Searching the call stack for a method that can handle the error
+- D. Creating an exception object and handing it to the runtime system ✅
+
+**Answer:** D
+
+**Explanation:** When an error occurs, the code creates an exception object, which contains information about the error such as its type and the program state, and hands it off to the runtime system; this is called throwing an exception. The runtime system then searches the call stack for a handler.
+
+### W1.5-22 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.5] Exception Handling · **Subtopic:** Appropriate handler · **Source:** W1.5d · **Basis:** body
+
+**Question:** While searching the call stack, when does the runtime system consider an exception handler "appropriate"?
+
+- A. When the thrown exception's type matches the type the handler can handle ✅
+- B. When it is in the method that was called first in the call stack
+- C. When it is the closest handler, whatever exception type it handles
+- D. When it prints the exception message
+
+**Answer:** A
+
+**Explanation:** An exception handler is considered appropriate if the type of the exception object thrown matches the type that can be handled by the handler. The runtime system passes the exception to the first appropriate handler found.
+
+### W1.5-23 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.5] Exception Handling · **Subtopic:** Uncaught exceptions · **Source:** W1.5d · **Basis:** body
+
+**Question:** An exception is thrown, and the runtime system searches every method on the call stack without finding an appropriate exception handler. What happens?
+
+- A. The exception is silently discarded and execution continues
+- B. The program terminates ✅
+- C. The method that threw the exception is called again
+- D. The runtime system converts the exception into an assertion
+
+**Answer:** B
+
+**Explanation:** If the runtime system exhaustively searches all the methods on the call stack without finding an appropriate exception handler, the program terminates.
+
+### W1.5-24 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.5] Exception Handling · **Subtopic:** Exceptions for normal flow · **Source:** W1.5f · **Basis:** body
+
+**Question:** A method `findContact(String name)` searches a contact list, and finding no match is a common, normal outcome. How should it tell the caller that no match was found?
+
+- A. Throw an exception every time the search finds no match
+- B. Terminate the program with an error message about the missing name
+- C. Use an assertion that fails when no match is found
+- D. Use a normal `return`, e.g. returning a value that indicates no match ✅
+
+**Answer:** D
+
+**Explanation:** Exceptions should be used only for 'unusual' conditions. For conditions that are 'normal', such as a search finding no match, normal `return` statements should pass control back to the caller.
+
 ## [W1.6] SE: Intro
 
 ### W1.6-01 · MCQ
@@ -1116,6 +2511,158 @@ System.out.println("D");
 **Answer:** B
 
 **Explanation:** Brooks's law states that adding manpower to a late software project makes it later. The book also warns about over-complex second systems and recommends prototyping.
+
+### W1.6-08 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.6] SE: Intro · **Subtopic:** Accidental vs essential complexity · **Source:** W1.6a · **Basis:** body
+
+**Question:** A team loses days because its build tool is slow and its debugger often crashes. In terms of the two kinds of difficulty Brooks described in No Silver Bullet, which kind is this?
+
+- A. Essential complexity
+- B. Accidental complexity ✅
+- C. Requirements complexity
+- D. Organizational complexity
+
+**Answer:** B
+
+**Explanation:** Brooks divided the difficulty of building software into accidental complexity, which comes from imperfect tools, and essential complexity, which comes from the problem being solved. Trouble caused by poor tools is accidental.
+
+### W1.6-09 · MRQ
+
+**Type:** MRQ · **Topic:** [W1.6] SE: Intro · **Subtopic:** Woes of software engineering · **Source:** W1.6a · **Basis:** body
+
+**Question:** Which of these are among the woes of software engineering that Brooks listed? (Select all that apply.)
+
+- A. Programs must be precise, because computers follow instructions, not intentions ✅
+- B. Engineers depend on people, requirements and code they do not control ✅
+- C. Ideas can be turned into working software without a factory or raw materials
+- D. Testing and debugging take careful work, and the last part of a project often costs the most ✅
+- E. Products and the technologies used to build them can quickly become outdated ✅
+
+**Answer:** A, B, D, E
+
+**Explanation:** Brooks listed the need for precision, dependence on things outside one's control, the effort of testing and debugging, and rapid obsolescence as woes. Turning ideas into working software without a factory or raw materials is one of the joys Brooks described, not a woe.
+
+### W1.6-10 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.6] SE: Intro · **Subtopic:** Vibe coding · **Source:** W1.6a · **Basis:** body
+
+**Question:** A developer asks an AI tool to generate a whole module and merges the output straight away without checking it carefully. What is this practice often called?
+
+- A. Pair programming
+- B. Agentic engineering
+- C. Vibe coding ✅
+- D. Test-driven development
+
+**Answer:** C
+
+**Explanation:** Accepting generated code without checking it carefully is often called vibe coding. It skips exactly the checking that the course says becomes more valuable as AI generates more code.
+
+### W1.6-11 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.6] SE: Intro · **Subtopic:** Agentic software engineering · **Source:** W1.6a · **Basis:** body
+
+**Question:** The course distinguishes AI-assisted, agentic and AI-native software engineering. Which description matches agentic software engineering?
+
+- A. AI works inside a process that is directed by humans
+- B. Teams redesign the process itself for ongoing collaboration between humans and AI
+- C. AI writes the requirements, and humans no longer review the resulting code
+- D. Humans give AI tasks that have several steps ✅
+
+**Answer:** D
+
+**Explanation:** In agentic software engineering, humans give AI tasks with several steps. AI working inside a human-directed process is AI-assisted, and redesigning the process itself is AI-native; in no variant does human review disappear.
+
+### W1.6-12 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.6] SE: Intro · **Subtopic:** Measuring AI benefit · **Source:** W1.6a · **Basis:** body
+
+**Question:** What did one randomized study find about experienced developers who worked with AI tools?
+
+- A. They worked more slowly, although they believed they had worked faster ✅
+- B. They worked faster, and correctly estimated how much faster they were
+- C. They worked at the same speed but produced far fewer defects
+- D. They worked faster only when the codebase was unfamiliar to them
+
+**Answer:** A
+
+**Explanation:** The study found experienced developers worked more slowly with AI even though they believed they had worked faster. This is why the course says our impressions alone do not measure the benefit of AI well.
+
+### W1.6-13 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.6] SE: Intro · **Subtopic:** Faster code is not better software · **Source:** W1.6a · **Basis:** bold
+
+**Question:** A team adopts an AI coding tool and now produces code much faster, yet its software does not get better. Which issue, reported as developers' most common frustration in surveys, helps explain this?
+
+- A. AI tools can only complete single lines of code, so most work remains manual
+- B. AI output is often almost right but not quite, and small mistakes are hard to find ✅
+- C. AI tools refuse to work with codebases that have automated tests
+- D. AI-generated code cannot be reviewed because it is not human-readable
+
+**Answer:** B
+
+**Explanation:** The most common frustration is AI output that is almost right, but not quite. Finding a small mistake in code that looks correct can require more skill than writing the code, so faster generation does not automatically mean better software.
+
+### W1.6-14 · MRQ
+
+**Type:** MRQ · **Topic:** [W1.6] SE: Intro · **Subtopic:** Systems that use AI · **Source:** W1.6a · **Basis:** bold
+
+**Question:** A team is building a product that uses an AI component as part of the system itself, for example to answer customer queries. Which concerns does the course say such systems bring? (Select all that apply.)
+
+- A. Data quality ✅
+- B. Unpredictable output ✅
+- C. No further need for monitoring once the system is deployed
+- D. Algorithmic bias ✅
+- E. Privacy ✅
+
+**Answer:** A, B, D, E
+
+**Explanation:** Software that uses AI as part of the system brings its own concerns, including data quality, unpredictable output, evaluation, privacy, algorithmic bias and monitoring. Monitoring is one of those concerns, so it does not stop being needed after deployment.
+
+### W1.6-15 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.6] SE: Intro · **Subtopic:** Responsibility stays with humans · **Source:** W1.6a · **Basis:** body
+
+**Question:** As implementation work moves to AI, the course lists activities that become more valuable, such as dividing the work into clear parts and spotting mistakes in correct-looking code. Which of the following can AI not do?
+
+- A. Help spot mistakes in code that looks correct
+- B. Help divide the work into clear parts
+- C. Take responsibility for the result ✅
+- D. Help draft designs and explore requirements
+
+**Answer:** C
+
+**Explanation:** AI can help with every one of these activities, but it cannot take responsibility for the result. Someone must still take responsibility for the released system.
+
+### W1.6-16 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.6] SE: Intro · **Subtopic:** SE 3.0 roles · **Source:** W1.6a · **Basis:** body
+
+**Question:** In the possible future sometimes called SE 3.0, AI agents and humans share the work. Which task stays with the humans?
+
+- A. Planning code changes
+- B. Running the tests
+- C. Reviewing one another's code changes
+- D. Deciding what is safe to release ✅
+
+**Answer:** D
+
+**Explanation:** In SE 3.0, agents plan changes, write code, run tests and review one another's work, while humans set the direction, make difficult choices and decide what is safe to release.
+
+### W1.6-17 · MCQ
+
+**Type:** MCQ · **Topic:** [W1.6] SE: Intro · **Subtopic:** The 1968 NATO conference · **Source:** W1.6a · **Basis:** body
+
+**Question:** In 1968, a NATO conference used the title "software engineering". What hope did that title express?
+
+- A. That building software could become as systematic as other engineering fields ✅
+- B. That software would soon be written without any programmers
+- C. That hardware would soon become cheaper than the software running on it
+- D. That a single new tool would end the software crisis within ten years
+
+**Answer:** A
+
+**Explanation:** The title expressed the hope that building software could become as systematic as other engineering fields. The prediction that no single breakthrough would transform development within ten years came later, from Brooks in 1986.
 
 ---
 
@@ -1244,6 +2791,111 @@ System.out.println("D");
 
 **Explanation:** An early iteration is a chance to find out you were wrong while changing course is still cheap, so the assumptions whose failure would cost the most belong early.
 
+### W2.1-09 · MRQ
+
+**Type:** MRQ · **Topic:** [W2.1] SDLC Process Models: Basics · **Subtopic:** Limits of code-and-fix · **Source:** W2.1a · **Basis:** body
+
+**Question:** A one-person script grows into a product built by a team of six, still using code-and-fix. Which problems does the course say arise? (Select all that apply.)
+
+- A. There is no way to tell how far along the work is ✅
+- B. Work cannot be divided among people without them colliding ✅
+- C. There is no record of decisions, so changes get harder ✅
+- D. The approach's heavy process overhead slows the team
+
+**Answer:** A, B, C
+
+**Explanation:** Code-and-fix has no overhead and works for a small program written by one person over a short period. It stops working as the software and team grow, because progress cannot be measured, work cannot be divided without collisions, and decisions are not recorded.
+
+### W2.1-10 · MCQ
+
+**Type:** MCQ · **Topic:** [W2.1] SDLC Process Models: Basics · **Subtopic:** SDLC models · **Source:** W2.1a · **Basis:** body
+
+**Question:** Software development lifecycle models, which describe different ways to go through the SDLC, are also known as…
+
+- A. software process models ✅
+- B. software architecture styles
+- C. software design patterns
+- D. software quality models
+
+**Answer:** A
+
+**Explanation:** There are several approaches, known as software development lifecycle models (also called software process models), that describe different ways to go through the SDLC.
+
+### W2.1-11 · MCQ
+
+**Type:** MCQ · **Topic:** [W2.1] SDLC Process Models: Basics · **Subtopic:** Waterfall name · **Source:** W2.1b · **Basis:** body
+
+**Question:** Where does the waterfall model get its name?
+
+- A. From the first company that adopted the model
+- B. From requirements flowing in from customers all the time
+- C. From how the model is drawn, looking like a waterfall ✅
+- D. From the speed at which work moves between stages
+
+**Answer:** C
+
+**Explanation:** The sequential model is also called the waterfall model; the name stems from how the model is drawn to look like a waterfall.
+
+### W2.1-12 · MCQ
+
+**Type:** MCQ · **Topic:** [W2.1] SDLC Process Models: Basics · **Subtopic:** Relaxed sequential model · **Source:** W2.1b · **Basis:** bold
+
+**Question:** During design, a team on a sequential project discovers a missing requirement. In the relaxed form of the model often used in practice, what can happen, and at what cost?
+
+- A. Nothing; the missing requirement must wait for a separate future project
+- B. Work can go back to the requirements stage, redoing work treated as finished ✅
+- C. The design stage absorbs the requirement at no extra cost to the project
+- D. The project restarts from the beginning as a new iteration of all stages
+
+**Answer:** B
+
+**Explanation:** A strict sequential model moves only forward. In practice the model is often relaxed to let a stage send work back to the one before it, although doing so means redoing work that was already treated as finished.
+
+### W2.1-13 · MCQ
+
+**Type:** MCQ · **Topic:** [W2.1] SDLC Process Models: Basics · **Subtopic:** Unsuitable problems · **Source:** W2.1b · **Basis:** body
+
+**Question:** A start-up is building a kind of app its target users have never used before. Why might the sequential model be unsuitable?
+
+- A. The sequential model cannot be applied to mobile or web applications
+- B. The sequential model requires a team of at least ten developers
+- C. The sequential model has no stage in which design is carried out
+- D. The users may not be able to state their requirements accurately at the start ✅
+
+**Answer:** D
+
+**Explanation:** Real-world projects often tackle problems that are not well understood at the beginning. Target users who have not used a similar product before may not be able to state their requirements accurately at the start.
+
+### W2.1-14 · MCQ
+
+**Type:** MCQ · **Topic:** [W2.1] SDLC Process Models: Basics · **Subtopic:** Iteration feedback · **Source:** W2.1c · **Basis:** bold
+
+**Question:** In an iterative project, a feature added in the current iteration is poorly received by target users. What does the iterative model allow?
+
+- A. Removing or tweaking it in the next iteration, which builds on the current version ✅
+- B. Nothing until the final release, when all collected feedback is applied at once
+- C. Restarting the whole project from the requirements stage with new users
+- D. Keeping it unchanged, since an iteration cannot revisit earlier iterations' work
+
+**Answer:** A
+
+**Explanation:** Each iteration produces a new version of the product, building on the previous one, and feedback is factored into later iterations. A poorly received feature can be removed or tweaked, and effort estimates for similar tasks can be adjusted.
+
+### W2.1-15 · MCQ
+
+**Type:** MCQ · **Topic:** [W2.1] SDLC Process Models: Basics · **Subtopic:** Increments · **Source:** W2.1c · **Basis:** bold
+
+**Question:** At the end of an iteration, a team has rewritten some internal code, but users can do nothing new or better than before. Has the iteration delivered an increment?
+
+- A. Yes; any new version of the code counts as an increment
+- B. Yes; an increment is any work finished within an iteration
+- C. No; an increment must be a usable improvement or addition ✅
+- D. No; increments are delivered only at the end of a project
+
+**Answer:** C
+
+**Explanation:** What an iteration delivers is called an increment: a usable improvement or addition to the product, not merely a new version of the code.
+
 ## [W2.4] IDEs: Basic Features
 
 ### W2.4-01 · MCQ
@@ -1275,6 +2927,51 @@ System.out.println("D");
 **Answer:** A, B, C, D
 
 **Explanation:** IDEs typically provide an editor with highlighting, completion and navigation, build support, a debugger, and further tools such as testing and version management support. Not every IDE has every feature, but most have them in some form.
+
+### W2.4-03 · MCQ
+
+**Type:** MCQ · **Topic:** [W2.4] IDEs: Basic Features · **Subtopic:** Debugger · **Source:** W2.4a · **Basis:** body
+
+**Question:** A program gives a wrong result and the developer wants to watch the values change as each line runs. Which part of an IDE supports this?
+
+- A. The source code editor's syntax coloring of each line
+- B. The compiler, which turns the source code into a program
+- C. The debugger, which runs the program one step at a time ✅
+- D. The version management support that tracks each change
+
+**Answer:** C
+
+**Explanation:** An IDE's debugger allows the developer to execute the program one step at a time to observe the run-time behavior in order to locate bugs.
+
+### W2.4-04 · MCQ
+
+**Type:** MCQ · **Topic:** [W2.4] IDEs: Basic Features · **Subtopic:** Popular IDEs · **Source:** W2.4a · **Basis:** body
+
+**Question:** Which pairing of IDE and language is given among the examples of popular IDEs?
+
+- A. Xcode — Java
+- B. PyCharm — Swift
+- C. NetBeans — C#
+- D. Xcode — Swift ✅
+
+**Answer:** D
+
+**Explanation:** The examples are Eclipse, IntelliJ IDEA and NetBeans for Java; Visual Studio for C# and C++; Xcode for Swift; PyCharm for Python; and VS Code for multiple languages.
+
+### W2.4-05 · MCQ
+
+**Type:** MCQ · **Topic:** [W2.4] IDEs: Basic Features · **Subtopic:** Text editors · **Source:** W2.4a · **Basis:** body
+
+**Question:** What do some experienced developers, in particular those with a UNIX background, prefer over heavier IDEs?
+
+- A. Lightweight but powerful text editors with scripting, e.g. Vim ✅
+- B. Writing code on paper first before typing it into an editor
+- C. Online code playgrounds that offer no editor features at all
+- D. Visual drag-and-drop tools that hide the source code entirely
+
+**Answer:** A
+
+**Explanation:** Some experienced developers, in particular those with a UNIX background, prefer lightweight yet powerful text editors with scripting capabilities (e.g. Vim or NeoVim) over heavier IDEs.
 
 ## [W2.5] Intro to Automated Testing
 
@@ -1386,6 +3083,130 @@ java AddressBook < input.txt > output.txt
 
 **Explanation:** The technique suits CLI apps whose exact output can be predetermined. If the output varies from run to run, such as with a time stamp, the comparison fails and more sophisticated automation is needed.
 
+### W2.5-08 · MCQ
+
+**Type:** MCQ · **Topic:** [W2.5] Intro to Automated Testing · **Subtopic:** Executing a test case · **Source:** W2.5a · **Basis:** body
+
+**Question:** A tester has written a test case for a browser, specifying an input and the expected behavior. In what order should the tester carry out the test case?
+
+- A. Observe the actual output, feed the input to the SUT, then compare the actual output with the expected output
+- B. Compare the expected output with the specification, feed the input to the SUT, then observe the actual output
+- C. Feed the input to the SUT, observe the actual output, then compare the actual output with the expected output ✅
+- D. Feed the input to the SUT, compare the input with the expected output, then observe the actual output
+
+**Answer:** C
+
+**Explanation:** For each test case you feed the input to the SUT, observe the actual output, and compare the actual output with the expected output; a mismatch is a test case failure.
+
+### W2.5-09 · MCQ
+
+**Type:** MCQ · **Topic:** [W2.5] Intro to Automated Testing · **Subtopic:** Test case failure · **Source:** W2.5a · **Basis:** bold
+
+**Question:** A test case says: start the browser with a blank page (vertical scrollbar disabled), load `longfile.html`, and expect the scrollbar to be enabled automatically. After loading the file, the scrollbar stays disabled. What is this situation called?
+
+- A. A regression
+- B. A test case failure ✅
+- C. A confirmed defect in the browser's code
+- D. A negative test case
+
+**Answer:** B
+
+**Explanation:** A test case failure is a mismatch between the expected behavior and the actual behavior. It indicates only a potential defect (here, perhaps an uninitialized variable), because the error could be in the test case itself.
+
+### W2.5-10 · MCQ
+
+**Type:** MCQ · **Topic:** [W2.5] Intro to Automated Testing · **Subtopic:** Definition of testing · **Source:** W2.5a · **Basis:** body
+
+**Question:** The IEEE definition of testing used in the course begins "Operating a system or component under specified conditions, ...". How does the definition continue?
+
+- A. "... observing or recording the results, and evaluating some aspect of it" ✅
+- B. "... in order to prove that the system or component contains no defects at all"
+- C. "... without executing it, by reading its code line by line to find defects"
+- D. "... and fixing every defect found before the system is released"
+
+**Answer:** A
+
+**Explanation:** Testing is operating a system or component under specified conditions, observing or recording the results, and making an evaluation of some aspect of it. The thing being tested is called the software under test (SUT).
+
+### W2.5-11 · MCQ
+
+**Type:** MCQ · **Topic:** [W2.5] Intro to Automated Testing · **Subtopic:** Regressions · **Source:** W2.5b · **Basis:** bold
+
+**Question:** A developer speeds up the search feature of an app. Afterwards, the delete feature, which worked before and was not meant to be affected, stops working. What is this unintended effect called?
+
+- A. A refactoring
+- B. An integration
+- C. A test driver
+- D. A regression ✅
+
+**Answer:** D
+
+**Explanation:** When a modification results in an unintended and undesirable effect on the system, that effect is called a regression; regression testing is re-testing the software to detect such effects.
+
+### W2.5-12 · MCQ
+
+**Type:** MCQ · **Topic:** [W2.5] Intro to Automated Testing · **Subtopic:** Detecting regressions · **Source:** W2.5b · **Basis:** body
+
+**Question:** A team keeps modifying a module. Which approach to regression testing matches the course's description of how it is typically done and when it is most effective?
+
+- A. Retest only the modified lines, once, at the end of the project
+- B. Retest all related components, even ones tested before, frequently after each small change ✅
+- C. Retest only components that have never been tested before, after each release
+- D. Retest all related components, but only once, just before release
+
+**Answer:** B
+
+**Explanation:** The typical way to detect regressions is to retest all related components, even if they had been tested before, and regression testing is more effective when done frequently, after each small change, which is practical mainly when it is automated.
+
+### W2.5-13 · MCQ
+
+**Type:** MCQ · **Topic:** [W2.5] Intro to Automated Testing · **Subtopic:** Benefits of automation · **Source:** W2.5c · **Basis:** body
+
+**Question:** A team currently runs all its tests by hand. Which two benefits of switching to automated testing does the course give?
+
+- A. It removes the need for expected outputs, and it finds every bug in the system under test
+- B. It eliminates the need to design test cases, and it guarantees the code is testable
+- C. It makes test cases shorter, and it removes the need for regression testing
+- D. It reduces the effort of rerunning tests, and it is more precise than error-prone manual testing ✅
+
+**Answer:** D
+
+**Explanation:** Compared to manual testing, automated testing reduces the effort required to run tests repeatedly and increases the precision of testing, because manual testing is susceptible to human errors.
+
+### W2.5-14 · MCQ
+
+**Type:** MCQ · **Topic:** [W2.5] Intro to Automated Testing · **Subtopic:** Comparing output files · **Source:** W2.5d · **Basis:** body
+
+**Question:** After running a CLI app with input/output redirection, a tester needs to compare `output.txt` with `expected.txt`. Which tools mentioned in the course can do this?
+
+- A. `javac`, `java`, or `jar`
+- B. Windows' `FC`, Unix's `diff`, or WinMerge ✅
+- C. JUnit, TestFX, or Selenium
+- D. `git commit`, `git push` or `git merge`
+
+**Answer:** B
+
+**Explanation:** The comparison step can be done with a utility such as Windows' `FC` (File Compare) command, Unix's `diff` command, or a GUI tool such as WinMerge.
+
+### W2.5-15 · MCQ
+
+**Type:** MCQ · **Topic:** [W2.5] Intro to Automated Testing · **Subtopic:** I/O redirection testing · **Source:** W2.5d · **Basis:** body
+
+**Question:** A student on Windows wants to test a Java CLI app with the command below. Which statement is correct?
+
+```
+java AddressBook < input.txt > output.txt
+```
+
+- A. `AddressBook` must be changed to read from `input.txt`, and the command should be run in PowerShell
+- B. `AddressBook` must be changed to write to `output.txt`, and the command should be run in `cmd.exe`
+- C. No change to `AddressBook` is needed, and the command should be run in PowerShell
+- D. No change to `AddressBook` is needed, and the command should be run in `cmd.exe` rather than PowerShell ✅
+
+**Answer:** D
+
+**Explanation:** Redirection feeds `input.txt` to the app and sends its output to `output.txt` without any change to the app's code. On Windows, the course advises using a normal MS-DOS terminal (`cmd.exe`), not a PowerShell window.
+
 ---
 
 # Week 3
@@ -1466,6 +3287,127 @@ java AddressBook < input.txt > output.txt
 **Answer:** C
 
 **Explanation:** Build automation tools automate build steps through build scripts, and some — including Gradle and Maven — also fetch the correct versions of third-party libraries the project depends on.
+
+### W3.3-06 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.3] Automating the Build Process · **Subtopic:** Integration difficulty · **Source:** W3.3a · **Basis:** body
+
+**Question:** How does the course characterize integration, the combining of parts of a software product to form a whole?
+
+- A. One of the simplest tasks, usually done automatically
+- B. A task needed only in very large projects
+- C. One of the most troublesome tasks, and it rarely goes smoothly ✅
+- D. A task that only matters after the product is released
+
+**Answer:** C
+
+**Explanation:** Combining parts of a software product to form a whole is called integration. It is also one of the most troublesome tasks, and it rarely goes smoothly.
+
+### W3.3-07 · MRQ
+
+**Type:** MRQ · **Topic:** [W3.3] Automating the Build Process · **Subtopic:** Build process steps · **Source:** W3.3b · **Basis:** body
+
+**Question:** In a non-trivial project, which of these can be steps of the build process that build automation tools automate? (Select all that apply.)
+
+- A. Pulling code from the revision control system ✅
+- B. Eliciting requirements from users
+- C. Running automated tests ✅
+- D. Packaging into a distributable ✅
+- E. Deploying to a server ✅
+
+**Answer:** A, C, D, E
+
+**Explanation:** A build process can include pulling code from revision control, compiling, linking, running automated tests, packaging into a distributable, deploying to a server and more. Eliciting requirements from users is a requirements activity, not a build step.
+
+### W3.3-08 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.3] Automating the Build Process · **Subtopic:** Starting a build · **Source:** W3.3b · **Basis:** body
+
+**Question:** In which ways can an automated build process be started?
+
+- A. Only manually, by a developer on demand from the command line
+- B. Only once, at the end of the project before release
+- C. Only when the IDE's build button is clicked by a developer
+- D. On demand, on a schedule, or triggered by events such as a code push ✅
+
+**Answer:** D
+
+**Explanation:** The build process can be done 'on demand', scheduled (e.g. every day at midnight), or triggered by various events, such as a code push to the revision control system.
+
+### W3.3-09 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.3] Automating the Build Process · **Subtopic:** Dependency management · **Source:** W3.3b · **Basis:** body
+
+**Question:** Why is dependency management an important part of build automation?
+
+- A. Third-party libraries evolve constantly, so the right versions must be fetched and updated ✅
+- B. Because it removes the need for a project to use any third-party libraries
+- C. Because it decides which developer depends on which teammate's code
+- D. Because it lets the code be compiled without installing a compiler
+
+**Answer:** A
+
+**Explanation:** Modern projects often depend on third-party libraries that evolve constantly, so developers need to download the correct versions and update them regularly. Some build tools, such as Maven and Gradle, also serve as dependency management tools that automate this.
+
+### W3.3-10 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.3] Automating the Build Process · **Subtopic:** IDE build support · **Source:** W3.3b · **Basis:** body
+
+**Question:** Which build steps does the course say are already automated in most modern IDEs, for example when the 'build' button is clicked?
+
+- A. Deploying to a server and emailing developers
+- B. Compiling, linking and packaging ✅
+- C. Updating release documents and pushing to a repository
+- D. Eliciting requirements and writing documentation
+
+**Answer:** B
+
+**Explanation:** Some build steps, such as compiling, linking and packaging, are already automated in most modern IDEs. However, most big projects use specialized build tools to automate complex build processes.
+
+### W3.3-11 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.3] Automating the Build Process · **Subtopic:** Build tools · **Source:** W3.3b · **Basis:** body
+
+**Question:** Which pairing of build tool and language ecosystem is correct?
+
+- A. Rake — Java
+- B. Grunt — Ruby
+- C. Gradle — JavaScript
+- D. Grunt — JavaScript ✅
+
+**Answer:** D
+
+**Explanation:** Grunt is a build tool for JavaScript and Rake for Ruby. Gradle, Maven, Apache Ant and GNU Make are popular build tools relevant to Java developers.
+
+### W3.3-12 · MRQ
+
+**Type:** MRQ · **Topic:** [W3.3] Automating the Build Process · **Subtopic:** CI/CD tools · **Source:** W3.3c · **Basis:** body
+
+**Question:** Which of these are given as examples of CI/CD tools? (Select all that apply.)
+
+- A. Jenkins ✅
+- B. GitHub Actions ✅
+- C. JUnit
+- D. CircleCI ✅
+
+**Answer:** A, B, D
+
+**Explanation:** Travis, Jenkins, AppVeyor, CircleCI and GitHub Actions are examples of CI/CD tools. JUnit is a testing framework, not a CI/CD tool.
+
+### W3.3-13 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.3] Automating the Build Process · **Subtopic:** Continuous integration · **Source:** W3.3c · **Basis:** bold
+
+**Question:** Continuous integration (CI) is described as an extreme application of what?
+
+- A. Code review, where every change is reviewed by the whole team
+- B. Build automation: integrating, building and testing after each change ✅
+- C. Formal verification, where every change is proved correct
+- D. Big-bang integration, where all components are combined at once
+
+**Answer:** B
+
+**Explanation:** An extreme application of build automation is continuous integration, in which integration, building and testing happen automatically after each code change. Continuous deployment extends it by also deploying the changes to end users.
 
 ## [W3.4] Java: JavaDoc, file I/O, packages, JARs
 
@@ -1635,6 +3577,265 @@ java AddressBook < input.txt > output.txt
 
 **Explanation:** A static import imports static members of a type so that they can be used without specifying the type name.
 
+### W3.4-12 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.4] Java: JavaDoc, file I/O, packages, JARs · **Subtopic:** Windows file paths · **Source:** W3.4c · **Basis:** body
+
+**Question:** On a Windows computer, a program needs a `File` for `fruits.txt` in the `data` directory. Which string literal is NOT a correct way to write the path?
+
+- A. `"data\\fruits.txt"`
+- B. `"data/fruits.txt"`
+- C. `"data\fruits.txt"` ✅
+- D. `"data" + "/" + "fruits.txt"`
+
+**Answer:** C
+
+**Explanation:** A backslash by itself has a special meaning in a Java string, so an additional backslash is needed as an escape character: use `"data\\fruits.txt"`, not `"data\fruits.txt"`. Alternatively, a forward slash `"data/fruits.txt"` works even on Windows.
+
+### W3.4-13 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.4] Java: JavaDoc, file I/O, packages, JARs · **Subtopic:** Reading a file · **Source:** W3.4c · **Basis:** bold
+
+**Question:** Which approach does the course use to read a text file line by line?
+
+- A. Create a `FileWriter` for the file and call `read()` until it returns `null`
+- B. Create a `Scanner` from a `File` object and loop `while (s.hasNext())`, calling `s.nextLine()` ✅
+- C. Call `File.readAllLines()` on the file path string
+- D. Create a `File` object and call `f.nextLine()` until `f.exists()` is false
+
+**Answer:** B
+
+**Explanation:** You can read from a file using a `Scanner` object that uses a `File` object as the source of data. The course's example loops with `while (s.hasNext())` and prints each `s.nextLine()`.
+
+### W3.4-14 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.4] Java: JavaDoc, file I/O, packages, JARs · **Subtopic:** Completing a write · **Source:** W3.4c · **Basis:** body
+
+**Question:** A method creates `FileWriter fw = new FileWriter(filePath);` and calls `fw.write(textToAdd);`. What must it also call for the writing operation to be completed?
+
+- A. `fw.flushAll()`
+- B. `fw.save()`
+- C. `fw.exists()`
+- D. `fw.close()` ✅
+
+**Answer:** D
+
+**Explanation:** You need to call the `close()` method of the `FileWriter` object for the writing operation to be completed.
+
+### W3.4-15 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.4] Java: JavaDoc, file I/O, packages, JARs · **Subtopic:** The File class · **Source:** W3.4c · **Basis:** body
+
+**Question:** What does the course's example use a `java.io.File` object for?
+
+```java
+File f = new File("data/fruits.txt");
+System.out.println("full path: " + f.getAbsolutePath());
+System.out.println("file exists?: " + f.exists());
+System.out.println("is Directory?: " + f.isDirectory());
+```
+
+- A. To represent a file and query its properties ✅
+- B. To read the whole contents of the file into a single string
+- C. To append text to the end of the file
+- D. To copy the file and then delete the original
+
+**Answer:** A
+
+**Explanation:** The `java.io.File` class represents a file object and can be used to access its properties, e.g., `getAbsolutePath()`, `exists()` and `isDirectory()`. Reading uses a `Scanner`, writing uses a `FileWriter`, and copying uses `java.nio.file.Files`.
+
+### W3.4-16 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.4] Java: JavaDoc, file I/O, packages, JARs · **Subtopic:** Importing sub-packages · **Source:** W3.4d · **Basis:** bold
+
+**Question:** `Main` has the statement `import seedu.tojava.frontend.*;`. Can it now use a class in the package `seedu.tojava.frontend.widget` without any further import?
+
+- A. Yes, because the wildcard imports every package below `frontend`
+- B. Yes, but only if the class is `public`
+- C. No, because a wildcard import only imports interfaces
+- D. No, because importing a package does not import its sub-packages ✅
+
+**Answer:** D
+
+**Explanation:** Importing a package does not import its sub-packages, as packages do not behave as hierarchies despite appearances. `import seedu.tojava.frontend.*` does not import the classes in `seedu.tojava.frontend.widget`.
+
+### W3.4-17 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.4] Java: JavaDoc, file I/O, packages, JARs · **Subtopic:** Compiling and running packages · **Source:** W3.4d · **Basis:** body
+
+**Question:** The class `seedu.tojava.Main` is defined in `Main.java`. Which pair of command-line commands does the course give to compile it from the source folder and run it from the compiler output folder?
+
+- A. `javac Main.java` and `java Main`
+- B. `javac seedu.tojava.Main` and `java seedu/tojava/Main.java`
+- C. `javac seedu/tojava/Main.java` and `java seedu.tojava.Main` ✅
+- D. `java seedu/tojava/Main.java` and `javac seedu.tojava.Main`
+
+**Answer:** C
+
+**Explanation:** When using the command line, take the package into account: compile from the source folder with `javac seedu/tojava/Main.java` and run from the compiler output folder with `java seedu.tojava.Main`.
+
+### W3.4-18 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.4] Java: JavaDoc, file I/O, packages, JARs · **Subtopic:** Package naming · **Source:** W3.4d · **Basis:** body
+
+**Question:** A company with the domain name `foobar.com` creates a utility package for its product `doohickey`. Which package name follows the convention?
+
+- A. `com.foobar.doohickey.util` ✅
+- B. `foobar.com.doohickey.util`
+- C. `java.foobar.doohickey.util`
+- D. `doohickey.util.foobar.com`
+
+**Answer:** A
+
+**Explanation:** Companies use their reversed Internet domain name to begin their package names, and package names are written in all lower case. Packages beginning with `java.` or `javax.` belong to the Java language itself.
+
+### W3.4-19 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.4] Java: JavaDoc, file I/O, packages, JARs · **Subtopic:** Types without a package · **Source:** W3.4d · **Basis:** bold
+
+**Question:** A developer leaves out the package statement in a source file, so the class has no package. Why does the course not recommend this, except for small code examples?
+
+- A. Because the class cannot be compiled at all
+- B. Because the class cannot have a `main` method
+- C. Because a type in a package cannot import a type that is not in a package ✅
+- D. Because the class becomes visible to every program on the computer
+
+**Answer:** C
+
+**Explanation:** If you do not use a package statement, your type does not have a package. This is not recommended except for small examples, as it is not possible for a type in a package to import a type that is not in a package.
+
+### W3.4-20 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.4] Java: JavaDoc, file I/O, packages, JARs · **Subtopic:** Package-private members · **Source:** W3.4e · **Basis:** body
+
+**Question:** A field in class `Formatter` of package `seedu.tojava.util` is declared with no access modifier. Which classes can access it?
+
+- A. Only the `Formatter` class itself
+- B. Only classes in the `seedu.tojava.util` package ✅
+- C. Classes in its package and its subclasses in other packages
+- D. All classes everywhere
+
+**Answer:** B
+
+**Explanation:** A member with no modifier (package-private) is visible only within its own package. A `private` member can only be accessed in its own class, and a `protected` one is additionally accessible by subclasses in other packages.
+
+### W3.4-21 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.4] Java: JavaDoc, file I/O, packages, JARs · **Subtopic:** How access levels affect you · **Source:** W3.4e · **Basis:** body
+
+**Question:** According to the course, in which two ways do access levels affect you as a Java programmer?
+
+- A. They decide how fast your code runs and how much memory it uses
+- B. They decide which methods you may override and which classes you may extend
+- C. They decide which package names you may use and where your source files are stored
+- D. They limit which members of others' classes you can use, and you must set your own ✅
+
+**Answer:** D
+
+**Explanation:** When you use classes from another source, such as the Java platform, access levels determine which of their members your classes can use. When you write a class, you need to decide what access level every member variable and method should have.
+
+### W3.4-22 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.4] Java: JavaDoc, file I/O, packages, JARs · **Subtopic:** JAR contents · **Source:** W3.4f · **Basis:** body
+
+**Question:** What does a JAR file contain, and what can help you create one?
+
+- A. Only Java source files; created by the `javac` compiler alone
+- B. Classes and other resources such as icons; the IDE or Gradle ✅
+- C. Only the `main` method of an application; created by the `java -jar` command
+- D. A compressed copy of the JDK; created by the operating system
+
+**Answer:** B
+
+**Explanation:** Java applications are typically delivered as JAR (Java Archive) files, which contain Java classes and other resources (icons, media files, etc.). The IDE or build tools such as Gradle can help package an application as a JAR.
+
+### W3.4-23 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.4] Java: JavaDoc, file I/O, packages, JARs · **Subtopic:** JavaDoc in IDEs · **Source:** W3.4a · **Basis:** body
+
+**Question:** Besides generating API documentation in HTML format, how do modern IDEs use JavaDoc comments?
+
+- A. To compile the code faster
+- B. To generate explanatory tooltips ✅
+- C. To run the code's unit tests
+- D. To check the code for unused variables
+
+**Answer:** B
+
+**Explanation:** JavaDoc is a tool for generating HTML API documentation from source code comments. In addition, modern IDEs use JavaDoc comments to generate explanatory tooltips, as IntelliJ does.
+
+### W3.4-24 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.4] Java: JavaDoc, file I/O, packages, JARs · **Subtopic:** Documenting exceptions · **Source:** W3.4b · **Basis:** body
+
+**Question:** In the minimal JavaDoc comment below, which line documents the condition under which the method throws an exception?
+
+```
+/**
+ * Returns lateral location of the specified position.
+ * If the position is unset, NaN is returned.
+ *
+ * @param x X coordinate of position.
+ * @param y Y coordinate of position.
+ * @param zone Zone of position.
+ * @return Lateral location.
+ * @throws IllegalArgumentException If zone is <= 0.
+ */
+```
+
+- A. `@param zone Zone of position.`
+- B. `@return Lateral location.`
+- C. `If the position is unset, NaN is returned.`
+- D. `@throws IllegalArgumentException If zone is <= 0.` ✅
+
+**Answer:** D
+
+**Explanation:** The `@throws` tag names the exception type and describes when it is thrown, here when `zone` is 0 or less. The `@param` tags describe parameters, `@return` describes the returned value, and the summary text describes what the method does.
+
+### W3.4-25 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.4] Java: JavaDoc, file I/O, packages, JARs · **Subtopic:** Following JavaDoc examples · **Source:** W3.4b · **Basis:** body
+
+**Question:** Your project has adopted a coding standard with detailed JavaDoc rules. When should you follow the course's two minimal JavaDoc examples instead?
+
+- A. Always, since they override any project coding standard
+- B. Only when writing JavaDoc for private methods that are not part of the API
+- C. When no more extensive guidelines, such as a project coding standard, exist ✅
+- D. Only when the IDE cannot generate tooltips
+
+**Answer:** C
+
+**Explanation:** The two minimal examples (one for methods, one for classes) are meant to be followed in the absence of more extensive guidelines, e.g. those given in a coding standard adopted by your project.
+
+### W3.4-26 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.4] Java: JavaDoc, file I/O, packages, JARs · **Subtopic:** JavaDoc comment format · **Source:** W3.4a · **Basis:** body
+
+**Question:** Which statement correctly describes the JavaDoc method header comment below?
+
+```
+/**
+ * Returns an Image object that can then be painted on the screen.
+ * The url argument must specify an absolute {@link URL}. The name
+ * argument is a specifier that is relative to the url argument.
+ *
+ * @param url An absolute URL giving the base location of the image.
+ * @param name The location of the image, relative to the url argument.
+ * @return The Image at the specified URL.
+ * @see Image
+ */
+public Image getImage(URL url, String name) { ... }
+```
+
+- A. It begins with `/**` and uses `@param` for each parameter and `@return` for the returned value ✅
+- B. It begins with `//` and uses `@return` to describe each of the method's parameters
+- C. It begins with `/*` and uses `@see` to describe the value returned by the method
+- D. It begins with `/**` and uses `@param` to describe the exceptions the method throws
+
+**Answer:** A
+
+**Explanation:** A JavaDoc comment starts with `/**`. In this example, each parameter is documented with an `@param` tag, the returned value with `@return`, and `@see Image` points the reader to a related item.
+
 ## [W3.5] Code Quality: Coding Standards
 
 ### W3.5-01 · MCQ
@@ -1682,6 +3883,66 @@ java AddressBook < input.txt > output.txt
 
 **Explanation:** Checkstyle checks the code against the project's style rules, helping the team follow a strict coding standard so the code base looks as if written by one person.
 
+### W3.5-04 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.5] Code Quality: Coding Standards · **Subtopic:** Importance of code quality · **Source:** W3.5a · **Basis:** bold
+
+**Question:** A manager argues that production code only needs to work and its quality does not matter much. What is the course's reason for insisting that production code be of high quality?
+
+- A. High-quality code is required before a program can be compiled
+- B. The world increasingly depends on software, so no one can afford poor quality code ✅
+- C. High-quality code always runs faster than low-quality code
+- D. Code quality only matters for code that will later be published as open source
+
+**Answer:** B
+
+**Explanation:** Production code needs to be of high quality because the world is becoming increasingly dependent on software; poor quality code is something no one can afford to tolerate.
+
+### W3.5-05 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.5] Code Quality: Coding Standards · **Subtopic:** Contents of a coding standard · **Source:** W3.5b · **Basis:** body
+
+**Question:** Which of these is the kind of guideline a coding standard typically specifies?
+
+- A. Which features the product must offer to its users
+- B. Which version control tool the team must use
+- C. Brace locations, indentation styles and naming styles ✅
+- D. The minimum number of test cases each method must have
+
+**Answer:** C
+
+**Explanation:** A coding standard (aka style guide) is usually specific to a programming language and specifies guidelines such as the locations of braces, indentation styles and naming styles (e.g., Hungarian style, Pascal casing, camel casing).
+
+### W3.5-06 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.5] Code Quality: Coding Standards · **Subtopic:** Standards vs industry practice · **Source:** W3.5b · **Basis:** body
+
+**Question:** A company designs its own coding standard that differs greatly from what is typically used in the industry. What problem does the course point out?
+
+- A. New recruits will take longer to get used to it ✅
+- B. The code will no longer compile with standard tools
+- C. The company will be unable to use an IDE
+- D. The code will run more slowly in production
+
+**Answer:** A
+
+**Explanation:** It is important that the standard is generally not inconsistent with typical industry practices. If a company's coding standard is very different from what is typically used in the industry, new recruits will take longer to get used to the company's coding style.
+
+### W3.5-07 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.5] Code Quality: Coding Standards · **Subtopic:** IDEs and coding standards · **Source:** W3.5b · **Basis:** body
+
+**Question:** How can an IDE help a team that follows a coding standard?
+
+- A. It decides which coding standard the team should adopt
+- B. It guarantees that the code has no bugs if the standard is followed
+- C. It removes the need for a coding standard altogether
+- D. It can help enforce some parts of the coding standard, such as indentation rules ✅
+
+**Answer:** D
+
+**Explanation:** IDEs can help to enforce some parts of a coding standard, e.g., indentation rules. The team still needs to agree on and follow the standard.
+
 ## [W3.6] Developer Testing
 
 ### W3.6-01 · MCQ
@@ -1728,6 +3989,51 @@ java AddressBook < input.txt > output.txt
 **Answer:** A
 
 **Explanation:** The rule of thumb is that earlier is cheaper, since late-found bugs can require major rework, especially if they stem from design or requirements.
+
+### W3.6-04 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.6] Developer Testing · **Subtopic:** Bugs hiding bugs · **Source:** W3.6b · **Basis:** bold
+
+**Question:** A team delays testing until the whole product is complete. They fix a crash found during that testing, and only then several new bugs appear in the same feature. Which disadvantage of late testing does this illustrate?
+
+- A. Locating the cause of a failure is difficult because of the larger search space
+- B. The delivery may have to be delayed because too many bugs are found
+- C. One bug might hide other bugs, which emerge only after the first is fixed ✅
+- D. Fixing a bug may need major rework because it came from faulty requirements
+
+**Answer:** C
+
+**Explanation:** One bug might 'hide' other bugs, which could emerge only after the first bug is fixed; this is one reason early testing is better than delaying testing until the product is complete.
+
+### W3.6-05 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.6] Developer Testing · **Subtopic:** Cost of late fixes · **Source:** W3.6b · **Basis:** body
+
+**Question:** Why could fixing a bug found while testing the complete product result in major rework?
+
+- A. Because the bug may have originated from a faulty design or faulty requirements ✅
+- B. Because bugs found late must be fixed by a different team than the one that wrote the code
+- C. Because all test cases must be rewritten whenever a bug is fixed
+- D. Because the whole product must be recompiled from scratch after each fix
+
+**Answer:** A
+
+**Explanation:** Fixing a bug found during late testing could result in major rework, especially if the bug originated from the design or from requirements specification, i.e., a faulty design or faulty requirements.
+
+### W3.6-06 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.6] Developer Testing · **Subtopic:** Who tests early · **Source:** W3.6b · **Basis:** body
+
+**Question:** A project follows the rule of thumb that the earlier a bug is found, the cheaper it is to fix. Who usually does this early testing?
+
+- A. End users, through a beta release
+- B. A dedicated QA team, against the system specification
+- C. A team representing the customer, at the deployment site
+- D. The developers themselves, often by necessity ✅
+
+**Answer:** D
+
+**Explanation:** Early testing of software is usually, and often by necessity, done by the developers themselves, i.e., developer testing.
 
 ## [W3.7] Unit Testing
 
@@ -1875,6 +4181,323 @@ try {
 
 **Explanation:** The name follows the `unitBeingTested_descriptionOfTestInputs_expectedOutcome` convention, and the `FooTest` class naming for the class `Foo` under test.
 
+### W3.7-10 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.7] Unit Testing · **Subtopic:** Test class conventions · **Source:** W3.7d · **Basis:** body
+
+**Question:** You are writing JUnit tests for a class `Foo`. What is the common practice for naming the test class, and how is each test method marked?
+
+- A. `TestFoo`; each test method's name starts with `test`
+- B. `FooTest`; each test method has the `@Test` annotation ✅
+- C. `FooTests`; each test method is declared `static`
+- D. `Foo_Test`; each test method has the `@Run` annotation
+
+**Answer:** B
+
+**Explanation:** When writing JUnit tests for a class `Foo`, the common practice is to create a `FooTest` class containing test methods for `Foo`. Each test method is marked with a `@Test` annotation.
+
+### W3.7-11 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.7] Unit Testing · **Subtopic:** Expected values · **Source:** W3.7d · **Basis:** body
+
+**Question:** `IntPair#intDivision()` returns the result of integer division `first/second`. What expected value belongs in the blank?
+
+```java
+assertEquals(____, new IntPair(19, 10).intDivision());
+```
+
+- A. `1.9`
+- B. `2`
+- C. `1` ✅
+- D. `0`
+
+**Answer:** C
+
+**Explanation:** `assertEquals(expected, actual)` compares the expected output with the actual output. Normal division gives 1.9, but integer division should give 1; the course uses this input to try to "trick" the method.
+
+### W3.7-12 · MRQ
+
+**Type:** MRQ · **Topic:** [W3.7] Unit Testing · **Subtopic:** JUnit assertion methods · **Source:** W3.7d · **Basis:** body
+
+**Question:** Besides `assertEquals`, which of these does the course name as JUnit assertion methods? (Select all that apply.)
+
+- A. `assertNull` ✅
+- B. `assertNotNull` ✅
+- C. `assertTrue` ✅
+- D. `assertThrowsNothing`
+- E. `assertFalse` ✅
+
+**Answer:** A, B, C, E
+
+**Explanation:** JUnit comes with methods similar to `assertEquals`, such as `assertNull`, `assertNotNull`, `assertTrue` and `assertFalse`. `assertThrowsNothing` is not among them.
+
+### W3.7-13 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.7] Unit Testing · **Subtopic:** What to test for · **Source:** W3.7d · **Basis:** bold
+
+**Question:** When writing JUnit tests for a method, what should the tests aim for?
+
+- A. Use only typical inputs, so that the tests always pass
+- B. Run each test once, so that the build stays fast
+- C. Check only that the method does not throw any exceptions
+- D. Use inputs that can trigger a potentially buggy path ✅
+
+**Answer:** D
+
+**Explanation:** The goal of the tests is to catch bugs, so test using inputs that can trigger a potentially buggy path in the code. Write tests such that if a future developer unintentionally introduced a bug, at least one test would fail.
+
+### W3.7-14 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.7] Unit Testing · **Subtopic:** New instance per test · **Source:** W3.7f · **Basis:** body
+
+**Question:** Why does JUnit create a new instance of the test class before executing each test method?
+
+- A. To run each test in isolation, free of side effects ✅
+- B. To make the tests run in parallel by default
+- C. To make the order of tests random on each run
+- D. To let each test method share the fields set by earlier tests
+
+**Answer:** A
+
+**Explanation:** To allow individual test methods to be executed in isolation and to avoid unexpected side effects due to mutable test instance state, JUnit creates a new instance of each test class before executing each test method.
+
+### W3.7-15 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.7] Unit Testing · **Subtopic:** Disabling a test · **Source:** W3.7f · **Basis:** body
+
+**Question:** A test keeps failing because of an unfinished feature, and the team wants to switch it off temporarily without deleting it. Which JUnit annotation fits?
+
+- A. `@Tag("slow")`
+- B. `@Nested`
+- C. `@RepeatedTest`
+- D. `@Disabled` ✅
+
+**Answer:** D
+
+**Explanation:** The `@Disabled` annotation can be used to disable a test temporarily. `@Tag` labels tests for selection, `@Nested` expresses test hierarchies, and `@RepeatedTest` repeats a test.
+
+### W3.7-16 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.7] Unit Testing · **Subtopic:** Tagging tests · **Source:** W3.7f · **Basis:** body
+
+**Question:** A project wants to run its slow tests only in the nightly build, selecting them separately from the fast tests. Which JUnit feature fits?
+
+- A. `@TestFactory`, to generate the slow tests dynamically
+- B. `@Tag("slow")`, so tests can be selected by tag ✅
+- C. `@Timeout`, to skip slow tests automatically
+- D. `@BeforeAll`, to run slow tests before the others
+
+**Answer:** B
+
+**Explanation:** Tests can be tagged, e.g., `@Tag("slow")`, so that tests can be selected based on tags. `@TestFactory` generates dynamic tests and `@Timeout` fails a test that runs too long.
+
+### W3.7-17 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.7] Unit Testing · **Subtopic:** Timeouts · **Source:** W3.7f · **Basis:** body
+
+**Question:** A test should fail if it takes longer than two seconds to run. Which JUnit annotation fits?
+
+- A. `@Timeout` ✅
+- B. `@RepeatedTest`
+- C. `@Disabled`
+- D. `@Nested`
+
+**Answer:** A
+
+**Explanation:** The `@Timeout` annotation declares that a test should fail if its execution time exceeds a given duration. `@RepeatedTest` repeats a test a given number of times.
+
+### W3.7-18 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.7] Unit Testing · **Subtopic:** Default order and threading · **Source:** W3.7f · **Basis:** body
+
+**Question:** By default, in what order and on how many threads does JUnit 5 run test methods?
+
+- A. In alphabetical order, in parallel on many threads
+- B. In a random order that changes on every run, on a single thread
+- C. In a deterministic but nonobvious order, on a single thread ✅
+- D. In the order they appear in the file, in parallel on many threads
+
+**Answer:** C
+
+**Explanation:** By default JUnit runs tests in a deterministic but intentionally nonobvious order, so repeated runs use the same order and builds are repeatable. Tests run sequentially in a single thread by default; parallel execution is opt-in.
+
+### W3.7-19 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.7] Unit Testing · **Subtopic:** Parameterized tests · **Source:** W3.7f · **Basis:** body
+
+**Question:** A developer wants to run the same test many times, each time with a different input read from a CSV file. Which JUnit feature fits?
+
+- A. Assumptions, which skip the test when a condition does not hold
+- B. Repeated tests, which run a test a fixed number of times with no arguments
+- C. Test hierarchies, which group tests using `@Nested`
+- D. Parameterized tests, which run a test multiple times with different arguments ✅
+
+**Answer:** D
+
+**Explanation:** Parameterized tests run a test multiple times with different arguments, which can be supplied in several ways such as an array of values, enums or a CSV file. Assumptions instead cause a test to be skipped if they do not hold.
+
+### W3.7-20 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.7] Unit Testing · **Subtopic:** Unit tests per method · **Source:** W3.7c · **Basis:** body
+
+**Question:** A class `Account` has three public methods. Which arrangement of unit tests is common practice in OOP code?
+
+- A. A single unit test that exercises the whole class at once
+- B. One or more unit tests for each public method of the class ✅
+- C. Unit tests only for the private methods, since public ones are covered by system tests
+- D. Exactly one unit test per line of code in the class
+
+**Answer:** B
+
+**Explanation:** In OOP code, it is common to write one or more unit tests for each public method of a class.
+
+### W3.7-21 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.7] Unit Testing · **Subtopic:** Several tests per method · **Source:** W3.7c · **Basis:** body
+
+**Question:** `Foo` has methods `read()` and `write(String input)`. What does the test class below illustrate?
+
+```
+class FooTest {
+    @Test
+    void read() { ... }
+    @Test
+    void write_emptyInput_exceptionThrown() { ... }
+    @Test
+    void write_normalInput_writtenCorrectly() { ... }
+}
+```
+
+- A. `write` is tested twice by mistake, so one of its tests is redundant
+- B. Each test method in a test class must target a different method of `Foo`
+- C. `FooTest` is an integration test, because it has more tests than `Foo` has methods
+- D. Several unit tests can target the same method, each for a different scenario ✅
+
+**Answer:** D
+
+**Explanation:** Both `write_...` tests are unit tests of `Foo#write(String)`: one checks the empty-input scenario and the other the normal-input scenario. It is common to write one or more unit tests for each public method.
+
+### W3.7-22 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.7] Unit Testing · **Subtopic:** Test driver verification · **Source:** W3.7a · **Basis:** body
+
+**Question:** How does the test driver below signal a failure and report success?
+
+```
+public class PayrollTest {
+    public static void main(String[] args) throws Exception {
+        Payroll p = new Payroll();
+        p.setEmployees(new String[]{"E001", "E002"});
+        if (p.totalSalary() != 6400) {
+            throw new Error("case 1 failed ");
+        }
+        p.setEmployees(new String[]{"E001"});
+        if (p.totalSalary() != 2300) {
+            throw new Error("case 2 failed ");
+        }
+        System.out.println("All tests passed");
+    }
+}
+```
+
+- A. It throws an `Error` on a wrong total, and prints "All tests passed" otherwise ✅
+- B. It prints each total, and the tester compares them with the expected values by eye
+- C. It returns `false` from `main` on a failure, and `true` when all checks pass
+- D. It writes the totals to a file, which is compared with an expected-output file
+
+**Answer:** A
+
+**Explanation:** `PayrollTest` drives `Payroll` with test inputs and verifies the response automatically: a wrong total throws an `Error` naming the failed case, and if every check passes it prints "All tests passed".
+
+### W3.7-23 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.7] Unit Testing · **Subtopic:** JUnit · **Source:** W3.7b · **Basis:** bold
+
+**Question:** A team writing Java code wants a tool for automated testing of its Java programs, where tests are written as code and pass/fail is decided programmatically. Which tool does the course name for this?
+
+- A. WinMerge
+- B. JUnit ✅
+- C. Unix `diff`
+- D. JavaDoc
+
+**Answer:** B
+
+**Explanation:** JUnit is a tool for automated testing of Java programs; similar tools exist for other languages, and most modern IDEs have integrated support for such testing tools.
+
+### W3.7-24 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.7] Unit Testing · **Subtopic:** Driver vs JUnit · **Source:** W3.7b · **Basis:** body
+
+**Question:** A hand-written test driver checks `Payroll` with `if (p.totalSalary() != 6400) { throw new Error("case 1 failed "); }`. In the JUnit version of the same test, what replaces this check?
+
+- A. `System.out.println(p.totalSalary());` followed by a manual check of the printed value
+- B. A `main` method that returns `6400` when the test passes
+- C. `assertEquals(6400, p.totalSalary());` inside a method annotated with `@Test` ✅
+- D. A `PayrollStub` that always returns `6400`
+
+**Answer:** C
+
+**Explanation:** In the JUnit example, the test is a `@Test` method and each check is written as `assertEquals(expected, actual)`, e.g. `assertEquals(6400, p.totalSalary())`, so JUnit decides pass or fail automatically.
+
+### W3.7-25 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.7] Unit Testing · **Subtopic:** Stub behavior · **Source:** W3.7e · **Basis:** body
+
+**Question:** Which property of a stub does the class below most directly show?
+
+```
+class StorageStub implements Storage {
+    @Override
+    public String getName(int index) {
+        if (index == 5) {
+            return "Adam";
+        } else {
+            throw new UnsupportedOperationException();
+        }
+    }
+}
+```
+
+- A. It retrieves names from the database, but in a simpler way than `DatabaseStorage`
+- B. It computes a correct name for any index it is given
+- C. It has a different interface from the component it replaces, to keep it simple
+- D. It mimics responses only for a limited set of predetermined inputs, using hard-coded values ✅
+
+**Answer:** D
+
+**Explanation:** A stub mimics the responses of the component it replaces only for a limited set of predetermined inputs, and these responses are typically hard-coded; `StorageStub` knows only index `5` and cannot respond to anything else. It keeps the same `Storage` interface.
+
+### W3.7-26 · MCQ
+
+**Type:** MCQ · **Topic:** [W3.7] Unit Testing · **Subtopic:** Pure unit tests · **Source:** W3.7e · **Basis:** body
+
+**Question:** A test does `Logic logic = new Logic(new StorageStub());` and then `assertEquals("Name: Adam", logic.getName(5));`. Suppose `DatabaseStorage#readValueFromDatabase` has a bug. How does that bug affect this test?
+
+- A. The test fails, because `Logic` still reads from the database through the stub
+- B. It does not affect the test, because `Logic` is tested in isolation from `DatabaseStorage` ✅
+- C. The test must be rewritten, because stubs depend on the class they replace
+- D. The test passes only if the database is running when the test executes
+
+**Answer:** B
+
+**Explanation:** The stub replaces `DatabaseStorage`, so the test is not affected by any bugs in the `DatabaseStorage` class; that is what makes it a pure unit test of `Logic`.
+
+### W3.7-27 · MRQ
+
+**Type:** MRQ · **Topic:** [W3.7] Unit Testing · **Subtopic:** Test replacements · **Source:** W3.7e · **Basis:** body
+
+**Question:** Besides stubs, which of these does the course name as other types of replacements that can be used during testing? (Select all that apply.)
+
+- A. Mocks ✅
+- B. Fakes ✅
+- C. Drivers
+- D. Dummies ✅
+- E. Spies ✅
+
+**Answer:** A, B, D, E
+
+**Explanation:** Mocks, fakes, dummies and spies are named as other types of replacements besides stubs. A test driver is not a replacement for a dependency: it is the code that drives the SUT by invoking it with test inputs.
+
 ---
 
 # Week 4
@@ -1970,6 +4593,81 @@ try {
 **Answer:** A
 
 **Explanation:** Each diagram captures one aspect — high-level structure, a component's class structure, or behavior over time — and omits the rest, which is what makes them abstractions.
+
+### W4.1-07 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.1] Design: Models · **Subtopic:** Models capture selected aspects · **Source:** W4.1a · **Basis:** body
+
+**Question:** A team documents its design with a single, detailed class diagram. A reviewer says more diagrams are needed to capture the software fully. What is the best justification?
+
+- A. A class diagram can show the classes but not the associations among them
+- B. A class diagram captures the structure of the design but not its behavior ✅
+- C. A class diagram becomes invalid once coding starts
+- D. UML requires every design to be described by at least three diagrams
+
+**Answer:** B
+
+**Explanation:** A model captures only a selected aspect of an entity, which makes it an abstraction. A class diagram captures the structure of the software design but not the behavior, so multiple models of the same entity may be needed to capture it fully.
+
+### W4.1-08 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.1] Design: Models · **Subtopic:** Models for communication · **Source:** W4.1b · **Basis:** body
+
+**Question:** A business analyst shows a use case diagram to a customer to explain what the planned system will do. Which use of models is this?
+
+- A. As a blueprint for creating software
+- B. To analyze a complex entity related to software development
+- C. To communicate information among stakeholders ✅
+- D. To replace the need for written requirements
+
+**Answer:** C
+
+**Explanation:** Models can be used as a visual aid in discussions and documentation, i.e. to communicate information among stakeholders; a business analyst using a use case diagram to explain the system's functionality to the customer is one of the course's examples.
+
+### W4.1-09 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.1] Design: Models · **Subtopic:** Models as blueprints · **Source:** W4.1b · **Basis:** body
+
+**Question:** A software tool lets users draw models in its interface and then automatically generates the code from those models. Which use of models does this illustrate?
+
+- A. To communicate information among stakeholders
+- B. To analyze a complex entity related to software development
+- C. To document the software after it is finished
+- D. As a blueprint for creating software ✅
+
+**Answer:** D
+
+**Explanation:** Models can serve as instructions for building software. A tool that generates code from user-drawn models, like a senior developer handing design models to a junior programmer to implement, uses models as a blueprint.
+
+### W4.1-10 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.1] Design: Models · **Subtopic:** Models for analysis · **Source:** W4.1b · **Basis:** body
+
+**Question:** Before designing anything, a team builds models of the problem domain so that they understand the problem to be solved. Which use of models is this?
+
+- A. To analyze a complex entity related to software development ✅
+- B. As a blueprint for creating the software later on
+- C. To communicate information among the stakeholders
+- D. To generate the code automatically from the model
+
+**Answer:** A
+
+**Explanation:** Models help analyze complex entities: models of the problem domain aid understanding of the problem, and models such as architecture diagrams help figure out how a solution is to be built.
+
+### W4.1-11 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.1] Design: Models · **Subtopic:** Origin of UML · **Source:** W4.1c · **Basis:** body
+
+**Question:** Why is the Unified Modeling Language called "Unified"?
+
+- A. It unifies structure and behavior into a single type of diagram
+- B. It was formed by merging the Java and C++ modeling standards
+- C. It is the only notation that every industry has agreed to use
+- D. Its three creators merged their own separate notations into one ✅
+
+**Answer:** D
+
+**Explanation:** UML is the brainchild of James Rumbaugh, Grady Booch and Ivar Jacobson, the Three Amigos. Each had developed their own notation for modeling software before they joined forces to create a unified modeling language.
 
 ## [W4.2] Class/Object Diagrams: Basics
 
@@ -2093,6 +4791,504 @@ try {
 
 **Explanation:** These numbers are multiplicities, one of the decorations on an association: `0..1` means zero or one object, `1` means exactly one.
 
+### W4.2-09 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** Object structures change · **Source:** W4.2a · **Basis:** bold
+
+**Question:** In a running music library app, the way `Song`, `Author` and `Genre` objects are linked looks different at two different times. Which statement is correct?
+
+- A. Object structures should stay fixed, so the difference indicates a bug
+- B. They can change over time, following rules shown by a class structure ✅
+- C. Object structures change at random, so they cannot be modeled in advance
+- D. Each new object structure requires the designer to define a new class structure
+
+**Answer:** B
+
+**Explanation:** Object structures within the same software can change over time, but not at random: they follow rules set by the designer, and those rules can be illustrated as a class structure.
+
+### W4.2-10 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** Class structure as rules · **Source:** W4.2a · **Basis:** body
+
+**Question:** The class structure of a book catalogue allows no connection between `Genre` and `Author`. What does this mean for the object structures of the running software?
+
+- A. `Genre` and `Author` objects can be linked, because class structures do not constrain objects
+- B. `Genre` and `Author` objects may be linked only when the program starts
+- C. No object structure may link a `Genre` object to an `Author` object ✅
+- D. `Genre` and `Author` objects can never exist at the same time
+
+**Answer:** C
+
+**Explanation:** The class structure captures the rules that object structures must follow. If it does not allow a connection between `Genre` and `Author`, no object structure of that software links a `Genre` object to an `Author` object.
+
+### W4.2-11 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** Class box compartments · **Source:** W4.2b · **Basis:** panel
+
+**Question:** A student draws a `Table` class in UML. Which drawing follows the correct notation?
+
+- A. The name, then an operations compartment, then an attributes compartment below it
+- B. The name, then a separate compartment for each attribute, then the operations
+- C. Only the name, with both the attributes and the operations compartments omitted ✅
+- D. The attributes and operations compartments first, with the name at the bottom
+
+**Answer:** C
+
+**Explanation:** The attributes compartment and/or the operations compartment may be omitted if those details are not important. When shown, attributes always appear above operations, and all attributes go in one compartment (likewise all operations).
+
+### W4.2-12 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** Visibility symbols · **Source:** W4.2b · **Basis:** panel
+
+**Question:** In a class diagram, an attribute of `Account` is shown as `#balance: int`. What visibility does the `#` indicate?
+
+- A. Public
+- B. Private
+- C. Package private
+- D. Protected ✅
+
+**Answer:** D
+
+**Explanation:** Common UML visibilities are `+` public, `-` private, `#` protected and `~` package private.
+
+### W4.2-13 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** Mapping visibility from code · **Source:** W4.2b · **Basis:** panel
+
+**Question:** How should the members of this class appear in a UML class diagram that shows visibilities?
+
+```java
+class Table {
+    private Integer number;
+    public void setNumber(Integer n) { /* ... */ }
+}
+```
+
+- A. `-number: Integer` and `+setNumber(n: Integer): void` ✅
+- B. `+number: Integer` and `-setNumber(n: Integer): void`
+- C. `#number: Integer` and `~setNumber(n: Integer): void`
+- D. `~number: Integer` and `+setNumber(n: Integer): void`
+
+**Answer:** A
+
+**Explanation:** Java `private` maps to `-` and Java `public` maps to `+`; `#` corresponds to `protected` and `~` to Java's default (package private) visibility.
+
+### W4.2-14 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** No default visibility · **Source:** W4.2b · **Basis:** panel
+
+**Question:** A class diagram shows the attribute `count: int` with no visibility symbol in front of it. What does this mean?
+
+- A. It is private, which is the UML default
+- B. Its visibility is unspecified ✅
+- C. It is public, which is the UML default
+- D. It is package private, matching Java's default
+
+**Answer:** B
+
+**Explanation:** There is no default visibility in UML. If a member's visibility is not shown, it is simply unspecified, for reasons such as it not being decided yet or not mattering for the purpose of the diagram.
+
+### W4.2-15 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** Class-level members · **Source:** W4.2b · **Basis:** panel
+
+**Question:** In the `Student` class box of a class diagram, the attribute `totalStudents` and the method `getTotalStudents()` are underlined. What does the underlining mean?
+
+- A. They are abstract
+- B. They are private
+- C. They are class-level ✅
+- D. They are not yet implemented
+
+**Answer:** C
+
+**Explanation:** In UML class diagrams, underlines denote class-level attributes and methods.
+
+### W4.2-16 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** Association labels · **Source:** W4.2b · **Basis:** panel
+
+**Question:** An association line between `Admin` and `Student` carries the label `uses`, and next to the label is a small arrowhead pointing toward `Student`. What does that arrowhead indicate?
+
+- A. That `Student` is a subclass of `Admin`
+- B. That `Admin` depends on `Student` without an association
+- C. That exactly one `Student` is linked to each `Admin`
+- D. The direction in which the label is read ✅
+
+**Answer:** D
+
+**Explanation:** Association labels describe the meaning of the association, and the arrowhead beside the label indicates the direction in which the label is to be read. The same association could instead be labelled so that a `Student` is used by an `Admin`.
+
+### W4.2-17 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** Association roles · **Source:** W4.2b · **Basis:** panel
+
+**Question:** A marriage association links `Man` and `Woman`, with `husband` written at the `Man` end and `wife` at the `Woman` end. What do these words indicate, and how do they typically relate to the code?
+
+- A. They are association labels, and the association is read as "husband wife"
+- B. They are the roles each class plays in the association; e.g. `Man` has a variable `Woman wife;` ✅
+- C. They are object names, meaning there is exactly one `Man` object called `husband`
+- D. They are subclass names, so `Husband` extends `Man` and `Wife` extends `Woman`
+
+**Answer:** B
+
+**Explanation:** Association roles indicate the role played by the classes in the association. Variable names tend to match the roles closely: `Man` holds `Woman wife;` and `Woman` holds `Man husband;`.
+
+### W4.2-18 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** When roles are useful · **Source:** W4.2b · **Basis:** panel
+
+**Question:** A class diagram has three separate associations between `Flight` and `Airport`. Why would showing association roles be particularly useful here?
+
+- A. Roles are compulsory whenever two classes have more than one association
+- B. Roles show how many `Airport` objects each `Flight` is linked to
+- C. Roles differentiate the associations, showing the different role `Airport` plays in each ✅
+- D. Roles indicate which class holds a reference to the other
+
+**Answer:** C
+
+**Explanation:** Association roles are optional to show, but they are particularly useful for differentiating among multiple associations between the same two classes, such as the three `Flight`–`Airport` associations in which `Airport` plays a different role each time.
+
+### W4.2-19 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** Navigability concept · **Source:** W4.2b · **Basis:** panel
+
+**Question:** `Box` and `Rope` are associated. A teammate asks whether a `Rope` object has a reference to the `Box` object it is linked to. Which concept answers this question?
+
+- A. Navigability ✅
+- B. Multiplicity
+- C. Association label
+- D. Association role
+
+**Answer:** A
+
+**Explanation:** Navigability tells us whether an object taking part in an association knows about (has a reference to) the other, i.e. whether we can navigate from one object to the other in a given direction.
+
+### W4.2-20 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** Unidirectional navigability · **Source:** W4.2b · **Basis:** panel
+
+**Question:** The association between `Box` and `Rope` is navigable from `Box` to `Rope` only. `Box` object `b` and `Rope` object `r` take part in one instance of it. Which statement is true?
+
+- A. `r` has a reference to `b`, but `b` has no reference to `r`
+- B. `b` and `r` both have references to each other
+- C. `b` has a reference to `r`, but `r` has no reference to `b` ✅
+- D. Neither has a reference; navigability affects only the diagram layout
+
+**Answer:** C
+
+**Explanation:** With unidirectional navigability from `Box` to `Rope`, `b` holds a reference to `r` and one can navigate from `b` to `r`, but not in the other direction.
+
+### W4.2-21 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** Two unidirectional associations · **Source:** W4.2b · **Basis:** panel
+
+**Question:** How many associations, and of what navigability, does this code have between `Person` and `Cat`?
+
+```java
+class Person {
+    Cat pet;
+}
+class Cat {
+    Person breeder;
+}
+```
+
+- A. One bidirectional association, because each class refers to the other
+- B. One unidirectional association from `Person` to `Cat`; the `breeder` field is not an association
+- C. No associations, only dependencies, because neither link is long-term
+- D. Two unidirectional associations in opposite directions, because the breeder is not necessarily the cat's keeper ✅
+
+**Answer:** D
+
+**Explanation:** The breeder is not necessarily the person keeping the cat as a pet, so these are two separate associations. Two unidirectional associations in opposite directions do not add up to a single bidirectional association, which needs both objects to point to each other for the same link (as with `pet` and `owner`).
+
+### W4.2-22 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** Navigability notation · **Source:** W4.2b · **Basis:** panel
+
+**Question:** A class diagram shows a solid line from `Foo` to `Bar` ending in an open arrowhead at `Bar`. Which part of it denotes the navigability?
+
+- A. The whole arrow, including the line
+- B. The arrowhead; the line itself denotes the association ✅
+- C. The fact that the line is solid rather than dashed
+- D. The end of the line that has no arrowhead
+
+**Answer:** B
+
+**Explanation:** The arrowhead, not the entire arrow, denotes navigability. The line denotes the association as before, and the arrowhead is an extra annotation added to the association line.
+
+### W4.2-23 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** Navigability in object diagrams · **Source:** W4.2b · **Basis:** panel
+
+**Question:** An object diagram shows one `Logic` object linked to two `Minefield` objects, with arrowheads pointing toward the `Minefield` objects. Is this valid UML?
+
+- A. No; navigability can be shown only in class diagrams
+- B. No; object diagrams cannot show links between objects
+- C. Yes; the arrowheads mean the multiplicity at the `Minefield` end is 2
+- D. Yes; object diagrams can show navigability too ✅
+
+**Answer:** D
+
+**Explanation:** Navigability can be shown in class diagrams as well as object diagrams. Here the `Logic` object is associated with and aware of the two `Minefield` objects.
+
+### W4.2-24 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** Multiplicity concept · **Source:** W4.2b · **Basis:** panel
+
+**Question:** While designing a learning management system, a developer asks: "How many `Course` objects can be associated with one `Student` object, and vice versa?" Which aspect of the OOP solution is this about?
+
+- A. Navigability
+- B. Association role
+- C. Multiplicity ✅
+- D. Dependency
+
+**Answer:** C
+
+**Explanation:** Multiplicity is the aspect of an OOP solution that dictates how many objects take part in each association, e.g. how many `Course` objects can be associated with one `Student` object and vice versa.
+
+### W4.2-25 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** Multiplicity star · **Source:** W4.2b · **Basis:** panel
+
+**Question:** In a class diagram, the `Admin`–`Student` association has `*` at the `Student` end. What does this say about an `Admin` object?
+
+- A. It must be linked to exactly one `Student` object
+- B. It must be linked to at least one `Student` object
+- C. The number of linked `Student` objects is unspecified
+- D. It can be linked to zero or more `Student` objects ✅
+
+**Answer:** D
+
+**Explanation:** `*` means the object can be linked to 0 or more objects. Exactly one is `1`, one or more is `1..*`, and an unspecified multiplicity is shown by giving no multiplicity at all.
+
+### W4.2-26 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** One or more multiplicity · **Source:** W4.2b · **Basis:** panel
+
+**Question:** Each `Order` must be linked to at least one `Item`, with no upper limit. Which multiplicity belongs at the `Item` end of the `Order`–`Item` association?
+
+- A. `1..*` ✅
+- B. `*`
+- C. `1`
+- D. `0..1`
+
+**Answer:** A
+
+**Explanation:** In the `n..m` form, `1..*` means one or more. `*` would allow zero, `1` means exactly one, and `0..1` means optional (zero or one).
+
+### W4.2-27 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** Choosing multiplicities · **Source:** W4.2b · **Basis:** panel
+
+**Question:** Each student must be supervised by exactly one professor. A professor cannot supervise more than 5 students but may supervise none. Which multiplicities should the `Professor`–`Student` association have?
+
+- A. `1` at the `Student` end and `0..5` at the `Professor` end
+- B. `0..5` at the `Student` end and `1` at the `Professor` end ✅
+- C. `1..5` at the `Student` end and `1` at the `Professor` end
+- D. `0..5` at the `Student` end and `*` at the `Professor` end
+
+**Answer:** B
+
+**Explanation:** The multiplicity at an end says how many objects of that class one object at the other end links to: a professor links to 0 to 5 students (`0..5` at the `Student` end), and a student links to exactly one professor (`1` at the `Professor` end).
+
+### W4.2-28 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** No default multiplicity · **Source:** W4.2b · **Basis:** panel
+
+**Question:** A class diagram shows an association between `Shop` and `Product` with no multiplicity at either end. What does this mean?
+
+- A. The multiplicity is `1` at both ends
+- B. The multiplicity is `*` at both ends
+- C. The multiplicity is unspecified ✅
+- D. The multiplicity is `0..1` at both ends
+
+**Answer:** C
+
+**Explanation:** There is no default multiplicity in UML. If a class diagram does not show the multiplicity of an association, it simply means the multiplicity is unspecified.
+
+### W4.2-29 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** Implementing 0..1 · **Source:** W4.2b · **Basis:** panel
+
+**Question:** The `Logic` class has a normal instance-level variable `Minefield minefield;` that may or may not hold a `Minefield` object. Which multiplicity does this give the association from `Logic` to `Minefield`?
+
+- A. `1`
+- B. `*`
+- C. `1..*`
+- D. `0..1` ✅
+
+**Answer:** D
+
+**Explanation:** A normal instance-level variable gives a `0..1` (optional) multiplicity, because a variable can hold a reference to a single object or `null`. A `1` multiplicity needs the variable to always refer to an object.
+
+### W4.2-30 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** Implementing to-many · **Source:** W4.2b · **Basis:** panel
+
+**Question:** The `Minefield` class declares `Cell[][] cell;`. Which kind of association from `Minefield` to `Cell` does this implement?
+
+- A. A `0..1` association, because it is a single variable
+- B. A 1-to-many association, using a two-dimensional array as the data structure ✅
+- C. A dependency, because arrays are not objects
+- D. An association with exactly two `Cell` objects, one per array dimension
+
+**Answer:** B
+
+**Explanation:** To implement multiplicities other than `0..1` or `1`, choose a suitable data structure such as arrays, ArrayLists, HashMaps or Sets; the two-dimensional array implements a 1-to-many association from `Minefield` to `Cell`.
+
+### W4.2-31 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** Associations in OOP · **Source:** W4.2b · **Basis:** panel
+
+**Question:** In a learning management system, a `Course` object is connected to the `Student` objects taking that course. What are such connections called, and how are they implemented?
+
+- A. Associations, implemented with instance-level variables ✅
+- B. Dependencies, implemented by passing `Student` objects as method parameters
+- C. Associations, implemented with class-level (static) variables in `Course`
+- D. Inheritance, implemented by making `Student` extend `Course`
+
+**Answer:** A
+
+**Explanation:** Connections between objects that let them form a network and interact are called associations, and they are implemented using instance-level variables, e.g. a `students` variable in `Course`.
+
+### W4.2-32 · MRQ
+
+**Type:** MRQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** Properties of associations · **Source:** W4.2b · **Basis:** panel
+
+**Question:** Which statements about associations between `Course` and `Student` objects are correct? (Select all that apply.)
+
+- A. They can change over time as students enroll in or drop the course ✅
+- B. Once created, an association between two objects cannot change
+- C. They can be generalized as an association between the `Course` class and the `Student` class ✅
+- D. They are implemented using instance-level variables ✅
+- E. They are implemented using class-level (static) variables
+
+**Answer:** A, C, D
+
+**Explanation:** Associations in an object structure can change over time, e.g. as students enroll or drop. Associations among objects can be generalized as associations between the corresponding classes, and they are implemented with instance-level variables, not class-level ones.
+
+### W4.2-33 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** Association as attribute · **Source:** W4.2b · **Basis:** panel
+
+**Question:** In a Square Game class diagram, the `Piece` class has the attribute `isOn: Square [0..1] = null`. What does it express?
+
+- A. `isOn` is a boolean that is true when the piece is on one square
+- B. `isOn` is an array of `Square` objects with indices 0 to 1
+- C. A `Piece` is on zero or one `Square`, `null` by default ✅
+- D. A `Square` holds zero or one `Piece` objects, and starts empty
+
+**Answer:** C
+
+**Explanation:** An association can be shown as an attribute in the form `name: type [multiplicity] = default value`. Here it replaces the `Piece`–`Square` association: `isOn` is either `null` or a reference to a `Square`, matching the `0..1` multiplicity, with default value `null`.
+
+### W4.2-34 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** Line versus attribute · **Source:** W4.2b · **Basis:** panel
+
+**Question:** The `author` association from `Book` to `Person` can be drawn either as a line or as an `author` attribute in `Book`. What does the course recommend?
+
+- A. Prefer an attribute, because it takes up less space
+- B. Show both, so that readers can find the association either way
+- C. Use an attribute whenever the multiplicity is `1`
+- D. Prefer a line, because it is easier to spot ✅
+
+**Answer:** D
+
+**Explanation:** Both forms are correct and equivalent, but each association should be shown as either an attribute or a line, not both. A line is preferred as it is easier to spot.
+
+### W4.2-35 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** Purpose of class diagrams · **Source:** W4.2b · **Basis:** panel
+
+**Question:** A developer wants a diagram that shows the order in which objects call each other's methods during a login. Is a UML class diagram suitable for this?
+
+- A. Yes; class diagrams show both the structure and the behavior of an OOP solution
+- B. No; class diagrams describe the structure, but not the behavior, of an OOP solution ✅
+- C. Yes, provided the operations compartment of every class is shown
+- D. No; class diagrams can show attributes but not operations
+
+**Answer:** B
+
+**Explanation:** UML class diagrams describe the structure but not the behavior of an OOP solution; listing operations in a class box does not show the order of interactions.
+
+### W4.2-36 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** Purpose of object diagrams · **Source:** W4.2c · **Basis:** panel
+
+**Question:** A developer wants to show the specific objects that exist when a game reaches level 3 and how they are linked at that moment. Which UML diagram fits?
+
+- A. A class diagram
+- B. A sequence diagram
+- C. An object diagram ✅
+- D. An activity diagram
+
+**Answer:** C
+
+**Explanation:** An object diagram shows an object structure at a given point in time: a concrete snapshot of the class structure depicting specific instances and how they are linked. Object diagrams are instantiations of class diagrams.
+
+### W4.2-37 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** Unnamed objects · **Source:** W4.2c · **Basis:** panel
+
+**Question:** An object diagram contains a box labelled `:Car`, underlined. What does it represent?
+
+- A. The `Car` class itself
+- B. All `Car` objects in the system
+- C. A `Car` object whose class is not yet known
+- D. An unnamed instance of `Car` ✅
+
+**Answer:** D
+
+**Explanation:** In object diagrams `objectName:ClassName` (underlined, e.g. `car1:Car`) means an instance of `ClassName` identified as `objectName`; the object name can be omitted, so `:Car` means an unnamed instance of `Car`.
+
+### W4.2-38 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** Attribute values · **Source:** W4.2c · **Basis:** panel
+
+**Question:** In the class diagram, `Box` has the public attribute `size` of type `int`. In an object diagram, a particular `Box` object has `size` 3. How should that attribute appear?
+
+- A. `+size: int = 3`
+- B. `size = 3` ✅
+- C. `size: int = 3`
+- D. `+size = 3`
+
+**Answer:** B
+
+**Explanation:** Objects show attribute values in the `attribute = value` format. Visibility modifiers and attribute types are omitted because they can be implied from the class diagram.
+
+### W4.2-39 · MRQ
+
+**Type:** MRQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** Elements omitted from objects · **Source:** W4.2c · **Basis:** panel
+
+**Question:** Which of these class diagram elements are NOT shown in object diagrams? (Select all that apply.)
+
+- A. Inheritance relationships ✅
+- B. Abstract classes and interfaces ✅
+- C. Associations, drawn as solid lines
+- D. Dependencies ✅
+- E. Class-level attributes ✅
+
+**Answer:** A, B, D, E
+
+**Explanation:** Object diagrams show only the concrete class of each instance (no inheritance), omit abstract classes and interfaces because they cannot be instantiated, omit dependencies because these exist between classes rather than objects, and omit class-level attributes. Links between objects are still shown as solid lines.
+
+### W4.2-40 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.2] Class/Object Diagrams: Basics · **Subtopic:** Omitting class-level attributes · **Source:** W4.2c · **Basis:** panel
+
+**Question:** `Student` has a class-level attribute `totalStudents`. Why is it left out of the `s1:Student` box in an object diagram?
+
+- A. Its value can never change
+- B. It belongs to the class, not to a specific instance ✅
+- C. Object diagrams omit all attributes
+- D. Class-level attributes are always private
+
+**Answer:** B
+
+**Explanation:** Class-level attributes are omitted from object diagrams as they belong to the class rather than to any specific instance; other attributes can be shown with their values.
+
 ## [W4.3] Class Diagrams: Beyond Basics
 
 ### W4.3-01 · MCQ
@@ -2215,6 +5411,390 @@ try {
 
 **Explanation:** Stereotypes add domain-specific meaning to existing UML elements — here to a dependency — without changing the underlying structure of the model.
 
+### W4.3-09 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.3] Class Diagrams: Beyond Basics · **Subtopic:** Inheritance notation · **Source:** W4.3c · **Basis:** panel
+
+**Question:** How is "`Car` inherits from `Vehicle`" shown in a UML class diagram?
+
+- A. A solid line with a triangle at the `Vehicle` end; filled or hollow does not matter ✅
+- B. A solid line with a triangle at the `Car` end; it must be hollow
+- C. A dashed line with a triangle at the `Vehicle` end; filled or hollow does not matter
+- D. A solid line with a hollow triangle at the `Vehicle` end; a filled one is wrong
+
+**Answer:** A
+
+**Explanation:** Class inheritance is shown with a triangle and a solid line, with the triangle pointing to the parent class. It does not matter whether the triangle is filled or empty, although a hollow triangle is typical. A dashed line is used for implementing an interface.
+
+### W4.3-10 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.3] Class Diagrams: Beyond Basics · **Subtopic:** Interface notation · **Source:** W4.3c · **Basis:** panel
+
+**Question:** `AcademicStaff` implements the `SalariedStaff` interface. How is this shown in a class diagram?
+
+- A. `SalariedStaff` is marked `{interface}` and joined to `AcademicStaff` by a solid line with a triangle at `SalariedStaff`
+- B. `SalariedStaff` is marked `<<interface>>` and joined to `AcademicStaff` by a dashed arrow with an open arrowhead
+- C. `SalariedStaff` is marked `<<interface>>` and joined to `AcademicStaff` by a dashed line with a triangle at `SalariedStaff` ✅
+- D. `SalariedStaff` is underlined and joined to `AcademicStaff` by a solid line with a triangle at `SalariedStaff`
+
+**Answer:** C
+
+**Explanation:** An interface is shown like a class with the additional keyword `<<interface>>`. Implementing an interface is drawn like class inheritance, but with a dashed line instead of a solid one. A dashed arrow with an open arrowhead denotes a dependency.
+
+### W4.3-11 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.3] Class Diagrams: Beyond Basics · **Subtopic:** Abstract notation · **Source:** W4.3c · **Basis:** panel
+
+**Question:** How should an abstract class `Animal` and its abstract method `move()` be marked in a class diagram?
+
+- A. By underlining them
+- B. With a `#` prefix
+- C. Only with an `<<abstract>>` label above the name
+- D. With italics or (preferably) `{abstract}` ✅
+
+**Answer:** D
+
+**Explanation:** Italics or the `{abstract}` keyword (preferred) denote abstract classes and methods. Underlining marks class-level members and `#` marks protected visibility.
+
+### W4.3-12 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.3] Class Diagrams: Beyond Basics · **Subtopic:** Composition vs aggregation symbols · **Source:** W4.3c · **Basis:** panel
+
+**Question:** Which pairing of UML symbols is correct?
+
+- A. Composition: hollow diamond; aggregation: solid diamond
+- B. Composition: solid diamond; aggregation: hollow diamond ✅
+- C. Composition: filled triangle; aggregation: hollow triangle
+- D. Composition: solid line; aggregation: dashed line
+
+**Answer:** B
+
+**Explanation:** UML uses a solid diamond to denote composition and a hollow diamond to indicate aggregation. Triangles denote inheritance, and dashed lines appear in interface implementation and dependencies.
+
+### W4.3-13 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.3] Class Diagrams: Beyond Basics · **Subtopic:** Fowler on aggregation · **Source:** W4.3c · **Basis:** panel
+
+**Question:** A team debates whether to use the aggregation symbol in its diagrams. What does Martin Fowler's book *UML Distilled* advocate?
+
+- A. Omitting the aggregation symbol altogether, as it adds more confusion than clarity ✅
+- B. Using aggregation instead of composition, as it is the more general symbol
+- C. Omitting the composition symbol, as aggregation already covers it
+- D. Using both symbols on every whole-part association
+
+**Answer:** A
+
+**Explanation:** The distinction between composition and aggregation is rather blurred, and *UML Distilled* advocates omitting the aggregation symbol altogether because using it adds more confusion than clarity.
+
+### W4.3-14 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.3] Class Diagrams: Beyond Basics · **Subtopic:** Dependency notation · **Source:** W4.3c · **Basis:** panel
+
+**Question:** The `ScoreBoard` class depends on the `Player` class. How is this dependency drawn?
+
+- A. A dashed arrow from `Player` to `ScoreBoard`
+- B. A solid arrow from `ScoreBoard` to `Player`
+- C. A dashed arrow from `ScoreBoard` to `Player` ✅
+- D. A dashed line with a triangle at `Player`
+
+**Answer:** C
+
+**Explanation:** UML uses a dashed arrow to show dependencies, drawn from the dependent class to the class it depends on. A dashed line with a triangle denotes implementing an interface.
+
+### W4.3-15 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.3] Class Diagrams: Beyond Basics · **Subtopic:** When to draw dependencies · **Source:** W4.3c · **Basis:** panel
+
+**Question:** In which situation does a dependency arrow from `Foo` to `Bar` add useful information to a class diagram?
+
+- A. `Foo` keeps a `Bar` object in an instance variable, already shown as an association from `Foo` to `Bar`
+- B. `Foo` accesses a constant in `Bar`, and the diagram shows no association or inheritance from `Foo` to `Bar` ✅
+- C. `Foo` is a subclass of `Bar`, already shown with an inheritance triangle
+- D. In every case where `Foo` uses `Bar`, even when other arrows already connect them
+
+**Answer:** B
+
+**Explanation:** Associations and inheritance already imply a dependency, so an extra dependency arrow adds no value there. Use a dependency arrow only if the dependency is not already captured by the diagram in another way, such as `Foo` accessing a constant in `Bar`.
+
+### W4.3-16 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.3] Class Diagrams: Beyond Basics · **Subtopic:** Composition implications · **Source:** W4.3c · **Basis:** panel
+
+**Question:** `Folder` object `subF` is a sub-folder of `Folder` object `F`, and the sub-folder association is a composition. Which statement follows?
+
+- A. If `F` is deleted, `subF` survives, but `F` cannot be a sub-folder of `subF`
+- B. If `F` is deleted, `subF` is deleted too, but `F` may also be a sub-folder of `subF`
+- C. If `F` is deleted, `subF` survives, and `subF` may then join another folder
+- D. If `F` is deleted, `subF` is deleted too, and `F` cannot be a sub-folder of `subF` ✅
+
+**Answer:** D
+
+**Explanation:** A composition is a strong whole-part relationship: when the whole is destroyed the parts are destroyed too, and there cannot be cyclical links.
+
+### W4.3-17 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.3] Class Diagrams: Beyond Basics · **Subtopic:** Composition depends on context · **Source:** W4.3c · **Basis:** panel
+
+**Question:** Is the relationship between `Email` and `EmailSubject` a composition?
+
+- A. Always yes, because every email has a subject
+- B. Always no, because a subject is just text
+- C. It depends on the context of the application ✅
+- D. Only if `EmailSubject` is stored in a private variable of `Email`
+
+**Answer:** C
+
+**Explanation:** Whether a relationship is a composition can depend on the context. In an email-sending app the subject cannot exist without the email, but an app analyzing email traffic might collect subjects on their own.
+
+### W4.3-18 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.3] Class Diagrams: Beyond Basics · **Subtopic:** Cascading deletion · **Source:** W4.3c · **Basis:** panel
+
+**Question:** In a design, `Person` objects attached to a `Task` are deleted whenever that `Task` is deleted. Does this make `Task`–`Person` a composition?
+
+- A. Yes; cascading deletion is what defines composition
+- B. Not by itself; cascading deletion is not sufficient ✅
+- C. No; it must be an aggregation because a `Person` is a container
+- D. Yes, provided there are no cyclical links between them
+
+**Answer:** B
+
+**Explanation:** Cascading deletion alone is not sufficient for composition. For it to be composition, a `Person` must be an integral part of a `Task` in the context of that association, at the concept level and not simply at the implementation level.
+
+### W4.3-19 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.3] Class Diagrams: Beyond Basics · **Subtopic:** Common use of composition · **Source:** W4.3c · **Basis:** panel
+
+**Question:** To make a big class easier to manage, a developer carves out some of its parts as smaller classes that still act as parts of the big class. Which relationship fits, and how is it implemented?
+
+- A. Composition, implemented with normal variables, ideally with the parts not visible to clients of the big class ✅
+- B. Aggregation, implemented by passing the parts in from outside so that clients can share them
+- C. Inheritance, implemented by making each part a subclass of the big class
+- D. Dependency, implemented by creating each part inside a method and discarding it afterwards
+
+**Answer:** A
+
+**Explanation:** A common use of composition is carving out parts of a big class as smaller classes; the outside world has no business knowing about them. Composition is implemented using a normal variable, and ideally the part is not even visible to clients of the whole.
+
+### W4.3-20 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.3] Class Diagrams: Beyond Basics · **Subtopic:** Aggregation · **Source:** W4.3c · **Basis:** panel
+
+**Question:** A `SportsClub` contains `Person` objects who are its members, and the `Person` objects can survive without the `SportsClub` object. Which relationship is this?
+
+- A. Composition
+- B. Dependency
+- C. Inheritance
+- D. Aggregation ✅
+
+**Answer:** D
+
+**Explanation:** Aggregation represents a container-contained relationship and is weaker than composition: the contained objects (here `Person` members) can exist even after the container is deleted.
+
+### W4.3-21 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.3] Class Diagrams: Beyond Basics · **Subtopic:** Meaning of dependency · **Source:** W4.3c · **Basis:** panel
+
+**Question:** In the context of OOP associations, a dependency is defined as a need for one class to depend on another without a direct association in the same direction. Why are cases with such an association excluded?
+
+- A. Because Java does not allow an association and a dependency between the same classes
+- B. Because an association from `Foo` to `Bar` already makes it obvious that `Foo` depends on `Bar` ✅
+- C. Because an association makes `Bar` depend on `Foo` instead
+- D. Because dependencies can exist only between interfaces
+
+**Answer:** B
+
+**Explanation:** If there is an association navigable from `Foo` to `Bar`, `Foo` obviously depends on `Bar`, so there is no point mentioning the dependency separately; the concept focuses on non-obvious dependencies.
+
+### W4.3-22 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.3] Class Diagrams: Beyond Basics · **Subtopic:** Transient interaction dependency · **Source:** W4.3c · **Basis:** panel
+
+**Question:** What is the relationship from `Foo` to `Bar` in this code?
+
+```java
+class Foo {
+    int calculate(Bar bar) {
+        return bar.getValue();
+    }
+}
+```
+
+- A. An association, because `Foo` uses a `Bar` object
+- B. A composition, because `Bar`'s value is part of `Foo`'s result
+- C. A dependency, but not an association ✅
+- D. No relationship, because `Bar` appears only as a parameter
+
+**Answer:** C
+
+**Explanation:** `Foo` depends on `Bar`, but only through a temporary interaction: there is no long-term link because the `Foo` object does not keep the `Bar` object passed to it. That makes it a dependency rather than an association.
+
+### W4.3-23 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.3] Class Diagrams: Beyond Basics · **Subtopic:** Class-level member dependency · **Source:** W4.3c · **Basis:** panel
+
+**Question:** The `Course` class reads `Registrar.MAX_COURSE_CAPACITY` to find the maximum number of students it can support, but keeps no reference to any `Registrar` object. What is the relationship from `Course` to `Registrar`?
+
+- A. A dependency, caused by accessing a class-level member of `Registrar` ✅
+- B. An association, because `Course` refers to `Registrar`
+- C. Inheritance, because `Course` uses a constant of `Registrar`
+- D. An aggregation, because `Registrar` contains the capacity of `Course`
+
+**Answer:** A
+
+**Explanation:** One common cause of dependencies without an association is one class accessing a class-level member of another, as `Course` does with `Registrar.MAX_COURSE_CAPACITY`.
+
+### W4.3-24 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.3] Class Diagrams: Beyond Basics · **Subtopic:** Enumerations · **Source:** W4.3c · **Basis:** panel
+
+**Question:** A `WeekDay` type must allow only the values `MONDAY` to `FRIDAY`. Which construct fits best, and why?
+
+- A. An interface, because it specifies the five allowed behaviors
+- B. An abstract class with five subclasses, because each day behaves differently
+- C. A `String` variable, because the compiler checks the spelling of string values
+- D. An enumeration, so the compiler can catch invalid values ✅
+
+**Answer:** D
+
+**Explanation:** An enumeration is a fixed set of values that can be considered as a data type. It is useful when a regular type such as `int` or `String` would allow invalid values, because the compiler can catch such an error.
+
+### W4.3-25 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.3] Class Diagrams: Beyond Basics · **Subtopic:** Abstract methods · **Source:** W4.3c · **Basis:** panel
+
+**Question:** The `Animal` class declares the method signature `move()` without an implementation. Why must `Animal` then be an abstract class?
+
+- A. Because abstract methods must be private
+- B. Because the class definition is incomplete, so objects cannot be created from it ✅
+- C. Because subclasses can override `move()` only from an abstract class
+- D. Because any class with a method signature must be an interface
+
+**Answer:** B
+
+**Explanation:** An abstract method is a signature without an implementation. A class that has one becomes abstract because its definition is incomplete (the method body is missing) and objects cannot be created from an incomplete class definition.
+
+### W4.3-26 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.3] Class Diagrams: Beyond Basics · **Subtopic:** Interfaces give is-a · **Source:** W4.3c · **Basis:** panel
+
+**Question:** `AcademicStaff` implements the interface `SalariedStaff`, which specifies `setSalary(int)` and `getSalary()`. Which statement is correct?
+
+- A. `AcademicStaff` has-a `SalariedStaff`, so it must keep a `SalariedStaff` field
+- B. `AcademicStaff a = new SalariedStaff();` is allowed
+- C. `SalariedStaff ss = new AcademicStaff();` is allowed ✅
+- D. `AcademicStaff` may implement only one of the two methods
+
+**Answer:** C
+
+**Explanation:** A class implementing an interface results in an is-a relationship, just like class inheritance: an `AcademicStaff` is a `SalariedStaff` and can be used wherever one is expected. It must implement all methods the interface specifies.
+
+### W4.3-27 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.3] Class Diagrams: Beyond Basics · **Subtopic:** Multiple inheritance by language · **Source:** W4.3c · **Basis:** panel
+
+**Question:** A design has `Honey` inheriting directly from both `Food` and `Medicine`. In which of these languages can this be written as class inheritance?
+
+- A. Python ✅
+- B. Java
+- C. C#
+- D. Both Java and C#
+
+**Answer:** A
+
+**Explanation:** Multiple inheritance, where a class inherits directly from multiple classes, is allowed among classes in some languages such as Python and C++, but not in others such as Java and C#.
+
+### W4.3-28 · MRQ
+
+**Type:** MRQ · **Topic:** [W4.3] Class Diagrams: Beyond Basics · **Subtopic:** Inheritance statements · **Source:** W4.3c · **Basis:** panel
+
+**Question:** `EvaluationReport` inherits from `Report`, which inherits from `Document`. Which statements are correct? (Select all that apply.)
+
+- A. `Report` is more general than `EvaluationReport` ✅
+- B. `EvaluationReport` is more specialized than `Report` ✅
+- C. `EvaluationReport` can inherit behavior from `Document` as well as from `Report` ✅
+- D. Code reuse can be a benefit of this inheritance ✅
+- E. A change to `Report` cannot affect `EvaluationReport`
+
+**Answer:** A, B, C, D
+
+**Explanation:** A superclass is more general and a subclass more specialized; a class can inherit behavior from its ancestor classes, and code reuse is one benefit. Because subclasses inherit behavior from the superclass, changes to the superclass can affect its subclasses.
+
+### W4.3-29 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.3] Class Diagrams: Beyond Basics · **Subtopic:** Generics and bind · **Source:** W4.3c · **Basis:** panel
+
+**Question:** Given `class Foo<T> {}` and `class Goo extends Foo<String> {}`, which annotation may be placed on the arrow from `Goo` to `Foo` to show that `String` is bound to `T`?
+
+- A. `<<interface>>`, optionally with `<T -> String>`
+- B. `<<create>>`, optionally with `<String>`
+- C. `{abstract}`, optionally with `{T = String}`
+- D. `<<bind>>`, optionally with `<T -> String>` ✅
+
+**Answer:** D
+
+**Explanation:** The arrow may be annotated with `<<bind>>` to indicate the relationship results from binding `Foo<String>` to `Foo<T>`, and a further annotation `<T -> String>` can clarify that `String` is bound to `T`.
+
+### W4.3-30 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.3] Class Diagrams: Beyond Basics · **Subtopic:** UML notes · **Source:** W4.3a · **Basis:** panel
+
+**Question:** A designer wants to add a remark that applies to a whole class diagram rather than to any one class. Can a UML note be used?
+
+- A. Yes; a note can be connected to a particular element or shown without any connection ✅
+- B. No; a note must always be attached to exactly one element
+- C. Only if the remark is written inside a class's attributes compartment
+- D. Only in activity diagrams, not class diagrams
+
+**Answer:** A
+
+**Explanation:** UML notes can augment any UML diagram with additional information, and they can be shown connected to a particular element or without a connection.
+
+### W4.3-31 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.3] Class Diagrams: Beyond Basics · **Subtopic:** Association class notation · **Source:** W4.3e · **Basis:** panel
+
+**Question:** `Loan` stores information about the `borrows` association between `User` and `Book`. How is `Loan` drawn as an association class?
+
+- A. As a class joined to `Book` by a solid line
+- B. As a class joined to the `borrows` association line by a dashed line ✅
+- C. As a diamond placed in the middle of the `borrows` line
+- D. As a class joined to `User` by a dashed arrow
+
+**Answer:** B
+
+**Explanation:** Association classes are denoted as a connection to the association link using a dashed line; `Loan` connects to the `borrows` line between `User` and `Book`.
+
+### W4.3-32 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.3] Class Diagrams: Beyond Basics · **Subtopic:** Judging association classes · **Source:** W4.3d · **Basis:** panel
+
+**Question:** `Mileage` is proposed as an association class for the association between `Driver` and `Car`. Under which definition of `Mileage` would it be suitable?
+
+- A. The total number of miles the car has been driven by anyone
+- B. The average fuel economy of the car's model
+- C. The total number of miles that car was driven by that driver ✅
+- D. The total number of miles the driver has driven in all cars
+
+**Answer:** C
+
+**Explanation:** An association class represents information about the association itself. Overall mileage is a property of the car, but miles driven by that particular driver in that particular car belongs to the `Driver`–`Car` association.
+
+### W4.3-33 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.3] Class Diagrams: Beyond Basics · **Subtopic:** Stereotypes · **Source:** W4.3f · **Basis:** panel
+
+**Question:** A team labels some classes `<<entity>>` and one class `<<facade>>`. Which statement about these stereotypes is correct?
+
+- A. They change the underlying type of the elements they label
+- B. They can be applied only to classes, not to objects or relationships
+- C. They must be shown on every class in the diagram once one is used
+- D. They add domain-specific meaning without changing core UML ✅
+
+**Answer:** D
+
+**Explanation:** Stereotypes are a lightweight extension mechanism that labels classes, objects or relationships with roles or semantics beyond their default interpretation. They do not change the fundamental structure of the model or the core language.
+
 ## [W4.4] Java: JavaFX
 
 ### W4.4-01 · MCQ
@@ -2247,6 +5827,21 @@ try {
 
 **Explanation:** JavaFX is no longer part of Java itself, so a project that builds its GUI with it has to declare it as a dependency.
 
+### W4.4-03 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.4] Java: JavaFX · **Subtopic:** JavaFX maintenance · **Source:** W4.4a · **Basis:** body
+
+**Question:** JavaFX used to be part of Java itself but is now a third-party dependency. Who maintains it now?
+
+- A. Gradle
+- B. Oracle's JUnit team
+- C. OpenJDK ✅
+- D. The SE-EDU project
+
+**Answer:** C
+
+**Explanation:** JavaFX is a technology for building Java-based GUIs. It was previously part of Java itself but has become a third-party dependency, and it is now maintained by OpenJDK.
+
 ## [W4.5] Java: varargs
 
 ### W4.5-01 · MCQ
@@ -2278,6 +5873,21 @@ try {
 **Answer:** A
 
 **Explanation:** The `Prefix...` parameter is a variable-arguments parameter, so callers can pass any number of `Prefix` values.
+
+### W4.5-03 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.5] Java: varargs · **Subtopic:** Nature of varargs · **Source:** W4.5a · **Basis:** body
+
+**Question:** The method `public static void search(String ... keywords)` uses Java's varargs feature. How does the course describe this feature?
+
+- A. A runtime library that parses the program's command-line arguments
+- B. A compiler setting that allows methods with no return type
+- C. An annotation that marks a method as overloaded
+- D. Syntactic sugar letting a method take a variable number of arguments ✅
+
+**Answer:** D
+
+**Explanation:** Variable Arguments (varargs) is a syntactic sugar type feature that allows writing a method that can take a variable number of arguments, declared with syntax such as `String ... keywords`.
 
 ## [W4.6] Code Quality: Naming
 
@@ -2386,6 +5996,111 @@ try {
 
 **Explanation:** Classes are named with nouns or noun phrases and methods with verbs (or question-like forms such as `hasPerson` for booleans).
 
+### W4.6-08 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.6] Code Quality: Naming · **Subtopic:** Benefits of good names · **Source:** W4.6a · **Basis:** body
+
+**Question:** A team lead asks developers to spend time choosing proper names for variables and methods. Which two benefits of proper naming does the course give?
+
+- A. It makes the program run faster and use less memory
+- B. It improves readability and reduces bugs caused by ambiguous intent ✅
+- C. It removes the need for code comments and for unit testing entirely
+- D. It lets the compiler detect more syntax errors and shortens build times
+
+**Answer:** B
+
+**Explanation:** Proper naming improves the readability of code, and it also reduces bugs caused by ambiguities regarding the intent of a variable or a method.
+
+### W4.6-09 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.6] Code Quality: Naming · **Subtopic:** Numbers or case in names · **Source:** W4.6d · **Basis:** body
+
+**Question:** A method stores a price before and after a discount in variables named `value1` and `value2`. What does the course recommend?
+
+- A. Rename them `value` and `Value`, so they differ only in case
+- B. Keep the names, as numbers are a standard way to tell variables apart
+- C. Rename them to names such as `originalValue` and `finalValue` ✅
+- D. Rename them `v1` and `v2` to keep them short
+
+**Answer:** C
+
+**Explanation:** Do not use numbers or case to distinguish names; both `value1`/`value2` and `value`/`Value` are bad. Names such as `originalValue` and `finalValue` explain what each variable holds.
+
+### W4.6-10 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.6] Code Quality: Naming · **Subtopic:** Names that explain · **Source:** W4.6d · **Basis:** bold
+
+**Question:** A developer says, "As long as every variable has a different name, the names are fine." How does the course's naming guideline respond?
+
+- A. A name should also explain the named entity accurately and in enough detail ✅
+- B. That is correct; names only need to be unique within their scope
+- C. Names should be as short as possible, since uniqueness is all that the compiler needs
+- D. Names should mainly reflect the developer who wrote the code
+
+**Answer:** A
+
+**Explanation:** A name is not just for differentiation; it should explain the named entity to the reader accurately and at a sufficient level of detail, e.g., `removeWhiteSpaceFromInput()` rather than `processInput()`.
+
+### W4.6-11 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.6] Code Quality: Naming · **Subtopic:** Abbreviations and acronyms · **Source:** W4.6e · **Basis:** body
+
+**Question:** A team decides it has to use some abbreviations and acronyms in names to keep them manageable. What does the course advise?
+
+- A. Use a different abbreviation each time so that names stay unique
+- B. Abbreviate every word in every name, so that all names are short
+- C. Avoid explaining abbreviations, as readers will work them out from the code
+- D. Do it consistently, and explain their full meaning at an obvious location ✅
+
+**Answer:** D
+
+**Explanation:** While lengthy names are best avoided, names that are too short are even worse. If you must abbreviate or use acronyms, do it consistently and explain their full meaning at an obvious location.
+
+### W4.6-12 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.6] Code Quality: Naming · **Subtopic:** Hard-to-read names · **Source:** W4.6f · **Basis:** body
+
+**Question:** Why does the course consider `phase0` a poor variable name, preferring `phaseZero`?
+
+- A. Because variable names must not contain any digits in Java
+- B. Because a reader may confuse the digit 0 with the letter O ✅
+- C. Because `phase0` is too long
+- D. Because `phase` is a verb and variables should be nouns
+
+**Answer:** B
+
+**Explanation:** Avoid names that are ambiguous or hard to read, such as those raising the question "is that number 0 or letter O?". `phaseZero` removes this ambiguity.
+
+### W4.6-13 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.6] Code Quality: Naming · **Subtopic:** Ambiguous names · **Source:** W4.6f · **Basis:** body
+
+**Question:** A program has variables `right`, `left` and `wrong`, and also `redBooks` and `readBooks`. What is the problem with these names?
+
+- A. They are too long and should be abbreviated
+- B. They use verbs for variables instead of nouns
+- C. They are ambiguous or sound alike, e.g., `right` has two meanings ✅
+- D. They mix single-valued and multi-valued variables within the same method
+
+**Answer:** C
+
+**Explanation:** Avoid misleading or ambiguous names and similar-sounding names. Better names are `rightDirection`, `leftDirection` and `wrongResponse`, and `redColorBooks` and `booksRead`.
+
+### W4.6-14 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.6] Code Quality: Naming · **Subtopic:** Standard words · **Source:** W4.6c · **Basis:** body
+
+**Question:** Which variable name breaks the guideline "use standard words"?
+
+- A. `userCount`
+- B. `maxRetries`
+- C. `isValidInput`
+- D. `usrCnt4u` ✅
+
+**Answer:** D
+
+**Explanation:** Use correct spelling in names and avoid texting-style spelling, as well as foreign language words, slang, and names meaningful only within specific contexts or times. `usrCnt4u` uses texting-style spelling.
+
 ## [W4.7] Static Analysis
 
 ### W4.7-01 · MCQ
@@ -2447,6 +6162,66 @@ try {
 **Answer:** B
 
 **Explanation:** Static analysis examines code without executing it, as Checkstyle does. Information that requires running the code, such as which lines the tests executed, is dynamic.
+
+### W4.7-05 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.7] Static Analysis · **Subtopic:** Dynamic analysis · **Source:** W4.7a · **Basis:** bold
+
+**Question:** A tool runs a program and measures how long each method takes to execute. What kind of analysis is this?
+
+- A. Static analysis, because it examines the code
+- B. Linting, because it finds areas where the code can be made cleaner
+- C. Code review, because it finds where code can be improved
+- D. Dynamic analysis, since it executes the code to gather such information ✅
+
+**Answer:** D
+
+**Explanation:** Static analysis analyzes code without executing it. In contrast, dynamic analysis requires the code to be executed to gather additional information about it, such as performance characteristics.
+
+### W4.7-06 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.7] Static Analysis · **Subtopic:** Static analysis in IDEs · **Source:** W4.7a · **Basis:** body
+
+**Question:** As you type, your IDE highlights a variable that is declared but never used. What is this an example of?
+
+- A. Dynamic analysis
+- B. Static analysis ✅
+- C. Regression testing
+- D. Formal verification
+
+**Answer:** B
+
+**Explanation:** Most modern IDEs come with inbuilt static analysis capabilities; for example, an IDE can highlight unused variables as you type, without executing the code.
+
+### W4.7-07 · MRQ
+
+**Type:** MRQ · **Topic:** [W4.7] Static Analysis · **Subtopic:** Java static analyzers · **Source:** W4.7a · **Basis:** body
+
+**Question:** Which of these are given as examples of static analyzers for Java? (Select all that apply.)
+
+- A. CheckStyle ✅
+- B. JUnit
+- C. PMD ✅
+- D. FindBugs ✅
+
+**Answer:** A, C, D
+
+**Explanation:** CheckStyle, PMD and FindBugs are examples of static analyzers for Java. JUnit is a testing framework, which runs the code rather than analyzing it statically.
+
+### W4.7-08 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.7] Static Analysis · **Subtopic:** Higher-end static analyzers · **Source:** W4.7a · **Basis:** bold
+
+**Question:** Beyond finding unused variables and style errors, what can higher-end static analysis tools do?
+
+- A. Measure the program's performance while it runs
+- B. Prove mathematically that the program contains no errors at all
+- C. Locate potential bugs, memory leaks and inefficient code structures ✅
+- D. Generate API documentation from comments
+
+**Answer:** C
+
+**Explanation:** Higher-end static analysis tools (static analyzers) can perform more complex analysis such as locating potential bugs, memory leaks, and inefficient code structures.
 
 ## [W4.8] Code Reviews
 
@@ -2510,6 +6285,66 @@ try {
 **Answer:** A, B, C
 
 **Explanation:** Reviews can examine things testing cannot and need no test scaffolding. Their disadvantage is that they are a manual process and therefore error-prone.
+
+### W4.8-05 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.8] Code Reviews · **Subtopic:** Pair programming as review · **Source:** W4.8a · **Basis:** body
+
+**Question:** Why does the course count pair programming as a form of code review?
+
+- A. Because the pair submits a pull request after every line
+- B. Because a moderator records the findings of each session
+- C. Because the code is reviewed by a formal inspection team afterwards
+- D. Because the other programmer implicitly reviews the code as it is written ✅
+
+**Answer:** D
+
+**Explanation:** Pair programming involves two programmers working on the same code at the same time, so there is an implicit review of the code by the other member of the pair.
+
+### W4.8-06 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.8] Code Reviews · **Subtopic:** Inspection roles · **Source:** W4.8a · **Basis:** body
+
+**Question:** In a formal inspection, which role plans and runs the inspection meeting?
+
+- A. The moderator ✅
+- B. The author
+- C. The secretary
+- D. The inspector
+
+**Answer:** A
+
+**Explanation:** The moderator is the planner and executor of the inspection meeting. The author created the artifact, the secretary records the findings, and the inspector/reviewer inspects the artifact.
+
+### W4.8-07 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.8] Code Reviews · **Subtopic:** Review disadvantages · **Source:** W4.8a · **Basis:** body
+
+**Question:** What disadvantage of code reviews does the course mention?
+
+- A. They cannot detect coding standard violations
+- B. They are a manual process, and are therefore error-prone ✅
+- C. They require test drivers and stubs
+- D. They cannot be done on incomplete code
+
+**Answer:** B
+
+**Explanation:** Code reviews are a manual process and are therefore error-prone. On the other hand, they can detect coding standard violations, verify non-code artifacts and incomplete code, and need no test drivers or stubs.
+
+### W4.8-08 · MCQ
+
+**Type:** MCQ · **Topic:** [W4.8] Code Reviews · **Subtopic:** PR reviews · **Source:** W4.8a · **Basis:** body
+
+**Question:** How do project management platforms such as GitHub and BitBucket support code review?
+
+- A. They automatically prove that newly pushed code is correct
+- B. They assign a moderator and a secretary to review every commit
+- C. They allow new code to be proposed as pull requests that others can review ✅
+- D. They run the code to collect its performance characteristics
+
+**Answer:** C
+
+**Explanation:** Platforms such as GitHub and BitBucket allow new code to be proposed as Pull Requests and provide the ability for others to review the code in the PR.
 
 ---
 
@@ -2653,6 +6488,187 @@ try {
 
 **Explanation:** It does not state something the system should do; it states a performance/capacity constraint under which the system operates, so it is an NFR. AB3 lists it in its Non-Functional Requirements section.
 
+### W5.1-10 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.1] Requirements: Intro · **Subtopic:** Greenfield projects · **Source:** W5.1a · **Basis:** bold
+
+**Question:** A team is building a new app that lets students swap tutorial slots. No such system exists yet at the university. What type of project is this?
+
+- A. A brownfield project
+- B. A maintenance project
+- C. A greenfield project ✅
+- D. A refactoring project
+
+**Answer:** C
+
+**Explanation:** A greenfield project develops a new system from scratch, whereas a brownfield project replaces or updates an existing product. Either way, requirements still need to be gathered, analyzed, specified and managed.
+
+### W5.1-11 · MRQ
+
+**Type:** MRQ · **Topic:** [W5.1] Requirements: Intro · **Subtopic:** Why requirements are hard · **Source:** W5.1a · **Basis:** body
+
+**Question:** Why is identifying requirements often not easy? (Select all that apply.)
+
+- A. Stakeholders may not be aware of their precise needs ✅
+- B. Requirements may only come from the developers, not from other stakeholders
+- C. Stakeholders may not know how to communicate their requirements correctly ✅
+- D. Stakeholders may not be willing to spend effort identifying requirements ✅
+
+**Answer:** A, C, D
+
+**Explanation:** Stakeholders may be unaware of their precise needs, unable to communicate them correctly, or unwilling to spend effort identifying them. Requirements come from all stakeholders, such as users, sponsors and developers, not from developers alone.
+
+### W5.1-12 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.1] Requirements: Intro · **Subtopic:** Constraints as NFRs · **Source:** W5.1b · **Basis:** body
+
+**Question:** A project's requirements include: "System testers are available only during the last month of the project." How should this be classified?
+
+- A. As a functional requirement, because it describes what the testers will do
+- B. As a non-functional requirement, because it is a constraint on how the system is developed ✅
+- C. As not a requirement at all, because it says nothing about the software
+- D. As a user story, because it names a role and an activity
+
+**Answer:** B
+
+**Explanation:** Non-functional requirements specify the constraints under which the system is developed and operated. The course gives this exact statement as an example of a constraint, one kind of NFR.
+
+### W5.1-13 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.1] Requirements: Intro · **Subtopic:** Process requirements · **Source:** W5.1b · **Basis:** body
+
+**Question:** A requirement states: "The project is expected to adhere to a schedule that delivers a feature set every month." Which kind of non-functional requirement is this?
+
+- A. A performance requirement
+- B. A data requirement
+- C. An environment requirement
+- D. A process requirement ✅
+
+**Answer:** D
+
+**Explanation:** The course gives this as an example of a process requirement: it constrains how the project is run. Performance requirements concern response times, data requirements concern things such as size, and environment requirements concern the technical environment.
+
+### W5.1-14 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.1] Requirements: Intro · **Subtopic:** Functional vs non-functional · **Source:** W5.1b · **Basis:** bold
+
+**Question:** A library system has two requirements: "The system should allow a user to search for a book by its title" and "The search should return results within two seconds." What makes the second a non-functional requirement?
+
+- A. It specifies a constraint under which the system is operated ✅
+- B. It specifies something the system should do for the user
+- C. It specifies how the search will be implemented internally
+- D. It specifies a lower priority than the first requirement
+
+**Answer:** A
+
+**Explanation:** Functional requirements specify what the system should do; non-functional requirements specify the constraints under which the system is developed and operated. A response-time limit is such a constraint.
+
+### W5.1-15 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.1] Requirements: Intro · **Subtopic:** Basis for prioritizing · **Source:** W5.1c · **Basis:** bold
+
+**Question:** A team has more requirements than it can deliver and must decide which to tackle first. On what basis does the course say requirements can be prioritized?
+
+- A. The order in which the stakeholders first submitted them
+- B. How technically interesting each one is to the developers
+- C. Their importance and urgency, within the project's constraints ✅
+- D. The number of lines of code each one is expected to need
+
+**Answer:** C
+
+**Explanation:** Requirements can be prioritized based on importance and urgency, while keeping in mind constraints such as schedule, budget, staff resources and quality goals.
+
+### W5.1-16 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.1] Requirements: Intro · **Subtopic:** Priority scales · **Source:** W5.1c · **Basis:** body
+
+**Question:** A team groups its requirements as `High`, `Medium` and `Low` priority. What does the course say about such scales?
+
+- A. They are objective and mean the same thing in every project
+- B. They are subjective; stakeholders define each level for the project ✅
+- C. They are invalid; only the Essential/Typical/Novel scheme is allowed
+- D. Each level must correspond to a fixed number of weeks of work
+
+**Answer:** B
+
+**Explanation:** All priority scales are subjective, and stakeholders define what each level means for the project at hand. High/Medium/Low is just one of several schemes, alongside Essential/Typical/Novel and Must-have/Nice-to-have/Unlikely-to-have.
+
+### W5.1-17 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.1] Requirements: Intro · **Subtopic:** Out-of-scope requirements · **Source:** W5.1c · **Basis:** bold
+
+**Question:** For a Calendar application, one requirement reads: "The software records the actual time taken by each task and shows the difference between the actual and scheduled time for the task." The product designers decide this is outside the software's scope. What can happen to the requirement?
+
+- A. It can be discarded ✅
+- B. It must still be implemented, but with the lowest priority
+- C. It must be rewritten as a non-functional requirement
+- D. It must be moved into the glossary
+
+**Answer:** A
+
+**Explanation:** Some requirements can be discarded if they are considered out of scope. The course uses this Calendar requirement as an example that stakeholders might decide is outside the software's scope.
+
+### W5.1-18 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.1] Requirements: Intro · **Subtopic:** Quality of a requirement set · **Source:** W5.1d · **Basis:** body
+
+**Question:** Which quality does the course apply to the set of requirements as a whole, rather than to each individual requirement?
+
+- A. Unambiguous
+- B. Feasible
+- C. Implementation-free
+- D. Complete ✅
+
+**Answer:** D
+
+**Explanation:** Besides the criteria for individual requirements, such as being unambiguous, feasible and implementation-free, the set of requirements as a whole should be consistent, non-redundant and complete.
+
+### W5.1-19 · MRQ
+
+**Type:** MRQ · **Topic:** [W5.1] Requirements: Intro · **Subtopic:** Well-defined requirements · **Source:** W5.1d · **Basis:** body
+
+**Question:** Which are characteristics of a well-defined individual requirement? (Select all that apply.)
+
+- A. Testable (verifiable) ✅
+- B. Detailed about the implementation technology to be used
+- C. Feasible (realistic, possible) ✅
+- D. Necessary ✅
+- E. Implementation-free (abstract) ✅
+
+**Answer:** A, C, D, E
+
+**Explanation:** Well-defined requirements are unambiguous, testable, clear, correct, understandable, feasible, independent, necessary and implementation-free. Being implementation-free means a requirement should not prescribe the technology used to build it.
+
+### W5.1-20 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.1] Requirements: Intro · **Subtopic:** Untestable requirements · **Source:** W5.1d · **Basis:** body
+
+**Question:** Why is "The system should be usable by a novice who has never carried out an online purchase" a poor requirement as written?
+
+- A. It is really a functional requirement written as a non-functional one
+- B. It is not feasible to build an online shop that any novice can use
+- C. It prescribes the specific technology to be used to build the system
+- D. People can disagree on whether it is met, and neither can prove it ✅
+
+**Answer:** D
+
+**Explanation:** It specifies no observable result, so whether it is met cannot be settled. Rewritten as "a user who has never carried out an online purchase should be able to complete a purchase unaided, on the first attempt, within five minutes", evidence can settle it.
+
+### W5.1-21 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.1] Requirements: Intro · **Subtopic:** Outdated specifications · **Source:** W5.1e · **Basis:** bold
+
+**Question:** A tester reports a defect against behavior that the stakeholders dropped a month ago, and a developer has just built a version that was superseded. What best explains this?
+
+- A. The requirements were prioritized using a subjective priority scale
+- B. The specification was not kept up to date, so it became misleading ✅
+- C. The requirements were gathered through interviews rather than surveys
+- D. The project was a brownfield project, which always has unstable requirements
+
+**Answer:** B
+
+**Explanation:** A specification that is not kept up to date becomes misleading, because people keep acting on it. The course's examples are exactly a developer building a superseded version and a tester reporting a defect against unwanted behavior.
+
 ## [W5.2] Requirements: Gathering
 
 ### W5.2-01 · MCQ
@@ -2791,6 +6807,171 @@ try {
 **Answer:** A
 
 **Explanation:** If stakeholders do not agree that a stated observable result would make the requirement 'met', the requirement is not ready. It is recorded as an open question, or becomes the next thing to prototype.
+
+### W5.2-10 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.2] Requirements: Gathering · **Subtopic:** Product surveys · **Source:** W5.2b · **Basis:** bold
+
+**Question:** Before building a new budgeting app, a team studies existing budgeting apps and reads their manuals to find shortcomings that its own product could address. Which requirements gathering technique is this?
+
+- A. Observation
+- B. Focus group
+- C. Brainstorming
+- D. Product survey ✅
+
+**Answer:** D
+
+**Explanation:** Studying existing products in a product survey can unearth shortcomings that a new product can address, and product manuals and other documentation show how existing solutions work.
+
+### W5.2-11 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.2] Requirements: Gathering · **Subtopic:** Usage data · **Source:** W5.2c · **Basis:** body
+
+**Question:** A team replacing a ticketing system analyzes usage data collected by the current system. According to the course, what can such data reveal?
+
+- A. How the system is being used, such as the situations where users make mistakes ✅
+- B. The exact source code changes the replacement needs
+- C. Which stakeholders are sponsoring the replacement project
+- D. The opinions of thousands of potential users about a new product
+
+**Answer:** A
+
+**Explanation:** Usage data from an existing system can show how that system is being used, for example the situations where users make mistakes, which helps in building a better replacement. Gathering opinions from many stakeholders is what user surveys do.
+
+### W5.2-12 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.2] Requirements: Gathering · **Subtopic:** Brainstorming defined · **Source:** W5.2a · **Basis:** body
+
+**Question:** Which description defines brainstorming as a requirements gathering technique?
+
+- A. A one-to-one session in which recorded requirements are read back to a stakeholder
+- B. A kind of informal interview conducted within an interactive group setting
+- C. A group activity to generate many diverse, creative ideas for solving a problem ✅
+- D. A study of existing products to find shortcomings that a new product can address
+
+**Answer:** C
+
+**Explanation:** Brainstorming is a group activity designed to generate many diverse and creative ideas for solving a problem. An informal interview in a group setting is a focus group, and studying existing products is a product survey.
+
+### W5.2-13 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.2] Requirements: Gathering · **Subtopic:** Preparing for interviews · **Source:** W5.2e · **Basis:** bold
+
+**Question:** You are about to interview a finance officer for a new expense-claims system. What does the course advise you to do before the meeting?
+
+- A. Prepare broad questions such as "What do you need?" so the officer can speak freely
+- B. Find out what the officer is responsible for, and decide what only they can tell you ✅
+- C. Write up the requirements in advance so the officer only needs to approve them
+- D. Avoid any preparation so that your own views do not bias the interview
+
+**Answer:** B
+
+**Explanation:** Find out what the person is responsible for before meeting them, and decide what only they can tell you; an interview spent on things you could have looked up is wasted. Abstract questions such as "What do you need?" invite vague answers.
+
+### W5.2-14 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.2] Requirements: Gathering · **Subtopic:** Interview answers as claims · **Source:** W5.2e · **Basis:** bold
+
+**Question:** After interviewing several clerks, you have pages of notes about how they process orders. How should you treat what you heard?
+
+- A. As requirements to be recorded exactly as stated, since the clerks know the job best
+- B. As claims to be checked, since people often describe the process they are supposed to follow ✅
+- C. As low-priority input, since only managers can state real requirements
+- D. As confidential notes that should not be shown to other stakeholders
+
+**Answer:** B
+
+**Explanation:** Treat what you hear as claims to be checked rather than requirements to be recorded. People often describe the process they are supposed to follow rather than the one they actually follow, and two stakeholders can want things that cannot both be true.
+
+### W5.2-15 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.2] Requirements: Gathering · **Subtopic:** Requirements nobody asked for · **Source:** W5.2e · **Basis:** body
+
+**Question:** In an interview about a leave-application system, a manager says they check a shared spreadsheet to see whether anyone else is already away that week, and asks the HR office for the applicant's leave balance because the spreadsheet's balance is usually out of date. Which requirement surfaces that nobody asked for?
+
+- A. Leave applications must be approved by the HR office instead of the manager
+- B. Leave applications must continue to be submitted by email
+- C. The approver needs to see who else is away in the same period ✅
+- D. The shared spreadsheet must be kept as the official record
+
+**Answer:** C
+
+**Explanation:** Walking through a recent situation revealed two unrequested requirements: an approver needs to see who else is away in the same period, and the leave balance has to be current enough to decide on.
+
+### W5.2-16 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.2] Requirements: Gathering · **Subtopic:** Confirming interview notes · **Source:** W5.2e · **Basis:** bold
+
+**Question:** Why does the course advise confirming your written interview notes with the interviewee afterward?
+
+- A. So the interviewee can sign them as a legally binding contract
+- B. So the notes can be published to all the other stakeholders
+- C. So the interviewee can add new feature requests they forgot to mention
+- D. So the interviewee can correct what you misheard while they still remember ✅
+
+**Answer:** D
+
+**Explanation:** Confirming notes afterward lets the interviewee correct what you misheard while they still remember. It complements playing answers back during the interview, since both sides can leave believing they agreed while having understood different things.
+
+### W5.2-17 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.2] Requirements: Gathering · **Subtopic:** Wireframe diagrams · **Source:** W5.2g · **Basis:** body
+
+**Question:** A team sketches rough mock-ups of the screens of a planned app to get quick feedback from users in a meeting. What are such UI prototypes or mock-ups also called?
+
+- A. Wireframe diagrams ✅
+- B. Use case diagrams
+- C. Activity diagrams
+- D. Feature lists
+
+**Answer:** A
+
+**Explanation:** UI prototypes or mock-ups, also called wireframe diagrams, are often used in brainstorming sessions or meetings with users to get quick feedback.
+
+### W5.2-18 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.2] Requirements: Gathering · **Subtopic:** Prototypes as specifications · **Source:** W5.2g · **Basis:** body
+
+**Question:** Besides discovering requirements, what else can prototyping be used for?
+
+- A. Replacing system testing of the product before it is released
+- B. Specifying requirements, as a specification of what to build ✅
+- C. Ranking the gathered requirements by importance and urgency
+- D. Measuring the performance of the system once it is in production
+
+**Answer:** B
+
+**Explanation:** Prototyping can be used for discovering as well as specifying requirements; for example, a UI prototype can serve as a specification of what to build.
+
+### W5.2-19 · MRQ
+
+**Type:** MRQ · **Topic:** [W5.2] Requirements: Gathering · **Subtopic:** Ways to validate requirements · **Source:** W5.2h · **Basis:** bold
+
+**Question:** A team has gathered requirements and now wants to check that what it noted down is what the stakeholders meant. Which actions match the course's suggestions for validating requirements? (Select all that apply.)
+
+- A. State each requirement back to the stakeholder in words they would use ✅
+- B. Reread your own notes carefully on your own until they make sense
+- C. Put a sketch or mock-up in front of a user instead of describing it ✅
+- D. State the observable result of each requirement ✅
+
+**Answer:** A, C, D
+
+**Explanation:** Stating a requirement back to the person who gave it finds misunderstandings faster than rereading notes yourself. People correct a sketch more readily than a paragraph, and if stakeholders do not agree that the stated observable result would mean the requirement is met, it is not ready yet.
+
+### W5.2-20 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.2] Requirements: Gathering · **Subtopic:** Validation example · **Source:** W5.2h · **Basis:** body
+
+**Question:** For a learning management system, a lecturer asked that "Lecturers should be able to see how their students are doing." When the requirement was stated back to the lecturer, what did it turn out to mean?
+
+- A. A grade dashboard showing each student's marks for every assessment
+- B. A comparison of this cohort's results with those of earlier cohorts
+- C. A weekly email summarizing each student's grades
+- D. A way to spot students who have stopped participating, early enough to contact them ✅
+
+**Answer:** D
+
+**Explanation:** Stating it back revealed a much narrower need: spotting students who have stopped participating early enough to contact them. Without validation it would have been built as a grade dashboard, which was not what the lecturer wanted.
 
 ## [W5.3] Requirements: Specifying
 
@@ -2945,6 +7126,291 @@ try {
 **Answer:** D
 
 **Explanation:** The {benefit} part of a user story can be omitted if it is obvious, as it is for adding a person to an address book. The course still recommends confirming that a concrete benefit exists.
+
+### W5.3-11 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.3] Requirements: Specifying · **Subtopic:** Lengthy prose · **Source:** W5.3a · **Basis:** body
+
+**Question:** A team describes all of its product's requirements in ten pages of continuous prose. What does the course caution about this?
+
+- A. Prose cannot be used for requirements at all, only for code comments
+- B. Lengthy prose should be avoided for requirements, because it can be hard to follow ✅
+- C. Prose is acceptable only for non-functional requirements
+- D. Prose must be converted into UML diagrams before it counts as a requirement
+
+**Answer:** B
+
+**Explanation:** Prose is especially useful for abstract ideas such as a product vision, but lengthy prose should be avoided for describing requirements because it can be hard to follow.
+
+### W5.3-12 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.3] Requirements: Specifying · **Subtopic:** Feature lists defined · **Source:** W5.3b · **Basis:** bold
+
+**Question:** What is a feature list?
+
+- A. A list of the user roles of a system, each drawn as a stick figure
+- B. A chronological narrative of a persona's interaction with the product
+- C. A list of the noteworthy terms used in the project, with their meanings
+- D. A list of a product's features, grouped by aspect, priority or delivery order ✅
+
+**Answer:** D
+
+**Explanation:** A feature list lists a product's features grouped according to some criteria, such as aspect, priority or order of delivery. A narrative of a persona's interaction is a user journey, and a list of terms is a glossary.
+
+### W5.3-13 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.3] Requirements: Specifying · **Subtopic:** Recognizing a feature list · **Source:** W5.3b · **Basis:** body
+
+**Question:** The requirements of a Minesweeper game are written as: "Basic play – single player play; Difficulty levels (Medium levels, Advanced levels); Versus play – two players can play against each other; Timer – additional fixed time restriction on the player". Which requirements format is this?
+
+- A. A set of user stories
+- B. A feature list ✅
+- C. A use case
+- D. A glossary
+
+**Answer:** B
+
+**Explanation:** This is the course's sample feature list for Minesweeper: features with brief descriptions, grouped by aspect (Difficulty levels contains Medium and Advanced levels). It has no user roles and benefits, as user stories would, and no step-by-step interaction, as a use case would.
+
+### W5.3-14 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.3] Requirements: Specifying · **Subtopic:** User story format · **Source:** W5.3c · **Basis:** bold
+
+**Question:** Which of these follows the common user story format?
+
+- A. The system shall print each attendance sheet within two seconds of a request.
+- B. Print attendance: the tutor clicks the Print button on the main toolbar.
+- C. As a tutor, I can print attendance sheets, so that I can take attendance. ✅
+- D. Attendance sheet: a list of the students enrolled in a tutorial class.
+
+**Answer:** C
+
+**Explanation:** The common format is `As a {user type/role} I can {function} so that {benefit}`. The other statements read like a specification, a UI-level step and a glossary entry respectively, none of which names a role, a function and a benefit.
+
+### W5.3-15 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.3] Requirements: Specifying · **Subtopic:** User stories defined · **Source:** W5.3c · **Basis:** bold
+
+**Question:** Which definition of a user story, attributed to Mike Cohn, does the course use?
+
+- A. Detailed descriptions of a feature written from the perspective of the developer who will build it
+- B. Short, simple descriptions of a feature told from the perspective of the person who desires the new capability ✅
+- C. A description of a set of sequences of actions that a system performs to yield an observable result of value to an actor
+- D. A statement of system behavior precise enough to implement and verify
+
+**Answer:** B
+
+**Explanation:** User stories are short, simple descriptions of a feature told from the perspective of the person who desires the new capability, usually a user or customer. The sequences-of-actions definition is that of a use case.
+
+### W5.3-16 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.3] Requirements: Specifying · **Subtopic:** Omitting the benefit · **Source:** W5.3d · **Basis:** body
+
+**Question:** A team writes "As a user, I can log in to the system", leaving out the benefit because it seems obvious. What does the course recommend?
+
+- A. Confirm that a concrete benefit exists anyway, even if it is not written ✅
+- B. Never omit the benefit, because a story without one is invalid
+- C. Replace the missing benefit with the relevant implementation details
+- D. Turn the story into an epic so that the benefit can be added later
+
+**Answer:** A
+
+**Explanation:** The benefit can be omitted if it is obvious, but it is recommended to confirm there is a concrete benefit even then. If not, you could end up adding features that have no real benefit.
+
+### W5.3-17 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.3] Requirements: Specifying · **Subtopic:** Characterizing the user role · **Source:** W5.3d · **Basis:** body
+
+**Question:** In the user story "As a forgetful user, I can view a password hint, so that I can recall my password", what does the word "forgetful" illustrate?
+
+- A. Writing the story at a higher level, as an epic
+- B. Recording a condition of satisfaction for the story
+- C. Adding a characteristic to the user role for context ✅
+- D. Capturing a non-functional requirement as a story
+
+**Answer:** C
+
+**Explanation:** You can add characteristics to the user role, as in "forgetful user" or "expert user", to provide more context to the user story.
+
+### W5.3-18 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.3] Requirements: Specifying · **Subtopic:** Epics · **Source:** W5.3d · **Basis:** bold
+
+**Question:** The story "As a lecturer, I can monitor student participation levels" is broken down into stories about viewing each student's forum post count, webcast view records and file download statistics. What is the original story called?
+
+- A. An acceptance criterion
+- B. A persona
+- C. A use case extension
+- D. An epic (or theme) ✅
+
+**Answer:** D
+
+**Explanation:** High-level user stories that cover bigger functionality are called epics or themes, and they can be broken down into multiple user stories of normal size, as in this example.
+
+### W5.3-19 · MRQ
+
+**Type:** MRQ · **Topic:** [W5.3] Requirements: Specifying · **Subtopic:** Extra user story information · **Source:** W5.3d · **Basis:** body
+
+**Question:** Besides the story itself and its conditions of satisfaction, which other information does the course mention as useful to add to a user story? (Select all that apply.)
+
+- A. Priority: how important the user story is ✅
+- B. The class diagram of the code that will implement it
+- C. Size: the estimated effort to implement the user story ✅
+- D. Urgency: how soon the feature is needed ✅
+
+**Answer:** A, C, D
+
+**Explanation:** Other useful information includes priority, size (estimated effort) and urgency, among others. Implementation design such as class diagrams does not belong in a user story, which describes a need from the user's perspective.
+
+### W5.3-20 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.3] Requirements: Specifying · **Subtopic:** Why acceptance criteria matter · **Source:** W5.3d · **Basis:** bold
+
+**Question:** Why does the course consider acceptance criteria an important part of a user story?
+
+- A. They remove the need for any further conversation with the customer
+- B. They record the estimated effort needed to implement the story
+- C. They name the classes and methods that will implement the story
+- D. They state an observable result that outlasts the conversation ✅
+
+**Answer:** D
+
+**Explanation:** Acceptance criteria, also called conditions of satisfaction, specify what must be true for the story to be accepted as done. They state an observable result, and therefore they are the part that survives when the conversation behind the story does not.
+
+### W5.3-21 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.3] Requirements: Specifying · **Subtopic:** NFRs as user stories · **Source:** W5.3e · **Basis:** bold
+
+**Question:** A team writes: "As an impatient user, I want to be able to experience reasonable response time from the website while up to 1000 concurrent users are using it, so that I can use the app even when the traffic is at the maximum expected level." Is this a valid use of user stories?
+
+- A. Yes, because even non-functional requirements must benefit some stakeholder ✅
+- B. No, because user stories can capture only functional requirements
+- C. No, because the story describes no user interface
+- D. Yes, but only once it is broken down into smaller stories
+
+**Answer:** A
+
+**Explanation:** User stories can capture non-functional requirements too, because even NFRs must benefit some stakeholder. The course uses this very story as its example.
+
+### W5.3-22 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.3] Requirements: Specifying · **Subtopic:** Stories prompt discussion · **Source:** W5.3e · **Basis:** body
+
+**Question:** According to Mike Cohn, user stories strongly shift the focus from writing about features to what?
+
+- A. Testing them
+- B. Discussing them ✅
+- C. Estimating them
+- D. Prioritizing them
+
+**Answer:** B
+
+**Explanation:** Cohn says user stories shift the focus from writing about features to discussing them, and that these discussions are more important than whatever text is written.
+
+### W5.3-23 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.3] Requirements: Specifying · **Subtopic:** When user stories are handy · **Source:** W5.3e · **Basis:** bold
+
+**Question:** Given their lightweight nature, when are user stories particularly handy?
+
+- A. When requirements must be agreed precisely under an audited contract
+- B. When specifying system behavior precisely enough to implement and verify it
+- C. When recording requirements during the early stages of requirements gathering ✅
+- D. When documenting the internal design of the system
+
+**Answer:** C
+
+**Explanation:** Because they are lightweight, user stories are quite handy for recording requirements during the early stages of requirements gathering. Precise, contract-level agreement is the job of a more formal document such as an SRS.
+
+### W5.3-24 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.3] Requirements: Specifying · **Subtopic:** Recipe Step 0 · **Source:** W5.3e · **Basis:** panel
+
+**Question:** A team starts brainstorming user stories already convinced that its product will be a chat bot. According to the course's recipe, what should it do first?
+
+- A. Write user stories that fit the chat bot idea, so that nothing is wasted
+- B. Clear its mind of preconceived product ideas such as the chat bot ✅
+- C. Estimate the effort of building the chat bot before listing any stories
+- D. List the chat bot's planned commands as a feature list first
+
+**Answer:** B
+
+**Explanation:** Step 0 of the recipe is to clear your mind of preconceived product ideas. The product is the solution, but at this stage you are still figuring out the problem, so you should go from problem to solution one step at a time.
+
+### W5.3-25 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.3] Requirements: Specifying · **Subtopic:** No judging while brainstorming · **Source:** W5.3e · **Basis:** panel
+
+**Question:** While a team brainstorms user stories, one member keeps stopping to argue about whether each story is worth having. What does the course's recipe advise?
+
+- A. Evaluate each story's value before writing the next one
+- B. Vote on each story immediately and drop those with few votes
+- C. Discard any unusual stories quickly to save time
+- D. Do not evaluate the value of stories while brainstorming ✅
+
+**Answer:** D
+
+**Explanation:** Do not evaluate the value of user stories while brainstorming, because an important aspect of brainstorming is not judging the ideas generated. Unusual stories in particular should not be discarded hastily, since they might make the product stand out.
+
+### W5.3-26 · MRQ
+
+**Type:** MRQ · **Topic:** [W5.3] Requirements: Specifying · **Subtopic:** Brainstorming tips · **Source:** W5.3e · **Basis:** panel
+
+**Question:** Which of these are tips the course gives for brainstorming user stories? (Select all that apply.)
+
+- A. Don't be too hasty to discard "unusual" user stories ✅
+- B. Don't go into too much detail ✅
+- C. Estimate the implementation effort of each story before listing it
+- D. Don't discuss implementation details or whether you are actually going to implement it ✅
+
+**Answer:** A, B, D
+
+**Explanation:** The tips are to keep unusual stories, avoid too much detail and leave out implementation discussions. At this stage the decision is whether a need is important enough to fulfill; implementation details, and whether a story is too hard to implement, can be dealt with later.
+
+### W5.3-27 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.3] Requirements: Specifying · **Subtopic:** User journeys and stories · **Source:** W5.3e · **Basis:** panel
+
+**Question:** In the course's recipe, how does a user journey relate to user stories?
+
+- A. It replaces user stories once it is complete
+- B. It is written after all user stories have been implemented
+- C. You use it to find user stories; it does not replace them ✅
+- D. It is another name for an epic
+
+**Answer:** C
+
+**Explanation:** A user journey helps you discover needs that are easy to miss when thinking only about individual features. You use it to find user stories, and it does not replace them.
+
+### W5.3-28 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.3] Requirements: Specifying · **Subtopic:** Stories for expert users · **Source:** W5.3e · **Basis:** panel
+
+**Question:** In the user journey for ProductX, Jean has reached her 100th use and is now an expert user. Which user story best supports this stage?
+
+- A. As a potential user exploring the app, I can see the app populated with sample data, so that I can see how it will look in use.
+- B. As a user ready to start using the app, I can purge all current data, so that I can get rid of the sample data.
+- C. As a first-time user, I can see a greeting that explains the app's capabilities, so that I can learn what it can do.
+- D. As an expert user, I can create shortcuts for tasks, so that I can save time on frequently performed tasks. ✅
+
+**Answer:** D
+
+**Explanation:** Shortcuts for frequent tasks, and archiving unused data, are the course's examples for the 100th-use stage. Sample data, purging it and an introductory greeting belong to the first-use stage.
+
+### W5.3-29 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.3] Requirements: Specifying · **Subtopic:** Tools for managing stories · **Source:** W5.3e · **Basis:** panel
+
+**Question:** A team whose members are not co-located wants to manage its user stories over the whole project. What does the course suggest?
+
+- A. Index cards pinned to a wall in one member's room
+- B. An online tool ✅
+- C. Sticky notes that are photographed once a week
+- D. A single prose document emailed around after each change
+
+**Answer:** B
+
+**Explanation:** User stories can be recorded on a physical medium in the initial stages, but an online tool is more suitable for longer-term management, especially if the team is not co-located.
 
 ## [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments
 
@@ -3274,6 +7740,511 @@ double computeRectangleArea(double length, double width) {
 
 **Explanation:** Each command word is a named constant defined once in its command class, so the literal's meaning is explicit and it has a single authoritative definition.
 
+### W5.4-22 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments · **Subtopic:** Readability among quality dimensions · **Source:** W5.4a · **Basis:** bold
+
+**Question:** Readability is also known as what, and among which dimensions of code quality does the course call it one of the most important?
+
+- A. Understandability; among efficiency, security and robustness ✅
+- B. Testability; among dimensions such as coverage, speed and memory use
+- C. Maintainability; among dimensions such as cost, schedule and scope
+- D. Portability; among dimensions such as size, speed and reliability
+
+**Answer:** A
+
+**Explanation:** Among the various dimensions of code quality, such as run-time efficiency, security and robustness, one of the most important is readability (aka understandability), because code needs to be read, understood and modified by others later.
+
+### W5.4-23 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments · **Subtopic:** Long methods · **Source:** W5.4b · **Basis:** body
+
+**Question:** "The bigger the haystack, the harder it is to find a needle." Which reason for avoiding long methods does this saying illustrate?
+
+- A. Long methods always run slower than short ones
+- B. Long methods cannot be unit tested at all
+- C. They hold more information than a reader can process at once ✅
+- D. Long methods are rejected by most Java compilers
+
+**Answer:** C
+
+**Explanation:** Avoid long methods, as they often contain more information than the reader can process at a time. Consider whether shortening is possible when a method goes beyond about 30 lines of code.
+
+### W5.4-24 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments · **Subtopic:** Arrowhead code · **Source:** W5.4c · **Basis:** body
+
+**Question:** Which readability guideline does the method below break most clearly, and what is this style of code called?
+
+```java
+int subsidy() {
+    int subsidy;
+    if (!age) {
+        if (!sub) {
+            if (!notFullTime) {
+                subsidy = 500;
+            } else {
+                subsidy = 250;
+            }
+        } else {
+            subsidy = 250;
+        }
+    } else {
+        subsidy = -1;
+    }
+    return subsidy;
+}
+```
+
+- A. Avoid long methods; it is called spaghetti code
+- B. Avoid deep nesting; it is called arrowhead style code ✅
+- C. Avoid magic numbers; it is called hard-coded code
+- D. Use the default branch; it is called fall-through code
+
+**Answer:** B
+
+**Explanation:** The deeper the nesting, the harder it is for the reader to keep track of the logic; in particular, avoid arrowhead style code like this. The course's improved version uses a flat `if`/`else if` chain with meaningful names.
+
+### W5.4-25 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments · **Subtopic:** Magic numbers · **Source:** W5.4e · **Basis:** body
+
+**Question:** A method ends with `return 9;`, where 9 is one less than the maximum size of a list. What is this called, and what is the recommended fix?
+
+- A. A literal constant; add a comment explaining it
+- B. A data flow anomaly; assign it to a variable first
+- C. An implicit conversion; cast it explicitly to the `int` type
+- D. A magic number; replace it with a named constant ✅
+
+**Answer:** D
+
+**Explanation:** A number in code that does not explain its own meaning is called a magic number, as it appears as if by magic. Using a named constant makes the code easier to understand because the name tells more about the meaning of the number.
+
+### W5.4-26 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments · **Subtopic:** Constants in Python · **Source:** W5.4e · **Basis:** body
+
+**Question:** Python has no way to make a variable a constant. How does the course suggest simulating a constant such as the value of pi?
+
+- A. Use a normal variable with an `ALL_CAPS` name ✅
+- B. Declare it with the keyword `final`
+- C. Store the value in a string
+- D. Repeat the literal `3.14159` wherever it is needed
+
+**Answer:** A
+
+**Explanation:** Python does not have a way to make a variable a constant, but you can use a normal variable with an `ALL_CAPS` name to simulate one. Repeating the literal everywhere would leave magic numbers in the code.
+
+### W5.4-27 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments · **Subtopic:** Grouping related statements · **Source:** W5.4g · **Basis:** bold
+
+**Question:** A method's statements appear in the order below, where statements with the same letter belong to the same step and the result does not depend on the order. How should it be improved to follow "structure code logically"?
+
+```
+statement A1
+statement A2
+statement A3
+statement B1
+statement C1
+statement B2
+statement C2
+```
+
+- A. Merge all statements onto as few lines as possible
+- B. Sort the statements alphabetically by their numbers so all the 1s come first
+- C. Move every statement into a separate method of exactly one line each
+- D. Put B1 next to B2 and C1 next to C2, with blank lines between groups ✅
+
+**Answer:** D
+
+**Explanation:** Lay out code so that it adheres to the logical structure and reads like a story. Group related statements together and use blank lines to separate groups, rather than interleaving statements from different steps.
+
+### W5.4-28 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments · **Subtopic:** Ordering intermediate steps · **Source:** W5.4g · **Basis:** body
+
+**Question:** The correctness of a method does not depend on the order in which it performs certain intermediate steps. Which order should you choose?
+
+- A. The order that makes the method run fastest
+- B. The order that makes the story the code tells most readable ✅
+- C. The order in which the steps were first written
+- D. Alphabetical order of the variable names involved
+
+**Answer:** B
+
+**Explanation:** Even when correctness does not depend on the order of intermediate steps, the order may affect the clarity of the story the code tells. Choose the order that makes the story most readable.
+
+### W5.4-29 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments · **Subtopic:** Data flow anomalies · **Source:** W5.4h · **Basis:** body
+
+**Question:** In the code below, which "trip up the reader" problem does the course call a data flow anomaly?
+
+```java
+int total = 0;
+total = computeTotal(items);
+```
+
+- A. Using two statements instead of one line
+- B. Using a short, single-word variable name
+- C. Overwriting a variable's value before that value is used ✅
+- D. Calling a method inside an assignment statement
+
+**Answer:** C
+
+**Explanation:** Data flow anomalies, such as assigning a value to a variable and then modifying it before using the assigned value, make the reader go "huh?". Here the value `0` is never used before being overwritten.
+
+### W5.4-30 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments · **Subtopic:** KISS and debugging · **Source:** W5.4i · **Basis:** body
+
+**Question:** Brian Kernighan's quote is used in the course to argue against writing "clever" code. What is the argument?
+
+- A. Clever code is harder for the compiler to optimize
+- B. Clever code takes much longer to type than simple, brute-force code
+- C. Clever code cannot be reused in other projects or by other teams
+- D. Debugging is twice as hard as writing, so you cannot debug your cleverest code ✅
+
+**Answer:** D
+
+**Explanation:** Kernighan notes that debugging is twice as hard as writing the code in the first place, so code written as cleverly as possible is, by definition, beyond your ability to debug. Hence, keep it simple (KISS).
+
+### W5.4-31 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments · **Subtopic:** Finding real bottlenecks · **Source:** W5.4j · **Basis:** body
+
+**Question:** A developer wants to speed up a program but is not sure which parts are slow, especially since the code is transpiled and minified before it runs. What does the course recommend doing first?
+
+- A. Hand-optimize every method, starting with the longest one
+- B. Use a profiler to find the actual bottlenecks ✅
+- C. Rewrite the program in a lower-level language
+- D. Remove all comments and blank lines from the source code
+
+**Answer:** B
+
+**Explanation:** You may not know which parts are the real bottlenecks, especially when code is transformed before it becomes an executable. Ideally, use a profiler to identify the actual bottlenecks first and optimize only those parts.
+
+### W5.4-32 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments · **Subtopic:** Mixed abstraction levels · **Source:** W5.4k · **Basis:** body
+
+**Question:** What is the main readability problem with the code fragment below?
+
+```java
+readData();
+salary = basic * rise + 1000;
+tax = (taxable ? salary * 0.07 : 0);
+displayResult();
+```
+
+- A. It mixes different levels of abstraction in one fragment ✅
+- B. It uses too many method calls and should inline `readData()` and `displayResult()`
+- C. It has too few statements for a method
+- D. It uses a ternary operator, which the course forbids
+
+**Answer:** A
+
+**Explanation:** Avoid having multiple levels of abstraction within a code fragment (SLAP). Here high-level steps are mixed with low-level calculations; the course's improved version is `readData(); processData(); displayResult();`.
+
+### W5.4-33 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments · **Subtopic:** Packing two abstraction levels · **Source:** W5.4k · **Basis:** bold
+
+**Question:** A method contains low-level statements for several high-level steps. According to the course, when can two levels of abstraction be packed into the same code without affecting readability much?
+
+- A. Never; every high-level step must always be extracted into its own method
+- B. When the method is shorter than 30 lines, regardless of layout
+- C. When each higher-level step is marked by a comment and set apart by a blank line ✅
+- D. When all the low-level statements are written together on a single line
+
+**Answer:** C
+
+**Explanation:** It is sometimes possible to pack two levels of abstraction into the code without affecting readability much, provided each higher-level step is clearly marked using comments and separated (e.g., by a blank line) from adjacent steps.
+
+### W5.4-34 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments · **Subtopic:** Names for SLAP · **Source:** W5.4k · **Basis:** body
+
+**Question:** The guideline "avoid having multiple levels of abstraction within a code fragment" is called the Single Level of Abstraction Principle in *The Productive Programmer*. What does *Clean Code* by Robert C. Martin call it?
+
+- A. Keep It Simple, Stupid
+- B. Don't Repeat Yourself (DRY)
+- C. Separation of Concerns Principle
+- D. One Level of Abstraction per Function ✅
+
+**Answer:** D
+
+**Explanation:** Neal Ford's *The Productive Programmer* calls this guideline the Single Level of Abstraction Principle (SLAP), while Robert C. Martin's *Clean Code* calls it One Level of Abstraction per Function.
+
+### W5.4-35 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments · **Subtopic:** The happy path · **Source:** W5.4l · **Basis:** body
+
+**Question:** What is the "happy path" of a piece of code, and how should code be structured around it?
+
+- A. The shortest path through the code; it should be moved into a separate method
+- B. The path taken when everything goes well; it should be the least nested ✅
+- C. The path taken when an error occurs; it should be handled first and most prominently
+- D. The path most often covered by tests; it should be marked with comments
+
+**Answer:** B
+
+**Explanation:** The happy path is the execution path taken when everything goes well. Restructure the code so the happy path is as un-nested as possible; it is the unusual cases that should be nested.
+
+### W5.4-36 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments · **Subtopic:** Happy path inside loops · **Source:** W5.4l · **Basis:** body
+
+**Question:** In the pseudocode below, statements A to D are the happy path inside the loop. Which change reduces their nesting?
+
+```
+for (condition1)
+    if (condition2)
+        statement A
+        statement B
+        statement C
+        statement D
+statement E
+```
+
+- A. Use `if (not condition2) continue` before the statements ✅
+- B. Add an `else` branch that repeats statements A to D
+- C. Move statement E inside the `if` block
+- D. Replace the `for` loop with a more deeply nested `while` loop
+
+**Answer:** A
+
+**Explanation:** A `continue` statement with the inverted condition skips the unusual case early, so the happy-path statements are no longer nested inside the `if`. This keeps the happy path prominent.
+
+### W5.4-37 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments · **Subtopic:** Avoiding unsafe shortcuts · **Source:** W5.4m · **Basis:** bold
+
+**Question:** A language allows a shortcut that saves a few keystrokes but uses a construct differently from how it is meant to be used. What does the course advise?
+
+- A. Use it whenever it makes the code shorter
+- B. Use it only in test code
+- C. Avoid it; such shortcuts are common sources of bugs ✅
+- D. Use it, but only together with a comment explaining the trick
+
+**Answer:** C
+
+**Explanation:** It is safer to use language constructs in the way they are meant to be used, even if the language allows shortcuts. Such coding practices are common sources of bugs; know them and avoid them.
+
+### W5.4-38 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments · **Subtopic:** Final else as everything else · **Source:** W5.4n · **Basis:** body
+
+**Question:** The only valid inputs are red and blue. What is wrong with the code below, according to the course?
+
+```
+if (red) print "red";
+else print "blue";
+```
+
+- A. Nothing; since only two inputs are valid, the `else` correctly handles blue
+- B. The `if` and `else` should be swapped so that blue is always checked first
+- C. It should use two separate `if` statements with no `else`
+- D. The final `else` should mean "everything else", not the last option ✅
+
+**Answer:** D
+
+**Explanation:** The final `else` of an `if-else` construct should mean "everything else", not the final option. Specify the condition explicitly with `else if (blue)` and use the last `else` to detect errors, e.g., `else error("incorrect input");`.
+
+### W5.4-39 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments · **Subtopic:** One variable, one purpose · **Source:** W5.4o · **Basis:** bold
+
+**Question:** Which practice violates the guideline "use one variable for one purpose"?
+
+- A. Declaring a new `double area` to hold the result of `length * width`
+- B. Reusing a user-name `String` variable to hold an error message ✅
+- C. Using a loop counter only for counting loop iterations
+- D. Giving each of two similar values its own descriptive variable
+
+**Answer:** B
+
+**Explanation:** Use one variable for one purpose: do not reuse a variable for a purpose other than its intended one just because the data type is the same.
+
+### W5.4-40 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments · **Subtopic:** Empty catch blocks · **Source:** W5.4p · **Basis:** bold
+
+**Question:** Why should empty `catch` blocks be avoided, and what should you do if one is unavoidable?
+
+- A. They slow down the program; if unavoidable, add a `return` statement inside
+- B. They cause compile errors; if unavoidable, catch `Exception` instead
+- C. They silently ignore errors; if unavoidable, add a comment saying why ✅
+- D. They make the method too long; if unavoidable, move the `catch` to a separate method
+
+**Answer:** C
+
+**Explanation:** Empty `catch` statements are a way to ignore errors silently, which is not a good thing. When an empty block is unavoidable, at least give a comment to explain why it is left empty.
+
+### W5.4-41 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments · **Subtopic:** Deleting dead code · **Source:** W5.4q · **Basis:** body
+
+**Question:** A developer keeps a large block of commented-out code that is no longer used, saying "I spent a lot of time writing it; what if I need it again?" What is the course's response?
+
+- A. Keep it commented out so it can be restored quickly
+- B. Move it to the end of the file
+- C. Keep it, but add a comment saying when it was last used
+- D. Delete it; recover it from revision control if it is ever needed ✅
+
+**Answer:** D
+
+**Explanation:** Get rid of unused code the moment it becomes redundant. Consider all code as baggage you have to carry; if you need it again, recover it from revision control. Deleting code you wrote previously is a sign that you are improving.
+
+### W5.4-42 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments · **Subtopic:** Global variables · **Source:** W5.4r · **Basis:** body
+
+**Question:** Global variables are a convenient way to pass information around. Why does the course still say to minimize them?
+
+- A. They create implicit links between code segments ✅
+- B. They use more memory than local variables
+- C. They cannot hold objects, only primitive values
+- D. They must be declared in a separate file
+
+**Answer:** A
+
+**Explanation:** Global variables may be the most convenient way to pass information around, but they create implicit links between code segments that use them, so avoid them as much as possible.
+
+### W5.4-43 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments · **Subtopic:** Declaring at first use · **Source:** W5.4r · **Basis:** body
+
+**Question:** According to the Joshua Bloch quote in the course, what is the most powerful technique for minimizing the scope of a local variable?
+
+- A. Declare all local variables at the top of the method
+- B. Make the variable a global variable instead
+- C. Declare it where it is first used ✅
+- D. Reuse the same variable for several purposes
+
+**Answer:** C
+
+**Explanation:** In *Effective Java*, Joshua Bloch says the most powerful technique for minimizing the scope of a local variable is to declare it where it is first used. Variables should be defined in the least possible scope.
+
+### W5.4-44 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments · **Subtopic:** Copy-paste-modify · **Source:** W5.4s · **Basis:** bold
+
+**Question:** A developer adds a feature by copying an existing method, pasting it, and changing a few lines. What does the course say this kind of code duplication often indicates?
+
+- A. A well-tested implementation, since the original already works
+- B. A poor quality implementation; there is usually a better way ✅
+- C. An efficient way to reuse code that follows the DRY principle
+- D. Nothing in particular, as long as both copies have comments
+
+**Answer:** B
+
+**Explanation:** Code duplication, especially copy-paste-modify, often indicates a poor quality implementation. Zero duplication may not be possible, but always think twice before duplicating; most often there is a better alternative. This relates to the DRY principle.
+
+### W5.4-45 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments · **Subtopic:** Commenting and quality · **Source:** W5.4t · **Basis:** body
+
+**Question:** A developer adds long comments to explain a confusing method, believing that more comments mean higher code quality. What does the course advise instead?
+
+- A. Keep adding comments until every line has one
+- B. Move the comments into a separate document
+- C. Delete all comments, as good code never needs any
+- D. Improve the code so that the comments are not needed ✅
+
+**Answer:** D
+
+**Explanation:** Some think commenting heavily increases code quality, but that is not so. Avoid writing comments to explain bad code; improve the code to make it self-explanatory, and then document it to make it even clearer, as Steve McConnell advises.
+
+### W5.4-46 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments · **Subtopic:** Repeating the obvious · **Source:** W5.4u · **Basis:** bold
+
+**Question:** Which commenting guideline do the comments below break?
+
+```java
+//increment x
+x++;
+//trim the input
+trimInput();
+```
+
+- A. Do not repeat the obvious ✅
+- B. Explain the HOW, not the WHAT
+- C. Comment every line of code
+- D. Write comments as notes to yourself
+
+**Answer:** A
+
+**Explanation:** Do not repeat in comments information that is already obvious from the code. If the code is self-explanatory, a comment may not be needed.
+
+### W5.4-47 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments · **Subtopic:** Writing to the reader · **Source:** W5.4v · **Basis:** bold
+
+**Question:** Which header comment for `void trimInput()` best follows the guideline "write to the reader"?
+
+- A. `// a quick trim function used to fix bug I detected overnight`
+- B. `// TODO: ask myself later why this is needed`
+- C. `/** Trims the input of leading and trailing spaces */` ✅
+- D. `// my trim, don't touch`
+
+**Answer:** C
+
+**Explanation:** Write comments targeting other programmers reading the code, not as private notes to yourself. A comment about a bug "I detected overnight" only makes sense to its author; explaining what the method does serves every reader.
+
+### W5.4-48 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments · **Subtopic:** Header comments · **Source:** W5.4v · **Basis:** body
+
+**Question:** Which type of comment does the course say is almost always useful?
+
+- A. A comment above each line restating what it does
+- B. A header comment explaining a class's or method's purpose ✅
+- C. A comment recording who last edited the code and when
+- D. A comment explaining step by step how a loop works
+
+**Answer:** B
+
+**Explanation:** One type of comment that is almost always useful is the header comment written for a class or an operation to explain its purpose. Comments restating the code or explaining how it works are redundant if the code is self-explanatory.
+
+### W5.4-49 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments · **Subtopic:** Avoiding HOW comments · **Source:** W5.4w · **Basis:** body
+
+**Question:** Why does the course consider the comment below redundant, and how does it improve the code?
+
+```java
+// return true if both left end and right end are correct
+// or the size has not incremented
+return (left && right) || (input.size() == size);
+```
+
+- A. It explains HOW the code works; the fix uses names such as `isSameSize` instead ✅
+- B. It explains WHY the code exists, which belongs in the commit message; the fix moves it there
+- C. It is too short; the fix adds a comment for each sub-expression
+- D. It explains WHAT the code does, which is never useful; the fix adds a WHY comment
+
+**Answer:** A
+
+**Explanation:** A HOW comment explains how the code works, which should already be apparent if the code is self-explanatory. Rewriting with `boolean isSameSize = (input.size() == size);` and names such as `isLeftEndCorrect` makes the comment unnecessary.
+
+### W5.4-50 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.4] Code Quality: Readability, Unsafe Practices, Code Comments · **Subtopic:** WHY comments · **Source:** W5.4w · **Basis:** bold
+
+**Question:** The comment `// Remove spaces to comply with IE23.5 formatting rules` appears above `compact(input);`. Which aspect of the code does it explain?
+
+- A. The HOW: the explanation of how the code works
+- B. The WHAT: the specification of what the code is supposed to do
+- C. The WHO: the author responsible for the code
+- D. The WHY: the rationale for the current implementation ✅
+
+**Answer:** D
+
+**Explanation:** Comments should explain the WHAT and WHY, not the HOW. The WHY is the rationale for the current implementation; without this comment, the reader would not know the reason for calling `compact`.
+
 ## [W5.5] Refactoring
 
 ### W5.5-01 · MCQ
@@ -3380,6 +8351,197 @@ double computeRectangleArea(double length, double width) {
 **Answer:** B
 
 **Explanation:** Extract Method takes a fragment that can be grouped together and turns it into a method whose name explains its purpose — here, whether all required prefixes are present.
+
+### W5.5-08 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.5] Refactoring · **Subtopic:** Refactoring vs rewriting · **Source:** W5.5a · **Basis:** bold
+
+**Question:** A developer finds a messy class, deletes it entirely and writes a new version from scratch that behaves exactly the same. Is this refactoring?
+
+- A. No, because refactoring must be done in small steps ✅
+- B. Yes, because the external behavior is unchanged
+- C. Yes, because the quality of the code has improved
+- D. No, because refactoring can only be done with IDE support
+
+**Answer:** A
+
+**Explanation:** Refactoring is restructuring code in small steps without modifying its external behavior. Discarding poorly written code and rewriting it from scratch is not refactoring, even if the behavior stays the same.
+
+### W5.5-09 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.5] Refactoring · **Subtopic:** Refactoring vs bug fixing · **Source:** W5.5a · **Basis:** bold
+
+**Question:** While tidying up a method in small steps, a developer also fixes a bug that made it return a wrong total. Which part of this work counts as refactoring?
+
+- A. Both parts, since they were done in the same commit
+- B. Only the tidying up, since the bug fix alters external behavior ✅
+- C. Only the bug fix, since it improves the code
+- D. Neither part, since refactoring must not change any line of code
+
+**Answer:** B
+
+**Explanation:** By definition, refactoring is different from bug fixing or any other modification that alters the external behavior of the component, such as adding a feature. Restructuring without changing behavior is the refactoring part.
+
+### W5.5-10 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.5] Refactoring · **Subtopic:** Why refactor · **Source:** W5.5a · **Basis:** body
+
+**Question:** A student says, "If I just write high-quality code the first time, I never need to refactor, so I should not try to make it work before it is clean." What is the course's view?
+
+- A. Correct; code should never be written unless it is already of production quality
+- B. Correct; refactoring is only needed when external behavior must change
+- C. Incorrect; it is fine to make the code work first and improve its quality later ✅
+- D. Incorrect; code quality does not matter once the code works
+
+**Answer:** C
+
+**Explanation:** Refactoring is needed because the first version of the code may not be of production quality. It is OK to first focus on making the code work, as long as the quality is improved later through refactoring.
+
+### W5.5-11 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.5] Refactoring · **Subtopic:** Extract Method · **Source:** W5.5a · **Basis:** body
+
+**Question:** The method below is refactored so that `printOwing()` calls `printBanner()` and then a new method `printDetails(getOutstanding())`, which contains the two `println` statements. Which refactoring is this?
+
+```
+void printOwing() {
+    printBanner();
+    // print details
+    System.out.println("name: " + name);
+    System.out.println("amount " + getOutstanding());
+}
+```
+
+- A. Inline Method
+- B. Consolidate Duplicate Conditional Fragments
+- C. Split Temporary Variable
+- D. Extract Method ✅
+
+**Answer:** D
+
+**Explanation:** Extract Method applies when a code fragment can be grouped together: the fragment is turned into a method whose name explains its purpose. Here the details-printing statements become `printDetails`, replacing the comment with a descriptive method name.
+
+### W5.5-12 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.5] Refactoring · **Subtopic:** Refactoring and regression testing · **Source:** W5.5a · **Basis:** body
+
+**Question:** A developer uses the IDE's automatic rename feature to rename a method in all the places it is used. What should follow this small refactoring?
+
+- A. Nothing, since IDE-assisted refactorings cannot change behavior
+- B. Regression testing, since even IDE-assisted refactoring can cause regressions ✅
+- C. A full rewrite of the affected classes to match the new name
+- D. Acceptance testing by end users before any further change
+
+**Answer:** B
+
+**Explanation:** Refactoring, even if done with the aid of an IDE, may still result in regressions. Therefore, each small refactoring should be followed by regression testing.
+
+### W5.5-13 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.5] Refactoring · **Subtopic:** Secondary benefits · **Source:** W5.5a · **Basis:** body
+
+**Question:** After a complex method is refactored into simpler code with the same behavior, it runs faster. Which explanation does the course give for this kind of improvement?
+
+- A. Refactoring always removes features, so there is less code to run
+- B. Refactoring changes the external behavior to skip unnecessary work
+- C. Simpler code can be easier for the compiler to optimize ✅
+- D. Refactored code is no longer checked by the runtime
+
+**Answer:** C
+
+**Explanation:** Improved performance is a secondary benefit of refactoring: sometimes simpler code runs faster than complex code because it is easier for the compiler to optimize. Refactoring by definition does not change external behavior.
+
+### W5.5-14 · MRQ
+
+**Type:** MRQ · **Topic:** [W5.5] Refactoring · **Subtopic:** Refactoring catalog · **Source:** W5.5c · **Basis:** body
+
+**Question:** Which of these are refactorings listed among the commonly used refactorings in refactoring catalogs? (Select all that apply.)
+
+- A. Decompose Conditional ✅
+- B. Shotgun Surgery
+- C. Remove Double Negative ✅
+- D. Split Loop ✅
+- E. Replace Magic Literal ✅
+
+**Answer:** A, C, D, E
+
+**Explanation:** Decompose Conditional, Remove Double Negative, Split Loop and Replace Magic Literal all appear in the list of commonly used refactorings. Shotgun Surgery is the name of a code smell, not a refactoring.
+
+### W5.5-15 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.5] Refactoring · **Subtopic:** Guard clauses · **Source:** W5.5c · **Basis:** body
+
+**Question:** A method has several levels of nested `if` statements that check for error cases before finally reaching the main logic in the innermost block. Which refactoring from the catalog targets this structure?
+
+- A. Replace Nested Conditional with Guard Clauses ✅
+- B. Split Temporary Variable
+- C. Replace Parameter with Explicit Methods
+- D. Inline Method
+
+**Answer:** A
+
+**Explanation:** Replace Nested Conditional with Guard Clauses is one of the commonly used refactorings in the catalog; it applies to deeply nested conditionals such as error checks wrapped around the main path. The other refactorings deal with temporary variables, parameters and method calls.
+
+### W5.5-16 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.5] Refactoring · **Subtopic:** Data class smell · **Source:** W5.5d · **Basis:** body
+
+**Question:** A `Booking` class has only fields with getters and setters, while all the logic that works on bookings lives in other classes. Which code smell is this, and what is the suggested response?
+
+- A. Long Method; split each getter into smaller methods
+- B. Data class; explore moving the related behavior into the class ✅
+- C. Large Class; split the fields into several classes
+- D. Temporary Field; delete the fields that are rarely used
+
+**Answer:** B
+
+**Explanation:** A data class is a class with all data and no behavior. When you encounter one, you can explore whether moving the corresponding behavior into that class is appropriate.
+
+### W5.5-17 · MRQ
+
+**Type:** MRQ · **Topic:** [W5.5] Refactoring · **Subtopic:** Code smell examples · **Source:** W5.5d · **Basis:** body
+
+**Question:** Which of these are given as examples of code smells? (Select all that apply.)
+
+- A. Long Method ✅
+- B. Primitive Obsession ✅
+- C. Split Loop
+- D. Temporary Field ✅
+- E. Large Class ✅
+
+**Answer:** A, B, D, E
+
+**Explanation:** Long Method, Large Class, Primitive Obsession, Temporary Field, Shotgun Surgery and data class are all named as code smells. Split Loop is a refactoring from the catalog, not a smell.
+
+### W5.5-18 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.5] Refactoring · **Subtopic:** Technical debt · **Source:** W5.5d · **Basis:** body
+
+**Question:** In Ward Cunningham's technical debt metaphor, what corresponds to the "interest" paid on the debt?
+
+- A. The time spent on periodic refactoring
+- B. The number of code smells found in a code review
+- C. The cost of buying third-party libraries
+- D. The extra effort it takes to add new features ✅
+
+**Answer:** D
+
+**Explanation:** Cruft is the deficiencies in internal quality that make a system harder to modify and extend. The metaphor treats it like financial debt, with the extra effort needed to add new features being the interest. Periodic refactoring pays off the debt.
+
+### W5.5-19 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.5] Refactoring · **Subtopic:** Opposite refactorings · **Source:** W5.5d · **Basis:** body
+
+**Question:** Why does the catalog contain refactorings that are 'opposites' of each other, such as Extract Method and Inline Method?
+
+- A. One of each pair is outdated and kept only for history
+- B. The costs and benefits of a refactoring depend on the context ✅
+- C. One of each pair changes external behavior while the other does not
+- D. Applying both in turn guarantees there is no technical debt
+
+**Answer:** B
+
+**Explanation:** It is too much refactoring when the benefits no longer justify the cost, and the costs and benefits depend on the context. That is why some refactorings, such as extract method and inline method, are opposites.
 
 ## [W5.6] Assertions
 
@@ -3522,6 +8684,101 @@ assert writeFile() : "File writing is supposed to return true";
 
 **Explanation:** Java disables assertions by default; they are verified only when the JVM is started with `-enableassertions`/`-ea`. This is why assertions must not be relied on to do work.
 
+### W5.6-10 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.6] Assertions · **Subtopic:** Assertion failure meaning · **Source:** W5.6a · **Basis:** body
+
+**Question:** After the line `int timeout = Config.getTimeout();` there is an assertion that `timeout` is greater than `0`. In one run, `getTimeout()` returns `-1` and the assertion fails. What does this indicate?
+
+- A. The user entered invalid input that should be reported politely
+- B. An assumption about the code's expected behavior was wrong, possibly due to a bug ✅
+- C. Assertions are disabled for this program
+- D. The configuration file is missing, which is a normal and expected situation
+
+**Answer:** B
+
+**Explanation:** An assertion failure means the code reached a program state that violates an assumption about how it should behave, which could be the result of a bug. The runtime can then take drastic action such as terminating the execution.
+
+### W5.6-11 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.6] Assertions · **Subtopic:** Assertion message · **Source:** W5.6b · **Basis:** body
+
+**Question:** In the statement below, what is the purpose of the part after the colon?
+
+```
+x = getX();
+assert x == 0 : "x should be 0";
+```
+
+- A. It is the value assigned to `x` if the assertion fails
+- B. It is a comment ignored by Java
+- C. It is the message shown when the assertion fails ✅
+- D. It is the condition checked when assertions are disabled
+
+**Answer:** C
+
+**Explanation:** The `assert` keyword defines an assertion; this one fails with the message `x should be 0` if `x` is not 0 at that point.
+
+### W5.6-12 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.6] Assertions · **Subtopic:** Confirming assertions are enabled · **Source:** W5.6b · **Basis:** body
+
+**Question:** A developer adds many `assert` statements, runs the program in the IDE, sees no assertion failures and concludes all the assertions hold. What risk does the course point out, and what check does it suggest?
+
+- A. Java disables assertions by default; enable them and make one fail temporarily to confirm ✅
+- B. Assertions slow the program too much; remove them before running
+- C. Assertions are only checked in test code; move them into JUnit tests
+- D. Assertions are verified only once per program; restart the IDE to check again
+
+**Answer:** A
+
+**Explanation:** Java disables assertions by default, so you may think all assertions are being verified as true when they are not being verified at all. Remember to enable them, and get an assertion to fail temporarily (e.g. `assert false`) to confirm they are being verified.
+
+### W5.6-13 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.6] Assertions · **Subtopic:** Java assert vs JUnit · **Source:** W5.6b · **Basis:** body
+
+**Question:** Where should Java `assert` statements and JUnit assertions each be used?
+
+- A. Java `assert` in test code, JUnit assertions in functional code
+- B. Both only in test code
+- C. Both only in functional code
+- D. JUnit assertions in test code, Java `assert` in functional code ✅
+
+**Answer:** D
+
+**Explanation:** Both check a given condition, but JUnit assertions are more powerful and customized for testing, and they are not disabled by default. Use JUnit assertions in test code and Java `assert` in functional code.
+
+### W5.6-14 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.6] Assertions · **Subtopic:** Using assertions liberally · **Source:** W5.6c · **Basis:** bold
+
+**Question:** A teammate wants to add assertions only in a few places because "assertions hurt performance". What does the course recommend?
+
+- A. Use them liberally; their performance impact is low and worth the safety ✅
+- B. Use assertions only in test code, and never in the functional code
+- C. Avoid assertions and use exceptions everywhere instead
+- D. Use assertions only after the product has been released
+
+**Answer:** A
+
+**Explanation:** It is recommended that assertions be used liberally in the code. Their impact on performance is low and worth the additional safety they provide.
+
+### W5.6-15 · MCQ
+
+**Type:** MCQ · **Topic:** [W5.6] Assertions · **Subtopic:** Exceptions vs assertions · **Source:** W5.6c · **Basis:** body
+
+**Question:** A program needs a data file at startup, but the user has deleted it. How should the program deal with this situation?
+
+- A. With an assertion, because the program state violates an assumption
+- B. With an exception, because it is an unusual condition created by the environment ✅
+- C. With an assertion, because file errors indicate a programmer mistake
+- D. Neither, because missing files cannot be detected at runtime
+
+**Answer:** B
+
+**Explanation:** Raising an exception indicates an unusual condition created by the user or the environment, such as a file needed by the program being missing. An assertion failure indicates the programmer made a mistake in the code.
+
 ---
 
 # Week 6
@@ -3586,6 +8843,186 @@ assert writeFile() : "File writing is supposed to return true";
 **Answer:** D
 
 **Explanation:** Sequence diagrams model interactions in a specific scenario; AB3 uses one to trace a single command through the Logic objects. The class structure is shown separately in the Logic class diagram.
+
+### W6.1-05 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.1] Modeling: Sequence Diagrams · **Subtopic:** Call and return arrows · **Source:** W6.1a · **Basis:** panel
+
+**Question:** In a UML sequence diagram, how are method calls and method returns drawn?
+
+- A. Calls as dashed arrows, returns as solid arrows
+- B. Calls as solid arrows, returns as dashed arrows ✅
+- C. Both as solid arrows, with returns drawn thinner
+- D. Both as dashed arrows, with returns labelled `return`
+
+**Answer:** B
+
+**Explanation:** Arrows representing method calls should be solid arrows, while those representing method returns should be dashed arrows.
+
+### W6.1-06 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.1] Modeling: Sequence Diagrams · **Subtopic:** No underlining · **Source:** W6.1a · **Basis:** panel
+
+**Question:** A student underlines `:TextUi` at the top of a lifeline in a sequence diagram, as is done in object diagrams. Is that correct?
+
+- A. Yes; instance names are underlined in every UML diagram
+- B. Yes, but only when the object is unnamed
+- C. No; class/object names are not underlined in sequence diagrams ✅
+- D. No; only the class name should be underlined, not the colon
+
+**Answer:** C
+
+**Explanation:** Unlike in object diagrams, the class/object name is not underlined in sequence diagrams.
+
+### W6.1-07 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.1] Modeling: Sequence Diagrams · **Subtopic:** Naming participants · **Source:** W6.1a · **Basis:** panel
+
+**Question:** A sequence diagram needs two different `TextUi` objects. How can they be distinguished?
+
+- A. By labelling both `:TextUi` and drawing one of them dashed
+- B. By naming them, e.g. `TextUi1:TextUi` and `TextUi2:TextUi` ✅
+- C. By labelling them `TextUi:1` and `TextUi:2`
+- D. They cannot; a sequence diagram may show only one instance per class
+
+**Answer:** B
+
+**Explanation:** `:TextUi` denotes an unnamed instance of the class `TextUi`. When there are two instances, they can be distinguished by naming them, as in `TextUi1:TextUi` and `TextUi2:TextUi`.
+
+### W6.1-08 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.1] Modeling: Sequence Diagrams · **Subtopic:** Arrowhead styles · **Source:** W6.1a · **Basis:** panel
+
+**Question:** In a sequence diagram, what is the difference between a call arrow with a filled arrowhead and one with a lined (open) arrowhead?
+
+- A. Filled is synchronous (caller waits); lined is asynchronous ✅
+- B. Filled is an asynchronous call; lined is a synchronous call, where the caller waits
+- C. Filled is a call to a static method; lined is a call to an instance method
+- D. Filled is a constructor call; lined is a normal method call
+
+**Answer:** A
+
+**Explanation:** Synchronous calls, where the caller is blocked until the called method returns (as with most normal Java calls), use filled arrowheads. Asynchronous calls, where the caller does not wait, use lined arrowheads.
+
+### W6.1-09 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.1] Modeling: Sequence Diagrams · **Subtopic:** Activation bar too long · **Source:** W6.1a · **Basis:** panel
+
+**Question:** In a sequence diagram, the activation bar for `Foo#xyz()` begins above the point where the call arrow arrives and continues below the return arrow. What is wrong?
+
+- A. Nothing; activation bars may extend freely to improve readability
+- B. The activation bar is broken
+- C. The return arrow should be solid
+- D. The activation bar is too long ✅
+
+**Answer:** D
+
+**Explanation:** A common notation error is an activation bar that is too long. A method's activation bar cannot start before the call arrives, and a method cannot keep executing after it has returned.
+
+### W6.1-10 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.1] Modeling: Sequence Diagrams · **Subtopic:** Broken activation bar · **Source:** W6.1a · **Basis:** panel
+
+**Question:** In a sequence diagram, the activation bar for `Foo#abc()` has a gap in the middle, although the method has not yet returned. What is the correct rule?
+
+- A. Gaps are acceptable whenever the method calls another object
+- B. The bar should remain unbroken from the point the method is called until it returns ✅
+- C. The bar should be split into one segment per statement in the method
+- D. The bar should stop at the gap and a new call arrow should restart it
+
+**Answer:** B
+
+**Explanation:** A broken activation bar is a common notation error: the activation bar should remain unbroken while the method is executing, from the call until the return.
+
+### W6.1-11 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.1] Modeling: Sequence Diagrams · **Subtopic:** Object creation · **Source:** W6.1a · **Basis:** panel
+
+**Question:** A sequence diagram shows a `Logic` object creating a `Minefield` object. Which description matches the UML notation?
+
+- A. The `Minefield` box sits at the top with the other participants, and the constructor arrow hits its lifeline
+- B. A note saying "new" is attached to the `Logic` lifeline, with no arrow to `Minefield`
+- C. The constructor arrow arrives at the side of the `Minefield` box, and the activation bar shows the time the constructor runs ✅
+- D. A dashed arrow points from the `Minefield` box back to `Logic`, with no activation bar
+
+**Answer:** C
+
+**Explanation:** For object creation, the arrow representing the constructor arrives at the side of the box representing the new instance, and the activation bar represents the period the constructor is being executed.
+
+### W6.1-12 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.1] Modeling: Sequence Diagrams · **Subtopic:** Minimal notation · **Source:** W6.1a · **Basis:** panel
+
+**Question:** To reduce clutter in a sequence diagram, which simplification is acceptable?
+
+- A. Omitting activation bars, but never return arrows
+- B. Omitting call arrows whose purpose is obvious
+- C. Omitting activation bars and return arrows if nothing relevant is lost ✅
+- D. Omitting the participants' names, leaving only the lifelines
+
+**Answer:** C
+
+**Explanation:** Optional elements such as activation bars and return arrows may be omitted if this causes no ambiguity or loss of relevant information, and parameters that do not matter can be omitted using `...`, e.g. `foo(...)`.
+
+### W6.1-13 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.1] Modeling: Sequence Diagrams · **Subtopic:** Object deletion · **Source:** W6.1b · **Basis:** panel
+
+**Question:** `Chef#cook()` runs `Dish d = new Dish();` and then returns. A sequence diagram ends `d`'s lifeline with an `X` after `cook()` returns. Since Java has no `delete` operation, what does the `X` indicate?
+
+- A. That Java calls a `delete()` method on `d`
+- B. The point at which `d` becomes ready to be garbage-collected ✅
+- C. That the `Dish` class is removed from the program
+- D. That an exception occurred inside `d`
+
+**Answer:** B
+
+**Explanation:** UML uses an `X` at the end of a lifeline to show deletion. In languages with automatic memory management such as Java, it can indicate the point at which the object ceases to be referenced and becomes ready for garbage collection.
+
+### W6.1-14 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.1] Modeling: Sequence Diagrams · **Subtopic:** alt frames · **Source:** W6.1b · **Basis:** panel
+
+**Question:** Which statement about the partitions of an `alt` frame in a sequence diagram is correct?
+
+- A. Exactly one partition must always execute
+- B. Every partition whose condition is true executes, top to bottom
+- C. All partitions execute, but in an unspecified order
+- D. At most one partition executes, and it is acceptable for none to execute ✅
+
+**Answer:** D
+
+**Explanation:** `alt` frames indicate alternative paths. No more than one alternative partition can be executed; it is acceptable for none to be executed, but not for several.
+
+### W6.1-15 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.1] Modeling: Sequence Diagrams · **Subtopic:** opt frames · **Source:** W6.1b · **Basis:** panel
+
+**Question:** `Logic#markCellAt(...)` calls `Timer#start()` only if it is the player's first move. Which frame should surround the `start()` call in the sequence diagram?
+
+- A. `opt` ✅
+- B. `loop`
+- C. `par`
+- D. `ref`
+
+**Answer:** A
+
+**Explanation:** UML uses `opt` frames to indicate optional paths, i.e. interactions that happen only if a condition holds, such as starting the timer on the first move.
+
+### W6.1-16 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.1] Modeling: Sequence Diagrams · **Subtopic:** Static method calls · **Source:** W6.1b · **Basis:** panel
+
+**Question:** In a sequence diagram, `m` calls the static method `Person.getMaxAge()` and the instance method `setAge()` of a `Person` object `p`. How is the receiver of `getMaxAge()` shown?
+
+- A. As the object `p`, since it is a `Person`
+- B. As a new unnamed `:Person` object created just for that call
+- C. As the `Person` class itself, shown with an underlined name
+- D. As the `Person` class itself, shown as a participant marked `<<class>>` ✅
+
+**Answer:** D
+
+**Explanation:** Calls to static (class-level) methods are received by the class itself, not by an instance, and `<<class>>` can be used to show that a participant is the class itself.
 
 ## [W6.2] Architecture Diagrams
 
@@ -3785,6 +9222,397 @@ assert writeFile() : "File writing is supposed to return true";
 
 **Explanation:** An interface states how the rest of the system may use a component. The Developer Guide notes that using the interface rather than the concrete class prevents outside components from being coupled to the implementation.
 
+### W6.2-14 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.2] Architecture Diagrams · **Subtopic:** Architecture vs detailed design · **Source:** W6.2a · **Basis:** bold
+
+**Question:** Two developers argue about whether a decision is "architecture" or "detailed design". Which criterion does the course use to tell them apart?
+
+- A. How many lines of code the decision affects when it is first implemented
+- B. How far the decision reaches into other parts and how costly it is to reverse ✅
+- C. Whether the decision was made by the architect or by an ordinary developer
+- D. Whether the decision is recorded in a diagram or only in the code itself
+
+**Answer:** B
+
+**Explanation:** Architecture and detailed design differ in how far a decision reaches, not merely in how big it is. An architectural decision constrains what other parts can do, shapes the qualities the system can achieve, and is expensive to reverse once the rest of the system is built on it.
+
+### W6.2-15 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.2] Architecture Diagrams · **Subtopic:** Architecturally significant choices · **Source:** W6.2a · **Basis:** bold
+
+**Question:** In an invoice manager, how `Storage` represents data internally is normally a detailed design matter. When can such an internal choice become architecturally significant?
+
+- A. When it is implemented by a different developer from the rest of `Storage`
+- B. When it is documented in the Developer Guide for the whole team to read
+- C. Never, because anything inside a component is detailed design by definition
+- D. When it strongly affects the rest of the system, not just `Storage`'s internals ✅
+
+**Answer:** D
+
+**Explanation:** The boundary between architecture and detailed design is not absolute. An internal choice becomes architecturally significant when it strongly affects the rest of the system, e.g. a data representation change to handle a million invoices that affects more than the internals of `Storage`.
+
+### W6.2-16 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.2] Architecture Diagrams · **Subtopic:** Component responsibilities · **Source:** W6.2a · **Basis:** body
+
+**Question:** An invoice manager is divided into `Ui`, `Logic`, `Model` and `Storage`. Which component "interprets user actions and carries out operations"?
+
+- A. `Logic` ✅
+- B. `Ui`
+- C. `Model`
+- D. `Storage`
+
+**Answer:** A
+
+**Explanation:** `Logic` interprets user actions and carries out operations. `Ui` displays information and receives user input, `Model` represents invoices and other data while the program runs, and `Storage` reads and writes persistent data.
+
+### W6.2-17 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.2] Architecture Diagrams · **Subtopic:** What architecture leaves out · **Source:** W6.2a · **Basis:** bold
+
+**Question:** A new team member reads the invoice manager's architecture description and complains that it does not say how many classes are in `Logic` or which collection holds the invoices. What is the best response?
+
+- A. The description is incomplete and should list every class in each component
+- B. Those details belong in the deployment view, not the logical view
+- C. Those are detailed design decisions, deliberately left out of architecture ✅
+- D. Those details are omitted only because the project is still small
+
+**Answer:** C
+
+**Explanation:** An architecture description deliberately leaves out most of what is inside each part, such as how many classes are in `Logic`, which one validates a user command, or which collection holds the invoices. Those are detailed design decisions.
+
+### W6.2-18 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.2] Architecture Diagrams · **Subtopic:** Deliberate architecture · **Source:** W6.2a · **Basis:** bold
+
+**Question:** Every software system has an architecture, even when nobody designed one. What, then, is the value of deciding an architecture on purpose?
+
+- A. It guarantees the system is the best possible on every quality attribute
+- B. The team shares one architecture, understands it and can reason about it ✅
+- C. It removes the need to revise the architecture when requirements change
+- D. It allows the team to skip detailed design decisions inside components
+
+**Answer:** B
+
+**Explanation:** An unplanned program still has parts and dependencies, but they are accidental, undocumented and usually tangled. Deciding an architecture on purpose means the team shares one, understands it and can reason about it.
+
+### W6.2-19 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.2] Architecture Diagrams · **Subtopic:** Evolving architecture · **Source:** W6.2a · **Basis:** body
+
+**Question:** A team wants to postpone all architectural decisions until the code is nearly complete, "so that we know exactly what we need". What does the course recommend instead?
+
+- A. Fix the architecture at the start and never change it, even if requirements change
+- B. Let the architecture emerge from the code without ever writing it down or discussing it
+- C. Leave architecture to a single architect who decides it alone near the end
+- D. Set an initial architecture early, then revise it deliberately as requirements change ✅
+
+**Answer:** D
+
+**Explanation:** An architecture is a shared and evolving technical understanding. A team sets an initial architecture early because the decisions are expensive to reverse later, then tests it against real requirements and revises it deliberately when those requirements change.
+
+### W6.2-20 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.2] Architecture Diagrams · **Subtopic:** Constraints and reasons · **Source:** W6.2a · **Basis:** body
+
+**Question:** The invoice manager stores its data locally because it must work without a network connection. This fact does not appear in the architecture diagram. Is it part of the architecture?
+
+- A. Yes; architecture includes constraints and the reasons behind choices ✅
+- B. No; only what is drawn in the architecture diagram is part of the architecture
+- C. No; it is a requirement, so it belongs only in the requirements document
+- D. Only if the team adds a separate deployment diagram showing it
+
+**Answer:** A
+
+**Explanation:** An architecture is more than a diagram: a diagram shows one view, while the architecture also includes constraints and the reasons behind choices. Storing data locally because the app must work offline is part of the architecture even if no diagram captures it.
+
+### W6.2-21 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.2] Architecture Diagrams · **Subtopic:** Externally visible properties · **Source:** W6.2a · **Basis:** body
+
+**Question:** A widely quoted definition says architecture comprises software elements, "the externally visible properties of those elements", and the relationships among them. What does "externally visible properties" mean here?
+
+- A. The visual appearance of each element in the user interface
+- B. The names of all classes inside each element
+- C. What an element promises to do, not how it does it ✅
+- D. The hardware on which each element is deployed
+
+**Answer:** C
+
+**Explanation:** "Externally visible properties" means what an element promises to do, not how it does it. Architecture is concerned with the public side of interfaces; private details having to do solely with internal implementation are not architectural.
+
+### W6.2-22 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.2] Architecture Diagrams · **Subtopic:** Containing change · **Source:** W6.2b · **Basis:** body
+
+**Question:** The invoice manager will store invoices in a database instead of a file. With a useful architecture, where should the main change stay?
+
+- A. Spread evenly across `Ui`, `Logic`, `Model` and `Storage`, since all use data
+- B. Inside `Storage`, as long as its interface can still express what is needed ✅
+- C. Inside `Logic`, since it decides when and how often invoices are saved
+- D. Inside `Model`, since it represents the invoices while the program runs
+
+**Answer:** B
+
+**Explanation:** A useful architecture limits how far many changes spread. Switching from a file to a database should mainly stay inside `Storage`, as long as its existing interface can still express what is needed.
+
+### W6.2-23 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.2] Architecture Diagrams · **Subtopic:** Testing without the UI · **Source:** W6.2b · **Basis:** body
+
+**Question:** In the invoice manager, tests can exercise invoice operations without launching a window. Which architectural property makes this possible?
+
+- A. `Ui` does not depend on `Logic`, so the window can be skipped
+- B. `Storage` does not depend on `Model`, so data can be faked
+- C. All four components run inside one program on one computer
+- D. `Logic` does not depend on `Ui`, so tests can call it directly ✅
+
+**Answer:** D
+
+**Explanation:** Because `Logic` does not depend on `Ui`, tests can call `Logic` directly without starting the graphical interface. This is one way a useful architecture limits the spread of change and eases work.
+
+### W6.2-24 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.2] Architecture Diagrams · **Subtopic:** Conflicting qualities · **Source:** W6.2b · **Basis:** body
+
+**Question:** A team considers splitting its system across several machines. According to the course, what trade-off does this involve?
+
+- A. It allows independent scaling, but makes it slower and adds network failures ✅
+- B. It makes the system faster, but harder to scale and to deploy independently
+- C. It improves security, but removes the need for interfaces between parts
+- D. It reduces the number of interfaces, but makes each deployment take longer
+
+**Answer:** A
+
+**Explanation:** Quality attributes often conflict. Splitting a system across machines can allow independent scaling while making it slower and adding network failures; similarly, adding component boundaries limits how far changes spread but adds interfaces to learn and maintain.
+
+### W6.2-25 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.2] Architecture Diagrams · **Subtopic:** Quality attributes · **Source:** W6.2b · **Basis:** bold
+
+**Question:** A bank's architects focus on how well their system protects data and resists misuse. Which quality attribute is this?
+
+- A. Reliability
+- B. Modifiability
+- C. Security ✅
+- D. Performance
+
+**Answer:** C
+
+**Explanation:** Security is how well a system protects data and resists misuse. Reliability is how well it keeps working when something fails, modifiability is how easily it can be changed, and performance is how quickly it responds.
+
+### W6.2-26 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.2] Architecture Diagrams · **Subtopic:** Components · **Source:** W6.2c · **Basis:** bold
+
+**Question:** A student proposes treating the `Invoice` class as one of the architectural components of the invoice manager. Why is this not appropriate?
+
+- A. Classes can never be part of a component, so `Invoice` must stay outside
+- B. A component is a major part with one coherent responsibility; `Invoice` is too small ✅
+- C. `Invoice` has no methods of its own, so it cannot offer any interface
+- D. Components must be separate programs reached over a network, not classes
+
+**Answer:** B
+
+**Explanation:** A component is a major part of the system with one coherent responsibility, such as `Storage`, whose work concerns persistent data. A single `Invoice` class is too small to be an architectural component.
+
+### W6.2-27 · MRQ
+
+**Type:** MRQ · **Topic:** [W6.2] Architecture Diagrams · **Subtopic:** Complete interfaces · **Source:** W6.2c · **Basis:** body
+
+**Question:** Besides a list of operations, what does a complete component interface cover? (Select all that apply.)
+
+- A. The data each operation accepts and returns ✅
+- B. What happens when an operation succeeds or fails ✅
+- C. For a component reached over a network, the format and protocol of messages ✅
+- D. The names of the component's private helper classes
+
+**Answer:** A, B, C
+
+**Explanation:** An interface is the agreement stating how the rest of the system may use a component, covering accepted and returned data, success and failure behavior, and message format and protocol for networked components. Private helper classes are internal to the component and not part of its interface.
+
+### W6.2-28 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.2] Architecture Diagrams · **Subtopic:** Dependency direction · **Source:** W6.2c · **Basis:** body
+
+**Question:** In the invoice manager, `Logic` depends on `Storage`, but `Storage` does not depend on `Logic`. What does the second half of this statement mean in practice?
+
+- A. `Storage` never receives any data from `Logic`, not even the invoices to save
+- B. `Storage` must be deployed on a separate computer from the one running `Logic`
+- C. `Logic` cannot be tested unless a real file is present on the disk
+- D. `Storage` can be compiled, tested and understood without knowing commands exist ✅
+
+**Answer:** D
+
+**Explanation:** Dependencies have a direction. `Logic` depends on `Storage` because it cannot save without it, while `Storage` can be compiled, tested and understood without knowing that commands exist.
+
+### W6.2-29 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.2] Architecture Diagrams · **Subtopic:** What a component is · **Source:** W6.2c · **Basis:** bold
+
+**Question:** A developer looks for the Java keyword used to declare a component. What should they be told?
+
+- A. There is none; a component is whatever unit the team agrees to treat as one part ✅
+- B. Java uses the `component` keyword, which was added in Java 9 for modules
+- C. Every Java class is automatically a component, so no keyword is needed
+- D. Components exist only in languages designed for distributed systems, not Java
+
+**Answer:** A
+
+**Explanation:** A component is not a special programming construct. It is whatever unit of code the team agrees to treat as one part with one responsibility; in a Java project it is often a package plus a type declaring what it offers.
+
+### W6.2-30 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.2] Architecture Diagrams · **Subtopic:** Dependency arrows · **Source:** W6.2c · **Basis:** bold
+
+**Question:** An architecture diagram has an arrow from `Client` to `Server`. What does such a dependency arrow describe?
+
+- A. A method call from `Client` to `Server`, in every case
+- B. The order in which the two components must be deployed
+- C. Reliance of `Client` on `Server`, not necessarily a method call ✅
+- D. That `Server` inherits its interface from `Client`
+
+**Answer:** C
+
+**Explanation:** A dependency arrow describes reliance, not necessarily a method call. Whether the reliance is a method call, a message or a network request is usually indicated elsewhere, such as in the diagram's legend.
+
+### W6.2-31 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.2] Architecture Diagrams · **Subtopic:** Deployment view · **Source:** W6.2d · **Basis:** body
+
+**Question:** The deployment view of the desktop invoice manager contains no arrows at all. Why?
+
+- A. Deployment views never show relationships between parts
+- B. All four parts run inside one program on one computer ✅
+- C. The parts do not depend on one another
+- D. The arrows were moved to the 4+1 scenarios view
+
+**Answer:** B
+
+**Explanation:** For the desktop invoice manager, all four parts run inside one program on the user's computer, so its deployment view has nothing to connect. The interesting structure is in the logical view, where each arrow is a dependency.
+
+### W6.2-32 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.2] Architecture Diagrams · **Subtopic:** Views after adding a server · **Source:** W6.2d · **Basis:** body
+
+**Question:** A server is added to the invoice manager so that several users can share invoices. How do its logical and deployment views change?
+
+- A. Only the deployment view changes; the logical view stays exactly the same
+- B. Only the logical view changes; the deployment view stays exactly the same
+- C. Neither changes, since the same four components remain in the system
+- D. Both change: the deployment view dramatically, the logical view less so ✅
+
+**Answer:** D
+
+**Explanation:** If a server is added to let several users share invoices, both views change. The deployment view changes dramatically, while the logical view changes in a smaller but real way.
+
+### W6.2-33 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.2] Architecture Diagrams · **Subtopic:** 4+1 view model · **Source:** W6.2d · **Basis:** body
+
+**Question:** In the 4+1 view model, the "+1" view uses scenarios. What do the other four views cover?
+
+- A. Context, containers, components and code at four zoom levels
+- B. Requirements, design, implementation and testing of the system
+- C. Functionality, runtime processes, code organization and deployment ✅
+- D. Users, data stores, network links and security of the system
+
+**Answer:** C
+
+**Explanation:** The 4+1 view model describes a system using five standard views. Four cover functionality, runtime processes, code organization and deployment; the "+1" uses scenarios to show how the system works in specific situations. Context, container, component and code are the C4 levels.
+
+### W6.2-34 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.2] Architecture Diagrams · **Subtopic:** C4 container diagram · **Source:** W6.2d · **Basis:** bold
+
+**Question:** Which C4 diagram zooms in to show the system's applications and data stores?
+
+- A. Container diagram, though a C4 container is not a Docker container ✅
+- B. System context diagram, which shows only applications and databases
+- C. Component diagram, where each application is called a component
+- D. Code diagram, usually generated by an IDE
+
+**Answer:** A
+
+**Explanation:** A C4 container diagram zooms in to show the system's applications and data stores, each called a container, which is not the same as a Docker container. The context diagram shows the system, its users and other systems; component and code diagrams zoom further in.
+
+### W6.2-35 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.2] Architecture Diagrams · **Subtopic:** Mapping diagrams to C4 · **Source:** W6.2d · **Basis:** body
+
+**Question:** A project has a high-level architecture diagram showing its main components, plus class diagrams showing how individual components are implemented. Which C4 levels do these roughly match?
+
+- A. System context diagram and container diagram
+- B. Component diagram and code diagrams ✅
+- C. Container diagram and component diagrams
+- D. System context diagram and code diagrams
+
+**Answer:** B
+
+**Explanation:** The course notes that the addressbook-level3 diagrams roughly match the two lowest C4 levels: the architecture diagram is a component diagram, and the class diagrams are code diagrams.
+
+### W6.2-36 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.2] Architecture Diagrams · **Subtopic:** 4+1 and C4 notation · **Source:** W6.2d · **Basis:** bold
+
+**Question:** A team adopts the C4 model. What notation must its diagrams use?
+
+- A. A special C4 notation that replaces UML for architecture
+- B. Only UML class diagrams, one for each of the four zoom levels
+- C. Only plain boxes and arrows, since UML is not allowed in C4
+- D. Any notation, such as UML or ad hoc boxes and arrows ✅
+
+**Answer:** D
+
+**Explanation:** Neither 4+1 nor C4 is a new diagram notation. 4+1 organizes different kinds of architectural information and C4 provides zoom levels for static structure; their diagrams can use UML or an ad hoc notation of boxes, arrows and labels.
+
+### W6.2-37 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.2] Architecture Diagrams · **Subtopic:** Levels of design diagrams · **Source:** W6.2d · **Basis:** bold
+
+**Question:** How many levels of design diagrams does a system need?
+
+- A. Always exactly one, to avoid inconsistencies between levels
+- B. Always exactly four, matching the levels of the C4 model
+- C. Small system: one level can suffice; bigger system: multiple levels ✅
+- D. Bigger system: one level can suffice; small system: multiple levels
+
+**Answer:** C
+
+**Explanation:** The design of a small system can be shown at a single level, with one diagram covering the entire system. A bigger system needs multiple levels: a higher-level diagram shows the major parts and lower-level diagrams zoom into their internal design.
+
+### W6.2-38 · MRQ
+
+**Type:** MRQ · **Topic:** [W6.2] Architecture Diagrams · **Subtopic:** Reading architecture diagrams · **Source:** W6.2e · **Basis:** bold
+
+**Question:** Which questions does the course suggest asking when reading an architecture diagram? (Select all that apply.)
+
+- A. What are the major parts? ✅
+- B. Which programming language is used?
+- C. What is each part responsible for? ✅
+- D. What do the relationships mean? ✅
+- E. What view is this? ✅
+
+**Answer:** A, C, D, E
+
+**Explanation:** Read an architecture diagram by asking, in order: what view is this, what are the major parts, what is each part responsible for, and what do the relationships mean. The programming language is not one of these questions.
+
+### W6.2-39 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.2] Architecture Diagrams · **Subtopic:** Interpreting arrows · **Source:** W6.2e · **Basis:** body
+
+**Question:** You are reading an unfamiliar architecture diagram drawn by another team. How should you interpret its arrows?
+
+- A. Follow each arrow's direction and check the legend for what an arrow means ✅
+- B. Assume every arrow is a UML association, since UML is the standard
+- C. Ignore arrow direction, as it is usually decorative
+- D. Assume every arrow is a network request between machines
+
+**Answer:** A
+
+**Explanation:** Architecture diagrams have no universally adopted notation, so the reader must work out what the notation means. To understand relationships, follow each arrow's direction and check the legend for what an arrow means.
+
 ## [W6.3] Logging
 
 ### W6.3-01 · MCQ
@@ -3849,6 +9677,70 @@ logger.log(Level.INFO, "going to start processing");
 **Answer:** B
 
 **Explanation:** Most programming environments come with logging systems that allow logging to be enabled, disabled or changed in intensity easily; AB3 centralises this in `LogsCenter`, built on `java.util.logging`.
+
+### W6.3-05 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.3] Logging · **Subtopic:** Log destinations · **Source:** W6.3a · **Basis:** body
+
+**Question:** Where can a program write its logs?
+
+- A. Only to the console, since log files are not supported
+- B. Only to the source code, as comments
+- C. Only to a log file on the local disk
+- D. Typically a log file, but also a database or a remote server ✅
+
+**Answer:** D
+
+**Explanation:** Logs are typically written to a log file, but it is also possible to log information in other ways, e.g. into a database or a remote server.
+
+### W6.3-06 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.3] Logging · **Subtopic:** Logging for troubleshooting · **Source:** W6.3a · **Basis:** bold
+
+**Question:** A server crashes overnight in a way nobody anticipated. How can logging help the team?
+
+- A. It prevents the crash from happening again by blocking bad requests
+- B. It automatically fixes the code that caused the crash
+- C. Its log files may indicate what went wrong, helping prevent a recurrence ✅
+- D. It replaces the need to test the server
+
+**Answer:** C
+
+**Explanation:** Logging is useful for troubleshooting: when problems such as an unanticipated failure occur, the associated log files may indicate what went wrong, and actions can then be taken to prevent recurrence. Like an airplane's black box, it does not prevent problems.
+
+### W6.3-07 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.3] Logging · **Subtopic:** Logging system features · **Source:** W6.3b · **Basis:** body
+
+**Question:** Which feature does the course mention as typical of the logging systems that come with most programming environments?
+
+- A. Guaranteeing that the program never fails
+- B. Automatically converting every warning log message into an exception
+- C. Writing every message regardless of its level
+- D. Enabling and disabling logging easily, and changing the logging level ✅
+
+**Answer:** D
+
+**Explanation:** Most programming environments come with logging systems that allow sophisticated forms of logging, with features such as the ability to enable and disable logging easily or to change the logging level (intensity).
+
+### W6.3-08 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.3] Logging · **Subtopic:** Logging levels · **Source:** W6.3b · **Basis:** body
+
+**Question:** A Java program's logging level is set to `WARNING`. Is the message from the call below written to the log?
+
+```
+logger.log(Level.WARNING, "processing error", ex);
+```
+
+- A. Yes, because `WARNING` is not lower than the level that was set ✅
+- B. No, because only `INFO` messages are written when the level is `WARNING`
+- C. No, because messages with an exception attached are never logged
+- D. Yes, but only if assertions are enabled
+
+**Answer:** A
+
+**Explanation:** Setting the level to `WARNING` stops messages of lower levels, such as `INFO`, from being written. A message logged at `WARNING` level is not lower than the set level, so it is written.
 
 ## [W6.4] Debugging
 
@@ -4185,6 +10077,1125 @@ logger.log(Level.INFO, "going to start processing");
 
 **Explanation:** Delta debugging automates simplification and copes with cases where plain halving fails. Recording the execution is tracing, and searching versions is bisecting.
 
+### W6.4-23 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Defect in the chain · **Source:** W6.4a · **Basis:** bold
+
+**Question:** A developer misremembers that list indices start at `1`, so the loop in `sumPrices()` starts counting from the wrong index. Later the screen shows a total that is too small. In the course's terminology, what is the loop that starts counting from the wrong index?
+
+- A. The mistake
+- B. The infection
+- C. The defect ✅
+- D. The failure
+
+**Answer:** C
+
+**Explanation:** A defect is the resulting error in the software, which is what most people mean by 'a bug'. The misremembering is the mistake, a wrong value held by a variable at run time is the infection, and the too-small total the user sees is the failure.
+
+### W6.4-24 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Mistake and failure · **Source:** W6.4a · **Basis:** bold
+
+**Question:** A user sees a total that is too small because a programmer misremembered that list indices start at `1`. In the course's terminology, which pairing correctly labels (i) the too-small total the user sees and (ii) the misremembering?
+
+- A. (i) failure; (ii) mistake ✅
+- B. (i) infection; (ii) defect
+- C. (i) defect; (ii) mistake
+- D. (i) failure; (ii) infection
+
+**Answer:** A
+
+**Explanation:** A failure is the externally visible wrong behavior, such as a total shown to the user that is too small, while a mistake is the human (or AI) act that started it all, such as misremembering how indices work. The defect is the resulting error in the software and the infection is the resulting error in the program state.
+
+### W6.4-25 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Where defects live · **Source:** W6.4a · **Basis:** body
+
+**Question:** A team spends a day searching the source code for the cause of a failure, but the code turns out to be correct. Besides the code, where can a defect live?
+
+- A. Only in the compiler or operating system, the next suspects after the code
+- B. In configuration, old data, a dependency, the deployment, or a requirement ✅
+- C. Only in the program state at run time, which is where every defect is stored
+- D. Nowhere else, so the failure must be caused by faulty hardware
+
+**Answer:** B
+
+**Explanation:** A defect is usually in the code, but it can also be in configuration, in data left by an earlier version, in a dependency, in the deployment, or in a requirement that was wrong to begin with. A wrong value in the program state at run time is an infection, not a defect.
+
+### W6.4-26 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Why bugs hide · **Source:** W6.4a · **Basis:** body
+
+**Question:** A defect has been sitting in a method that runs every day for months, yet no user has reported a problem. Which explanation fits the course's chain of defect, infection and failure?
+
+- A. A defect only counts as a defect once a user has reported a failure
+- B. Code that runs daily is effectively tested by its usage, so the defect must be in another place
+- C. The JVM corrects defects in frequently executed code as it optimizes it
+- D. It infects state only when executed, and causes a failure only if that spreads to something visible ✅
+
+**Answer:** D
+
+**Explanation:** The chain explains why bugs hide: a defect infects the state only when that line executes, and an infection becomes a failure only if it propagates out to something observable. So a defect can sit in daily-executed code for months unnoticed.
+
+### W6.4-27 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Cart example: defect · **Source:** W6.4a · **Basis:** body
+
+**Question:** The `Cart` below prints the correct total, but then the cart appears empty. Its intended contracts are that computing a total must not change the cart, and that `getItems()` lets callers read the items without owning the list. Which of these is the defect?
+
+```java
+class Cart {
+    private final List<Item> items = new ArrayList<>();
+    void add(Item item) {
+        items.add(item);
+    }
+    List<Item> getItems() {
+        return items;
+    }
+    int computeTotal() {
+        int total = 0;
+        List<Item> pending = getItems();
+        while (!pending.isEmpty()) {
+            total += pending.remove(0).price();
+        }
+        return total;
+    }
+}
+```
+
+- A. The programmer assumed `getItems()` hands back a copy
+- B. The cart's `items` list is empty after `computeTotal()` returns
+- C. `getItems()` returns the live internal list, which `computeTotal()` empties ✅
+- D. The next attempt to display the cart shows nothing
+
+**Answer:** C
+
+**Explanation:** The defect is the error in the software: `getItems()` hands out the live internal list, which `computeTotal()` then empties, breaking both contracts at once. The wrong assumption is the mistake, the emptied `items` list is the infection, and the empty display is the failure.
+
+### W6.4-28 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Cart example: mistake · **Source:** W6.4a · **Basis:** body
+
+**Question:** In the `Cart` class below, the total is printed correctly, but the next display of the cart shows nothing. In the course's terminology, which of these is the mistake that started the chain?
+
+```java
+class Cart {
+    private final List<Item> items = new ArrayList<>();
+    List<Item> getItems() {
+        return items;
+    }
+    int computeTotal() {
+        int total = 0;
+        List<Item> pending = getItems();
+        while (!pending.isEmpty()) {
+            total += pending.remove(0).price();
+        }
+        return total;
+    }
+}
+```
+
+- A. The programmer assumed `getItems()` hands back a copy of the list ✅
+- B. `computeTotal()` removes items from the list returned by `getItems()`
+- C. The cart's `items` list is empty after `computeTotal()` returns
+- D. The cart appears empty the next time it is displayed
+
+**Answer:** A
+
+**Explanation:** A mistake is the human act that started it all; here, the programmer assumed `getItems()` hands back a copy. Emptying the live internal list is the defect, the empty `items` list after the call is the infection, and the empty display is the failure.
+
+### W6.4-29 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Diagnosis vs correction · **Source:** W6.4a · **Basis:** body
+
+**Question:** A developer remarks: "Once I know what is wrong, changing the code takes five minutes; it is getting there that takes all day." Which observation about debugging does this reflect?
+
+- A. Correcting a defect is harder than finding it, so fixes should be planned first
+- B. Debugging is mostly a matter of rerunning the program until it passes
+- C. Diagnosis is easy once the program crashes, because the crash site shows the cause
+- D. The hard part of debugging is usually the diagnosis rather than the correction ✅
+
+**Answer:** D
+
+**Explanation:** Debugging is finding the cause of a known problem and fixing it, and the hard part is usually the diagnosis rather than the correction. The crash site is not always where the cause is, so a crash does not make diagnosis easy.
+
+### W6.4-30 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Why debugging is hard · **Source:** W6.4a · **Basis:** body
+
+**Question:** A `NullPointerException` is reported in the display code, but the value actually became `null` inside a parser several calls earlier. Which difficulty of debugging, summed up as "the crash site is not always the crime scene", does this illustrate?
+
+- A. You cannot inspect everything in a running program
+- B. The distance between defect and failure ✅
+- C. Wrong assumptions reproducing the same blind spot
+- D. Fixing the symptom instead of the cause
+
+**Answer:** B
+
+**Explanation:** Each link of the chain can be far from the next, so the place where the failure shows up may be far from the defect. Focusing only on the code around the error message might not lead you to the cause.
+
+### W6.4-31 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Evidence over reasoning · **Source:** W6.4a · **Basis:** body
+
+**Question:** A developer insists on finding a bug in their own code purely by re-reading it and reasoning about what it does. Why does the course say debugging must be driven by evidence from the running program instead?
+
+- A. Reasoning about code is not allowed in systematic debugging
+- B. The running program is always quicker to inspect than its source code
+- C. The wrong assumption that created the defect can reproduce the same blind spot ✅
+- D. The compiled program usually differs from the source code in practice
+
+**Answer:** C
+
+**Explanation:** If a wrong assumption caused you to create the defect, debugging while holding the same wrong assumption can reproduce the same blind spot. Evidence from the running program is not subject to that assumption.
+
+### W6.4-32 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Stare and hope · **Source:** W6.4a · **Basis:** body
+
+**Question:** A developer reads through a method and waits for the bug to reveal itself. What is the course's assessment of this "stare and hope" approach?
+
+- A. It inspects the code but not the state; fine as a 30-second first try, poor for longer ✅
+- B. It inspects the state but not the code, so it must be combined with reading the source
+- C. It is the first task of TRAFFIC, done before stating the correct behavior
+- D. It is never acceptable, because any reading of code counts as shotgun debugging
+
+**Answer:** A
+
+**Explanation:** Stare and hope inspects the code but not the state. It is fine as a 30-second first try but a poor use of time for an extended attempt, because it produces activity without producing useful information.
+
+### W6.4-33 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Fixing the symptom · **Source:** W6.4a · **Basis:** body
+
+**Question:** A program crashes with an exception thrown from `parseDate()`. A developer wraps the call in `try { ... } catch (Exception e) {}` and the crash disappears. Which poor debugging habit is this?
+
+- A. Stare and hope
+- B. Keeping no record of what you tried
+- C. Shotgun debugging
+- D. Fixing the symptom instead of the cause ✅
+
+**Answer:** D
+
+**Explanation:** Wrapping the crash in an empty `catch` block (like special-casing the failing input) makes the failure go away while the defect stays. It is the course's example of fixing the symptom instead of the cause.
+
+### W6.4-34 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Keeping a record · **Source:** W6.4a · **Basis:** body
+
+**Question:** A developer working on a tricky failure over several days keeps no notes of the experiments they ran. Which problems does the course say this leads to?
+
+- A. Their temporary probes will be left in the code and reach production
+- B. They will re-test ruled-out explanations and be unable to hand the problem over ✅
+- C. They will no longer be able to reproduce the failure on demand
+- D. Their fix commits will no longer be bisectable when the next bug appears
+
+**Answer:** B
+
+**Explanation:** Without notes you will re-test explanations you already eliminated, lose your place when interrupted, and be unable to hand the problem over to someone else.
+
+### W6.4-35 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Productive steps · **Source:** W6.4a · **Basis:** bold
+
+**Question:** Which of these debugging steps is productive in the course's sense?
+
+- A. Changing three suspicious lines at once and re-running to see whether it helped
+- B. Re-reading the same method for an hour, hoping to spot the bug
+- C. Running a check showing the input file is not the cause, removing it from suspicion ✅
+- D. Adding a `catch` block so that the crash no longer appears
+
+**Answer:** C
+
+**Explanation:** A productive debugging step is one that rules something out. Shotgun changes, prolonged staring and hiding the symptom all produce activity without producing useful information.
+
+### W6.4-36 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Temporary print statements · **Source:** W6.4a · **Basis:** bold
+
+**Question:** A teammate claims, "Adding print statements while debugging is always bad practice." What is the course's position?
+
+- A. Agreed; print statements should be replaced entirely by a debugger
+- B. Disagreed; prints are enough for any bug if enough of them are added
+- C. Agreed, except in unit tests, where printing is how results are checked
+- D. Not necessarily; a few well-chosen prints are legitimate, but alone they rarely suffice ✅
+
+**Answer:** D
+
+**Explanation:** A few prints chosen to answer a specific question are legitimate, and in production, embedded or concurrent settings they are sometimes the only tool available. However, this technique alone is not enough to tackle most non-trivial bugs.
+
+### W6.4-37 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** TRAFFIC as a map · **Source:** W6.4b · **Basis:** bold
+
+**Question:** A student insists that the TRAFFIC tasks must always be done strictly in order, each exactly once. What is the course's view?
+
+- A. Correct; reordering or repeating tasks makes the debugging unsystematic
+- B. TRAFFIC is a map rather than a mandatory sequence; tasks can loop and be reordered ✅
+- C. Only the first and last tasks are required; the others are optional extras
+- D. TRAFFIC applies only to failures that cannot be reproduced
+
+**Answer:** B
+
+**Explanation:** TRAFFIC is a map rather than a mandatory sequence. Some tasks can be done in a loop before landing on the cause, and the other tasks can be reordered as you see fit.
+
+### W6.4-38 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Jumping to Correct · **Source:** W6.4b · **Basis:** bold
+
+**Question:** According to the course, what is the most common mistake when applying TRAFFIC?
+
+- A. Jumping straight to Correct, which is how shotgun debugging happens ✅
+- B. Spending too long on Track, which delays the reproduction
+- C. Skipping Reproduce, which turns the failure into a Heisenbug
+- D. Suspecting library code first, which wastes time on stable code
+
+**Answer:** A
+
+**Explanation:** The most common mistake is jumping straight to C (Correct). Starting at 'correct' and working backwards is how shotgun debugging happens.
+
+### W6.4-39 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** TRAFFIC tasks · **Source:** W6.4b · **Basis:** body
+
+**Question:** A developer turns "launch the app and perform these six steps" into a one-second test, then cuts the input down to the smallest case that still fails. Which TRAFFIC task is this?
+
+- A. Track the problem
+- B. Reproduce the failure
+- C. Automate and simplify ✅
+- D. Isolate the origin
+
+**Answer:** C
+
+**Explanation:** Automate and simplify means turning the reproduction into a one-step test and reducing it to the smallest case that still fails. Reproduce is making the failure happen on demand in the first place.
+
+### W6.4-40 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** TRAFFIC tasks · **Source:** W6.4b · **Basis:** body
+
+**Question:** A developer has a list of candidate origins. They pick the most likely one and state what they would expect to see if it really is the origin, but have not yet run any check. Which TRAFFIC task are they doing?
+
+- A. Find origins
+- B. Focus ✅
+- C. Isolate
+- D. Track
+
+**Answer:** B
+
+**Explanation:** Focus is picking the most likely candidate origin and stating what it predicts. Find origins produces the list of candidates, and Isolate is running the check that decides whether the candidate is the actual origin.
+
+### W6.4-41 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Fatigue · **Source:** W6.4b · **Basis:** body
+
+**Question:** Why does the course advise knowing when to stop debugging for the day?
+
+- A. Bugs are easier to reproduce when the machine has been restarted overnight
+- B. A long session leaves too many breakpoints set in the IDE
+- C. Teammates' commits overnight often remove the defect
+- D. It relies on holding a model of the program in your head, which fatigue undermines ✅
+
+**Answer:** D
+
+**Explanation:** Debugging is unusually sensitive to fatigue, because the whole activity consists of holding a model of the program in your head; a tired developer holds that model poorly.
+
+### W6.4-42 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Fault in the test · **Source:** W6.4b · **Basis:** bold
+
+**Question:** A unit test fails, and a developer has spent two hours examining the method under test without finding anything wrong. Which possibility does the course say is worth considering early?
+
+- A. The fault is in the test itself ✅
+- B. The compiler has a defect
+- C. The method contains a Heisenbug
+- D. The debugger is misreporting variable values
+
+**Answer:** A
+
+**Explanation:** Sometimes the fault is in the test, not in the code under investigation. It is worth considering early, because it is easy to lose hours to a test that was wrong all along.
+
+### W6.4-43 · MRQ
+
+**Type:** MRQ · **Topic:** [W6.4] Debugging · **Subtopic:** Reproducing a failure · **Source:** W6.4b · **Basis:** body
+
+**Question:** To reproduce a failure reliably, which of these may need to be recreated? (Select all that apply.)
+
+- A. The input data ✅
+- B. The program version ✅
+- C. The sequence of actions ✅
+- D. The exact line of code that contains the defect
+- E. The starting state, such as leftovers from a previous run ✅
+
+**Answer:** A, B, C, E
+
+**Explanation:** Reproducing means recreating everything the failure depends on, such as the input data, the program version, the environment and configuration, the sequence of actions, and the starting state. Knowing where the defect is located is the goal of the later tasks, not something needed to reproduce the failure.
+
+### W6.4-44 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Unreproducible failures · **Source:** W6.4b · **Basis:** bold
+
+**Question:** A failure happens on a server about once a week and cannot be reproduced on demand. What does the course suggest?
+
+- A. Close the issue until it can be reproduced, since no experiments are possible
+- B. Rewrite the most likely module and wait to see whether the failure stops
+- C. Mine the evidence left behind, such as logs, and make the failure more observable or frequent ✅
+- D. Attach a debugger to the server and step through every request
+
+**Answer:** C
+
+**Explanation:** When you cannot reproduce a failure you can still investigate it by mining the evidence left behind: stack traces, logs, dumps, and differences between failing and passing runs. Moving a bug from 'once a week' to 'one run in five' is real progress.
+
+### W6.4-45 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** When halving fails · **Source:** W6.4b · **Basis:** body
+
+**Question:** A 500-line configuration file makes an app crash at startup. Splitting the file in half gets nowhere: neither half crashes. What explains this, and what works instead?
+
+- A. The file is too large to halve; split it into ten parts instead
+- B. Halving perturbed the timing, so the crash became a Heisenbug; use a debugger
+- C. The file cannot be the cause; inspect the startup code instead
+- D. The crash needs one setting from each half; remove settings one at a time from the full file ✅
+
+**Answer:** D
+
+**Explanation:** Halving fails when the failure needs two elements that the halving separated. Removing settings one at a time from the full file isolates the pair, in the course's example a `theme` entry and a `locale` entry, each harmless alone.
+
+### W6.4-46 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Why simplify · **Source:** W6.4b · **Basis:** bold
+
+**Question:** Why does the course recommend simplifying a failing case before searching for the defect?
+
+- A. A smaller case runs faster, which is the main benefit of simplifying
+- B. The smaller the failing case, the smaller the search space ✅
+- C. Only simplified cases can be filed in an issue tracker
+- D. A simplified case usually stops failing, which confirms the fix
+
+**Answer:** B
+
+**Explanation:** The smaller the failing case, the smaller the search space: every element you can remove while the failure persists eliminates a whole category of possible causes.
+
+### W6.4-47 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Origins · **Source:** W6.4b · **Basis:** bold
+
+**Question:** In the "Find origins" task of TRAFFIC, what is an origin?
+
+- A. The line where the exception was thrown
+- B. The commit that first introduced the defect
+- C. Where the state could first have gone wrong ✅
+- D. The human mistake that started the chain
+
+**Answer:** C
+
+**Explanation:** An origin is a place where the state could first have gone wrong: before it the state is correct, after it the state is infected, and the cause sits at that boundary. This step often produces a list of candidate origins.
+
+### W6.4-48 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Backward slicing · **Source:** W6.4b · **Basis:** body
+
+**Question:** The variable `discount` holds a wrong value. A developer follows data and control dependencies backwards from it to find every statement that could have produced it. What is this technique, and what is its limitation?
+
+- A. Backward slicing; it may leave out the statement that is responsible
+- B. Backward slicing; it narrows the candidates rather than pinpointing the defect ✅
+- C. Delta debugging; it needs on the order of n² tests
+- D. Diff debugging; it works only with small, self-contained commits
+
+**Answer:** B
+
+**Explanation:** Following data and control dependencies backwards is backward slicing. A slice reliably contains every statement that could be responsible, usually along with some that could not, so it narrows the candidates rather than pinpointing them.
+
+### W6.4-49 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Rubber duck debugging · **Source:** W6.4b · **Basis:** body
+
+**Question:** Why does explaining your code line by line, even to an inanimate rubber duck, help find bugs?
+
+- A. Saying what each line does forces you to state your hidden assumptions ✅
+- B. Reading aloud makes you notice the typing errors that the compiler missed
+- C. The listener usually knows the code and points out the defect
+- D. It removes the need to reproduce the failure first
+
+**Answer:** A
+
+**Explanation:** Rubber duck debugging works for a real reason: articulating what each line does forces you to state assumptions you had taken for granted, and you often spot the wrong assumption mid-sentence.
+
+### W6.4-50 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Reading existing evidence · **Source:** W6.4b · **Basis:** body
+
+**Question:** Before generating candidate origins from the code alone, a developer reads the evidence already available. Which piece of evidence names what changed recently?
+
+- A. The exception message
+- B. The stack trace
+- C. The variables view
+- D. A diff ✅
+
+**Answer:** D
+
+**Explanation:** An exception message names the expression that failed, a stack trace names the calls that led there, and a diff names what changed recently.
+
+### W6.4-51 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Predictions · **Source:** W6.4b · **Basis:** bold
+
+**Question:** A developer has chosen the most likely candidate origin of a failure. What should they do before checking it?
+
+- A. Fix it straight away, then see whether the failure disappears
+- B. Move it to the end of the list, as the likeliest candidate is often a red herring
+- C. State what they would observe if it is guilty and what they would observe if it is innocent ✅
+- D. Add print statements throughout the class that contains it
+
+**Answer:** C
+
+**Explanation:** Turn the chosen origin into a prediction before you check it: state what you would observe if it is guilty and what you would observe if it is innocent. This makes debugging more systematic and narrows the candidates faster.
+
+### W6.4-52 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Binary search over execution · **Source:** W6.4b · **Basis:** body
+
+**Question:** A 10,000-row import produces the right running total at the start and the wrong one at the end, with nothing visible in between. Using binary search along the execution, about how many checks are needed to narrow it down to one row, and what does each check require?
+
+- A. About 100; an understanding of how the import code works
+- B. About 14; only the ability to say whether the state is already wrong ✅
+- C. About 5,000; a breakpoint set on every row
+- D. About 14; a full understanding of the code between the checks
+
+**Answer:** B
+
+**Explanation:** Each check (is the total already wrong at this row?) roughly halves the suspect region, so fourteen checks reduce 10,000 rows to one. None of them requires understanding the code, only the ability to say whether the state is already wrong.
+
+### W6.4-53 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Swapping components · **Source:** W6.4b · **Basis:** body
+
+**Question:** To test whether a third-party JSON parser is responsible for a failure, a developer swaps it for a parser they trust. The failure still occurs. What should they conclude?
+
+- A. Both parsers must share the same defect
+- B. The swap was inconclusive, so the original parser remains the main suspect
+- C. The defect must be in the compiler or operating system
+- D. The original parser is very likely not responsible ✅
+
+**Answer:** D
+
+**Explanation:** Swapping a suspect component for one you trust is an isolation check: if the failure survives the swap, that component is very likely not responsible, and it can be dropped from the search.
+
+### W6.4-54 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Diff Debugging · **Source:** W6.4b · **Basis:** body
+
+**Question:** What does Martin Fowler call binary search over versions, and what kind of commits make `git bisect` work best?
+
+- A. Diff Debugging; small, self-contained commits ✅
+- B. Delta Debugging; large commits that group related changes
+- C. Diff Debugging; large commits, since there are fewer to search
+- D. Backward slicing; commits with detailed messages
+
+**Answer:** A
+
+**Explanation:** Binary search over versions finds when the code used to work by bisecting the history rather than the code; Martin Fowler calls this Diff Debugging. `git bisect` automates it and works best with small, self-contained commits.
+
+### W6.4-55 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Developing incrementally · **Source:** W6.4b · **Basis:** body
+
+**Question:** A developer adds about twenty lines to a working program, runs the tests, and one fails. Why does developing incrementally like this make the bug easy to find?
+
+- A. Small changes can never contain more than one defect
+- B. The defect is almost certainly in those twenty new lines ✅
+- C. Tests run after small changes never contain faults themselves
+- D. Incremental development removes the need to reproduce the failure
+
+**Answer:** B
+
+**Explanation:** When only twenty lines are new, the defect is almost certainly in those twenty lines. This habit shortens the distance between defect and failure, but is often abandoned under time pressure.
+
+### W6.4-56 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Small scopes · **Source:** W6.4b · **Basis:** body
+
+**Question:** Why does keeping variable scopes small make bugs easier to find?
+
+- A. The compiler can then detect all logic errors involving the variable
+- B. Variables with small scopes become immutable automatically
+- C. Fewer lines could have changed the variable, so there are fewer places to search ✅
+- D. A field watchpoint can then track every change to the variable
+
+**Answer:** C
+
+**Explanation:** A variable visible across three lines has only three lines that could have changed it, whereas a field visible across a class has the whole class.
+
+### W6.4-57 · MRQ
+
+**Type:** MRQ · **Topic:** [W6.4] Debugging · **Subtopic:** Static checks · **Source:** W6.4b · **Basis:** body
+
+**Question:** Which of these are static checks that can catch a defect at no debugging cost at all? (Select all that apply.)
+
+- A. Compiler warnings ✅
+- B. A field watchpoint on a suspect field
+- C. Linters ✅
+- D. `@Override` annotations ✅
+- E. Declaring variables `final` ✅
+
+**Answer:** A, C, D, E
+
+**Explanation:** The static checks you already have, such as compiler warnings, IDE inspections, linters, `@Override`, generics and `final`, catch defects before the program runs, so they cost no debugging. A field watchpoint is a debugger feature used while the program runs.
+
+### W6.4-58 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Debuggable code · **Source:** W6.4b · **Basis:** body
+
+**Question:** Failing fast, keeping scopes small, preferring immutability, developing incrementally, using static checks and logging at component boundaries all make bugs easier to find. What do they have in common?
+
+- A. Each removes the need to use a debugger
+- B. Each makes every failure reproducible on demand
+- C. Each is one of the tasks of TRAFFIC
+- D. Each shortens the distance between defect and failure ✅
+
+**Answer:** D
+
+**Explanation:** Each of these habits shortens the distance between defect and failure, which is the root of the difficulty of debugging. Most of what makes code debuggable is decided long before the bug exists.
+
+### W6.4-59 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Settling on a fix · **Source:** W6.4d · **Basis:** bold
+
+**Question:** A developer changes a line and the failure goes away, but they cannot explain why the old code produced the behavior that was observed. What does the course advise?
+
+- A. Not to settle on the fix until they can explain the whole failure ✅
+- B. Keep the change, since a passing test is sufficient evidence
+- C. Revert the change and rewrite the whole method from scratch
+- D. Keep the change, with a comment saying the cause is unknown
+
+**Answer:** A
+
+**Explanation:** A change you intend to keep needs a causal account that explains every observed behavior; a fix that works for reasons you cannot state can fail again. The strongest check is to predict exactly what will differ after the change, then verify that prediction.
+
+### W6.4-60 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Coding vs design errors · **Source:** W6.4d · **Basis:** body
+
+**Question:** A method does exactly what its author intended, but the intended behavior itself turns out to be wrong. What kind of error is this, and what is the real remedy?
+
+- A. A coding error; correct the code inside the method
+- B. A design error; a design change ✅
+- C. A coding error; add a regression test for it
+- D. A design error; special-case the inputs that fail
+
+**Answer:** B
+
+**Explanation:** A coding error is code that does not do what you intended, whereas a design error means the intention itself was wrong. The real remedy for a design error is a design change, not a code fix.
+
+### W6.4-61 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Choosing the fix · **Source:** W6.4d · **Basis:** body
+
+**Question:** In the cart example, one candidate fix makes `getItems()` return a copy, and another makes `computeTotal()` iterate without mutating the list. Both remove the failure. How do they differ?
+
+- A. Only one of them fixes the cause; the other fixes the symptom
+- B. One fixes a coding error and the other fixes a design error
+- C. They differ in which contract is treated as authoritative ✅
+- D. Only the copy-based fix can be covered by a regression test
+
+**Answer:** C
+
+**Explanation:** Which change counts as 'the fix' is sometimes a genuine choice. Both fixes remove the failure; they differ in which contract you treat as authoritative, and making the choice consciously helps protect other aspects such as design integrity.
+
+### W6.4-62 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Committing the fix · **Source:** W6.4d · **Basis:** body
+
+**Question:** After fixing a bug, a developer also wants to rename variables and reformat several unrelated files. Why should the fix be committed on its own?
+
+- A. Reformatting cannot be committed together with code changes
+- B. The cleanup commit can then skip the full test suite
+- C. Issue trackers accept only one commit per issue
+- D. So the history stays bisectable for the next bug ✅
+
+**Answer:** D
+
+**Explanation:** Committing the fix on its own, apart from unrelated cleanup, keeps the history bisectable, so a later binary search over versions can still pin down exactly which change mattered.
+
+### W6.4-63 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Removing temporary probes · **Source:** W6.4d · **Basis:** body
+
+**Question:** After fixing a bug, a developer tidies up. Which of these should NOT be removed?
+
+- A. Stray print statements added during the investigation
+- B. An assertion added deliberately to stay in the code ✅
+- C. Breakpoints left over from the debugging session
+- D. Commented-out experiments
+
+**Answer:** B
+
+**Explanation:** Temporary probes such as stray print statements, leftover breakpoints and commented-out experiments should be removed. Assertions and logging added deliberately to stay are not temporary probes, so they are kept.
+
+### W6.4-64 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Regression tests · **Source:** W6.4d · **Basis:** body
+
+**Question:** A developer adds a regression test together with a bug fix. What property should that test have?
+
+- A. It passes both before and after the fix
+- B. It tests only code that the fix did not touch
+- C. It is deleted once the fix has been committed
+- D. It fails before the fix and passes after it ✅
+
+**Answer:** D
+
+**Explanation:** A regression test should fail before the fix and pass after it, so it guards against the defect coming back. If the reproduction was automated earlier, that test already exists.
+
+### W6.4-65 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Probes · **Source:** W6.4c · **Basis:** bold
+
+**Question:** A developer temporarily adds a statement that shows whether `userId` is `null` when `save()` is called. In the course's terminology, this statement is a ___.
+
+- A. probe ✅
+- B. infection
+- C. origin
+- D. watchpoint
+
+**Answer:** A
+
+**Explanation:** Every way of looking inside a running program is a probe, a means of answering one specific question about its state. Print statements, logging, assertions and debuggers are all probes.
+
+### W6.4-66 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Print statements · **Source:** W6.4c · **Basis:** bold
+
+**Question:** Print statements are described as "cheap to start with and expensive to iterate with". Why are they expensive to iterate with?
+
+- A. Each print slows the program down enough to hide most of the bugs
+- B. They can display only primitive values, not objects
+- C. Every new print needs an edit-build-run cycle and risks a new defect ✅
+- D. They work only when the program is started through a debugger
+
+**Answer:** C
+
+**Explanation:** Prints are easy to insert, but each needs an edit-build-run cycle, each edit is a chance to introduce a fresh defect, and leftovers reach production if you forget them.
+
+### W6.4-67 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Assertions as probes · **Source:** W6.4c · **Basis:** bold
+
+**Question:** How do assertions differ from print statements as probes?
+
+- A. Assertions show more detail about the state than prints do
+- B. Java `assert` statements run even when assertions are not enabled
+- C. Assertions can only be used inside test code
+- D. An assertion states what a value should be and fails at once when it is not ✅
+
+**Answer:** D
+
+**Explanation:** Assertions are probes that check themselves: rather than printing a value for you to examine, an assertion states what it should be and fails immediately when it is not, turning a silent infection into a loud, located failure. Java's `assert` does nothing unless assertions are enabled in the run configuration.
+
+### W6.4-68 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Choosing a probe · **Source:** W6.4c · **Basis:** body
+
+**Question:** You want a problem to be caught at its origin, the moment a value becomes wrong. Which probe does the course's rough guide suggest?
+
+- A. A debugger
+- B. Logging
+- C. Assertions ✅
+- D. Print statements
+
+**Answer:** C
+
+**Explanation:** As a rough guide: reproducible and local calls for a debugger, needing to survive into production calls for logging, and wanting to catch the problem at its origin calls for assertions.
+
+### W6.4-69 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Standalone debuggers · **Source:** W6.4c · **Basis:** body
+
+**Question:** Besides the debuggers built into IDEs, which are standalone debuggers that you control by typing commands?
+
+- A. Gradle for Java, and Make for C and C++
+- B. GDB for C and C++, and jdb for Java ✅
+- C. JUnit for Java, and GDB for Python
+- D. Checkstyle for Java, and jdb for C and C++
+
+**Answer:** B
+
+**Explanation:** Most IDEs, such as IntelliJ IDEA, have a debugger built in, and there are also standalone debuggers controlled by typed commands, such as GDB for C/C++ programs and jdb for Java programs.
+
+### W6.4-70 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Debugger vs printing · **Source:** W6.4c · **Basis:** body
+
+**Question:** Why does asking one more question about a program paused in a debugger cost only seconds?
+
+- A. The debugger caches the source code, so compilation is skipped
+- B. The debugger re-runs the program from the start very quickly
+- C. The debugger can only show values already printed to the console
+- D. The paused program keeps all its state, so no edit-build-run cycle is needed ✅
+
+**Answer:** D
+
+**Explanation:** With print statements, every new question means adding another print, rebuilding and re-running. With a debugger, the paused program keeps all its state, so one more question costs seconds rather than another edit-build-run cycle.
+
+### W6.4-71 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Breakpoints · **Source:** W6.4c · **Basis:** body
+
+**Question:** A student sets a breakpoint in IntelliJ by clicking in the margin, then starts the program with the Run button. The program runs straight past the breakpoint. What explains this?
+
+- A. Breakpoints work only when the program is started via the debugger ✅
+- B. The breakpoint was never written into the program's source file
+- C. Breakpoints work only on lines that contain method calls
+- D. The program must be recompiled after a breakpoint is set
+
+**Answer:** A
+
+**Explanation:** Breakpoints take effect only when you start the program through the debugger, e.g. with IntelliJ's Debug button rather than Run. The debugger keeps track of breakpoints itself, so the source file never changes.
+
+### W6.4-72 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Stepping commands · **Source:** W6.4c · **Basis:** bold
+
+**Question:** The debugger is paused inside a helper method you have already confirmed is correct. You want it to finish the rest of the helper and pause back in the method that called it. Which command do you use?
+
+- A. Step over
+- B. Step into
+- C. Step out ✅
+- D. Resume
+
+**Answer:** C
+
+**Explanation:** Step out runs the rest of the current method and pauses back in the method that called it. Step over runs the current line as one step, and resume keeps running until the next breakpoint or the end.
+
+### W6.4-73 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Stepping commands · **Source:** W6.4c · **Basis:** bold
+
+**Question:** Paused at line 10, you want execution to continue until it reaches line 40, where your cursor is, without adding a permanent breakpoint there. Which command do you use?
+
+- A. Resume program
+- B. Run to cursor ✅
+- C. Step out
+- D. Step over
+
+**Answer:** B
+
+**Explanation:** Run to cursor keeps running until execution reaches the line your cursor is on, like a one-time breakpoint. Resume would run on to the next breakpoint or the end of the program.
+
+### W6.4-74 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Exception breakpoints · **Source:** W6.4c · **Basis:** bold
+
+**Question:** An exception is thrown deep in a call chain and caught several frames up, by which time the local variables you need are gone. Which kind of breakpoint pauses at the moment the exception is thrown, before the stack unwinds?
+
+- A. An exception breakpoint ✅
+- B. A line breakpoint
+- C. A conditional breakpoint
+- D. A field watchpoint
+
+**Answer:** A
+
+**Explanation:** An exception breakpoint pauses at the moment an exception is thrown, before the stack unwinds and discards the state you need. Line and conditional breakpoints are tied to a location, and a field watchpoint to a field changing.
+
+### W6.4-75 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Field watchpoints · **Source:** W6.4c · **Basis:** bold
+
+**Question:** Some code is setting the field `currentUser` to `null`, and you have no idea which method does it. Which debugger feature is the right tool?
+
+- A. A conditional breakpoint
+- B. Run to cursor
+- C. A field watchpoint ✅
+- D. An exception breakpoint
+
+**Answer:** C
+
+**Explanation:** A field watchpoint pauses when a field's value changes rather than at a location, which makes it the right tool for "what is setting this to `null`?".
+
+### W6.4-76 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Evaluate expression · **Source:** W6.4c · **Basis:** bold
+
+**Question:** While paused, a developer uses evaluate expression to call `cart.checkout()` just to see what it returns. What caution applies?
+
+- A. Evaluate expression only reads values, so nothing can go wrong
+- B. It forces the program to be restarted afterwards
+- C. It writes the call into the source file, so it must be removed later
+- D. It really runs the code, so a mutating call changes the program being observed ✅
+
+**Answer:** D
+
+**Explanation:** Evaluate expression runs arbitrary code at the paused point, letting you test a hypothesis without editing or restarting. But evaluating really does run the code, so calling a method that mutates state changes the program you are observing.
+
+### W6.4-77 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Call stack view · **Source:** W6.4c · **Basis:** bold
+
+**Question:** A program is paused where an error surfaced. In the call stack view, what does selecting a frame reveal, and where is the cause often found?
+
+- A. That method's documentation; the cause is usually in the paused frame itself
+- B. That method's variables; the cause is often several frames above where the program stopped ✅
+- C. The thread's CPU usage; the cause is in whichever frame ran longest
+- D. That method's bytecode; the cause is always in the outermost frame
+
+**Answer:** B
+
+**Explanation:** The call stack shows how execution reached the current point, and selecting any frame reveals that method's variables. The cause is often several frames above where the program stopped.
+
+### W6.4-78 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Placing the first breakpoint · **Source:** W6.4c · **Basis:** body
+
+**Question:** A wrong value is displayed by `showTotal()`, and you suspect a loop in `computeTotal()`, which runs earlier. Where should you set your first breakpoint?
+
+- A. Before the suspected loop, so you can watch the state go wrong ✅
+- B. On the line in `showTotal()` that displays the value
+- C. At the last line of `main()`, after everything has run
+- D. Inside the `toString()` method of the displayed object
+
+**Answer:** A
+
+**Explanation:** Set your first breakpoint before the suspected region rather than at the failure, so you can watch the state go wrong instead of arriving after it already has.
+
+### W6.4-79 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Cart debugging session · **Source:** W6.4c · **Basis:** body
+
+**Question:** In the cart example, `computeTotal()` obtains `pending` from `getItems()` and then empties it in a loop. A developer pauses inside the loop. Which single evaluation settles the diagnosis that the list being emptied is the cart's own?
+
+- A. `pending.size()` returning 3 at the first pause
+- B. `items.size()` returning 0 at the end of the loop
+- C. `pending == items` evaluating to `true` ✅
+- D. `computeTotal()` returning the correct total
+
+**Answer:** C
+
+**Explanation:** Evaluating `pending == items` and getting `true` shows the two references are the same object, so the list being emptied is the cart's own. That single evaluation was the diagnosis, and it cost no edit, rebuild or re-run.
+
+### W6.4-80 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** AI assistants · **Source:** W6.4c · **Basis:** body
+
+**Question:** During debugging, which task are AI assistants described as unreliable at?
+
+- A. Explaining unfamiliar error messages
+- B. Proposing candidate hypotheses
+- C. Serving as an always-available rubber duck
+- D. Diagnosing a defect in code they cannot run ✅
+
+**Answer:** D
+
+**Explanation:** AI assistants are good at explaining unfamiliar error messages, proposing candidate hypotheses and serving as an always-available rubber duck. They are unreliable at diagnosing a defect in code they cannot run, and will produce confident, fluent, incorrect explanations.
+
+### W6.4-81 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Wrapped exceptions · **Source:** W6.4c · **Basis:** body
+
+**Question:** A stack trace contains several wrapped exceptions linked by `Caused by:` lines. In which order should that chain be read?
+
+- A. From the bottom up ✅
+- B. From the top down
+- C. Only the first exception; the rest repeat it
+- D. Only the middle exception, which joins the others
+
+**Answer:** A
+
+**Explanation:** In wrapped exceptions, read the `Caused by:` chain from the bottom up, since the innermost cause is listed last.
+
+### W6.4-82 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Reading stack traces · **Source:** W6.4c · **Basis:** body
+
+**Question:** When reading a stack trace, why should you look for the topmost frame in your own code rather than the topmost frame overall?
+
+- A. The topmost frame overall is always the `main` method
+- B. The topmost frame overall is usually library or platform code doing exactly what it was asked ✅
+- C. The topmost frame overall is added by the debugger and is not part of the program
+- D. The topmost frame overall shows the oldest call, which is rarely relevant
+
+**Answer:** B
+
+**Explanation:** The topmost frame overall is usually library or platform code doing exactly what it was asked. The topmost frame in your code, and the callers below it, show how your program arrived at the failure.
+
+### W6.4-83 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Common Java exceptions · **Source:** W6.4c · **Basis:** body
+
+**Question:** A single-threaded program throws `ConcurrentModificationException`. What does this exception usually mean?
+
+- A. Recursion with a missing or unreachable base case
+- B. Unvalidated input being parsed as a number
+- C. A collection modified while being iterated over, e.g. removing inside a for-each loop ✅
+- D. An object that is not the type assumed, often after an unchecked cast
+
+**Answer:** C
+
+**Explanation:** `ConcurrentModificationException` usually means a collection was modified while being iterated over, usually in a single thread, such as removing from a list inside a for-each loop over that list.
+
+### W6.4-84 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Common Java exceptions · **Source:** W6.4c · **Basis:** body
+
+**Question:** Calling the recursive method `countDown(5)` ends with a `StackOverflowError`. What is the usual cause?
+
+- A. Recursion with a missing or unreachable base case ✅
+- B. An off-by-one index used to access an array
+- C. A field that was never initialized before use
+- D. An unchecked cast to the wrong type of object
+
+**Answer:** A
+
+**Explanation:** `StackOverflowError` usually means recursion with a missing or unreachable base case, so calls keep piling up. An off-by-one usually shows up as `IndexOutOfBoundsException`, and an uninitialized field as `NullPointerException`.
+
+### W6.4-85 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Common Java exceptions · **Source:** W6.4c · **Basis:** body
+
+**Question:** A program reads a user's age with `Integer.parseInt(input)` and fails with `NumberFormatException` when the user types `twenty`. What does this exception usually indicate?
+
+- A. A collection modified while being iterated over
+- B. Unvalidated input being parsed as a number ✅
+- C. An index computed from stale size information
+- D. An object that is not of the type assumed
+
+**Answer:** B
+
+**Explanation:** `NumberFormatException` usually means unvalidated input is being parsed as a number. Stale size information typically leads to `IndexOutOfBoundsException`, and a wrong assumed type to `ClassCastException`.
+
+### W6.4-86 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Delta debugging · **Source:** W6.4e · **Basis:** body
+
+**Question:** Delta debugging handles failing inputs that plain halving cannot simplify. What is its worst-case cost, and what does it still need from you?
+
+- A. About log n tests; a debugger attached to the program
+- B. On the order of n² tests; knowledge of which part of the code holds the defect
+- C. A single test run; a list of candidate origins
+- D. On the order of n² tests; a reliable failure test and valid reductions ✅
+
+**Answer:** D
+
+**Explanation:** In the worst case delta debugging needs on the order of n² tests. It still needs a reliable test for whether a reduction still fails, and reductions that leave the input valid (e.g. a config file whose required header must survive), but no insight into the code.
+
+### W6.4-87 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Limits of the boundary idea · **Source:** W6.4e · **Basis:** body
+
+**Question:** The idea of a single boundary where the state first goes wrong describes the simple, deterministic case. In which situation does the course say this idea blurs?
+
+- A. When the failure can be reproduced on every run
+- B. When two references alias the same object ✅
+- C. When the program is single-threaded and its input is small
+- D. When the defect is in recently changed code
+
+**Answer:** B
+
+**Explanation:** The boundary idea blurs when the defect is an omission, when two references alias the same object, when threads interleave, or when the bad state came from outside the program. Treat the boundary as what you are looking for, not as something guaranteed to exist at one point.
+
+### W6.4-88 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Reset frame · **Source:** W6.4e · **Basis:** body
+
+**Question:** A developer uses reset frame (drop frame) to re-enter a method they stepped past. Before that, the method had appended a line to a file and incremented a static counter. What does reset frame restore?
+
+- A. Everything, including the file and the static counter
+- B. Only the static counter, since it belongs to the class
+- C. Only the execution point and local variables; the file and counter changes stay ✅
+- D. Nothing, since reset frame works only before a method has started
+
+**Answer:** C
+
+**Explanation:** Reset frame pops the current call so you can re-enter the method, but it restores only the execution point and local variables. Anything the method already did to fields, static state, files or console output stays done, so it is not a way of going back in time.
+
+### W6.4-89 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Force step into · **Source:** W6.4e · **Basis:** body
+
+**Question:** On a line that calls a library method, step into does not take you inside it, but you want to see what the library code does. Which debugger command enters library code that step into normally skips?
+
+- A. Step out
+- B. Run to cursor
+- C. Reset frame
+- D. Force step into ✅
+
+**Answer:** D
+
+**Explanation:** Force step into enters library code that step into normally skips. Reset frame re-enters a method already stepped past, and step out returns to the caller.
+
+### W6.4-90 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Tracing · **Source:** W6.4e · **Basis:** body
+
+**Question:** When is tracing (recording every line executed, or every change to a chosen variable) appropriate, and what does it cost?
+
+- A. When the failure is too fast to watch or in an unmonitored run; large output and a slowdown ✅
+- B. When the failure is easy to reproduce locally; it requires editing every method
+- C. Only for performance problems; it cannot record changes to variables
+- D. When breakpoints are unavailable; it needs no storage and no extra time
+
+**Answer:** A
+
+**Explanation:** Tracing records the execution automatically for examination afterwards; use it when the failure is too fast to watch or happens in a run you cannot monitor interactively. It costs a large volume of recorded output and slows the program enough to disturb timing-sensitive failures.
+
+### W6.4-91 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Concurrency bugs · **Source:** W6.4e · **Basis:** body
+
+**Question:** A race condition disappears whenever the developer sets breakpoints to investigate it. Why, and what does the course suggest instead?
+
+- A. Breakpoints clear shared variables; use print statements without thread details
+- B. Breakpoints alter the thread interleaving; reason about the code and log with thread identifiers ✅
+- C. The debugger runs all threads in one thread; use a conditional breakpoint
+- D. Race conditions are not real defects; ignore them unless users complain
+
+**Answer:** B
+
+**Explanation:** Concurrency bugs are timing- and schedule-dependent, and breakpoints alter the thread interleaving, so the debugger itself can make them disappear. Reason about the code, and log with thread identifiers.
+
+### W6.4-92 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Production-only failures · **Source:** W6.4e · **Basis:** body
+
+**Question:** A failure occurs only in production, under real data volumes and real configuration, and no debugger can be attached. What does the course give as the toolkit?
+
+- A. Stepping through live requests on the production server
+- B. Rubber duck debugging and backward slicing only
+- C. Logging, telemetry, and crash and thread dumps ✅
+- D. Field watchpoints and exception breakpoints
+
+**Answer:** C
+
+**Explanation:** When you cannot attach a debugger, the toolkit is logging, telemetry measurements the running system reports about itself, and post-mortem artifacts such as crash and thread dumps.
+
+### W6.4-93 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Performance problems · **Source:** W6.4e · **Basis:** body
+
+**Question:** A search feature misses its stated response-time requirement. How should the developer locate the problem?
+
+- A. Step through the search in a debugger to spot the slow line
+- B. Optimize the loop that looks slowest first, then measure
+- C. Treat it as not a bug, since only wrong output counts as one
+- D. Profile rather than debug, and measure before optimizing ✅
+
+**Answer:** D
+
+**Explanation:** Performance problems are bugs whenever the system misses a stated response-time or resource requirement, but they cannot be located by stepping. Profile rather than debug, and measure before optimizing, because intuitions about where the time goes are usually wrong.
+
+### W6.4-94 · MCQ
+
+**Type:** MCQ · **Topic:** [W6.4] Debugging · **Subtopic:** Bugs in others' code · **Source:** W6.4e · **Basis:** bold
+
+**Question:** Your code calls a third-party library that seems to return wrong results. What does the course say about such bugs, and what should you do?
+
+- A. They are usually bugs in your use of it; build a minimal case demonstrating the misbehavior ✅
+- B. They are usually bugs in the library; report them to its maintainers at once
+- C. They cannot be investigated without the library's source code
+- D. They are usually compiler defects; try a different compiler
+
+**Answer:** A
+
+**Explanation:** Bugs in code you did not write are usually bugs in your use of it. Building a minimal case generally exposes your own mistake, and if it does not, you have exactly what the library's issue tracker will ask for.
+
 ---
 
 # Week 7
@@ -4402,6 +11413,274 @@ logger.log(Level.INFO, "going to start processing");
 
 **Explanation:** Omitting UI details leaves flexibility to the UI designer and keeps the use case about externally visible interaction.
 
+### W7.1-15 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.1] Requirements: Use Cases · **Subtopic:** Use case diagrams · **Source:** W7.1a · **Basis:** bold
+
+**Question:** A UML diagram shows a system's use cases as ovals and the relevant user roles as stick figures connected to them. What does this kind of diagram provide?
+
+- A. A visual "table of contents" of the use cases of the system ✅
+- B. The full step-by-step flow of each use case, including extensions
+- C. The internal class structure that implements each use case
+- D. The order of messages exchanged between objects at run time
+
+**Answer:** A
+
+**Explanation:** A use case diagram illustrates use cases visually, providing a "table of contents" of the system's use cases. The detailed steps belong in the textual use case descriptions.
+
+### W7.1-16 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.1] Requirements: Use Cases · **Subtopic:** Use case definition · **Source:** W7.1a · **Basis:** bold
+
+**Question:** Which is the course's formal definition of a use case?
+
+- A. A short, simple description of a feature, told from the perspective of the person who desires the new capability
+- B. A list of the features of a product, grouped according to criteria such as aspect, priority or order of delivery
+- C. A set of sequences of actions, including variants, that a system performs to yield an observable result of value to an actor ✅
+- D. A role played by an external entity, such as a human user or another system, that interacts with the system being built
+
+**Answer:** C
+
+**Explanation:** A use case is a description of a set of sequences of actions, including variants, that a system performs to yield an observable result of value to an actor. The other statements describe a user story, a feature list and an actor.
+
+### W7.1-17 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.1] Requirements: Use Cases · **Subtopic:** Persons and roles · **Source:** W7.1b · **Basis:** body
+
+**Question:** In LearnSys, undergraduate students, graduate students, exchange students and staff members doing a part-time course all interact with the system as the actor `Student`. Which statement does this illustrate?
+
+- A. A single person can play many roles
+- B. A use case can involve multiple actors
+- C. An actor can be involved in many use cases
+- D. Many persons can play a single role ✅
+
+**Answer:** D
+
+**Explanation:** Several kinds of persons playing the one role `Student` illustrates that many persons or systems can play a single role. One person being, say, a Student, Guest and Tutor would instead illustrate a single person playing many roles.
+
+### W7.1-18 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.1] Requirements: Use Cases · **Subtopic:** Levels of use cases · **Source:** W7.1b · **Basis:** body
+
+**Question:** A team modeling LearnSys has use cases at several levels, such as "Conduct a survey", "Take the survey" and "Answer survey question". What does the course advise?
+
+- A. Start with the lowest-level use cases and combine them into higher-level ones
+- B. Start with high-level use cases and work toward lower-level ones ✅
+- C. List use cases of all levels together in one list so that nothing is missed
+- D. Model only the lowest-level use cases, as they are the most precise ones
+
+**Answer:** B
+
+**Explanation:** While modeling user-system interactions, start with high-level use cases and progressively work toward lower-level ones, staying mindful of the level you are at and not mixing use cases of different levels.
+
+### W7.1-19 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.1] Requirements: Use Cases · **Subtopic:** Externally visible behavior · **Source:** W7.1c · **Basis:** bold
+
+**Question:** What is wrong with the use case step "LMS saves the file into the cache and indicates success"?
+
+- A. It contains UI-specific details such as which button to click
+- B. It is written from the actor's perspective instead of the system's
+- C. It refers to internal behavior that is not externally visible ✅
+- D. It should be listed as an extension rather than in the MSS
+
+**Answer:** C
+
+**Explanation:** A use case describes only the externally visible behavior of a system, not its internal details. Saving into a cache is something the user is not meant to be aware of.
+
+### W7.1-20 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.1] Requirements: Use Cases · **Subtopic:** Loops in use cases · **Source:** W7.1c · **Basis:** bold
+
+**Question:** In an "upload file" use case, the student may need to specify the file location several times before a valid file is chosen. How can the use case description show this?
+
+- A. By copying the same steps several times over in the MSS
+- B. By a note saying which steps repeat and what ends the loop ✅
+- C. By making the use case include itself using underlined text
+- D. It cannot; loops must be shown in a separate activity diagram
+
+**Answer:** B
+
+**Explanation:** A use case description can show loops using a note that says which steps repeat and what ends the repetition, such as "Steps 2-3 are repeated until the Student selects a valid file."
+
+### W7.1-21 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.1] Requirements: Use Cases · **Subtopic:** Other names for the MSS · **Source:** W7.1c · **Basis:** body
+
+**Question:** By what other names is the Main Success Scenario (MSS) of a use case known?
+
+- A. The Basic Course of Action, or the Main Flow of Events ✅
+- B. The Alternative Course of Action, or the Extension Path
+- C. The Precondition Sequence, or the Initial Starting State
+- D. The Guaranteed Outcome, or the Success Promise of Events
+
+**Answer:** A
+
+**Explanation:** The MSS, the most straightforward interaction assuming nothing goes wrong, is also called the Basic Course of Action or the Main Flow of Events.
+
+### W7.1-22 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.1] Requirements: Use Cases · **Subtopic:** Self-contained MSS · **Source:** W7.1c · **Basis:** bold
+
+**Question:** A team moves the exceptional flows of a use case out of the MSS and into extensions. What should remain true of the MSS?
+
+- A. It should refer to each extension at the step where it can occur
+- B. It should still mention catastrophic failures such as power outages
+- C. It should keep the UI details so that the extensions can omit them
+- D. It should be self-contained, giving a complete usage scenario ✅
+
+**Answer:** D
+
+**Explanation:** When separating extensions from the MSS, the MSS should be self-contained, that is, it should give a complete usage scenario. Catastrophic failures are not worth mentioning even as extensions.
+
+### W7.1-23 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.1] Requirements: Use Cases · **Subtopic:** Extend arrows · **Source:** W7.1c · **Basis:** body
+
+**Question:** How is an `<<extend>>` arrow drawn in a use case diagram?
+
+- A. With a solid line, from the base use case to the extension
+- B. With a dashed line, from the base use case to the extension
+- C. With a dashed line, from the extension to the use case it extends ✅
+- D. With a solid line, from the actor to the extension
+
+**Answer:** C
+
+**Explanation:** An `<<extend>>` arrow uses a dashed line and points from the extension to the use case it extends. Inclusions use a dotted `<<include>>` arrow whose direction differs.
+
+### W7.1-24 · MRQ
+
+**Type:** MRQ · **Topic:** [W7.1] Requirements: Use Cases · **Subtopic:** Use case inclusions · **Source:** W7.1c · **Basis:** body
+
+**Question:** Which statements about use case inclusions are correct? (Select all that apply.)
+
+- A. They are useful when you don't want to clutter a use case with too many low-level steps ✅
+- B. They are useful when a set of steps is repeated in multiple use cases ✅
+- C. They are shown in a use case diagram with a solid arrow labeled `<<extend>>`
+- D. They are shown in a use case description using underlined text ✅
+
+**Answer:** A, B, D
+
+**Explanation:** Inclusions avoid clutter from low-level steps and avoid repeating the same steps across use cases. Underlined text shows an inclusion in a description, and a diagram shows it with a dotted arrow and an `<<include>>` annotation.
+
+### W7.1-25 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.1] Requirements: Use Cases · **Subtopic:** Purpose of guarantees · **Source:** W7.1c · **Basis:** bold
+
+**Question:** The Transfer Money use case guarantees: "Money will be deducted from the source account only if the transfer to the destination account is successful." What purpose does such a guarantee serve?
+
+- A. It states the observable result that decides whether the interaction did its job ✅
+- B. It describes the state the system must be in before the use case can start
+- C. It lists the exceptional or alternative flows that can happen after a given step
+- D. It records how the money transfer is implemented inside the banking system
+
+**Answer:** A
+
+**Explanation:** Guarantees specify what the use case promises at the end of its operation; like acceptance criteria for a user story, they state the observable result that decides whether the interaction did its job. The state expected before the start is a precondition.
+
+### W7.1-26 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.1] Requirements: Use Cases · **Subtopic:** Resuming after an extension · **Source:** W7.1c · **Basis:** body
+
+**Question:** Consider these extensions of the Online Banking System's Transfer Money use case. What happens after step `3a2` once the data entered are correct?
+
+```
+Extensions:
+ 3a. OBS detects an error in the entered data.
+ 3a1. OBS requests for the correct data.
+ 3a2. User enters new data.
+ Steps 3a1-3a2 are repeated until the data entered are correct.
+ Use case resumes from step 4.
+ 3b. User requests to schedule the transfer for a future date.
+ 3b1. OBS requests for confirmation.
+ 3b2. User confirms future transfer.
+ Use case ends.
+```
+
+- A. The use case ends
+- B. The use case resumes from step 3
+- C. The use case continues with extension `3b`
+- D. The use case resumes from step 4 ✅
+
+**Answer:** D
+
+**Explanation:** Extension `3a` loops until the data are correct and then states that the use case resumes from step 4 of the MSS. It is extension `3b`, the scheduled transfer, that ends the use case.
+
+### W7.1-27 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.1] Requirements: Use Cases · **Subtopic:** Actor generalization · **Source:** W7.1d · **Basis:** bold
+
+**Question:** A use case diagram shows actor generalization, using a symbol like UML inheritance, with `Blogger` generalizing from `Guest`. What does this mean?
+
+- A. `Guest` can do all the use cases that `Blogger` can do
+- B. `Blogger` can do all the use cases that `Guest` can do ✅
+- C. `Blogger` and `Guest` are always the same person
+- D. `Blogger` can do only the use cases that `Guest` cannot do
+
+**Answer:** B
+
+**Explanation:** As with inheritance, the more specific actor can do everything the general actor can: `Blogger` can do all the use cases `Guest` can do, as well as its own.
+
+### W7.1-28 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.1] Requirements: Use Cases · **Subtopic:** Disadvantage of use cases · **Source:** W7.1d · **Basis:** bold
+
+**Question:** What is one of the main disadvantages of use cases, according to the course?
+
+- A. Their notation is too complex for users to understand and give feedback on
+- B. They cannot describe any alternative or exceptional flows of events
+- C. They are poor at requirements that involve no user interaction ✅
+- D. They force designers to commit to UI details too early in the project
+
+**Answer:** C
+
+**Explanation:** Use cases are not good at capturing requirements that do not involve a user interacting with the system, so they should not be the sole means of specifying requirements. Their simple notation, extensions and freedom from UI details are listed as advantages.
+
+### W7.1-29 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.1] Requirements: Use Cases · **Subtopic:** Styles of use case text · **Source:** W7.1d · **Basis:** bold
+
+**Question:** A team writes the steps of its use cases as a continuous paragraph and leaves out guarantees where they add nothing. Is that acceptable?
+
+- A. No; UML requires numbered steps in every use case
+- B. No; every use case must use all the elements, including preconditions and guarantees
+- C. Yes, but only for use cases that have no extensions
+- D. Yes; UML is not very specific about the text contents of a use case, so many styles exist ✅
+
+**Answer:** D
+
+**Explanation:** UML is not very specific about the text contents of a use case, so there are many styles; steps can be written as a continuous paragraph. There is no strict rule requiring all details of all steps or all elements of a use case; use cases should be easy to read.
+
+### W7.1-30 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.1] Requirements: Use Cases · **Subtopic:** Keeping diagrams brief · **Source:** W7.1d · **Basis:** body
+
+**Question:** A student tries to fit every use case, step and extension of a system into one use case diagram. What does the course advise?
+
+- A. Keep it brief; put the details in the use case descriptions ✅
+- B. Keep going; a complete diagram makes the descriptions unnecessary
+- C. Draw a separate use case diagram for every step of every use case
+- D. Replace the diagram with a feature list, as diagrams cannot show steps
+
+**Answer:** A
+
+**Explanation:** Do not over-complicate use case diagrams by trying to include everything possible. A use case diagram is a brief summary used as a starting point, and details are given in the use case descriptions.
+
+### W7.1-31 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.1] Requirements: Use Cases · **Subtopic:** Use case diagrams · **Source:** W7.1a · **Basis:** body
+
+**Question:** For a ticket machine, a team wants a diagram showing which user roles can perform which tasks with the system. Which diagram fits?
+
+- A. A deployment diagram
+- B. A class diagram
+- C. An activity diagram
+- D. A use case diagram ✅
+
+**Answer:** D
+
+**Explanation:** Use case diagrams model the mapping between features of a system and its user roles, i.e. which user roles can perform which tasks using the software.
+
 ## [W7.2] Requirements Documents
 
 ### W7.2-01 · MRQ
@@ -4479,6 +11758,81 @@ logger.log(Level.INFO, "going to start processing");
 
 **Explanation:** Prose, user stories, use cases, supplementary requirements and a glossary each serve a purpose; AB3 keeps them together in one place.
 
+### W7.2-06 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.2] Requirements Documents · **Subtopic:** Product requirements documents · **Source:** W7.2a · **Basis:** bold
+
+**Question:** A product-led team keeps its requirements in a single document that carries the product's purpose, who it is for, the scope and priorities, the most important stories, and the quality constraints. What is such a document usually called?
+
+- A. A software requirements specification (SRS)
+- B. A product requirements document (PRD) ✅
+- C. A project glossary of shared terms
+- D. A supplementary requirements section
+
+**Answer:** B
+
+**Explanation:** Product-led teams usually call their single requirements document a PRD or product brief. An SRS is its more formal, heavier counterpart, used where requirements must be agreed precisely, audited or contracted for.
+
+### W7.2-07 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.2] Requirements Documents · **Subtopic:** Requirements vs specification · **Source:** W7.2a · **Basis:** bold
+
+**Question:** What distinguishes a requirements document from a software specification?
+
+- A. The former covers only non-functional requirements; the latter only functional ones
+- B. The former is written after implementation; the latter is written before it
+- C. The former explains the problem and outcomes; the latter defines behavior precisely ✅
+- D. The former defines behavior precisely; the latter explains the problem and outcomes
+
+**Answer:** C
+
+**Explanation:** A requirements document explains the problem and the required outcomes, whereas a software specification defines the system's behavior precisely enough to implement and verify it. Some teams keep both in one document, others keep them separate.
+
+### W7.2-08 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.2] Requirements Documents · **Subtopic:** When spec-driven development fits · **Source:** W7.2a · **Basis:** body
+
+**Question:** When is specification-driven development especially relevant, according to the course?
+
+- A. When the project has only one developer
+- B. When most of the development work is done by AI agents ✅
+- C. When the requirements are still largely unknown
+- D. When the team prefers not to write any documents
+
+**Answer:** B
+
+**Explanation:** Specification-driven development relies heavily on a detailed specification, a single source of truth for what to build and how, to direct implementation and judge the work delivered. This is especially relevant when most of the development work is done by AI agents.
+
+### W7.2-09 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.2] Requirements Documents · **Subtopic:** Where requirements live · **Source:** W7.2a · **Basis:** bold
+
+**Question:** A team keeps its user stories in an issue tracker, its glossary in a wiki and its prototypes in a design tool. Is this consistent with the course?
+
+- A. No; all requirements must be kept together in a single PRD
+- B. No; only an SRS is an acceptable home for requirements
+- C. Yes, but only if the team does not also write any use cases
+- D. Yes; teams may keep different formats in different places ✅
+
+**Answer:** D
+
+**Explanation:** Some teams document requirements in a single document, while others keep different formats in different places, such as user stories in a tracker, the glossary in a wiki and prototypes in a design tool.
+
+### W7.2-10 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.2] Requirements Documents · **Subtopic:** Purpose of a feature list · **Source:** W7.2a · **Basis:** body
+
+**Question:** Product managers want a requirements format that supports their discussions about scope and delivery. Which format does the course say serves that purpose?
+
+- A. A feature list ✅
+- B. A glossary
+- C. A use case
+- D. A prose description
+
+**Answer:** A
+
+**Explanation:** Each format suits a different purpose: a feature list supports scope and delivery discussions, a glossary settles what shared terms mean, a use case makes one workflow precise, and prose frames the problem and the product's purpose.
+
 ## [W7.3] Design: High-Level View
 
 ### W7.3-01 · MCQ
@@ -4540,6 +11894,81 @@ logger.log(Level.INFO, "going to start processing");
 **Answer:** A
 
 **Explanation:** External design is the product's behavior as users see it; internal design is how the product is implemented to deliver that behavior.
+
+### W7.3-05 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.3] Design: High-Level View · **Subtopic:** Who does internal design · **Source:** W7.3a · **Basis:** bold
+
+**Question:** Who usually does the implementation/internal design of a software product?
+
+- A. Product designers, with input from business analysts and user experience experts
+- B. User representatives
+- C. Software architects and software engineers ✅
+- D. The product's sponsors
+
+**Answer:** C
+
+**Explanation:** Implementation/internal design, deciding how the product will be implemented, is usually done by software architects and software engineers. Product/external design is usually done by product designers with input from business analysts, UX experts and user representatives.
+
+### W7.3-06 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.3] Design: High-Level View · **Subtopic:** When top-down fits · **Source:** W7.3b · **Basis:** body
+
+**Question:** In which situation is top-down design especially useful?
+
+- A. Designing a small variation of an existing, well-understood system
+- B. Designing a big, novel system that needs a stable high-level design ✅
+- C. Repurposing a set of existing components to build a new system
+- D. Designing a small script that has no real high-level structure
+
+**Answer:** B
+
+**Explanation:** Top-down design is especially useful for big and novel systems where the high-level design needs to be stable before lower-level designs can be created. Variations of existing systems and reuse of existing components are where bottom-up might work.
+
+### W7.3-07 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.3] Design: High-Level View · **Subtopic:** Mixed design approach · **Source:** W7.3b · **Basis:** body
+
+**Question:** What does the "mix" approach to multi-level design involve?
+
+- A. Designing the bottom levels top-down and the top levels bottom-up
+- B. Alternating between top-down and bottom-up in each iteration
+- C. Having two teams design all levels at the same time, one in each direction
+- D. Designing the top levels top-down and switching to bottom-up for the bottom levels ✅
+
+**Answer:** D
+
+**Explanation:** The mix approach designs the top levels using the top-down approach, then switches to a bottom-up approach when designing the bottom levels.
+
+### W7.3-08 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.3] Design: High-Level View · **Subtopic:** When bottom-up fits · **Source:** W7.3b · **Basis:** body
+
+**Question:** A team is building a new system mainly by repurposing several components it already has. Which design approach might work here, even though it is not usually scalable for bigger systems?
+
+- A. Top-down design
+- B. Bottom-up design ✅
+- C. A mix that is bottom-up at the top levels
+- D. Full upfront design of every level before coding
+
+**Answer:** B
+
+**Explanation:** Bottom-up design, building lower-level components first and putting them together, is not usually scalable for bigger systems, but it might work when designing a variation of an existing system or repurposing existing components.
+
+### W7.3-09 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.3] Design: High-Level View · **Subtopic:** Initial modeling in agile · **Source:** W7.3c · **Basis:** body
+
+**Question:** A team follows agile design. How much architectural modeling should it do at the very beginning of the project?
+
+- A. Just enough to get the team going ✅
+- B. None at all; all design happens during coding
+- C. A fully documented set of models before any coding begins
+- D. None until after the first release
+
+**Answer:** A
+
+**Explanation:** Agile designs are emergent. There is often some initial architectural modeling at the very beginning, but just enough to get the team going; agile design does not produce a fully documented set of models before coding starts.
 
 ## [W7.4] Design: Fundamentals
 
@@ -4754,6 +12183,201 @@ logger.log(Level.INFO, "going to start processing");
 
 **Explanation:** Cohesion is about how strongly related and focused a component's responsibilities are; keeping unrelated tasks in separate classes raises it.
 
+### W7.4-15 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.4] Design: Fundamentals · **Subtopic:** Levels of control abstraction · **Source:** W7.4a · **Basis:** bold
+
+**Question:** Which ordering of `execute(Game)`, `print(Char)` and the Assembly instruction `MOV` goes from the highest to the lowest level of control abstraction?
+
+- A. `MOV`, `print(Char)`, `execute(Game)`
+- B. `print(Char)`, `execute(Game)`, `MOV`
+- C. `execute(Game)`, `print(Char)`, `MOV` ✅
+- D. `execute(Game)`, `MOV`, `print(Char)`
+
+**Answer:** C
+
+**Explanation:** Abstraction can be applied repeatedly to obtain progressively higher levels: executing a whole game is at a higher level than printing a character, which is at a higher level than an Assembly `MOV` instruction.
+
+### W7.4-16 · MRQ
+
+**Type:** MRQ · **Topic:** [W7.4] Design: Fundamentals · **Subtopic:** General forms of abstraction · **Source:** W7.4a · **Basis:** bold
+
+**Question:** Which statements about abstraction are consistent with the course? (Select all that apply.)
+
+- A. An OOP class is an abstraction over related data and behaviors ✅
+- B. Abstraction is limited to data abstraction and control abstraction
+- C. An architecture is a higher-level abstraction of the design of a software system ✅
+- D. UML models are abstractions of some aspect of reality ✅
+
+**Answer:** A, C, D
+
+**Explanation:** Abstraction is a general concept that is not limited to data or control abstractions. Classes, architectures and models such as UML models are all more general forms of abstraction.
+
+### W7.4-17 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.4] Design: Fundamentals · **Subtopic:** Coupling and integration · **Source:** W7.4b · **Basis:** bold
+
+**Question:** Why does high coupling make integration harder?
+
+- A. Coupled components cannot be compiled separately
+- B. Multiple components coupled with each other have to be integrated at the same time ✅
+- C. Coupled components must be rewritten before they can be integrated
+- D. Coupled components must all be stored in the same file
+
+**Answer:** B
+
+**Explanation:** Integration is harder because multiple components coupled with each other have to be integrated at the same time. High coupling also makes maintenance, testing and reuse harder.
+
+### W7.4-18 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.4] Design: Fundamentals · **Subtopic:** Names for high coupling · **Source:** W7.4b · **Basis:** body
+
+**Question:** High coupling between components is also known as what?
+
+- A. Loose or weak coupling
+- B. Low cohesion
+- C. Separation of concerns
+- D. Tight or strong coupling ✅
+
+**Answer:** D
+
+**Explanation:** High coupling is also called tight or strong coupling, and it is discouraged. Low coupling means a component is less dependent on other components.
+
+### W7.4-19 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.4] Design: Fundamentals · **Subtopic:** Changes that ripple · **Source:** W7.4c · **Basis:** body
+
+**Question:** Class `Foo` calls the method `Bar#read()` and no other method of `Bar`. Which change to `Bar` requires a corresponding change in `Foo`?
+
+- A. Changing the signature of `read()` ✅
+- B. Changing the body of `write()`
+- C. Adding a new private helper method to `Bar`
+- D. Renaming a local variable inside `write()`
+
+**Answer:** A
+
+**Explanation:** `Foo` is coupled to `Bar` because some changes to `Bar` can, but do not always, require changes in `Foo`. If the signature of `read()` changes, `Foo` must change too, but a change to `write()` may not need any change in `Foo`, which never calls it.
+
+### W7.4-20 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.4] Design: Fundamentals · **Subtopic:** Very high coupling · **Source:** W7.4c · **Basis:** body
+
+**Question:** Which of these situations results in a very high level of coupling between classes `A` and `B`?
+
+- A. `A` calls a public method of `B`
+- B. `A` receives an object of `B` as a parameter
+- C. `A` has access to the internal structure of `B` ✅
+- D. `A` and `B` follow the same data format
+
+**Answer:** C
+
+**Explanation:** All of these situations couple the two classes, but having access to another class's internal structure is the one the course singles out as resulting in a very high level of coupling.
+
+### W7.4-21 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.4] Design: Fundamentals · **Subtopic:** Coupling without calls · **Source:** W7.4c · **Basis:** body
+
+**Question:** Classes `A` and `B` never call each other, but both must read and write files in the same data format. Are they coupled?
+
+- A. No, because coupling requires one class to call the other
+- B. No, because coupling exists only through inheritance
+- C. Yes, because they are required to follow the same data format ✅
+- D. Only if they are placed in the same package
+
+**Answer:** C
+
+**Explanation:** Two classes are coupled if they are required to follow the same data format or communication protocol, or depend on the same global variable, even when neither calls the other. A change to the shared format may require changes in both.
+
+### W7.4-22 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.4] Design: Fundamentals · **Subtopic:** Content coupling · **Source:** W7.4d · **Basis:** bold
+
+**Question:** Module `Billing` directly reads and changes the local data inside module `Inventory`. Which type of coupling is this?
+
+- A. Content coupling ✅
+- B. Data coupling
+- C. Control coupling
+- D. External coupling
+
+**Answer:** A
+
+**Explanation:** Content coupling is when one module modifies or relies on the internal workings of another, such as accessing its local data. Passing parameters is data coupling, passing a flag is control coupling, and sharing an imposed convention is external coupling.
+
+### W7.4-23 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.4] Design: Fundamentals · **Subtopic:** Data coupling · **Source:** W7.4d · **Basis:** bold
+
+**Question:** Module `Invoice` calls `Tax.compute(amount, rate)`, passing only the values `Tax` needs for its calculation and no flags telling it what to do. Which type of coupling is this?
+
+- A. Control coupling
+- B. Data coupling ✅
+- C. Content coupling
+- D. Temporal coupling
+
+**Answer:** B
+
+**Explanation:** Data coupling is when one module shares data with another, for example by passing parameters. It would be control coupling if the caller passed information, such as a flag, controlling the other module's flow.
+
+### W7.4-24 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.4] Design: Fundamentals · **Subtopic:** Temporal coupling · **Source:** W7.4d · **Basis:** bold
+
+**Question:** A developer extracts a contiguous block of code into a method, although the statements in it are unrelated to each other and merely happen to run at the same time. Which type of coupling does this create?
+
+- A. Subclass coupling
+- B. Common/global coupling
+- C. External coupling
+- D. Temporal coupling ✅
+
+**Answer:** D
+
+**Explanation:** Temporal coupling is when two actions are bundled together just because they happen to occur at the same time. The course's example is extracting a contiguous block of unrelated statements as a method.
+
+### W7.4-25 · MRQ
+
+**Type:** MRQ · **Topic:** [W7.4] Design: Fundamentals · **Subtopic:** Disadvantages of low cohesion · **Source:** W7.4e · **Basis:** body
+
+**Question:** What are disadvantages of low cohesion? (Select all that apply.)
+
+- A. It lowers the understandability of modules ✅
+- B. It increases the number of classes in the system
+- C. It lowers maintainability, since a module may change for unrelated causes or a small change may touch many modules ✅
+- D. It lowers the reusability of modules ✅
+
+**Answer:** A, C, D
+
+**Explanation:** Low cohesion makes module functionality hard to express at a higher level, means modules change for unrelated causes or a small change spreads over many modules, and leaves modules that are not logical units of functionality to reuse. Adding classes is not one of the listed disadvantages.
+
+### W7.4-26 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.4] Design: Fundamentals · **Subtopic:** Cohesion defined · **Source:** W7.4e · **Basis:** bold
+
+**Question:** Which description defines cohesion?
+
+- A. A measure of the degree of dependence between different components
+- B. A measure of how related and focused a component's responsibilities are ✅
+- C. A count of the public methods a component offers to other components
+- D. A measure of how often a component is reused in other systems
+
+**Answer:** B
+
+**Explanation:** Cohesion measures how strongly related and focused a component's responsibilities are; a highly cohesive component keeps related functionalities together and unrelated things out. The degree of dependence between components is coupling.
+
+### W7.4-27 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.4] Design: Fundamentals · **Subtopic:** Forms of cohesion · **Source:** W7.4f · **Basis:** body
+
+**Question:** A `GameArchive` component handles everything related to the storage and retrieval of game sessions. Which form of cohesion does the course say this illustrates?
+
+- A. Code that is invoked close together in time is kept together
+- B. Code written by the same developer is kept together
+- C. Code that runs on the same thread is kept together
+- D. Code that manipulates the same data structure is kept together ✅
+
+**Answer:** D
+
+**Explanation:** The course uses `GameArchive` as its example of keeping together code that manipulates the same data structure. Keeping initialization code together illustrates code invoked close together in time.
+
 ## [W7.6] Integration Approaches
 
 ### W7.6-01 · MCQ
@@ -4845,6 +12469,111 @@ logger.log(Level.INFO, "going to start processing");
 **Answer:** B
 
 **Explanation:** Building and testing after each change means integration problems surface in small steps and soon after they are introduced, rather than near the end of the project.
+
+### W7.6-07 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.6] Integration Approaches · **Subtopic:** Late integration · **Source:** W7.6a · **Basis:** body
+
+**Question:** A team integrates all its components only near the end of the project and finds many incompatibilities. What does the course say these incompatibilities are typically due to?
+
+- A. Previous miscommunications and misunderstandings ✅
+- B. Using too many automated tests during development
+- C. Integrating too frequently throughout the project
+- D. Writing a walking skeleton too early
+
+**Answer:** A
+
+**Explanation:** Late and one-time integration often causes many component incompatibilities to surface due to previous miscommunications and misunderstandings. The chain is: late integration, incompatibilities found, major rework required, delivery date missed.
+
+### W7.6-08 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.6] Integration Approaches · **Subtopic:** Walking skeleton · **Source:** W7.6a · **Basis:** body
+
+**Question:** In early and frequent integration using a walking skeleton, who writes the skeleton, and what happens next?
+
+- A. Every developer writes their own skeleton, and they are merged at the end
+- B. The customer writes it, and the developers then replace it entirely
+- C. One developer, e.g. the integration lead; then everyone fleshes it out in parallel ✅
+- D. A testing team writes it after all features are finished
+
+**Answer:** C
+
+**Explanation:** A walking skeleton can be written first by one developer, possibly the one in charge of integration. After that, all developers can flesh out the skeleton in parallel, one feature at a time, integrating after each feature.
+
+### W7.6-09 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.6] Integration Approaches · **Subtopic:** Big-bang integration · **Source:** W7.6b · **Basis:** bold
+
+**Question:** A developer works alone on a branch for a month and then merges hundreds of changes into the main code at once. In the more general sense, which integration approach is this?
+
+- A. Incremental integration
+- B. Big-bang integration ✅
+- C. Top-down integration
+- D. Sandwich integration
+
+**Answer:** B
+
+**Explanation:** Big-bang integration means integrating all, or too many, components at the same time; more generally, it means integrating too many changes at the same time. Incremental integration integrates changes gradually.
+
+### W7.6-10 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.6] Integration Approaches · **Subtopic:** Incremental integration · **Source:** W7.6b · **Basis:** body
+
+**Question:** Why is incremental integration considered better than big-bang integration?
+
+- A. It needs no stubs or drivers
+- B. It postpones integration problems to the end of the project
+- C. It eliminates all integration problems
+- D. It surfaces integration problems in a more manageable way ✅
+
+**Answer:** D
+
+**Explanation:** Incremental integration integrates a few components, or changes, at a time, which surfaces integration problems in a more manageable way. Big-bang integration can uncover too many problems at once, complicating debugging.
+
+### W7.6-11 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.6] Integration Approaches · **Subtopic:** Top-down integration · **Source:** W7.6c · **Basis:** body
+
+**Question:** What is an advantage of top-down integration?
+
+- A. Higher-level problems can be discovered early ✅
+- B. No stubs are needed for lower-level components
+- C. The UI is always integrated last
+- D. All components are integrated at the same time
+
+**Answer:** A
+
+**Explanation:** In top-down integration, higher-level components are integrated before lower-level ones, so higher-level problems can be discovered early. Its disadvantage is that stubs are needed in place of lower-level components.
+
+### W7.6-12 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.6] Integration Approaches · **Subtopic:** Stubs in top-down · **Source:** W7.6c · **Basis:** body
+
+**Question:** Why does top-down integration require stubs?
+
+- A. Stubs are needed to exercise lower-level components when the UI is missing
+- B. Stubs replace the higher-level components that are integrated last
+- C. Higher-level components depend on lower-level ones not yet integrated ✅
+- D. Stubs are needed only to speed up the build
+
+**Answer:** C
+
+**Explanation:** Top-down integration needs stubs in place of lower-level components until the real ones are integrated; otherwise, the higher-level components cannot function, as they depend on lower-level ones.
+
+### W7.6-13 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.6] Integration Approaches · **Subtopic:** Drivers in bottom-up · **Source:** W7.6c · **Basis:** body
+
+**Question:** A team integrating bottom-up has combined `Storage` and `Logic`, but the `UI` is not integrated yet. Why might they need drivers?
+
+- A. To replace `Storage` with a stand-in until its real code is finished
+- B. To exercise the integrated lower-level components, as the UI is not integrated yet ✅
+- C. To merge the top-down and bottom-up approaches so they meet in the middle
+- D. To deploy the components to end users
+
+**Answer:** B
+
+**Explanation:** In bottom-up integration, drivers may be needed to test the integrated lower-level components because the UI may not be integrated yet, just as top-down integration needs stubs.
 
 ## [W7.7] Project Mgt: Scheduling and Tracking
 
@@ -4983,6 +12712,390 @@ logger.log(Level.INFO, "going to start processing");
 
 **Explanation:** The chief programmer makes decisions such as the architecture, and success relies heavily on that person's technical and managerial skills. A strict hierarchy instead has a rigidly defined organization in which each member reports to a single boss.
 
+### W7.7-10 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.7] Project Mgt: Scheduling and Tracking · **Subtopic:** Planning milestones · **Source:** W7.7a · **Basis:** body
+
+**Question:** A team is deciding which features to deliver at their next milestone. What should they take into account?
+
+- A. Only the effort estimates, ignoring priorities
+- B. Dependencies and priorities ✅
+- C. The order in which the features were first suggested
+- D. The number of lines of code each feature will need
+
+**Answer:** B
+
+**Explanation:** A milestone marks significant progress, and you should take into account dependencies and priorities when deciding on the features to be delivered at a certain milestone.
+
+### W7.7-11 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.7] Project Mgt: Scheduling and Tracking · **Subtopic:** Planning under uncertainty · **Source:** W7.7a · **Basis:** body
+
+**Question:** Because of uncertainty and missing information, a team finds it impractical to plan their whole project in detail. What does the course suggest?
+
+- A. Skip planning and decide each day's work on the day
+- B. Plan the whole project in full detail anyway, and then never revise the plan
+- C. A high-level plan overall and a detailed plan for the next few milestones ✅
+- D. A detailed plan for the final milestone only
+
+**Answer:** C
+
+**Explanation:** When a very detailed plan for the whole project is not practical due to uncertainty and unavailability of required information, you can use a high-level plan for the whole project and a detailed plan for the next few milestones.
+
+### W7.7-12 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.7] Project Mgt: Scheduling and Tracking · **Subtopic:** Milestone examples · **Source:** W7.7a · **Basis:** body
+
+**Question:** Which of these is an example of a milestone in a software project?
+
+- A. An intermediate product release ✅
+- B. A daily stand-up meeting
+- C. A commit that fixes a typo
+- D. An hour spent reviewing a pull request
+
+**Answer:** A
+
+**Explanation:** A milestone marks significant progress, often at the end of a stage; each intermediate product release is a milestone. In the Minesweeper example, "architecture skeleton completed" on Day 1 is a milestone.
+
+### W7.7-13 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.7] Project Mgt: Scheduling and Tracking · **Subtopic:** Buffers · **Source:** W7.7b · **Basis:** bold
+
+**Question:** Why is it very important to include buffers in a software project schedule?
+
+- A. Buffers give developers scheduled rest days between consecutive milestones
+- B. Buffers make the team look fast when it finishes early
+- C. Buffers remove the need for effort estimates altogether
+- D. Software effort estimates are notoriously hard, so delays must be absorbed ✅
+
+**Answer:** D
+
+**Explanation:** A buffer is time set aside to absorb any unforeseen delays. It is very important in software schedules because effort and time estimations for software development are notoriously hard.
+
+### W7.7-14 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.7] Project Mgt: Scheduling and Tracking · **Subtopic:** Explicit buffers · **Source:** W7.7b · **Basis:** body
+
+**Question:** Why does the course prefer explicit buffers over hidden buffers created by inflating task estimates?
+
+- A. Hidden buffers cannot be drawn on a Gantt chart
+- B. They make wrong estimates easier to detect, improving future estimates ✅
+- C. Explicit buffers shorten the critical path of the project schedule
+- D. Hidden buffers always make the project take longer
+
+**Answer:** B
+
+**Explanation:** With explicit buffers, it is easier to detect incorrect effort estimates, and that can serve as feedback to improve future effort estimates. Inflated estimates hide how wrong the original estimates were.
+
+### W7.7-15 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.7] Project Mgt: Scheduling and Tracking · **Subtopic:** Kanban boards · **Source:** W7.7c · **Basis:** bold
+
+**Question:** How does a Kanban board show the status of tasks?
+
+- A. Tasks are horizontal bars drawn against a timeline
+- B. Tasks are nodes connected by arrows showing precedence
+- C. Task cards move across columns such as To do, In progress and Done ✅
+- D. Tasks are listed in a hierarchy with effort estimates
+
+**Answer:** C
+
+**Explanation:** Kanban boards provide a simple visual way to track task status: teams move task cards across columns such as To do, In progress and Done, which shows the overall flow of work at a glance. Bars on a timeline describe a Gantt chart, and nodes with arrows a PERT chart.
+
+### W7.7-16 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.7] Project Mgt: Scheduling and Tracking · **Subtopic:** Issue trackers · **Source:** W7.7c · **Basis:** body
+
+**Question:** Issue trackers are sometimes called bug trackers. Which of these is a dedicated issue tracker, rather than a project platform that comes with an integrated one?
+
+- A. GitHub
+- B. GitLab
+- C. BitBucket
+- D. Jira ✅
+
+**Answer:** D
+
+**Explanation:** Most online project management software such as GitHub, GitLab and BitBucket comes with an integrated issue tracker, whereas tools like Jira and Linear are dedicated issue trackers.
+
+### W7.7-17 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.7] Project Mgt: Scheduling and Tracking · **Subtopic:** Tracking small projects · **Source:** W7.7c · **Basis:** body
+
+**Question:** A three-person team on a small project wants a simple way to track who is doing what and which tasks are done. What does the course say may suffice?
+
+- A. Online spreadsheets or a light-weight tool such as Trello ✅
+- B. Only a dedicated issue tracker such as Jira
+- C. A PERT chart redrawn and updated by the team every day
+- D. No tracking at all, since the team is small
+
+**Answer:** A
+
+**Explanation:** In small projects, it may be possible to keep track of tasks using simple tools such as online spreadsheets or general-purpose, light-weight task tracking tools such as Trello. Larger projects may need more sophisticated tools.
+
+### W7.7-18 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.7] Project Mgt: Scheduling and Tracking · **Subtopic:** Reading a WBS · **Source:** W7.7d · **Basis:** body
+
+**Question:** Given the work breakdown structure below, what is the total estimated effort, and which task must be completed before Implementation can start?
+
+```
+ID | Task                      | Effort         | Prerequisite
+A  | Analysis                  | 1 person day   | -
+B  | Design                    | 2 person day   | A
+C  | Implementation            | 4.5 person day | B
+D  | Testing                   | 1 person day   | C
+E  | Planning for next version | 1 person day   | D
+```
+
+- A. 8.5 person days; Analysis
+- B. 9.5 person days; Design ✅
+- C. 4.5 person days; Design
+- D. 9.5 person days; Testing
+
+**Answer:** B
+
+**Explanation:** The estimates add up to 1 + 2 + 4.5 + 1 + 1 = 9.5 person days, and Implementation lists Design as its prerequisite task, which in turn requires Analysis.
+
+### W7.7-19 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.7] Project Mgt: Scheduling and Tracking · **Subtopic:** Measuring effort · **Source:** W7.7d · **Basis:** body
+
+**Question:** A task in a work breakdown structure is estimated at "1 person day". What does that mean?
+
+- A. Work that takes one calendar day however many people work on it
+- B. Work that must be done by exactly one named person
+- C. Work that one person can do in one day ✅
+- D. Work that the whole team can complete in one day
+
+**Answer:** C
+
+**Explanation:** Effort is traditionally measured in person hours, days or months, i.e., work that can be done by one person in one hour, day or month.
+
+### W7.7-20 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.7] Project Mgt: Scheduling and Tracking · **Subtopic:** Well-defined tasks · **Source:** W7.7d · **Basis:** bold
+
+**Question:** A WBS contains the task "do research on UI testing". Which rewrite turns it into a well-defined task?
+
+- A. Do more research on UI testing
+- B. Research UI testing thoroughly
+- C. Spend two days on UI testing research
+- D. Find a suitable tool for testing the UI ✅
+
+**Answer:** D
+
+**Explanation:** All tasks should be well-defined; in particular, it should be clear when the task will be considered done. Finding a suitable tool has a clear end point, whereas doing more or thorough research does not, and a time limit says when to stop but not what counts as done.
+
+### W7.7-21 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.7] Project Mgt: Scheduling and Tracking · **Subtopic:** Subtask prerequisites · **Source:** W7.7d · **Basis:** body
+
+**Question:** In the game-project WBS below, which task must be completed before the Implementation of the User Interface (C.1) can start?
+
+```
+ID  | Task                          | Effort         | Prerequisite
+A   | High level design             | 1 person day   | -
+B   | Detail design                 | 2 person day   | A
+B.1 |   User Interface              | 0.5 person day |
+B.2 |   Game Logic                  | 1 person day   |
+B.3 |   Persistency Support         | 0.5 person day |
+C   | Implementation                | 4.5 person day |
+C.1 |   User Interface              | 1.5 person day | B.1
+C.2 |   Game Logic                  | 2 person day   | B.2
+C.3 |   Persistency Support         | 1 person day   | B.3
+D   | System Testing                | 1 person day   | C
+```
+
+- A. All three detail design subtasks (B.1, B.2 and B.3)
+- B. Detail design of the User Interface (B.1) ✅
+- C. Implementation of the Game Logic (C.2)
+- D. System Testing (D)
+
+**Answer:** B
+
+**Explanation:** In this WBS each implementation subtask has its own prerequisite: implementing the User Interface needs only the detail design of the User Interface, not the whole detail design task. Subtasks can have their own prerequisites.
+
+### W7.7-22 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.7] Project Mgt: Scheduling and Tracking · **Subtopic:** Gantt charts · **Source:** W7.7e · **Basis:** bold
+
+**Question:** A project manager wants a 2-D chart that shows time against tasks, with each task drawn as a horizontal bar. Which chart is this?
+
+- A. A PERT chart
+- B. A Kanban board
+- C. A Gantt chart ✅
+- D. A work breakdown structure
+
+**Answer:** C
+
+**Explanation:** A Gantt chart is a 2-D bar chart drawn as time vs tasks, with tasks represented by horizontal bars. A PERT chart is a directed graph of tasks, and a WBS is a hierarchical list of tasks.
+
+### W7.7-23 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.7] Project Mgt: Scheduling and Tracking · **Subtopic:** Gantt chart notation · **Source:** W7.7e · **Basis:** body
+
+**Question:** In a Gantt chart, what do a solid bar, gray bars and a diamond shape represent?
+
+- A. A subtask; the main task; the project start date
+- B. The critical path; the buffers; a scheduled team meeting
+- C. The main task; the buffers; the end of the whole project
+- D. The main task; its subtasks; an important deadline or milestone ✅
+
+**Answer:** D
+
+**Explanation:** A solid bar represents the main task, which is generally composed of a number of subtasks shown as gray bars. The diamond shape indicates an important deadline, deliverable or milestone.
+
+### W7.7-24 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.7] Project Mgt: Scheduling and Tracking · **Subtopic:** PERT chart notation · **Source:** W7.7f · **Basis:** body
+
+**Question:** In a PERT chart, what do the nodes and the arrows capture?
+
+- A. Nodes: effort estimates of tasks; arrows: precedence between tasks ✅
+- B. Nodes: team members; arrows: communication between them
+- C. Nodes: milestones; arrows: calendar dates
+- D. Nodes: deadlines; arrows: who hands work to whom
+
+**Answer:** A
+
+**Explanation:** A PERT chart is a directed graph in which nodes capture the effort estimations of tasks and arrows depict the precedence between tasks: an arrow means the first task must finish before the second can start.
+
+### W7.7-25 · MRQ
+
+**Type:** MRQ · **Topic:** [W7.7] Project Mgt: Scheduling and Tracking · **Subtopic:** Uses of PERT charts · **Source:** W7.7f · **Basis:** body
+
+**Question:** Which of the following can a PERT chart help determine? (Select all that apply.)
+
+- A. The order of tasks ✅
+- B. Which tasks can be done concurrently ✅
+- C. Who is assigned to each task
+- D. The shortest possible completion time ✅
+- E. The critical path ✅
+
+**Answer:** A, B, D, E
+
+**Explanation:** A PERT chart can help determine the order of tasks, which tasks can be done concurrently and the shortest possible completion time, and it also shows the critical path. Its nodes hold effort estimates and its arrows precedence, so it does not record who does each task.
+
+### W7.7-26 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.7] Project Mgt: Scheduling and Tracking · **Subtopic:** Critical path · **Source:** W7.7f · **Basis:** bold
+
+**Question:** What is the critical path of a project?
+
+- A. The path containing the largest number of tasks
+- B. The path in which any delay can directly affect the project duration ✅
+- C. The path containing the tasks with the highest technical risk
+- D. The path of tasks assigned to the most senior developer
+
+**Answer:** B
+
+**Explanation:** The critical path is the path in which any delay can directly affect the project duration, so it is important to ensure tasks on it are completed on time.
+
+### W7.7-27 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.7] Project Mgt: Scheduling and Tracking · **Subtopic:** Delays on the critical path · **Source:** W7.7f · **Basis:** body
+
+**Question:** A project's critical path adds up to six days. Task `B.2`, which is on the critical path and estimated at 1 day, ends up taking 1.5 days. How long will the whole project now take?
+
+- A. 6 days
+- B. 7 days
+- C. 6.5 days ✅
+- D. 7.5 days
+
+**Answer:** C
+
+**Explanation:** Any delay on the critical path directly affects the project duration, so the half-day overrun on `B.2` pushes the project from six days to 6.5 days. A similar overrun on a task off the critical path would not.
+
+### W7.7-28 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.7] Project Mgt: Scheduling and Tracking · **Subtopic:** PERT acronym · **Source:** W7.7f · **Basis:** body
+
+**Question:** What does PERT stand for in "PERT chart"?
+
+- A. Project Estimation and Resource Tracking
+- B. Planned Effort and Risk Timeline
+- C. Process Execution Reporting Tool
+- D. Program Evaluation Review Technique ✅
+
+**Answer:** D
+
+**Explanation:** A PERT (Program Evaluation Review Technique) chart uses a graphical technique to show the order or sequence of tasks.
+
+### W7.7-29 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.7] Project Mgt: Scheduling and Tracking · **Subtopic:** Roles and responsibilities · **Source:** W7.7g · **Basis:** body
+
+**Question:** A new project team agrees that "everybody is responsible for everything", so no one is put in charge of any particular aspect. What does the course say about this?
+
+- A. It can cause chaos and slower progress; assign roles in any structure ✅
+- B. It is good practice, but only for egoless or democratic teams
+- C. It is required in a strict hierarchy team
+- D. It speeds up progress by removing most communication overhead
+
+**Answer:** A
+
+**Explanation:** Irrespective of the team structure, it is good practice to assign roles and responsibilities so that someone is clearly in charge of each aspect of the project. The 'everybody is responsible for everything' approach can result in more chaos and hence slower progress.
+
+### W7.7-30 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.7] Project Mgt: Scheduling and Tracking · **Subtopic:** Egoless teams · **Source:** W7.7g · **Basis:** body
+
+**Question:** What is a typical strength of an egoless team, and what is its main risk?
+
+- A. Strength: little communication overhead; risk: everything depends on one single person
+- B. Strength: good ideas on hard problems; risk: falling apart without an authority figure ✅
+- C. Strength: fast decisions made by a single leader; risk: having too many bosses
+- D. Strength: strict reporting lines; risk: members ignore their assigned tasks
+
+**Answer:** B
+
+**Explanation:** In an egoless (democratic) team every member is equal and decisions need consensus, so it usually finds a good solution to a relatively hard problem as all members contribute ideas. But with no authority figure to manage the team and resolve conflicts, it is at a higher risk of falling apart.
+
+### W7.7-31 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.7] Project Mgt: Scheduling and Tracking · **Subtopic:** Chief programmer teams · **Source:** W7.7g · **Basis:** body
+
+**Question:** Frederick Brooks proposed the chief programmer team structure by analogy with another kind of team. Which team was it modeled on, and what does its success rely on?
+
+- A. A military unit; strict obedience to orders from every single member
+- B. An orchestra; every member following exactly the same musical score
+- C. A surgical team; a chief with superb technical and managerial skills ✅
+- D. A jury; reaching consensus on every major decision
+
+**Answer:** C
+
+**Explanation:** Brooks suggested learning from the surgical team in an operating room, where a chief surgeon is assisted by experts. The success of a chief programmer team relies heavily on the chief programmer, who must be a superb technical hand and also have good managerial skills.
+
+### W7.7-32 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.7] Project Mgt: Scheduling and Tracking · **Subtopic:** Strict hierarchy teams · **Source:** W7.7g · **Basis:** bold
+
+**Question:** In a strict hierarchy team, each member works only on assigned tasks and reports to a single boss. In what kind of project could this structure be a good fit?
+
+- A. A small school project, to encourage everyone to share ideas
+- B. A short prototype by peers, as all members are equal
+- C. A project led by one superb expert who makes every major decision
+- D. A large, resource-intensive, complex project, to reduce communication overhead ✅
+
+**Answer:** D
+
+**Explanation:** A strict hierarchy team has a strictly defined organization, reminiscent of the military or a bureaucratic government. In a large, resource-intensive, complex project, this could be a good structure to reduce communication overhead.
+
+### W7.7-33 · MCQ
+
+**Type:** MCQ · **Topic:** [W7.7] Project Mgt: Scheduling and Tracking · **Subtopic:** Choosing a team structure · **Source:** W7.7g · **Basis:** panel
+
+**Question:** A group of students is forming a team for a semester-long school software project. Which team structure is generally the most suitable?
+
+- A. Egoless team ✅
+- B. Chief programmer team
+- C. Strict hierarchy team
+- D. A team with no assigned roles at all
+
+**Answer:** A
+
+**Explanation:** Students in a school project are usually peers and beginners, which suits an egoless team. As a school project is low-stakes, short-lived and small, the other two structures can also be used, but some roles and responsibilities should be assigned in any structure.
+
 ---
 
 # Week 8
@@ -5063,6 +13176,66 @@ logger.log(Level.INFO, "going to start processing");
 **Answer:** C
 
 **Explanation:** Associations are the main connections among classes in a class diagram, and a reference held as a field is typically modelled as an association — here with multiplicity 1, since an AddressBook has exactly one such list.
+
+### W8.1-06 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.1] [Revisiting] Drawing Class/Object Diagrams - Basics · **Subtopic:** Code to association · **Source:** W8.1a · **Basis:** panel
+
+**Question:** How should this code be shown as an association in a class diagram?
+
+```java
+class Admin {
+    List<Student> charges;
+}
+```
+
+- A. A line from `Admin` to `Student`, with role `charges` at the `Admin` end and multiplicity `*` at the `Student` end
+- B. A line from `Admin` to `Student`, with role `charges` and multiplicity `1` at the `Student` end
+- C. A dashed arrow from `Admin` to `Student`, labelled `charges`
+- D. A line navigable from `Admin` to `Student`, with role `charges` and multiplicity `*` at the `Student` end ✅
+
+**Answer:** D
+
+**Explanation:** The `Student` objects play the role `charges` (the `Admin` is in charge of them), and the variable name matches that role. A list lets an `Admin` refer to any number of students, and only `Admin` holds references, so the association is navigable from `Admin` to `Student`.
+
+### W8.1-07 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.1] [Revisiting] Drawing Class/Object Diagrams - Basics · **Subtopic:** Bidirectional navigability from code · **Source:** W8.1a · **Basis:** panel
+
+**Question:** In the code below, a `Dog` object `d` and a `Man` object `m` refer to each other for the same link. Which navigability should the class diagram show?
+
+```java
+class Dog {
+    Man man;
+}
+class Man {
+    Dog dog;
+}
+```
+
+- A. Bidirectional ✅
+- B. Unidirectional from `Dog` to `Man`
+- C. Unidirectional from `Man` to `Dog`
+- D. None, because neither field is private
+
+**Answer:** A
+
+**Explanation:** With bidirectional navigability, `d` has a reference to `m` and `m` has a reference to `d` for the same single instance of the association.
+
+### W8.1-08 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.1] [Revisiting] Drawing Class/Object Diagrams - Basics · **Subtopic:** Code to object diagram · **Source:** W8.1b · **Basis:** panel
+
+**Question:** `Book` has fields `private double price;` and `private int pageCount;`. The code runs `Book myBook = new Book(13.5, 200);`. Which object diagram box represents the result?
+
+- A. `Book:myBook` underlined, with `price = 13.5` and `pageCount = 200`
+- B. `myBook:Book` not underlined, with `-price: double = 13.5` and `-pageCount: int = 200`
+- C. `myBook:Book` underlined, with `price = 13.5` and `pageCount = 200` ✅
+- D. `myBook:Book` underlined, with `price = 13.5`, `pageCount = 200` and an operations compartment
+
+**Answer:** C
+
+**Explanation:** Objects are labelled `objectName:ClassName` with the name underlined, and show attribute values as `attribute = value` without visibility or type. The operations compartment is omitted altogether in object diagrams.
 
 ## [W8.2] [Revisiting] Drawing Class/Object Diagrams - Intermediate
 
@@ -5156,6 +13329,51 @@ logger.log(Level.INFO, "going to start processing");
 
 **Explanation:** Class diagrams can show interfaces, and a dashed line with a triangle pointing at the interface denotes that the class implements it. A solid line with a triangle would be class inheritance.
 
+### W8.2-07 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.2] [Revisiting] Drawing Class/Object Diagrams - Intermediate · **Subtopic:** Drawing composition · **Source:** W8.2d · **Basis:** panel
+
+**Question:** A `Book` is composed of `Chapter` objects. How is this drawn, and what follows from it?
+
+- A. A solid diamond at the `Chapter` end; deleting a chapter deletes the book
+- B. A solid diamond at the `Book` end; when the book is destroyed, its chapters are destroyed too ✅
+- C. A hollow diamond at the `Book` end; the chapters survive when the book is destroyed
+- D. A triangle at the `Book` end; each chapter is a kind of book
+
+**Answer:** B
+
+**Explanation:** UML uses a solid diamond, placed at the whole (`Book`) end, to denote composition. Composition implies that when the whole is destroyed, its parts are destroyed too.
+
+### W8.2-08 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.2] [Revisiting] Drawing Class/Object Diagrams - Intermediate · **Subtopic:** Redundant dependency arrows · **Source:** W8.2d · **Basis:** panel
+
+**Question:** A class diagram shows an association from `Foo` to `Bar` and also a dashed dependency arrow from `Foo` to `Bar`. What should be changed?
+
+- A. Remove the association line, because the dependency arrow is more specific
+- B. Nothing, because the two carry different information
+- C. Replace both with an inheritance triangle
+- D. Remove the dependency arrow, because the association already implies the dependency ✅
+
+**Answer:** D
+
+**Explanation:** An association results from one object keeping a reference to another, which also creates a dependency. If the association is already shown, a dependency arrow adds no value, so it is redundant.
+
+### W8.2-09 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.2] [Revisiting] Drawing Class/Object Diagrams - Intermediate · **Subtopic:** Enumeration notation · **Source:** W8.2d · **Basis:** panel
+
+**Question:** How is an enumeration `Priority` with values `HIGH`, `MEDIUM` and `LOW` shown in a class diagram?
+
+- A. As a class box marked `{abstract}` with three subclasses
+- B. As a note attached to each class that uses it
+- C. As a class-like box marked `<<enumeration>>` that lists the values ✅
+- D. As a class box marked `<<interface>>` with three operations
+
+**Answer:** C
+
+**Explanation:** The `<< >>` notation is used for the built-in classifier kind `<<enumeration>>`: the element looks like a class but the keyword shows its true type, and removing it would turn the element into a regular class. The box lists the enumeration's fixed set of values.
+
 ## [W8.3] [Revisiting] Drawing Sequence Diagrams
 
 ### W8.3-01 · MCQ
@@ -5217,6 +13435,61 @@ logger.log(Level.INFO, "going to start processing");
 **Answer:** D
 
 **Explanation:** The parser object is created, used once and not stored, so the sequence diagram shows creation, one call, and deletion. The diagram models this one scenario of interactions.
+
+### W8.3-05 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.3] [Revisiting] Drawing Sequence Diagrams · **Subtopic:** Unrolling chained calls · **Source:** W8.3b · **Basis:** panel
+
+**Question:** How should the statement `person.getAddress().printStreet();` be prepared before drawing it as a sequence diagram?
+
+- A. Draw it as a single call from the caller to `Address`, labelled `getAddress().printStreet()`
+- B. Unroll it into `Address a = person.getAddress();` and `a.printStreet();`, giving two calls to two participants ✅
+- C. Draw both calls as self-invocations on `person`
+- D. Leave it out, since chained calls cannot be shown in sequence diagrams
+
+**Answer:** B
+
+**Explanation:** Chained or compound method calls should be unrolled into a simpler series of statements using a temporary variable before drawing, so that each call becomes a separate interaction with its receiver.
+
+### W8.3-06 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.3] [Revisiting] Drawing Sequence Diagrams · **Subtopic:** Code to opt frame · **Source:** W8.3a · **Basis:** panel
+
+**Question:** A sequence diagram models the call `executeStep(step)` on a `Workflow` object. Which frame does it need, and around which call?
+
+```java
+Step executeStep(Step step) {
+    step.init();
+    if (step.isValid()) {
+        step.execute();
+    }
+    return step;
+}
+```
+
+- A. An `alt` frame around `init()` and `execute()`
+- B. A `loop` frame around `isValid()`
+- C. An `opt` frame around `execute()` ✅
+- D. An `opt` frame around `init()`, `isValid()` and `execute()`
+
+**Answer:** C
+
+**Explanation:** Only `execute()` depends on a condition, so it goes inside an `opt` frame (an optional path); `init()` and `isValid()` are always called. An `alt` frame is for choosing among alternative paths.
+
+### W8.3-07 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.3] [Revisiting] Drawing Sequence Diagrams · **Subtopic:** Loop frames · **Source:** W8.3a · **Basis:** panel
+
+**Question:** In Minesweeper, the `Player` issues `mark x y` or `clear x y` commands to the `TextUi` repeatedly until the game is won or lost. How is this repetition shown in a sequence diagram?
+
+- A. With a `loop` frame around the interactions ✅
+- B. With an `alt` frame with one partition per command
+- C. With a `par` frame, since the commands happen many times
+- D. By drawing the interactions once per possible move
+
+**Answer:** A
+
+**Explanation:** Repeated interactions are shown in a `loop` frame, e.g. the player calling `mark` or `clear` repeatedly until the game is won or lost.
 
 ## [W8.4] Testing: Types
 
@@ -5462,6 +13735,337 @@ logger.log(Level.INFO, "going to start processing");
 
 **Explanation:** With little logic in the GUI, the GUI can be bypassed and the rest tested through automated API-level tests, leaving fewer test cases that must go through the GUI.
 
+### W8.4-17 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.4] Testing: Types · **Subtopic:** Integration bugs · **Source:** W8.4a · **Basis:** body
+
+**Question:** Class `Car` uses `Engine` and `Wheel`. `Car` assumes a `Wheel` can support speeds up to 200 mph, but the actual `Wheel` supports only up to 150 mph. Which testing is supposed to uncover this, and what kind of bug is it?
+
+- A. Unit testing of `Wheel`; a bug inside `Wheel`'s own speed-handling logic
+- B. Acceptance testing; a bug in the user requirements
+- C. Integration testing; misunderstanding what a part does versus what it should do ✅
+- D. Regression testing; a bug introduced by a recent modification
+
+**Answer:** C
+
+**Explanation:** Integration tests aim to find bugs in the glue code between components, which often result from misunderstanding what the parts are supposed to do versus what they are actually doing, such as `Car`'s wrong assumption about `Wheel`'s speed limit.
+
+### W8.4-18 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.4] Testing: Types · **Subtopic:** Pure integration order · **Source:** W8.4b · **Basis:** body
+
+**Question:** `Car` uses `Engine` and `Wheel`. In a pure integration testing approach, in what order are the tests done?
+
+- A. Integration test `Car` with the real parts, then unit test `Car` with stubs, then unit test `Engine` and `Wheel`
+- B. Unit test `Car` with stubs, then integration test `Car` with the real parts, then unit test `Engine` and `Wheel`
+- C. Unit test `Car` with the real parts, then unit test `Engine` and `Wheel`, then unit test `Car` with stubs
+- D. Unit test `Engine` and `Wheel`, then unit test `Car` with stubs, then integration test `Car` with the real parts ✅
+
+**Answer:** D
+
+**Explanation:** First `Engine` and `Wheel` are unit tested, then `Car` is unit tested in isolation using stubs for them, and finally `Car` is integration tested together with the real `Engine` and `Wheel`.
+
+### W8.4-19 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.4] Testing: Types · **Subtopic:** Hybrid approach risk · **Source:** W8.4b · **Basis:** body
+
+**Question:** In the hybrid unit+integration approach, `Car` is never tested in isolation from `Engine` and `Wheel`. Why is the risk of bugs in `Engine` and `Wheel` affecting the testing of `Car` considered minimal?
+
+- A. Because stubs for `Engine` and `Wheel` are still used in every test of `Car`
+- B. Because `Engine` and `Wheel` have already been unit tested ✅
+- C. Because the hybrid approach repeats each unit test twice
+- D. Because `Car` has fewer methods than `Engine` and `Wheel`
+
+**Answer:** B
+
+**Explanation:** The hybrid approach no longer needs stubs for `Engine` and `Wheel`; given that these dependencies are already unit tested, the risk of their bugs affecting the testing of `Car` can be considered minimal.
+
+### W8.4-20 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.4] Testing: Types · **Subtopic:** System testers · **Source:** W8.4c · **Basis:** body
+
+**Question:** A company is about to test its whole product against the system specification. Who typically does this system testing?
+
+- A. A testing team, also called a QA team ✅
+- B. Each developer, for the classes they wrote
+- C. A team representing the customer, at the deployment site
+- D. A selected subset of target users, in their natural work setting
+
+**Answer:** A
+
+**Explanation:** System testing takes the whole system and tests it against the system specification, and it is typically done by a testing team (a QA team). Testing by a customer-representing team is acceptance testing, and by target users in their own setting is beta testing.
+
+### W8.4-21 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.4] Testing: Types · **Subtopic:** Testing beyond the spec · **Source:** W8.4c · **Basis:** body
+
+**Question:** A browser is specified to handle web pages of up to 5000 characters. A system test loads a page with more than 5000 characters and expects the browser to abort loading and show a meaningful error message. What does this test case illustrate?
+
+- A. Load testing, since it checks that the system works under heavy load from many users
+- B. Acceptance testing, since the end user sees the error message
+- C. A test case that is invalid, since system tests must stay within the specification
+- D. A system test going beyond the specification's bounds to check that the system fails gracefully ✅
+
+**Answer:** D
+
+**Explanation:** System test cases are based on the specified external behavior, but sometimes go beyond the bounds of the specification to test that the system fails 'gracefully' when pushed beyond its limits. The test would fail if the browser tried to load the page anyway and crashed.
+
+### W8.4-22 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.4] Testing: Types · **Subtopic:** Non-functional testing · **Source:** W8.4c · **Basis:** body
+
+**Question:** As part of system testing, a QA team checks that their desktop app works correctly on Windows, macOS and Linux. Which type of testing is this?
+
+- A. Usability testing
+- B. Portability testing ✅
+- C. Compatibility testing
+- D. Performance testing
+
+**Answer:** B
+
+**Explanation:** Portability testing tests whether the system works on different platforms. Compatibility testing checks whether it can work with other systems, usability testing how easy it is to use, and performance testing how quickly it responds.
+
+### W8.4-23 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.4] Testing: Types · **Subtopic:** Non-functional testing · **Source:** W8.4c · **Basis:** body
+
+**Question:** A QA team checks whether their new HR app can exchange data correctly with the company's existing payroll system. Which type of testing is this?
+
+- A. Usability
+- B. Portability
+- C. Security
+- D. Interoperability ✅
+
+**Answer:** D
+
+**Explanation:** Compatibility testing, or interoperability testing, checks whether the system can work with other systems. Portability testing is about working on different platforms, and usability testing about how easy the system is to use.
+
+### W8.4-24 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.4] Testing: Types · **Subtopic:** Alpha testing · **Source:** W8.4g · **Basis:** bold
+
+**Question:** Before release, a company invites some users to its lab, where they try the product under conditions set by the development team. What kind of testing is this?
+
+- A. Beta testing
+- B. Dogfooding
+- C. Alpha testing ✅
+- D. An open beta release
+
+**Answer:** C
+
+**Explanation:** Alpha testing is performed by the users under controlled conditions set by the software development team, whereas beta testing is done by a selected subset of target users in their natural work setting.
+
+### W8.4-25 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.4] Testing: Types · **Subtopic:** Open beta · **Source:** W8.4g · **Basis:** body
+
+**Question:** A company makes its almost-but-not-quite production-quality email service available to the general public, keeping a 'beta' label on it for years. What is this called?
+
+- A. An open beta release ✅
+- B. Alpha testing
+- C. Acceptance testing
+- D. Dogfooding
+
+**Answer:** A
+
+**Explanation:** An open beta release is the release of not-yet-production-quality-but-almost-there software to the general population; for example, Google's Gmail was in 'beta' for many years.
+
+### W8.4-26 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.4] Testing: Types · **Subtopic:** Making dogfooding useful · **Source:** W8.4h · **Basis:** body
+
+**Question:** A company's employees use its own email client for their daily email, but nobody records the problems they run into. What is missing for this dogfooding to be useful?
+
+- A. Nothing; using the product every day is enough by itself
+- B. The employees should pretend to be end users rather than actually use the product
+- C. The observations need to be deliberately collected and processed ✅
+- D. The usage should be replaced by a short, scripted test session
+
+**Answer:** C
+
+**Explanation:** For dogfooding to be useful, observations need to be deliberately collected and processed; just using the product itself is not enough.
+
+### W8.4-27 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.4] Testing: Types · **Subtopic:** Value of dogfooding · **Source:** W8.4h · **Basis:** body
+
+**Question:** What can dogfooding reveal that regular testing might not encounter?
+
+- A. Bugs in the glue code between two components
+- B. Areas of improvement found through longer-term, consistent and authentic use ✅
+- C. Whether the tests achieve 100% statement coverage
+- D. Whether the system conforms to its specification on a test bed
+
+**Answer:** B
+
+**Explanation:** Longer-term, consistent and authentic use of the product by its creators can point to areas of improvement that regular testing, which is often short-term and 'simulated', might not encounter.
+
+### W8.4-28 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.4] Testing: Types · **Subtopic:** Exploratory testing focus · **Source:** W8.4i · **Basis:** body
+
+**Question:** An experienced tester begins an exploratory testing session on a new system. Where does such testing usually start, and where does more testing effort go?
+
+- A. With a full predetermined set of test cases, spread evenly across all features
+- B. With randomly chosen features, stopping as soon as the first bug is found
+- C. With the features least likely to fail, to establish a working baseline first
+- D. With areas that past experience marks as error-prone, testing more where faults appear ✅
+
+**Answer:** D
+
+**Explanation:** Exploratory testing usually starts with areas identified as error-prone based on the tester's past experience with similar systems, and one tends to conduct more tests for those operations where more faults are found.
+
+### W8.4-29 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.4] Testing: Types · **Subtopic:** Exploratory testing definition · **Source:** W8.4i · **Basis:** body
+
+**Question:** Exploratory testing has been described as "the simultaneous ___". Which words complete the phrase?
+
+- A. planning, coding, and debugging
+- B. learning, test design, and test execution ✅
+- C. specification, verification, and validation
+- D. unit, integration, and system testing
+
+**Answer:** B
+
+**Explanation:** Exploratory testing is 'the simultaneous learning, test design, and test execution', in which the next test case is decided based on the behavior observed in previous test cases.
+
+### W8.4-30 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.4] Testing: Types · **Subtopic:** Exploratory testing limits · **Source:** W8.4j · **Basis:** body
+
+**Question:** A team building a critical system proposes to rely only on exploratory testing by experienced testers. What is the course's view?
+
+- A. It is acceptable, as long as the testers are experienced
+- B. It is preferable, since exploratory testing finds more bugs given sufficient time
+- C. It is not prudent to use exploratory testing as the sole means of testing a critical system ✅
+- D. It is acceptable, provided the testers follow no fixed plan
+
+**Answer:** C
+
+**Explanation:** Exploratory testing done by experienced testers with a clear strategy can detect some problems in a relatively short time, but it is not prudent to use it as the sole means of testing a critical system; a mix of scripted and exploratory testing is better.
+
+### W8.4-31 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.4] Testing: Types · **Subtopic:** Scripted testing trade-off · **Source:** W8.4j · **Basis:** bold
+
+**Question:** Compared with exploratory testing, which describes the strength and the cost of scripted testing?
+
+- A. It depends mainly on the tester's intuition, but it is quick and cheap to set up
+- B. It is more systematic, but costlier to set up and slower to reach some bugs ✅
+- C. It reaches every type of bug faster, but it is less systematic and thorough
+- D. It needs no test cases written in advance, but it finds fewer bugs overall
+
+**Answer:** B
+
+**Explanation:** Scripted testing is more systematic, and hence likely to discover more bugs given sufficient time, but it can be costlier to set up and slower than exploratory testing to reach some types of bugs.
+
+### W8.4-32 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.4] Testing: Types · **Subtopic:** Acceptance test cases · **Source:** W8.4e · **Basis:** body
+
+**Question:** When are acceptance test cases often defined, and on what are they usually based?
+
+- A. At the beginning of the project, usually based on the use case specification ✅
+- B. After system testing, usually based on the code coverage report
+- C. At the end of the project, usually based on bugs reported in beta testing
+- D. During unit testing, usually based on the public methods of each class
+
+**Answer:** A
+
+**Explanation:** Acceptance test cases are often defined at the beginning of the project, usually based on the use case specification, and successful completion of UAT is often a prerequisite to project sign-off.
+
+### W8.4-33 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.4] Testing: Types · **Subtopic:** Test environments · **Source:** W8.4f · **Basis:** body
+
+**Question:** Where are system testing and acceptance testing typically done?
+
+- A. System testing on the deployment site; acceptance testing on a test bed instead
+- B. Both on the deployment site, so that the two sets of results are comparable
+- C. System testing on a test bed; acceptance testing on (a simulation of) the deployment site ✅
+- D. Both on the developers' own machines, using the development environment
+
+**Answer:** C
+
+**Explanation:** System testing is done on the development environment or a test bed, while acceptance testing is done on the deployment site or on a close simulation of it, which is one reason passing system tests does not guarantee passing acceptance tests.
+
+### W8.4-34 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.4] Testing: Types · **Subtopic:** Positive and negative cases · **Source:** W8.4f · **Basis:** body
+
+**Question:** A test enters an incorrect date into a booking system and expects an error message. What kind of test case is this, and which of system and acceptance testing puts more focus on the other kind?
+
+- A. Positive; system testing focuses more on negative test cases
+- B. Negative; system testing uses positive test cases only
+- C. Positive; acceptance testing focuses more on negative test cases
+- D. Negative; acceptance testing focuses more on positive test cases ✅
+
+**Answer:** D
+
+**Explanation:** A negative test case is one where the SUT is not expected to work normally, e.g., incorrect inputs. System testing uses both negative and positive test cases, while acceptance testing puts more focus on positive test cases, where the SUT is expected to work normally.
+
+### W8.4-35 · MRQ
+
+**Type:** MRQ · **Topic:** [W8.4] Testing: Types · **Subtopic:** Requirements vs system spec · **Source:** W8.4f · **Basis:** body
+
+**Question:** Which statements correctly describe differences between a requirements specification and a system specification? (Select all that apply.)
+
+- A. The requirements specification is limited to normal working conditions; the system specification can also describe graceful failure and recovery ✅
+- B. The requirements specification is written in terms of problems to solve; the system specification in terms of how the system solves them ✅
+- C. The system specification could contain additional APIs, not available to end-users, for developers and testers ✅
+- D. The requirements specification lists internal APIs for testers; the system specification covers only the end-user interface
+- E. They must always be kept as two separate documents
+
+**Answer:** A, B, C
+
+**Explanation:** The requirements specification covers normal working conditions, is written in terms of problems, and specifies the interface for intended end-users; the system specification can add graceful failure and recovery, explains how the system solves the problems, and may include extra APIs for developers and testers. In many cases one document serves as both.
+
+### W8.4-36 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.4] Testing: Types · **Subtopic:** Order of testing · **Source:** W8.4f · **Basis:** body
+
+**Question:** Which statement about the order of system testing and acceptance testing is correct?
+
+- A. Acceptance testing comes first, because it is based on the requirements
+- B. Acceptance testing comes after system testing ✅
+- C. They are always done at the same time, by the same team
+- D. Acceptance testing replaces system testing when a use case specification exists
+
+**Answer:** B
+
+**Explanation:** Acceptance testing comes after system testing; like system testing, it tests the whole system, but against the requirements specification and by a team that represents the customer.
+
+### W8.4-37 · MRQ
+
+**Type:** MRQ · **Topic:** [W8.4] Testing: Types · **Subtopic:** Why GUI testing is hard · **Source:** W8.4d · **Basis:** body
+
+**Question:** Which are reasons the course gives for why testing a GUI is harder than testing a CLI or an API? (Select all that apply.)
+
+- A. Most GUIs support many operations, many of which can be performed in any arbitrary order ✅
+- B. Reliably automating GUI operations and verifying the GUI's behavior is harder than comparing a return value ✅
+- C. A GUI's appearance, and sometimes behavior, can differ across platforms and environments ✅
+- D. No tools exist that can automate GUI testing
+
+**Answer:** A, B, C
+
+**Explanation:** GUIs support many operations in arbitrary order, are harder to automate and verify, and can look or behave differently, e.g., when minimized or maximized or on displays of different resolution. Tools that automate GUI testing do exist, such as TestFX.
+
+### W8.4-38 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.4] Testing: Types · **Subtopic:** GUI testing tools · **Source:** W8.4d · **Basis:** body
+
+**Question:** Which pairing of tool and GUI test automation use is correct according to the course?
+
+- A. TestFX — automated testing of web application UIs
+- B. Selenium — 'record replay' testing of JavaFX GUIs
+- C. Playwright — automated testing of JavaFX GUIs
+- D. Visual Studio — 'record replay' type of GUI test automation ✅
+
+**Answer:** D
+
+**Explanation:** Visual Studio supports 'record replay' GUI test automation, TestFX automates testing of JavaFX GUIs, and Selenium, Playwright, Cypress and Puppeteer are among the tools that automate testing of web application UIs.
+
 ## [W8.5] Testing: Intermediate Concepts
 
 ### W8.5-01 · MCQ
@@ -5638,6 +14242,275 @@ int findRate(int input) {
 
 **Explanation:** Test coverage is a metric of the extent to which testing exercises the code, usually measured with a coverage analysis tool such as JaCoCo.
 
+### W8.5-12 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.5] Testing: Intermediate Concepts · **Subtopic:** Increasing testability · **Source:** W8.5c · **Basis:** bold
+
+**Question:** A team wants its software to have high testability. What is testability, and when should they work on increasing it?
+
+- A. The percentage of bugs the tests find; after release, using bug reports
+- B. How easy it is to test an SUT; during design and implementation, which it depends on ✅
+- C. The number of test cases written; during system testing
+- D. How many users try the product; during requirements gathering
+
+**Answer:** B
+
+**Explanation:** Testability is an indication of how easy it is to test an SUT. As it depends a lot on the design and implementation, you should try to increase testability when you design and implement the software.
+
+### W8.5-13 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.5] Testing: Intermediate Concepts · **Subtopic:** Decision coverage · **Source:** W8.5d · **Basis:** bold
+
+**Question:** Under decision/branch coverage, when is the statement `if (score >= 50)` considered covered?
+
+- A. When at least one test case makes the condition true
+- B. When the line containing the `if` has been executed at least once
+- C. When the method containing the `if` has been called from every place it is used
+- D. When separate test cases make the condition evaluate to both true and false ✅
+
+**Answer:** D
+
+**Explanation:** Decision/branch coverage is based on the decision points exercised: an `if` statement that evaluated to both `true` and `false` with separate test cases is considered 'covered'.
+
+### W8.5-14 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.5] Testing: Intermediate Concepts · **Subtopic:** Condition coverage · **Source:** W8.5d · **Basis:** body
+
+**Question:** For `if (x > 2 && x < 44)`, a tester tries to get 100% condition coverage with only `x == 0` and `x == 100`. Why is a case such as `x == 4`, where both conditions are true, also needed?
+
+- A. Because `x < 44` is not evaluated when `x > 2` is false, so `x < 44` is never true in those two cases ✅
+- B. Because condition coverage always needs exactly one more test case than statement coverage
+- C. Because the compiler merges the two conditions into one, which must also be made true
+- D. Because `x == 0` and `x == 100` are in the same equivalence partition
+
+**Answer:** A
+
+**Explanation:** Most execution environments short-circuit `c1 && c2`: `c2` is not evaluated if `c1` is false. With `x == 0` only `x > 2` is evaluated, and with `x == 100` `x < 44` is false, so a case with both true is needed for `x < 44` to be evaluated to true.
+
+### W8.5-15 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.5] Testing: Intermediate Concepts · **Subtopic:** Path coverage inputs · **Source:** W8.5d · **Basis:** body
+
+**Question:** Which set of test inputs achieves 100% path coverage of `findRate` below?
+
+```
+void findRate(int input) {
+    if (input == 0) {
+        return 0;
+    }
+    cap = 100/input;
+    if (cap < 0) {
+        return -1;
+    } else {
+        return cap;
+    }
+}
+```
+
+- A. `1`, `5`, `8`
+- B. `-1`, `-5`, `8`
+- C. `0`, `-5`, `8` ✅
+- D. `0`, `8`, `100`
+
+**Answer:** C
+
+**Explanation:** The method has three paths: `input == 0` returns early, a negative input makes `cap` negative, and a positive input returns `cap`. A zero, a negative value such as `-5` and a positive value such as `8` cover all three; the other sets each miss at least one path.
+
+### W8.5-16 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.5] Testing: Intermediate Concepts · **Subtopic:** Paths through loops · **Source:** W8.5d · **Basis:** body
+
+**Question:** Why is it extremely difficult to achieve 100% path coverage of the method below?
+
+```
+void sayHello(List<String> names) {
+    for (String n : names) {
+        System.out.println(n);
+    }
+}
+```
+
+- A. Because the method has no `if` statements, so it has no paths to cover
+- B. Because each possible length of `names` produces a unique path through the loop ✅
+- C. Because `System.out.println` cannot be called from a test
+- D. Because path coverage cannot be measured for methods that return `void`
+
+**Answer:** B
+
+**Explanation:** A loop can increase the path count greatly: an empty list, a one-entry list, a two-entry list and so on each give a different path, so the number of paths is very large.
+
+### W8.5-17 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.5] Testing: Intermediate Concepts · **Subtopic:** Entry/exit coverage · **Source:** W8.5d · **Basis:** body
+
+**Question:** A tester measures entry/exit coverage of a method. Which of these count as the method's exit points?
+
+- A. Every place in the code from which the method is called
+- B. The last statement inside each loop of the method
+- C. Every assignment statement in the method
+- D. Its return statements and the places where it throws exceptions ✅
+
+**Answer:** D
+
+**Explanation:** Exit points are the points at which control is returned to the caller, e.g., return statements and the throwing of exceptions. The places from which the method is called are its entry points.
+
+### W8.5-18 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.5] Testing: Intermediate Concepts · **Subtopic:** Path analysis notation · **Source:** W8.5d · **Basis:** body
+
+**Question:** A tester wants to analyze the possible paths through a method to plan path coverage. Which notation is commonly used for this?
+
+- A. Sequence diagram
+- B. Class diagram
+- C. Control Flow Graph ✅
+- D. Object diagram
+
+**Answer:** C
+
+**Explanation:** Path coverage measures coverage in terms of possible paths through a part of the code, and a commonly used notation for path analysis is the Control Flow Graph (CFG).
+
+### W8.5-19 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.5] Testing: Intermediate Concepts · **Subtopic:** Coverage criteria · **Source:** W8.5d · **Basis:** body
+
+**Question:** A coverage report states: "testing executed 23k out of 25k LOC" and "testing executed 90 out of 100 functions". Which coverage criteria are these, respectively?
+
+- A. Path coverage; decision coverage
+- B. Statement coverage; function/method coverage ✅
+- C. Condition coverage; entry/exit coverage
+- D. Branch coverage; statement coverage
+
+**Answer:** B
+
+**Explanation:** Statement coverage is based on the number of lines of code executed, and function/method coverage on the number of functions executed.
+
+### W8.5-20 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.5] Testing: Intermediate Concepts · **Subtopic:** Measuring coverage · **Source:** W8.5e · **Basis:** body
+
+**Question:** A team wants to know how much of its code the tests exercise. How is this usually measured?
+
+- A. By counting the number of test cases in the project
+- B. By manually marking each line that a tester believes was executed
+- C. By counting the bugs reported after release
+- D. With coverage analysis tools, which most IDEs support built-in or through plugins ✅
+
+**Answer:** D
+
+**Explanation:** Measuring coverage is often done using coverage analysis tools; most IDEs have inbuilt support for measuring test coverage, or at least plugins that can measure it.
+
+### W8.5-21 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.5] Testing: Intermediate Concepts · **Subtopic:** Purpose of injection · **Source:** W8.5a · **Basis:** body
+
+**Question:** A `Foo` object normally depends on a `Bar` object. A test injects a `BarStub` object into `Foo` instead. What does this achieve?
+
+- A. `Foo` can be tested in isolation from `Bar` ✅
+- B. `Bar` can be tested in isolation from `Foo`
+- C. `Foo` and `Bar` are integration tested together
+- D. Bugs in `Bar` are fixed during the test
+
+**Answer:** A
+
+**Explanation:** After the `BarStub` is injected, the `Foo` object no longer depends on a `Bar` object, so `Foo` can be tested in isolation from `Bar`.
+
+### W8.5-22 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.5] Testing: Intermediate Concepts · **Subtopic:** Injecting a stub · **Source:** W8.5b · **Basis:** body
+
+**Question:** In the code below, which `Payroll` method makes it possible to inject the stub, and what happens if the stub is asked for the salary of `"E003"`?
+
+```
+class Payroll {
+    private SalaryManager manager = new SalaryManager();
+    private String[] employees;
+    void setEmployees(String[] employees) { this.employees = employees; }
+    void setSalaryManager(SalaryManager sm) { this.manager = sm; }
+    double totalSalary() { ... }
+}
+
+class SalaryManagerStub extends SalaryManager {
+    double getSalaryForEmployee(String empID) {
+        if (empID.equals("E001")) {
+            return 1000.0;
+        } else if (empID.equals("E002")) {
+            return 1500.0;
+        } else {
+            throw new Error("unknown id");
+        }
+    }
+}
+```
+
+- A. `setEmployees`; it returns `0.0`
+- B. `setSalaryManager`; it returns `1000.0`
+- C. `totalSalary`; it returns `2500.0`
+- D. `setSalaryManager`; it throws an `Error` ✅
+
+**Answer:** D
+
+**Explanation:** `setSalaryManager(SalaryManager)` replaces the current `SalaryManager`, so a test can inject a `SalaryManagerStub`. The stub returns hard-coded values only for known IDs and throws an `Error("unknown id")` for anything else.
+
+### W8.5-23 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.5] Testing: Intermediate Concepts · **Subtopic:** Defining behavior in TDD · **Source:** W8.5f · **Basis:** body
+
+**Question:** In Test-Driven Development, how is the behavior of the SUT first defined?
+
+- A. Precisely, using test code; the SUT is then updated to match it ✅
+- B. In a requirements document; the tests are written after the SUT
+- C. Informally, in code comments that are refined after implementation
+- D. Through the hard-coded responses of the SUT's stubs
+
+**Answer:** A
+
+**Explanation:** In TDD you first define the precise behavior of the SUT using test code, and then update the SUT to match the specified behavior.
+
+### W8.5-24 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.5] Testing: Intermediate Concepts · **Subtopic:** TDD in small steps · **Source:** W8.5g · **Basis:** body
+
+**Question:** A developer says: "In TDD, I first write all the test cases for the whole feature set, and then I write all the functional code." Is this an accurate description of TDD?
+
+- A. Yes; that is what writing tests before the SUT means
+- B. No; in TDD the functional code is written first, then the tests
+- C. No; TDD proceeds in small steps, one small unit of behavior at a time ✅
+- D. Yes, provided every test fails before the functional code is written
+
+**Answer:** C
+
+**Explanation:** TDD does not imply writing all the test cases before writing functional code. Rather, you proceed in small steps: write or modify a test for one behavior, implement it, and repeat the cycle for each small unit of behavior.
+
+### W8.5-25 · MCQ
+
+**Type:** MCQ · **Topic:** [W8.5] Testing: Intermediate Concepts · **Subtopic:** TDD cycle · **Source:** W8.5g · **Basis:** body
+
+**Question:** In the TDD cycle, what is done right after writing or modifying a test case, and what is done once all test cases pass?
+
+- A. Implement the behavior; release the code
+- B. Run the tests and watch them fail; refactor the code to improve quality ✅
+- C. Run the tests and watch them pass; write the next test case
+- D. Refactor the code; delete the tests that now pass
+
+**Answer:** B
+
+**Explanation:** After writing or modifying a test case, you run the test cases and watch them fail; you then implement the behavior and rerun until all pass, after which you refactor the code to improve quality before repeating the cycle.
+
+### W8.5-26 · MRQ
+
+**Type:** MRQ · **Topic:** [W8.5] Testing: Intermediate Concepts · **Subtopic:** Three rules of TDD · **Source:** W8.5g · **Basis:** body
+
+**Question:** Which of these are among the three rules of TDD cited by some TDD proponents? (Select all that apply.)
+
+- A. You are not allowed to write any production code unless it is to make a failing unit test pass ✅
+- B. You are not allowed to write all the unit tests of a class before writing any production code
+- C. You are not allowed to write any more of a unit test than is sufficient to fail, and compilation failures are failures ✅
+- D. You are not allowed to write any more production code than is sufficient to pass the one failing unit test ✅
+
+**Answer:** A, C, D
+
+**Explanation:** The three rules are: no production code except to make a failing unit test pass; no more of a unit test than is sufficient to fail, counting compilation failures as failures; and no more production code than is sufficient to pass the one failing unit test. They emphasize proceeding in very small steps.
+
 ---
 
 # Week 9
@@ -5704,6 +14577,51 @@ int findRate(int input) {
 
 **Explanation:** CCDs model only the problem domain and omit navigability and methods. Classes like `ModelManager` exist only in the software solution.
 
+### W9.1-05 · MRQ
+
+**Type:** MRQ · **Topic:** [W9.1] Conceptual Class Diagrams (aka OODMs) · **Subtopic:** Domain modeling notations · **Source:** W9.1a · **Basis:** bold
+
+**Question:** Which notations can be used for domain modeling? (Select all that apply.)
+
+- A. A domain-specific modeling notation, if one exists, e.g. one for the banking domain ✅
+- B. A general-purpose modeling notation such as UML, e.g. an activity diagram of a loan workflow ✅
+- C. Other general-purpose notations, e.g. an organization chart of the employee hierarchy ✅
+- D. Only UML class diagrams, since domain models must be object-oriented
+
+**Answer:** A, B, C
+
+**Explanation:** Domain modeling can be done using a domain-specific notation if such a notation exists, a general-purpose modeling notation such as UML, or even other general-purpose notations such as an organization chart.
+
+### W9.1-06 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.1] Conceptual Class Diagrams (aka OODMs) · **Subtopic:** Why OODM is misleading · **Source:** W9.1a · **Basis:** body
+
+**Question:** Conceptual class diagrams (CCDs) are sometimes called OO domain models (OODMs). Why is that name somewhat misleading?
+
+- A. CCDs model the solution domain, not the problem domain
+- B. CCDs are not object-oriented
+- C. CCDs are only one type of domain model that can model an OOP problem domain ✅
+- D. CCDs include solution-specific classes such as `DatabaseConnection`
+
+**Answer:** C
+
+**Explanation:** CCDs capture class structures in the problem domain and are a lighter version of class diagrams. The OODM name is misleading because CCDs are actually only one type of domain model that can model an OOP problem domain.
+
+### W9.1-07 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.1] Conceptual Class Diagrams (aka OODMs) · **Subtopic:** CCDs and behavior · **Source:** W9.1a · **Basis:** bold
+
+**Question:** A team has drawn a CCD for a snakes and ladders game and now wants to show how a player's turn proceeds. Should they add this to the CCD?
+
+- A. Yes; CCDs show both the class structure and the behavior of the problem domain
+- B. Yes, by adding the methods of each class to the CCD
+- C. No; behavior belongs only in the code, not in models
+- D. No; CCDs show structure, not behavior ✅
+
+**Answer:** D
+
+**Explanation:** Like class diagrams, CCDs represent the class structure of the problem domain and not its behavior; CCD notation even omits methods. To show behavior, use other diagrams such as sequence diagrams.
+
 ## [W9.2] Activity Diagrams
 
 ### W9.2-01 · MCQ
@@ -5751,6 +14669,142 @@ int findRate(int input) {
 
 **Explanation:** It models a workflow with an alternate path, which is what activity diagrams are for.
 
+### W9.2-04 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.2] Activity Diagrams · **Subtopic:** Actions and control flows · **Source:** W9.2a · **Basis:** panel
+
+**Question:** Activity diagrams are the UML equivalent of which diagram type, and how is a single action drawn?
+
+- A. Sequence diagrams; a rectangle with square corners
+- B. Flow charts; a diamond
+- C. State charts; a rectangle with rounded corners
+- D. Flow charts; a rectangle with rounded corners ✅
+
+**Answer:** D
+
+**Explanation:** Activity diagrams model workflows and are the UML equivalent of flow charts. An action, a single step in an activity, is a rectangle with rounded corners; a control flow is a line with an arrowhead.
+
+### W9.2-05 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.2] Activity Diagrams · **Subtopic:** Branch nodes and guards · **Source:** W9.2a · **Basis:** panel
+
+**Question:** In an activity diagram, how are alternate paths started, and what rule do their guard conditions follow?
+
+- A. With a bar; all guard conditions may be true at once
+- B. With a diamond; guards are in square brackets and exactly one should be true ✅
+- C. With a diamond; guards are in round brackets and at least one should be true
+- D. With a rounded rectangle; guards are written inside the action
+
+**Answer:** B
+
+**Explanation:** A branch node, a diamond, starts alternate paths, and a merge node (also a diamond) ends them. Each flow out of a branch has a guard condition in square brackets, and exactly one guard should be true at any branch node.
+
+### W9.2-06 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.2] Activity Diagrams · **Subtopic:** Overlapping guards · **Source:** W9.2a · **Basis:** panel
+
+**Question:** A branch node in an activity diagram has two outgoing flows with guards `[x >= 5]` and `[x <= 5]`. Why is this incorrect?
+
+- A. Guards may not use comparison operators
+- B. A branch node must have more than two outgoing flows
+- C. Both guards are true when `x` is 5 ✅
+- D. One of the guards must be written as `[else]`
+
+**Answer:** C
+
+**Explanation:** Exactly one of the guard conditions should be true at any branch node. At `x = 5` both guards are true, so the diagram is incorrect.
+
+### W9.2-07 · MRQ
+
+**Type:** MRQ · **Topic:** [W9.2] Activity Diagrams · **Subtopic:** Alternate path simplifications · **Source:** W9.2a · **Basis:** panel
+
+**Question:** Which simplifications of alternate paths are acceptable by convention in activity diagrams? (Select all that apply.)
+
+- A. Omitting the merge node if it does not cause ambiguity ✅
+- B. Starting multiple arrows from the same corner of a branch node ✅
+- C. Omitting the square brackets around guard conditions
+- D. Omitting the `[else]` guard when all other paths have guards ✅
+
+**Answer:** A, B, D
+
+**Explanation:** By convention, the merge node can be omitted if unambiguous, several arrows may start from the same corner of a branch node, and with `n` paths of which `n-1` have guards the remaining one is read as `[else]`. Guard conditions must still be in square brackets.
+
+### W9.2-08 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.2] Activity Diagrams · **Subtopic:** Forks and joins · **Source:** W9.2a · **Basis:** panel
+
+**Question:** In an activity diagram, how are fork and join nodes drawn, and what rule applies at the join?
+
+- A. Both as a bar; all parallel paths must complete before the flow leaving the join can start ✅
+- B. Both as a diamond; the first path to finish continues past the join
+- C. Fork as a bar and join as a diamond; any one path may continue past the join
+- D. Both as a bar; the paths must be executed one after another, not interleaved
+
+**Answer:** A
+
+**Explanation:** Fork nodes start and join nodes end parallel paths, and both are drawn as a bar. Execution along all parallel paths must be complete before execution starts on the outgoing control flow of the join; actions on different paths may interleave.
+
+### W9.2-09 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.2] Activity Diagrams · **Subtopic:** Valid parallel sequences · **Source:** W9.2a · **Basis:** panel
+
+**Question:** A fork starts two parallel paths: one with actions `G1` then `G2`, the other with `H1` then `H2`; both end at a join. Which action sequence is NOT supported by this diagram?
+
+- A. `G1 G2 H1 H2`
+- B. `G1 H1 G2 H2`
+- C. `G1 H1 H2 G2`
+- D. `G1 H2 G2 H1` ✅
+
+**Answer:** D
+
+**Explanation:** Actions in parallel paths can interleave, provided all paths are completed eventually and the actions within each path follow the given order. `H2` before `H1` breaks the order of the second path.
+
+### W9.2-10 · MRQ
+
+**Type:** MRQ · **Topic:** [W9.2] Activity Diagrams · **Subtopic:** Correct notation rules · **Source:** W9.2a · **Basis:** panel
+
+**Question:** Which statements about activity diagram notation are correct? (Select all that apply.)
+
+- A. There can be more than two parallel paths from a fork ✅
+- B. A branch may loop back to the original branch node ✅
+- C. Double-headed arrows can be used for flows that go both ways
+- D. An activity can consist of only one action ✅
+- E. Parallel paths starting from one fork may end at different join nodes
+
+**Answer:** A, B, D
+
+**Explanation:** More than two parallel (or alternate) paths are fine, a branch may form a loop back to its branch node, and an activity can have just one action. There cannot be double-headed arrows, and all parallel paths started from a fork should end in the same join node.
+
+### W9.2-11 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.2] Activity Diagrams · **Subtopic:** Rakes · **Source:** W9.2b · **Basis:** panel
+
+**Question:** In a Snakes and Ladders activity diagram, the `Move piece` action carries a rake symbol. What does it indicate?
+
+- A. The action is repeated until the game ends
+- B. The action is detailed in a separate diagram ✅
+- C. The action is performed in parallel by all players
+- D. The action is optional and may be skipped
+
+**Answer:** B
+
+**Explanation:** The rake notation indicates that part of the activity is given as a separate diagram; here, `Move piece` is described in another subsidiary activity diagram.
+
+### W9.2-12 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.2] Activity Diagrams · **Subtopic:** Swimlanes · **Source:** W9.2b · **Basis:** panel
+
+**Question:** An activity diagram for an online shop is partitioned into lanes labelled `Customer`, `System` and `Warehouse`, with each action placed in one lane. What is this kind of diagram called?
+
+- A. A component diagram
+- B. A sequence diagram
+- C. A swimlane diagram ✅
+- D. A state machine diagram
+
+**Answer:** C
+
+**Explanation:** An activity diagram can be partitioned to show who is doing which action; such partitioned activity diagrams are sometimes called swimlane diagrams.
+
 ## [W9.3] Conceptualizing a Design
 
 ### W9.3-01 · MCQ
@@ -5797,6 +14851,51 @@ int findRate(int input) {
 **Answer:** D
 
 **Explanation:** It is not necessary to draw elaborate diagrams capturing all details of the design.
+
+### W9.3-04 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.3] Conceptualizing a Design · **Subtopic:** TextUi and cell appearance · **Source:** W9.3c · **Basis:** body
+
+**Question:** In the course's Minesweeper design, `TextUi` does not access `Cell` objects directly. How does it get what to display for each cell?
+
+- A. It gets `CELL_APPEARANCE` values from `Logic` ✅
+- B. It reads the mine locations from a `ConfigGenerator`
+- C. It asks each `Cell` object through `Minefield`'s public fields
+- D. It keeps its own copy of the minefield, updated after each command
+
+**Answer:** A
+
+**Explanation:** In that design `TextUi` gets values of type `CELL_APPEARANCE` (such as `HIDDEN`, `MARKED`) from `Logic#getAppearanceOfCellAt` to display the minefield. Passing cells or the entire minefield directly to `TextUi` is mentioned only as an alternative.
+
+### W9.3-05 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.3] Conceptualizing a Design · **Subtopic:** Supporting getGameState · **Source:** W9.3c · **Basis:** body
+
+**Question:** In the Minesweeper design, which pair describes the two ways given for supporting `Logic#getGameState()`?
+
+- A. `TextUi` computes the state, or the `Player` reports it
+- B. `Minefield` knows it and `Logic` fetches it, or `Logic` maintains it ✅
+- C. Each `Cell` stores the state, or `Timer` stores it
+- D. The state is recomputed from scratch on every call, or it is stored in a file
+
+**Answer:** B
+
+**Explanation:** The two options given (others are possible) are: the `Minefield` class knows the game state and `Logic` retrieves it when needed, or the `Logic` class maintains the game state at all times, updating it after every mark/clear action.
+
+### W9.3-06 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.3] Conceptualizing a Design · **Subtopic:** Abstracting away details · **Source:** W9.3b · **Basis:** body
+
+**Question:** A sequence diagram of `Logic#newGame()` shows a `Minefield` object being created, and the course notes that the behavior of the `Minefield` constructor "has been abstracted away". What does this mean?
+
+- A. The constructor is empty and does nothing
+- B. The constructor will be generated automatically by a tool
+- C. Its behavior is left to be designed at a later stage ✅
+- D. The constructor has been moved into the `Logic` class
+
+**Answer:** C
+
+**Explanation:** Abstracting away the constructor's behavior means omitting its details from the current model; it can be designed at a later stage, as is done later when exploring what happens inside the `Minefield` constructor.
 
 ## [W9.4] Architecture Diagrams: Drawing
 
@@ -5859,6 +14958,36 @@ int findRate(int input) {
 **Answer:** C
 
 **Explanation:** `Storage` remains an accurate name even if the JSON implementation is replaced.
+
+### W9.4-05 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.4] Architecture Diagrams: Drawing · **Subtopic:** Double-headed arrows · **Source:** W9.4a · **Basis:** bold
+
+**Question:** Two architecture diagrams show the same software. One uses directed arrows; the other uses double-headed arrows between every pair of connected components. What important information is lost in the second?
+
+- A. The number of components in the system and their names
+- B. Which of the components store their data in a database
+- C. The responsibilities of each component in the system
+- D. Only `GUI` and `Logic` have a genuinely bidirectional dependency ✅
+
+**Answer:** D
+
+**Explanation:** Avoid the indiscriminate use of double-headed arrows when directions can be used more meaningfully. When every arrow is double-headed, the important fact that `GUI` has a genuinely bidirectional dependency with `Logic` is no longer visible.
+
+### W9.4-06 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.4] Architecture Diagrams: Drawing · **Subtopic:** Two kinds of arrow · **Source:** W9.4a · **Basis:** body
+
+**Question:** Your architecture diagram needs two kinds of arrow: one for dependencies and one for network messages. What does the course advise?
+
+- A. Use the same arrow for both and explain the difference in the surrounding text
+- B. Make the two kinds visually different and label both in the legend ✅
+- C. Draw two separate diagrams, since one diagram may have only one kind of arrow
+- D. Use UML notation, which defines a standard arrow for network messages
+
+**Answer:** B
+
+**Explanation:** Use familiar symbols and explain them in a legend, such as a drum shape for a database. If you need two kinds of arrow, make them visually different and label both in the legend.
 
 ## [W9.5] Design Principles
 
@@ -6102,6 +15231,266 @@ int findRate(int input) {
 
 **Explanation:** Each class addresses one concern and has one reason to change, which also raises cohesion.
 
+### W9.5-17 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.5] Design Principles · **Subtopic:** SRP statement · **Source:** W9.5b · **Basis:** bold
+
+**Question:** Which statement is Robert C. Martin's single responsibility principle?
+
+- A. No client should be forced to depend on methods it does not use
+- B. Derived classes must be substitutable for their base classes
+- C. A class should have one, and only one, reason to change ✅
+- D. A module should be open for extension but closed for modification
+
+**Answer:** C
+
+**Explanation:** SRP says a class should have one, and only one, reason to change; as Martin puts it, gather together the things that change for the same reasons and separate those that change for different reasons. The other statements are ISP, LSP and OCP.
+
+### W9.5-18 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.5] Design Principles · **Subtopic:** Achieving OCP · **Source:** W9.5d · **Basis:** body
+
+**Question:** In object-oriented programming, how is the open-closed principle often achieved?
+
+- A. By making all fields of a module public so others can change them
+- B. By separating the specification (interface) of a module from its implementation ✅
+- C. By copying a module and editing the copy for each new behavior
+- D. By merging related modules into one large class
+
+**Answer:** B
+
+**Explanation:** OCP can be achieved in various ways, often by separating a module's specification (its interface) from its implementation, so behavior can be extended without modifying the module.
+
+### W9.5-19 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.5] Design Principles · **Subtopic:** Generics and OCP · **Source:** W9.5d · **Basis:** body
+
+**Question:** Consider the code below. The same `ArrayList` class acts as a container of `Student` objects in one case and of `Admin` objects in the other, without its code changing. Which principle does this illustrate?
+
+```
+ArrayList students = new ArrayList<Student>();
+ArrayList admins = new ArrayList<Admin>();
+```
+
+- A. The open-closed principle ✅
+- B. The Liskov substitution principle
+- C. The interface segregation principle
+- D. The Law of Demeter
+
+**Answer:** A
+
+**Explanation:** Passing a different class as a parameter alters the behavior of a generic class without modifying its code, so `ArrayList` is open for extension but closed for modification.
+
+### W9.5-20 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.5] Design Principles · **Subtopic:** CommandQueue example · **Source:** W9.5d · **Basis:** body
+
+**Question:** `CommandQueue` executes `Command` objects, and `List`, `Sort` and `Reset` are subclasses of `Command`. Adding a new `Delete` subclass lets `CommandQueue` perform delete commands without any change to its code. How does the open-closed principle describe `CommandQueue`?
+
+- A. Closed to extension, but open to modification
+- B. In violation of the principle, because its behavior changed
+- C. Open to extension, but closed to modification ✅
+- D. In violation of the principle, because it depends on `Command`
+
+**Answer:** C
+
+**Explanation:** The behavior of `CommandQueue` was extended by adding a new `Command` subclass, without modifying its code. That is exactly what being open to extension but closed to modification means.
+
+### W9.5-21 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.5] Design Principles · **Subtopic:** A subclass that follows LSP · **Source:** W9.5c · **Basis:** body
+
+**Question:** `Payroll` relies on `Staff#adjustMySalary(int percent)`, which is specified to work for all positive percent values. The subclass `Admin` overrides it so that it works for both negative and positive values. Does `Admin` follow the Liskov substitution principle?
+
+- A. No, because it accepts values the superclass does not
+- B. Yes, because it fulfills what `Payroll` expects of `Staff` objects ✅
+- C. No, because any override of a superclass method violates LSP
+- D. Yes, but only if `Admin` is declared `final`
+
+**Answer:** B
+
+**Explanation:** `Admin` still works for all positive values, so substituting it for `Staff` does not break `Payroll`. LSP is violated when a subclass is more restrictive than the superclass's specified behavior, not when it is less restrictive.
+
+### W9.5-22 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.5] Design Principles · **Subtopic:** LSP beyond substitutability · **Source:** W9.5c · **Basis:** bold
+
+**Question:** The Java compiler already lets you substitute a subclass object wherever a superclass object is expected. In what way does LSP go beyond this?
+
+- A. It requires that subclasses never override any superclass methods
+- B. It requires that a subclass declare the same fields as its superclass
+- C. It applies only to interfaces and their implementations, not to classes
+- D. A subclass must not be more restrictive than the superclass specifies ✅
+
+**Answer:** D
+
+**Explanation:** LSP implies a subclass should not be more restrictive than the behavior the superclass specifies. If it is, substituting a subclass object for a superclass object can break the code's functionality even though the compiler allows it.
+
+### W9.5-23 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.5] Design Principles · **Subtopic:** Why DIP adds flexibility · **Source:** W9.5g · **Basis:** body
+
+**Question:** In design (a), `Payroll` depends directly on `Employee`. In design (b), both `Payroll` and `Employee` depend on a `Payee` interface, which `Employee` implements. Why is design (b) more flexible?
+
+- A. `Employee` no longer needs to provide any methods
+- B. `Payroll` can now access the private fields of `Employee`
+- C. `Payroll` need not change when `Employee` changes ✅
+- D. It removes all dependencies, since implementing an interface is not a dependency
+
+**Answer:** C
+
+**Explanation:** In design (b) the higher-level `Payroll` and the lower-level `Employee` both depend on the abstraction, so `Payroll` need not change when `Employee` changes and the design is less coupled. Inheritance is itself a dependency, so dependencies do not disappear.
+
+### W9.5-24 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.5] Design Principles · **Subtopic:** The SOLID acronym · **Source:** W9.5h · **Basis:** body
+
+**Question:** In the acronym SOLID, what does the letter "I" stand for?
+
+- A. Information Hiding Principle
+- B. Inheritance Integrity Principle
+- C. Iterative Improvement Principle
+- D. Interface Segregation Principle ✅
+
+**Answer:** D
+
+**Explanation:** SOLID is made up of the first letters of the Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation and Dependency Inversion principles.
+
+### W9.5-25 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.5] Design Principles · **Subtopic:** Who proposed which principle · **Source:** W9.5h · **Basis:** body
+
+**Question:** Which pairing of a SOLID principle with the person the course credits for it is correct?
+
+- A. Open-closed principle — Bertrand Meyer ✅
+- B. Liskov substitution principle — Robert C. Martin
+- C. Single responsibility principle — Barbara Liskov
+- D. Single responsibility principle — Bertrand Meyer
+
+**Answer:** A
+
+**Explanation:** The open-closed principle was proposed by Bertrand Meyer, the Liskov substitution principle by Barbara Liskov, and the single responsibility principle by Robert C. Martin.
+
+### W9.5-26 · MRQ
+
+**Type:** MRQ · **Topic:** [W9.5] Design Principles · **Subtopic:** What counts as a concern · **Source:** W9.5a · **Basis:** body
+
+**Question:** In a payroll application, which of these can be treated as separate "concerns" in the sense of the separation of concerns principle? (Select all that apply.)
+
+- A. The code related to the `add employee` feature ✅
+- B. The code related to persistence or security ✅
+- C. The programming language the application is written in
+- D. The code related to the `Employee` entity ✅
+
+**Answer:** A, B, D
+
+**Explanation:** A concern is a set of information that affects the code of a program; the course's payroll examples are a specific feature, a specific aspect such as persistence or security, and a specific entity. The implementation language is not a section of code that can be separated out.
+
+### W9.5-27 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.5] Design Principles · **Subtopic:** Effect of SoC · **Source:** W9.5a · **Basis:** bold
+
+**Question:** A team separates its persistence code from its security code so that a change to how data are persisted does not require changes to security. What effect on cohesion and coupling should applying this principle have?
+
+- A. Higher cohesion and lower coupling ✅
+- B. Lower cohesion and higher coupling
+- C. Higher cohesion and higher coupling
+- D. Lower cohesion and lower coupling
+
+**Answer:** A
+
+**Explanation:** Separation of concerns reduces functional overlaps among code sections and limits the ripple effect of changes, so it should lead to higher cohesion and lower coupling.
+
+### W9.5-28 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.5] Design Principles · **Subtopic:** Levels of SoC · **Source:** W9.5a · **Basis:** bold
+
+**Question:** At which levels can the separation of concerns principle be applied?
+
+- A. Only within individual methods
+- B. At the class level and at higher levels ✅
+- C. Only at the class level, never higher
+- D. Only at the architecture (layer) level
+
+**Answer:** B
+
+**Explanation:** SoC can be applied at the class level as well as at higher levels; for example, an application can be divided into layers, each with a well-defined responsibility that does not overlap with the others.
+
+### W9.5-29 · MRQ
+
+**Type:** MRQ · **Topic:** [W9.5] Design Principles · **Subtopic:** Objects a method may call · **Source:** W9.5e · **Basis:** body
+
+**Question:** According to the Law of Demeter, a method `m` of an object `O` may invoke the methods of which objects? (Select all that apply.)
+
+- A. The object `O` itself ✅
+- B. Objects passed as parameters of `m` ✅
+- C. Objects returned by a getter called on one of `m`'s parameters
+- D. Objects created or instantiated in `m` ✅
+
+**Answer:** A, B, D
+
+**Explanation:** The object itself, the parameters of `m` and objects created in `m` are "friends". An object obtained from a parameter's getter is a friend of a friend, a "stranger", so calling its methods violates the Law of Demeter.
+
+### W9.5-30 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.5] Design Principles · **Subtopic:** Aim of the Law of Demeter · **Source:** W9.5e · **Basis:** bold
+
+**Question:** What does the Law of Demeter aim to prevent?
+
+- A. Classes having more than one reason to change
+- B. Duplication of the same knowledge in several places
+- C. Objects navigating the internal structures of other objects ✅
+- D. Clients depending on methods they do not use
+
+**Answer:** C
+
+**Explanation:** LoD aims to prevent objects from navigating the internal structures of other objects: an object should have limited knowledge of, and interact only with, objects closely related to it. The other aims belong to SRP, DRY and ISP.
+
+### W9.5-31 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.5] Design Principles · **Subtopic:** Rationale for YAGNI · **Source:** W9.5i · **Basis:** body
+
+**Question:** What is the rationale behind the YAGNI principle?
+
+- A. Code written early in a project always contains more defects than later code
+- B. Without perfect knowledge of the future, such work may go to waste ✅
+- C. Users never ask for new features once a product has been released
+- D. Adding code for future needs always violates the DRY principle
+
+**Answer:** B
+
+**Explanation:** YAGNI says not to add code simply because you might need it in the future. Since you do not have perfect information about the future, some extra work done for a predicted need may be wasted when the prediction fails to materialize.
+
+### W9.5-32 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.5] Design Principles · **Subtopic:** DRY statement · **Source:** W9.5j · **Basis:** bold
+
+**Question:** Which statement expresses the DRY (Don't Repeat Yourself) principle?
+
+- A. Do not add code simply because you think you might need it in the future
+- B. An object should only interact with other objects that are closely related to it
+- C. A class should have one, and only one, reason to change over its lifetime
+- D. Every piece of knowledge must have a single, authoritative representation ✅
+
+**Answer:** D
+
+**Explanation:** DRY, from The Pragmatic Programmer, guards against duplication of information: every piece of knowledge must have a single, unambiguous, authoritative representation within a system. The other statements are YAGNI, the Law of Demeter and SRP.
+
+### W9.5-33 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.5] Design Principles · **Subtopic:** Brooks' law and deadlines · **Source:** W9.5k · **Basis:** body
+
+**Question:** According to the explanation of Brooks' law, when is adding people to a project especially likely to make it later?
+
+- A. When it is done near a deadline ✅
+- B. When the newcomers are very experienced
+- C. At the very start, before any code exists
+- D. When the team is co-located in one office
+
+**Answer:** A
+
+**Explanation:** Adding people to a late project makes it later because the additional communication overhead outweighs the benefit of the extra manpower, especially if done near a deadline.
+
 ## [W9.6] [Revisiting] SDLC Process Models
 
 ### W9.6-01 · MCQ
@@ -6178,6 +15567,126 @@ int findRate(int input) {
 **Answer:** A
 
 **Explanation:** Defect reports, actual usage and requests for new capability become inputs to later work. Process models differ in how they partition and name these activities.
+
+### W9.6-06 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.6] [Revisiting] SDLC Process Models · **Subtopic:** Process model roadmap · **Source:** W9.6a · **Basis:** body
+
+**Question:** What does each software process model prescribe for the development effort?
+
+- A. The programming language and tools that the team must use
+- B. A roadmap: stage aims, stage outcomes and how stages relate ✅
+- C. The exact number of developers needed for each stage
+- D. A fixed schedule of dates for every deliverable
+
+**Answer:** B
+
+**Explanation:** Each process model prescribes a 'roadmap' for the development effort: the aims of the development stages, the outcome of each stage, and how the stages relate to one another.
+
+### W9.6-07 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.6] [Revisiting] SDLC Process Models · **Subtopic:** After release · **Source:** W9.6a · **Basis:** body
+
+**Question:** A product has been in use for two years. Which inputs from this period does the course say feed back into later development?
+
+- A. Only defects, since new features belong in a separate future product
+- B. Only the original requirements document, kept up to date by the team
+- C. None, since development ends at release and maintenance is separate
+- D. Defects reported by users, actual usage, and requests for things it cannot yet do ✅
+
+**Answer:** D
+
+**Explanation:** Defects reported by users, the way the software is actually used, and requests for things it cannot yet do all become inputs to later work. Most software spends far longer in this state than it spent being built for the first time.
+
+### W9.6-08 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.6] [Revisiting] SDLC Process Models · **Subtopic:** Tracking sequential progress · **Source:** W9.6b · **Basis:** body
+
+**Question:** A manager on a sequential project wants to monitor progress. What is easy to see and what is hard?
+
+- A. Which stage the project is in is easy; progress within a long stage is hard ✅
+- B. Progress within a stage is easy; which stage the project is in is hard
+- C. Both are hard, since no stage has a well-defined outcome
+- D. Both are easy, since each stage has a well-defined outcome
+
+**Answer:** A
+
+**Explanation:** As each stage has a well-defined outcome, progress is visible from which stage the project is in. Progress within a long stage, which is where an overrun usually builds up, stays much harder to see.
+
+### W9.6-09 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.6] [Revisiting] SDLC Process Models · **Subtopic:** Late feedback · **Source:** W9.6b · **Basis:** bold
+
+**Question:** Besides needing a well-understood problem, what second weakness of the sequential model does the course highlight?
+
+- A. It produces too many working versions for the team to keep track of
+- B. It requires customers to give detailed feedback every single week
+- C. Feedback arrives late, so early mistakes surface when going back costs the most ✅
+- D. It cannot produce any documents describing the outcome of each stage
+
+**Answer:** C
+
+**Explanation:** Each stage's output is checked mainly by the stage that follows it, so integration and contact with real users come near the end. A mistake made in requirements or design tends to surface where going back to completed work costs the most.
+
+### W9.6-10 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.6] [Revisiting] SDLC Process Models · **Subtopic:** Breadth-first · **Source:** W9.6c · **Basis:** bold
+
+**Question:** A team evolves all major components and all functionality areas in every iteration, ending each iteration with a working product. Which approach is this?
+
+- A. Depth-first
+- B. Breadth-first ✅
+- C. Sequential
+- D. Code-and-fix
+
+**Answer:** B
+
+**Explanation:** In the breadth-first approach, an iteration evolves all major components and all functionality areas in parallel, producing a working product at the end of each iteration. Depth-first iterations flesh out only some components and might not produce a working product.
+
+### W9.6-11 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.6] [Revisiting] SDLC Process Models · **Subtopic:** Breadth-first Minesweeper · **Source:** W9.6c · **Basis:** body
+
+**Question:** A team builds a Minesweeper game using breadth-first iterations. What would an early version most likely look like?
+
+- A. A complete, polished UI with no game logic behind it
+- B. Only the logic that generates initial minefield layouts
+- C. Nothing playable until the final iteration is done
+- D. Fully playable, but with a primitive text UI and fixed board ✅
+
+**Answer:** D
+
+**Explanation:** Breadth-first iterations deliver a fully playable version early, though with primitive functionality such as a rudimentary text-based UI, a fixed board size and limited minefield layouts, which later iterations improve.
+
+### W9.6-12 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.6] [Revisiting] SDLC Process Models · **Subtopic:** Mixing approaches · **Source:** W9.6c · **Basis:** bold
+
+**Question:** Can a single project mix breadth-first and depth-first iterations?
+
+- A. No; a project must pick one approach and keep it throughout
+- B. Only across iterations, never within a single iteration
+- C. Only within a single iteration, never across iterations
+- D. Yes, both within one iteration and across different iterations ✅
+
+**Answer:** D
+
+**Explanation:** A project can be done as a mixture: an iteration can contain some breadth-first and some depth-first work, or some iterations can be breadth-first while others are depth-first.
+
+### W9.6-13 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.6] [Revisiting] SDLC Process Models · **Subtopic:** Early iterations · **Source:** W9.6c · **Basis:** body
+
+**Question:** Which assumptions does the course say are worth putting into an early iteration rather than a late one?
+
+- A. Those that are cheapest to test, so that quick progress can be shown
+- B. Those that the customer has shown the least interest in so far
+- C. Those whose failure would cost the most, such as an unfamiliar user need ✅
+- D. Those that have already been proven in the team's earlier projects
+
+**Answer:** C
+
+**Explanation:** An early iteration is a chance to find out you were wrong while changing course is still cheap, so assumptions whose failure would cost the most, such as an unproven technology, an unfamiliar user need or an unmet performance target, belong early.
 
 ## [W9.7] SDLC Process Models (continued)
 
@@ -6424,6 +15933,486 @@ int findRate(int input) {
 
 **Explanation:** XP pushes integration to happen continuously instead of near the end. The workflow does not by itself show that tests were written before the code, so it is not evidence of TDD.
 
+### W9.7-17 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** Agile manifesto origin · **Source:** W9.7a · **Basis:** body
+
+**Question:** What gave rise to the agile manifesto?
+
+- A. A 2001 meeting of practitioners reacting against heavyweight, documentation-driven processes ✅
+- B. A 1990s standard issued by a national software engineering institute for large projects
+- C. A survey of customers who were unhappy with the results of iterative models
+- D. A 2001 committee formed to standardize the waterfall model for large projects
+
+**Answer:** A
+
+**Explanation:** In 2001, prominent software engineering practitioners, among them authors of several lightweight methods, met to articulate the values their approaches shared. They were reacting against the documentation-driven, heavyweight processes used in most large projects then.
+
+### W9.7-18 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** Agile values · **Source:** W9.7a · **Basis:** body
+
+**Question:** A team claims that, being agile, it should write no documentation and make no plans. How does this match the agile manifesto?
+
+- A. It matches; the manifesto rejects both documentation and plans outright
+- B. It does not; the items on the right still have value, but the left is valued more ✅
+- C. It matches for plans only, since responding to change replaces planning
+- D. It does not; the manifesto values documentation over working software
+
+**Answer:** B
+
+**Explanation:** The manifesto values working software over comprehensive documentation and responding to change over following a plan, adding that while there is value in the items on the right, the items on the left are valued more.
+
+### W9.7-19 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** When agile fits · **Source:** W9.7a · **Basis:** bold
+
+**Question:** For which project is an agile approach least likely to be a good fit?
+
+- A. A product whose customer can give feedback continuously
+- B. A web app where shipping a change is cheap
+- C. A start-up product whose requirements are still emerging
+- D. A fixed-price contract with a signed-off scope ✅
+
+**Answer:** D
+
+**Explanation:** Agile approaches depend on a customer available to give feedback continuously and the ability to ship a change cheaply. They are not a good fit when those conditions are absent, for example in a fixed-price contract with signed-off scope or when software must be certified before release.
+
+### W9.7-20 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** Shared responsibility · **Source:** W9.7a · **Basis:** bold
+
+**Question:** In an agile team, who is responsible for delivering the product?
+
+- A. The project manager, who assigns the tasks and reports progress upward
+- B. The team as a whole, which shares responsibility and reports progress openly ✅
+- C. The customer, who decides what is built and when it is delivered
+- D. The lead developer, who approves every change before it is released
+
+**Answer:** B
+
+**Explanation:** In agile approaches, the team shares responsibility for delivering the product and reports progress openly to each other and to the user.
+
+### W9.7-21 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** XP and the customer · **Source:** W9.7c · **Basis:** bold
+
+**Question:** Which statement describes how Extreme Programming (XP) delivers software?
+
+- A. It delivers the software you need as you need it ✅
+- B. It delivers everything at once on a date fixed far in advance
+- C. It delivers software only after a complete design is approved
+- D. It delivers software once all the documentation is complete
+
+**Answer:** A
+
+**Explanation:** XP stresses customer satisfaction. Instead of delivering everything you could possibly want on some date far in the future, it delivers the software you need as you need it.
+
+### W9.7-22 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** XP teamwork · **Source:** W9.7c · **Basis:** body
+
+**Question:** In an XP team, how are managers, customers and developers related?
+
+- A. Managers direct developers, and customers sign off at the end
+- B. Customers lead the work, and managers and developers follow
+- C. They are equal partners in a collaborative, self-organizing team ✅
+- D. Developers work alone, with managers relaying customer needs
+
+**Answer:** C
+
+**Explanation:** XP emphasizes teamwork: managers, customers and developers are all equal partners in a collaborative team, which self-organizes around the problem to solve it as efficiently as possible.
+
+### W9.7-23 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** XP practices · **Source:** W9.7c · **Basis:** body
+
+**Question:** An XP developer writes a failing test for a new method before writing the method itself. Which practice is this?
+
+- A. Pair programming
+- B. Test-driven development ✅
+- C. Continuous integration
+- D. Small releases
+
+**Answer:** B
+
+**Explanation:** In test-driven development, tests are written before the code they test rather than after. XP pushes such good practices to happen continuously rather than in a scheduled phase.
+
+### W9.7-24 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** XP practices · **Source:** W9.7c · **Basis:** body
+
+**Question:** Two XP programmers write code together at one keyboard, so the code is reviewed as it is written rather than in a scheduled review. Which practice is this?
+
+- A. Pair programming ✅
+- B. Test-driven development
+- C. Continuous integration
+- D. Refactoring
+
+**Answer:** A
+
+**Explanation:** In pair programming, two programmers write the code together at one keyboard, so it is reviewed as it is written.
+
+### W9.7-25 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** Scrum as a framework · **Source:** W9.7b · **Basis:** bold
+
+**Question:** A team adopting Scrum asks whether it prescribes every practice they will need. What does the course say?
+
+- A. Yes; it is a complete process that covers every development activity
+- B. Yes; the Scrum Guide prescribes the coding and testing practices to use
+- C. No; it is a lightweight framework that fixes a few roles, events and artifacts ✅
+- D. No; Scrum prescribes only documents, leaving roles and events to the team
+
+**Answer:** C
+
+**Explanation:** Scrum is a lightweight agile framework rather than a complete process. It fixes a small set of roles, events and artifacts, and leaves the team to fill in the rest with practices of its own choosing.
+
+### W9.7-26 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** Scrum accountabilities · **Source:** W9.7b · **Basis:** bold
+
+**Question:** In Scrum, who is accountable for the team using Scrum well?
+
+- A. The Product Owner
+- B. The Developers
+- C. The project manager
+- D. The Scrum Master ✅
+
+**Answer:** D
+
+**Explanation:** A Scrum team has three accountabilities: the Product Owner represents the stakeholders and decides what the product needs next, the Scrum Master is accountable for the team using Scrum well, and the Developers do the work.
+
+### W9.7-27 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** Scrum accountabilities · **Source:** W9.7b · **Basis:** bold
+
+**Question:** In a Scrum team, who does the analysis, design, implementation and testing?
+
+- A. The Developers, a cross-functional group ✅
+- B. The Product Owner, who represents stakeholders
+- C. The Scrum Master, accountable for Scrum's use
+- D. Specialist teams outside the Scrum team
+
+**Answer:** A
+
+**Explanation:** The Developers are a cross-functional group who do the analysis, design, implementation and testing.
+
+### W9.7-28 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** Sprint Planning · **Source:** W9.7b · **Basis:** body
+
+**Question:** What happens at Sprint Planning?
+
+- A. The team and stakeholders inspect the Increment
+- B. The team selects the work and agrees on a Sprint Goal ✅
+- C. The team inspects how it worked and picks improvements
+- D. The Developers synchronize plans and surface blockers
+
+**Answer:** B
+
+**Explanation:** A Sprint opens with Sprint Planning, where the team selects the work and agrees on a Sprint Goal. Inspecting the Increment happens at the Sprint Review, inspecting how the team worked at the Retrospective, and daily synchronization at the Daily Scrum.
+
+### W9.7-29 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** Product Backlog · **Source:** W9.7b · **Basis:** body
+
+**Question:** In Scrum, what is the Product Backlog?
+
+- A. The items selected from the requirements for the current Sprint
+- B. A list of defects found by stakeholders during the Sprint Review
+- C. A prioritized set of high-level requirements for the product as a whole ✅
+- D. A record of the tasks the team completed in past Sprints
+
+**Answer:** C
+
+**Explanation:** The work comes from the Product Backlog, a prioritized set of high-level requirements for the product as a whole. The items selected for the current Sprint form the Sprint Backlog.
+
+### W9.7-30 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** Sprint end · **Source:** W9.7b · **Basis:** body
+
+**Question:** On the last day of a Sprint, one selected item is still unfinished. What happens, according to Scrum?
+
+- A. The Sprint is extended until the unfinished item is completed
+- B. The item is dropped from the product permanently
+- C. The next Sprint is shortened to make up the lost time
+- D. The Sprint ends on time and the item returns to the Product Backlog ✅
+
+**Answer:** D
+
+**Explanation:** Sprints are time-boxed and every Sprint in a project has the same length. The Sprint must end on time; work that is not completed returns to the Product Backlog.
+
+### W9.7-31 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** Empirical approach · **Source:** W9.7b · **Basis:** bold
+
+**Question:** Why does Scrum take an empirical approach rather than trying to define the problem fully up front?
+
+- A. It assumes requirements are stable once the first Sprint Goal has been set
+- B. It assumes documentation is too costly to produce on any project at all
+- C. It assumes the Product Owner knows all requirements before the first Sprint
+- D. It assumes customers will change their minds and unforeseen problems cannot be planned for ✅
+
+**Answer:** D
+
+**Explanation:** Scrum assumes requirements churn and that unforeseen problems cannot be planned for in advance. It therefore maximizes the team's ability to deliver quickly and respond to requirements as they emerge.
+
+### W9.7-32 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** Daily Scrum format · **Source:** W9.7b · **Basis:** body
+
+**Question:** Which is a common format for each member's contribution to a Daily Scrum?
+
+- A. A detailed walkthrough of every line of code I changed yesterday
+- B. A full discussion to solve each blocker during the meeting itself
+- C. What I did since the last one, what I plan next, and what is in my way ✅
+- D. My estimate of the remaining work for the whole project
+
+**Answer:** C
+
+**Explanation:** A common way to run the Daily Scrum is for each member to say what they did since the previous one, what they plan to do next, and what is in their way. It is not a problem-solving meeting.
+
+### W9.7-33 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** Self-organizing teams · **Source:** W9.7b · **Basis:** bold
+
+**Question:** Instead of documents handed from one discipline to the next, what do Scrum's self-organizing teams rely on?
+
+- A. A detailed design that is approved before the first Sprint
+- B. Frequent and direct communication among all members and disciplines ✅
+- C. Instructions from the Scrum Master on who does which task
+- D. Weekly written status reports sent to the Product Owner
+
+**Answer:** B
+
+**Explanation:** Scrum enables self-organizing teams, which rely on frequent and direct communication among all team members and disciplines rather than on documents handed from one to the next.
+
+### W9.7-34 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** UP phases · **Source:** W9.7d · **Basis:** body
+
+**Question:** In the unified process, which phase readies the system for actual production use and familiarizes end users with it?
+
+- A. Transition ✅
+- B. Construction
+- C. Elaboration
+- D. Inception
+
+**Answer:** A
+
+**Explanation:** Transition readies the system for production use and familiarizes end users with it; its typical artifacts are the final system release and an instruction manual.
+
+### W9.7-35 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** UP phases · **Source:** W9.7d · **Basis:** body
+
+**Question:** A unified process project has produced a basic use case model, a rough project plan and a statement of project vision and scope. Which phase are these typical artifacts of?
+
+- A. Elaboration
+- B. Inception ✅
+- C. Construction
+- D. Transition
+
+**Answer:** B
+
+**Explanation:** Inception is about understanding the problem and requirements, communicating with the customer and planning the effort; its typical artifacts are a basic use case model, a rough project plan and the project vision and scope.
+
+### W9.7-36 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** UP phases · **Source:** W9.7d · **Basis:** body
+
+**Question:** In which unified process phase does the major implementation effort take place, with testing carried out at all levels?
+
+- A. Inception
+- B. Elaboration
+- C. Construction ✅
+- D. Transition
+
+**Answer:** C
+
+**Explanation:** Construction holds the major implementation effort to support the identified use cases, refines the design models, carries out testing at all levels and produces multiple releases.
+
+### W9.7-37 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** Phases vs iterations · **Source:** W9.7d · **Basis:** bold
+
+**Question:** A UP project is in its elaboration phase and running its second iteration there. How do phases and iterations relate?
+
+- A. A phase is a development stage such as design, and each iteration repeats that one stage
+- B. Phases and iterations are the same thing under two different names
+- C. A project must be either phased or iterative; it cannot be both at once
+- D. A phase says where the project is in its arc; an iteration is one pass through several workflows ✅
+
+**Answer:** D
+
+**Explanation:** Phases and iterations are two different things, which is why a project can be phased and iterative at the same time. A phase is also not a development stage: each phase contains work from several stages.
+
+### W9.7-38 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** Customizing UP · **Source:** W9.7d · **Basis:** body
+
+**Question:** Which of these can be adjusted when applying the unified process to a project?
+
+- A. The number of iterations per phase and the intensity of each workflow ✅
+- B. Nothing; the standard UP diagram prescribes exactly how to apply it
+- C. Only the names given to the four phases, not their content
+- D. Only the number of phases, not the workflows or iterations
+
+**Answer:** A
+
+**Explanation:** The unified process is a customizable framework: the number of iterations in each phase, the definition of workflows and the intensity of a workflow in an iteration can be adjusted. A UP diagram records a particular application rather than prescribing one.
+
+### W9.7-39 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** No best approach · **Source:** W9.7e · **Basis:** bold
+
+**Question:** Two reasonable teams look at the same project; one leans sequential and the other iterative. What does the course say?
+
+- A. One must be wrong, since the deciding questions always give a clear answer
+- B. The iterative team is right, since an iterative approach is always better
+- C. The sequential team is right, since a sequential approach is always safer
+- D. Both can be right; teams weigh the questions differently, and approaches can be combined ✅
+
+**Answer:** D
+
+**Explanation:** No approach is best for every project. The deciding questions cannot always give a clear answer; two reasonable teams can weigh them differently and both be right, and a project can combine approaches.
+
+### W9.7-40 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** Cost of late change · **Source:** W9.7e · **Basis:** body
+
+**Question:** Which of these is the course's example of a late change that is expensive?
+
+- A. Changing software already embedded in shipped hardware ✅
+- B. Changing a web page after it has been released
+- C. Changing a design diagram before implementation
+- D. Changing a feature in an iteration not yet started
+
+**Answer:** A
+
+**Explanation:** "How costly is a late change?" is one of the deciding questions: changing a web page after release is cheap, while changing software already embedded in shipped hardware is not.
+
+### W9.7-41 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** Choosing an approach · **Source:** W9.7e · **Basis:** body
+
+**Question:** A team is adding a new feature to a social media app. Nobody knows which version users will prefer, and shipping a change costs little. Which approach fits?
+
+- A. A largely sequential approach with signed-off stages
+- B. A single large release after a full up-front design
+- C. Short iterations with real users ✅
+- D. Code-and-fix without any involvement from users
+
+**Answer:** C
+
+**Explanation:** When nobody yet knows which version users will prefer and shipping a change costs little, short iterations with real users fit.
+
+### W9.7-42 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** Iterations without users · **Source:** W9.7e · **Basis:** body
+
+**Question:** A team runs two-week iterations, but no users are available to give feedback during development. What does the course say about this?
+
+- A. The iterations become free, since there is no feedback to process
+- B. The iterations still cost their overhead without the benefit that justifies it ✅
+- C. The project automatically turns into a sequential project
+- D. The team should shorten its iterations to a single day
+
+**Answer:** B
+
+**Explanation:** Frequent feedback is what makes short iterations worth their overhead. Without it, the iterations still cost the overhead.
+
+### W9.7-43 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** Regulated iterative projects · **Source:** W9.7e · **Basis:** body
+
+**Question:** A team is building car braking software and must produce regulator-required evidence for each stage. Must it use a sequential approach?
+
+- A. No; it can iterate, producing the evidence in each iteration ✅
+- B. Yes; regulated projects can only ever be run sequentially
+- C. No, but it must postpone producing evidence until the end
+- D. Yes, because iterative projects cannot produce any documents
+
+**Answer:** A
+
+**Explanation:** A largely sequential approach fits braking software, but a regulated project can equally run iteratively, producing the required evidence at each iteration.
+
+### W9.7-44 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** CMMI · **Source:** W9.7f · **Basis:** bold
+
+**Question:** A customer wants evidence that a software supplier can be relied on before awarding it a contract. Which framework is best known for assessing a supplier's process, and who defined it?
+
+- A. Scrum, defined by the authors of the official Scrum Guide
+- B. The unified process, defined by the Three Amigos of UML
+- C. CMMI, defined by Carnegie Mellon's Software Engineering Institute ✅
+- D. The agile manifesto, defined by practitioners in 2001
+
+**Answer:** C
+
+**Explanation:** Process assessment frameworks matter most where a customer wants evidence that a supplier can be relied on before awarding it work. CMMI, defined by the Software Engineering Institute at Carnegie Mellon University, is the best known.
+
+### W9.7-45 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** CMMI levels · **Source:** W9.7f · **Basis:** body
+
+**Question:** What range do CMMI's five maturity levels span?
+
+- A. From sequential to fully iterative
+- B. From ad hoc to continuously improving ✅
+- C. From small teams to large organizations
+- D. From inception to transition
+
+**Answer:** B
+
+**Explanation:** CMMI defines five maturity levels, ranging from ad hoc to continuously improving, and criteria for determining which one an organization's process has reached.
+
+### W9.7-46 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** Budget overrun · **Source:** W9.7g · **Basis:** panel
+
+**Question:** A sequential project's budget runs out halfway through implementation. Compared with an iterative project in the same position, what is its situation?
+
+- A. It can stop and deliver the most recent working version instead
+- B. It can deliver the completed requirements document as the product
+- C. It is in the same position, since budgets affect both models equally
+- D. It must carry on, since there is no intermediate version to fall back on ✅
+
+**Answer:** D
+
+**Explanation:** An iterative project can always stop before the budget is exceeded, although that does not guarantee all promised features. A sequential project must carry on because there is no intermediate version; iterative rework adds cost but is cheaper than finding at the end that the wrong product was built.
+
+### W9.7-47 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** Monitoring progress · **Source:** W9.7g · **Basis:** panel
+
+**Question:** In which aspect does the sequential model have an advantage over the iterative model?
+
+- A. A lower risk of having nothing to deliver when the deadline arrives
+- B. More opportunities for the customer to steer the product's direction
+- C. The ability to stop before the budget is exceeded and still deliver
+- D. Measuring progress against the plan, since the plan does not keep changing ✅
+
+**Answer:** D
+
+**Explanation:** Measuring progress against a plan is easier in a sequential project, although this does not ensure eventual success; in an iterative project the plan itself keeps changing. Deadline risk, customer steering and stopping within budget all favor the iterative model.
+
+### W9.7-48 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.7] SDLC Process Models (continued) · **Subtopic:** Choosing for a hospital · **Source:** W9.7g · **Basis:** panel
+
+**Question:** A hospital is replacing the system its nurses use to record patient observations. The nurses cannot say what they want from a new screen until they have used one, and the regulator requires a record of what was built and why. Which approach is easiest to defend?
+
+- A. Broadly sequential, since the involvement of a regulator rules out iterating
+- B. Broadly iterative, leaving all regulatory records until the final release
+- C. Broadly iterative, producing the records the regulator wants at each iteration ✅
+- D. Code-and-fix, since the nurses can report defects as soon as they appear
+
+**Answer:** C
+
+**Explanation:** There is no single right answer, but iterative is easier to defend: the nurses' requirements will only become clear through feedback on early versions, which a sequential approach handles badly. The adaptation is to produce and keep the regulator's records at each iteration.
+
 ## [W9.8] Writing Developer Documents
 
 ### W9.8-01 · MCQ
@@ -6546,6 +16535,216 @@ int findRate(int input) {
 **Answer:** D
 
 **Explanation:** Minimal-but-sufficient documentation avoids repeating chunks of text when several designs are similar.
+
+### W9.8-09 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.8] Writing Developer Documents · **Subtopic:** Developer-as-user docs · **Source:** W9.8a · **Basis:** body
+
+**Question:** A team publishes a reusable component for other developers to use. Which two forms of documentation for developer-as-user does the course describe?
+
+- A. API documentation and tutorial-style instructional documentation ✅
+- B. Design documentation and test case documentation for maintainers
+- C. End-user guides and release notes for each product version
+- D. Inline code comments and descriptive commit messages
+
+**Answer:** A
+
+**Explanation:** Documentation for developer-as-user explains how components are to be used. It can be API documentation, where each small chunk of functionality is documented systematically, or tutorial-style instructional documentation giving higher-level explanations of how to use an API.
+
+### W9.8-10 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.8] Writing Developer Documents · **Subtopic:** Developer-as-maintainer docs · **Source:** W9.8a · **Basis:** body
+
+**Question:** Which statement about documentation for developer-as-maintainer is correct?
+
+- A. It is easier to write than API documentation because it describes only the external view
+- B. It must repeat every detail of the source code, since readers cannot see the code
+- C. It is harder to write due to complex internal details, but readers have the code, so less is needed ✅
+- D. It is written mainly for end users who want to evolve the product
+
+**Answer:** C
+
+**Explanation:** Explaining how a system is designed, implemented and tested involves complex internal details, which makes this documentation harder to write. However, its readers usually have access to the source code, so code and comments serve as a complementary source and only some information needs to be documented.
+
+### W9.8-11 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.8] Writing Developer Documents · **Subtopic:** Procida's four kinds · **Source:** W9.8a · **Basis:** body
+
+**Question:** A document is goal-oriented, shows how to solve a specific problem and is a series of steps, much like a recipe in a cookery book. Which of Procida's four kinds of documentation is it?
+
+- A. Tutorial
+- B. Explanation
+- C. Reference
+- D. How-to guide ✅
+
+**Answer:** D
+
+**Explanation:** A how-to guide is goal-oriented, shows how to solve a specific problem and is a series of steps; its analogy is a recipe in a cookery book. A tutorial is a lesson for newcomers, an explanation provides background and context, and a reference describes the machinery.
+
+### W9.8-12 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.8] Writing Developer Documents · **Subtopic:** Procida's four kinds · **Source:** W9.8a · **Basis:** body
+
+**Question:** A page lists every method of a library with its parameters and return values; it describes the machinery and aims to be accurate and complete. Which of Procida's four kinds of documentation is it?
+
+- A. Tutorial
+- B. Reference ✅
+- C. How-to guide
+- D. Explanation
+
+**Answer:** B
+
+**Explanation:** A reference guide is information-oriented, describes the machinery and is accurate and complete, like a reference encyclopedia article. A tutorial instead allows a newcomer to get started and is a lesson.
+
+### W9.8-13 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.8] Writing Developer Documents · **Subtopic:** Procida's analogies · **Source:** W9.8a · **Basis:** body
+
+**Question:** Procida likens one kind of documentation to "an article on culinary social history". Which kind is it?
+
+- A. Explanation ✅
+- B. Tutorial
+- C. How-to guide
+- D. Reference
+
+**Answer:** A
+
+**Explanation:** An explanation is understanding-oriented and provides background and context, like an article on culinary social history. A tutorial is like teaching a small child how to cook, a how-to guide like a recipe, and a reference like an encyclopedia article.
+
+### W9.8-14 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.8] Writing Developer Documents · **Subtopic:** Documentation tools · **Source:** W9.8a · **Basis:** body
+
+**Question:** A team wants its developer documentation in a text format that is easy to version-track and that technical writers can also edit. Which combination of tools fits the course's description of common practice?
+
+- A. Word-processor files exported to PDF, with diagrams pasted in as screenshots
+- B. Markdown with a static site generator such as Jekyll, plus PlantUML or Mermaid ✅
+- C. Spreadsheets for the text, with diagrams drawn by hand and scanned
+- D. Comments in the source code only, with no separate documents
+
+**Answer:** B
+
+**Explanation:** Software documentation is best kept in a text format for version tracking, and a writer-friendly source format helps non-programmers edit it. So it often uses Markdown together with static site generators such as Jekyll and diagramming tools such as PlantUML and Mermaid.
+
+### W9.8-15 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.8] Writing Developer Documents · **Subtopic:** Top-down outline · **Source:** W9.8c · **Basis:** body
+
+**Question:** You are writing a top-down description of `SystemFoo`, which has two sub-systems, `FrontEnd` and `BackEnd`. What should come first?
+
+- A. An in-depth description of the most complex class in `FrontEnd`
+- B. A list of all classes in both sub-systems
+- C. What `SystemFoo` is, in a black-box fashion showing only its external view ✅
+- D. How `FrontEnd` and `BackEnd` exchange data internally
+
+**Answer:** C
+
+**Explanation:** A top-down description starts at the highest level of abstraction: first what the system is as a black box, then its high-level architecture referring to major components only, then a progressive drill-down into each component's details.
+
+### W9.8-16 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.8] Writing Developer Documents · **Subtopic:** Top-down structure · **Source:** W9.8c · **Basis:** bold
+
+**Question:** How is a top-down document structured?
+
+- A. Like a flat list, where every section is equally detailed
+- B. Like a tree with leaves at the top, so readers start from the details
+- C. Like a timeline, describing components in the order they were written
+- D. Like an upside-down tree with its root at the top ✅
+
+**Answer:** D
+
+**Explanation:** A top-down document is structured like an upside-down tree with its root at the top. Readers can follow the path that interests them to the component they want to study in depth, without reading the whole document.
+
+### W9.8-17 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.8] Writing Developer Documents · **Subtopic:** Comprehensibility · **Source:** W9.8b · **Basis:** bold
+
+**Question:** A developer guide is accurate and covers every component of the system, yet new team members still struggle to understand it. Which quality is it missing?
+
+- A. Comprehensiveness
+- B. Comprehensibility ✅
+- C. Precision
+- D. Completeness
+
+**Answer:** B
+
+**Explanation:** Technical documents exist to help others understand technical details, so it is not enough for documentation to be accurate and comprehensive; it should also be comprehensible.
+
+### W9.8-18 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.8] Writing Developer Documents · **Subtopic:** Statements adding no value · **Source:** W9.8b · **Basis:** body
+
+**Question:** Which sentence in a developer guide is an example of a statement that adds no value and should be removed?
+
+- A. "`Storage` saves the data to a JSON file after every command."
+- B. "`Parser` returns a `Command` object for `Logic` to execute."
+- C. "We made sure our system works perfectly." ✅
+- D. "The diagram below shows how `UI` calls `Logic`."
+
+**Answer:** C
+
+**Explanation:** Statements such as 'We made sure our system works perfectly' (who didn't?) or 'Component X has its own responsibilities' (of course it has!) add no value and should be removed. Sentences describing what a component actually does are useful.
+
+### W9.8-19 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.8] Writing Developer Documents · **Subtopic:** Organizing diagrams · **Source:** W9.8b · **Basis:** bold
+
+**Question:** A team plans a developer guide with one section for all use cases, one for all sequence diagrams and one for all activity diagrams. What does the course advise?
+
+- A. This is a good structure because readers can find each diagram type easily
+- B. This is a good structure as long as each section is in alphabetical order
+- C. Avoid diagrams altogether and use text only
+- D. Avoid it; include diagrams only where needed, with extras in an appendix ✅
+
+**Answer:** D
+
+**Explanation:** Separate sections for each type of artifact, together with indiscriminate inclusion of diagrams, indicate a failure to understand the purpose of documentation. Diagrams should be included when needed to explain something; additional ones for completeness can go in the appendix.
+
+### W9.8-20 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.8] Writing Developer Documents · **Subtopic:** Explaining algorithms · **Source:** W9.8b · **Basis:** body
+
+**Question:** A developer needs to document a sorting algorithm used in the product. Which approach does the course recommend?
+
+- A. Show a running example illustrating each step alongside the written explanation ✅
+- B. Paste the full source code of the algorithm with no explanation
+- C. Describe the algorithm in a single long sentence to keep it short
+- D. Mention only the name of the algorithm, since readers can look it up
+
+**Answer:** A
+
+**Explanation:** One tip for comprehensible documentation is to use plenty of examples: when explaining algorithms, show a running example to illustrate each step alongside the written explanation.
+
+### W9.8-21 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.8] Writing Developer Documents · **Subtopic:** Just enough documentation · **Source:** W9.8d · **Basis:** body
+
+**Question:** Why should developer documentation aim to be 'just enough' rather than as detailed as possible?
+
+- A. Because detailed documents are not allowed in version control
+- B. Because developers should never read documentation
+- C. Because docs are overhead to write and maintain, and only need to complement the code ✅
+- D. Because the code is always self-explanatory, so documentation is unnecessary
+
+**Answer:** C
+
+**Explanation:** Writing and maintaining developer documents involves overhead that should be minimized. If the readers will eventually read the code, the documentation should complement the code and provide just enough guidance to get started.
+
+### W9.8-22 · MCQ
+
+**Type:** MCQ · **Topic:** [W9.8] Writing Developer Documents · **Subtopic:** What not to describe · **Source:** W9.8d · **Basis:** body
+
+**Question:** A developer is writing a guide for teammates who will read the code. Which content can be left out of the guide?
+
+- A. How the major components work together
+- B. Design decisions that are not visible in the code
+- C. The high-level architecture of the system
+- D. Details that are already clear in the code ✅
+
+**Answer:** D
+
+**Explanation:** Anything already clear in the code need not be described in words. Documentation should focus on higher-level information that is not readily visible in the code or comments.
 
 ---
 
@@ -6749,6 +16948,351 @@ int findRate(int input) {
 
 **Explanation:** Because dependencies are handed in through constructors and typed as interfaces, tests can supply stubs — something that is difficult when code reaches a singleton through a static method.
 
+### W10.1-14 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.1] Design Patterns · **Subtopic:** Gang of Four · **Source:** W10.1a · **Basis:** bold
+
+**Question:** The term "design patterns" in software was popularized by which work?
+
+- A. *The Timeless Way of Building* by Christopher Alexander
+- B. *Software Architecture in Practice* by Bass, Clements and Kazman
+- C. *Design Patterns: Elements of Reusable Object-Oriented Software* (GoF) ✅
+- D. *Microservices*, an article by James Lewis and Martin Fowler
+
+**Answer:** C
+
+**Explanation:** The term was popularized by the seminal book *Design Patterns: Elements of Reusable Object-Oriented Software* by the "Gang of Four": Erich Gamma, Richard Helm, Ralph Johnson and John Vlissides.
+
+### W10.1-15 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.1] Design Patterns · **Subtopic:** Context vs problem · **Source:** W10.1a · **Basis:** body
+
+**Question:** Consider: "The UI needs to be updated when the data in the application backend changes" and "How to initiate an update to the UI when data changes without coupling the backend to the UI?". In pattern terms, these are respectively the…
+
+- A. problem; solution
+- B. context; problem ✅
+- C. solution; consequence
+- D. anti-pattern; solution
+
+**Answer:** B
+
+**Explanation:** The first statement describes the design context, the situation in which the problem arises. The second states the recurring problem, the main difficulty to be resolved.
+
+### W10.1-16 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.1] Design Patterns · **Subtopic:** Anti-patterns · **Source:** W10.1b · **Basis:** bold
+
+**Question:** In the common format for describing a design pattern, what is the "anti-patterns" component?
+
+- A. Commonly used solutions that are usually inferior to the pattern ✅
+- B. Situations in which the pattern must never be applied
+- C. A pattern that does exactly the opposite of the described one
+- D. The list of pros and cons of applying the pattern
+
+**Answer:** A
+
+**Explanation:** Anti-patterns are commonly used solutions that are usually incorrect and/or inferior to the design pattern, and they are an optional part of the format. The pros and cons belong under consequences.
+
+### W10.1-17 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.1] Design Patterns · **Subtopic:** Solution component · **Source:** W10.1b · **Basis:** body
+
+**Question:** A student copies a pattern's Solution verbatim into their project and finds it does not fit perfectly. What does the pattern format say about the Solution part?
+
+- A. Complete code that should work unchanged in any context
+- B. An optional part that may be skipped for simple patterns
+- C. A list of commonly used but inferior solutions
+- D. Only the most general details, which may need refinement ✅
+
+**Answer:** D
+
+**Explanation:** The Solution is the core of the solution, but it includes only the most general details, which may need further refinement for a specific context.
+
+### W10.1-18 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.1] Design Patterns · **Subtopic:** Consequences component · **Source:** W10.1b · **Basis:** bold
+
+**Question:** Which component of the pattern format identifies the pros and cons of applying the pattern?
+
+- A. Context
+- B. Problem
+- C. Consequences, which is optional ✅
+- D. Solution, which is compulsory
+
+**Answer:** C
+
+**Explanation:** Consequences is an optional component that identifies the pros and cons of applying the pattern. Context, problem and solution describe the situation, the difficulty and the core solution respectively.
+
+### W10.1-19 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.1] Design Patterns · **Subtopic:** Private constructor · **Source:** W10.1c · **Basis:** body
+
+**Question:** Why does the Singleton pattern make the class's constructor `private`?
+
+- A. To make the class load faster
+- B. Because a `public` constructor would allow others to instantiate the class at will ✅
+- C. So that subclasses can override the constructor
+- D. Because Java forbids `public` constructors in classes with static fields
+
+**Answer:** B
+
+**Explanation:** The problem is that a normal class can be instantiated multiple times by invoking its constructor. Making the constructor `private` prevents this, because a `public` constructor would let others instantiate the class at will.
+
+### W10.1-20 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.1] Design Patterns · **Subtopic:** UML stereotype · **Source:** W10.1c · **Basis:** body
+
+**Question:** In a class diagram, `<<Singleton>>` appears above the class name `Logic`. What is this notation?
+
+- A. A UML note attached to the class, holding a free-text comment
+- B. A UML constraint that the Java compiler enforces on the class
+- C. A UML stereotype, optionally showing the element's role or purpose ✅
+- D. An annotation that generates the Singleton code automatically
+
+**Answer:** C
+
+**Explanation:** `<<Singleton>>` uses the UML stereotype notation, which optionally indicates the purpose or role played by a UML element. Here it shows that `Logic` plays the role of a Singleton class; the general format is `<<role/purpose>>`.
+
+### W10.1-21 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.1] Design Patterns · **Subtopic:** Lazy creation in getInstance · **Source:** W10.1d · **Basis:** body
+
+**Question:** Consider this Singleton implementation. When is the `Logic` object created?
+
+```java
+class Logic {
+    private static Logic theOne = null;
+    private Logic() {
+        ...
+    }
+    public static Logic getInstance() {
+        if (theOne == null) {
+            theOne = new Logic();
+        }
+        return theOne;
+    }
+}
+```
+
+- A. When the program starts, before the `main` method runs
+- B. Every time `getInstance()` is called by any client
+- C. When the field `theOne` is declared and initialized
+- D. The first time `getInstance()` runs; later calls reuse it ✅
+
+**Answer:** D
+
+**Explanation:** `getInstance()` instantiates a single copy of the class when it is executed for the first time, since `theOne` is still `null`. Subsequent calls find `theOne` already set and return the same single instance.
+
+### W10.1-22 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.1] Design Patterns · **Subtopic:** Accessing a singleton · **Source:** W10.1d · **Basis:** body
+
+**Question:** `Logic` is a Singleton class implemented in the usual way. How should code in another class obtain the `Logic` object?
+
+- A. `Logic m = Logic.getInstance();` ✅
+- B. `Logic m = new Logic();`
+- C. `Logic m = Logic.theOne;`
+- D. `Logic m = new Logic().getInstance();`
+
+**Answer:** A
+
+**Explanation:** When `Logic` is a Singleton, the single object is accessed through the `public` class-level method `getInstance()`. Its constructor is `private`, so `new Logic()` cannot be used from outside the class, and the instance variable is `private` too.
+
+### W10.1-23 · MRQ
+
+**Type:** MRQ · **Topic:** [W10.1] Design Patterns · **Subtopic:** Singleton pros · **Source:** W10.1e · **Basis:** body
+
+**Question:** Which are advantages of the Singleton pattern noted by the course? (Select all that apply.)
+
+- A. It is easy to apply ✅
+- B. It is effective in achieving its goal with minimal extra work ✅
+- C. It provides an easy way to access the singleton object from anywhere in the codebase ✅
+- D. It makes unit testing easier because each test gets a fresh object
+
+**Answer:** A, B, C
+
+**Explanation:** Singleton is easy to apply, effective with minimal extra work, and gives easy access to the object from anywhere. It does not make testing easier: singleton objects are hard to replace with stubs and carry data from one test to another.
+
+### W10.1-24 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.1] Design Patterns · **Subtopic:** When to apply Singleton · **Source:** W10.1e · **Basis:** body
+
+**Question:** An application needs only one `Config` object. Given Singleton's significant cons, when does the course recommend applying the pattern?
+
+- A. Whenever a class needs only one instance, regardless of other factors
+- B. Whenever the object must be accessed from many places in the codebase
+- C. Only when the class holds no state that could leak between tests
+- D. When extra instances could be created by mistake and would cause real harm ✅
+
+**Answer:** D
+
+**Explanation:** Because Singleton has significant cons, apply it when, in addition to requiring only one instance, there is a risk of creating multiple objects by mistake and creating such multiple objects has real negative consequences.
+
+### W10.1-25 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.1] Design Patterns · **Subtopic:** Singletons and stubs · **Source:** W10.1e · **Basis:** body
+
+**Question:** Why is it difficult to replace a Singleton object with a stub in tests?
+
+- A. Stubs cannot have constructors
+- B. Static methods cannot be overridden ✅
+- C. Singleton classes cannot implement interfaces
+- D. The singleton object is deleted after each test
+
+**Answer:** B
+
+**Explanation:** Code obtains a singleton through a static method such as `getInstance()`, and static methods cannot be overridden, so a stub cannot easily be substituted for the singleton.
+
+### W10.1-26 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.1] Design Patterns · **Subtopic:** Single-class problem · **Source:** W10.1h · **Basis:** body
+
+**Question:** A library system represents every book copy with a single `Book` class holding title, author, ISBN, barcode and purchase date. What problem does this cause?
+
+- A. Shared data is duplicated in every copy, wasting space and risking inconsistency ✅
+- B. Copies of the same title can no longer have different barcodes or dates
+- C. The system needs a separate class for each book title in the library
+- D. The library cannot record more than one copy of the same title
+
+**Answer:** A
+
+**Explanation:** Representing copies as a single class duplicates common information in every instance. This wastes storage and creates a consistency problem: correcting a misspelled author means going through every copy of the title.
+
+### W10.1-27 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.1] Design Patterns · **Subtopic:** Abstraction Occurrence anti-pattern · **Source:** W10.1h · **Basis:** body
+
+**Question:** A design makes each book title a separate subclass with its name, author and ISBN hard-coded in the class. Why is this an anti-pattern?
+
+- A. It duplicates barcode numbers across all copies of the same title
+- B. It prevents copies of a title from having different purchase dates
+- C. Thousands of classes, and new books require changes to the source code ✅
+- D. It forces all titles in the library to share the same author
+
+**Answer:** C
+
+**Explanation:** Segregating common data into one class per title results in thousands of classes, one for each title. Every time the library buys new books, the source code must be updated with new classes.
+
+### W10.1-28 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.1] Design Patterns · **Subtopic:** Roles, not class names · **Source:** W10.1h · **Basis:** body
+
+**Question:** In the general solution of the Abstraction Occurrence pattern, the classes are labelled `<<Abstraction>>` and `<<Occurrence>>`. What are these labels?
+
+- A. Required class names that must appear in the code
+- B. Names of Java interfaces from the standard library
+- C. Labels for an object diagram of actual books
+- D. Roles played by each class, not class names ✅
+
+**Answer:** D
+
+**Explanation:** 'Abstraction' and 'Occurrence' are not class names but roles played by each class. The general diagram is a meta-model, i.e. a model of a model such as the `BookTitle`–`BookCopy` class diagram.
+
+### W10.1-29 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.1] Design Patterns · **Subtopic:** Abstraction vs occurrence data · **Source:** W10.1h · **Basis:** body
+
+**Question:** The Abstraction Occurrence pattern is applied to a TV series and its episodes. Where should each episode's air date be stored?
+
+- A. In the `<<Abstraction>>` class, which holds the series information
+- B. In the `<<Occurrence>>` class, which holds the unique information ✅
+- C. In both classes, so that the two always stay consistent
+- D. In a separate subclass created specially for each episode
+
+**Answer:** B
+
+**Explanation:** The `<<Abstraction>>` class holds all common information, such as the series title, and the `<<Occurrence>>` class keeps the unique information. An air date differs per episode, so it belongs in the occurrence.
+
+### W10.1-30 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.1] Design Patterns · **Subtopic:** Facade solution · **Source:** W10.1f · **Basis:** body
+
+**Question:** What is the solution proposed by the Facade pattern?
+
+- A. Make the component's constructor private and provide one global accessor
+- B. Let users of the component access its internal classes directly
+- C. A class between the internals and users, through which all access goes ✅
+- D. Copy the component's internal classes into each component that uses them
+
+**Answer:** C
+
+**Explanation:** Facade addresses allowing access to a component without exposing its internal details. Its solution includes a class that sits between the component internals and users so that all access happens through the Facade class, e.g. `LibraryLogic`.
+
+### W10.1-31 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.1] Design Patterns · **Subtopic:** Command problem · **Source:** W10.1g · **Basis:** body
+
+**Question:** A `CommandQueue` must queue and execute `Sort`, `List` and `Reset` commands. What problem does the Command pattern address in this context?
+
+- A. Code should execute commands without knowing each command type ✅
+- B. Each command must be executed exactly once and in a fixed order
+- C. Commands must be created by only one class in the whole system
+- D. The commands must not access the data store directly
+
+**Answer:** A
+
+**Explanation:** The Command pattern's problem is that it is preferable for some part of the code to execute commands without having to know each command type, such as a `CommandQueue` that queues and executes commands without knowing what each one does.
+
+### W10.1-32 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.1] Design Patterns · **Subtopic:** Command pattern roles · **Source:** W10.1g · **Basis:** body
+
+**Question:** In the general form of the Command pattern, which role creates a `<<ConcreteCommand>>` object and passes it to the `<<Invoker>>`?
+
+- A. `<<Receiver>>`
+- B. `<<Command>>`
+- C. `<<Invoker>>` itself
+- D. `<<Client>>` ✅
+
+**Answer:** D
+
+**Explanation:** The `<<Client>>` creates a `<<ConcreteCommand>>` object and passes it to the `<<Invoker>>`, which treats all commands as the general `<<Command>>` type and calls `execute()` on them.
+
+### W10.1-33 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.1] Design Patterns · **Subtopic:** Undoable commands · **Source:** W10.1g · **Basis:** body
+
+**Question:** In the Command pattern, if a command is undoable, which object stores the state needed for undoing it, and when?
+
+- A. The `<<Invoker>>`, after calling `execute()`
+- B. The `<<ConcreteCommand>>`, before invoking `execute()` ✅
+- C. The `<<Receiver>>`, after the command finishes
+- D. The `<<Client>>`, before creating the command
+
+**Answer:** B
+
+**Explanation:** If a command is undoable, the `<<ConcreteCommand>>` stores the state for undoing the command before invoking `execute()`.
+
+### W10.1-34 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.1] Design Patterns · **Subtopic:** Command receiver · **Source:** W10.1g · **Basis:** body
+
+**Question:** In the Command pattern example, each `Command` accesses the `DataStore` object to carry out its task. Which role does `DataStore` play?
+
+- A. `<<Receiver>>`: the object the command acts on ✅
+- B. `<<Invoker>>`: the object that calls `execute()`
+- C. `<<Client>>`: the object that creates the commands
+- D. `<<Command>>`: the general command type
+
+**Answer:** A
+
+**Explanation:** The `<<ConcreteCommand>>` may have to be linked to a `<<Receiver>>` of the command, the object it acts on, before it is passed to the `<<Invoker>>`. An application of the pattern does not have to follow this exact structure.
+
+### W10.1-35 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.1] Design Patterns · **Subtopic:** Command type options · **Source:** W10.1g · **Basis:** body
+
+**Question:** When applying the Command pattern, must the general `Command` type be a concrete class?
+
+- A. Yes, because the invoker must instantiate it directly
+- B. Yes, because interfaces cannot declare an `execute()` method
+- C. No; it can also be an abstract class or an interface ✅
+- D. No; it must always be declared as a Java interface
+
+**Answer:** C
+
+**Explanation:** The `Command` class can also be an abstract class or an interface. The essential element is a general command object that can be passed around, stored and executed without knowing its specific type, via polymorphism.
+
 ## [W10.2] Defensive Programming
 
 ### W10.2-01 · MCQ
@@ -6904,6 +17448,213 @@ void setGuarantor(Guarantor g) { guarantor = g; }
 
 **Explanation:** Under DbC the operation's behavior is specified precisely in the API, including preconditions, and the caller is responsible for ensuring they hold.
 
+### W10.2-11 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.2] Defensive Programming · **Subtopic:** Compulsory associations · **Source:** W10.2b · **Basis:** body
+
+**Question:** An `Account` must always be linked to exactly one `Guarantor`. In the defensive version of `Account`, where is the check `g == null` performed, and why?
+
+- A. Only in the constructor, because the guarantor cannot change later
+- B. Only in `setGuarantor`, because the constructor is never called with `null`
+- C. In both, so the multiplicity of `1` holds at creation and after every change ✅
+- D. Nowhere; the caller is trusted to pass a valid guarantor
+
+**Answer:** C
+
+**Explanation:** To enforce a compulsory association, the defensive `Account` checks for a null `Guarantor` in the constructor and in `setGuarantor`, stopping the system if either is given `null`. Checking both places closes every route to an `Account` without a `Guarantor`.
+
+### W10.2-12 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.2] Defensive Programming · **Subtopic:** 1-to-1 associations · **Source:** W10.2c · **Basis:** body
+
+**Question:** A `MinedCell` cannot exist without a `Mine`, and vice versa. Why can neither of the course's two Java implementations enforce this perfectly?
+
+- A. Java does not allow a class to hold a reference to another class
+- B. Simultaneous creation of both objects is needed, but Java creates one at a time ✅
+- C. Java does not allow constructors to check for `null`
+- D. The association is bidirectional, which Java classes cannot support
+
+**Answer:** B
+
+**Explanation:** A defensive implementation must ensure neither object exists without the other, which requires simultaneous object creation. Java can only create one object at a time, so both alternatives violate the multiplicity for a short period.
+
+### W10.2-13 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.2] Defensive Programming · **Subtopic:** 1-to-1 associations · **Source:** W10.2c · **Basis:** body
+
+**Question:** Which of these two implementations of the 1-to-1 `MinedCell`–`Mine` association is more defensive, and why?
+
+```
+// Option 1
+public MinedCell(Mine m) {
+    if (m == null) {
+        showError();
+    }
+    mine = m;
+}
+
+// Option 2
+public MinedCell() {
+    mine = new Mine();
+}
+```
+
+- A. Option 1, because it checks for a null `Mine`
+- B. Option 1, because the caller controls which `Mine` is used
+- C. Both are equally defensive, since both violate the multiplicity briefly
+- D. Option 2, because the `Mine` is immediately linked to a `MinedCell` ✅
+
+**Answer:** D
+
+**Explanation:** Option 1 forces you to keep a `Mine` without a `MinedCell` until the `MinedCell` is created. Option 2 creates the `Mine` inside the `MinedCell` constructor, so the `Mine` is immediately linked to a `MinedCell`, making it more defensive.
+
+### W10.2-14 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.2] Defensive Programming · **Subtopic:** Bidirectional associations · **Source:** W10.2d · **Basis:** body
+
+**Question:** How is a bidirectional association between `Man` and `Woman` in the design usually emulated at the code level?
+
+- A. Using two variables, one in each class ✅
+- B. Using a single variable in the class with more objects
+- C. Using a shared global variable that both classes read
+- D. Using inheritance, with one class extending the other
+
+**Answer:** A
+
+**Explanation:** A bidirectional association in the design is usually emulated using two variables: `Man` has a `girlfriend` variable and `Woman` has a `boyfriend` variable.
+
+### W10.2-15 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.2] Defensive Programming · **Subtopic:** Referential integrity · **Source:** W10.2d · **Basis:** body
+
+**Question:** In the defensive `Woman#setBoyfriend` below, what happens if `jean` already has a boyfriend different from `m`?
+
+```
+public void setBoyfriend(Man m) {
+    if (boyfriend == m) {
+        return;
+    }
+    if (boyfriend != null) {
+        boyfriend.breakUp();
+    }
+    boyfriend = m;
+    if (m != null) {
+        m.setGirlfriend(this);
+    }
+}
+```
+
+- A. The method returns immediately without changing anything
+- B. `m` is linked first, and the old boyfriend keeps referring to her
+- C. She breaks up with the current boyfriend first, then links to `m` both ways ✅
+- D. An exception is thrown because she already has a boyfriend
+
+**Answer:** C
+
+**Explanation:** If the current boyfriend is not `m` and not null, the code first calls `boyfriend.breakUp()`, then sets `boyfriend = m` and calls `m.setGirlfriend(this)`. This keeps the references on both sides consistent, maintaining referential integrity.
+
+### W10.2-16 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.2] Defensive Programming · **Subtopic:** Avoiding infinite loops · **Source:** W10.2d · **Basis:** body
+
+**Question:** In the defensive `breakUp()` below, why is `boyfriend` set to `null` before calling `ex.breakUp()`?
+
+```
+public void breakUp() {
+    if (boyfriend == null) {
+        return;
+    }
+    Man ex = boyfriend;
+    boyfriend = null;
+    ex.breakUp();
+}
+```
+
+- A. To free memory as early as possible
+- B. To prevent infinite loops of mutual `breakUp()` calls ✅
+- C. To make `ex.breakUp()` throw an exception
+- D. To allow `ex` to keep referring to this `Woman`
+
+**Answer:** B
+
+**Explanation:** The mirrored `Man#breakUp()` calls back into the `Woman`. Setting `boyfriend` to null first means that call hits the early exit, preventing infinite loops of mutual calls.
+
+### W10.2-17 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.2] Defensive Programming · **Subtopic:** Referential integrity · **Source:** W10.2d · **Basis:** body
+
+**Question:** A `Teacher` object's `student` variable refers to `Student` `amy`, but `amy`'s `teacher` variable refers to a different `Teacher`. What has been violated?
+
+- A. Encapsulation
+- B. Multiplicity of a compulsory association
+- C. Design by contract
+- D. Referential integrity ✅
+
+**Answer:** D
+
+**Explanation:** When the two variables emulating a bidirectional association do not refer back to each other, referential integrity has been violated, meaning there is an inconsistency in object references.
+
+### W10.2-18 · MRQ
+
+**Type:** MRQ · **Topic:** [W10.2] Defensive Programming · **Subtopic:** Degree of defensiveness · **Source:** W10.2e · **Basis:** body
+
+**Question:** Which factors does the course list as affecting the suitable degree of defensiveness? (Select all that apply.)
+
+- A. How critical the system is ✅
+- B. Whether the code will be used by programmers other than the author ✅
+- C. The number of classes in the system
+- D. The level of programming language support for defensive programming ✅
+- E. The overhead of being defensive ✅
+
+**Answer:** A, B, D, E
+
+**Explanation:** The suitable degree of defensiveness depends on factors such as how critical the system is, whether other programmers will use the code, the level of language support for defensive programming, and the overhead of being defensive. The number of classes is not among them.
+
+### W10.2-19 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.2] Defensive Programming · **Subtopic:** When to be defensive · **Source:** W10.2e · **Basis:** bold
+
+**Question:** A student argues that every method in a small personal script should check every possible misuse. Is it necessary to be 100% defensive all the time?
+
+- A. Yes, because any undefended code will eventually be misused
+- B. No; defensive code can be more complex and slower, so it depends ✅
+- C. Yes, because defensive code has no costs
+- D. No, because defensive programming is only for test code
+
+**Answer:** B
+
+**Explanation:** It is not necessary to be 100% defensive all the time. Defensive code may be less prone to misuse, but it can also be more complicated and slower to run, so the suitable degree depends on factors such as how critical the system is.
+
+### W10.2-20 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.2] Defensive Programming · **Subtopic:** Design by contract · **Source:** W10.2f · **Basis:** bold
+
+**Question:** What does the design-by-contract (DbC) approach require?
+
+- A. Defining formal, precise and verifiable interface specifications for software components ✅
+- B. Writing a legal contract between the developer and the customer
+- C. Checking every precondition inside each operation and throwing exceptions
+- D. Using only languages with built-in assertion support
+
+**Answer:** A
+
+**Explanation:** Design by contract is an approach for designing software that requires defining formal, precise, and verifiable interface specifications for software components. Checking preconditions inside the operation is the defensive approach.
+
+### W10.2-21 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.2] Defensive Programming · **Subtopic:** Defensive preconditions · **Source:** W10.2f · **Basis:** body
+
+**Question:** An operation's API specifies its preconditions precisely. Following the defensive approach, what should the operation's code do first?
+
+- A. Assume the caller has met all preconditions and proceed
+- B. Check the preconditions, typically throwing exceptions if violated ✅
+- C. Ignore the preconditions and check only the postconditions
+- D. Behave in an unspecified way if a precondition is not met
+
+**Answer:** B
+
+**Explanation:** Under the defensive approach, the code first checks whether the preconditions have been met, and typically throws exceptions if they are violated. Assuming the caller is responsible, with unspecified behavior otherwise, is the design-by-contract approach.
+
 ## [W10.3] Test Cases: Intro
 
 ### W10.3-01 · MCQ
@@ -7026,6 +17777,111 @@ void setGuarantor(Guarantor g) { guarantor = g; }
 
 **Explanation:** White-box design uses what is known about the SUT's code; here it is used to avoid redundant test cases, which also makes the testing more efficient.
 
+### W10.3-09 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.3] Test Cases: Intro · **Subtopic:** Effective testing · **Source:** W10.3a · **Basis:** bold
+
+**Question:** On the same system, test suite X finds 60 defects and test suite Y finds 30 defects. Which statement is correct?
+
+- A. X is more efficient than Y
+- B. Y is more effective than X
+- C. X is more effective than Y ✅
+- D. X and Y are equally effective, since both find defects
+
+**Answer:** C
+
+**Explanation:** Effective testing finds a high percentage of existing bugs, so the suite that finds 60 defects is more effective. Efficiency is the rate of bugs found per test case, which cannot be judged without knowing how many test cases each suite has.
+
+### W10.3-10 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.3] Test Cases: Intro · **Subtopic:** Limits of testing · **Source:** W10.3a · **Basis:** body
+
+**Question:** Complete Edsger Dijkstra's remark quoted in the course: "Program testing can be used to show the ___ of bugs, but never to show their ___!"
+
+- A. absence; presence
+- B. cause; location
+- C. number; severity
+- D. presence; absence ✅
+
+**Answer:** D
+
+**Explanation:** Dijkstra's remark is that program testing can be used to show the presence of bugs, but never to show their absence, which is one reason test cases need to be designed to make the best use of testing resources.
+
+### W10.3-11 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.3] Test Cases: Intro · **Subtopic:** Cost of test cases · **Source:** W10.3a · **Basis:** body
+
+**Question:** Why does the course say test cases need to be designed deliberately rather than added freely?
+
+- A. Because a test suite becomes less effective each time another test case is added
+- B. Because every test case adds to the cost of testing, sometimes by thousands of dollars ✅
+- C. Because deliberately designed test cases can show that a program has no bugs
+- D. Because test cases that are not deliberately designed cannot be automated later
+
+**Answer:** B
+
+**Explanation:** Every test case adds to the cost of testing, and in some systems a single test case can cost thousands of dollars, e.g., on-field testing of flight-control software; so test cases need to be designed to make the best use of testing resources.
+
+### W10.3-12 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.3] Test Cases: Intro · **Subtopic:** Positive test cases · **Source:** W10.3b · **Basis:** bold
+
+**Question:** A test of `print(Integer i)`, which prints the value of `i`, uses `i == new Integer(50)` and expects `50` to be printed. What kind of test case is this?
+
+- A. A positive test case, designed to produce an expected/valid behavior ✅
+- B. A negative test case, designed to produce an error message
+- C. A gray-box test case, designed from the implementation
+- D. A regression test case, designed to detect unintended effects
+
+**Answer:** A
+
+**Explanation:** A positive test case is designed to produce an expected/valid behavior, such as printing `50`; a negative test case, such as `i == null`, is designed to produce behavior that indicates an invalid or unexpected situation.
+
+### W10.3-13 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.3] Test Cases: Intro · **Subtopic:** Names for white-box · **Source:** W10.3c · **Basis:** body
+
+**Question:** Which of these is NOT another name for the white-box approach to test case design?
+
+- A. Glass-box
+- B. Responsibility-based ✅
+- C. Structured
+- D. Implementation-based
+
+**Answer:** B
+
+**Explanation:** The white-box approach is also called glass-box, structured or implementation-based. Responsibility-based is another name for the black-box approach, alongside specification-based.
+
+### W10.3-14 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.3] Test Cases: Intro · **Subtopic:** Test data from use cases · **Source:** W10.3d · **Basis:** body
+
+**Question:** A use case step says "User enters their personal data into the system." When designing test cases from this use case, what should the tester do about the data?
+
+- A. Use only the data values written in the use case itself
+- B. Choose data using equivalence partitions and boundary values ✅
+- C. Write exactly one test case for the use case, with any sample data
+- D. Skip the step, since use cases cannot be used for system testing
+
+**Answer:** B
+
+**Explanation:** Use cases do not specify the exact data entered into the system, so the tester has to choose data by considering equivalence partitions and boundary values; the combinations can make one use case produce many test cases.
+
+### W10.3-15 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.3] Test Cases: Intro · **Subtopic:** Prioritizing use cases · **Source:** W10.3d · **Basis:** body
+
+**Question:** A team tests a system from its use cases. How can it increase the effectiveness and efficiency of this testing?
+
+- A. Give every use case exactly the same amount of testing attention
+- B. Use exploratory testing for high-priority use cases and scripted testing elsewhere
+- C. Test only the main success scenario of each use case, skipping extensions
+- D. Give high-priority use cases more attention, e.g., by testing them in a scripted way ✅
+
+**Answer:** D
+
+**Explanation:** To increase the effectiveness and efficiency of testing, high-priority use cases are given more attention; for example, a scripted approach can be used for high-priority test cases, while an exploratory approach is used for other areas of concern that emerge during testing.
+
 ## [W10.4] Test Cases: Equivalence Partitioning
 
 ### W10.4-01 · MCQ
@@ -7133,6 +17989,186 @@ void setGuarantor(Guarantor g) { guarantor = g; }
 
 **Explanation:** Equivalence partitioning groups inputs likely to be processed in the same way, so all partitions get tested without testing many inputs from the same one.
 
+### W10.4-08 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.4] Test Cases: Equivalence Partitioning · **Subtopic:** Redundant inputs · **Source:** W10.4a · **Basis:** body
+
+**Question:** `isValidMonth(m)` returns `true` if `m` is in the range [1..12]. The input `233` fails to produce the correct result. Why is there no need to also test `234`?
+
+- A. Because `234` is a boundary value of the partition
+- B. Because only one invalid value may appear in a test case
+- C. Because `233` and `234` are likely processed the same way ✅
+- D. Because `234` is outside the range of `int`
+
+**Answer:** C
+
+**Explanation:** Most SUTs process all possible inputs in a small number of distinct ways, so if `233` fails, `234` is likely to fail too; both belong to the same equivalence partition, and testing both adds little.
+
+### W10.4-09 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.4] Test Cases: Equivalence Partitioning · **Subtopic:** Equivalence partition · **Source:** W10.4a · **Basis:** bold
+
+**Question:** A tester groups all integers from 13 up to `MAX_INT` together when testing `isValidMonth(m)`. Such a group is an equivalence partition. What is an equivalence partition?
+
+- A. A group of test cases that are all expected to pass together
+- B. A group of test inputs likely processed by the SUT the same way ✅
+- C. A group of inputs that lie at the boundary of the valid range
+- D. A group of inputs that must consist of adjacent values
+
+**Answer:** B
+
+**Explanation:** An equivalence partition (aka equivalence class) is a group of test inputs that are likely to be processed by the SUT in the same way; it need not consist of adjacent values.
+
+### W10.4-10 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.4] Test Cases: Equivalence Partitioning · **Subtopic:** Source of partitions · **Source:** W10.4b · **Basis:** bold
+
+**Question:** A tester is about to identify equivalence partitions for a method. From what are EPs usually derived?
+
+- A. The specification of the SUT ✅
+- B. The bug reports from earlier releases
+- C. The test coverage report
+- D. User feedback from beta testing
+
+**Answer:** A
+
+**Explanation:** Equivalence partitions are usually derived from the specifications of the SUT, e.g., the [1..12] range in the specification of `isValidMonth` gives the partitions below, within and above that range.
+
+### W10.4-11 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.4] Test Cases: Equivalence Partitioning · **Subtopic:** One value per partition · **Source:** W10.4b · **Basis:** body
+
+**Question:** `showStatusMessage(GameStatus s)` returns a unique `String` for each possible value of `s`, where `GameStatus` is an `enum`. How should `s` be partitioned?
+
+- A. All values of `s` form one partition, since they are all valid
+- B. Two partitions: values that produce a message and values that do not
+- C. Partitions by the length of each value's name
+- D. Each possible value of `s` is a partition by itself ✅
+
+**Answer:** D
+
+**Explanation:** When an input has only a small number of possible values and a potentially unique behavior for each value, each value has to be considered as a partition by itself, as with `showStatusMessage`.
+
+### W10.4-12 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.4] Test Cases: Equivalence Partitioning · **Subtopic:** Partitions for string flags · **Source:** W10.4b · **Basis:** body
+
+**Question:** `isValidFlag(String s)` returns `true` if `s` is one of `"F"`, `"T"`, `"D"`, and the comparison is case-sensitive. Which set of equivalence partitions matches the course's example?
+
+- A. [`"F"`, `"T"`, `"D"`] [any other string]
+- B. [`"F"`, `"f"`] [`"T"`, `"t"`] [`"D"`, `"d"`] [any other string] [null]
+- C. [`"F"`] [`"T"`] [`"D"`] [`"f"`, `"t"`, `"d"`] [any other string] [null] ✅
+- D. [`"F"`] [`"T"`] [`"D"`] [any other string]
+
+**Answer:** C
+
+**Explanation:** Each valid flag is a partition by itself, the lowercase versions form their own partition because the comparison is case-sensitive, and any other string and `null` are further partitions. Grouping uppercase with lowercase ignores case-sensitivity, and leaving out `null` misses a partition.
+
+### W10.4-13 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.4] Test Cases: Equivalence Partitioning · **Subtopic:** Partitions for squareRoot · **Source:** W10.4b · **Basis:** body
+
+**Question:** `squareRoot(String s)` expects `s` to represent a positive integer, and returns the square root if it is an integer and `0` otherwise. Which of these is NOT one of the equivalence partitions the course gives for `s`?
+
+- A. `s` does not represent a valid number
+- B. `s` represents an even number ✅
+- C. `s` is a negative integer
+- D. `s` has an integer square root
+
+**Answer:** B
+
+**Explanation:** The course's partitions are: `s` does not represent a valid number; `s` is a negative integer; `s` has an integer square root; and `s` does not have an integer square root. Whether the number is even does not decide how the SUT processes it.
+
+### W10.4-14 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.4] Test Cases: Equivalence Partitioning · **Subtopic:** EP is a heuristic · **Source:** W10.4b · **Basis:** body
+
+**Question:** For `isValidMonth`, one tester uses three partitions ([MIN_INT..0], [1..12], [13..MAX_INT]) while another uses two ([1..12], [all other integers]). What does the course say about this?
+
+- A. One of them must be wrong, because EP gives a unique set of partitions
+- B. The two-partition set is always wrong, because it has fewer partitions than the other
+- C. EP is a heuristic; partitions depend on how one speculates the SUT behaves ✅
+- D. Partitions may only be derived from the code, so neither tester is using EP
+
+**Answer:** C
+
+**Explanation:** EP is merely a heuristic and not an exact science, especially when applied manually; the partitions depend on how one 'speculates' the SUT behaves internally, so different testers may differ, and applying EP under a glass-box or gray-box approach can yield more precise partitions.
+
+### W10.4-15 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.4] Test Cases: Equivalence Partitioning · **Subtopic:** Multiple inputs · **Source:** W10.4b · **Basis:** body
+
+**Question:** `duplicate(String s, int n)` returns `s` repeated `n` times. How should EP be applied to this method?
+
+- A. Identify EPs for each input, e.g., zero-length `s`; `0` or negative `n` ✅
+- B. Partition only `s`, since the first parameter determines the behavior of the method
+- C. Treat `s` and `n` together as one value with a single partition
+- D. Partition only `n`, since a `String` cannot be partitioned
+
+**Answer:** A
+
+**Explanation:** When the SUT has multiple inputs, you should identify EPs for each input; the course's examples are zero-length strings and strings containing whitespace for `s`, and `0` and negative values for `n`.
+
+### W10.4-16 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.4] Test Cases: Equivalence Partitioning · **Subtopic:** EPs for an OOP method · **Source:** W10.4c · **Basis:** body
+
+**Question:** `DataStack#push(Object o)` adds `o` to the top of the stack if it is not full, throws `MutabilityException` if the global flag `FREEZE` is `true`, and throws `InvalidValueException` if `o` is `null`. Which set of EPs is appropriate?
+
+- A. `o`: [null] [not null]; `DataStack`: [empty] [not empty]
+- B. `DataStack`: [empty] [full]; `o`: [null] [not null]; `FREEZE`: [true]
+- C. `o`: [null] [not null]; `FREEZE`: [true] [false]
+- D. `DataStack`: [full] [not full]; `o`: [null] [not null]; `FREEZE`: [true] [false] ✅
+
+**Answer:** D
+
+**Explanation:** For OOP methods, EPs are needed for all data participants that can influence the behavior: the target `DataStack` object (full or not full), the parameter `o` (null or not), and the global flag `FREEZE` (true or false).
+
+### W10.4-17 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.4] Test Cases: Equivalence Partitioning · **Subtopic:** Participants in black-box · **Source:** W10.4c · **Basis:** body
+
+**Question:** When deciding EPs for an OOP method, one category of participant is "other data/objects accessed by the method, such as global variables". Why may this category not apply under the black-box approach?
+
+- A. Because global variables never influence a method's behavior
+- B. Because the black-box test designer does not know how the method is implemented ✅
+- C. Because black-box testing checks only the method's parameters, never its target object
+- D. Because global variables are tested only during system testing
+
+**Answer:** B
+
+**Explanation:** Under the black-box approach the test case designer does not know how the method is implemented, so they cannot tell which other data or objects, such as global variables, the method accesses.
+
+### W10.4-18 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.4] Test Cases: Equivalence Partitioning · **Subtopic:** Partitions without parameters · **Source:** W10.4c · **Basis:** body
+
+**Question:** In a Minesweeper app, `Logic#newGame()` has no parameters. Using the black-box approach, what is the participant and what are its equivalence partitions?
+
+- A. There are no participants, so the method needs only one test case
+- B. The `Minefield` object, partitioned into HIDDEN, MARKED and CLEARED cells
+- C. The `Logic` object, partitioned by game state: PRE_GAME, READY, IN_PLAY, and WON/LOST ✅
+- D. The method's return value, partitioned into valid and invalid
+
+**Answer:** C
+
+**Explanation:** With no parameters, the only obvious participant is the `Logic` object itself, and `newGame()` may behave differently based on the game state, giving the partitions PRE_GAME, READY, IN_PLAY and WON/LOST (assumed to behave the same). The `Minefield` would be a participant only under glass-box or gray-box.
+
+### W10.4-19 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.4] Test Cases: Equivalence Partitioning · **Subtopic:** Valid partitions · **Source:** W10.4c · **Basis:** body
+
+**Question:** For `Logic#markCellAt(int x, int y)` on a minefield of size W×H, which is the valid partition for `x`, and which state of the `Cell` at `(x, y)` is valid?
+
+- A. `x`: [0..(W-1)]; `Cell`: HIDDEN ✅
+- B. `x`: [1..W]; `Cell`: HIDDEN
+- C. `x`: [0..(W-1)]; `Cell`: MARKED
+- D. `x`: [0..W]; `Cell`: CLEARED
+
+**Answer:** A
+
+**Explanation:** The partitions for `x` are [MIN_INT..-1], [0..(W-1)] and [W..MAX_INT], of which [0..(W-1)] is valid; for the `Cell` at `(x, y)`, HIDDEN is the valid partition while MARKED and CLEARED are not.
+
 ## [W10.5] Test Cases: Boundary Value Analysis
 
 ### W10.5-01 · MCQ
@@ -7209,6 +18245,111 @@ void setGuarantor(Guarantor g) { guarantor = g; }
 **Answer:** A
 
 **Explanation:** BVA suggests picking values at and next to partition boundaries; a 2-digit and a 3-digit number probe the minimum-length boundary directly.
+
+### W10.5-06 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.5] Test Cases: Boundary Value Analysis · **Subtopic:** Bugs at boundaries · **Source:** W10.5a · **Basis:** body
+
+**Question:** The valid partition for `x` in `markCellAt(int x, int y)` is [0..(W-1)], but the code checks `if (x > 0 && x <= (W-1))`. Which test input exposes this mistake, and why does BVA expect mistakes like this?
+
+- A. `x == W/2`, because middle values are processed by the most lines of code
+- B. `x == 0`, because boundary end points appear in branches, where mistakes are made ✅
+- C. `x == MAX_INT`, because extreme values cause overflow in every program
+- D. `x == W-1`, because values on the upper boundary are always treated as invalid
+
+**Answer:** B
+
+**Explanation:** BVA is based on the observation that bugs often result from incorrect handling of partition boundaries, since end points are often used in branching instructions where programmers can make mistakes. Here `x > 0` wrongly rejects the boundary value `0`.
+
+### W10.5-07 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.5] Test Cases: Boundary Value Analysis · **Subtopic:** Corner cases · **Source:** W10.5a · **Basis:** body
+
+**Question:** A tester picks values near the boundaries of equivalence partitions. What other name does the course give to such boundary values?
+
+- A. Equivalence classes
+- B. Regression cases
+- C. Hot spots
+- D. Corner cases ✅
+
+**Answer:** D
+
+**Explanation:** Boundary values, the values near the boundaries of equivalence partitions that BVA says are more likely to find bugs, are sometimes called corner cases.
+
+### W10.5-08 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.5] Test Cases: Boundary Value Analysis · **Subtopic:** Test values for a range · **Source:** W10.5b · **Basis:** body
+
+**Question:** For the equivalence partition [MIN_INT, 0], where MIN_INT is the minimum integer allowed by the environment, which set of test values does the course suggest?
+
+- A. -1, 0, 1 only
+- B. MIN_INT and 0 only
+- C. MIN_INT, MIN_INT+1, -1, 0, 1 ✅
+- D. MIN_INT-1, MIN_INT, 0, 1
+
+**Answer:** C
+
+**Explanation:** The boundaries of [MIN_INT, 0] are MIN_INT and 0, and the suggested test values are those boundaries plus values next to them: MIN_INT, MIN_INT+1, -1, 0 and 1. A value below MIN_INT is not possible in the environment.
+
+### W10.5-09 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.5] Test Cases: Boundary Value Analysis · **Subtopic:** No specific boundary · **Source:** W10.5b · **Basis:** body
+
+**Question:** For which of these equivalence partitions does the course say there is no specific boundary?
+
+- A. [1-12]
+- B. [prime numbers] ✅
+- C. [MIN_INT, 0]
+- D. [non-empty Stack], assuming a fixed-size stack
+
+**Answer:** B
+
+**Explanation:** Partitions such as [prime numbers], [“F”] and [“A”, “D”, “X”] have no specific boundary, whereas ranges like [1-12] and [MIN_INT, 0], and a fixed-size non-empty stack, do have boundary values.
+
+### W10.5-10 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.5] Test Cases: Boundary Value Analysis · **Subtopic:** Boundaries of a stack · **Source:** W10.5b · **Basis:** body
+
+**Question:** For the partition [non-empty Stack] of a fixed-size stack, the course lists these test values: no elements, one element, two elements, no empty spaces, only one empty space. Which two are the boundary values?
+
+- A. One element; no empty spaces ✅
+- B. No elements; one element
+- C. Two elements; only one empty space
+- D. No elements; no empty spaces
+
+**Answer:** A
+
+**Explanation:** The non-empty stack partition runs from a stack with one element to a stack with no empty spaces (full), so those two are the boundaries; the other values are just outside or just inside them.
+
+### W10.5-11 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.5] Test Cases: Boundary Value Analysis · **Subtopic:** Applying BVA · **Source:** W10.5b · **Basis:** body
+
+**Question:** `isValidAge(int age)` returns `true` if `age` is from 18 to 65 inclusive. Following the course's pattern for the partition [1-12] (0, 1, 2, 11, 12, 13), which six test values are best?
+
+- A. 18, 30, 40, 50, 60, 65
+- B. 0, 18, 40, 65, 100, MAX_INT
+- C. 16, 17, 40, 41, 66, 67
+- D. 17, 18, 19, 64, 65, 66 ✅
+
+**Answer:** D
+
+**Explanation:** The [1-12] pattern takes each boundary of the valid range plus the values just below and just above it. For 18..65 the boundaries are 18 and 65, giving 17, 18, 19, 64, 65 and 66.
+
+### W10.5-12 · MCQ
+
+**Type:** MCQ · **Topic:** [W10.5] Test Cases: Boundary Value Analysis · **Subtopic:** Prioritizing test values · **Source:** W10.5b · **Basis:** bold
+
+**Question:** A tester of the partition [1-12] can afford only a few test values now, and possibly more later. Which plan follows the course's advice?
+
+- A. Start with the middle value 6, adding boundary values only if a bug is found
+- B. Start with the boundaries 1 and 12; if affordable, add 0, 2, 11 and 13 ✅
+- C. Test only 1 and 12, since non-boundary values never find any bugs
+- D. Test every value from 1 to 12 before any value outside the partition
+
+**Answer:** B
+
+**Explanation:** You should try to test both boundary and non-boundary values, giving priority to boundary values; if you can afford more test cases, you can pick values just below and just above the boundary.
 
 ---
 
@@ -7380,6 +18521,336 @@ void setGuarantor(Guarantor g) { guarantor = g; }
 **Answer:** A
 
 **Explanation:** The UI observes the model's data and is notified of changes, while the observed side is not coupled to its observers. JavaFX has built-in support for the Observer pattern.
+
+### W11.1-12 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.1] More Design Patterns · **Subtopic:** MVC Model · **Source:** W11.1a · **Basis:** body
+
+**Question:** In MVC, which responsibility belongs to the Model?
+
+- A. Presenting information to the user and providing UI elements
+- B. Handling mouse clicks and interpreting the user's input
+- C. Maintaining domain state and the rules and operations on it ✅
+- D. Combining the view and controller into a single class
+
+**Answer:** C
+
+**Explanation:** The Model maintains application or domain state, implements the rules and operations on it, and may notify interested components when its state changes. Presenting information is the View's job and handling input is the Controller's.
+
+### W11.1-13 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.1] More Design Patterns · **Subtopic:** MVC View · **Source:** W11.1a · **Basis:** body
+
+**Question:** In MVC, where does the View get the information it displays?
+
+- A. From its own copy of the domain state, kept inside the view
+- B. From the model, or from data supplied by the controller ✅
+- C. Directly from the database, bypassing the model
+- D. Only from the user's input events, such as clicks
+
+**Answer:** B
+
+**Explanation:** The View presents information to the user and provides UI elements for interaction. It pulls the information to display from the model or from data supplied by the controller, depending on the design.
+
+### W11.1-14 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.1] More Design Patterns · **Subtopic:** MVC UI composition · **Source:** W11.1a · **Basis:** body
+
+**Question:** Which MVC components typically make up the UI, and when can they be combined into a single class?
+
+- A. Model and View; when the data is small
+- B. Model and Controller; when there is no database
+- C. View and Model; when there is only one user
+- D. View and Controller; in a simple UI with only one view ✅
+
+**Answer:** D
+
+**Explanation:** Typically, the UI is the combination of View and Controller. In a simple UI where there is only one view, Controller and View can even be combined as one class.
+
+### W11.1-15 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.1] More Design Patterns · **Subtopic:** MVC problem · **Source:** W11.1a · **Basis:** body
+
+**Question:** Most applications store and retrieve information, display it to users, and change it based on external inputs. What problem does MVC address in this context?
+
+- A. The high coupling that can result from the interlinked nature of these features ✅
+- B. The difficulty of having more than one instance of the main controller
+- C. The slowness of network requests between client and server
+- D. The duplication of common data across many similar objects
+
+**Answer:** A
+
+**Explanation:** MVC's problem is the high coupling that can result from the interlinked nature of storage and retrieval, display, and changing of information. It decouples data, presentation and control logic into Model, View and Controller.
+
+### W11.1-16 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.1] More Design Patterns · **Subtopic:** MVC variations · **Source:** W11.1a · **Basis:** body
+
+**Question:** A student notices that MVC in a web framework looks different from MVC in a desktop GUI they used. What explains this?
+
+- A. Only one of them is a correct implementation of MVC
+- B. MVC can be applied properly only to desktop GUIs
+- C. MVC has many variations used in different domains ✅
+- D. Web frameworks use the Observer pattern instead of MVC
+
+**Answer:** C
+
+**Explanation:** There are many variations of the MVC model used in different domains. For example, the one used in a desktop GUI could be different from the one used in a web application.
+
+### W11.1-17 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.1] More Design Patterns · **Subtopic:** Observer problem · **Source:** W11.1b · **Basis:** body
+
+**Question:** What is the problem statement of the Observer pattern?
+
+- A. A class should have no more than one instance
+- B. The observed object does not want to be coupled to the objects observing it ✅
+- C. A component's internal details should not be exposed to its users
+- D. Commands should be executed without knowing their type
+
+**Answer:** B
+
+**Explanation:** Observer's problem is that the observed object does not want to be coupled to objects that are observing it. The others are the problems addressed by Singleton, Facade and Command respectively.
+
+### W11.1-18 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.1] More Design Patterns · **Subtopic:** Subscribing for updates · **Source:** W11.1b · **Basis:** body
+
+**Question:** In the student management system that applies Observer, which step is described as "subscribing for updates"?
+
+- A. `studentList.addUi(listUi);` ✅
+- B. `new StudentListUi();`, which creates the UI object
+- C. `o.update();` inside `notifyUIs()`
+- D. Pulling data from `StudentList` in `update()`
+
+**Answer:** A
+
+**Explanation:** During initialization, the UIs indicate to `StudentList` that they are interested in being updated whenever it changes, which is called subscribing for updates. `addUi` adds each Observer to the internal `observerList`.
+
+### W11.1-19 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.1] More Design Patterns · **Subtopic:** Pulling data after update · **Source:** W11.1b · **Basis:** body
+
+**Question:** In the student management example, `StudentList` calls `update()` on each subscribed UI when a student is added. How do the UIs then get the new data?
+
+- A. The new student is passed as a parameter to `update()`
+- B. `StudentList` writes the data directly into each UI's fields
+- C. Each UI reads the data from the database itself
+- D. The UIs pull data from `StudentList` when `update()` is called ✅
+
+**Answer:** D
+
+**Explanation:** UIs pull data from the `StudentList` whenever their `update` operation is called. `StudentList` is unaware of the exact nature of the UIs and communicates with them only via the `Observer` interface.
+
+### W11.1-20 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.1] More Design Patterns · **Subtopic:** Observer interface · **Source:** W11.1b · **Basis:** body
+
+**Question:** In the generic Observer pattern, what is `<<Observer>>`, and how many observers can observe an `<<Observable>>`?
+
+- A. A concrete class; exactly one
+- B. An abstract class; at most two
+- C. An interface; any number ✅
+- D. An interface; exactly one
+
+**Answer:** C
+
+**Explanation:** `<<Observer>>` is an interface, and any class that implements it can observe an `<<Observable>>`. Any number of `<<Observer>>` objects can observe the `<<Observable>>` object.
+
+### W11.1-21 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.1] More Design Patterns · **Subtopic:** Observer in GUI frameworks · **Source:** W11.1b · **Basis:** body
+
+**Question:** In a GUI application, how is the Controller typically notified when the "save" button is clicked?
+
+- A. The button polls the Controller repeatedly for changes
+- B. UI frameworks such as JavaFX support Observer built in ✅
+- C. The Controller is made a Singleton so the button finds it
+- D. The button contains the Controller's save logic itself
+
+**Answer:** B
+
+**Explanation:** UI frameworks such as JavaFX have built-in support for the Observer pattern, which is how the Controller gets notified when the "save" button is clicked.
+
+### W11.1-22 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.1] More Design Patterns · **Subtopic:** GoF book contents · **Source:** W11.1c · **Basis:** bold
+
+**Question:** How many design patterns does the "Gang of Four" book contain, and into how many categories are they divided?
+
+- A. 23 patterns in three categories ✅
+- B. 23 patterns in five categories
+- C. 12 patterns in three categories
+- D. 30 patterns in four categories
+
+**Answer:** A
+
+**Explanation:** The GoF book, the most famous source of design patterns, contains 23 design patterns divided into three categories: creational, structural and behavioral.
+
+### W11.1-23 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.1] More Design Patterns · **Subtopic:** GoF categories · **Source:** W11.1c · **Basis:** body
+
+**Question:** Adapter, Decorator and Proxy all belong to which GoF category?
+
+- A. Creational
+- B. Behavioral
+- C. Architectural
+- D. Structural ✅
+
+**Answer:** D
+
+**Explanation:** Adapter, Decorator and Proxy are structural patterns, which are about composing objects into larger structures while catering for future extension. Creational patterns concern object creation and behavioral ones how objects interact.
+
+### W11.1-24 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.1] More Design Patterns · **Subtopic:** GoF categories · **Source:** W11.1c · **Basis:** body
+
+**Question:** Which list gives one creational, one structural and one behavioral GoF pattern, in that order?
+
+- A. Strategy, Builder, Composite
+- B. Prototype, Bridge, Iterator ✅
+- C. Factory Method, State, Flyweight
+- D. Adapter, Prototype, Strategy
+
+**Answer:** B
+
+**Explanation:** Prototype is creational, Bridge is structural and Iterator is behavioral. Strategy and State are behavioral, Builder and Factory Method are creational, and Composite, Flyweight and Adapter are structural.
+
+### W11.1-25 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.1] More Design Patterns · **Subtopic:** Combining patterns in SIS · **Source:** W11.1d · **Basis:** body
+
+**Question:** In the Stock Inventory System case study, which pattern is applied to shield the SIS internals from the UI?
+
+- A. Observer
+- B. Abstraction Occurrence
+- C. Facade ✅
+- D. Command
+
+**Answer:** C
+
+**Explanation:** The Facade pattern is applied to shield the SIS internals from the UI. In the same design, MVC is applied because the UI has multiple views, Observer because some views must update when data changes, and Abstraction Occurrence to keep track of stock items.
+
+### W11.1-26 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.1] More Design Patterns · **Subtopic:** List of StockItems · **Source:** W11.1d · **Basis:** body
+
+**Question:** A shop's Stock Inventory System sells appliances and accessories, both modelled as kinds of `StockItem`. Why is keeping a list of `StockItem`s preferred over a list of `Appliance`s?
+
+- A. It allows each accessory to have its own accessories
+- B. It handles both appliances and accessories the same way ✅
+- C. It removes the need for an `Accessory` class
+- D. It makes the `StockItem` class a Singleton
+
+**Answer:** B
+
+**Explanation:** A list of `StockItem`s is more suitable because it can handle both appliances and accessories the same way, whereas a list of `Appliance`s would leave out accessories.
+
+### W11.1-27 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.1] More Design Patterns · **Subtopic:** Before applying a pattern · **Source:** W11.1e · **Basis:** body
+
+**Question:** A developer wants to add the Command pattern to a tiny script with two fixed operations. What should they make sure of first?
+
+- A. That the improvement is substantial and the trade-offs are considered ✅
+- B. That the pattern is listed among the 23 in the GoF book
+- C. That every other relevant pattern has already been applied
+- D. That the pattern can be applied without adding new classes
+
+**Answer:** A
+
+**Explanation:** Be careful not to overuse patterns: they come with overhead such as more classes or more levels of abstraction. Before applying one, make sure the improvement is substantial, not superficial, and that the trade-offs are carefully considered.
+
+### W11.1-28 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.1] More Design Patterns · **Subtopic:** Learning patterns · **Source:** W11.1e · **Basis:** bold
+
+**Question:** A student has limited time to study design patterns. What should they aim to learn about each pattern at the least?
+
+- A. Its full code implementation in Java
+- B. The names of the people who invented it
+- C. Its UML class diagram, memorized exactly
+- D. Its context and problem ✅
+
+**Answer:** D
+
+**Explanation:** Knowing more patterns is a way to become more 'experienced'. Aim to learn at least the context and the problem of patterns, so that when you encounter those problems you know where to look for a solution.
+
+### W11.1-29 · MRQ
+
+**Type:** MRQ · **Topic:** [W11.1] More Design Patterns · **Subtopic:** Sources of patterns · **Source:** W11.1e · **Basis:** bold
+
+**Question:** Which are valid sources of design patterns according to the course? (Select all that apply.)
+
+- A. Domain-specific patterns, e.g. for distributed applications ✅
+- B. Patterns created in-house, e.g. within a company or project ✅
+- C. Self-created patterns, e.g. from past experience ✅
+- D. Only the GoF book, since other patterns are not valid
+
+**Answer:** A, B, C
+
+**Explanation:** Some patterns are domain-specific, some are created in-house in a company or project, and some can be self-created from past experience. The GoF book is the most famous source but not the only one.
+
+### W11.1-30 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.1] More Design Patterns · **Subtopic:** Origin of patterns · **Source:** W11.1g · **Basis:** body
+
+**Question:** To whom is the notion of capturing design ideas as "patterns" usually attributed?
+
+- A. The "Gang of Four" software engineers
+- B. Christopher Alexander, a building architect, author of *The Timeless Way of Building* ✅
+- C. Bass, Clements and Kazman, authors of *Software Architecture in Practice*
+- D. James Lewis and Martin Fowler
+
+**Answer:** B
+
+**Explanation:** The notion of capturing design ideas as patterns is usually attributed to Christopher Alexander, a building architect whose book *The Timeless Way of Building* discusses design patterns for constructing buildings. The GoF later popularized the term in software.
+
+### W11.1-31 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.1] More Design Patterns · **Subtopic:** Analysis patterns · **Source:** W11.1g · **Basis:** body
+
+**Question:** According to the course, the Abstraction Occurrence pattern is "more of" which kind of pattern than a design pattern?
+
+- A. An architectural pattern
+- B. A testing pattern
+- C. A project management pattern
+- D. An analysis pattern ✅
+
+**Answer:** D
+
+**Explanation:** The Abstraction Occurrence pattern is more of an analysis pattern than a design pattern, while MVC is more of an architectural pattern.
+
+### W11.1-32 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.1] More Design Patterns · **Subtopic:** Creating new patterns · **Source:** W11.1g · **Basis:** body
+
+**Question:** A team keeps solving a common problem with the same non-obvious approach that works better than the obvious one. What does the course say about turning it into a pattern?
+
+- A. Only the Gang of Four may define new design patterns for software
+- B. It can become a pattern, but first check that it does not already exist ✅
+- C. It may become a pattern only if the solution is an obvious one
+- D. New patterns can be created only in the field of building architecture
+
+**Answer:** B
+
+**Explanation:** If a common problem that needs to be solved frequently leads to a non-obvious and better solution, it can be formulated as a pattern so others can reuse it. However, don't reinvent the wheel; the pattern might already exist.
+
+### W11.1-33 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.1] More Design Patterns · **Subtopic:** Formality of principles · **Source:** W11.1f · **Basis:** bold
+
+**Question:** Which statement describes the formality of design principles?
+
+- A. They are always formal mathematical axioms
+- B. They are always strict rules enforced by compilers
+- C. They have varying degrees of formality ✅
+- D. They are informal opinions, with no rules among them
+
+**Answer:** C
+
+**Explanation:** Design principles have varying degrees of formality, ranging over rules, opinions, rules of thumb, observations and axioms. Compared to patterns, they are more general, with wider applicability and greater overlap.
 
 ## [W11.2] Architectural Styles
 
@@ -7638,6 +19109,487 @@ void setGuarantor(Guarantor g) { guarantor = g; }
 
 **Explanation:** The UI framework delivers the event to a registered handler instead of the text field containing the follow-up logic. If you have written a GUI, you have written event-driven code.
 
+### W11.2-18 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Architectural style · **Source:** W11.2a · **Basis:** bold
+
+**Question:** A developer says, "Our app is client-server", and the team immediately understands the arrangement. What concept does this illustrate?
+
+- A. A design pattern applied to a single class in the code
+- B. A coding standard that the whole team has agreed to follow
+- C. An architectural style that the team can refer to by name ✅
+- D. A deployment tool that packages and releases the system
+
+**Answer:** C
+
+**Explanation:** An architectural style (aka architectural pattern) is a reusable way of organizing the major parts of a system. Naming a style such as "layered" or "client-server" lets developers refer to a familiar arrangement without explaining it from scratch.
+
+### W11.2-19 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Benefit of layering · **Source:** W11.2b · **Basis:** body
+
+**Question:** In a layered system, why can a lower layer be understood, tested and replaced without concern for the layers above it?
+
+- A. Because it depends on nothing above it ✅
+- B. Because it is always deployed on a separate machine
+- C. Because upper layers never call it directly
+- D. Because it contains no business logic
+
+**Answer:** A
+
+**Explanation:** In layering, dependencies all point downward. Because a lower layer depends on nothing above it, it can be understood, tested and replaced without being concerned about the layers above.
+
+### W11.2-20 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Layering and distribution · **Source:** W11.2b · **Basis:** bold
+
+**Question:** A desktop invoice manager is organized into several layers and runs as one program on one computer. Which statement is correct?
+
+- A. It cannot be layered, because layering requires several tiers
+- B. Each of its layers is a separate tier
+- C. It must be split across a network to benefit from layering
+- D. It has several layers but only one tier ✅
+
+**Answer:** D
+
+**Explanation:** A layer is a logical division inside the software while a tier is a separately deployed part. The desktop invoice manager has several layers but runs as a single tier; layering does not require distribution and does not imply it.
+
+### W11.2-21 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Classic layered examples · **Source:** W11.2b · **Basis:** body
+
+**Question:** Which kinds of software does the course give as the classic examples of the layered style?
+
+- A. Shell pipelines and command-line text processing tools
+- B. Operating systems and network communication software ✅
+- C. Online games, email and other collaborative applications
+- D. IDE plug-ins and browser extensions for web browsers
+
+**Answer:** B
+
+**Explanation:** Operating systems and network communication software are the classic examples of layering. Shell pipelines illustrate pipes-and-filters, online games and email illustrate client-server, and IDE plug-ins illustrate the plug-in style.
+
+### W11.2-22 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Monolith and processes · **Source:** W11.2c · **Basis:** bold
+
+**Question:** A web application is built as one artifact and released as a whole, but in production it runs as many identical copies behind a load balancer. Is it still a monolith?
+
+- A. No; a monolith must always run as exactly one process on one machine
+- B. No; running copies behind a load balancer makes it microservices
+- C. Yes; one deployable unit does not mean one running process ✅
+- D. Yes, but only if all the copies run on the same physical machine
+
+**Answer:** C
+
+**Explanation:** A monolith is a system deployed as a single unit. Being one deployable unit does not mean one running process: it may be launched as several processes or run as identical copies behind a load balancer, all released together.
+
+### W11.2-23 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Monolith is not badly structured · **Source:** W11.2c · **Basis:** bold
+
+**Question:** A reviewer dismisses a design because "it's a monolith, so it must be badly structured". What is wrong with this reasoning?
+
+- A. "Monolith" describes how a system is deployed, not how well it is organized ✅
+- B. Monoliths are always well structured by definition, so it cannot be bad
+- C. "Monolith" describes only systems that consist of a single class
+- D. Nothing; monoliths always have tangled, two-way dependencies
+
+**Answer:** A
+
+**Explanation:** "Monolith" is not a synonym for "badly structured." The word describes how the system is deployed; a monolith can have a tangled internal structure or a disciplined modular one.
+
+### W11.2-24 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Monolithic style aspect · **Source:** W11.2c · **Basis:** body
+
+**Question:** On which aspect of a system does the monolithic style focus?
+
+- A. How the code inside a program is organized into layers
+- B. What triggers work and how notifications flow
+- C. Which parts request capabilities and which parts provide them
+- D. How the system is packaged and deployed ✅
+
+**Answer:** D
+
+**Explanation:** The monolithic style focuses on how the system is packaged and deployed. Code organization into layers is the layered style's focus, what triggers work is the event-driven style's, and who requests versus provides capabilities is client-server's.
+
+### W11.2-25 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Event dispatcher · **Source:** W11.2d · **Basis:** body
+
+**Question:** In the event-driven style, what is the role of the event dispatcher?
+
+- A. It raises events when something happens
+- B. It routes each event to its matching consumers ✅
+- C. It reacts to events by doing the actual work
+- D. It converts events into direct method calls
+
+**Answer:** B
+
+**Explanation:** The emitter raises an event, the consumers react to it, and an event dispatcher mechanism routes each event to its matching consumers.
+
+### W11.2-26 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Dimensions of event delivery · **Source:** W11.2d · **Basis:** bold
+
+**Question:** Event delivery is described along two separate dimensions. Which are they?
+
+- A. Strict or relaxed; closed or open
+- B. Push or pull; single or multiple consumers
+- C. Local or distributed; synchronous or asynchronous ✅
+- D. Client or server; request or response
+
+**Answer:** C
+
+**Explanation:** Event delivery has two separate dimensions: local or distributed (inside one program or across a network) and synchronous or asynchronous (the emitter waits for consumers to finish, or carries on emitting).
+
+### W11.2-27 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** GUI click delivery · **Source:** W11.2d · **Basis:** body
+
+**Question:** How is a typical GUI button click delivered, in terms of the two dimensions of event delivery?
+
+- A. Distributed, and strictly synchronous: the handler runs on a server
+- B. Distributed and asynchronous, through a publish-subscribe message broker
+- C. Local and strictly synchronous: the button calls the handler and waits
+- D. Local, and not strictly synchronous: it goes on a local event queue ✅
+
+**Answer:** D
+
+**Explanation:** A GUI button click is local, and it is not strictly synchronous either: the click is usually placed on a local event queue and handled shortly afterward by the interface thread.
+
+### W11.2-28 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Traceability cost · **Source:** W11.2d · **Basis:** body
+
+**Question:** In an event-driven invoice manager, a developer struggles to answer "what happens when an invoice is deleted?". Why is this harder than with direct calls?
+
+- A. The consumer list is held by the framework, not visible where the event is raised ✅
+- B. Events are never delivered to more than one consumer, so handlers are scattered
+- C. The emitter must know every consumer, so the same code is duplicated everywhere
+- D. Event-driven systems keep no list of consumers at all, so nothing tracks them
+
+**Answer:** A
+
+**Explanation:** Event-driven architecture reduces coupling at the cost of traceability. The list of consumers still exists, held by the framework or broker, but it is not visible where the event is raised, so you may have to find several handlers.
+
+### W11.2-29 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Why client-server · **Source:** W11.2e · **Basis:** body
+
+**Question:** What is the most common reason to use the client-server architecture?
+
+- A. To make method calls run faster than they would locally
+- B. To share data or processing among several installations ✅
+- C. To avoid having to define interfaces between the parts
+- D. To remove all security concerns from the client side
+
+**Answer:** B
+
+**Explanation:** Sharing data or processing among several installations is the most common reason to use client-server, e.g. several users editing the same invoices from their own desktop applications.
+
+### W11.2-30 · MRQ
+
+**Type:** MRQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Elements of a real split · **Source:** W11.2e · **Basis:** body
+
+**Question:** The invoice manager is changed so that invoices are kept on a shared server. Which architectural elements and concerns does such a real client-server split add? (Select all that apply.)
+
+- A. A client-side component that sends requests ✅
+- B. A server-side component that receives and handles them ✅
+- C. An agreed request and response format ✅
+- D. Handling for timeouts, failures and version mismatches ✅
+- E. Removal of the interface between `Logic` and storage
+
+**Answer:** A, B, C, D
+
+**Explanation:** Adding a server changes more than where data is stored: it adds client-side and server-side components, an agreed message format, and handling for timeouts, failures and version mismatches. A good storage interface is what limits the impact, so it is not removed.
+
+### W11.2-31 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Partial failures · **Source:** W11.2e · **Basis:** body
+
+**Question:** A client sends a "mark invoice as paid" request to a server and gets a timeout. What does the timeout fail to reveal, and what is the risk?
+
+- A. Whether the client is connected; the risk is losing local data
+- B. Which server version is running; the risk is a security breach
+- C. Whether the server did the work; a careless retry may do it twice ✅
+- D. How long the request took; the risk is a slower user interface
+
+**Answer:** C
+
+**Explanation:** Failures across a network can be partial. A timeout does not reveal whether the server failed before or after doing the work, so retrying carelessly can perform the operation twice.
+
+### W11.2-32 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Interfaces and client-server · **Source:** W11.2e · **Basis:** bold
+
+**Question:** `Logic` depends only on what `Storage` promises. A `RemoteStorage` honoring the same interface now talks to a server. Which statement is correct?
+
+- A. The good interface avoids every impact of the move to client-server
+- B. `Logic` must be rewritten, since interfaces do not help with network calls
+- C. Only `Storage` is affected; the system as a whole is unchanged
+- D. `Logic` may need no change, but the system bears a communication burden ✅
+
+**Answer:** D
+
+**Explanation:** A good interface limits the impact of moving to client-server but does not avoid it entirely. `RemoteStorage` may spare `Logic` any change, but the system now bears the additional burden of client-server communication.
+
+### W11.2-33 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Tiers · **Source:** W11.2e · **Basis:** body
+
+**Question:** In a client-server system, the client program and the server program are two tiers. What is a tier?
+
+- A. A separately deployed part, not necessarily one machine ✅
+- B. One physical machine running part of the system
+- C. A logical division inside the code, such as a layer
+- D. A single process running on the server machine
+
+**Answer:** A
+
+**Explanation:** The client program is one tier and the server another; a tier is a separately deployed part, not necessarily one physical machine. A logical division inside the software is a layer.
+
+### W11.2-34 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Services · **Source:** W11.2f · **Basis:** bold
+
+**Question:** A Python program uses a service written in Java. Why is this possible?
+
+- A. Services must be written in a language that compiles to the same bytecode
+- B. Callers depend on the service's published interface, not its implementation ✅
+- C. The Python program imports the Java service's internal classes directly
+- D. Services always run inside the caller's process, sharing one runtime
+
+**Answer:** B
+
+**Explanation:** A service exposes a published interface that other software can use over a network. Callers depend on the agreement, not on the service's programming language or internal implementation.
+
+### W11.2-35 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Service-oriented architecture · **Source:** W11.2f · **Basis:** bold
+
+**Question:** A third party builds an online bookshop that combines a merchandise company's buying service with a bank's credit-card service, all on different platforms. Which style is this?
+
+- A. Service-oriented architecture (SOA) ✅
+- B. Layered architecture with a shared database
+- C. Peer-to-peer file sharing
+- D. Modular monolith with one release
+
+**Answer:** A
+
+**Explanation:** SOA organizes a system around network-accessible services, often to connect capabilities owned by different applications or organizations. The bookshop depends on what each service promises, not on how it is built.
+
+### W11.2-36 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Message formats · **Source:** W11.2f · **Basis:** bold
+
+**Question:** Which statement about the message formats used by services is correct?
+
+- A. A system counts as SOA only if it uses the SOAP standard
+- B. Modern services must use XML web services rather than JSON
+- C. The architectural idea does not depend on the message format ✅
+- D. Early SOA used JSON over HTTP; modern services moved to SOAP
+
+**Answer:** C
+
+**Explanation:** Early SOA was strongly associated with XML web services and SOAP; modern services usually exchange simpler messages, most often JSON over ordinary HTTP. The idea of published, network-accessible, platform-independent interfaces does not depend on the format.
+
+### W11.2-37 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** "Micro" in microservices · **Source:** W11.2f · **Basis:** body
+
+**Question:** A payment service is substantial in size, but it can be released without redeploying anything else. Can it be a microservice?
+
+- A. No; a microservice must be small, whatever its deployability
+- B. No; a microservice must never own any data of its own
+- C. Only if it is written in a different language from the others
+- D. Yes; independent deployability matters far more than size ✅
+
+**Answer:** D
+
+**Explanation:** "Micro" does not necessarily mean small. Independent deployability around a focused responsibility matters far more than size, so a substantial payment service can still be a microservice.
+
+### W11.2-38 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Microservices trade-off · **Source:** W11.2f · **Basis:** bold
+
+**Question:** What do microservices trade away, and what do they gain in return?
+
+- A. They trade team and deployment independence for operational simplicity
+- B. They trade operational simplicity for team and deployment independence ✅
+- C. They trade performance for fewer network requests between parts
+- D. They trade data consistency for having fewer deployable units
+
+**Answer:** B
+
+**Explanation:** Microservices trade operational simplicity for team and deployment independence. Teams can release or scale their services separately, but method calls become network requests that can time out and no single store can answer whether the data is consistent.
+
+### W11.2-39 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Data ownership · **Source:** W11.2f · **Basis:** body
+
+**Question:** How is data ownership enforced in a modular monolith compared with microservices?
+
+- A. Modular monolith: by discipline, often over one store; microservices: by separation, each service owning its data ✅
+- B. Modular monolith: by separation, each component owning its own database; microservices: by discipline over one shared store
+- C. Both enforce it by sharing one database across all parts
+- D. Neither has any notion of data ownership
+
+**Answer:** A
+
+**Explanation:** In a modular monolith, data ownership is enforced by discipline, often over one store. In microservices it is enforced by separation: each service owns its data, reachable only through its interface.
+
+### W11.2-40 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Failure behavior · **Source:** W11.2f · **Basis:** body
+
+**Question:** When one part of the system fails, how do a modular monolith and microservices compare?
+
+- A. Both: a failing part never affects the others, since boundaries contain it
+- B. Monolith: only the failing component stops; microservices: the whole system stops
+- C. Monolith: usually the whole unit; microservices: others survive only if built to ✅
+- D. Microservices: the others always keep running, whatever their design
+
+**Answer:** C
+
+**Explanation:** A failure in a modular monolith usually affects the whole unit. With microservices, other services can keep running, but only if built to tolerate the failure; a failing service can drag down the ones that depend on it.
+
+### W11.2-41 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Docker and Kubernetes · **Source:** W11.2f · **Basis:** bold
+
+**Question:** How do Docker and Kubernetes differ, as described in the course?
+
+- A. Docker runs serverless functions; Kubernetes builds container images
+- B. Docker is an architectural style; Kubernetes is a deployment tool
+- C. Docker runs containers across a cluster; Kubernetes builds single ones
+- D. Docker builds and runs containers; Kubernetes runs many across a cluster ✅
+
+**Answer:** D
+
+**Explanation:** Docker is a well-known tool for building and running containers, and Kubernetes is widely used to run many containers across a cluster of machines.
+
+### W11.2-42 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Serverless computing · **Source:** W11.2f · **Basis:** body
+
+**Question:** A function generates a thumbnail whenever a user uploads a photo, deployed using serverless computing. Which statement is correct?
+
+- A. A server is kept running all day, so it is billed even with no uploads
+- B. The provider runs it per upload and bills only for execution ✅
+- C. Serverless is an architectural style that microservices require
+- D. The team must provision and manage the server that runs it
+
+**Answer:** B
+
+**Explanation:** Serverless computing lets you deploy code without managing servers; the provider runs the function per event and bills for execution. Like containers, it is a deployment approach, not an architectural style, and is not required for microservices.
+
+### W11.2-43 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Combining styles · **Source:** W11.2g · **Basis:** body
+
+**Question:** The invoice manager is a modular monolith, layered internally, with an event-driven user interface; once invoices are shared through a server, it is also a client in a client-server system. Which statement is correct?
+
+- A. Only one can be true, since a system follows a single architectural style
+- B. It stops being layered internally once it becomes a client of a server
+- C. All of them are true at once, as each style addresses a different aspect ✅
+- D. It cannot have an event-driven UI, because it is deployed as a monolith
+
+**Answer:** C
+
+**Explanation:** Most real applications combine several styles at once, because each style addresses a different aspect. For the invoice manager, all of those descriptions are true at the same time.
+
+### W11.2-44 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Adding a network boundary · **Source:** W11.2g · **Basis:** bold
+
+**Question:** A single team building one product has a modular monolith. When should it add a network boundary?
+
+- A. Only when a concrete requirement justifies its costs ✅
+- B. As soon as possible, since distribution is always an upgrade
+- C. Whenever the code base exceeds a fixed number of classes
+- D. Never, because a modular monolith cannot be distributed
+
+**Answer:** A
+
+**Explanation:** For one team building one product, a modular monolith is a strong default. Add a network boundary only when a concrete requirement justifies its latency, failure modes, security work and operational cost; each step is a response to a requirement, not an upgrade.
+
+### W11.2-45 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Style trade-offs · **Source:** W11.2g · **Basis:** bold
+
+**Question:** Which pairing of style and trade-off matches the course?
+
+- A. Layering: lets users share data but adds latency
+- B. Layering: limits how far a change spreads but adds indirection ✅
+- C. Distribution: limits how far a change spreads at no cost
+- D. Distribution: removes partial failures but adds indirection
+
+**Answer:** B
+
+**Explanation:** Every style trades benefits for costs. Layering limits how far a change spreads but adds indirection; distribution lets users share data but adds latency and partial failures.
+
+### W11.2-46 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Broker style · **Source:** W11.2h · **Basis:** body
+
+**Question:** An API gateway picks the right backend service for each request and forwards it, so callers need not know who will answer. Which style is this?
+
+- A. Peer-to-peer
+- B. Pipes-and-filters
+- C. Plug-in (microkernel)
+- D. Broker ✅
+
+**Answer:** D
+
+**Explanation:** In the broker style, a middleman locates the right service and routes requests, so callers need not know who will answer. An API gateway is the familiar example.
+
+### W11.2-47 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Peer-to-peer style · **Source:** W11.2h · **Basis:** body
+
+**Question:** In BitTorrent, each participant both downloads from and uploads to other participants, without going through a central server. Which style is this?
+
+- A. Client-server
+- B. Peer-to-peer ✅
+- C. Broker
+- D. Transaction processing
+
+**Answer:** B
+
+**Explanation:** In the peer-to-peer style, each participant acts as both client and server, so work flows directly between peers rather than through a central server. BitTorrent is the familiar example.
+
+### W11.2-48 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Plug-in style · **Source:** W11.2h · **Basis:** body
+
+**Question:** A browser provides essential features in a minimal core, and optional features are added through separately written extensions. Which style is this?
+
+- A. Plug-in (microkernel) ✅
+- B. Peer-to-peer (P2P)
+- C. Broker
+- D. Pipes-and-filters
+
+**Answer:** A
+
+**Explanation:** In the plug-in (microkernel) style, a minimal core provides essentials and optional features are added as separately written plug-ins. IDE plug-ins and browser extensions are familiar examples.
+
+### W11.2-49 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.2] Architectural Styles · **Subtopic:** Two meanings of transaction · **Source:** W11.2h · **Basis:** bold
+
+**Question:** How does the transaction-processing architectural style differ from a database transaction?
+
+- A. They are two names for the same idea: all-or-nothing database updates
+- B. Style: operations that all succeed or all fail; database transaction: high-volume requests
+- C. Style: reliably processing discrete units of work; database transaction: all-or-nothing operations ✅
+- D. Style: only for bank terminals; database transaction: only for single-user databases
+
+**Answer:** C
+
+**Explanation:** "Transaction" means two different things. The transaction-processing style is about accepting and reliably processing discrete units of work, while a database transaction is a group of database operations that must all succeed or all fail together.
+
 ## [W11.3] Test Cases: Combining Multiple Inputs
 
 ### W11.3-01 · MCQ
@@ -7790,6 +19742,201 @@ void setGuarantor(Guarantor g) { guarantor = g; }
 
 **Explanation:** If several invalid inputs are combined, a passing test cannot show which one the SUT reacted to.
 
+### W11.3-11 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.3] Test Cases: Combining Multiple Inputs · **Subtopic:** Counting combinations · **Source:** W11.3a · **Basis:** body
+
+**Question:** An SUT takes three inputs, with 4, 5 and 2 values chosen for testing respectively. How many test cases are needed to test all possible combinations?
+
+- A. 11
+- B. 40 ✅
+- C. 20
+- D. 5
+
+**Answer:** B
+
+**Explanation:** Testing all possible combinations needs the product of the number of values per input, 4 × 5 × 2 = 40, which is effective but quickly becomes inefficient as inputs and values are added.
+
+### W11.3-12 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.3] Test Cases: Combining Multiple Inputs · **Subtopic:** All pairs count · **Source:** W11.3b · **Basis:** body
+
+**Question:** `foo(char p1, int p2, boolean p3)` is tested with p1 ∈ {a, b, c}, p2 ∈ {1, 2, 3} and p3 ∈ {T, F}. How many test cases does the all pairs strategy produce in the course's example?
+
+- A. 3, the same as the at least once strategy
+- B. 6, the same as testing all pairs between p1 and p3 only
+- C. 18, the same as the all combinations strategy
+- D. 9, fewer than all combinations but more than at least once ✅
+
+**Answer:** D
+
+**Explanation:** The all pairs strategy generates 9 test cases here, so that every combination of values for any pair of inputs is tested. This is lower than the 18 of all combinations but higher than the 3 of at least once.
+
+### W11.3-13 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.3] Test Cases: Combining Multiple Inputs · **Subtopic:** All pairs variation · **Source:** W11.3b · **Basis:** body
+
+**Question:** For `foo(char p1, int p2, boolean p3)` with 3, 3 and 2 chosen values, a tester knows only p1 and p3 could influence each other. Which approach fits, and how many test cases does it give in the course's example?
+
+- A. All pairs for p1 and p3, each p2 value at least once; 6 test cases ✅
+- B. All combinations of all three inputs; 18 test cases
+- C. At least once for each of the three inputs; 3 test cases
+- D. All pairs between every pair of inputs; 9 test cases
+
+**Answer:** A
+
+**Explanation:** A variation of the all pairs strategy tests all pairs only for inputs that could influence each other; testing all pairs between p1 and p3 while ensuring all p2 values are tested at least once gives 6 test cases.
+
+### W11.3-14 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.3] Test Cases: Combining Multiple Inputs · **Subtopic:** VV/IV notation · **Source:** W11.3b · **Basis:** body
+
+**Question:** In the at least once example for `foo`, the test cases are (a, 1, T), (b, 2, F) and (c, 3, `VV/IV`). What does `VV/IV` for p3 in the third case mean?
+
+- A. p3 must be given both a valid and an invalid value in the same test case
+- B. The third case is a negative test case for p3
+- C. Any valid or invalid value may be used, since both values of p3 are already covered ✅
+- D. The third test case is skipped for p3
+
+**Answer:** C
+
+**Explanation:** `VV/IV` means any valid value or any invalid value. Under the at least once strategy, both p3 values `T` and `F` already appear in the first two cases, so p3 can take any value in the third.
+
+### W11.3-15 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.3] Test Cases: Combining Multiple Inputs · **Subtopic:** Comparing strategies · **Source:** W11.3b · **Basis:** body
+
+**Question:** Which ranking of the strategies, from fewest to most test cases produced, is correct?
+
+- A. All pairs < at least once < all combinations
+- B. At least once < all pairs < all combinations ✅
+- C. At least once < all combinations < all pairs
+- D. All combinations < all pairs < at least once
+
+**Answer:** B
+
+**Explanation:** At least once includes each test input at least once, all pairs covers every combination for each pair of inputs, and all combinations covers every unique combination; the all pairs count is lower than all combinations but higher than at least once.
+
+### W11.3-16 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.3] Test Cases: Combining Multiple Inputs · **Subtopic:** Valid inputs in positive cases · **Source:** W11.3c · **Basis:** bold
+
+**Question:** For `printLabel(String fruitName, int unitPrice)`, `Cherry` (square label) first appeared only in a case with the invalid price `0`. A tester adds case 2.1: `Cherry` with a valid price, expecting a square label. Which heuristic is being applied?
+
+- A. Test invalid inputs individually before combining them
+- B. Test all pairs of inputs that could influence each other
+- C. Give priority to boundary values over non-boundary values
+- D. Each valid input must appear at least once in a positive test case ✅
+
+**Answer:** D
+
+**Explanation:** `Cherry` is a valid input, but in a negative test case the SUT produces an error instead of a label, so a bug in square-label printing would go unnoticed. The heuristic 'each valid input must appear at least once in a positive test case' fixes this.
+
+### W11.3-17 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.3] Test Cases: Combining Multiple Inputs · **Subtopic:** Choosing VV values · **Source:** W11.3c · **Basis:** body
+
+**Question:** After `Cherry` is moved to the new positive case 2.1, case 3 of `printLabel` becomes `fruitName = VV`, `unitPrice = 0`, expecting "invalid price". Why may `fruitName` now be any valid value?
+
+- A. Because `Cherry` is now covered by case 2.1, so any valid fruit will do ✅
+- B. Because `printLabel` ignores `fruitName` entirely whenever the price is invalid
+- C. Because an invalid fruit name would be equally acceptable in this test case
+- D. Because `Cherry` turned out to be an invalid input
+
+**Answer:** A
+
+**Explanation:** `VV` means any valid value. Once `Cherry` appears in a positive test case, case 3 no longer needs it; keeping `fruitName` valid means the invalid price `0` is the only invalid input that can cause the "invalid price" error.
+
+### W11.3-18 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.3] Test Cases: Combining Multiple Inputs · **Subtopic:** Combining invalid inputs · **Source:** W11.3d · **Basis:** bold
+
+**Question:** Does the heuristic 'test invalid inputs individually before combining them' mean a test case should never contain more than one invalid input?
+
+- A. Yes; combining invalid inputs always hides bugs
+- B. Yes, unless the all pairs strategy is being used
+- C. No; after single-invalid cases pass, combinations are still useful, as an SUT may fail only for certain combinations ✅
+- D. No; combinations of invalid inputs should be tested first, and single invalid inputs only if they fail
+
+**Answer:** C
+
+**Explanation:** The heuristic is not to say never have more than one invalid input in a test case: an SUT might work with one invalid input but fail for a certain combination, so once single-invalid cases are confirmed, combinations are still worth testing if affordable.
+
+### W11.3-19 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.3] Test Cases: Combining Multiple Inputs · **Subtopic:** Final printLabel cases · **Source:** W11.3d · **Basis:** body
+
+**Question:** After applying both heuristics to the `printLabel` test cases (Apple, Banana, Cherry and the invalid `Dog`; prices 1 and 20 and the invalid 0 and -1), how many test cases are there, and how is `Dog` tested?
+
+- A. 5 test cases; `Dog` is paired with the price -1
+- B. 6 test cases; `Dog` is paired with the price -1, expecting "invalid fruit"
+- C. 4 test cases; `Dog` is no longer tested
+- D. 6 test cases; `Dog` is paired with a valid price, expecting "invalid fruit" ✅
+
+**Answer:** D
+
+**Explanation:** The final set is cases 1, 2, 2.1, 3, 4 and 4.1. Case 4 now tests -1 with a valid fruit, and case 4.1 tests `Dog` with a valid price, so the "invalid fruit" message can only be caused by `Dog`.
+
+### W11.3-20 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.3] Test Cases: Combining Multiple Inputs · **Subtopic:** Mix: V1 to V2 · **Source:** W11.3e · **Basis:** body
+
+**Question:** In the `calculateGrade` example, test case 5 of V1 is (participation 21, projectGrade `F`, isAbsent `VV/IV`, examScore 71), expecting an error. Why is it replaced by cases 5.1 and 5.2 in V2?
+
+- A. Because the valid value `F` appeared only in this negative test case ✅
+- B. Because participation 21 is a boundary value that needs its own case
+- C. Because isAbsent cannot be `VV/IV` in any test case
+- D. Because case 5 duplicated case 6
+
+**Answer:** A
+
+**Explanation:** Applying 'each valid input at least once in a positive test case': `projectGrade=F` did not appear in any positive case, so 5.1 tests `F` with valid values, and 5.2 keeps the invalid participation 21 and examScore 71.
+
+### W11.3-21 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.3] Test Cases: Combining Multiple Inputs · **Subtopic:** Mix: V2 to V3 · **Source:** W11.3e · **Basis:** body
+
+**Question:** In V2 of the `calculateGrade` example, case 5.2 is (21, `VV/IV`, `VV/IV`, 71) and case 6 is (22, `VV/IV`, `VV/IV`, 72). Why are they split into 5.2, 5.3, 6.1 and 6.2 in V3?
+
+- A. Because each contained a valid input that did not appear in any positive test case
+- B. Because each combined an invalid participation with an invalid examScore ✅
+- C. Because the all pairs strategy requires four cases for these values
+- D. Because an absent student can only have an exam score of 0
+
+**Answer:** B
+
+**Explanation:** Applying 'no more than one invalid input in a test case': 5.2 and 6 each combined an invalid participation (21 or 22) with an invalid examScore (71 or 72), so V3 tests each invalid value in its own case with valid values elsewhere.
+
+### W11.3-22 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.3] Test Cases: Combining Multiple Inputs · **Subtopic:** Mix: V4 · **Source:** W11.3e · **Basis:** body
+
+**Question:** In V4 of the `calculateGrade` example, a dependency is assumed: an absent student can only have `examScore=0`. How many test cases does V4 have, and what is the new case 7?
+
+- A. 9; `isAbsent=false` with `examScore=0`, expecting a grade
+- B. 10; `isAbsent=false` with `examScore=0`, expecting an error message
+- C. 10; `isAbsent=true` with `examScore!=0`, expecting an error message ✅
+- D. 7; `isAbsent=true` with `examScore=0`, expecting an error message
+
+**Answer:** C
+
+**Explanation:** V4 adds case 7 to V3's nine cases, giving 10; it tests the hidden invalid case `isAbsent=true` with a non-zero exam score, and cases 3 to 6.2 use `isAbsent=false` so that their inputs remain valid.
+
+### W11.3-23 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.3] Test Cases: Combining Multiple Inputs · **Subtopic:** Mix: order of techniques · **Source:** W11.3e · **Basis:** body
+
+**Question:** In what order were the techniques applied to produce V1 to V4 of the `calculateGrade` test cases?
+
+- A. Each valid input in a positive case → at least once → cater for dependencies → no more than one invalid input per case
+- B. At least once → no more than one invalid input per case → each valid input in a positive case → cater for dependencies
+- C. Cater for dependencies → at least once → each valid input in a positive case → no more than one invalid input per case
+- D. At least once → each valid input in a positive case → no more than one invalid input per case → cater for dependencies ✅
+
+**Answer:** D
+
+**Explanation:** The first cut came from the at least once strategy; V2 applied 'each valid input at least once in a positive test case', V3 applied 'no more than one invalid input in a test case', and V4 catered for the dependency between `isAbsent` and `examScore`.
+
 ## [W11.4] Other QA Techniques
 
 ### W11.4-01 · MCQ
@@ -7866,6 +20013,66 @@ void setGuarantor(Guarantor g) { guarantor = g; }
 **Answer:** D
 
 **Explanation:** QA uses testing together with complementary techniques such as static analysis. Developer tests check the implementation against intended behavior (verification); they cannot show that the requirements themselves are right.
+
+### W11.4-06 · MRQ
+
+**Type:** MRQ · **Topic:** [W11.4] Other QA Techniques · **Subtopic:** QA techniques · **Source:** W11.4a · **Basis:** body
+
+**Question:** Besides testing, which complementary QA techniques does the course name? (Select all that apply.)
+
+- A. Static analysis ✅
+- B. Code reviews ✅
+- C. Refactoring
+- D. Formal verification ✅
+
+**Answer:** A, B, D
+
+**Explanation:** Testing is the most common QA activity, and the complementary techniques named are static analysis, code reviews and formal verification. Refactoring improves internal code quality but is not one of the QA techniques named.
+
+### W11.4-07 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.4] Other QA Techniques · **Subtopic:** Validation and verification · **Source:** W11.4b · **Basis:** body
+
+**Question:** Two team members argue over whether a usability check counts as validation or verification. What does the course consider more important?
+
+- A. Classifying every activity correctly before doing it
+- B. Doing only verification, since requirements are fixed
+- C. Ensuring both are done, since the requirements can be wrong too ✅
+- D. Doing only validation, since code can be checked by the compiler
+
+**Answer:** C
+
+**Explanation:** Whether something belongs under validation or verification is not that important. What matters more is that both are done instead of limiting QA to verification only, remembering that the requirements can be wrong too.
+
+### W11.4-08 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.4] Other QA Techniques · **Subtopic:** Testing vs formal verification · **Source:** W11.4c · **Basis:** bold
+
+**Question:** How does formal verification compare with testing in what it can prove about errors?
+
+- A. Both can prove the absence of errors
+- B. Formal verification can prove the absence of errors, while testing can only prove their presence ✅
+- C. Testing can prove the absence of errors, while formal verification can only prove their presence
+- D. Neither can say anything about errors
+
+**Answer:** B
+
+**Explanation:** Formal verification uses mathematical techniques and can be used to prove the absence of errors. In contrast, testing can only prove the presence of errors, not their absence.
+
+### W11.4-09 · MRQ
+
+**Type:** MRQ · **Topic:** [W11.4] Other QA Techniques · **Subtopic:** Formal verification drawbacks · **Source:** W11.4c · **Basis:** body
+
+**Question:** Which are disadvantages of formal verification? (Select all that apply.)
+
+- A. It proves only compliance with the specification, not the actual utility of the software ✅
+- B. It can only prove the presence of errors, not their absence
+- C. It requires highly specialized notations and knowledge, making it expensive to administer ✅
+- D. It cannot be used for safety-critical software
+
+**Answer:** A, C
+
+**Explanation:** Formal verification proves only compliance with the specification, and it needs specialized notations and knowledge, which makes it expensive. It can prove the absence of errors, and it is most commonly used in safety-critical software such as flight control systems.
 
 ## [W11.5] Secure Software Engineering
 
@@ -8246,6 +20453,1142 @@ void setGuarantor(Guarantor g) { guarantor = g; }
 
 **Explanation:** Data read from a file may have been edited or corrupted since the app wrote it, so it is validated again before it becomes model data.
 
+### W11.5-26 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Deliberate vs accidental · **Source:** W11.5a · **Basis:** bold
+
+**Question:** A team's security analysis of the registration feature assumes a deliberate attacker rather than an accidental user. Which statement reflects the course's view of this assumption?
+
+- A. Attackers outnumber accidents in practice, so accidental causes can safely be ignored
+- B. Attackers can choose inputs, timing and sequence, yet accidental causes still need their own attention ✅
+- C. Accidental causes always resemble attacks, so analyzing attacks covers them as well
+- D. Deliberate misuse is rare, so it is assumed only to keep the analysis simple
+
+**Answer:** B
+
+**Explanation:** Security analysis assumes the deliberate case because an attacker can choose the inputs, actions, timing and sequence most favorable to an attack, exercising a feature far harder than an accident usually does. Accidental causes such as a misconfiguration, an operator mistake or a corrupted record still need attention of their own, because they need not resemble an attack.
+
+### W11.5-27 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Client-side hiding · **Source:** W11.5a · **Basis:** body
+
+**Question:** When a user requests an attendee list, the browser sends the data below. The attendee-list button is hidden from users who are not organizers. Is this enough to protect the list?
+
+```
+eventId = 42
+isOrganizer = true
+```
+
+- A. No; users can build the request themselves, so the flag proves nothing ✅
+- B. Yes; only organizers can see the button that sends this particular request
+- C. Yes, provided `eventId` is checked to refer to an existing event
+- D. No; the button should be disabled rather than hidden from view
+
+**Answer:** A
+
+**Explanation:** `isOrganizer` is merely a claim made by software under the user's control. Hiding the button does not stop anyone from constructing the request themselves, so a security-minded engineer treats the flag as untrusted and asks where the user's authority is established.
+
+### W11.5-28 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Security mindset · **Source:** W11.5a · **Basis:** bold
+
+**Question:** A developer argues that applying the security mindset means treating every user of the event system as malicious. How does the course respond?
+
+- A. It means software must stay safe when inputs are mistaken, unusual, corrupted or hostile ✅
+- B. That is correct; every user should be assumed to be an attacker
+- C. It applies only to anonymous users, never to signed-in students
+- D. It concerns deliberate attacks only, so mistaken inputs are out of scope
+
+**Answer:** A
+
+**Explanation:** The security mindset is not the belief that every user is malicious. It is the recognition that software must remain safe when inputs are mistaken, unusual, corrupted or deliberately hostile; the same controls often protect against both accidents and attacks.
+
+### W11.5-29 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** CIA triad · **Source:** W11.5a · **Basis:** bold
+
+**Question:** Which security property is at stake in the requirement "the registration service should remain usable during a popular event's sign-up period"?
+
+- A. Confidentiality
+- B. Integrity
+- C. Availability ✅
+- D. Authentication
+
+**Answer:** C
+
+**Explanation:** Availability asks whether authorized users can obtain the service when they need it. Confidentiality concerns disclosure and integrity concerns improper change; authentication is not one of the three properties.
+
+### W11.5-30 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Not a fourth property · **Source:** W11.5a · **Basis:** body
+
+**Question:** A student proposes adding "actions are performed by the right people" as a fourth property alongside confidentiality, integrity and availability. What does the course say?
+
+- A. It is the fourth property, usually called accountability
+- B. It is not a fourth property but a mechanism used to protect all three ✅
+- C. It is part of confidentiality only, not of the other two
+- D. It is a privacy concern rather than a security concern
+
+**Answer:** B
+
+**Explanation:** Establishing that actions are performed by the right people is not a fourth property; it is a mechanism used to protect confidentiality, integrity and availability alike.
+
+### W11.5-31 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** One incident, many goals · **Source:** W11.5a · **Basis:** body
+
+**Question:** An attacker takes over an organizer account, then exposes attendee details, alters registrations and deletes events. Which security goals does this single incident affect?
+
+- A. Only confidentiality, since an account was compromised
+- B. Only integrity, since stored data was changed
+- C. None directly, since it is an authentication failure
+- D. Confidentiality, integrity and availability ✅
+
+**Answer:** D
+
+**Explanation:** A single incident can affect more than one goal: exposing attendee details breaks confidentiality, altering registrations breaks integrity, and deleting events removes availability.
+
+### W11.5-32 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Security vocabulary · **Source:** W11.5a · **Basis:** bold
+
+**Question:** In the event system, the code returns a registration without checking which student owns it. In the course's vocabulary, this missing check is…
+
+- A. an attack
+- B. a threat
+- C. a vulnerability ✅
+- D. a control
+
+**Answer:** C
+
+**Explanation:** A vulnerability is a weakness that allows a threat to be realized; failing to check ownership is the course's example. An attack would be an attempt to exploit it, and a threat is a possible way an asset could be harmed.
+
+### W11.5-33 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Risk · **Source:** W11.5a · **Basis:** bold
+
+**Question:** Two threats to the event system are equally easy to attempt, but one exposes personal data while the other reveals only public event titles. How do their risks compare?
+
+- A. They are equal, since risk depends only on how likely each threat is
+- B. The first is higher, since risk combines likelihood with seriousness of impact ✅
+- C. They are equal, since risk depends only on how many vulnerabilities exist
+- D. The second is higher, since public data is accessed more often
+
+**Answer:** B
+
+**Explanation:** Risk is the likelihood of a threat combined with the seriousness of its impact. With equal likelihood, the threat that exposes personal data has the more serious impact and therefore the higher risk.
+
+### W11.5-34 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Assets · **Source:** W11.5a · **Basis:** bold
+
+**Question:** During threat modeling, a teammate says: "Our registration database holds valuable personal data, so it is a vulnerability." Which correction matches the course's vocabulary?
+
+- A. The database is an asset; a vulnerability is a weakness that lets a threat be realized ✅
+- B. The database is a threat; a vulnerability is an attempt to exploit that threat
+- C. The database is a control, because it stores the records in a protected place
+- D. The statement is correct; any store of valuable data counts as a vulnerability
+
+**Answer:** A
+
+**Explanation:** An asset is something worth protecting, such as data, account privileges, service availability, money and reputation. A valuable database is not a vulnerability; a vulnerability is a weakness, such as a missing ownership check.
+
+### W11.5-35 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Authorization frequency · **Source:** W11.5a · **Basis:** body
+
+**Question:** A student signs in correctly, and the system then lets them perform any action without further checks. What is wrong with this design?
+
+- A. Authentication should be repeated before every action is performed
+- B. Nothing; a correctly authenticated user is also an authorized user
+- C. Sign-in should check in advance every resource the user may open
+- D. Authorization must be checked for every protected action, not just at sign-in ✅
+
+**Answer:** D
+
+**Explanation:** Authentication establishes who is making a request; authorization decides whether that identity may perform a particular action on a particular resource. A user can be correctly authenticated and still be unauthorized, so authorization is checked for every protected action.
+
+### W11.5-36 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Data minimization · **Source:** W11.5a · **Basis:** bold
+
+**Question:** The event system's designers are deciding which attendee details to collect. Which detail does the course suggest the system probably does not need?
+
+- A. Date of birth ✅
+- B. Name
+- C. Contact address
+- D. Events registered for
+
+**Answer:** A
+
+**Explanation:** Data that is never collected cannot later be leaked by that system, and strong access control cannot justify collecting data the system does not need. The event system needs a name and contact address, but probably not a date of birth.
+
+### W11.5-37 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Limits of a control · **Source:** W11.5a · **Basis:** body
+
+**Question:** The event system encrypts its database backups, with the keys held separately. Which harm does this reduce?
+
+- A. Exposure to an organizer permitted to view attendee data
+- B. Loss of service from an automated flood of sign-ups
+- C. Exposure caused by someone stealing a backup ✅
+- D. A student changing an identifier to read another list
+
+**Answer:** C
+
+**Explanation:** Encrypting backups with separately held keys reduces the harm of a stolen backup. It cannot protect attendee data from an organizer who is legitimately permitted to view it, which is why a useful security claim must say what is protected, from whom and under what assumptions.
+
+### W11.5-38 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Costs of controls · **Source:** W11.5a · **Basis:** bold
+
+**Question:** A reviewer suggests adding every security control the team can think of to the event system. Why does the course reject this as the goal?
+
+- A. Additional controls never reduce risk once authentication is already in place
+- B. Controls cost development time and performance, can hurt usability and add failure modes ✅
+- C. Only controls that are required by law are worth the effort of adding
+- D. Controls should be added only after an attack on the system has occurred
+
+**Answer:** B
+
+**Explanation:** Security has costs: a control can consume development time, reduce performance, make a system harder to use or create new failure modes. The goal is to identify important risks and choose controls whose benefits justify their costs.
+
+### W11.5-39 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Common vulnerabilities · **Source:** W11.5a · **Basis:** bold
+
+**Question:** A student finds that typing another event's ID into a URL lets them perform actions reserved for that event's organizer. Which common vulnerability is this?
+
+- A. Injection
+- B. Cross-site scripting (XSS)
+- C. Vulnerable or outdated components
+- D. Broken access control ✅
+
+**Answer:** D
+
+**Explanation:** Broken access control allows someone to perform an action or access data they are not authorized to use. Injection interprets untrusted data as code or commands, and XSS executes untrusted content as a script in another user's browser.
+
+### W11.5-40 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Ingredients of security · **Source:** W11.5b · **Basis:** bold
+
+**Question:** A manager proposes that adding a well-known security library will make the event system secure. According to the course, secure software results from combining which activities?
+
+- A. Penetration testing, encryption, access logging and firewalls
+- B. Threat modeling, secure design, careful implementation and verification ✅
+- C. Requirements, design, implementation and deployment
+- D. Code review, static analysis, secret scanning and dependency scanning
+
+**Answer:** B
+
+**Explanation:** Secure software results from combining threat modeling, secure design, careful implementation and verification. It cannot be obtained by applying one tool or adding one library.
+
+### W11.5-41 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Threat modeling steps · **Source:** W11.5b · **Basis:** body
+
+**Question:** In the course's six-step threat modeling method, which step comes immediately after sketching the system and its trust boundaries?
+
+- A. Identify assets and stakeholders
+- B. Estimate and prioritize risks
+- C. Choose controls
+- D. Identify plausible threats ✅
+
+**Answer:** D
+
+**Explanation:** The steps are: identify assets and stakeholders; sketch the system and its trust boundaries; identify plausible threats; estimate and prioritize risks; choose controls; verify controls and record assumptions.
+
+### W11.5-42 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Trust boundaries · **Source:** W11.5b · **Basis:** bold
+
+**Question:** Which of these is an example of a trust boundary in the course's sense?
+
+- A. Two methods of the same class calling each other
+- B. A local variable being passed to a helper method
+- C. A build process downloading a dependency ✅
+- D. A loop iterating over an in-memory list
+
+**Answer:** C
+
+**Explanation:** A trust boundary is a place where data or control passes between parts with different levels of trust, such as a browser calling a server, a server reading an uploaded file, an application querying a database or a build process downloading a dependency.
+
+### W11.5-43 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Trust is earned · **Source:** W11.5b · **Basis:** bold
+
+**Question:** A developer says the registration database is "inside" the system, so text read back from it can be trusted. What does the course say?
+
+- A. No; it may hold malicious text entered earlier, so trust must be earned at each boundary ✅
+- B. Yes; data is trusted for good once it has been validated when it first entered
+- C. Yes; only data arriving from the browser ever crosses a trust boundary
+- D. No; data read from a database is trusted only if it was stored encrypted
+
+**Answer:** A
+
+**Explanation:** Do not label the entire inside of a system as trusted without thought: a database can contain malicious text entered earlier by a user. Trust should be earned at each boundary, not inherited forever from where data was first seen.
+
+### W11.5-44 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** STRIDE · **Source:** W11.5b · **Basis:** body
+
+**Question:** An organizer deletes an event, and nothing is recorded about who did it, so they can later deny having done so. Which STRIDE category does this illustrate?
+
+- A. Repudiation ✅
+- B. Tampering
+- C. Spoofing
+- D. Denial of service
+
+**Answer:** A
+
+**Explanation:** Repudiation asks whether someone can deny having acted, with no record to contradict them. The course's example is deleting an event with nothing recorded about who did it.
+
+### W11.5-45 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** STRIDE · **Source:** W11.5b · **Basis:** body
+
+**Question:** A student finds a way to make themselves an organizer in the event system. Which STRIDE category does this illustrate?
+
+- A. Spoofing
+- B. Tampering
+- C. Elevation of privilege ✅
+- D. Information disclosure
+
+**Answer:** C
+
+**Explanation:** Elevation of privilege asks whether someone can gain rights they were never granted, as when a student makes themselves an organizer.
+
+### W11.5-46 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** STRIDE · **Source:** W11.5b · **Basis:** body
+
+**Question:** An attacker signs in to the event system as an organizer using a stolen password. Which STRIDE category does this illustrate?
+
+- A. Elevation of privilege
+- B. Repudiation
+- C. Information disclosure
+- D. Spoofing ✅
+
+**Answer:** D
+
+**Explanation:** Spoofing asks whether someone can claim to be another user or service. Signing in as an organizer with a stolen password is the course's example.
+
+### W11.5-47 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Risk matrix · **Source:** W11.5b · **Basis:** body
+
+**Question:** A team agrees in advance to combine ratings using the matrix below. A threat is rated High likelihood and Medium impact, but one member feels the result is too severe. What is the rating, and what may the team do?
+
+```
+Likelihood \ Impact   Low      Medium   High
+High                  Medium   High     High
+Medium                Low      Medium   High
+Low                   Low      Low      Medium
+```
+
+- A. Medium; the two ratings are averaged to reach the result
+- B. High; the team may override the cell but should record why ✅
+- C. High; a cell of the agreed matrix can never be overridden
+- D. Medium; impact always outweighs likelihood in the result
+
+**Answer:** B
+
+**Explanation:** High likelihood with medium impact gives high risk in the matrix. The table is a starting point, not an answer: a team may override a cell, but it should record why.
+
+### W11.5-48 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Likelihood drives risk · **Source:** W11.5b · **Basis:** body
+
+**Question:** In the course's example, "a student changes an identifier to read another event's attendee list" is rated the highest risk, although a compromised organizer account granting rights to others has a higher impact. Why?
+
+- A. It needs no special access and can be repeated at will ✅
+- B. Its impact on availability is the largest of all the threats
+- C. It affects every event in the system at the same time
+- D. It cannot be reduced by any control the team could add
+
+**Answer:** A
+
+**Explanation:** The identifier threat is high likelihood, being reachable by anyone signed in and trivial to repeat, with medium impact, giving high risk. The compromised-account threat requires a compromise first, so its low likelihood brings its high impact down to medium risk.
+
+### W11.5-49 · MRQ
+
+**Type:** MRQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Estimating likelihood · **Source:** W11.5b · **Basis:** body
+
+**Question:** When estimating the likelihood of a threat, which factors does the course suggest considering? (Select all that apply.)
+
+- A. Whether the feature is reachable ✅
+- B. Whether exploitation requires special access ✅
+- C. How easily the attack can be repeated or automated ✅
+- D. Whether the damage is reversible
+- E. The number of people affected
+
+**Answer:** A, B, C
+
+**Explanation:** Likelihood depends on reachability, whether special access is needed and how easily the attack can be repeated or automated. Reversibility of damage and the number of people affected are factors in estimating impact, not likelihood.
+
+### W11.5-50 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Usable controls · **Source:** W11.5b · **Basis:** bold
+
+**Question:** Staff find a new approval step so tedious that they routinely share one approver's login to get past it. What does the course say about such a control?
+
+- A. It is still effective, since the approval step exists and is documented
+- B. It protects nothing, because a control people routinely work around is ineffective ✅
+- C. It is effective as long as it prevents problems rather than detecting them
+- D. It should be replaced by a control that only detects problems afterwards
+
+**Answer:** B
+
+**Explanation:** Prefer controls that prevent a problem, while preparing to detect, contain and recover from failures that prevention misses. Also prefer a control people can use correctly: one that is routinely worked around protects nothing.
+
+### W11.5-51 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Controls and threats · **Source:** W11.5b · **Basis:** body
+
+**Question:** A team maps controls to threats for the attendee list. Which statement about the relationship between controls and threats matches the course?
+
+- A. Each threat should be matched with exactly one control to keep the model simple
+- B. Each control should address exactly one threat so that it stays easy to review
+- C. One control can address several threats, and one threat may need several controls ✅
+- D. A threat needs any control at all only if its likelihood has been rated high
+
+**Answer:** C
+
+**Explanation:** The course states that one control can address several threats, and one threat may need several controls. For example, limiting unusually frequent requests protects availability while other controls protect the list's confidentiality.
+
+### W11.5-52 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Verifying controls · **Source:** W11.5b · **Basis:** bold
+
+**Question:** A team has added a permission check to the attendee-list endpoint. Which test case is the least informative about whether the control works?
+
+- A. An unrelated organizer requesting the list
+- B. An anonymous user requesting the list
+- C. An attendee of the event requesting the list
+- D. The correct organizer requesting their own list ✅
+
+**Answer:** D
+
+**Explanation:** A control is only a claim until it has been reviewed or tested. The correct organizer is the least informative case; the cases that decide whether the control works are the ones it is supposed to refuse.
+
+### W11.5-53 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Re-rating risk · **Source:** W11.5b · **Basis:** body
+
+**Question:** After choosing controls for its threats, what should a team do with the original risk ratings?
+
+- A. Discard the ratings, since risks that have controls no longer need to be tracked
+- B. Keep the original ratings unchanged as the permanent record of the analysis
+- C. Re-rate each risk with the controls in place, recording what remains and who accepts it ✅
+- D. Re-rate each risk using a different matrix designed for risks under control
+
+**Answer:** C
+
+**Explanation:** Re-rate the risk with the controls in place, using the same matrix, and record what remains and who accepts it. Keep the threat model near the design it describes so it can be revisited when assumptions change.
+
+### W11.5-54 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Security statements · **Source:** W11.5b · **Basis:** bold
+
+**Question:** Which security statement best follows the course's template connecting an asset, a security property, an adversary and an assumption?
+
+- A. The attendee list must be secure at all times against every possible kind of attack on it
+- B. All attendee data should be encrypted with a strong algorithm before it is stored anywhere
+- C. Organizers should be able to view their own event's attendee list within two seconds
+- D. Attendee emails stay confidential from other students, even if they alter request identifiers ✅
+
+**Answer:** D
+
+**Explanation:** The template is that an asset should retain a security property against an adversary or misuse under relevant assumptions. Naming the asset, property, adversary and assumption makes the statement useful for both design and testing, unlike "the attendee list must be secure".
+
+### W11.5-55 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Least privilege · **Source:** W11.5b · **Basis:** body
+
+**Question:** The component that sends confirmation emails in the event system is given permission to change registrations. Which design principle does this violate?
+
+- A. Defense in depth
+- B. Least privilege ✅
+- C. Fail securely
+- D. Use established security mechanisms
+
+**Answer:** B
+
+**Explanation:** Least privilege means giving each user, component and process only the permissions it needs for its current job. A component that sends email does not need permission to change registrations.
+
+### W11.5-56 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Secure by default · **Source:** W11.5b · **Basis:** bold
+
+**Question:** Deny by default is the access-control case of a wider principle, secure by default. What else does secure by default cover?
+
+- A. An installation's initial state, such as no default passwords and debug interfaces turned off ✅
+- B. Granting newly added roles broad access until an administrator configures them
+- C. Letting users switch off any checks they find inconvenient in the default settings
+- D. Keeping all collected data indefinitely by default in case it is needed later
+
+**Answer:** A
+
+**Explanation:** A system should be safe in the configuration it ships with: no default accounts or passwords, debug and diagnostic interfaces turned off, network exposure limited to what is needed, and data retained no longer than necessary.
+
+### W11.5-57 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Allow rules · **Source:** W11.5b · **Basis:** body
+
+**Question:** Which is the better way to write the attendee-list access rule, and why?
+
+- A. An allow rule naming who may view the list, since it is easier to review ✅
+- B. A list of everyone who should be denied, since it is more thorough
+- C. A list of denied cases, so that new roles start out with access
+- D. Either form, since both always produce the same behavior
+
+**Answer:** A
+
+**Explanation:** Deny by default means access is refused unless a rule explicitly permits it. An allow rule is usually easier to review than an incomplete list of forbidden cases, and new actions, roles or resources begin inaccessible.
+
+### W11.5-58 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Attack surface · **Source:** W11.5b · **Basis:** bold
+
+**Question:** Before release, a team removes an unused export endpoint, an old code path and an unneeded package, even though none of them currently seems harmful. Which principle is this?
+
+- A. Defense in depth
+- B. Minimizing the attack surface ✅
+- C. Fail securely
+- D. Least privilege for components
+
+**Answer:** B
+
+**Explanation:** Minimizing the attack surface means reducing the features, interfaces, data, permissions and dependencies available to be attacked. A feature that does not exist does not need to be configured, patched, monitored or defended.
+
+### W11.5-59 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Defense in depth · **Source:** W11.5b · **Basis:** bold
+
+**Question:** The attendee list is protected by an application permission check, database permissions that let the reporting account read only the rows it needs, and access logging. Which principle does this combination illustrate?
+
+- A. Fail securely
+- B. Minimizing the attack surface
+- C. Defense in depth ✅
+- D. Use established security mechanisms
+
+**Answer:** C
+
+**Explanation:** Defense in depth means protecting an important asset with several independent controls, so that one failure is not enough. A second control limits or reveals the damage when the first is missing, misconfigured or bypassed.
+
+### W11.5-60 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Fail securely · **Source:** W11.5b · **Basis:** body
+
+**Question:** The event system refuses attendee-list requests whenever the permission check times out. What does this choice trade away?
+
+- A. Confidentiality, in favor of availability
+- B. Integrity, in favor of confidentiality alone
+- C. Nothing; failing securely has no cost at all
+- D. Availability, for confidentiality and integrity ✅
+
+**Answer:** D
+
+**Explanation:** Denying on failure trades availability for the other two goals, so a check that denies when it fails needs availability attention of its own.
+
+### W11.5-61 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Home-made session schemes · **Source:** W11.5b · **Basis:** body
+
+**Question:** A team invents its own login scheme: after sign-in, it stores the user's identifier in a cookie and trusts that identifier on the next request. Why does this fail?
+
+- A. The cookie is under the client's control and carries nothing the server can verify ✅
+- B. Cookies expire too quickly to keep a user signed in between requests
+- C. Cookies cannot safely hold numeric identifiers such as a user ID
+- D. The identifier would appear in server logs whenever a request is made
+
+**Answer:** A
+
+**Explanation:** Authentication and session management are easy to get subtly wrong, so prefer maintained mechanisms such as Spring Security. A home-made cookie scheme fails because the cookie is under the client's control and carries nothing the server can verify.
+
+### W11.5-62 · MRQ
+
+**Type:** MRQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Untrusted data · **Source:** W11.5b · **Basis:** body
+
+**Question:** Which of these can be untrusted data that crosses a trust boundary? (Select all that apply.)
+
+- A. Records read back from the system's own database ✅
+- B. Environment variables ✅
+- C. Responses from another organization's service ✅
+- D. Command-line arguments ✅
+- E. A constant the team hard-coded in its own source
+
+**Answer:** A, B, C, D
+
+**Explanation:** Untrusted data includes more than form input: requests, file uploads, command-line arguments, environment variables, configuration, database records, messages, dependency metadata and responses from other services can all cross trust boundaries. A value the system itself controls is not untrusted input in this sense.
+
+### W11.5-63 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Allowlist vs denylist · **Source:** W11.5b · **Basis:** body
+
+**Question:** A team's validation rule rejects any event name containing `<script`. An attacker submits `<ScRiPt` instead. What does the course recommend?
+
+- A. A longer denylist that also covers mixed-case and encoded forms of the tag
+- B. An allowlist describing acceptable data, since a denylist misses forms it did not foresee ✅
+- C. Client-side validation, which runs before the data is ever sent to the server
+- D. Removing validation entirely and relying only on encoding the output
+
+**Answer:** B
+
+**Explanation:** Prefer an allowlist, which describes acceptable data, over a denylist of known-bad strings. Attackers can express the same harmful meaning in forms a denylist did not anticipate, such as `<ScRiPt`, `<img onerror=...>` or encoded forms the browser decodes later.
+
+### W11.5-64 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Separating data and commands · **Source:** W11.5b · **Basis:** body
+
+**Question:** What is wrong with the code below, and what does the course recommend?
+
+```
+query = "SELECT student_name, email FROM registrations WHERE event_id = " + eventId
+database.execute(query)
+```
+
+- A. Nothing, provided `eventId` came from the signed-in user's own request
+- B. It is slow; cache the query string instead of rebuilding it on each call
+- C. It joins untrusted data into a command; pass the data separately via `?` ✅
+- D. It should escape any quotes in `eventId` by hand before concatenating
+
+**Answer:** C
+
+**Explanation:** Do not construct executable commands by concatenating untrusted strings, because an interpreter that cannot distinguish data from instructions may execute what an attacker supplied. Use an API that sends the instruction and the data separately; escaping a manually assembled command is usually harder to get right.
+
+### W11.5-65 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Output encoding · **Source:** W11.5b · **Basis:** body
+
+**Question:** An organizer enters the event name below. Which way of rendering it on the event page is safe, and what attack does it prevent?
+
+```
+<script>performUnwantedAction()</script>
+```
+
+- A. `page.setRawHtml(event.name)`, which prevents cross-site scripting
+- B. `page.setText(event.name)`, which prevents database injection
+- C. `page.setRawHtml(event.name)`, safe because organizers sign in
+- D. `page.setText(event.name)`, which prevents cross-site scripting ✅
+
+**Answer:** D
+
+**Explanation:** Rendering untrusted text as raw HTML could make the browser execute it; an ordinary text API preserves the visible characters without treating them as markup. The attack prevented is cross-site scripting (XSS), where content supplied by one user executes as a script in another user's browser.
+
+### W11.5-66 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Validation vs encoding · **Source:** W11.5b · **Basis:** bold
+
+**Question:** The event system validates event names on entry and uses parameterized queries. Does it still need to encode event names when rendering them in HTML?
+
+- A. No; validation on entry already removes any content that could be harmful in a page
+- B. Yes; a valid name can contain HTML-special characters, and each control guards a different boundary ✅
+- C. No; parameterized queries make all stored text safe to place into any output
+- D. Only if the event name was originally entered by an unauthenticated user
+
+**Answer:** B
+
+**Explanation:** Input validation does not replace output encoding, because a valid event name can legitimately contain characters with special meaning in HTML. Parameterized queries do not replace output encoding either; the two controls protect different boundaries.
+
+### W11.5-67 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** User-authored markup · **Source:** W11.5b · **Basis:** bold
+
+**Question:** A new feature lets organizers write event descriptions with their own formatting markup. How should the system render these descriptions?
+
+- A. As raw HTML, since only signed-in organizers can write descriptions
+- B. Through plain-text encoding, exactly as for event names
+- C. Through a maintained HTML sanitizer that keeps a known set of tags and attributes ✅
+- D. Through a denylist that strips out any `<script>` tags it finds
+
+**Answer:** C
+
+**Explanation:** When a feature genuinely requires user-authored markup, neither plain encoding nor raw output will do: run the content through a maintained HTML sanitizer that keeps a known set of tags and attributes and discards the rest.
+
+### W11.5-68 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Resource-level authorization · **Source:** W11.5b · **Basis:** bold
+
+**Question:** An endpoint lets any user with the organizer role edit any event. What does the course say is missing?
+
+- A. A check that the user organizes this particular event ✅
+- B. Stronger authentication, such as a second sign-in step
+- C. Output encoding of the event details before they are shown
+- D. Input validation that the event identifier is an integer
+
+**Answer:** A
+
+**Explanation:** After identifying the requester, authorize the particular action on the particular resource. "This user is an organizer" may be insufficient; the relevant rule might be "this user is an organizer of this event".
+
+### W11.5-69 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Not found vs not permitted · **Source:** W11.5b · **Basis:** body
+
+**Question:** In which case does the course advise returning the same response for "not found" and "not permitted"?
+
+- A. Always, so that no endpoint ever reveals whether an event exists
+- B. Never, since users need to know exactly why their request failed
+- C. Only when the request comes from a user who is not signed in
+- D. When even the existence of the resource is sensitive ✅
+
+**Answer:** D
+
+**Explanation:** Distinguishing not found from not permitted is safe for events, because any student may see that an event exists. When the existence of the resource is itself sensitive, return the same response for both and record the difference only in the server's own logs.
+
+### W11.5-70 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Every path to an action · **Source:** W11.5b · **Basis:** bold
+
+**Question:** Cancelling a registration is possible through the web page, a mobile endpoint, a bulk import feature and an administrator tool, but the ownership check is applied only in the web page. What does the course say?
+
+- A. This is acceptable, since most users cancel through the web page
+- B. Only the administrator tool needs a check of its own in addition
+- C. The other paths need input validation but no authorization check
+- D. The same authorization rule must be applied to every path to the action ✅
+
+**Answer:** D
+
+**Explanation:** Apply the same authorization rule to every path to the action. A forgotten path, such as an import feature or administrator tool, can bypass a check applied only in the user interface.
+
+### W11.5-71 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Where secrets live · **Source:** W11.5b · **Basis:** body
+
+**Question:** A team keeps its database password in an untracked `.env` file that is loaded into an environment variable. Is this protected storage?
+
+- A. Yes, as long as the file is never committed to version control by anyone
+- B. Yes, because environment variables can be read only by the owning process
+- C. No; its value can still leak into logs, crash dumps and child processes ✅
+- D. No; the password should instead be hard-coded inside a compiled class
+
+**Answer:** C
+
+**Explanation:** Environment variables and untracked `.env` files are a common way to receive an injected secret, but they are not themselves protected storage. Keep a secret in a store built for the purpose, such as a CI/CD secret store or a dedicated secret manager.
+
+### W11.5-72 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Exposed secrets · **Source:** W11.5b · **Basis:** body
+
+**Question:** A developer notices that an API key was committed to the repository last week and deletes that line in a new commit. What else must be done?
+
+- A. Nothing, since the latest commit of the repository no longer contains the key
+- B. Revoke or rotate the key, since deleting the line does not make the old value secret again ✅
+- C. Move the key into a code comment so that it is no longer executed by the program
+- D. Make the repository private, which restores the secrecy of the key's old value
+
+**Answer:** B
+
+**Explanation:** If a secret is exposed, remove it from the code and revoke or rotate it. Deleting the visible line does not make the old value secret again.
+
+### W11.5-73 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Password hashing · **Source:** W11.5b · **Basis:** bold
+
+**Question:** Why is an ordinary fast hash such as SHA-256 unsuitable for storing password verifiers?
+
+- A. Attackers who steal stored values can guess offline in parallel, so the hash must be slow and salted ✅
+- B. SHA-256 is reversible, so the original passwords can be recovered from it directly
+- C. SHA-256 output is too long to fit in a typical database column for passwords
+- D. SHA-256 cannot hash passwords that contain characters outside the English alphabet
+
+**Answer:** A
+
+**Explanation:** Password-hashing facilities are deliberately expensive to compute and salt each password separately, because the threat is an attacker who has already stolen the stored values and can guess offline, in parallel, as fast as hardware allows. A fast hash helps that attacker.
+
+### W11.5-74 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Error messages · **Source:** W11.5b · **Basis:** bold
+
+**Question:** A registration request fails because of a database error. What should the response to the user contain?
+
+- A. The full stack trace, so users can report exactly what went wrong
+- B. The failed query, so users can check which part of their input was wrong
+- C. A message that helps the user, with detailed diagnostics kept in protected logs ✅
+- D. The server's log file path, so support staff can find the details quickly
+
+**Answer:** C
+
+**Explanation:** Errors should help legitimate users without teaching an attacker about the system. Avoid returning stack traces, queries, filesystem paths, credentials or private records; keep detailed diagnostics in appropriately protected logs.
+
+### W11.5-75 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Dependencies · **Source:** W11.5b · **Basis:** bold
+
+**Question:** Why does the course treat a project's dependencies, including transitive ones and build plugins, as part of its security?
+
+- A. Dependencies are usually written by less experienced developers
+- B. Reused code runs with the permissions of your software ✅
+- C. License terms of dependencies may restrict how the product is used
+- D. Dependencies slow the build, giving attackers more time to act
+
+**Answer:** B
+
+**Explanation:** Reused code runs with the permissions of your software and therefore becomes part of its security. This includes libraries, frameworks, build plugins, container images, development tools and transitive dependencies.
+
+### W11.5-76 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Judging advisories · **Source:** W11.5b · **Basis:** body
+
+**Question:** A scanner reports that one of the event system's dependencies matches a published advisory. How should the team judge it?
+
+- A. By actual exposure: whether its code reaches the vulnerable path, and the impact if so ✅
+- B. By the advisory's published severity score alone, whatever the code does
+- C. By removing the dependency immediately in every case, without testing
+- D. By waiting until the vulnerability has been exploited somewhere else
+
+**Answer:** A
+
+**Explanation:** When an advisory matches, judge it by actual exposure: whether your code reaches the vulnerable path, and what the impact would be. Test before updating, and when an update has to wait, record the decision, who owns it and when it will be looked at again.
+
+### W11.5-77 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Checking resolved versions · **Source:** W11.5b · **Basis:** body
+
+**Question:** Against what should a team check its dependency versions for known vulnerabilities, and how?
+
+- A. The version numbers written by hand in the build file, checked by a teammate
+- B. The latest versions available, checked against each project's release notes
+- C. Only the direct dependencies, checked against each vendor's own website
+- D. The resolved versions in the lock file, against published advisories with a maintained scanner ✅
+
+**Answer:** D
+
+**Explanation:** Commit the lock file so that the exact resolved versions, including transitive ones nobody chose deliberately, are recorded. Check those resolved versions against published advisories using a maintained scanner rather than against the hand-written versions in the build file.
+
+### W11.5-78 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Clean scans · **Source:** W11.5b · **Basis:** bold
+
+**Question:** A team's dependency and static-analysis scans report no problems. What does this establish?
+
+- A. That the software is secure against all known attacks
+- B. That no further human review of security is needed
+- C. Only that the tools found nothing within the checks they performed ✅
+- D. That every dependency is free of vulnerabilities
+
+**Answer:** C
+
+**Explanation:** A clean scan does not prove that software is secure. A tool can recognize certain patterns but does not fully understand the system's assets, permissions and assumptions, so security verification needs both tools and human reasoning.
+
+### W11.5-79 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Negative tests · **Source:** W11.5b · **Basis:** body
+
+**Question:** A requirement says only an event's organizer can see its attendees. Which test set matches the course's suggestion?
+
+- A. Correct organizer viewing small, medium and large attendee lists in turn
+- B. Correct organizer, unrelated organizer, attendee, anonymous user and revoked organizer ✅
+- C. Correct organizer viewing the list on several browsers and devices
+- D. Anonymous user only, since everyone else has already signed in
+
+**Answer:** B
+
+**Explanation:** Turn important threat statements into negative tests and misuse cases. The cases that decide whether the control works are the ones it is supposed to refuse, so the set includes an unrelated organizer, an attendee, an anonymous user and a revoked organizer.
+
+### W11.5-80 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Regression after a fix · **Source:** W11.5b · **Basis:** body
+
+**Question:** After adding a new ownership check, why should the team also run its ordinary regression tests?
+
+- A. A control that breaks required behavior is not a complete solution ✅
+- B. Regression tests can replace security-specific negative tests
+- C. Regression tests prove that the new control cannot be bypassed
+- D. Regression tests are needed only to measure performance changes
+
+**Answer:** A
+
+**Explanation:** Run ordinary regression tests after a security change. A control that breaks required behavior is not a complete solution, and a functional fix can accidentally weaken a security property elsewhere.
+
+### W11.5-81 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Security across stages · **Source:** W11.5c · **Basis:** body
+
+**Question:** In the first week of a project, a team lists the attendee list as a sensitive asset and writes the misuse case "a student changes an event identifier to download another event's list". Which stage's minimum security action is this?
+
+- A. Design
+- B. Code review and testing
+- C. Operation and maintenance
+- D. Requirements ✅
+
+**Answer:** D
+
+**Explanation:** At the requirements stage, the minimum action is to identify sensitive assets and state important security requirements and misuse cases.
+
+### W11.5-82 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Security across stages · **Source:** W11.5c · **Basis:** body
+
+**Question:** Just before shipping, a team checks dependencies and secrets, switches to secure configuration and removes development credentials and diagnostics. Which stage's minimum security action is this?
+
+- A. Implementation
+- B. Operation and maintenance
+- C. Design
+- D. Integration and release ✅
+
+**Answer:** D
+
+**Explanation:** Integration and release is where dependencies and secrets are checked, secure configuration and defaults are used, and development credentials and diagnostics are removed. Operation and maintenance follows, with monitoring, updates and removal of unused access.
+
+### W11.5-83 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Testable security requirements · **Source:** W11.5c · **Basis:** bold
+
+**Question:** Which is a testable security requirement for the event system?
+
+- A. Only an event's organizers can view its attendee list ✅
+- B. The system must be secure
+- C. Attendee data should be well protected
+- D. Security should be a top priority for the team
+
+**Answer:** A
+
+**Explanation:** State security needs as testable properties rather than vague wishes. The testable requirement names the asset, the property to preserve and who must not reach it; a matching misuse case is a student changing an event identifier to download another event's list.
+
+### W11.5-84 · MRQ
+
+**Type:** MRQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Revisiting the analysis · **Source:** W11.5c · **Basis:** body
+
+**Question:** Which changes should prompt the event-system team to revisit its security analysis? (Select all that apply.)
+
+- A. Adding a new kind of user called an event sponsor ✅
+- B. Calling a new external payment service ✅
+- C. Renaming a local variable to improve readability
+- D. Moving the system to a new deployment environment ✅
+- E. Learning of a newly discovered vulnerability in a library it uses ✅
+
+**Answer:** A, B, D, E
+
+**Explanation:** Revisit the security analysis whenever an important assumption changes: a new kind of user or permission, new sensitive data, a new external service or dependency, a new interface or deployment environment, a changed trust boundary, or a newly discovered relevant vulnerability. A local rename changes none of these.
+
+### W11.5-85 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Own system vs others · **Source:** W11.5c · **Basis:** bold
+
+**Question:** You discover that a feature in the event system your own team runs is leaking attendee emails. What should come first?
+
+- A. Report it to the hosting platform before touching anything
+- B. Log it as an ordinary bug to be scheduled in the next sprint
+- C. Contain the harm, before treating it as an ordinary bug to fix ✅
+- D. Post the details in a public issue so that users are warned
+
+**Answer:** C
+
+**Explanation:** What to do first depends on whose system it is. In a system your team owns, contain the harm before treating the problem as an ordinary bug; in someone else's, report it first and contain only what you are authorized to touch.
+
+### W11.5-86 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Preserving the record · **Source:** W11.5c · **Basis:** body
+
+**Question:** While handling a vulnerability, you are able both to capture a reproduction and to revoke the exposed credential. Which order does the course recommend, and what should you avoid?
+
+- A. Revoke first, and keep a copy of the exposed data as evidence
+- B. Capture the reproduction first, and do not copy out the sensitive data reached ✅
+- C. Revoke first, then keep probing to measure the full extent
+- D. Capture first, including a copy of the exposed data as evidence
+
+**Answer:** B
+
+**Explanation:** Capture the reproduction before revoking or disabling anything, because containing the harm can destroy the record of it. Do not copy out the sensitive data you were able to reach, because that spreads the exposure you are reporting, and stop exploring once you believe the problem is real.
+
+### W11.5-87 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Reporting fallback · **Source:** W11.5c · **Basis:** body
+
+**Question:** You reported a vulnerability in an open-source project through its security contact, but nobody has acknowledged it. Which fallback order does the course recommend?
+
+- A. A public issue, then the maintainers, then the hosting platform's reporting mechanism
+- B. The hosting platform's mechanism, then the maintainers, then a public post about it
+- C. The maintainers, then a public issue, then the project's documented security policy
+- D. Documented security policy, then maintainers or repository owner, then the hosting platform's mechanism ✅
+
+**Answer:** D
+
+**Explanation:** Report through a private channel. If nobody acknowledges the report, follow the project's documented security policy, then its maintainers or repository owner, then the hosting platform's own vulnerability reporting mechanism, rather than waiting indefinitely or raising it in public.
+
+### W11.5-88 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Coordinated disclosure · **Source:** W11.5c · **Basis:** bold
+
+**Question:** A developer who found a vulnerability withholds its details until the project's maintainers have had a reasonable chance to act. What is this called?
+
+- A. Delayed containment
+- B. Coordinated disclosure ✅
+- C. Full disclosure
+- D. Defense in depth
+
+**Answer:** B
+
+**Explanation:** Withholding details until the people responsible have had a reasonable chance to act is called coordinated disclosure, and many projects publish a policy describing how they expect it to work.
+
+### W11.5-89 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Automation bias · **Source:** W11.5d · **Basis:** body
+
+**Question:** A developer accepts an AI-generated endpoint mainly because it looks polished and the assistant sounded confident. What risk does the course name for this?
+
+- A. Automation bias ✅
+- B. Indirect prompt injection
+- C. Requirements churn
+- D. Repudiation
+
+**Answer:** A
+
+**Explanation:** The risk is not that all generated code is insecure but automation bias: polished and confident output can feel more trustworthy than the available evidence justifies.
+
+### W11.5-90 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** AI and confidence · **Source:** W11.5d · **Basis:** body
+
+**Question:** What did the controlled study cited by the course find about participants who used an AI assistant for security-related programming tasks?
+
+- A. They produced more secure solutions and were more confident about them
+- B. They produced equally secure solutions but finished the tasks much faster
+- C. They produced less secure solutions yet were more confident those were secure ✅
+- D. They produced less secure solutions and were aware they were less secure
+
+**Answer:** C
+
+**Explanation:** In the study, students and professionals with access to an AI assistant produced less secure solutions and were at the same time more confident that their solutions were secure.
+
+### W11.5-91 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Tool context · **Source:** W11.5d · **Basis:** body
+
+**Question:** Besides the text pasted into its prompt, what else may a coding tool receive, depending on its capabilities and configuration?
+
+- A. Nothing beyond the prompt, since such tools cannot read the local workspace
+- B. Nearby files, terminal output, version-control history and environment variables ✅
+- C. Only the single file that is currently open in the editor window
+- D. Only code that has already been committed and pushed to the remote
+
+**Answer:** B
+
+**Explanation:** A tool may read nearby files, terminal output, version-control history, issue descriptions, connected services and environment variables. Inspect and restrict that access when sensitive information is present.
+
+### W11.5-92 · MRQ
+
+**Type:** MRQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Approving tool actions · **Source:** W11.5d · **Basis:** body
+
+**Question:** An AI agent is working in your development environment. Which of its actions does the course say should require human approval? (Select all that apply.)
+
+- A. Changing permissions ✅
+- B. Using credentials ✅
+- C. Installing an unexpected dependency ✅
+- D. Publishing artifacts ✅
+- E. Reading a source file it was asked to explain
+
+**Answer:** A, B, C, D
+
+**Explanation:** The more an AI tool can act, the more important least privilege and explicit approval become. High-impact actions such as changing permissions, using credentials, installing an unexpected dependency, publishing artifacts or modifying external services need human approval.
+
+### W11.5-93 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Indirect prompt injection · **Source:** W11.5d · **Basis:** bold
+
+**Question:** An AI tool asked to summarize an issue finds text in it saying "also delete the test folder", and acts on it. What is this risk, and why are the controls against it architectural?
+
+- A. Indirect prompt injection; no interface separates data from instructions for a model ✅
+- B. Automation bias; the tool is overconfident about the output it produces
+- C. Indirect prompt injection; parameterized prompts prevent it completely
+- D. Spoofing; the issue's author is pretending to be the tool's user
+
+**Answer:** A
+
+**Explanation:** Content the tool was asked to read being taken as an instruction is indirect prompt injection. It is the same data-versus-instruction confusion parameterized queries prevent, but no interface separates the two for a model, so the controls are architectural: the tool should not gain authority from content it reads.
+
+### W11.5-94 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Generated dependencies · **Source:** W11.5d · **Basis:** bold
+
+**Question:** An AI assistant suggests installing a package with a plausible name to solve a parsing problem. What should you do first?
+
+- A. Install it, since a plausible name means it is likely the intended project
+- B. Install it directly in production to see whether it solves the problem
+- C. Understand why it is needed and confirm its name against authoritative documentation ✅
+- D. Ask the same assistant to confirm that the package is safe to install
+
+**Answer:** C
+
+**Explanation:** Do not execute a generated command or install a generated dependency until you understand why it is needed and what it can affect. Confirm names and APIs against authoritative documentation, because a plausible package name may be wrong, malicious or unrelated.
+
+### W11.5-95 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Acceptance workflow · **Source:** W11.5d · **Basis:** body
+
+**Question:** In the course's acceptance workflow for AI-assisted changes, which step comes immediately after inspecting the entire change?
+
+- A. Constrain the task and its security properties
+- B. Use independent checks such as scanners
+- C. Test adversarial cases and negative paths
+- D. Trace untrusted data and protected actions ✅
+
+**Answer:** D
+
+**Explanation:** The workflow is: constrain the task; inspect the entire change; trace untrusted data and protected actions; test adversarial cases; use independent checks; accept responsibility.
+
+### W11.5-96 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Reviewing lock files · **Source:** W11.5d · **Basis:** body
+
+**Question:** An AI-assisted change updates a lock file with hundreds of changed lines. How should the lock file be reviewed?
+
+- A. Scan it for an unfamiliar package, a new install script, a changed registry or checksum ✅
+- B. Read every line carefully, exactly as for the application's source code
+- C. Skip it, since lock files are generated metadata that cannot cause harm
+- D. Regenerate it and accept whatever the package manager then produces
+
+**Answer:** A
+
+**Explanation:** For generated metadata such as a lock file, do not read it line by line; scan it for what should not be there. A two-line change can cause a package manager to execute much more code elsewhere, so such files deserve the same suspicion as application code.
+
+### W11.5-97 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Oversized patches · **Source:** W11.5d · **Basis:** bold
+
+**Question:** An AI assistant produces a 3,000-line patch that no one on the team can fully understand. What does the course advise?
+
+- A. Accept it if all of the generated tests pass
+- B. Accept it if it compiles without any warnings
+- C. Split it into smaller changes or regenerate it in stages ✅
+- D. Ask the assistant to confirm that it is correct
+
+**Answer:** C
+
+**Explanation:** If a generated patch is too large to understand, split it into smaller changes or regenerate it in stages. Code that is cheap to generate is not necessarily cheap to verify, and compilation or generated tests are not evidence of security.
+
+### W11.5-98 · MRQ
+
+**Type:** MRQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** AI in security reasoning · **Source:** W11.5d · **Basis:** body
+
+**Question:** Which are useful ways to use an AI assistant in security reasoning, according to the course? (Select all that apply.)
+
+- A. Brainstorming assets, stakeholders, threats and misuse cases ✅
+- B. Explaining an unfamiliar API or warning ✅
+- C. Suggesting boundary and negative tests ✅
+- D. Declaring that the code it generated is secure
+- E. Identifying areas that deserve human review ✅
+
+**Answer:** A, B, C, E
+
+**Explanation:** An AI assistant can help generate questions but cannot establish that its own answer is complete or correct. Treat each suggestion as a hypothesis; asking the same tool to declare its own code secure is not an independent review.
+
+### W11.5-99 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.5] Secure Software Engineering · **Subtopic:** Same standard for AI code · **Source:** W11.5d · **Basis:** body
+
+**Question:** A teammate argues that AI-generated code needs a lighter review than code written by a colleague, because it is produced so quickly. What does the course say?
+
+- A. AI code needs a lighter review, since it repeats well-tested patterns
+- B. AI code needs no review at all once its generated tests have passed
+- C. AI code needs review only for style, since security is built in
+- D. AI changes the speed and source of the draft, not the security standard applied ✅
+
+**Answer:** D
+
+**Explanation:** The same review would be required if a teammate wrote the code. AI changes the speed and source of the draft, not the security standard applied to the result.
+
 ## [W11.6] Reuse
 
 ### W11.6-01 · MCQ
@@ -8399,6 +21742,322 @@ void setGuarantor(Guarantor g) { guarantor = g; }
 
 **Explanation:** Rather than downloading the library by hand, the project lets its dependency management tool fetch it.
 
+### W11.6-11 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.6] Reuse · **Subtopic:** Forms of reuse · **Source:** W11.6a · **Basis:** body
+
+**Question:** Which forms can a reusable component take?
+
+- A. Only a single method
+- B. A piece of code, a subsystem, or a whole software system ✅
+- C. Only third-party libraries downloaded from the internet
+- D. Only classes from the language's standard distribution
+
+**Answer:** B
+
+**Explanation:** Reusable components come in many forms: a reused component can be a piece of code, a subsystem, or a whole software system.
+
+### W11.6-12 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.6] Reuse · **Subtopic:** Overkill · **Source:** W11.6b · **Basis:** body
+
+**Question:** A team adds a huge data-processing framework to its app just to sort one small list. This is like using a sledgehammer to crack a nut. Which cost of reuse does it illustrate?
+
+- A. The licence restricts how the software can be used or developed further
+- B. The reused software may die off soon, leaving it unmaintained
+- C. The reused code may be overkill, increasing size and/or degrading performance ✅
+- D. Malicious code may sneak in through compromised dependencies
+
+**Answer:** C
+
+**Explanation:** Reused code may be overkill (think using a sledgehammer to crack a nut), increasing the size of, and/or degrading the performance of, your software.
+
+### W11.6-13 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.6] Reuse · **Subtopic:** Unfixed flaws · **Source:** W11.6b · **Basis:** body
+
+**Question:** Your product depends on an open-source library with a bug that seriously affects you, but its maintainers have not fixed it for months. Which reason for this risk does the course give?
+
+- A. The bug matters to your product but may matter less to its maintainers ✅
+- B. Libraries are never maintained once their first version is released
+- C. Bugs in libraries can only be fixed by the library's users
+- D. The library's licence forbids bug fixes
+
+**Answer:** A
+
+**Explanation:** Reused software might have bugs, missing features or security vulnerabilities that are important to your product but not so important to its maintainers, so those flaws may not get fixed as fast as you need.
+
+### W11.6-14 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.6] Reuse · **Subtopic:** Supply chain risk · **Source:** W11.6b · **Basis:** bold
+
+**Question:** An attacker takes over a popular package that many products depend on and adds harmful code to it. Which cost of reuse does this illustrate?
+
+- A. The reused code is overkill for what the product needs
+- B. Malicious code can sneak into your product via compromised dependencies ✅
+- C. The licence restricts how you can develop your software further
+- D. The reused software is not mature or stable enough yet
+
+**Answer:** B
+
+**Explanation:** One cost of reuse is that malicious code can sneak into your product via compromised dependencies.
+
+### W11.6-15 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.6] Reuse · **Subtopic:** Immature software · **Source:** W11.6b · **Basis:** body
+
+**Question:** A team considers reusing a brand-new UI library that appeared only a few weeks ago. Which risk specific to immature software applies?
+
+- A. It is guaranteed to be overkill for any product that reuses it
+- B. Its licence must forbid commercial use until it is mature
+- C. It cannot be downloaded by dependency management tools like Gradle
+- D. It may change in breaking ways, or die off and leave an unmaintained dependency ✅
+
+**Answer:** D
+
+**Explanation:** Software that is not mature or stable can change drastically and rapidly, possibly breaking your software. Immature software also risks dying off as fast as it emerged, leaving you with a dependency that is no longer maintained.
+
+### W11.6-16 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.6] Reuse · **Subtopic:** Web APIs · **Source:** W11.6c · **Basis:** body
+
+**Question:** A class's API is the collection of public methods you can invoke. What is the GitHub API, in the same terms?
+
+- A. The source code of the GitHub server
+- B. The collection of private methods inside GitHub's classes
+- C. The web request formats the GitHub server accepts and its responses ✅
+- D. The user interface of the GitHub website
+
+**Answer:** C
+
+**Explanation:** An API specifies the interface through which other programs can interact with a component. For a class it is its public methods; for GitHub it is a collection of web request formats the server accepts and the corresponding responses.
+
+### W11.6-17 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.6] Reuse · **Subtopic:** Defining APIs · **Source:** W11.6d · **Basis:** body
+
+**Question:** A team wants several developers to build different components of a system at the same time. Which approach to defining component APIs supports this?
+
+- A. Defining the APIs up-front ✅
+- B. Letting the APIs emerge and evolve as code is written
+- C. Defining the APIs only after all components are finished
+- D. Avoiding APIs and letting components access each other's fields directly
+
+**Answer:** A
+
+**Explanation:** One approach is to let the API emerge and evolve over time as you write code. Another is to define the API up-front, which allows the components to be developed in parallel.
+
+### W11.6-18 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.6] Reuse · **Subtopic:** Discovering APIs · **Source:** W11.6d · **Basis:** body
+
+**Question:** Which UML diagram does the course use to analyze the required interactions between components and so discover the API they need?
+
+- A. Class diagram
+- B. Activity diagram
+- C. Object diagram
+- D. Sequence diagram ✅
+
+**Answer:** D
+
+**Explanation:** UML sequence diagrams can be used to analyze the required interactions between components; doing so reveals the required API, as in the Minesweeper example where the `MSLogic` methods are discovered.
+
+### W11.6-19 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.6] Reuse · **Subtopic:** Preconditions · **Source:** W11.6d · **Basis:** body
+
+**Question:** In the API definition of `clearCellAt(int x, int y)`, the statement "game state is READY or IN_PLAY; x and y are within range" must be true before the operation is called. What is it?
+
+- A. A postcondition
+- B. A precondition ✅
+- C. A description of what happens during the operation
+- D. A parameter list
+
+**Answer:** B
+
+**Explanation:** Preconditions are the conditions that must be true before calling an operation. Postconditions describe the system after the operation is complete, and do not say what happens during it.
+
+### W11.6-20 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.6] Reuse · **Subtopic:** Precise API definitions · **Source:** W11.6d · **Basis:** body
+
+**Question:** Before coding, why add details such as a description, preconditions and postconditions to each method in a component's API?
+
+- A. To make the methods run faster
+- B. To avoid misunderstandings with developers of interacting classes ✅
+- C. To replace the need for unit testing
+- D. To allow the API to change freely without informing anyone
+
+**Answer:** B
+
+**Explanation:** More details can be included to increase the precision of the method definitions before coding. Such precision is important to avoid misunderstandings between the developer of the class and developers of other classes that interact with it.
+
+### W11.6-21 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.6] Reuse · **Subtopic:** Libraries · **Source:** W11.6e · **Basis:** body
+
+**Question:** Natty is reusable Java code that a program can call to parse strings representing dates, such as `The 31st of April in the year 2008`. What is Natty an example of?
+
+- A. A library ✅
+- B. A platform
+- C. A framework
+- D. An IDE
+
+**Answer:** A
+
+**Explanation:** A library is a collection of modular code that is general and can be used by other programs. Natty, a Java library for parsing date strings, is an example, as are JDK classes such as `String` and Python modules such as `csv`.
+
+### W11.6-22 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.6] Reuse · **Subtopic:** Steps to use a library · **Source:** W11.6f · **Basis:** body
+
+**Question:** In what order are the typical steps for using a library carried out?
+
+- A. Call its API, read its documentation, check its licence, download it
+- B. Download it, call its API, check its licence, read its documentation
+- C. Check its licence, call its API, read its documentation, download it
+- D. Read its documentation, check its licence, download it, call its API ✅
+
+**Answer:** D
+
+**Explanation:** First read the documentation to confirm the functionality fits, then check the licence allows your planned reuse, then download the library and make it accessible (or configure a dependency management tool to do so), and finally call its API from your code.
+
+### W11.6-23 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.6] Reuse · **Subtopic:** Why frameworks exist · **Source:** W11.6g · **Basis:** bold
+
+**Question:** IDEs for different programming languages are similar in how they support editing code, organizing project files and debugging. Why does this matter for reuse?
+
+- A. It shows that IDEs cannot be reused across languages
+- B. Such similarity is an opportunity for large-scale reuse ✅
+- C. It means every IDE must be written from scratch
+- D. It means IDEs should be built only as libraries
+
+**Answer:** B
+
+**Explanation:** The overall structure and execution flow of a specific category of software systems can be very similar, and this similarity is an opportunity for large-scale reuse, which frameworks provide. Eclipse, for example, is an IDE framework.
+
+### W11.6-24 · MRQ
+
+**Type:** MRQ · **Topic:** [W11.6] Reuse · **Subtopic:** Eclipse framework · **Source:** W11.6g · **Basis:** body
+
+**Question:** Which statements about Eclipse, the course's running example of a framework, are correct? (Select all that apply.)
+
+- A. It is an IDE framework that can be used to create IDEs for different programming languages ✅
+- B. It is a fully functional Java IDE out-of-the-box ✅
+- C. Its plugin system can be used to create an IDE for another language while reusing most of its existing features ✅
+- D. It must be fully customized before it can be used at all
+
+**Answer:** A, B, C
+
+**Explanation:** Eclipse is an IDE framework; it provides a complete default behavior as a fully functional Java IDE, so it is immediately usable, and its plugin system lets you create IDEs for other languages while reusing most of its features.
+
+### W11.6-25 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.6] Reuse · **Subtopic:** Kinds of frameworks · **Source:** W11.6g · **Basis:** body
+
+**Question:** Which pairing of framework and the area it covers is correct?
+
+- A. Django — GUI framework for Java
+- B. JavaFX — web framework for Python
+- C. Tkinter — GUI framework for Python ✅
+- D. Spring — testing framework for JavaScript
+
+**Answer:** C
+
+**Explanation:** JavaFX is a framework for creating Java GUIs and Tkinter is a GUI framework for Python. Django (Python) and Spring (Java) are frameworks for web-based applications.
+
+### W11.6-26 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.6] Reuse · **Subtopic:** Kinds of frameworks · **Source:** W11.6g · **Basis:** body
+
+**Question:** Which group consists only of frameworks for testing?
+
+- A. JUnit, unittest, Jest ✅
+- B. Drupal, Django, Ruby on Rails
+- C. JavaFX, Tkinter, Spring
+- D. JUnit, Drupal, Tkinter
+
+**Answer:** A
+
+**Explanation:** JUnit (Java), unittest (Python) and Jest (JavaScript) are frameworks for testing. Drupal, Django, Ruby on Rails and Spring are frameworks for web-based applications, while JavaFX and Tkinter are GUI frameworks.
+
+### W11.6-27 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.6] Reuse · **Subtopic:** Libraries vs frameworks · **Source:** W11.6h · **Basis:** bold
+
+**Question:** Libraries are meant to be used 'as is'. How are frameworks meant to be used?
+
+- A. Also 'as is', without any changes
+- B. Only by the framework's original authors
+- C. Only after rewriting their source code
+- D. They are meant to be customized or extended ✅
+
+**Answer:** D
+
+**Explanation:** Libraries are meant to be used 'as is', while frameworks are meant to be customized/extended, e.g. writing plugins for Eclipse, adding modules and themes to Drupal, and adding test cases to JUnit.
+
+### W11.6-28 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.6] Reuse · **Subtopic:** Inversion of control · **Source:** W11.6h · **Basis:** bold
+
+**Question:** Frameworks use inversion of control, in which you write code that the framework calls. What is this technique also known as?
+
+- A. The "Hollywood principle": don't call us, we'll call you ✅
+- B. The "open-closed principle" of object-oriented design
+- C. Defensive programming, where the framework checks all inputs
+- D. Dependency management, where the framework fetches your code
+
+**Answer:** A
+
+**Explanation:** Frameworks use a technique called inversion of control, also known as the "Hollywood principle" (don't call us, we'll call you!). For example, you write test methods that the JUnit framework calls.
+
+### W11.6-29 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.6] Reuse · **Subtopic:** Platform runtimes · **Source:** W11.6i · **Basis:** body
+
+**Question:** JavaEE and .NET are both platforms. Which runtimes do they use?
+
+- A. JavaEE uses the CLR; .NET uses the JVM
+- B. JavaEE uses the JVM; .NET uses the CLR (Common Language Runtime) ✅
+- C. Both use the JVM
+- D. Both run directly on the operating system with no runtime
+
+**Answer:** B
+
+**Explanation:** The runtime used by JavaEE applications is the JVM, which can run on different operating systems. .NET's runtime is called the CLR (Common Language Runtime) and is usually used on Windows machines.
+
+### W11.6-30 · MRQ
+
+**Type:** MRQ · **Topic:** [W11.6] Reuse · **Subtopic:** Platform services · **Source:** W11.6i · **Basis:** body
+
+**Question:** Which infrastructure services do platforms such as JavaEE and .NET provide, so that developers of enterprise applications need not implement them from scratch? (Select all that apply.)
+
+- A. Connection pooling ✅
+- B. Load balancing ✅
+- C. Requirements elicitation
+- D. Transaction management ✅
+- E. Authentication ✅
+
+**Answer:** A, B, D, E
+
+**Explanation:** Services such as connection pooling, load balancing, remote code execution, transaction management, authentication, security and messaging are provided by JavaEE and .NET in a customizable way. Requirements elicitation is not a runtime infrastructure service.
+
+### W11.6-31 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.6] Reuse · **Subtopic:** Operating systems as platforms · **Source:** W11.6i · **Basis:** body
+
+**Question:** Can an operating system be called a platform?
+
+- A. No, because only JavaEE and .NET are platforms
+- B. No, because an operating system has no runtime environment
+- C. Technically yes, e.g. Windows for desktop apps and iOS for mobile apps ✅
+- D. Only if it bundles a testing framework
+
+**Answer:** C
+
+**Explanation:** A platform provides a runtime environment for applications. Technically, an operating system can be called a platform: a Windows PC is a platform for desktop applications, while iOS is a platform for mobile applications.
+
 ## [W11.7] Cloud Computing : OPTIONAL
 
 ### W11.7-01 · MCQ
@@ -8431,6 +22090,66 @@ void setGuarantor(Guarantor g) { guarantor = g; }
 
 **Explanation:** SaaS lets applications be accessed over the network. IaaS delivers infrastructure such as virtual servers; PaaS provides a platform on which developers build applications.
 
+### W11.7-03 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.7] Cloud Computing : OPTIONAL · **Subtopic:** Electricity analogy · **Source:** W11.7a · **Basis:** body
+
+**Question:** Cloud computing is compared to the consumption of electricity. In this analogy, what corresponds to the traditional non-cloud model of computing?
+
+- A. Everyone buying their own generator to make their own electricity ✅
+- B. The power company managing the power plant for everyone
+- C. Consumers paying only for the electricity they actually use
+- D. Neighbors sharing one power cable and splitting the bill
+
+**Answer:** A
+
+**Explanation:** In cloud computing, the provider manages hardware and software as the power company manages the plant, and consumers pay only for what they use. The traditional non-cloud model is like everyone buying their own generators.
+
+### W11.7-04 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.7] Cloud Computing : OPTIONAL · **Subtopic:** Cloud responsibilities · **Source:** W11.7a · **Basis:** body
+
+**Question:** A company moves its systems to the cloud. Who maintains the hardware and software, and what can the company now do at will?
+
+- A. The company itself; it can then stop paying for any service
+- B. The cloud provider; the company can scale its usage up or down freely ✅
+- C. The users; they can access the software only from the local machine
+- D. The cloud provider; the company must buy more hardware to scale up
+
+**Answer:** B
+
+**Explanation:** Maintenance of the hardware and software is managed by the cloud provider, while users typically pay only for the services they use. Users can scale their utilization up or down at will without having to upgrade their hardware and software.
+
+### W11.7-05 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.7] Cloud Computing : OPTIONAL · **Subtopic:** IaaS · **Source:** W11.7b · **Basis:** bold
+
+**Question:** Instead of buying physical servers, a startup deploys virtual servers on Amazon EC2 and installs its own software on them. Which cloud service model is this?
+
+- A. Software as a service (SaaS)
+- B. Platform as a service (PaaS)
+- C. Infrastructure as a service (IaaS) ✅
+- D. Desktop as a service
+
+**Answer:** C
+
+**Explanation:** IaaS delivers computer infrastructure as a service, e.g. deploying virtual servers on the cloud instead of buying physical hardware. Rackspace and Amazon EC2 are examples of IaaS providers.
+
+### W11.7-06 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.7] Cloud Computing : OPTIONAL · **Subtopic:** PaaS trade-off · **Source:** W11.7b · **Basis:** bold
+
+**Question:** A team builds its app on Google App Engine, so it does not need to deploy servers or handle load balancing itself. What price does it pay for this convenience?
+
+- A. It must buy and maintain its own physical servers
+- B. Its users must install the app on their local machines
+- C. It loses all access to programming languages
+- D. Reduced flexibility, being limited to the platform's facilities ✅
+
+**Answer:** D
+
+**Explanation:** Google App Engine is a PaaS example: infrastructure issues such as deploying servers and load balancing are handled by the platform. The price to pay is reduced flexibility; applications written on PaaS are limited to facilities provided by the platform.
+
 ## [W11.8] Other UML Models : OPTIONAL
 
 ### W11.8-01 · MCQ
@@ -8462,3 +22181,123 @@ void setGuarantor(Guarantor g) { guarantor = g; }
 **Answer:** A, B, C
 
 **Explanation:** A timing diagram focuses on timing constraints. Decomposing a class into its internal structure is the job of a composite structure diagram.
+
+### W11.8-03 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.8] Other UML Models : OPTIONAL · **Subtopic:** State-dependent behavior · **Source:** W11.8b · **Basis:** body
+
+**Question:** When the "eject CD" button is pushed, a CD player does nothing if the tray is open, stops playing and opens the tray if a CD is playing, and waits then reopens the tray if it is closing. What kind of behavior is this?
+
+- A. State-dependent behavior ✅
+- B. Random behavior
+- C. Parallel behavior
+- D. Stateless behavior
+
+**Answer:** A
+
+**Explanation:** The CD player's response to the same event depends on what it was doing at the time, i.e. on its internal state. Such behavior is called state-dependent behavior and can be modeled with a state machine diagram.
+
+### W11.8-04 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.8] Other UML Models : OPTIONAL · **Subtopic:** What SMDs capture · **Source:** W11.8b · **Basis:** body
+
+**Question:** Which information does a UML state machine diagram (also called a state chart, state diagram or state machine) capture?
+
+- A. Which pieces of software run on which pieces of hardware
+- B. The interactions among objects in one specific scenario
+- C. How a system is divided into components connected through interfaces
+- D. An object's states, its responses to events, and its transitions ✅
+
+**Answer:** D
+
+**Explanation:** An SMD views an object's life cycle as a finite number of states, each with a unique behavior pattern, and captures the states, the responses to events in each state, and the transitions between states.
+
+### W11.8-05 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.8] Other UML Models : OPTIONAL · **Subtopic:** When no SMD is needed · **Source:** W11.8b · **Basis:** body
+
+**Question:** An object's only state-dependent behavior is a simple conditional such as `if x > y, then x = x - y`. Does it need a state machine diagram?
+
+- A. Yes; any state-dependent behavior must be modeled with an SMD
+- B. No; such simple state-dependent behavior needs no extra attention ✅
+- C. Yes, but only together with a sequence diagram
+- D. No; conditionals are not state-dependent behavior at all
+
+**Answer:** B
+
+**Explanation:** Often the state-dependent behavior of an object is simple enough to need no extra attention, as with a simple conditional. Only occasionally is it complex enough to be captured in a separate model such as an SMD.
+
+### W11.8-06 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.8] Other UML Models : OPTIONAL · **Subtopic:** Component diagrams · **Source:** W11.8d · **Basis:** bold
+
+**Question:** For an order-processing system, a team wants a diagram showing how the system is divided into components and how they connect to each other through interfaces. Which UML diagram is this?
+
+- A. Package diagram
+- B. Component diagram ✅
+- C. Composite structure diagram
+- D. Deployment diagram
+
+**Answer:** B
+
+**Explanation:** A component diagram shows how a system is divided into components and how they are connected to each other through interfaces.
+
+### W11.8-07 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.8] Other UML Models : OPTIONAL · **Subtopic:** Composite structure diagrams · **Source:** W11.8f · **Basis:** bold
+
+**Question:** Which UML diagram hierarchically decomposes a class, such as `Car`, into its internal structure?
+
+- A. Object diagram
+- B. Package diagram
+- C. Composite structure diagram ✅
+- D. Interaction overview diagram
+
+**Answer:** C
+
+**Explanation:** A composite structure diagram hierarchically decomposes a class into its internal structure.
+
+### W11.8-08 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.8] Other UML Models : OPTIONAL · **Subtopic:** Timing diagrams · **Source:** W11.8g · **Basis:** bold
+
+**Question:** A team needs a UML diagram that shows how long each state of a component may last. Which diagram focuses on such timing constraints?
+
+- A. Timing diagram ✅
+- B. Sequence diagram
+- C. Activity diagram
+- D. Communication diagram
+
+**Answer:** A
+
+**Explanation:** A timing diagram focuses on timing constraints, such as how long each state may last.
+
+### W11.8-09 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.8] Other UML Models : OPTIONAL · **Subtopic:** Interaction overview diagrams · **Source:** W11.8h · **Basis:** bold
+
+**Question:** Which UML diagram is a combination of activity diagrams and sequence diagrams?
+
+- A. Communication diagram
+- B. State machine diagram
+- C. Composite structure diagram
+- D. Interaction overview diagram ✅
+
+**Answer:** D
+
+**Explanation:** Interaction overview diagrams are a combination of activity diagrams and sequence diagrams.
+
+### W11.8-10 · MCQ
+
+**Type:** MCQ · **Topic:** [W11.8] Other UML Models : OPTIONAL · **Subtopic:** Packages · **Source:** W11.8e · **Basis:** body
+
+**Question:** In UML, what is a package?
+
+- A. A deployable unit of software that runs on a hardware node
+- B. A grouping construct for grouping UML elements such as classes and use cases ✅
+- C. A component connected to others through interfaces
+- D. A class whose internal structure is decomposed hierarchically
+
+**Answer:** B
+
+**Explanation:** A package is a grouping construct for grouping UML elements (classes, use cases, etc.); a package diagram shows packages and their dependencies.

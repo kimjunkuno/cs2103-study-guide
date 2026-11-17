@@ -182,7 +182,7 @@ class QuestionBankTests(unittest.TestCase):
   self.assertEqual(self.builder.build(),self.text)
  def test_top_level_shape(self):
   self.assertEqual(self.data['version'],1);self.assertEqual(self.data['snapshot'],'2026-11-11');self.assertEqual(self.data['ab3Commit'],'56d1ffb')
-  self.assertEqual(len(self.bank),540)
+  self.assertEqual(len(self.bank),1422)
   keys=['id','type','week','topic','topicId','sources','subtopic','basis','ab3','stem','options','explanation','optional']
   for q in self.bank:self.assertEqual(list(q),keys,q['id'])
  def test_ids_are_unique_and_well_formed(self):

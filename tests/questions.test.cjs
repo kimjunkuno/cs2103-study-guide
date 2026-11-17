@@ -104,7 +104,7 @@ test('every question in the real bank grades its own key as correct, even after 
   globalThis.COURSE_QUESTIONS = undefined;
   require('../site/questions-data.js');
   const real = globalThis.COURSE_QUESTIONS.questions;
-  assert.equal(real.length, 540);
+  assert.equal(real.length, 1422);
   for (const question of real) {
     const shown = {...question, options: shuffle(question.options)};
     const keys = shown.options.filter(item => item.correct).map(item => item.key);
