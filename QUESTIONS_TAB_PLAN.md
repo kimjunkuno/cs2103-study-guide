@@ -7,7 +7,7 @@ Status: **plan only — nothing is implemented.** The draft questions are in `QU
 A fourth page, **Questions**, beside Guide, Flashcards and Spot the mistake. It shows one question at a time from a fixed, reviewed bank:
 
 - **MCQ** — four options, exactly one correct, answered with radio buttons.
-- **MRQ** — four or five options, two or more correct, answered with checkboxes.
+- **MRQ** — three to five options, two or more correct, answered with checkboxes.
 
 It follows the same rules as the rest of the site: static files only, no build step at runtime, no accounts, no backend, no runtime AI, no network calls, progress in browser local storage.
 
@@ -130,7 +130,7 @@ Phone and tablet: single column, full-width option rows (min 44px), actions wrap
 
 `tests/test_site.py` (new `QuestionBankTests`):
 - IDs unique and match `W<week>.<n>-<nn>`.
-- MCQ has exactly 4 options and 1 key; MRQ has 4–5 options and at least 2 keys; no duplicate option text.
+- MCQ has exactly 4 options and 1 key; MRQ has 3–5 options and at least 2 keys; no duplicate option text.
 - `week`, `topic` and every `sources` ID exist in `CONTENT_SOURCES.json` and agree with each other.
 - Every non-stub topic group has at least one question; the stub groups have none.
 - Explanations never mention an option letter.
