@@ -40,3 +40,13 @@ NEXT ITERATION — THREE REVIEWABLE PRS
    phone/tablet/landscape layouts, touch and keyboard controls.
 Merge in the listed order. Keep the PRs open for review; deployment follows a
 merge to main. Original course text and existing confidence records remain intact.
+
+QUESTIONS TAB — MCQ AND MRQ PRACTICE (17 NOVEMBER 2026)
+- Fourth page, Questions: one MCQ or MRQ at a time from the fixed 540-question bank
+  in QUESTION_BANK.md, built into site/questions-data.js by tools/build_questions.py.
+- Decisions (QUESTIONS_TAB_PLAN.md section 10, all as planned): MRQ all-or-nothing;
+  wrong answers saved to the revisit list automatically; options shuffled every time;
+  AB3 questions in the same deck with a Scope filter; topics without source text left
+  empty; endless random practice, no fixed-length quiz mode.
+- The questions are unreviewed drafts; review and correct QUESTION_BANK.md, then rebuild.
+- Static, local-only, no network calls; progress under cs2103-questions-v1.

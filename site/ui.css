@@ -21,3 +21,8 @@ button{min-height:44px}.full>summary,.fc-evidence>summary{min-height:44px;align-
 .context-content{margin:2px 0 10px 22px;padding:12px 15px;background:#f2f5ed;border-left:3px solid #a5bb96;border-radius:0 6px 6px 0;font-size:14px;font-weight:400;overflow-wrap:anywhere}
 .context-content p{margin:0 0 .65em}.context-content p:last-child{margin-bottom:0}
 @media(max-width:600px){.context-content{padding:10px 12px}}
+
+/* Four study pages share the phone header; keep each link on one line. */
+.page-links a{white-space:nowrap}
+@media(max-width:600px){.page-links{gap:2px}.page-links a{padding:8px 6px;font-size:12.5px}}
+@media(max-width:360px){.page-links a{padding:8px 4px;font-size:12px}}

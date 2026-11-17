@@ -22,7 +22,7 @@ class SiteTests(unittest.TestCase):
    if tag in {'img','script','link'}:
     attr='href' if tag=='link' else 'src';url=a.get(attr,'')
     self.assertTrue(url.startswith('./'),url);self.assertTrue((SITE/url[2:]).is_file(),url)
-   if tag=='a' and 'href' in a:self.assertRegex(a['href'],r'^(https?://|mailto:|#|\./(?:index|flashcards|diagrams)\.html(?:#|$))')
+   if tag=='a' and 'href' in a:self.assertRegex(a['href'],r'^(https?://|mailto:|#|\./(?:index|flashcards|diagrams|questions)\.html(?:#|$))')
   html=(SITE/'index.html').read_text();self.assertIn('Content-Security-Policy',html)
   self.assertNotIn('unsafe-eval',html);self.assertNotIn('unsafe-inline',html)
  def test_no_runtime_endpoints_or_secrets(self):
@@ -166,3 +166,84 @@ class QuestionTests(unittest.TestCase):
   attrs=next(a for tag,a in Scan((SITE/'flashcards.html').read_text()).tags if a.get('id')=='fc-passage-wrap')
   self.assertNotIn('open',attrs)
   self.assertTrue(any(tag=='details' and a.get('id')=='fc-passage-wrap' for tag,a in Scan((SITE/'flashcards.html').read_text()).tags))
+
+class QuestionBankTests(unittest.TestCase):
+ @classmethod
+ def setUpClass(cls):
+  import importlib.util
+  spec=importlib.util.spec_from_file_location('build_questions',SITE.parent/'tools'/'build_questions.py')
+  cls.builder=importlib.util.module_from_spec(spec);spec.loader.exec_module(cls.builder)
+  cls.text=(SITE/'questions-data.js').read_text(encoding='utf-8')
+  prefix='globalThis.COURSE_QUESTIONS = '
+  assert cls.text.startswith(prefix) and cls.text.endswith(';\n')
+  cls.data=json.loads(cls.text[len(prefix):-2]);cls.bank=cls.data['questions']
+  cls.catalog={t['id']:t for t in json.loads((SITE.parent/'CONTENT_SOURCES.json').read_text())['topics']}
+ def test_data_file_equals_a_fresh_build(self):
+  self.assertEqual(self.builder.build(),self.text)
+ def test_top_level_shape(self):
+  self.assertEqual(self.data['version'],1);self.assertEqual(self.data['snapshot'],'2026-11-11');self.assertEqual(self.data['ab3Commit'],'56d1ffb')
+  self.assertEqual(len(self.bank),540)
+  keys=['id','type','week','topic','topicId','sources','subtopic','basis','ab3','stem','options','explanation','optional']
+  for q in self.bank:self.assertEqual(list(q),keys,q['id'])
+ def test_ids_are_unique_and_well_formed(self):
+  self.assertEqual(len({q['id'] for q in self.bank}),len(self.bank))
+  for q in self.bank:
+   m=re.fullmatch(r'W(\d+)\.(\d+)-(\d{2})',q['id']);self.assertTrue(m,q['id'])
+   self.assertEqual(int(m[1]),q['week']);self.assertTrue(q['topic'].startswith('[W%s.%s] '%(m[1],m[2])),q['id'])
+ def test_option_counts_and_keys(self):
+  for q in self.bank:
+   keys=[o['key'] for o in q['options']];correct=[o for o in q['options'] if o['correct']]
+   self.assertEqual(keys,list('ABCDE'[:len(keys)]),q['id'])
+   if q['type']=='MCQ':self.assertEqual((len(keys),len(correct)),(4,1),q['id'])
+   else:self.assertEqual(q['type'],'MRQ');self.assertTrue(3<=len(keys)<=5 and len(correct)>=2,q['id'])
+   texts=[o['text'].casefold() for o in q['options']];self.assertEqual(len(set(texts)),len(texts),q['id'])
+   self.assertTrue(all(o['text'] and '\u2705' not in o['text'] for o in q['options']),q['id'])
+   self.assertTrue(q['stem'] and q['explanation'],q['id']);self.assertIn(q['basis'],{'bold','body','panel'})
+ def test_sources_exist_and_agree_with_week_and_topic(self):
+  for q in self.bank:
+   self.assertEqual(q['topicId'],q['sources'][0],q['id'])
+   self.assertEqual(q['optional'],q['topic'].endswith(': OPTIONAL'),q['id'])
+   for source in q['sources']:
+    self.assertIn(source,self.catalog,q['id'])
+    self.assertEqual(self.catalog[source]['group'],q['topic'],q['id']);self.assertEqual(self.catalog[source]['week'],q['week'],q['id'])
+    self.assertEqual(self.data['sourceLinks'][source]['url'],self.catalog[source]['source'])
+ def test_every_topic_group_with_content_has_questions(self):
+  groups={t['group'] for t in self.catalog.values()};covered={q['topic'] for q in self.bank};stubs=set(self.data['emptyGroups'])
+  self.assertEqual(len(stubs),11);self.assertTrue(stubs<=groups)
+  self.assertEqual(covered,groups-stubs);self.assertFalse(covered&stubs)
+  self.assertEqual({q['week'] for q in self.bank},set(range(1,12)))
+ def test_explanations_never_mention_option_letters(self):
+  detect=self.builder.mentions_option_letter
+  for sample in ['Option B is right.','See (C).','A and C are both true.','Answers A, D apply.','B is correct because']:self.assertTrue(detect(sample),sample)
+  for sample in ['A class can be abstract.','Suite A is more efficient.','Use Plan C instead.']:self.assertFalse(detect(sample),sample)
+  for q in self.bank:self.assertFalse(detect(q['explanation']),q['id'])
+ def test_ab3_paths_are_in_the_pinned_file_list(self):
+  files=set((SITE.parent/'AB3_FILES.txt').read_text().split('\n'))-{''}
+  self.assertEqual(sum(bool(q['ab3']) for q in self.bank),84)
+  for q in self.bank:
+   for path in q['ab3']:self.assertIn(path,files,q['id'])
+ def test_malformed_bank_is_refused(self):
+  good=(SITE.parent/'QUESTION_BANK.md').read_text(encoding='utf-8')
+  bad_answer=good.replace('**Answer:** A, B, D','**Answer:** A, B',1)
+  bad_mcq=good.replace('- A. Haskell — functional programming ✅','- A. Haskell — functional programming',1)
+  bad_letter=good.replace('**Explanation:** OOP is a programming paradigm','**Explanation:** Option C is wrong. OOP is a programming paradigm',1)
+  bad_id=good.replace('### W1.1-02 · MCQ','### W1.1-01 · MCQ',1)
+  for text in [bad_answer,bad_mcq,bad_letter,bad_id]:
+   self.assertNotEqual(text,good)
+   with self.assertRaises(self.builder.BankError):self.builder.build(text)
+ def test_questions_page_is_local_and_has_no_inline_code(self):
+  html=(SITE/'questions.html').read_text();scan=Scan(html)
+  self.assertIn('Content-Security-Policy',html);self.assertNotIn('unsafe-inline',html);self.assertNotIn('unsafe-eval',html)
+  self.assertNotRegex(html,r'<style|style=')
+  for tag,a in scan.tags:
+   self.assertNotIn(tag,{'iframe','object','embed','form'});self.assertFalse(any(k.startswith('on') for k in a))
+   if tag in {'script','link'}:
+    url=a.get('src') if tag=='script' else a.get('href');self.assertTrue(url.startswith('./'),url);self.assertTrue((SITE/url[2:]).is_file(),url)
+   if tag=='script':self.assertIn('src',a)
+   if tag=='a' and 'href' in a:self.assertRegex(a['href'],r'^(https?://|#|\./(?:index|flashcards|diagrams|questions)\.html(?:#|$))')
+  self.assertFalse(any(tag=='details' and a.get('id')=='qs-links-wrap' and 'open' in a for tag,a in scan.tags))
+  for name in ['questions.js','questions-core.js']:self.assertNotRegex((SITE/name).read_text(),r'innerHTML|outerHTML|insertAdjacentHTML|document\.write')
+ def test_every_page_links_to_questions(self):
+  for name in ['index.html','flashcards.html','diagrams.html','questions.html']:
+   nav=re.search(r'<nav aria-label="Study pages" class="page-links">(.*?)</nav>',(SITE/name).read_text())[1]
+   self.assertIn('<a href="./questions.html">Questions</a>' if name!='questions.html' else '<a aria-current="page" href="./questions.html">Questions</a>',nav)

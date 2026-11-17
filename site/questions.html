@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'" http-equiv="Content-Security-Policy"/>
+<meta content="no-referrer" name="referrer"/>
+<title>Questions · CS2103/T Study Guide</title>
+<link href="./styles.css" rel="stylesheet"/>
+<link href="./flashcards.css" rel="stylesheet"/>
+<link href="./navigation.css" rel="stylesheet"/>
+<link href="./ui.css" rel="stylesheet"/>
+<link href="./questions.css" rel="stylesheet"/>
+<script defer="" src="./questions-data.js"></script>
+<script defer="" src="./questions-core.js"></script>
+<script defer="" src="./course-topics.js"></script>
+<script defer="" src="./navigation.js"></script>
+<script defer="" src="./questions.js"></script>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+<div class="brand">CS2103/T<small>THEORY STUDY GUIDE</small></div>
+<nav aria-label="Study pages" class="page-links"><a href="./index.html">Guide</a><a href="./flashcards.html">Flashcards</a><a href="./diagrams.html">Spot the mistake</a><a aria-current="page" href="./questions.html">Questions</a></nav>
+<div class="side-foot">MCQ and MRQ practice from the course topics.<br/>Snapshot · 11 November 2026<br/><a href="./index.html#guide-notes">Sources &amp; licence</a></div>
+</aside>
+<main class="flash-main">
+<header class="hero"><div><h1>Questions</h1><p class="page-subtitle">Pick an answer, then check.</p></div></header>
+<section aria-label="Question filters" class="fc-filters"><div class="fc-navigation-host" id="qs-navigation"></div>
+<div class="qs-selects">
+<label>Type<select aria-label="Question type" id="qs-type"><option value="">All</option><option value="MCQ">MCQ</option><option value="MRQ">MRQ</option></select></label>
+<label>Scope<select aria-label="Question scope" id="qs-scope"><option value="">All</option><option value="theory">Theory only</option><option value="ab3">AB3 only</option></select></label>
+</div>
+<div class="fc-toggles"><label><input id="qs-repeats" type="checkbox"/> Allow random repeats</label><label><input id="qs-revisit" type="checkbox"/> Revisit only</label></div>
+</section>
+<div class="fc-stats"><p><span id="qs-pool" role="status"></span> · <span id="qs-score">Score 0 / 0</span></p><details class="more-menu"><summary>More</summary><div class="more-actions"><button id="qs-restart" type="button">Restart</button><button id="qs-export" type="button">Export saved</button><button id="qs-import" type="button">Import saved</button><button id="qs-reset" type="button">Clear saved</button></div></details></div>
+<section aria-label="Current question" id="qs-study">
+<div class="fc-card-top"><span id="qs-card-status"></span><a href="./index.html" id="qs-guide">Read topic ↗</a></div>
+<p class="fc-context" id="qs-context"><span id="qs-context-text"></span><span class="qs-ab3-tag" hidden="" id="qs-ab3-tag">AB3</span></p>
+<div class="qs-card" id="qs-card">
+<p class="qs-badge" id="qs-badge"></p>
+<div class="qs-stem" id="qs-stem"></div>
+<fieldset aria-labelledby="qs-badge qs-stem" class="qs-options" id="qs-options"></fieldset>
+<p aria-live="polite" class="qs-result" id="qs-result" role="status"></p>
+<div class="qs-explanation" hidden="" id="qs-explanation-wrap"><span class="eyebrow">EXPLANATION</span><p id="qs-explanation"></p></div>
+<details class="fc-evidence qs-links" hidden="" id="qs-links-wrap"><summary>Source &amp; links</summary><ul id="qs-links"></ul></details>
+</div>
+<div class="fc-actions qs-actions"><button disabled="" id="qs-check" type="button">Check answer</button><button id="qs-skip" type="button">Skip</button><button hidden="" id="qs-next" type="button">Next →</button><button hidden="" id="qs-retry" type="button">Try again</button></div>
+</section>
+<section class="empty-week" hidden="" id="qs-empty"><h2 id="qs-empty-title"></h2><p id="qs-empty-text"></p></section>
+<p class="fc-saved" id="qs-saved"></p>
+<p aria-live="polite" class="fc-message" id="qs-message" role="status"></p>
+<details class="help"><summary>Help &amp; privacy</summary>
+<p>Each question has a fixed answer key and is marked when you choose <strong>Check answer</strong>. <strong>MCQ</strong> questions have four options and exactly one is correct. <strong>MRQ</strong> questions have three to five options and two or more are correct; select every correct option. An MRQ counts as correct only when your selection matches the key exactly, but the feedback still shows which options you missed and which you chose wrongly. Options are shuffled each time a question is shown.</p>
+<p>Questions are written for this guide from the course Topics pages (snapshot of 11 November 2026). Some apply a topic to the AddressBook-Level3 (AB3) code base and link to the files they rely on. The question bank is a draft that has not yet been reviewed by a person; check the linked topic if an answer looks wrong. These are study questions, not official exam questions.</p>
+<p><strong>Allow random repeats</strong> lets random selection reuse seen questions; with it off, each question appears once per session. <strong>Try again</strong> shows the same question again with the options reshuffled. Changing week, topic, type, scope or Revisit only starts a fresh session and resets the score without clearing your saved questions. The score is not stored.</p>
+<p>A wrong answer saves the question for later. <strong>Skip</strong> saves it as skipped, unless it is already saved as incorrect. A correct answer removes it from the revisit list. Use <strong>Revisit only</strong> to practise saved questions.</p>
+<p>Some topics have no questions because the snapshot only links to external lessons: <span id="qs-empty-groups"></span>. Weeks 12–13 have no assigned topics.</p>
+<p>Saved flags stay in this browser, separate from flashcards and diagrams. Private browsing, clearing storage or changing browsers can lose them. Export a backup to keep them. Import replaces the list after validation; unknown question IDs are ignored.</p>
+<div class="foot-actions"><input accept="application/json" hidden="" id="qs-file" type="file"/></div>
+<p>Independent study aid, not affiliated with NUS. No application analytics, accounts or API calls. GitHub Pages may log IP addresses for hosting security. <a href="./index.html#guide-notes">Source credits and licence</a>.</p>
+</details>
+</main>
+</div>
+</body>
+</html>

@@ -1,6 +1,6 @@
 # Plan: Questions tab (MCQ and MRQ practice)
 
-Status: **plan only — nothing is implemented.** The draft questions are in `QUESTION_BANK.md`.
+Status: **implemented** in `site/questions.html` with every §10 decision as planned. The questions in `QUESTION_BANK.md` are still unreviewed drafts.
 
 ## 1. What the tab is
 

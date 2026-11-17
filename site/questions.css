@@ -1,0 +1,23 @@
+/* Questions page: option list, marking colours and explanation panel. */
+.qs-selects{display:flex;flex-wrap:wrap;gap:10px;margin:4px 0 0}.qs-selects label{display:flex;flex-direction:column;gap:5px;font-size:12px;color:var(--muted);min-width:130px;flex:1;max-width:260px}.qs-selects select{width:100%;min-width:0;padding:10px;border:1px solid #b7c6b9;border-radius:8px;background:white;color:var(--ink);font:inherit;font-size:13px;min-height:44px}.qs-selects select:focus-visible{outline:3px solid #84ad66;outline-offset:3px}
+.fc-context .qs-ab3-tag{display:inline-block;margin-left:8px;padding:1px 8px;border:1px solid #9bb59a;border-radius:999px;background:var(--pale);color:var(--green);font-size:11px;font-weight:650;letter-spacing:.4px}
+.qs-card{display:flex;flex-direction:column;gap:16px;padding:25px 28px;border:1px solid #b7c6b9;border-radius:17px;box-shadow:0 7px 25px #18332e08;background:white;line-height:1.6;overflow-wrap:anywhere}
+.qs-badge{margin:0;font-size:11px;font-weight:700;letter-spacing:.6px;color:var(--green);text-transform:uppercase}.qs-badge.is-mrq{color:#7a4a12}
+.qs-stem{font-family:Georgia,serif;font-size:21px;line-height:1.5}.qs-stem p{margin:0 0 .5em}.qs-stem p:last-child{margin-bottom:0}
+.qs-card code{font:.86em/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:#eef2e8;border-radius:4px;padding:1px 5px;overflow-wrap:anywhere}
+.qs-stem pre{margin:.6em 0;padding:12px 14px;background:#f2f5ed;border:1px solid var(--line);border-radius:8px;overflow-x:auto;font-size:14px;line-height:1.5;white-space:pre}.qs-stem pre code{background:none;padding:0;font-size:inherit;overflow-wrap:normal}
+.qs-options{border:0;margin:0;padding:0;min-width:0;display:flex;flex-direction:column;gap:9px}
+.qs-option{display:grid;grid-template-columns:auto auto minmax(0,1fr) auto;align-items:center;gap:10px;min-height:44px;padding:10px 14px;border:1px solid #c9d4c6;border-radius:10px;background:#fcfdf9;cursor:pointer;font-size:15px;line-height:1.45}
+.qs-option:hover{border-color:#7fa77c;background:var(--pale)}.qs-option:has(input:checked){border-color:var(--green);background:var(--pale)}.qs-option:has(input:focus-visible){outline:3px solid #84ad66;outline-offset:2px}
+.qs-option input{accent-color:var(--green);width:18px;height:18px;margin:0}.qs-key{font-weight:700;color:var(--muted);min-width:1.1em}.qs-mark{font-size:12px;font-weight:650;white-space:nowrap}
+.qs-option:has(input:disabled){cursor:default}.qs-option:has(input:disabled):hover{background:#fcfdf9;border-color:#c9d4c6}
+.qs-options .qs-option.is-correct,.qs-options .qs-option.is-correct:hover{background:#e8f5e9;border-color:#235c47;color:#14532d}
+.qs-options .qs-option.is-missed,.qs-options .qs-option.is-missed:hover{background:white;border:2px dashed #235c47;color:#14532d}
+.qs-options .qs-option.is-wrong,.qs-options .qs-option.is-wrong:hover{background:#fff0ee;border-color:#b42318;color:#991b1b}
+.qs-options .qs-option.is-other{opacity:.7}
+.qs-result{margin:0;min-height:0;font-size:15px;font-weight:650}.qs-result:empty{display:none}.qs-result.is-correct{color:#14532d}.qs-result.is-incorrect{color:#991b1b}
+.qs-explanation{padding:12px 16px;background:#f2f5ed;border-left:3px solid #a5bb96;border-radius:0 8px 8px 0;font-size:14px}.qs-explanation .eyebrow{display:block;margin:0 0 4px}.qs-explanation p{margin:0}
+.qs-links{margin-top:0}.qs-links ul{margin:8px 0 0;padding-left:18px}.qs-links li{margin:2px 0}.qs-links a{display:inline-flex;align-items:center;min-height:36px;font-size:13px}
+.qs-actions #qs-check,.qs-actions #qs-next{background:var(--green);color:#fff;border-color:var(--green)}.qs-actions #qs-skip,.qs-actions #qs-retry{background:white;color:var(--ink);border-color:var(--line)}
+@media(max-width:600px){.qs-card{padding:19px 16px;border-radius:12px;gap:14px}.qs-stem{font-size:18px}.qs-stem pre{font-size:13px;padding:10px}.qs-option{padding:10px 11px;gap:8px;font-size:15px;grid-template-columns:auto auto minmax(0,1fr)}.qs-mark{grid-column:3;white-space:normal}.qs-selects label{max-width:none;min-width:calc(50% - 8px)}.qs-selects select{font-size:16px;min-height:46px}}
+@media print{.qs-selects,.qs-actions,.qs-links,.fc-filters,.fc-stats{display:none!important}.qs-card{border:0;box-shadow:none;padding:0}.qs-option{break-inside:avoid;background:none}.qs-option input{display:none}.qs-stem pre{white-space:pre-wrap}}

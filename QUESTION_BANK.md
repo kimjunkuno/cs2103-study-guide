@@ -1,6 +1,6 @@
 # CS2103/T question bank — draft for review
 
-Draft MCQ and MRQ questions for the planned Questions tab. **Nothing here is implemented on the site yet.** The plan for the tab is in `QUESTIONS_TAB_PLAN.md`.
+Draft MCQ and MRQ questions for the Questions tab (`site/questions.html`). After editing, run `python3 tools/build_questions.py` to regenerate `site/questions-data.js`; it refuses to write if a question is malformed or the counts below are out of step. The design is in `QUESTIONS_TAB_PLAN.md`.
 
 - **540 questions**: 422 MCQ (four options, one correct) and 118 MRQ (three to five options, two or more correct).
 - **84 questions apply a topic to the AddressBook-Level3 (AB3) code base** (`se-edu/addressbook-level3` at commit `56d1ffb`); each names the files it relies on.

@@ -1,6 +1,6 @@
 # CS2103/T study guide
 
-[Open study guide](https://kimjunkuno.github.io/cs2103-study-guide/) · [Practise flashcards](https://kimjunkuno.github.io/cs2103-study-guide/flashcards.html)
+[Open study guide](https://kimjunkuno.github.io/cs2103-study-guide/) · [Practise flashcards](https://kimjunkuno.github.io/cs2103-study-guide/flashcards.html) · [Practise questions](https://kimjunkuno.github.io/cs2103-study-guide/questions.html)
 
 An independent study aid for NUS CS2103/T AY 2026/27 Semester 1. It is not an official NUS website.
 
@@ -20,8 +20,11 @@ Open `http://localhost:8000/`. Run validation with:
 
 ```sh
 python3 -m unittest discover -s tests -v
-node --check site/app.js
+for f in site/*.js; do node --check "$f"; done
+node --test tests/*.test.cjs
 ```
+
+After editing `QUESTION_BANK.md`, regenerate the Questions data with `python3 tools/build_questions.py`. A test fails if `site/questions-data.js` is out of date.
 
 ## Publishing
 
@@ -37,7 +40,7 @@ This is a snapshot, not an automatic content mirror. No remote course scripts ar
 
 ## Privacy and security
 
-The application has no accounts, backend, API keys, runtime AI, analytics or outbound API calls. Only public static assets and source links are included. Flashcard and diagram revisit lists stay in browser local storage; exports are downloaded locally. Do not place sensitive information in backups. GitHub Pages logs visitor IP addresses for hosting security; see [GitHub's documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection).
+The application has no accounts, backend, API keys, runtime AI, analytics or outbound API calls. Only public static assets and source links are included. Flashcard, diagram and question revisit lists stay in browser local storage; exports are downloaded locally. Do not place sensitive information in backups. GitHub Pages logs visitor IP addresses for hosting security; see [GitHub's documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection).
 
 A restrictive meta Content Security Policy and safe rendering limit executable content. Header-only protections such as CSP `frame-ancestors` are not claimed. Browser storage is not an authentication or confidentiality boundary. Clearing storage or switching browsers can lose progress; export backups first. The original offline guide and hosted site use separate storage.
 
@@ -45,7 +48,7 @@ To report a security issue, provide a minimal reproduction without secrets or pe
 
 ## Implementation stages
 
-See `PLAN.txt`. Stage 1 publishes the guide. Stage 2 adds random source-backed flashcards with reveal, filters and a local revisit list; no scheduling or automatic grading.
+See `PLAN.txt`. Stage 1 publishes the guide. Stage 2 adds random source-backed flashcards with reveal, filters and a local revisit list; no scheduling or automatic grading. The Questions tab adds automatically marked MCQ/MRQ practice from a fixed bank.
 
 ## Flashcards
 
@@ -80,3 +83,16 @@ Browser viewport checks cover 320px phones, 390px phones, 768px tablets, 1024px 
 Guide confidence selectors, progress summaries, filters and backups have been removed. The Guide no longer reads or writes progress storage. Existing browser data is left untouched; saved/skipped practice cards remain available in their separate revisit lists.
 
 The Guide keeps topic search visible while scrolling. A floating back-to-top button appears after scrolling down and returns to the heading immediately. Search keeps keyboard focus while filtered results come into view. Sticky offsets follow the phone/tablet header height, and these controls are omitted from print output.
+
+## Questions
+
+Open Practise questions for one multiple-choice question at a time, marked automatically. The bank has 540 questions: 422 MCQ (four options, exactly one correct, answered with radio buttons) and 118 MRQ (three to five options, two or more correct, answered with checkboxes). 84 questions apply a topic to the AddressBook-Level3 (AB3) code base at commit `56d1ffb` and link to the files they rely on. Every topic group with text in the 11 November 2026 snapshot has questions; 11 groups that only link to external lessons (Git, GitHub, some IDE topics and Java streams) have none, and Weeks 12–13 have no topics.
+
+**The questions are unreviewed drafts.** They were written for this guide from the course Topics pages and checked by script for structure, source topics and AB3 paths, but answers and wording have not yet been read by a person. They are study questions, not official exam questions.
+
+- `QUESTION_BANK.md` is the source of truth. `tools/build_questions.py` parses and validates it (option counts, answer keys against the ✅ marks, source topics, AB3 paths in `AB3_FILES.txt`, explanations that never name an option letter, the summary counts) and writes `site/questions-data.js`. It refuses to write if any question is malformed. The site needs no build to run.
+- Filters: the shared Textbook/Week selector, Type (All, MCQ, MRQ), Scope (All, Theory only, AB3 only), Allow random repeats and Revisit only.
+- Options are shuffled each time a question is shown. MCQ and MRQ are both all-or-nothing; feedback marks each option as correct, missed or a wrong choice with text as well as colour, then shows the explanation and collapsed links to the Guide topics, the original course pages and any AB3 files.
+- A wrong answer saves the question for revisiting, Skip saves it as skipped (never downgrading incorrect) and a correct answer clears it. Try again reshuffles the same question. The session score resets on Restart or any filter change and is not stored.
+- Progress is stored under `cs2103-questions-v1`, separate from flashcards and diagrams, with validated export/import (2 MB cap, unknown IDs ignored) and sync between open tabs.
+- Bank text is rendered with `textContent`; backticks become `<code>` and fenced blocks become `<pre>` through DOM nodes, never `innerHTML`.
