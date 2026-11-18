@@ -3,6 +3,8 @@
   const $ = id => document.getElementById(id);
   const cards = [...document.querySelectorAll('.topic')];
   const empty = [...document.querySelectorAll('.empty-week')];
+  const searchMemory = StudyState.controls('guide-controls', ['search']);
+  const readingMemory = StudyState.remember('guide-reading', {mode: 'quick'}, {mode: ['quick', 'full', 'recall']});
   let mode = 'quick';
   const navigation = CourseNavigation.mount($('guide-navigation'), cards.map(card => ({id: card.id})), filter);
   CourseNavigation.chapterTree($('guide-chapters'), navigation);
@@ -37,7 +39,13 @@
       card.querySelector('.reveal').textContent = shown ? 'Hide answer' : 'Reveal answer';
     });
   }
-  function filter() {
+  function clearTopicHash() {
+    if (cards.some(card => '#' + card.id === location.hash)) {
+      history.replaceState(history.state, '', location.pathname + location.search);
+    }
+  }
+  function filter(reason) {
+    if (reason === 'filter') clearTopicHash();
     const state = navigation.state();
     const words = $('search').value.toLowerCase().trim().split(/\s+/).filter(Boolean);
     const catalog = COURSE_TOPICS;
@@ -84,24 +92,25 @@
     });
   }
   function setMode(value) {
+    readingMemory.save({mode: value});
     mode = value; document.body.classList.toggle('recall', mode === 'recall'); document.body.classList.toggle('full-mode', mode === 'full');
     for (const card of cards) { card.querySelector('.full').open = mode === 'full'; card.querySelectorAll('.point-context').forEach(details => { details.open = false; }); card.classList.remove('revealed'); card.querySelector('.reveal').textContent = 'Reveal answer'; }
     document.querySelectorAll('[data-mode]').forEach(button => { const active = button.dataset.mode === mode; button.classList.toggle('active', active); button.setAttribute('aria-pressed', String(active)); });
   }
   document.querySelectorAll('[data-mode]').forEach(button => button.addEventListener('click', () => setMode(button.dataset.mode)));
   document.querySelectorAll('[data-week-button]').forEach(button => button.addEventListener('click', () => navigation.selectWeek(button.dataset.weekButton || '')));
-  $('search').addEventListener('input', filter);
-  $('clear').addEventListener('click', () => { $('search').value = ''; navigation.reset(); });
+  $('search').addEventListener('input', () => { clearTopicHash(); filter(); });
+  $('clear').addEventListener('click', () => { $('search').value = ''; searchMemory.save({search: ''}); navigation.reset(); });
   $('print').addEventListener('click', () => window.print());
   window.addEventListener('beforeprint', () => { document.body.classList.toggle('print-full', mode === 'full'); document.body.classList.toggle('print-quick', mode !== 'full'); });
   function followHash() {
     let id; try { id = decodeURIComponent(location.hash.slice(1)); } catch (error) { return; }
     const card = cards.find(item => item.id === id);
     if (card) {
-      $('search').value = ''; navigation.selectTopic(id);
+      $('search').value = ''; searchMemory.save({search: ''}); navigation.selectTopic(id);
       const visible = topicGroups.get(canonicalId(card)).find(item => !item.hidden);
       if (visible) setTimeout(() => visible.scrollIntoView(), 60);
     }
   }
-  window.addEventListener('hashchange', followHash); filter(); followHash();
+  window.addEventListener('hashchange', followHash); setMode(readingMemory.read().mode); filter(); followHash();
 })();

@@ -1,6 +1,7 @@
 (function () {
   'use strict';
   const $ = id => document.getElementById(id);
+  StudyState.controls('diagram-controls', ['dg-family', 'dg-revisit', 'dg-repeats']);
   const cards = DIAGRAM_QUESTIONS.cards;
   const known = new Set(cards.map(item => item.id)), storageName = 'cs2103-course-diagrams-v1';
   const families = {class: 'Class', object: 'Object / value tables', conceptual: 'Conceptual class', sequence: 'Sequence', activity: 'Activity', architecture: 'Architecture'};

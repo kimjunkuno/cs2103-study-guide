@@ -51,6 +51,27 @@ class SiteTests(unittest.TestCase):
    if tag=='a' and 'href' in a:self.assertRegex(a['href'],r'^(https?://|mailto:|#|\./(?:index|flashcards|diagrams|questions)\.html(?:#|$))')
   html=(SITE/'index.html').read_text();self.assertIn('Content-Security-Policy',html)
   self.assertNotIn('unsafe-eval',html);self.assertNotIn('unsafe-inline',html)
+ def test_optional_labels_match_audited_individual_and_section_markers(self):
+  expected=set(json.loads((SITE.parent/'OPTIONAL_TOPICS.json').read_text())['topicIds'])
+  self.assertEqual(len(expected),44)
+  sources=json.loads((SITE.parent/'CONTENT_SOURCES.json').read_text())['topics']
+  self.assertEqual({t['id'] for t in sources if t.get('optional')},expected)
+  catalog=json.loads((SITE/'course-topics.js').read_text().split(' = ',1)[1].strip().removesuffix(';'))
+  self.assertEqual({t['id'] for t in catalog['topics'] if t.get('optional')},expected)
+  html=(SITE/'index.html').read_text()
+  for article in re.findall(r'<article class="topic"[\s\S]*?</article>',html):
+   attrs=Scan(article).topics[0];optional=attrs['id'] in expected
+   self.assertEqual(attrs['data-optional']=='true',optional)
+   self.assertEqual('<span class="pill optional-pill">Optional</span>' in article.split('<h3',1)[0],optional)
+  # Optional topic headers exist within otherwise required sections.
+  self.assertTrue({'W2.5d','W4.3b','W8.2b','W11.5d'}<=expected)
+  bank=json.loads((SITE/'flashcards-data.js').read_text().split(' = ',1)[1].strip().removesuffix(';'))['cards']
+  for card in bank:self.assertEqual(card['optional'],card['topicId'] in expected,card['id'])
+ def test_filter_memory_loads_before_navigation_and_page_controllers(self):
+  for page,controller in [('index','app'),('flashcards','flashcards'),('questions','questions'),('diagrams','diagrams')]:
+   scripts=[a['src'] for tag,a in Scan((SITE/(page+'.html')).read_text()).tags if tag=='script']
+   self.assertLess(scripts.index('./study-state.js'),scripts.index('./'+controller+'.js'))
+   if './navigation.js' in scripts:self.assertLess(scripts.index('./study-state.js'),scripts.index('./navigation.js'))
  def test_no_runtime_endpoints_or_secrets(self):
   for p in SITE.glob('*.js'):
    text=p.read_text();self.assertNotRegex(text,r'\b(?:eval|fetch)\s*\(|new\s+Function|XMLHttpRequest|WebSocket')
@@ -228,7 +249,7 @@ class QuestionBankTests(unittest.TestCase):
  def test_sources_exist_and_agree_with_week_and_topic(self):
   for q in self.bank:
    self.assertEqual(q['topicId'],q['sources'][0],q['id'])
-   self.assertEqual(q['optional'],q['topic'].endswith(': OPTIONAL'),q['id'])
+   self.assertEqual(q['optional'],all(self.catalog[s].get('optional',False) for s in q['sources']),q['id'])
    for source in q['sources']:
     self.assertIn(source,self.catalog,q['id'])
     self.assertEqual(self.catalog[source]['group'],q['topic'],q['id']);self.assertEqual(self.catalog[source]['week'],q['week'],q['id'])

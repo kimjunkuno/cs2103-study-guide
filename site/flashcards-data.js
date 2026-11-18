@@ -1479,7 +1479,7 @@ globalThis.COURSE_FLASHCARDS = {
       "answer": "constraint",
       "passage": "A constraint can be given inside a note, within curly braces",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#tools-uml-constraints",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W4.3c-2ba07120a8265177",
@@ -1523,9 +1523,9 @@ globalThis.COURSE_FLASHCARDS = {
       "topic": "[W4.3] Class Diagrams: Beyond Basics",
       "topicId": "W4.3f",
       "title": "Tools → UML → Stereotypes",
-      "prompt": "The same _____ notation is also used to denote built-in classifier kinds \u003c\u003cinterface\u003e\u003e and \u003c\u003cenumeration\u003e\u003e .",
-      "answer": "\u003c\u003c \u003e\u003e",
-      "passage": "The same \u003c\u003c \u003e\u003e notation is also used to denote built-in classifier kinds \u003c\u003cinterface\u003e\u003e and \u003c\u003cenumeration\u003e\u003e .",
+      "prompt": "The same _____ notation is also used to denote built-in classifier kinds <<interface>> and <<enumeration>> .",
+      "answer": "<< >>",
+      "passage": "The same << >> notation is also used to denote built-in classifier kinds <<interface>> and <<enumeration>> .",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#tools-uml-stereotypes",
       "optional": false
     },
@@ -2715,7 +2715,7 @@ globalThis.COURSE_FLASHCARDS = {
       "answer": "Two further debugger commands",
       "passage": "Two further debugger commands are worth knowing once the basics are comfortable.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week6/topics.html#implementation-debugging-advanced",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W6.4e-d83dd5e3511854c2",
@@ -2727,7 +2727,7 @@ globalThis.COURSE_FLASHCARDS = {
       "answer": "Heisenbug",
       "passage": "A Heisenbug changes or vanishes when you try to observe it.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week6/topics.html#implementation-debugging-advanced",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W6.4e-e6b5039fc759b867",
@@ -2739,7 +2739,7 @@ globalThis.COURSE_FLASHCARDS = {
       "answer": "Concurrency bugs",
       "passage": "Concurrency bugs are timing- and schedule-dependent.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week6/topics.html#implementation-debugging-advanced",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W7.1a-f9bf3b2b9b4db2a8",
@@ -3099,7 +3099,7 @@ globalThis.COURSE_FLASHCARDS = {
       "answer": "Top-down",
       "passage": "Top-down integration: higher-level components are integrated before bringing in the lower-level components.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#implementation-integration-approaches-top-down-versus-bottom-up-integration",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W7.7b-528bbd9e3622f706",
@@ -3183,7 +3183,7 @@ globalThis.COURSE_FLASHCARDS = {
       "answer": "PERT (Program Evaluation Review Technique) chart",
       "passage": "A PERT (Program Evaluation Review Technique) chart uses a graphical technique to show the order/sequence of tasks.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#project-management-project-planning-pert-charts",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W7.7g-8e39497287ceab1b",
@@ -3279,7 +3279,7 @@ globalThis.COURSE_FLASHCARDS = {
       "answer": "constraint",
       "passage": "A constraint can be given inside a note, within curly braces",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#tools-uml-constraints",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W8.2c-4fdd7ed85e0a65a2",
@@ -3507,7 +3507,7 @@ globalThis.COURSE_FLASHCARDS = {
       "answer": "Polymorphism",
       "passage": "Polymorphism can be used to implement dependency injection",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#quality-assurance-testing-dependency-injection-how",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W8.5b-24eedb6e4b879a41",
@@ -3519,7 +3519,7 @@ globalThis.COURSE_FLASHCARDS = {
       "answer": "unit",
       "passage": "A proper unit test requires the unit to be tested in isolation",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#quality-assurance-testing-dependency-injection-how",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W8.5b-c7ba7942513f7126",
@@ -3531,7 +3531,7 @@ globalThis.COURSE_FLASHCARDS = {
       "answer": "Stubs",
       "passage": "Stubs can isolate the SUT from its dependencies",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#quality-assurance-testing-dependency-injection-how",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W8.5c-f849eeb97c1e8fff",
@@ -3987,7 +3987,7 @@ globalThis.COURSE_FLASHCARDS = {
       "answer": "inception, elaboration, construction, and transition",
       "passage": "The unified process consists of four phases: inception, elaboration, construction, and transition .",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#project-management-sdlc-process-models-unified-process",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W9.7d-5a3fcc23b89df089",
@@ -3999,7 +3999,7 @@ globalThis.COURSE_FLASHCARDS = {
       "answer": "Phases and iterations",
       "passage": "Phases and iterations are two different things, which is why a project can be phased and iterative at the same time",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#project-management-sdlc-process-models-unified-process",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W9.7d-e973d60cabf3bcd1",
@@ -4011,7 +4011,7 @@ globalThis.COURSE_FLASHCARDS = {
       "answer": "unified process",
       "passage": "The unified process is a customizable framework rather than a single fixed process.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#project-management-sdlc-process-models-unified-process",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W9.7e-e2b78054b8d3aaba",
@@ -4035,7 +4035,7 @@ globalThis.COURSE_FLASHCARDS = {
       "answer": "team's process",
       "passage": "A team's process is itself something that can be assessed and deliberately improved, rather than chosen once and left alone.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#project-management-sdlc-process-models-cmmi",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W9.7f-61f953958750a6b5",
@@ -4047,7 +4047,7 @@ globalThis.COURSE_FLASHCARDS = {
       "answer": "CMMI",
       "passage": "CMMI (Capability Maturity Model Integration), defined by the Software Engineering Institute at Carnegie Mellon University, is the best known of them.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#project-management-sdlc-process-models-cmmi",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W9.8c-c192f437adeb933b",
@@ -4083,7 +4083,7 @@ globalThis.COURSE_FLASHCARDS = {
       "answer": "Design by contract (DbC)",
       "passage": "Design by contract (DbC) is an approach for designing software that requires defining formal, precise, and verifiable interface specifications for software components.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week10/topics.html#implementation-error-handling-design-by-contract-design-by-contract",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W10.3a-cf76e0a01e206626",
@@ -4191,7 +4191,7 @@ globalThis.COURSE_FLASHCARDS = {
       "answer": "most famous source of design patterns",
       "passage": "The most famous source of design patterns is the \"Gang of Four\" (GoF) book which contains 23 design patterns divided into three categories",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-design-patterns-other-design-patterns",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.1e-301f68ccadd3161d",
@@ -4203,7 +4203,7 @@ globalThis.COURSE_FLASHCARDS = {
       "answer": "Knowing more patterns",
       "passage": "Knowing more patterns is a way to become more ‘experienced’.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-design-patterns-using-design-patterns",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.1f-aea26b12108e4004",
@@ -4215,7 +4215,7 @@ globalThis.COURSE_FLASHCARDS = {
       "answer": "Design principles",
       "passage": "Design principles have varying degrees of formality – rules, opinions, rules of thumb, observations, and axioms.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-design-patterns-design-patterns-versus-design-principles",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.2a-347c2a4da2f6b936",
@@ -4359,7 +4359,7 @@ globalThis.COURSE_FLASHCARDS = {
       "answer": "Several other styles",
       "passage": "Several other styles are worth recognizing by name, even if a first project will not need them.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-architecture-styles-other-styles",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.2h-8ae146a01de07382",
@@ -4371,7 +4371,7 @@ globalThis.COURSE_FLASHCARDS = {
       "answer": "\"Transaction\"",
       "passage": "\"Transaction\" means two different things.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-architecture-styles-other-styles",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.3a-5b2e9254f7100b82",
@@ -4755,7 +4755,7 @@ globalThis.COURSE_FLASHCARDS = {
       "answer": "Threat modeling",
       "passage": "Threat modeling is a structured way to ask what needs protection, what could go wrong, and what should be done about it.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#quality-assurance-secure-software-engineering-how",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.5b-90662480df7c2feb",
@@ -4767,7 +4767,7 @@ globalThis.COURSE_FLASHCARDS = {
       "answer": "concise statement",
       "passage": "A concise statement can connect an asset, security goal, adversary, and assumption",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#quality-assurance-secure-software-engineering-how",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.5b-40682a472c1dbe97",
@@ -4779,7 +4779,7 @@ globalThis.COURSE_FLASHCARDS = {
       "answer": "secret",
       "passage": "A secret should be available only to the people and components that need it.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#quality-assurance-secure-software-engineering-how",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.5b-33c29fd6b9b5fdc2",
@@ -4791,7 +4791,7 @@ globalThis.COURSE_FLASHCARDS = {
       "answer": "Errors",
       "passage": "Errors should help legitimate users without teaching an attacker about the system.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#quality-assurance-secure-software-engineering-how",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.5c-0de963c9e2eaaddd",
@@ -4803,7 +4803,7 @@ globalThis.COURSE_FLASHCARDS = {
       "answer": "Security work",
       "passage": "Security work should accompany every stage of development because a late safeguard cannot reliably repair an insecure assumption made earlier.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#quality-assurance-secure-software-engineering-when",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.5c-86207dab6a0b9703",
@@ -4815,7 +4815,7 @@ globalThis.COURSE_FLASHCARDS = {
       "answer": "coordinated disclosure",
       "passage": "Withholding details until the people responsible have had a reasonable chance to act is called coordinated disclosure",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#quality-assurance-secure-software-engineering-when",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.5d-51b3754c6004a780",
@@ -4827,7 +4827,7 @@ globalThis.COURSE_FLASHCARDS = {
       "answer": "AI-generated code",
       "passage": "AI-generated code must earn its place in the codebase through understanding, review, and verification.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#quality-assurance-secure-software-engineering-securing-ai-assisted-code",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.5d-32967ec6ffa029d5",
@@ -4839,7 +4839,7 @@ globalThis.COURSE_FLASHCARDS = {
       "answer": "AI assistant",
       "passage": "An AI assistant can help generate questions, but it cannot establish that its own answer is complete or correct.",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#quality-assurance-secure-software-engineering-securing-ai-assisted-code",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.6b-f69d4e32d026de2a",

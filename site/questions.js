@@ -1,11 +1,12 @@
 (function () {
   'use strict';
   const $ = id => document.getElementById(id);
+  StudyState.controls('question-controls', ['qs-type', 'qs-scope', 'qs-repeats', 'qs-revisit']);
   const bank = globalThis.COURSE_QUESTIONS;
   const questions = bank.questions;
   const rules = globalThis.QuestionCore;
   const knownIds = new Set(questions.map(question => question.id));
-  const storageKey = 'cs2103-questions-v1';
+  const storageName = 'cs2103-questions-v1';
   const ab3Base = 'https://github.com/se-edu/addressbook-level3/blob/' + bank.ab3Commit + '/';
   const basisLabels = {bold: 'Core theory', body: 'Main text', panel: 'Example or panel'};
   let flags = Object.create(null);
@@ -17,13 +18,13 @@
 
   function tell(message) { $('qs-message').textContent = message; }
   try {
-    const stored = localStorage.getItem(storageKey);
+    const stored = localStorage.getItem(storageName);
     if (stored) flags = rules.restore(stored, knownIds);
   } catch (error) {
     tell('Saved question progress could not be read. Practice still works; use a backup if needed.');
   }
   function persist() {
-    try { localStorage.setItem(storageKey, JSON.stringify({version: 1, flags})); }
+    try { localStorage.setItem(storageName, JSON.stringify({version: 1, flags})); }
     catch (error) { tell('This browser cannot save progress. Export a backup to keep your revisit list.'); }
   }
   const navigation = CourseNavigation.mount($('qs-navigation'), questions, restart);
@@ -217,7 +218,7 @@
   });
   // Keep multiple open tabs in sync without rewriting another tab’s data.
   window.addEventListener('storage', event => {
-    if (event.key !== storageKey) return;
+    if (event.key !== storageName) return;
     try { flags = event.newValue ? rules.restore(event.newValue, knownIds) : Object.create(null); restart(); tell('Revisit list updated from another tab.'); }
     catch (error) { tell('An invalid progress update was ignored.'); }
   });

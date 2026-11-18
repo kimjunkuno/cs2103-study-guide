@@ -4249,7 +4249,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Input/output redirection semi-automates CLI testing with no change to the app: `<` redirects a file as input and `>` redirects output to a file. The comparison with the expected output is a separate step using a diff tool.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W2.5-07",
@@ -4287,7 +4287,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "The technique suits CLI apps whose exact output can be predetermined. If the output varies from run to run, such as with a time stamp, the comparison fails and more sophisticated automation is needed.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W3.3-01",
@@ -5410,7 +5410,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "`@BeforeEach` runs before each test method and `@BeforeAll` once for the class. `@Disabled` switches a test off temporarily and `@Tag` labels tests.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W3.7-08",
@@ -11233,7 +11233,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "A Heisenbug changes or vanishes when you try to observe it, because observation perturbs timing or memory layout. Concurrency bugs are a related category that depends on timing and scheduling.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W6.4-22",
@@ -11271,7 +11271,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Delta debugging automates simplification and copes with cases where plain halving fails. Recording the execution is tracing, and searching versions is bisecting.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W7.1-01",
@@ -12354,7 +12354,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Control coupling is when one module controls the flow of another by passing it information on what to do, such as a flag. Passing plain data as parameters is data coupling.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W7.4-06",
@@ -12392,7 +12392,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Common/global coupling is two modules sharing the same global data. Content coupling is one module modifying or relying on the internal workings of another.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W7.4-07",
@@ -12430,7 +12430,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "External coupling is when two modules share an externally imposed convention such as a data format, communication protocol or device interface.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W7.4-08",
@@ -12627,7 +12627,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "The flags are information about what to do next, which steers the UI's control flow — the course's example of control coupling is passing a flag.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W7.4-13",
@@ -12668,7 +12668,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Subclass coupling arises when a class inherits from another; the child is coupled to the parent, not the other way round.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W7.4-14",
@@ -12862,7 +12862,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "In top-down integration higher-level components come first, so stubs stand in for lower-level ones. In bottom-up, the UI may not exist yet, so drivers are needed to test the lower-level components.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W7.6-05",
@@ -12900,7 +12900,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Based on the order of integration, incremental integration can be top-down, bottom-up or sandwich, which does both.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W7.6-06",
@@ -13207,7 +13207,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "The critical path is the path in which any delay directly affects the project duration. A small delay in a non-critical task leaves the duration unchanged, whereas a delay on the critical path extends it.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W7.7-08",
@@ -14563,7 +14563,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Polymorphism can be used to implement dependency injection: the stub is a subtype of the dependency, so it can be passed where the real object is expected and its overridden methods are the ones called.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W8.5-03",
@@ -15303,7 +15303,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "It is not necessary to draw elaborate diagrams capturing all details of the design.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W9.4-01",
@@ -15723,7 +15723,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "ISP: no client should be forced to depend on methods it does not use.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W9.5-08",
@@ -15761,7 +15761,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Replacing dependencies with test doubles is dependency injection, a different idea. DIP changes the direction of dependencies rather than necessarily reducing their number.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W9.5-09",
@@ -15837,7 +15837,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "YAGNI — You Aren't Gonna Need It: do not add code simply because you might need it in the future, since predictions about the future often fail and the work may be wasted.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W9.5-11",
@@ -15875,7 +15875,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "DRY requires every piece of knowledge to have a single, unambiguous, authoritative representation. A functionality implemented twice violates it even if the implementations differ.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W9.5-12",
@@ -15913,7 +15913,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Brooks' law: adding people to a late project will make it later. New members need time to learn the project and existing members spend time helping them.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W9.5-13",
@@ -15994,7 +15994,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Rather than the higher-level `LogicManager` depending directly on concrete lower-level classes, both sides depend on the `Model` and `Storage` abstractions.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W9.5-15",
@@ -16035,7 +16035,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Saving only needs to read the data, so it depends on a narrow read-only interface instead of the full `AddressBook` class.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W9.5-16",
@@ -16695,7 +16695,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Phases and iterations are different things: a phase says where the project is in its overall arc, while an iteration is one pass of work through several workflows. UP does not require UML.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W9.7-12",
@@ -16733,7 +16733,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Inception is about understanding the problem and planning; elaboration refines requirements and determines the high-level design; construction is the major implementation effort; transition readies the system for production use.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W9.7-13",
@@ -16852,7 +16852,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "A team's process can itself be assessed and deliberately improved. CMMI, from the Software Engineering Institute at Carnegie Mellon University, defines maturity levels from ad hoc to continuously improving.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W9.7-16",
@@ -17553,7 +17553,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "A single class duplicates data and invites inconsistency; a class per title is the anti-pattern. The solution represents each copy by two objects, separating common and unique information.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W10.1-10",
@@ -17591,7 +17591,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "A `Car` is an occurrence of a `CarModel`, and an issue is an occurrence of a magazine. A wheel is part of a car and a member is part of a club — 'part of', not 'occurrence of'.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W10.1-11",
@@ -17865,7 +17865,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "A bidirectional association is emulated with a variable in each class. If the two are not kept consistent, object references disagree — referential integrity is violated. Defensive setters update both ends.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W10.2-05",
@@ -17941,7 +17941,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "DbC requires formal, precise and verifiable interface specifications. In the defensive approach the code first checks whether preconditions are met and typically throws exceptions if not.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W10.2-07",
@@ -17979,7 +17979,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "DbC is an approach to specifying interfaces and can be used within an OOP solution. Languages without built-in support can use assertions.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W10.2-08",
@@ -18100,7 +18100,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Under DbC the operation's behavior is specified precisely in the API, including preconditions, and the caller is responsible for ensuring they hold.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W10.3-01",
@@ -19058,7 +19058,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "The Gang of Four book contains 23 patterns in three categories: creational, structural and behavioral.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.1-06",
@@ -19096,7 +19096,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Singleton is creational, Facade is structural, and Observer and Command are behavioral.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.1-07",
@@ -19134,7 +19134,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Before applying a pattern, check that it gives a substantial improvement and that the trade-offs are acceptable; a pattern can be overkill.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.1-08",
@@ -19172,7 +19172,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "The course's stock inventory case study combines Abstraction Occurrence, Facade, MVC and Observer, with Singleton applicable to the facade class.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.1-09",
@@ -19210,7 +19210,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Design principles vary in formality — rules, opinions, rules of thumb, observations and axioms — and are more general than patterns.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.1-10",
@@ -19248,7 +19248,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Patterns exist for analysis, design, testing, architecture and project management. Abstraction Occurrence is described as more of an analysis pattern, and MVC as more of an architectural pattern.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.1-11",
@@ -19822,7 +19822,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "In pipes-and-filters, data flows through a sequence of steps that each transform it and pass it on. Peer-to-peer has each participant act as both client and server; a plug-in architecture has a minimal core with optional separately written features.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.2-15",
@@ -20866,7 +20866,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "The value comes from the questions, not the format. Trust should be earned at each boundary rather than inherited from where data was first seen.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.5-10",
@@ -20904,7 +20904,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Agreeing the rule in advance means two people analysing the same threat reach the same answer. Budget should not go to exciting but implausible attacks while ordinary permission checks are ignored.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.5-11",
@@ -20942,7 +20942,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Not every risk gets a control. And a control is only a claim until it has been reviewed or tested.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.5-12",
@@ -20980,7 +20980,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Minimizing the attack surface means reducing the features, interfaces, data, permissions and dependencies available to be attacked.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.5-13",
@@ -21018,7 +21018,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "When something goes wrong, the failure should deny rather than allow. This trades availability for confidentiality and integrity.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.5-14",
@@ -21056,7 +21056,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Authentication, password storage, encryption and session management are easy to get subtly wrong. Password facilities are deliberately expensive to compute and salt each password separately, so an ordinary fast hash is unsuitable.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.5-15",
@@ -21094,7 +21094,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Validation, separation from commands (e.g. parameterized queries) and output encoding protect different boundaries, and none replaces another.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.5-16",
@@ -21132,7 +21132,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Client-side validation improves usability but is not a security boundary, because requests can be crafted without using the form.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.5-17",
@@ -21170,7 +21170,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Executable commands should not be built by concatenating untrusted strings. Output encoding addresses a different boundary — placing data into structured output such as a web page.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.5-18",
@@ -21208,7 +21208,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "After identifying the requester, the server authorizes the particular action on the particular resource, and applies the same rule to every path to that action.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.5-19",
@@ -21251,7 +21251,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Reused code runs with the permissions of your software and so becomes part of its security. A clean scan does not prove security; verification needs both tools and human reasoning.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.5-20",
@@ -21289,7 +21289,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Security needs are stated as testable properties early, and the analysis is revisited whenever an important assumption changes — a new kind of user, new sensitive data, a new dependency or a changed trust boundary.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.5-21",
@@ -21327,7 +21327,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Withholding details until those responsible have had a reasonable chance to act is called coordinated disclosure. For someone else's system, report first and contain only what you are authorized to touch.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.5-22",
@@ -21365,7 +21365,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "AI-generated code must earn its place through understanding, review and verification, and the more a tool can act, the more least privilege and explicit approval matter.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.5-23",
@@ -21403,7 +21403,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Suggestions from the tool are hypotheses. Independent checks, adversarial tests and tracing untrusted data through the change are needed before accepting responsibility for it.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.5-24",
@@ -21444,7 +21444,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "The check sits at the point where user input enters the application, and it describes what is allowed rather than listing what is forbidden.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.5-25",
@@ -21484,7 +21484,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Data read from a file may have been edited or corrupted since the app wrote it, so it is validated again before it becomes model data.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.6-01",
@@ -21641,7 +21641,7 @@ globalThis.COURSE_QUESTIONS = {
         }
       ],
       "explanation": "Preconditions must hold before calling; postconditions describe the system afterwards and do not say what happens during the operation.",
-      "optional": false
+      "optional": true
     },
     {
       "id": "W11.6-05",

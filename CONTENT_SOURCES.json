@@ -431,7 +431,8 @@
       "title": "Quality Assurance → Testing → Test Automation → Automated testing of CLI applications",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week2/topics.html#quality-assurance-testing-test-automation-automated-testing-of-cli-applications",
       "external_lesson": false,
-      "words": 480
+      "words": 480,
+      "optional": true
     },
     {
       "id": "W3.1a",
@@ -638,7 +639,8 @@
       "title": "C++ to Java → JUnit → JUnit: Intermediate",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week3/topics.html#c-to-java-junit-junit-intermediate",
       "external_lesson": false,
-      "words": 469
+      "words": 469,
+      "optional": true
     },
     {
       "id": "W4.1a",
@@ -719,7 +721,8 @@
       "title": "Tools → UML → Constraints",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week4/topics.html#tools-uml-constraints",
       "external_lesson": false,
-      "words": 30
+      "words": 30,
+      "optional": true
     },
     {
       "id": "W4.3c",
@@ -1457,7 +1460,8 @@
       "title": "Implementation → Debugging → Advanced",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week6/topics.html#implementation-debugging-advanced",
       "external_lesson": false,
-      "words": 558
+      "words": 558,
+      "optional": true
     },
     {
       "id": "W6.5a",
@@ -1583,7 +1587,8 @@
       "title": "Design → Design Fundamentals → Coupling → Types of coupling",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#design-design-fundamentals-coupling-types-of-coupling",
       "external_lesson": false,
-      "words": 146
+      "words": 146,
+      "optional": true
     },
     {
       "id": "W7.4e",
@@ -1610,7 +1615,8 @@
       "title": "Tools → IDEs → Productivity shortcuts",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#tools-ides-productivity-shortcuts",
       "external_lesson": false,
-      "words": 9
+      "words": 9,
+      "optional": true
     },
     {
       "id": "W7.6a",
@@ -1637,7 +1643,8 @@
       "title": "Implementation → Integration → Approaches → Top-down versus bottom-up integration",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#implementation-integration-approaches-top-down-versus-bottom-up-integration",
       "external_lesson": false,
-      "words": 495
+      "words": 495,
+      "optional": true
     },
     {
       "id": "W7.7a",
@@ -1691,7 +1698,8 @@
       "title": "Project Management → Project Planning → PERT charts",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week7/topics.html#project-management-project-planning-pert-charts",
       "external_lesson": false,
-      "words": 292
+      "words": 292,
+      "optional": true
     },
     {
       "id": "W7.7g",
@@ -1754,7 +1762,8 @@
       "title": "Tools → UML → Constraints",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#tools-uml-constraints",
       "external_lesson": false,
-      "words": 30
+      "words": 30,
+      "optional": true
     },
     {
       "id": "W8.2c",
@@ -1925,7 +1934,8 @@
       "title": "Quality Assurance → Testing → Dependency Injection → How",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#quality-assurance-testing-dependency-injection-how",
       "external_lesson": false,
-      "words": 862
+      "words": 862,
+      "optional": true
     },
     {
       "id": "W8.5c",
@@ -1970,7 +1980,8 @@
       "title": "Quality Assurance → Testing → Test-Driven Development → How",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week8/topics.html#quality-assurance-testing-test-driven-development-how",
       "external_lesson": false,
-      "words": 211
+      "words": 211,
+      "optional": true
     },
     {
       "id": "W9.1a",
@@ -2024,7 +2035,8 @@
       "title": "Design → Modeling → Modeling a Solution → Intermediate",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#design-modeling-modeling-a-solution-intermediate",
       "external_lesson": false,
-      "words": 685
+      "words": 685,
+      "optional": true
     },
     {
       "id": "W9.4a",
@@ -2087,7 +2099,8 @@
       "title": "Principles → Interface segregation principle",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#principles-interface-segregation-principle",
       "external_lesson": false,
-      "words": 78
+      "words": 78,
+      "optional": true
     },
     {
       "id": "W9.5g",
@@ -2096,7 +2109,8 @@
       "title": "Principles → Dependency inversion principle",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#principles-dependency-inversion-principle",
       "external_lesson": false,
-      "words": 207
+      "words": 207,
+      "optional": true
     },
     {
       "id": "W9.5h",
@@ -2114,7 +2128,8 @@
       "title": "Principles → YAGNI principle",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#principles-yagni-principle",
       "external_lesson": false,
-      "words": 99
+      "words": 99,
+      "optional": true
     },
     {
       "id": "W9.5j",
@@ -2123,7 +2138,8 @@
       "title": "Principles → DRY principle",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#principles-dry-principle",
       "external_lesson": false,
-      "words": 74
+      "words": 74,
+      "optional": true
     },
     {
       "id": "W9.5k",
@@ -2132,7 +2148,8 @@
       "title": "Principles → Brooks' law",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#principles-brooks-law",
       "external_lesson": false,
-      "words": 202
+      "words": 202,
+      "optional": true
     },
     {
       "id": "W9.6a",
@@ -2195,7 +2212,8 @@
       "title": "Project Management → SDLC Process Models → Unified process",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#project-management-sdlc-process-models-unified-process",
       "external_lesson": false,
-      "words": 413
+      "words": 413,
+      "optional": true
     },
     {
       "id": "W9.7e",
@@ -2213,7 +2231,8 @@
       "title": "Project Management → SDLC Process Models → CMMI",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week9/topics.html#project-management-sdlc-process-models-cmmi",
       "external_lesson": false,
-      "words": 90
+      "words": 90,
+      "optional": true
     },
     {
       "id": "W9.7g",
@@ -2330,7 +2349,8 @@
       "title": "Design → Design Patterns → Abstraction Occurrence Pattern → What",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week10/topics.html#design-design-patterns-abstraction-occurrence-pattern-what",
       "external_lesson": false,
-      "words": 793
+      "words": 793,
+      "optional": true
     },
     {
       "id": "W10.2a",
@@ -2357,7 +2377,8 @@
       "title": "Implementation → Error Handling → Defensive Programming → Enforcing 1-to-1 associations",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week10/topics.html#implementation-error-handling-defensive-programming-enforcing-1-to-1-associations",
       "external_lesson": false,
-      "words": 131
+      "words": 131,
+      "optional": true
     },
     {
       "id": "W10.2d",
@@ -2366,7 +2387,8 @@
       "title": "Implementation → Error Handling → Defensive Programming → Enforcing referential integrity",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week10/topics.html#implementation-error-handling-defensive-programming-enforcing-referential-integrity",
       "external_lesson": false,
-      "words": 1301
+      "words": 1301,
+      "optional": true
     },
     {
       "id": "W10.2e",
@@ -2384,7 +2406,8 @@
       "title": "Implementation → Error Handling → Design by Contract → Design by contract",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week10/topics.html#implementation-error-handling-design-by-contract-design-by-contract",
       "external_lesson": false,
-      "words": 239
+      "words": 239,
+      "optional": true
     },
     {
       "id": "W10.3a",
@@ -2492,7 +2515,8 @@
       "title": "Design → Design Patterns → Other design patterns",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-design-patterns-other-design-patterns",
       "external_lesson": false,
-      "words": 96
+      "words": 96,
+      "optional": true
     },
     {
       "id": "W11.1d",
@@ -2501,7 +2525,8 @@
       "title": "Design → Design Patterns → Combining design patterns",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-design-patterns-combining-design-patterns",
       "external_lesson": false,
-      "words": 355
+      "words": 355,
+      "optional": true
     },
     {
       "id": "W11.1e",
@@ -2510,7 +2535,8 @@
       "title": "Design → Design Patterns → Using design patterns",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-design-patterns-using-design-patterns",
       "external_lesson": false,
-      "words": 168
+      "words": 168,
+      "optional": true
     },
     {
       "id": "W11.1f",
@@ -2519,7 +2545,8 @@
       "title": "Design → Design Patterns → Design patterns versus design principles",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-design-patterns-design-patterns-versus-design-principles",
       "external_lesson": false,
-      "words": 33
+      "words": 33,
+      "optional": true
     },
     {
       "id": "W11.1g",
@@ -2528,7 +2555,8 @@
       "title": "Design → Design Patterns → Other types of patterns",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-design-patterns-other-types-of-patterns",
       "external_lesson": false,
-      "words": 360
+      "words": 360,
+      "optional": true
     },
     {
       "id": "W11.2a",
@@ -2600,7 +2628,8 @@
       "title": "Design → Architecture → Styles → Other styles",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-architecture-styles-other-styles",
       "external_lesson": false,
-      "words": 224
+      "words": 224,
+      "optional": true
     },
     {
       "id": "W11.3a",
@@ -2690,7 +2719,8 @@
       "title": "Quality Assurance → Secure Software Engineering → How",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#quality-assurance-secure-software-engineering-how",
       "external_lesson": false,
-      "words": 3548
+      "words": 3548,
+      "optional": true
     },
     {
       "id": "W11.5c",
@@ -2699,7 +2729,8 @@
       "title": "Quality Assurance → Secure Software Engineering → When",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#quality-assurance-secure-software-engineering-when",
       "external_lesson": false,
-      "words": 591
+      "words": 591,
+      "optional": true
     },
     {
       "id": "W11.5d",
@@ -2708,7 +2739,8 @@
       "title": "Quality Assurance → Secure Software Engineering → Securing AI-assisted code",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#quality-assurance-secure-software-engineering-securing-ai-assisted-code",
       "external_lesson": false,
-      "words": 1013
+      "words": 1013,
+      "optional": true
     },
     {
       "id": "W11.5e",
@@ -2717,7 +2749,8 @@
       "title": "Quality Assurance → Secure Software Engineering → Wrap-up",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#quality-assurance-secure-software-engineering-wrap-up",
       "external_lesson": false,
-      "words": 116
+      "words": 116,
+      "optional": true
     },
     {
       "id": "W11.6a",
@@ -2753,7 +2786,8 @@
       "title": "Implementation → Reuse → APIs → Designing APIs",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#implementation-reuse-apis-designing-apis",
       "external_lesson": false,
-      "words": 302
+      "words": 302,
+      "optional": true
     },
     {
       "id": "W11.6e",
@@ -2807,7 +2841,8 @@
       "title": "Implementation → Reuse → Cloud Computing → What",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#implementation-reuse-cloud-computing-what",
       "external_lesson": false,
-      "words": 151
+      "words": 151,
+      "optional": true
     },
     {
       "id": "W11.7b",
@@ -2816,7 +2851,8 @@
       "title": "Implementation → Reuse → Cloud Computing → IaaS, PaaS, and SaaS",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#implementation-reuse-cloud-computing-iaas-paas-and-saas",
       "external_lesson": false,
-      "words": 273
+      "words": 273,
+      "optional": true
     },
     {
       "id": "W11.8a",
@@ -2825,7 +2861,8 @@
       "title": "Design → Modelling → Modelling Behaviors → Communication diagrams",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-modelling-modelling-behaviors-communication-diagrams",
       "external_lesson": false,
-      "words": 39
+      "words": 39,
+      "optional": true
     },
     {
       "id": "W11.8b",
@@ -2834,7 +2871,8 @@
       "title": "Design → Modelling → Modelling Behaviors → State machine diagrams",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-modelling-modelling-behaviors-state-machine-diagrams",
       "external_lesson": false,
-      "words": 343
+      "words": 343,
+      "optional": true
     },
     {
       "id": "W11.8c",
@@ -2843,7 +2881,8 @@
       "title": "Design → Modelling → Modelling Structure → Deployment diagrams",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-modelling-modelling-structure-deployment-diagrams",
       "external_lesson": false,
-      "words": 31
+      "words": 31,
+      "optional": true
     },
     {
       "id": "W11.8d",
@@ -2852,7 +2891,8 @@
       "title": "Design → Modelling → Modelling Structure → Component diagrams",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-modelling-modelling-structure-component-diagrams",
       "external_lesson": false,
-      "words": 33
+      "words": 33,
+      "optional": true
     },
     {
       "id": "W11.8e",
@@ -2861,7 +2901,8 @@
       "title": "Design → Modelling → Modelling Structure → Package diagrams",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-modelling-modelling-structure-package-diagrams",
       "external_lesson": false,
-      "words": 31
+      "words": 31,
+      "optional": true
     },
     {
       "id": "W11.8f",
@@ -2870,7 +2911,8 @@
       "title": "Design → Modelling → Modelling Structure → Composite structure diagrams",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-modelling-modelling-structure-composite-structure-diagrams",
       "external_lesson": false,
-      "words": 21
+      "words": 21,
+      "optional": true
     },
     {
       "id": "W11.8g",
@@ -2879,7 +2921,8 @@
       "title": "Design → Modelling → Modelling Behaviors → Timing diagrams",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-modelling-modelling-behaviors-timing-diagrams",
       "external_lesson": false,
-      "words": 25
+      "words": 25,
+      "optional": true
     },
     {
       "id": "W11.8h",
@@ -2888,7 +2931,8 @@
       "title": "Design → Modelling → Modelling Behaviors → Interaction overview diagrams",
       "source": "https://nus-cs2103-ay2627-s1.github.io/website/schedule/week11/topics.html#design-modelling-modelling-behaviors-interaction-overview-diagrams",
       "external_lesson": false,
-      "words": 24
+      "words": 24,
+      "optional": true
     }
   ],
   "originalImageLocations": [
