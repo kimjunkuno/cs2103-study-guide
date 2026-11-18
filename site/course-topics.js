@@ -1986,7 +1986,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "design-modeling-modeling-structure-class-diagrams-basic",
       "label": "Modelling Structure › Class diagrams - basic",
       "title": "Design → Modelling → Modelling Structure → Class diagrams - basic",
-      "order": 75
+      "order": 75,
+      "duplicateOf": "W4.2b"
     },
     {
       "id": "W8.1b",
@@ -1996,7 +1997,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "design-modeling-modeling-structure-object-diagrams",
       "label": "Modelling Structure › Object diagrams",
       "title": "Design → Modelling → Modelling Structure → Object diagrams",
-      "order": 76
+      "order": 76,
+      "duplicateOf": "W4.2c"
     },
     {
       "id": "W8.1c",
@@ -2006,7 +2008,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "tools-uml-object-versus-class-diagrams",
       "label": "Object versus class diagrams",
       "title": "Tools → UML → Object versus class diagrams",
-      "order": 77
+      "order": 77,
+      "duplicateOf": "W4.2d"
     },
     {
       "id": "W8.2a",
@@ -2016,7 +2019,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "tools-uml-notes",
       "label": "Notes",
       "title": "Tools → UML → Notes",
-      "order": 78
+      "order": 78,
+      "duplicateOf": "W4.3a"
     },
     {
       "id": "W8.2b",
@@ -2026,7 +2030,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "tools-uml-constraints",
       "label": "Constraints",
       "title": "Tools → UML → Constraints",
-      "order": 79
+      "order": 79,
+      "duplicateOf": "W4.3b"
     },
     {
       "id": "W8.2c",
@@ -2046,7 +2051,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "design-modeling-modeling-structure-class-diagrams-intermediate",
       "label": "Modelling Structure › Class diagrams - intermediate",
       "title": "Design → Modelling → Modelling Structure → Class diagrams - intermediate",
-      "order": 80
+      "order": 80,
+      "duplicateOf": "W4.3c"
     },
     {
       "id": "W8.2e",
@@ -2056,7 +2062,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "paradigms-oop-associations-association-classes",
       "label": "Associations › Association classes",
       "title": "Paradigms → OOP → Associations → Association classes",
-      "order": 81
+      "order": 81,
+      "duplicateOf": "W4.3d"
     },
     {
       "id": "W8.3a",
@@ -2066,7 +2073,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "design-modeling-modeling-behaviors-sequence-diagrams-basic",
       "label": "Modelling Behaviors › Sequence diagrams - basic",
       "title": "Design → Modelling → Modelling Behaviors → Sequence diagrams - basic",
-      "order": 147
+      "order": 147,
+      "duplicateOf": "W6.1a"
     },
     {
       "id": "W8.3b",
@@ -2076,7 +2084,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "design-modeling-modeling-behaviors-sequence-diagrams-intermediate",
       "label": "Modelling Behaviors › Sequence diagrams - intermediate",
       "title": "Design → Modelling → Modelling Behaviors → Sequence diagrams - intermediate",
-      "order": 148
+      "order": 148,
+      "duplicateOf": "W6.1b"
     },
     {
       "id": "W8.3c",
@@ -2456,7 +2465,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "project-management-sdlc-process-models-introduction-what",
       "label": "Introduction › What",
       "title": "Project Management → SDLC Process Models → Introduction → What",
-      "order": 35
+      "order": 35,
+      "duplicateOf": "W2.1a"
     },
     {
       "id": "W9.6b",
@@ -2466,7 +2476,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "project-management-sdlc-process-models-introduction-sequential-models",
       "label": "Introduction › Sequential models",
       "title": "Project Management → SDLC Process Models → Introduction → Sequential models",
-      "order": 36
+      "order": 36,
+      "duplicateOf": "W2.1b"
     },
     {
       "id": "W9.6c",
@@ -2476,7 +2487,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "project-management-sdlc-process-models-introduction-iterative-models",
       "label": "Introduction › Iterative models",
       "title": "Project Management → SDLC Process Models → Introduction → Iterative models",
-      "order": 37
+      "order": 37,
+      "duplicateOf": "W2.1c"
     },
     {
       "id": "W9.7a",

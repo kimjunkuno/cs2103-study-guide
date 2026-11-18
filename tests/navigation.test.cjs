@@ -22,6 +22,26 @@ test('revisited topics share a topic key but retain both week references',()=>{
  assert.ok(nav.matches(a,{mode:'textbook',topic:a.topicKey}));assert.ok(nav.matches(b,{mode:'textbook',topic:a.topicKey}));
  assert.ok(!nav.matches(a,{mode:'week',week:'8'}));assert.ok(nav.matches(b,{mode:'week',week:'8'}));
 });
+test('Guide results contain one copy of every audited repeated topic',()=>{
+ const unique=nav.uniqueTopics(data.topics,data);
+ assert.equal(unique.length,309);
+ assert.equal(unique.filter(t=>t.topicKey===data.topics.find(t=>t.id==='W4.2b').topicKey).length,1);
+ assert.ok(unique.some(t=>t.id==='W4.2b'));
+ assert.ok(!unique.some(t=>t.id==='W8.1a'));
+ // Similar titles in different topics must not be collapsed.
+ assert.ok(unique.some(t=>t.id==='W1.1h'));
+ assert.ok(unique.some(t=>t.id==='W1.1i'));
+});
+test('Guide consolidation runs after week filtering and preserves each assignment',()=>{
+ for(const [week,count] of [[2,13],[4,24],[6,17],[8,29],[9,32]]){
+  const matching=data.topics.filter(t=>nav.matches(t,{mode:'week',week:String(week)}));
+  assert.equal(nav.uniqueTopics(matching,data).length,count);
+ }
+ const week8=data.topics.filter(t=>nav.matches(t,{mode:'week',week:'8'}));
+ assert.ok(nav.uniqueTopics(week8,data).some(t=>t.id==='W8.1a'));
+ const topic=data.topics.find(t=>t.id==='W8.1a');
+ assert.equal(nav.uniqueTopics(data.topics.filter(t=>nav.matches(t,{mode:'textbook',topic:topic.topicKey})),data).length,1);
+});
 test('practice selectors expose only topics with available questions',()=>{
  const available=nav.available(data,[{topicId:'W6.1a'},{topicId:'W6.1a'}]);
  assert.deepEqual(available.map(t=>t.id),['W6.1a']);

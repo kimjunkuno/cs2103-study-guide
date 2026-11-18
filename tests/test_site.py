@@ -14,6 +14,32 @@ class SiteTests(unittest.TestCase):
   self.assertEqual(len({x['id'] for x in s.topics}),321)
   expected={1:35,2:13,3:23,4:24,5:52,6:17,7:26,8:29,9:32,10:23,11:47}
   for w,n in expected.items():self.assertEqual(sum(x['data-week']==str(w) for x in s.topics),n)
+ def test_consolidated_topics_have_matching_content_and_preserved_sources(self):
+  html=(SITE/'index.html').read_text()
+  articles={}
+  for article in re.findall(r'<article class="topic"[\s\S]*?</article>',html):
+   topic_id=Scan(article).topics[0]['id']
+   articles[topic_id]=article
+  catalog=json.loads((SITE/'course-topics.js').read_text().split(' = ',1)[1].strip().removesuffix(';'))
+  metadata={t['id']:t for t in catalog['topics']}
+  audit=json.loads((SITE.parent/'TOPIC_DUPLICATES.json').read_text())
+  duplicates={t['id']:t['duplicateOf'] for t in catalog['topics'] if 'duplicateOf' in t}
+  self.assertEqual(duplicates,{g['duplicateId']:g['canonicalId'] for g in audit['groups']})
+  self.assertEqual(len(articles)-len(duplicates),audit['uniqueTopics'])
+  self.assertEqual(len(duplicates),12)
+  def content(topic_id):
+   # Only this source-link label differs in the two sequence-diagram copies.
+   return articles[topic_id].split('<div class="answer">',1)[1].rsplit('</details>',1)[0].replace(
+    '<p class="source-note">Video Q+ —','<p class="source-note">Video —')
+  for duplicate,canonical in duplicates.items():
+   self.assertNotIn(canonical,duplicates) # No broken/chained aliases.
+   self.assertEqual(metadata[duplicate]['topicKey'],metadata[canonical]['topicKey'])
+   self.assertEqual(content(duplicate),content(canonical),duplicate)
+   for topic_id in (duplicate,canonical):
+    self.assertIn('schedule/week'+str(metadata[topic_id]['week'])+'/topics.html#',articles[topic_id])
+  # Catch any further whole-topic duplicates; retain partial overlaps.
+  retained=[t['id'] for t in catalog['topics'] if t['id'] not in duplicates]
+  self.assertEqual(len(retained),len({content(topic_id) for topic_id in retained}))
  def test_safe_assets_and_markup(self):
   s=Scan((SITE/'index.html').read_text())
   for tag,a in s.tags:

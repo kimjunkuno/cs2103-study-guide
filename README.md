@@ -6,7 +6,7 @@ An independent study aid for NUS CS2103/T AY 2026/27 Semester 1. It is not an of
 
 Key theory keeps the main content’s bold or highlighted fragments visible. A small chevron beside a point reveals nearby source context; these disclosures start collapsed and support touch, Enter and Space. Points without additional context remain plain bold text. Switching reading modes closes context disclosures. The source wording is unchanged apart from whitespace normalization. Examples, dimmed material, supplementary panels and diagrams remain in Full text. Topics without core emphasis point to Full text.
 
-The guide contains 321 topic cards from the weekly Topics pages, with the course's wording, search, week/section filters, examples, diagrams, recall and printing. Weeks 12–13 have no assigned topics.
+The guide presents 309 unique topics from 321 weekly topic occurrences, with the course's wording, search, week/section filters, examples, diagrams, recall and printing. Weeks 12–13 have no assigned topics.
 
 ## Run locally
 
@@ -60,7 +60,7 @@ Run flashcard tests with `node --test tests/flashcards.test.cjs`. Both test suit
 
 ## Textbook navigation
 
-Browse by Textbook to select category, chapter and topic in the online book's order, or by Week to show week/topic controls. Revisited topics share a selector entry with their original week IDs. IDs and saved progress are unchanged. The guide also provides a collapsible chapter sidebar on larger screens. Existing Git course links are grouped under Supplementary; no external lesson content is imported.
+Browse by Textbook to select category, chapter and topic in the online book's order, or by Week to show week/topic controls. Repeated Guide topics appear once in Textbook and All weeks results. Each shared card lists both original week IDs and source links; selecting a specific week still shows the topic assigned to that week. Search accepts either ID, and old topic links open the visible shared card. The original 321 source records and full text remain intact. TOPIC_DUPLICATES.json records the 12 audited repeat pairs; these copies have identical study content (two differ only in a video source-note label). Distinct topics with overlapping explanations are kept. Practice question banks and saved revisit IDs are unchanged. The guide also provides a collapsible chapter sidebar on larger screens. Existing Git course links are grouped under Supplementary; no external lesson content is imported.
 
 ## Spot the mistake
 

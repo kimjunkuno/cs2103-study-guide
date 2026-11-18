@@ -15,6 +15,17 @@
     const ids = new Set(records.map(record => record.topicId || record.id));
     return catalog.topics.filter(topic => ids.has(topic.id));
   }
+  function uniqueTopics(records, catalog = root.COURSE_TOPICS) {
+    // Filter first so a revisited topic remains available in either week.
+    const canonical = new Map(catalog.topics.map(topic => [topic.id, topic.duplicateOf || topic.id]));
+    const seen = new Set();
+    return records.filter(record => {
+      const id = record.topicId || record.id;
+      const key = canonical.get(id) || id;
+      if (seen.has(key)) return false;
+      seen.add(key); return true;
+    });
+  }
   function switchMode(state, mode, topics) {
     const selected = topics.filter(topic => state.topic && topic.topicKey === state.topic);
     const first = selected.find(topic => topic.week === Number(state.week)) || selected[0];
@@ -114,7 +125,7 @@
       container.append(details);
     }
   }
-  const api = {compareIds, matches, available, switchMode, mount, chapterTree};
+  const api = {compareIds, matches, available, uniqueTopics, switchMode, mount, chapterTree};
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else root.CourseNavigation = api;
 })(globalThis);
