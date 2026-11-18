@@ -36,7 +36,14 @@
   function mount(container, records, onChange, catalog = root.COURSE_TOPICS) {
     const topics = available(catalog, records);
     const byId = new Map(topics.map(topic => [topic.id, topic]));
-    const state = {mode: 'textbook', category: '', chapter: '', topic: '', week: ''};
+    const defaults = {mode: 'textbook', category: '', chapter: '', topic: '', week: ''};
+    const memory = root.StudyState.remember(container.id, defaults, {
+      mode: ['textbook', 'week'], week: ['', ...Array.from({length: 13}, (_, index) => String(index + 1))],
+      category: ['', ...new Set(topics.map(topic => topic.category))],
+      chapter: ['', ...new Set(topics.map(topic => topic.chapter))],
+      topic: ['', ...new Set(topics.map(topic => topic.topicKey))]
+    });
+    const state = memory.read();
     const controls = {};
     const labels = {};
     container.classList.add('course-navigation');
@@ -53,7 +60,7 @@
         else state[key] = select.value;
         if (key === 'category') { state.chapter = ''; state.topic = ''; }
         if (key === 'chapter' || key === 'week') state.topic = '';
-        update(); onChange();
+        changed();
       });
     }
     function options(key, items) {
@@ -69,10 +76,6 @@
     field('week', 'Week'); field('topic', 'Topic');
     function update() {
       options('mode', [['textbook', 'Textbook'], ['week', 'Week']]);
-      labels.week.hidden = state.mode !== 'week';
-      labels.category.hidden = state.mode !== 'textbook';
-      labels.chapter.hidden = state.mode !== 'textbook' || !state.category;
-      labels.topic.hidden = state.mode === 'textbook' ? !state.chapter : !state.week && !state.topic;
       options('category', [['', 'All categories'], ...catalog.categories
         .filter(category => topics.some(topic => topic.category === category.label))
         .map(category => [category.label, category.label])]);
@@ -94,21 +97,27 @@
       const grouped = [...groups.values()].sort((a, b) => state.mode === 'week'
         ? compareIds(a[0].id, b[0].id) : order(a[0]) - order(b[0]));
       options('topic', [['', 'All topics'], ...grouped.map(group => [group[0].topicKey,
-        group[0].label + ' · ' + group.map(topic => topic.id).sort(compareIds).join(', ')])]);
+        group[0].label + (group.every(topic => topic.optional) ? ' · Optional' : '')
+          + ' · ' + group.map(topic => topic.id).sort(compareIds).join(', ')])]);
+      labels.week.hidden = state.mode !== 'week';
+      labels.category.hidden = state.mode !== 'textbook';
+      labels.chapter.hidden = state.mode !== 'textbook' || !state.category;
+      labels.topic.hidden = state.mode === 'textbook' ? !state.chapter : !state.week && !state.topic;
       container.dispatchEvent(new CustomEvent('navigation-updated'));
     }
+    function changed(reason = 'filter') { update(); memory.save(state); onChange(reason); }
     const api = {
       matches: record => matches(byId.get(record.topicId || record.id), state),
       metadata: id => byId.get(id),
       state: () => ({...state}),
-      selectWeek: week => { Object.assign(state, {mode: 'week', week: String(week), category: '', chapter: '', topic: ''}); update(); onChange(); },
-      selectChapter: (category, chapter) => { Object.assign(state, {mode: 'textbook', category, chapter, week: '', topic: ''}); update(); onChange(); },
+      selectWeek: week => { Object.assign(state, {mode: 'week', week: String(week), category: '', chapter: '', topic: ''}); changed(); },
+      selectChapter: (category, chapter) => { Object.assign(state, {mode: 'textbook', category, chapter, week: '', topic: ''}); changed(); },
       selectTopic: id => {
         const topic = byId.get(id); if (!topic) return;
         Object.assign(state, {category: topic.category, chapter: topic.chapter, topic: topic.topicKey, week: String(topic.week)});
-        update(); onChange();
+        changed('link');
       },
-      reset: () => { Object.assign(state, {category: '', chapter: '', topic: '', week: ''}); update(); onChange(); }
+      reset: () => { Object.assign(state, {category: '', chapter: '', topic: '', week: ''}); changed(); }
     };
     update(); return api;
   }

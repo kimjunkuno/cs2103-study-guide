@@ -1,6 +1,7 @@
 (function () {
   'use strict';
   const $ = id => document.getElementById(id);
+  StudyState.controls('flashcard-controls', ['fc-repeats', 'fc-revisit']);
   const cards = globalThis.COURSE_FLASHCARDS.cards;
   const rules = globalThis.FlashcardCore;
   const knownIds = new Set(cards.map(card => card.id));

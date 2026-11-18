@@ -556,7 +556,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "quality-assurance-testing-test-automation-automated-testing-of-cli-applications",
       "label": "Test Automation › Automated testing of CLI applications",
       "title": "Quality Assurance → Testing → Test Automation → Automated testing of CLI applications",
-      "order": 47
+      "order": 47,
+      "optional": true
     },
     {
       "id": "W3.1a",
@@ -786,7 +787,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "c-to-java-junit-junit-intermediate",
       "label": "JUnit: Intermediate",
       "title": "C++ to Java → JUnit → JUnit: Intermediate",
-      "order": 70
+      "order": 70,
+      "optional": true
     },
     {
       "id": "W4.1a",
@@ -876,7 +878,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "tools-uml-constraints",
       "label": "Constraints",
       "title": "Tools → UML → Constraints",
-      "order": 79
+      "order": 79,
+      "optional": true
     },
     {
       "id": "W4.3c",
@@ -1696,7 +1699,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "implementation-debugging-advanced",
       "label": "Advanced",
       "title": "Implementation → Debugging → Advanced",
-      "order": 161
+      "order": 161,
+      "optional": true
     },
     {
       "id": "W6.5a",
@@ -1836,7 +1840,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "design-design-fundamentals-coupling-types-of-coupling",
       "label": "Coupling › Types of coupling",
       "title": "Design → Design Fundamentals → Coupling → Types of coupling",
-      "order": 175
+      "order": 175,
+      "optional": true
     },
     {
       "id": "W7.4e",
@@ -1866,7 +1871,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "tools-ides-productivity-shortcuts",
       "label": "Productivity shortcuts",
       "title": "Tools → IDEs → Productivity shortcuts",
-      "order": 178
+      "order": 178,
+      "optional": true
     },
     {
       "id": "W7.6a",
@@ -1896,7 +1902,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "implementation-integration-approaches-top-down-versus-bottom-up-integration",
       "label": "Approaches › Top-down versus bottom-up integration",
       "title": "Implementation → Integration → Approaches → Top-down versus bottom-up integration",
-      "order": 181
+      "order": 181,
+      "optional": true
     },
     {
       "id": "W7.7a",
@@ -1956,7 +1963,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "project-management-project-planning-pert-charts",
       "label": "PERT charts",
       "title": "Project Management → Project Planning → PERT charts",
-      "order": 187
+      "order": 187,
+      "optional": true
     },
     {
       "id": "W7.7g",
@@ -2031,7 +2039,8 @@ globalThis.COURSE_TOPICS = {
       "label": "Constraints",
       "title": "Tools → UML → Constraints",
       "order": 79,
-      "duplicateOf": "W4.3b"
+      "duplicateOf": "W4.3b",
+      "optional": true
     },
     {
       "id": "W8.2c",
@@ -2225,7 +2234,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "quality-assurance-testing-dependency-injection-how",
       "label": "Dependency Injection › How",
       "title": "Quality Assurance → Testing → Dependency Injection → How",
-      "order": 204
+      "order": 204,
+      "optional": true
     },
     {
       "id": "W8.5c",
@@ -2275,7 +2285,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "quality-assurance-testing-test-driven-development-how",
       "label": "Test-Driven Development › How",
       "title": "Quality Assurance → Testing → Test-Driven Development → How",
-      "order": 209
+      "order": 209,
+      "optional": true
     },
     {
       "id": "W9.1a",
@@ -2335,7 +2346,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "design-modeling-modeling-a-solution-intermediate",
       "label": "Modeling a Solution › Intermediate",
       "title": "Design → Modeling → Modeling a Solution → Intermediate",
-      "order": 215
+      "order": 215,
+      "optional": true
     },
     {
       "id": "W9.4a",
@@ -2405,7 +2417,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "principles-interface-segregation-principle",
       "label": "Interface segregation principle",
       "title": "Principles → Interface segregation principle",
-      "order": 222
+      "order": 222,
+      "optional": true
     },
     {
       "id": "W9.5g",
@@ -2415,7 +2428,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "principles-dependency-inversion-principle",
       "label": "Dependency inversion principle",
       "title": "Principles → Dependency inversion principle",
-      "order": 223
+      "order": 223,
+      "optional": true
     },
     {
       "id": "W9.5h",
@@ -2435,7 +2449,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "principles-yagni-principle",
       "label": "YAGNI principle",
       "title": "Principles → YAGNI principle",
-      "order": 225
+      "order": 225,
+      "optional": true
     },
     {
       "id": "W9.5j",
@@ -2445,7 +2460,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "principles-dry-principle",
       "label": "DRY principle",
       "title": "Principles → DRY principle",
-      "order": 226
+      "order": 226,
+      "optional": true
     },
     {
       "id": "W9.5k",
@@ -2455,7 +2471,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "principles-brooks-law",
       "label": "Brooks' law",
       "title": "Principles → Brooks' law",
-      "order": 227
+      "order": 227,
+      "optional": true
     },
     {
       "id": "W9.6a",
@@ -2528,7 +2545,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "project-management-sdlc-process-models-unified-process",
       "label": "Unified process",
       "title": "Project Management → SDLC Process Models → Unified process",
-      "order": 231
+      "order": 231,
+      "optional": true
     },
     {
       "id": "W9.7e",
@@ -2548,7 +2566,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "project-management-sdlc-process-models-cmmi",
       "label": "CMMI",
       "title": "Project Management → SDLC Process Models → CMMI",
-      "order": 233
+      "order": 233,
+      "optional": true
     },
     {
       "id": "W9.7g",
@@ -2678,7 +2697,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "design-design-patterns-abstraction-occurrence-pattern-what",
       "label": "Abstraction Occurrence Pattern › What",
       "title": "Design → Design Patterns → Abstraction Occurrence Pattern → What",
-      "order": 246
+      "order": 246,
+      "optional": true
     },
     {
       "id": "W10.2a",
@@ -2708,7 +2728,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "implementation-error-handling-defensive-programming-enforcing-1-to-1-associations",
       "label": "Defensive Programming › Enforcing 1-to-1 associations",
       "title": "Implementation → Error Handling → Defensive Programming → Enforcing 1-to-1 associations",
-      "order": 249
+      "order": 249,
+      "optional": true
     },
     {
       "id": "W10.2d",
@@ -2718,7 +2739,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "implementation-error-handling-defensive-programming-enforcing-referential-integrity",
       "label": "Defensive Programming › Enforcing referential integrity",
       "title": "Implementation → Error Handling → Defensive Programming → Enforcing referential integrity",
-      "order": 250
+      "order": 250,
+      "optional": true
     },
     {
       "id": "W10.2e",
@@ -2738,7 +2760,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "implementation-error-handling-design-by-contract-design-by-contract",
       "label": "Design by Contract › Design by contract",
       "title": "Implementation → Error Handling → Design by Contract → Design by contract",
-      "order": 252
+      "order": 252,
+      "optional": true
     },
     {
       "id": "W10.3a",
@@ -2858,7 +2881,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "design-design-patterns-other-design-patterns",
       "label": "Other design patterns",
       "title": "Design → Design Patterns → Other design patterns",
-      "order": 264
+      "order": 264,
+      "optional": true
     },
     {
       "id": "W11.1d",
@@ -2868,7 +2892,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "design-design-patterns-combining-design-patterns",
       "label": "Combining design patterns",
       "title": "Design → Design Patterns → Combining design patterns",
-      "order": 265
+      "order": 265,
+      "optional": true
     },
     {
       "id": "W11.1e",
@@ -2878,7 +2903,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "design-design-patterns-using-design-patterns",
       "label": "Using design patterns",
       "title": "Design → Design Patterns → Using design patterns",
-      "order": 266
+      "order": 266,
+      "optional": true
     },
     {
       "id": "W11.1f",
@@ -2888,7 +2914,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "design-design-patterns-design-patterns-versus-design-principles",
       "label": "Design patterns versus design principles",
       "title": "Design → Design Patterns → Design patterns versus design principles",
-      "order": 267
+      "order": 267,
+      "optional": true
     },
     {
       "id": "W11.1g",
@@ -2898,7 +2925,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "design-design-patterns-other-types-of-patterns",
       "label": "Other types of patterns",
       "title": "Design → Design Patterns → Other types of patterns",
-      "order": 268
+      "order": 268,
+      "optional": true
     },
     {
       "id": "W11.2a",
@@ -2978,7 +3006,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "design-architecture-styles-other-styles",
       "label": "Styles › Other styles",
       "title": "Design → Architecture → Styles → Other styles",
-      "order": 276
+      "order": 276,
+      "optional": true
     },
     {
       "id": "W11.3a",
@@ -3078,7 +3107,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "quality-assurance-secure-software-engineering-how",
       "label": "How",
       "title": "Quality Assurance → Secure Software Engineering → How",
-      "order": 286
+      "order": 286,
+      "optional": true
     },
     {
       "id": "W11.5c",
@@ -3088,7 +3118,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "quality-assurance-secure-software-engineering-when",
       "label": "When",
       "title": "Quality Assurance → Secure Software Engineering → When",
-      "order": 287
+      "order": 287,
+      "optional": true
     },
     {
       "id": "W11.5d",
@@ -3098,7 +3129,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "quality-assurance-secure-software-engineering-securing-ai-assisted-code",
       "label": "Securing AI-assisted code",
       "title": "Quality Assurance → Secure Software Engineering → Securing AI-assisted code",
-      "order": 288
+      "order": 288,
+      "optional": true
     },
     {
       "id": "W11.5e",
@@ -3108,7 +3140,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "quality-assurance-secure-software-engineering-wrap-up",
       "label": "Wrap-up",
       "title": "Quality Assurance → Secure Software Engineering → Wrap-up",
-      "order": 289
+      "order": 289,
+      "optional": true
     },
     {
       "id": "W11.6a",
@@ -3148,7 +3181,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "implementation-reuse-apis-designing-apis",
       "label": "APIs › Designing APIs",
       "title": "Implementation → Reuse → APIs → Designing APIs",
-      "order": 293
+      "order": 293,
+      "optional": true
     },
     {
       "id": "W11.6e",
@@ -3208,7 +3242,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "implementation-reuse-cloud-computing-what",
       "label": "Cloud Computing › What",
       "title": "Implementation → Reuse → Cloud Computing → What",
-      "order": 299
+      "order": 299,
+      "optional": true
     },
     {
       "id": "W11.7b",
@@ -3218,7 +3253,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "implementation-reuse-cloud-computing-iaas-paas-and-saas",
       "label": "Cloud Computing › IaaS, PaaS, and SaaS",
       "title": "Implementation → Reuse → Cloud Computing → IaaS, PaaS, and SaaS",
-      "order": 300
+      "order": 300,
+      "optional": true
     },
     {
       "id": "W11.8a",
@@ -3228,7 +3264,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "design-modeling-modeling-behaviors-communication-diagrams",
       "label": "Modelling Behaviors › Communication diagrams",
       "title": "Design → Modelling → Modelling Behaviors → Communication diagrams",
-      "order": 301
+      "order": 301,
+      "optional": true
     },
     {
       "id": "W11.8b",
@@ -3238,7 +3275,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "design-modeling-modeling-behaviors-state-machine-diagrams",
       "label": "Modelling Behaviors › State machine diagrams",
       "title": "Design → Modelling → Modelling Behaviors → State machine diagrams",
-      "order": 302
+      "order": 302,
+      "optional": true
     },
     {
       "id": "W11.8c",
@@ -3248,7 +3286,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "design-modeling-modeling-structure-deployment-diagrams",
       "label": "Modelling Structure › Deployment diagrams",
       "title": "Design → Modelling → Modelling Structure → Deployment diagrams",
-      "order": 303
+      "order": 303,
+      "optional": true
     },
     {
       "id": "W11.8d",
@@ -3258,7 +3297,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "design-modeling-modeling-structure-component-diagrams",
       "label": "Modelling Structure › Component diagrams",
       "title": "Design → Modelling → Modelling Structure → Component diagrams",
-      "order": 304
+      "order": 304,
+      "optional": true
     },
     {
       "id": "W11.8e",
@@ -3268,7 +3308,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "design-modeling-modeling-structure-package-diagrams",
       "label": "Modelling Structure › Package diagrams",
       "title": "Design → Modelling → Modelling Structure → Package diagrams",
-      "order": 305
+      "order": 305,
+      "optional": true
     },
     {
       "id": "W11.8f",
@@ -3278,7 +3319,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "design-modeling-modeling-structure-composite-structure-diagrams",
       "label": "Modelling Structure › Composite structure diagrams",
       "title": "Design → Modelling → Modelling Structure → Composite structure diagrams",
-      "order": 306
+      "order": 306,
+      "optional": true
     },
     {
       "id": "W11.8g",
@@ -3288,7 +3330,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "design-modeling-modeling-behaviors-timing-diagrams",
       "label": "Modelling Behaviors › Timing diagrams",
       "title": "Design → Modelling → Modelling Behaviors → Timing diagrams",
-      "order": 307
+      "order": 307,
+      "optional": true
     },
     {
       "id": "W11.8h",
@@ -3298,7 +3341,8 @@ globalThis.COURSE_TOPICS = {
       "topicKey": "design-modeling-modeling-behaviors-interaction-overview-diagrams",
       "label": "Modelling Behaviors › Interaction overview diagrams",
       "title": "Design → Modelling → Modelling Behaviors → Interaction overview diagrams",
-      "order": 308
+      "order": 308,
+      "optional": true
     }
   ]
 };

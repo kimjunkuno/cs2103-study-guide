@@ -29,3 +29,4 @@ button{min-height:44px}.full>summary,.fc-evidence>summary{min-height:44px;align-
 
 .shared-topic-meta{flex-wrap:wrap}.shared-topic-meta>span:first-child{margin-right:auto}.shared-topic-meta>a{margin-left:0}
 @media(max-width:600px){.shared-topic-meta>span:first-child{flex-basis:100%}}
+.optional-pill{background:#fff3d6;color:#715012;border:1px solid #e5cf9b;font-weight:650;letter-spacing:0;white-space:nowrap}

@@ -80,7 +80,7 @@ Flashcards show Skip before reveal and Correct/Wrong/Next afterwards. Repeat, re
 
 Browser viewport checks cover 320px phones, 390px phones, 768px tablets, 1024px tablets and landscape. These checks use the local browser, not physical iOS/Android devices. Feature branches do not deploy; only validated changes on main deploy to Pages.
 
-Guide confidence selectors, progress summaries, filters and backups have been removed. The Guide no longer reads or writes progress storage. Existing browser data is left untouched; saved/skipped practice cards remain available in their separate revisit lists.
+Guide confidence selectors, progress summaries, filters and backups have been removed. The Guide no longer reads or writes confidence/progress storage. Existing browser data is left untouched; saved/skipped practice cards remain available in their separate revisit lists.
 
 The Guide keeps topic search visible while scrolling. A floating back-to-top button appears after scrolling down and returns to the heading immediately. Search keeps keyboard focus while filtered results come into view. Sticky offsets follow the phone/tablet header height, and these controls are omitted from print output.
 
@@ -96,3 +96,11 @@ Open Practise questions for one multiple-choice question at a time, marked autom
 - A wrong answer saves the question for revisiting, Skip saves it as skipped (never downgrading incorrect) and a correct answer clears it. Try again reshuffles the same question. The session score resets on Restart or any filter change and is not stored.
 - Progress is stored under `cs2103-questions-v1`, separate from flashcards and diagrams, with validated export/import (2 MB cap, unknown IDs ignored) and sync between open tabs.
 - Bank text is rendered with `textContent`; backticks become `<code>` and fenced blocks become `<pre>` through DOM nodes, never `innerHTML`.
+
+## Optional topics and remembered filters
+
+An amber Optional badge identifies each of the 44 weekly topic occurrences marked OPTIONAL on the course website (43 unique topics after consolidation). This includes individual optional topics within required sections, as well as optional sections. Topic selectors and practice-card status use the same audited classification. OPTIONAL_TOPICS.json records the source IDs; flags in CONTENT_SOURCES.json drive question-bank builds. A question with several sources is labelled optional only when all its source topics are optional.
+
+Each page remembers its own browsing category, chapter, topic and week in local storage. The Guide also remembers search and reading mode; practice pages remember their repeat/revisit toggles and additional type/scope filters. Reloading or reopening the page restores these choices. Explicit Guide topic links take priority over saved filters. Changing filters clears an outdated topic hash so it cannot undo the new selection after a refresh. Current random questions, revealed answers, session history and the Questions score are not stored.
+
+These preferences stay in this browser, separate from saved practice cards, and are not sent to a service. Clearing browser storage resets them. Invalid or outdated values are ignored; browsing still works when storage is blocked.

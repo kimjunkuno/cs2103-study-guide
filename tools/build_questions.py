@@ -302,6 +302,9 @@ def build(text=None):
         errors.append(f'topic group {group} has no questions and is not listed as without questions')
     if errors:
         raise BankError('\n'.join(errors))
+    # Topic-level OPTIONAL markers also occur inside otherwise required groups.
+    for q in questions:
+        q['optional'] = all(catalog[source].get('optional', False) for source in q['sources'])
     used = sorted({source for q in questions for source in q['sources']}, key=_id_order)
     data = {
         'version': 1,
