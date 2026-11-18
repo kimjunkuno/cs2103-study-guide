@@ -26,3 +26,6 @@ button{min-height:44px}.full>summary,.fc-evidence>summary{min-height:44px;align-
 .page-links a{white-space:nowrap}
 @media(max-width:600px){.page-links{gap:2px}.page-links a{padding:8px 6px;font-size:12.5px}}
 @media(max-width:360px){.page-links a{padding:8px 4px;font-size:12px}}
+
+.shared-topic-meta{flex-wrap:wrap}.shared-topic-meta>span:first-child{margin-right:auto}.shared-topic-meta>a{margin-left:0}
+@media(max-width:600px){.shared-topic-meta>span:first-child{flex-basis:100%}}

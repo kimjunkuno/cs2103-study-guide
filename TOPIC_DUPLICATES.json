@@ -1,0 +1,80 @@
+{
+  "snapshot": "2026-11-11",
+  "originalOccurrences": 321,
+  "uniqueTopics": 309,
+  "policy": "Consolidate only the audited matching topic copies in Guide results. Keep the original week records, full text, IDs and source links. Filtering by a week selects its occurrence before consolidation. Do not merge distinct topics merely because some wording overlaps.",
+  "groups": [
+    {
+      "canonicalId": "W4.2b",
+      "duplicateId": "W8.1a",
+      "title": "Design → Modelling → Modelling Structure → Class diagrams - basic",
+      "difference": "None: key theory, context and full source HTML match exactly"
+    },
+    {
+      "canonicalId": "W4.2c",
+      "duplicateId": "W8.1b",
+      "title": "Design → Modelling → Modelling Structure → Object diagrams",
+      "difference": "None: key theory, context and full source HTML match exactly"
+    },
+    {
+      "canonicalId": "W4.2d",
+      "duplicateId": "W8.1c",
+      "title": "Tools → UML → Object versus class diagrams",
+      "difference": "None: key theory, context and full source HTML match exactly"
+    },
+    {
+      "canonicalId": "W4.3a",
+      "duplicateId": "W8.2a",
+      "title": "Tools → UML → Notes",
+      "difference": "None: key theory, context and full source HTML match exactly"
+    },
+    {
+      "canonicalId": "W4.3b",
+      "duplicateId": "W8.2b",
+      "title": "Tools → UML → Constraints",
+      "difference": "None: key theory, context and full source HTML match exactly"
+    },
+    {
+      "canonicalId": "W4.3c",
+      "duplicateId": "W8.2d",
+      "title": "Design → Modelling → Modelling Structure → Class diagrams - intermediate",
+      "difference": "None: key theory, context and full source HTML match exactly"
+    },
+    {
+      "canonicalId": "W4.3d",
+      "duplicateId": "W8.2e",
+      "title": "Paradigms → OOP → Associations → Association classes",
+      "difference": "None: key theory, context and full source HTML match exactly"
+    },
+    {
+      "canonicalId": "W6.1a",
+      "duplicateId": "W8.3a",
+      "title": "Design → Modelling → Modelling Behaviors → Sequence diagrams - basic",
+      "difference": "Video source-note label only (Q+)"
+    },
+    {
+      "canonicalId": "W6.1b",
+      "duplicateId": "W8.3b",
+      "title": "Design → Modelling → Modelling Behaviors → Sequence diagrams - intermediate",
+      "difference": "Video source-note label only (Q+)"
+    },
+    {
+      "canonicalId": "W2.1a",
+      "duplicateId": "W9.6a",
+      "title": "Project Management → SDLC Process Models → Introduction → What",
+      "difference": "None: key theory, context and full source HTML match exactly"
+    },
+    {
+      "canonicalId": "W2.1b",
+      "duplicateId": "W9.6b",
+      "title": "Project Management → SDLC Process Models → Introduction → Sequential models",
+      "difference": "None: key theory, context and full source HTML match exactly"
+    },
+    {
+      "canonicalId": "W2.1c",
+      "duplicateId": "W9.6c",
+      "title": "Project Management → SDLC Process Models → Introduction → Iterative models",
+      "difference": "None: key theory, context and full source HTML match exactly"
+    }
+  ]
+}

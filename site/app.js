@@ -6,9 +6,32 @@
   let mode = 'quick';
   const navigation = CourseNavigation.mount($('guide-navigation'), cards.map(card => ({id: card.id})), filter);
   CourseNavigation.chapterTree($('guide-chapters'), navigation);
-  const textIndex = new Map(cards.map(card => [card, (card.dataset.group + ' ' + card.id + ' '
-    + navigation.metadata(card.id).title + ' ' + navigation.metadata(card.id).chapter + ' ' + card.querySelector('.source-content').textContent).toLowerCase()]));
+  const canonicalId = card => navigation.metadata(card.id).duplicateOf || card.id;
+  const topicGroups = new Map();
   for (const card of cards) {
+    const key = canonicalId(card);
+    if (!topicGroups.has(key)) topicGroups.set(key, []);
+    topicGroups.get(key).push(card);
+  }
+  const textIndex = new Map();
+  const sourceLinks = new Map(cards.map(card => [card, card.querySelector('.topic-meta a').cloneNode(true)]));
+  for (const card of cards) {
+    const group = topicGroups.get(canonicalId(card));
+    textIndex.set(card, (group.map(item => item.dataset.group + ' ' + item.id).join(' ') + ' '
+      + navigation.metadata(card.id).title + ' ' + navigation.metadata(card.id).chapter + ' '
+      + card.querySelector('.source-content').textContent).toLowerCase());
+    if (group.length > 1) {
+      const meta = card.querySelector('.topic-meta');
+      meta.classList.add('shared-topic-meta');
+      meta.querySelector('span').textContent = group.map(item => item.id).join(' · ');
+      const sources = group.map(item => {
+        const link = sourceLinks.get(item).cloneNode(true);
+        link.textContent = 'Source W' + item.dataset.week + ' ↗';
+        return link;
+      });
+      meta.querySelectorAll('a').forEach(link => link.remove());
+      meta.append(...sources);
+    }
     card.querySelector('.reveal').addEventListener('click', () => {
       const shown = card.classList.toggle('revealed');
       card.querySelector('.reveal').textContent = shown ? 'Hide answer' : 'Reveal answer';
@@ -26,11 +49,13 @@
     };
     const ordered = [...cards].sort((a, b) => state.mode === 'week'
       ? CourseNavigation.compareIds(a.id, b.id) : rank(a) - rank(b));
+    const visible = new Set(CourseNavigation.uniqueTopics(ordered.filter(card => navigation.matches({id: card.id})
+      && words.every(word => textIndex.get(card).includes(word)))));
     document.querySelectorAll('.group-heading').forEach(heading => heading.remove());
     let count = 0, last = '';
     const fragment = document.createDocumentFragment();
     for (const card of ordered) {
-      const match = navigation.matches({id: card.id}) && words.every(word => textIndex.get(card).includes(word));
+      const match = visible.has(card);
       card.hidden = !match;
       if (match) {
         count++;
@@ -49,7 +74,7 @@
       item.hidden = !(state.mode === 'week' && state.week === item.dataset.week && !words.length && !state.topic);
       if (!item.hidden) empties++;
     }
-    $('results').textContent = count === cards.length ? count + ' topics' : count + ' / ' + cards.length + ' topics';
+    $('results').textContent = count === topicGroups.size ? count + ' topics' : count + ' / ' + topicGroups.size + ' topics';
     $('scope').textContent = state.mode === 'week' ? (state.week ? 'Week ' + state.week : 'All weeks') : state.chapter || state.category || 'Textbook';
     $('no-results').hidden = Boolean(count || empties);
     $('week-nav').hidden = state.mode !== 'week'; $('guide-chapters').hidden = state.mode !== 'textbook';
@@ -72,7 +97,11 @@
   function followHash() {
     let id; try { id = decodeURIComponent(location.hash.slice(1)); } catch (error) { return; }
     const card = cards.find(item => item.id === id);
-    if (card) { $('search').value = ''; navigation.selectTopic(id); setTimeout(() => card.scrollIntoView(), 60); }
+    if (card) {
+      $('search').value = ''; navigation.selectTopic(id);
+      const visible = topicGroups.get(canonicalId(card)).find(item => !item.hidden);
+      if (visible) setTimeout(() => visible.scrollIntoView(), 60);
+    }
   }
   window.addEventListener('hashchange', followHash); filter(); followHash();
 })();
